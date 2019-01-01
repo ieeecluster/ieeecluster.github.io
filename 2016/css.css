@@ -1,0 +1,227 @@
+@charset "utf-8";
+@font-face {
+	font-family: oswald;
+	src: url('oswald-regular-webfont.eot');
+	src: url('oswald-regular-webfont.eot@') format('embedded-opentype'),
+         url('oswald-regular-webfont.woff') format('woff'),
+         url('oswald-regular-webfont.ttf') format('truetype'),
+         url('oswald-regular-webfont.svg') format('svg');
+	font-style: normal;
+}
+
+body {
+	margin: 0px;
+	background-color: #98bee5;
+}
+.all {
+	width: 953px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 21px;
+	padding-left: 21px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	background-color: #FFF;
+}
+.top {
+	height: 283px;
+	overflow: hidden;
+}
+.menu {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 10px;
+	background-color: #4a7b26;
+	font-family: Oswald, Arial, "微軟正黑體";
+	font-size: 18px;
+	color: #FFF;
+	text-align: center;
+}
+.menu a{
+	text-decoration: none;
+	color: #FFF;
+}
+
+.menu a:hover{
+	text-decoration: none;
+	color: #FF9;
+}
+.menu a.hover {
+	text-decoration: none;
+	color: #FF9;
+}
+.main {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	line-height: 20px;
+	background-image: url(images/main_bak.jpg);
+	background-repeat: repeat-x;
+	overflow: hidden;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+.main a{
+	color: #09C;
+	text-decoration: none;
+}
+.main a:hover{
+	color: #192F74;
+	text-decoration: none;
+}
+
+.main ul{
+	margin: 0px;
+	padding: 0px;
+}
+.main ul li{
+	background-image: url(images/dot.png);
+	background-repeat: no-repeat;
+	list-style-type: none;
+	background-position: left 8px;
+	padding-left: 12px;
+}
+
+h1 {
+	font-family: Oswald, Arial, "微軟正黑體";
+	font-size: 30px;
+	color: #409103;
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 2px;
+	line-height: 40px;
+	font-weight: normal;
+}
+h2 {
+	font-family: Oswald, Arial, "微軟正黑體";
+	font-size: 19px;
+	color: #18598d;
+	display: block;
+	font-weight: normal;
+	padding: 0px;
+	text-align: left;
+	line-height: 22px;
+	margin-top: 15px;
+	margin-bottom: 0px;
+}
+.h2 {
+	font-family: Oswald, Arial, "微軟正黑體";
+	font-size: 19px;
+	color: #18598d;
+	display: block;
+	font-weight: normal;
+	padding: 0px;
+	text-align: left;
+	line-height: 22px;
+	margin-bottom: 0px;
+}
+h3 {
+	font-family: Oswald, Arial, "微軟正黑體";
+	font-size: 18px;
+	padding-top: 15px;
+	color: #09F;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin: 0px;
+	display: block;
+	font-weight: normal;
+}
+
+.page {
+	width: 253px;
+	float: right;
+	background-image: url(images/right_bak.jpg);
+	background-repeat: repeat-x;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-family: Oswald, Arial, "微軟正黑體";
+	font-size: 20px;
+	line-height: 33px;
+	color: #092033;
+	height: 576px;
+	padding-top: 20px;
+	background-position: bottom;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.page a {
+	color: #FFFFFF;
+	display: block;
+	border-radius: 15px;
+	background-color: #28889C;
+	padding-top: 0px;
+	padding-left: 10px;
+	margin-bottom: 9px;
+	}
+.page a:hover {
+	color: #FFFFFF;
+	background-color: #409103;
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	}
+.left {
+	font-family: Verdana, Geneva, sans-serif;
+	width: 625px;
+	float: left;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-size: 12px;
+	line-height: 22px;
+	text-align: justify;
+	padding-bottom: 10px;
+}
+.right {
+	width: 253px;
+	float: right;
+	background-image: url(images/right_bak.jpg);
+	background-repeat: repeat-x;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-family: Oswald, Arial, "微軟正黑體";
+	font-size: 15px;
+	line-height: 21px;
+	padding-bottom: 15px;
+	background-color: #CAE5FA;
+}
+.footer {
+	margin-right: auto;
+	margin-left: auto;
+	width: 953px;
+	height: 126px;
+	background-color: #FFF;
+	padding-right: 21px;
+	padding-bottom: 15px;
+	padding-left: 21px;
+}
+.main .left .gotop {
+	text-align: right;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+.main .page .Organizer {
+	margin-bottom: 0px;
+	bottom: 0px;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	position: absolute;
+	top: 295px;
+	height: 269px;
+	text-align: center;
+	left: 17px;
+}
+.all .main .rightboder {
+	float: right;
+	width: 283px;
+}

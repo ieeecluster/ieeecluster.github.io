@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>IEEE Cluster 2016</title>
+<link href="css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="all">
+  <div class="top">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="312"><img src="images/LOGO.jpg" width="312" height="283"></td>
+        <td width="641" height="283"  background="images/fla-Bak.jpg"><embed src="fla.swf" width="641" height="283"></embed></td>
+      </tr>
+    </table>
+  </div>
+  <div class="menu"><a href="index.html">Home</a>｜<a href="Commitees.html">Committees</a>｜<a href="ConferenceProgram.html"> Program</a>｜<a href="CallforWorkshops.html">Workshops</a>｜<a class="hover" href="Tutorial.html">Tutorials</a>｜<a href="AuthorInformation.html"> Author Info</a>｜<a href="Registration.html">Registration</a>｜<a href="StudentMentoring.html">Student Mentoring</a>｜<a href="Travel.html">Travel</a>｜<a href="Sponsorship.html">Sponsorship</a></div>
+  <div class="main">
+    <div class="page"><a href="Tutorial.html">Tutorials</a></div>
+    <div class="left">
+      <h1 class="h1">Tutorials</h1>
+      <div align="center" style="color: #18785F"><strong>IEEE Cluster 2016 Tutorials<br>
+State-of-the Art in Slurm, MPI-PGAS and BigData</strong></div>
+      <table bgcolor="#295D8C" cellspacing="1" cellpadding="3">
+        <col width="81">
+        <col width="458">
+        <tr>
+          <td colspan="2" align="center" bgcolor="#3374AF"><strong style="color: #FFFFFF">September 13, 2016 (Tue.)</strong></td>
+        </tr>
+        <tr>
+          <td colspan="2" bgcolor="#A9C8E5"><strong>Time:</strong> 16:00-18:00<br>
+          <strong>Room: </strong>Grand Hall A</td>
+        </tr>
+        <tr>
+          <td width="103" align="center" bgcolor="#FFFFFF"><strong>16:00-16:40</strong></td>
+          <td width="520" align="left" bgcolor="#FFFFFF"><strong>Resource and    Job Management on HPC Clusters with Slurm: Administration, Usage and    Performance Evaluation</strong><br>
+          Yiannis Georgiou (BULL)</td>
+        </tr>
+        <tr>
+          <td width="103" align="center" bgcolor="#FFFFFF"><strong>16:40-17:20</strong></td>
+          <td width="520" align="left" bgcolor="#FFFFFF"><strong>PGAS and Hybrid    MPI+PGAS Programming Models on Modern HPC Clusters with Accelerators</strong><br>
+          Dhabaleswar K. (DK) Panda (The Ohio State    University)</td>
+        </tr>
+        <tr>
+          <td width="103" align="center" bgcolor="#FFFFFF"><strong>17:20-18:00</strong></td>
+          <td width="520" align="left" bgcolor="#FFFFFF"><strong>Big Data Meets    HPC: Exploiting HPC Technologies for Accelerating Apache Hadoop, Spark and    Memcached</strong><br>
+          Dhabaleswar K. (DK) Panda (The Ohio State    University)</td>
+        </tr>
+      </table>
+      <br>
+      The following tutorials are organized in conjunction with  Cluster 2016.
+<h2>PGAS and Hybrid  MPI+PGAS Programming Models on Modern HPC Clusters with Accelerators</h2>
+      Multi-core processors, accelerators (GPGPUs),  co-processors (Xeon Phis) and high-performance interconnects (InfiniBand, 10-40  GigE/iWARP and RoCE) with RDMA support are shaping the architectures for next  generation clusters. Efficient programming models to design applications on  these clusters and future exascale systems are still evolving. The new MPI-3  standard brings enhancements to Remote Memory Access Model<br>
+        (RMA) as well as introduce non-blocking collectives.  Partitioned Global Address Space (PGAS) Models provide an attractive  alternative to the MPI model. At the same time, Hybrid MPI+PGAS programming  models are gaining attention as a possible solution to programming exascale  systems. In this tutorial, we provide an overview of the programming models  (MPI, PGAS and Hybrid MPI+PGAS) and discuss opportunities and challenges in  designing the associated runtimes. We start with an in-depth overview of modern  system architectures with multi-core processors, GPU accelerators, Xeon Phi  co-processors and high-performance interconnects. We present an overview of the  new MPI-3 RMA model, language based (UPC and CAF) and library based (OpenSHMEM)  PGAS models. We introduce MPI+PGAS hybrid programming models and the associated  unified runtime concept. We examine and contrast different challenges in  designing high-performance MPI-3 compliant, OpenSHMEM and hybrid MPI+OpenSHMEM  runtimes for both host-based and accelerator (GPU- and MIC-) based systems. We  present case-studies using application kernels, to demonstrate how one can  exploit hybrid MPI+PGAS programming models to achieve better performance  without rewriting the complete code. Using the publicly available MVAPICH2-X,  MVAPICH2-GDR and MVAPICH-MIC libraries, we present the challenges and  opportunities to design efficient MPI, PGAS and hybrid MPI+PGAS runtimes.<br>
+  <strong>Website:</strong> <a href="http://web.cse.ohio-state.edu/~panda/cluster16_hybrid_tutorial.html">http://web.cse.ohio-state.edu/~panda/cluster16_hybrid_tutorial.html</a> <br>
+  <strong>Co-Presenters: </strong><br>
+        Dhabaleswar K. (DK) Panda, The Ohio State University, USA<br>
+      Khaled Hamidouche, The Ohio State University, USA</p>
+      <h2>Big Data Meets  HPC: Exploiting HPC Technologies for Accelerating Apache Hadoop, Spark and  Memcached</h2>
+     The explosive growth of `Big Data' has caused many  industrial firms to adopt HPC technologies to meet the requirements of huge  amount of data to be processed and stored. According to the IDC study in 2013,  67% of high-performance computing systems were running High- Performance Data  Analysis (HPDA) workloads. Apache Hadoop and Spark are gaining prominence in  handling Big Data and analytics. Similarly, Memcached in Web-2.0 environment is  becoming important for large-scale query processing. Recent studies have shown  that default Hadoop, Spark, and Memcached can not efficiently leverage the  features of modern high-performance computing clusters, like Remote Direct  Memory Access (RDMA) enabled high-performance interconnects, high-throughput  and large-capacity parallel storage systems (e.g. Lustre). These middleware are  traditionally written with sockets and do not deliver best performance on  modern networks. In this tutorial, we will provide an in-depth overview of the  architecture of Hadoop components (HDFS, MapReduce, RPC, HBase, etc.), Spark  and Memcached. We will examine the challenges in re-designing networking and  I/O components of these middleware with modern interconnects, protocols (such  as InfiniBand, iWARP, RoCE, and RSocket) with RDMA and storage architectures.  Using the publicly available software packages in the High-Performance Big Data  project (HiBD, http://hibd.cse.ohio-state.edu), we will provide case studies of  the new designs for several Hadoop/Spark/Memcached components and their  associated benefits. Through these case studies, we will also examine the  interplay between high-performance interconnects, storage (HDD, NVM, and SSD),  and multi-core platforms to achieve the best solutions for these components and  Big Data applications on modern HPC clusters.<br>
+        <strong>Website:</strong> <a href="http://web.cse.ohio-state.edu/~panda/cluster16_bigdata_tut.html" target="_blank">http://web.cse.ohio-state.edu/~panda/cluster16_bigdata_tut.html</a> <br>
+        <strong>Co-Presenters: </strong><br>
+      Dhabaleswar K. (DK) Panda, The Ohio State University, USA
+      <br>
+      Xiaoyi Lu, The Ohio State University, USA<br>
+      <h2>Resource and Job Management on HPC Clusters  with Slurm: Administration, Usage and Performance Evaluation</h2>
+      This tutorial is upon Slurm Resource and  Job Management System (RJMS). Slurm is an open source RJMS, specifically  designed for the scalability requirements of state-of-the-art HPC clusters. The  tutorial will give an overview of the concepts and underlying architecture of  Slurm and it will focus on both administrator configuration and user executions  related aspects. It will be decomposed into three parts: Administration, Usage  and Performance Evaluation. On the administration part there will be a detailed  description and hands-on for features such as job prioritization, resources  selection, GPGPUs and generic resources, advanced reservations, accounting  (associations, QOS, etc), scheduling(backfill, preemption), high availability,  power management, topology aware placement, licenses management, burst buffers,  scalability tuning with a particular focus on the configuration of the newly  developed power adaptive scheduling technique.</p>
+      <p>The usage training part will provide  in-depth analysis and hands-on for CPU usage parameters, options for multi-core  and multi-threaded architectures, prolog and epilog scripts, job arrays, MPI  tight integration, CPU frequency scaling usage, accounting / reporting and  profiling of user jobs and a particular focus on the newly developed  heterogeneous resources job specification language and multiple program  multiple data (MPMD) MPI support.</p>
+      <p>Finally the performance evaluation part  will consist of techniques with hands-on to experiment with Slurm in large  scales using simulation and emulation which will be valuable for researchers  and developers.</p>
+      <p>For the hands-on exercises particular VM  and container environments will be made available along with a pre-installed  testbed cluster to enable the experimentation of the different functionalities,  usage and configuration capabilities.<br>
+        <strong><strong>Website:</strong><a href="https://rjms-bull.github.io/slurm-tutorial/" target="_blank"> https://rjms-bull.github.io/slurm-tutorial/</a><br>
+        Co-Presenters: </strong><br>
+        Yiannis Georgiou<br>
+      David Glesser</p>
+      <div class="gotop"><a href="Tutorial.html#"><img src="images/01.gif" width="60" height="26" alt=""/></a></div>
+</div>
+  </div>
+</div>
+<div class="footer"><img src="images/footer.jpg" width="953" height="126" usemap="#Map">
+  <map name="Map">
+    <area shape="rect" coords="236,73,423,91" href="mailto:cluster2016@elitepco.com.tw">
+  </map>
+</div>
+</body>
+</html>
