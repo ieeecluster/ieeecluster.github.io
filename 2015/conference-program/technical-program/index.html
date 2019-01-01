@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Technical Program | IEEE Cluster 2015</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://www.mcs.anl.gov/ieeecluster2015/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="https://www.mcs.anl.gov/ieeecluster2015/wp-content/themes/twentythirteen/js/html5.js"></script>
+	<![endif]-->
+	<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="IEEE Cluster 2015 &raquo; Feed" href="../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="IEEE Cluster 2015 &raquo; Comments Feed" href="../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="IEEE Cluster 2015 &raquo; Technical Program Comments Feed" href="feed/index.html" />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.1.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+	var mi_version         = '7.1.0';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-52096168-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-52096168-1', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.mcs.anl.gov\/ieeecluster2015\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.9"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='twentythirteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CBitter%3A400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='../../wp-content/themes/twentythirteen/genericons/genericons.css@ver=3.03.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twentythirteen-style-css'  href='../../wp-content/themes/twentythirteen/style.css@ver=2013-07-18.css' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentythirteen-ie-css'  href='https://www.mcs.anl.gov/ieeecluster2015/wp-content/themes/twentythirteen/css/ie.css?ver=2013-07-18' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='ssp-flexslider-css-css'  href='../../wp-content/plugins/simple-slider-ssp/views/ssp_skins/default/lib/flexslider.css@ver=1.4.css' type='text/css' media='all' />
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery.js@ver=1.12.4'></script>
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery-migrate.min.js@ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls","inbound_paths":"","home_url":"https:\/\/www.mcs.anl.gov\/ieeecluster2015","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js@ver=7.1.0'></script>
+<script type='text/javascript' src='../../wp-content/plugins/simple-slider-ssp/views/ssp_skins/default/lib/jquery.flexslider-min.js@ver=1.4'></script>
+<link rel='https://api.w.org/' href='../../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc.php@rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.9" />
+<link rel="canonical" href="../../index.html@p=1189.html" />
+<link rel='shortlink' href='../../index.html@p=1189.html' />
+<link rel="alternate" type="application/json+oembed" href="../../wp-json/oembed/1.0/embed@url=https%253A%252F%252Fpress3.mcs.anl.gov%252Fieeecluster2015%252Fconference-program%252Ftechnical-program%252F" />
+<link rel="alternate" type="text/xml+oembed" href="../../wp-json/oembed/1.0/embed@url=https%253A%252F%252Fpress3.mcs.anl.gov%252Fieeecluster2015%252Fconference-program%252Ftechnical-program%252F&amp;format=xml" />
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");twitterWidgets.onload = _ga.trackTwitter;</script>
+	<style type="text/css" id="twentythirteen-header-css">
+		.site-header {
+		background: url(../../files/2014/07/cropped-header.png) no-repeat scroll top;
+		background-size: 1600px auto;
+	}
+	@media (max-width: 767px) {
+		.site-header {
+			background-size: 768px auto;
+		}
+	}
+	@media (max-width: 359px) {
+		.site-header {
+			background-size: 360px auto;
+		}
+	}
+			.site-title,
+		.site-description {
+			color: #ffffff;
+		}
+		</style>
+	</head>
+
+<body class="page-template-default page page-id-1189 page-child parent-pageid-265 sidebar">
+	<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<a class="home-link" href="../../index.html" title="IEEE Cluster 2015" rel="home">
+				<h1 class="site-title">IEEE Cluster 2015</h1>
+				<h2 class="site-description">Sep. 8-11, Chicago, IL, USA</h2>
+			</a>
+
+			<div id="navbar" class="navbar">
+				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+					<button class="menu-toggle">Menu</button>
+					<a class="screen-reader-text skip-link" href="../../index.html@p=1189.html#content" title="Skip to content">Skip to content</a>
+					<div class="menu-menu-1-container"><ul id="primary-menu" class="nav-menu"><li id="menu-item-255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-255"><a href="../../index.html">Home</a></li>
+<li id="menu-item-367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-367"><a href="../../index.html@p=361.html">Committees</a></li>
+<li id="menu-item-269" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-269"><a href="../../index.html@p=265.html">Conference Program</a>
+<ul class="sub-menu">
+	<li id="menu-item-1201" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1189 current_page_item menu-item-1201"><a href="../../index.html@p=1189.html">Technical Program</a></li>
+	<li id="menu-item-1199" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1199"><a href="../../index.html@p=1193.html">Workshops</a></li>
+	<li id="menu-item-2541" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2541"><a href="../../index.html@p=2455.html">Keynotes</a></li>
+	<li id="menu-item-2447" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2447"><a href="../../index.html@p=2305.html">Poster Program</a></li>
+	<li id="menu-item-2589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2589"><a href="../../index.html@p=2587.html">Industry Sessions</a></li>
+	<li id="menu-item-2647" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2647"><a href="../../index.html@p=2645.html">Panel</a></li>
+</ul>
+</li>
+<li id="menu-item-375" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-375"><a href="../../index.html@p=369.html">Author Information</a>
+<ul class="sub-menu">
+	<li id="menu-item-295" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-295"><a href="../../index.html@p=291.html">Important Dates</a></li>
+	<li id="menu-item-1907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><a href="../../index.html@p=1903.html">Camera Ready</a></li>
+	<li id="menu-item-319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-319"><a href="../../registration/index.html">Registration</a></li>
+	<li id="menu-item-279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-279"><a href="../../index.html@p=273.html">Call for Papers</a></li>
+	<li id="menu-item-289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-289"><a href="../../index.html@p=271.html">Call for Workshops</a></li>
+	<li id="menu-item-781" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-781"><a href="../../index.html@p=771.html">Call for Posters</a></li>
+</ul>
+</li>
+<li id="menu-item-301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-301"><a href="../../index.html@p=297.html">Student Mentoring</a>
+<ul class="sub-menu">
+	<li id="menu-item-2445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2445"><a href="../../index.html@p=2321.html">Participating Students</a></li>
+</ul>
+</li>
+<li id="menu-item-379" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-379"><a href="../../index.html@p=377.html">Travel</a>
+<ul class="sub-menu">
+	<li id="menu-item-317" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-317"><a href="../../index.html@p=313.html">Accommodation</a></li>
+	<li id="menu-item-597" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-597"><a href="../../index.html@p=595.html">Visa Procedures</a></li>
+	<li id="menu-item-653" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-653"><a href="../../index.html@p=649.html">Travel Information</a></li>
+</ul>
+</li>
+<li id="menu-item-1093" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1093"><a href="../../index.html@p=1091.html">Sponsors</a>
+<ul class="sub-menu">
+	<li id="menu-item-1057" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1057"><a href="../../index.html@p=1055.html">Call For Sponsors</a></li>
+	<li id="menu-item-1073" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1073"><a href="../../index.html@p=303.html">Current Sponsors</a></li>
+</ul>
+</li>
+<li id="menu-item-445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-445"><a href="../../index.html@p=333.html">News</a></li>
+</ul></div>					<form role="search" method="get" class="search-form" action="../../index.html">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>				</nav><!-- #site-navigation -->
+			</div><!-- #navbar -->
+		</header><!-- #masthead -->
+
+		<div id="main" class="site-main">
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+						
+				<article id="post-1189" class="post-1189 page type-page status-publish hentry">
+					<header class="entry-header">
+						
+						<h1 class="entry-title">Technical Program</h1>
+					</header><!-- .entry-header -->
+
+					<div class="entry-content">
+						<div></div>
+<div></div>
+<div></div>
+<div id="top">Please visit the CLUSTER website regularly for updates, since there may be schedule revisions.</div>
+<p><a href="../../index.html@p=1189.html#tuesday">Tuesday</a> * <a href="../../index.html@p=1189.html#wednesday">Wednesday</a> * <a href="../../index.html@p=1189.html#thursday">Thursday</a> * <a href="../../index.html@p=1189.html#friday">Friday</a><span style="color: #000000"><br />
+</span></p>
+<table style="height: 789px" border="1" width="475" rules="all">
+<tbody>
+<tr bgcolor="#ce6301">
+<th colspan="8">
+<h6 id="tuesday" style="text-align: center">TUESDAY 8TH SEPTEMBER (WORKSHOPS)</h6>
+</th>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301" width="18%"><span style="color: #ffffff"><strong>8:00-10:00</strong></span></td>
+<td style="text-align: center"><strong>FTS 2015</strong></td>
+<td style="text-align: center"><strong>HUCAA</strong></td>
+<td style="text-align: center" width="16%"><strong>HPCMASPA 2015</strong></td>
+<td style="text-align: center"><strong>WRAp</strong></td>
+<td style="text-align: center"><strong>HiPINEB</strong></td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><span style="color: #ffffff"><strong>10:00-10:30</strong></span></td>
+<td style="padding-left: 10px" colspan="7" bgcolor="#ce6301">
+<h6><span style="color: #ffffff"><strong>Coffee Break</strong></span></h6>
+</td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><span style="color: #ffffff"><strong>10:30-12:30</strong></span></td>
+<td style="text-align: center"><strong>FTS 2015</strong></td>
+<td style="text-align: center"><strong>HUCAA</strong></td>
+<td style="text-align: center"><strong>HPCMASPA 2015</strong></td>
+<td style="text-align: center"><strong>WRAp</strong></td>
+<td style="text-align: center"><strong>HiPINEB</strong></td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><span style="color: #ffffff"><strong>12:30-14:00</strong></span></td>
+<td style="padding-left: 10px" colspan="7" bgcolor="#ce6301">
+<h6><span style="color: #ffffff"><strong>Lunch Break</strong></span></h6>
+</td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><span style="color: #ffffff"><strong>14:00 &#8211; 15:30</strong></span></td>
+<td style="text-align: center"><strong>Student<br />
+Mentoring<br />
+Program<br />
+(Part I)</strong></td>
+<td style="text-align: center"><strong>Campus</strong><br />
+<strong>Bridging</strong></td>
+<td style="text-align: center"><strong>HPCMASPA 2015</strong></td>
+<td style="text-align: center"><strong>WRAp</strong></td>
+<td style="text-align: center"><strong>HiPINEB</strong></td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><span style="color: #ffffff"><strong>15:30-16:00</strong></span></td>
+<td style="padding-left: 10px" colspan="7" bgcolor="#ce6301">
+<h6><span style="color: #ffffff"><strong>Coffee Break</strong></span></h6>
+</td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><span style="color: #ffffff"><strong>16:00-18:00</strong></span></td>
+<td style="text-align: center" rowspan="2"><strong>Student<br />
+Mentoring<br />
+Program<br />
+(Part II)</strong></td>
+<td style="text-align: center" rowspan="2"><strong>Campus</strong><br />
+<strong> Bridging</strong></td>
+<td style="text-align: center" rowspan="2"><strong>HPCMASPA 2015</strong></td>
+<td style="text-align: center" rowspan="2"><strong>WRAp</strong></td>
+<td style="text-align: center" rowspan="2"><strong>HiPINEB</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Workshop 1 &#8211; <a href="http://www.mcs.anl.gov/events/workshops/fts/2015/index.php" target="_blank">FTS 2015: 1st International Workshop on Fault Tolerant Systems</a>-(Room: Superior I)</li>
+<li>Workshop 2 &#8211; <a href="http://www.hucaa-workshop.org/hucaa2015" target="_blank">HUCAA: Heterogeneous and Unconventional Cluster Architectures and Applications</a>-(Room: Superior II)</li>
+<li>Workshop 3 &#8211; <a href="https://sites.google.com/site/hpcmaspa2015" target="_blank">HPCMASPA 2015: 2nd Workshop on Monitoring and Analysis for High Performance Computing Systems Plus Applications</a>-(Room: Huron)</li>
+<li>Workshop 4 &#8211; <a href="http://wrap-workshop.github.io/" target="_blank">WRAp: Workshop on Representative Applications</a>-(Room: Michigan)</li>
+<li>Workshop 5 &#8211; <a href="http://www.i3a.uclm.es/HiPINEB" target="_blank">HiPINEB: High-Performance Interconnection Networks Towards the Exascale and Big-Data Era</a>-(Room: Superior III)</li>
+<li>Workshop 6 &#8211; <a href="http://pti.iu.edu/cluster15cb/" target="_blank">Campus Bridging: Reducing Obstacles on the Path to Big Answers</a>-(Room: Superior II)</li>
+<li>Student Mentoring I &#8211; <a href="../../participating-students/index.html" target="_blank">Master Class on Career Challenges</a>-(Room: Superior I)</li>
+<li>Student Mentoring II &#8211; <a href="../../participating-students/index.html" target="_blank">Master Class on Poster Presentation</a>-(Room: Superior I)</li>
+</ul>
+<h6>*** <a href="../../index.html@p=1189.html#top">Back to top</a> ***</h6>
+<table border="1" rules="all">
+<tbody>
+<tr bgcolor="#ce6301">
+<th colspan="3">
+<h6 id="wednesday" style="text-align: center">WEDNESDAY 9TH SEPTEMBER</h6>
+</th>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301" width="18%"><span style="color: #ffffff"><strong>8:45 &#8211; 9:00</strong></span></td>
+<td style="padding-left: 10px" colspan="2"><span style="color: #993300;font-size: 12pt"><strong>Opening Session</strong></span></td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><span style="color: #ffffff"><strong>9:00 – 10:00</strong></span></td>
+<td style="padding-left: 10px" colspan="2"><a href="../../keynotes/index.html" target="_blank"><strong><span style="color: #993300;font-size: 12pt">Keynote: </span><span style="color: #000000"><em><strong><span style="color: #000000"><em>Al Gara (Intel)</em></span></strong></em></span></strong></a></td>
+</tr>
+<tr bgcolor="#ce6301">
+<td style="text-align: center"><span style="color: #ffffff"><strong>10:00 &#8211; 10:30</strong></span></td>
+<td style="padding-left: 10px" colspan="2">
+<h6><span style="color: #ffffff"><strong>Coffee Break</strong></span></h6>
+</td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><span style="color: #ffffff"><strong>10:30 &#8211; 12:30</strong></span></td>
+<td style="padding-left: 10px" colspan="2"><a href="../../index.html@p=1189.html#session1"><strong><span style="color: #993300;font-size: 12pt">Session 1:</span> Best Paper Candidates</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><span style="color: #ffffff"><strong>12:30 &#8211; 14:00</strong></span></td>
+<td style="padding-left: 10px" width="41%"><span style="color: #993300;font-size: 12pt"><strong>Student Mentoring Program (Part III):</strong></span><span style="color: #000000"><br />
+</span><strong><a href="../../participating-students/index.html" target="_blank">Master Class on Paper Presentation</a></strong></td>
+<td style="padding-left: 10px" bgcolor="#ce6301">
+<h6><span style="color: #ffffff"><strong>Lunch Break</strong></span></h6>
+</td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><span style="color: #ffffff"><strong>14:00 &#8211; 15:00</strong></span></td>
+<td style="padding-left: 10px" valign="top"><a href="../../industry-sessions/index.html" target="_blank"><strong><span style="color: #993300;font-size: 12pt">Industry Session: <strong>Cray</strong></span></strong></a></td>
+<td style="padding-left: 10px" rowspan="2" valign="top"><a href="../../index.html@p=1189.html#session3"><strong><span style="color: #993300;font-size: 12pt">Session 3:<br />
+</span>Big Data Processing</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><span style="color: #ffffff"><strong>15:00 &#8211; 15:30</strong></span></td>
+<td style="padding-left: 10px"></td>
+</tr>
+<tr bgcolor="#ce6301">
+<td style="text-align: center"><span style="color: #ffffff"><strong>15:30 &#8211; 16:00</strong></span></td>
+<td style="padding-left: 10px" colspan="2">
+<h6><span style="color: #ffffff"><strong>Coffee Break</strong></span></h6>
+</td>
+</tr>
+<tr>
+<td style="text-align: center" rowspan="1" bgcolor="#ce6301"><span style="color: #ffffff"><strong>16:00 &#8211; 18:00</strong></span></td>
+<td style="padding-left: 10px" valign="top"><span style="color: #993300;font-size: 12pt"><strong><a href="../../index.html@p=1189.html#session4">Session 4</a>:</strong></span><br />
+<a href="../../index.html@p=1189.html#session4"> <strong>GPU Computing</strong></a></td>
+<td style="padding-left: 10px" valign="top"><span style="color: #993300;font-size: 12pt"><strong><a href="../../index.html@p=1189.html#session5">Session 5</a>:</strong></span><br />
+<a href="../../index.html@p=1189.html#session5"> <strong>Machine Learning and Data Mining</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: center" rowspan="2" bgcolor="#ce6301"><span style="color: #ffffff"><strong>18:15 &#8211; 20:00</strong></span></td>
+<td style="padding-left: 10px" colspan="2" rowspan="2"><a href="../../poster-program/index.html" target="_blank"><span style="color: #993300;font-size: 12pt"><strong>Poster Reception</strong></span></a></td>
+</tr>
+</tbody>
+</table>
+<h6>*** <a href="../../index.html@p=1189.html#top">Back to top</a> ***</h6>
+<table border="1" rules="all">
+<tbody>
+<tr bgcolor="#ce6301">
+<th colspan="3">
+<h6 id="thursday" style="padding-left: 10px;text-align: center">THURSDAY 10TH SEPTEMBER</h6>
+</th>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301" width="18%"><span style="color: #ffffff"><strong>8:45 &#8211; 9:00</strong></span></td>
+<td style="padding-left: 10px" colspan="2"><span style="color: #993300;font-size: 12pt"><strong>Presentation of CLUSTER 2016</strong></span></td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><strong><span style="color: #ffffff">9:00 &#8211; 10:00</span></strong></td>
+<td style="padding-left: 10px" colspan="2"><a href="../../keynotes/index.html" target="_blank"><strong><span style="color: #993300;font-size: 12pt">Keynote: <span style="color: #000000"><strong><em>Marc Snir (Argonne National Laboratory)</em></strong></span></span></strong></a></td>
+</tr>
+<tr bgcolor="#ce6301">
+<td style="text-align: center" bgcolor="#ce6301"><strong><span style="color: #ffffff">10:00 &#8211; 10:30</span></strong></td>
+<td style="padding-left: 10px" colspan="2">
+<h6><strong><span style="color: #ffffff">Coffee Break</span></strong></h6>
+</td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><strong><span style="color: #ffffff">10:30 &#8211; 12:30</span></strong></td>
+<td style="padding-left: 10px" valign="top" width="41%"><a href="../../index.html@p=1189.html#session6"><strong><span style="color: #993300;font-size: 12pt">Session 6:</span><br />
+Resilience and Reliability</strong></a></td>
+<td style="padding-left: 10px" valign="top" width="41%"><a href="../../index.html@p=1189.html#session7"><strong><span style="color: #993300;font-size: 12pt">Session 7:</span><br />
+High Performance I/O</strong></a></td>
+</tr>
+<tr bgcolor="#ce6301">
+<td style="text-align: center" bgcolor="#ce6301"><strong><span style="color: #ffffff">12:30 &#8211; 14:00</span></strong></td>
+<td style="padding-left: 10px" colspan="2">
+<h6><strong><span style="color: #ffffff">Lunch Break</span></strong></h6>
+</td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><span style="color: #ffffff"><strong>14:00 &#8211; 15:00</strong></span></td>
+<td style="padding-left: 10px" valign="top"><strong><span style="color: #993300;font-size: 12pt"><a href="../../index.html@p=1189.html#session9">Session 8:<br />
+</a>MPI and OpenCL </span></strong></td>
+<td style="padding-left: 10px" rowspan="2" valign="top"><a href="../../index.html@p=1189.html#session9"><strong><span style="color: #993300;font-size: 12pt">Session 9:</span><br />
+Distributed Data Processing</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><strong><span style="color: #ffffff">15:00 &#8211; 15:30</span></strong></td>
+<td style="padding-left: 10px"></td>
+</tr>
+<tr bgcolor="#ce6301">
+<td style="text-align: center" bgcolor="#ce6301"><span style="color: #ffffff"><strong>15:30 &#8211; 16:00</strong></span></td>
+<td style="padding-left: 10px" colspan="2">
+<h6><strong><span style="color: #ffffff">Coffee Break</span></strong></h6>
+</td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><strong><span style="color: #ffffff">16:00 -17:00</span></strong></td>
+<td style="padding-left: 10px" valign="top"><a href="../../index.html@p=1189.html#session10"><span style="color: #993300;font-size: 12pt"><strong>Session 10: </strong></span><strong>Energy Efficiency</strong></a></td>
+<td style="padding-left: 10px" valign="top"><a href="../../index.html@p=1189.html#session11"><span style="color: #993300;font-size: 12pt"><strong>Session 11: </strong></span><strong>Graph Processing</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><span style="color: #ffffff"><strong>17:00 &#8211; 18:00</strong></span></td>
+<td style="padding-left: 10px" colspan="2"><span style="color: #993300;font-size: 12pt"><strong><a href="../../panel/index.html" target="_blank">Panel: Emerging Exascale Problems and Solutions</a></strong></span></td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><span style="color: #ffffff"><strong>18:15 &#8211; 20:00</strong></span></td>
+<td style="padding-left: 10px" colspan="2"><strong><span style="color: #993300;font-size: 12pt">Awards Presentation<br />
+Gala Dinner</span></strong></td>
+</tr>
+</tbody>
+</table>
+<h6>*** <a href="../../index.html@p=1189.html#top">Back to top</a> ***</h6>
+<table border="1" rules="all">
+<tbody>
+<tr bgcolor="#ce6301">
+<th colspan="3">
+<h6 id="friday" style="padding-left: 10px;text-align: center">FRIDAY 11TH SEPTEMBER</h6>
+</th>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301" width="18%"><span style="color: #ffffff"><strong>9:00 &#8211; 10:00</strong></span></td>
+<td style="padding-left: 10px" colspan="2"><a href="../../keynotes/index.html" target="_blank"><strong><span style="color: #993300;font-size: 12pt">Keynote: </span></strong><strong><span style="color: #000000"><em>William Harrod (DOE ASCR)</em></span></strong></a></td>
+</tr>
+<tr bgcolor="#ce6301">
+<td style="text-align: center"><span style="color: #ffffff"><strong>10:00 &#8211; 10:30</strong></span></td>
+<td style="padding-left: 10px" colspan="2">
+<h6><strong><span style="color: #ffffff">Coffee Break</span></strong></h6>
+</td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><strong><span style="color: #ffffff">10:30 &#8211; 12:30</span></strong></td>
+<td style="padding-left: 10px" valign="top" width="41%"><a href="../../index.html@p=1189.html#session12"><strong><span style="color: #993300;font-size: 12pt">Session 12:</span><br />
+Application Acceleration</strong></a></td>
+<td style="padding-left: 10px" valign="top" width="41%"><a href="../../index.html@p=1189.html#session13"><strong><span style="color: #993300;font-size: 12pt">Session 13: </span>Network and High Performance Communication</strong></a></td>
+</tr>
+<tr bgcolor="#ce6301">
+<td style="text-align: center"><span style="color: #ffffff"><strong>12:30 &#8211; 14:00</strong></span></td>
+<td style="padding-left: 10px" colspan="2">
+<h6><strong><span style="color: #ffffff">Lunch Break</span></strong></h6>
+</td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><strong><span style="color: #ffffff">14:00 &#8211; 15:30</span></strong></td>
+<td style="padding-left: 10px" valign="top"><a href="../../index.html@p=1189.html#session14"><strong><span style="color: #993300;font-size: 12pt">Session 14:</span><br />
+Parallel Algorithms</strong></a></td>
+<td style="padding-left: 10px" valign="top"><a href="../../index.html@p=1189.html#session15"><strong><span style="color: #993300;font-size: 12pt">Session 15:</span><br />
+Task and Process Scheduling</strong></a></td>
+</tr>
+<tr bgcolor="#ce6301">
+<td style="text-align: center"><span style="color: #ffffff"><strong>15:30 &#8211; 16:00</strong></span></td>
+<td style="padding-left: 10px" colspan="2">
+<h6><span style="color: #ffffff"><strong>Coffee Break</strong></span></h6>
+</td>
+</tr>
+<tr>
+<td style="text-align: center" bgcolor="#ce6301"><span style="color: #ffffff"><strong>16:00 -17:30</strong></span></td>
+<td style="padding-left: 10px" valign="top"><a href="../../index.html@p=1189.html#session16"><strong><span style="color: #993300;font-size: 12pt">Session 16: </span>PGAS and Shared Memory Programming</strong></a></td>
+<td style="padding-left: 10px" valign="top"><span style="color: #993300;font-size: 12pt"><strong><a href="../../index.html@p=1189.html#session17">Session 17: </a></strong></span><br />
+<a href="../../index.html@p=1189.html#session17"><strong>Cluster Tools</strong></a></td>
+</tr>
+</tbody>
+</table>
+<h6>***<a href="../../index.html@p=1189.html#top">Back to top</a>***</h6>
+<h2>Program</h2>
+<h3>TUESDAY 8TH SEPTEMBER</h3>
+<p>HUCAA: Heterogeneous and Unconventional Cluster Architectures and Applications. (8:15AM – 12:30PM, Room: Superior II)</p>
+<p>HiPINEB: High-Performance Interconnection Networks Towards the Exascale and Big-Data Era. (8:15AM – 6:00PM, Room: Superior III)</p>
+<p>FTS 2015: 1st International Workshop on Fault Tolerant Systems. (8:30AM – 12:30PM, Room: Superior I)</p>
+<p>HPCMASPA 2015: 2nd Workshop on Monitoring and Analysis for High Performance Computing Systems Plus Applications. (8:30AM – 5:30PM, Room: Huron)</p>
+<p>WRAp: Workshop on Representative Applications. (9:00AM – 5:00PM, Room: Michigan)</p>
+<p>Campus Bridging: Reducing Obstacles on the Path to Big Answers. (1:30PM – 6:00PM, Room: Superior II)</p>
+<p>Student Mentoring Program: Master Class on Career Challenges ans Poster Presentation. (2:00PM – 5:30PM, Room: Superior I)</p>
+<h3>WEDNESDAY 9TH SEPTEMBER</h3>
+<p><strong>Session 1: Best Paper Candidates-</strong>(Room: LaSalle Ballroom)<br />
+Chair: Satoshi Matsuoka (Tokyo Inst. Technology)</p>
+<ul>
+<li><strong>Parallel Modularity-based Community Detection on Large-scale Graphs<br />
+</strong><em>Jianping Zeng and Hongfeng Yu</em></li>
+<li><strong>Optimizing Explicit Hydrodynamics for Power, Energy, and Performance</strong><br />
+<em>Edgar A. Leon, Ian Karlin and Ryan E. Grant <strong><span style="color: #993300">(Best Paper)</span></strong></em></li>
+<li><strong>Machines Tuning Machines: Configuring Distributed Stream Processors with Bayesian Optimization</strong><br />
+<em>Lorenz Fischer, Shen Gao and Abraham Bernstein</em></li>
+<li><strong>Workload-Aware Resource Reservation for Multi-Tenant NoSQL</strong><br />
+<em>Jiaan Zeng and Beth Plale</em></li>
+</ul>
+<div id="session2"></div>
+<p><strong>Session 3: Big Data Processing-</strong>(Room: LaSalle Ballroom II)<br />
+Chair: Gabriel Antoniu (INRIA)</p>
+<ul>
+<li><strong>Taming Non-local Stragglers using Efficient Prefetching in MapReduce<br />
+</strong><em>Ze Yu, Min Li, Xin Yang, Han Zhao and Xiaolin Li</em></li>
+<li><strong>IOSIG+: on the Role of I/O Tracing and Analysis for Hadoop Systems</strong> (short paper)<br />
+<em>Bo Feng, Xi Yang, Kun Feng, Yanlong Yin and Xian-He Sun</em></li>
+<li><strong>Exploring Memory Hierarchy to Improve Scientific Data Read Performance</strong> (short paper)<br />
+<em>Wenzhao Zhang, Houjun Tang, Xiaocheng Zou, Steven Harenberg, Qing Liu, Scott Klasky and Nagiza Samatova</em></li>
+<li><strong>S-Shuffle: Optimizing Big Data Analytical Stacks on Large Clusters using Structured Data Shuffling</strong> (short paper)<br />
+<em>Dixin Tang, Taoying Liu, Rubao Lee, Hong Liu and Wei Li</em></li>
+<li><strong>An SSD-HDD Integrated Storage Architecture for Write-Once-Read-Once Applications on Clusters</strong> (short paper)<br />
+<em>Cailiang Xu, Wei Wang, Deng Zhou and Tao Xie</em></li>
+</ul>
+<div id="session4"></div>
+<p><strong>Session 4: GPU Computing-</strong>(Room: LaSalle Ballroom I)<br />
+Chair: Naoya Maruyama (Riken AICS)</p>
+<ul>
+<li><strong>Exploiting GPUDirect RDMA in Designing High Performance OpenSHMEM for NVIDIA GPU Clusters<br />
+</strong><em>Khaled Hamidouche, Akshay Venkatesh, Ammar Ahmad Awan, Hari Subramoni, Ching-Hsiang Chu and Dhabaleswar Panda</em></li>
+<li><strong>Improving Strong-Scaling on GPU Cluster Based on Tightly Coupled Accelerators Architecture</strong> (short paper)<br />
+<em>Toshihiro Hanawa, Hisafumi Fujii, Norihisa Fujita, Tetsuya Odajima, Kazuya Matsumoto, Yuetsu Kodama and Taisuke Boku</em></li>
+<li><strong>Exploring the Suitability of Remote GPGPU Virtualization for the OpenACC Programming Model Using rCUDA</strong> (short paper)<br />
+<em>Adrian Castello, Antonio J. Pena, Rafael Mayo Gual, Pavan Balaji and Enrique S. Quintana-Orti</em></li>
+<li><strong>PLB-HeC: A Profile-based Load-Balancing algorithm for Heterogeneous CPU-GPU Clusters</strong><br />
+<em>Luis Sant Ana, Daniel Cordeiro and Raphael Camargo</em></li>
+<li><strong>A TSQR based Krylov Basis Computation Method on Hybrid GPU Cluster</strong> (short paper)<br />
+<em>Langshi Chen and Serge Petiton</em></li>
+<li><strong>Detecting Thread-Safety Violations in Hybrid OpenMP/MPI Programs</strong> (short paper)<br />
+<em>Hongyi Ma and Liqiang Wang</em></li>
+</ul>
+<div id="session5"></div>
+<p><strong>Session 5: Machine Learning and Data Mining-</strong>(Room: LaSalle Ballroom II)<br />
+Chair: Osamu Tatebe (Univ. Tsukuba)</p>
+<ul>
+<li><strong>Fast and Accurate Support Vector Machines on Large Scale Systems<br />
+</strong><em>Abhinav Vishnu, Jeyanthi Narasimhan, Lawrence Holder, Darren Kerbyson and Adolfy Hoisie</em></li>
+<li><strong>A Machine-Learning Approach for Communication Prediction of Large-Scale Applications</strong> (short paper)<br />
+<em>Nikela Papadopoulou, Georgios Goumas and Nectarios Koziris</em></li>
+<li><strong>An Efficient Parallel Approach of Parsing and Indexing for Large-scale XML Datasets</strong> (short paper)<br />
+<em>Song Kunfang and Lu Hongwei</em></li>
+<li><strong>Collective I/O Tuning Using Analytical and Machine Learning Models</strong><br />
+<em>Florin Isaila, Prasanna Balaprakash, Stefan Wild, Robert Latham, Dries Kimpe, Robert Ross and Paul Hovland</em></li>
+<li><strong>Large Scale Frequent Pattern Mining using MPI One-Sided Model</strong><br />
+<em>Abhinav Vishnu and Khushbu Agarwal</em></li>
+</ul>
+<h3>THURSDAY 10TH SEPTEMBER</h3>
+<p><strong>Session 6: Resilience and Reliability-</strong>(Room: LaSalle Ballroom I)<br />
+Chair: Bronis R. de Supinski (LLNL)</p>
+<ul>
+<li><strong>Fast Fault Injection and Sensitivity Analysis for Collective Communications<br />
+</strong><em>Kun Feng, Manjunath Gorentla Venkata, Dong Li and Xian-He Sun</em></li>
+<li><strong>A Practical Approach for Handling Soft Errors in Iterative Applications</strong> (short paper)<br />
+<em>Jiaqi Liu, Mehmet Can Kurt and Gagan Agrawal</em></li>
+<li><strong>Ensuring Data Durability with Increasingly Interdependent Content</strong> (short paper)<br />
+<em>Veronica Del Carmen Estrada Galinanes and Pascal Felber</em></li>
+<li><strong>On the Need for Reproducible Numerical Accuracy through Intelligent Runtime Selection of Reduction Algorithms at the Extreme Scale</strong><br />
+<em>Dylan Chapp, J. Travis Johnston and Michela Taufer</em></li>
+<li><strong>Towards Building Resilient Scientific Applications: Resilience Analysis on the Impact of Soft Error and Transient Error Tolerance With the CLAMR Hydrodynamics Mini-App</strong> (short paper)<br />
+<em>Qiang Guan, Nathan Debardeleben, Brian Atkinson, Robert Robey and William Jones</em></li>
+<li><strong>DINO: Divergent Node Cloning for Sustained Redundancy in HPC</strong> (short paper)<br />
+<em>Arash Rezaei and Frank Mueller</em></li>
+</ul>
+<div id="session7"></div>
+<p><strong>Session 7: High Performance I/O-</strong>(Room: LaSalle Ballroom II)<br />
+Chair: D.K. Panda (Ohio State U.)</p>
+<ul>
+<li><strong>Dynamic Model-driven Parallel I/O Performance Tuning<br />
+</strong><em>Babak Behzad, Surendra Byna, Stefan Wild, Mr Prabhat and Marc Snir</em></li>
+<li><strong>TRIO: Burst Buffer Based I/O Orchestration</strong><br />
+<em>Teng Wang, Sarp Oral, Michael Pritchard, Bin Wang and Weikuan Yu</em></li>
+<li><strong>BPS: A Balanced Partial Stripe Write Scheme to Improve the Performance of RAID-6</strong><br />
+<em>Congjin Du, Chentao Wu, Jie Li, Minyi Guo and Xubin He</em></li>
+<li><strong>RDMA-based Direct Transfer of File Data to Remote Page Cache</strong><br />
+<em>Shin Sasaki, Kazushi Takahashi, Yoshihiro Oyama and Osamu Tatebe</em></li>
+</ul>
+<div id="session8"></div>
+<p><strong>Session 8: MPI and OpenCL-</strong>(Room: LaSalle Ballroom I)<br />
+Chair: Pavan Balaji (ANL)</p>
+<ul>
+<li><strong>High Performance MPI Datatype Support with User-mode Memory Registration: Challenges, Designs and Benefits<br />
+</strong><em>Mingzhe Li, Hari Subramoni, Khaled Hamidouche, Xiaoyi Lu and Dhabaleswar Panda</em></li>
+<li><strong>Automatic Command Queue Scheduling for Task-Parallel Workloads in OpenCL</strong><br />
+<em>Ashwin Aji, Antonio J. Pena, Pavan Balaji and Wu-Chun Feng</em></li>
+</ul>
+<div id="session9"></div>
+<p><strong>Session 9: Distributed Data Processing-</strong>(Room: LaSalle Ballroom II)<br />
+Chair: Zhiling Lan (IIT)</p>
+<ul>
+<li><strong>Overcoming Hadoop Scaling Limitations through Distributed Task Execution<br />
+</strong><em>Ke Wang, Ning Liu, Iman Sadooghi, Xi Yang, Xaiobing Zhou, Michael Lang, Xian-He Sun and Ioan Raicu</em></li>
+<li><strong>SideWalk: A Facility of Lightweight Out-of-band Communications for Augmenting Distributed Data Processing Flows</strong> (short paper)<br />
+<em>Yin Huai, Yuan Yuan, Rubao Lee and Xiaodong Zhang</em></li>
+<li><strong>High-performance, Distributed Dictionary Encoding of RDF Datasets</strong> (short paper)<br />
+<em>Alessandro Morari, Jesse Weaver, Oreste Villa, David Haglin, Vito Giovanni Castellana, Antonino Tumeo and John Feo</em></li>
+<li><strong>I/O-Aware Batch Scheduling for Petascale Computing Systems</strong><br />
+<em>Zhou Zhou, Xu Yang, Dongfang Zhao, Paul Rich, Wei Tang, Jia Wang and Zhiling Lan</em></li>
+</ul>
+<div id="session10"></div>
+<p><strong>Session 10: Energy Efficiency-</strong>(Room: LaSalle Ballroom I)<br />
+Chair: Masaaki Kondo (Univ. Tokyo)</p>
+<ul>
+<li><strong>Performance-to-Power Ratio Aware Virtual Machine (VM) Allocation in Energy-Efficient Clouds<br />
+</strong><em>Xiaojun Ruan and Haiquan Chen</em></li>
+<li><strong>A Workload-Aware Energy Model for Virtual Machine Migration</strong><br />
+<em>Vincenzo De Maio, Gabor Kecskemeti and Radu Prodan</em></li>
+</ul>
+<div id="session11"></div>
+<p><strong>Session 11: Graph Processing-</strong>(Room: LaSalle Ballroom II)<br />
+Chair: Seetharami Seelam (IBM)</p>
+<ul>
+<li><strong>GraphTrek: Asynchronous Graph Traversal for Property Graph Based Metadata Management<br />
+</strong><em>Dong Dai, Philip Carns, Robert Ross, John Jenkins, Kyle Blauer and Yong Chen</em></li>
+<li><strong>Towards Multi-Site Metadata Management for Geographically Distributed Cloud Workflows</strong><br />
+<em>Luis Pineda-Morales, Alexandru Costan and Gabriel Antoniu</em></li>
+</ul>
+<h3>FRIDAY 11TH SEPTEMBER</h3>
+<p><strong>Session 12: Application Acceleration-</strong>(Room: LaSalle Ballroom I)<br />
+Chair: Tom Peterka (ANL)</p>
+<ul>
+<li><strong>PaRSEC in Practice: Optimizing a legacy Chemistry application through distributed task-based execution<br />
+</strong><em>Anthony Danalis, Heike McCraw, George Bosilca and Jack Dongarra</em></li>
+<li><strong>Optimizing Large Scale I/O for Petascale Seismic Simulations on Unstructured Meshes</strong> (short paper)<br />
+<em>Sebastian Rettenberger and Michael Bader</em></li>
+<li><strong>LBM-HPC an Open-Source Tool for Fluid Simulations. Case Study: Unified Parallel C (UPC-PGAS)</strong> (short paper)<br />
+<em>Pedro Valero-Lara and Johan Jansson</em></li>
+<li><strong>Scaling Data Intensive Physics Applications to 10k Cores on Non-Dedicated Clusters with Lobster</strong><br />
+<em>Anna Woodard, Matthias Wolf, Charles Mueller, Nil Valls, Ben Tovar, Patrick Donnelly, Peter Ivie, Kenyi Hurtado Anampa, Paul Brenner, Doug Thain, Kevin Lannon and Michael Hildreth</em></li>
+<li><strong>RE-PAGE: Domain-Specific REplication and PArallel Processing of GEnomic Data</strong><br />
+<em>Mucahid Kutlu and Gagan Agrawal</em></li>
+</ul>
+<div id="session13"></div>
+<p><strong>Session 13: Network and High Performance Communication-</strong>(Room: LaSalle Ballroom II)<br />
+Chair: Ron Brightwell (Sandia National Laboratories)</p>
+<ul>
+<li><strong>Re-evaluating Network Onload vs. Offload for the Many-Core Era<br />
+</strong><em>Matthew Dosanjh, Ryan Grant, Patrick Bridges and Ron Brightwell</em></li>
+<li><strong>Fast Calculation of Max-min Fair Rates for Multi-commodity Flows in Fat-tree Networks</strong><br />
+<em>Md Atiqul Mollah, Xin Yuan, Scott Pakin and Michael Lang</em></li>
+<li><strong>Comparing Global Link Arrangements for Dragonfly Networks</strong><br />
+<em>Emily Hastings, David Rincon-Cruz, Marc Spehlmann, Sofia Meyers, Anda Xu, David Bunde and Vitus Leung</em></li>
+<li><strong>Towards the InfiniBand SR-IOV vSwitch Architecture</strong><br />
+<em>Evangelos Tasoulas, Ernst Gunnar Gran, Bjorn Dag Johnsen, Kyrre Begnum and Tor Skeie</em></li>
+</ul>
+<div id="session14"></div>
+<p><strong>Session 14: Parallel Algorithms-</strong>(Room: LaSalle Ballroom I)<br />
+Chair: Hajime Fujita (Intel)</p>
+<ul>
+<li><strong>Lossless Floating-Point Compression Algorithms for Massively Parallel Architectures<br />
+</strong><em>Annie Yang, Hari Mukka, Farbod Hesaaraki and Martin Burtscher</em></li>
+<li><strong>Balancing Thread-level and Task-level Parallelism for Data-Intensive Workloads on Clusters and Clouds</strong> (short paper)<br />
+<em>Olivia Choudhury, Dinesh Rajan, Nicholas Hazekamp, Sandra Gesing, Douglas Thain and Scott Emrich</em></li>
+<li><strong>LU Factorization: Towards Hiding Communication Overheads With A Lookahead-free Algorithm</strong> (short paper)<br />
+<em>Tan Nguyen and Scott Baden</em></li>
+<li><strong>Distributed-Memory Algorithms for Maximal Cardinality Matching using Matrix Algebra</strong><br />
+<em>Ariful Azad and Aydin Buluc</em></li>
+</ul>
+<div id="session15"></div>
+<p><strong>Session 15: Task and Process Scheduling-</strong>(Room: LaSalle Ballroom II)<br />
+Chair: <span id="OLK_SRC_BODY_SECTION">Todd Gamblin (LLNL)</span></p>
+<ul>
+<li><strong>The Cost of Synchronizing Imbalanced Processes in Message Passing Systems<br />
+</strong><em>Ivy Peng, Stefano Markidis and Erwin Laure</em></li>
+<li><strong>An Approach to Selecting Thread + Process Mixes for Hybrid MPI + OpenMP Applications</strong><br />
+<em>Hormozd Gahvari, Martin Schulz and Ulrike Yang</em></li>
+<li><strong>On the Application Task Granularity and the Interplay with the Scheduling Overhead in Many-core Shared Memory Systems</strong><br />
+<em>Dana Akhmetova, Gokcen Kestor, Roberto Gioiosa and Stefano Markidis</em></li>
+</ul>
+<div id="session16"></div>
+<p><strong>Session 16: PGAS and Shared Memory Programming-</strong>(Room: LaSalle Ballroom I)<br />
+Chair:  Abdelhalim Amer (ANL)</p>
+<ul>
+<li><strong>OpenSHMEM as a Portable Communication Layer for PGAS Models – A Case Study with Coarray Fortran<br />
+</strong><em>Naveen Namashivayam, Deepak Eachempati, Dounia Khaldi and Barbara Chapman</em></li>
+<li><strong>A Team-Based Methodology of Memory Hierarchy-Aware Runtime Support in Coarray Fortran</strong> (short paper)<br />
+<em>Dounia Khaldi, Deepak Eachempati, Shiyao Ge, Pierre Jouvelot and Barbara Chapman</em></li>
+<li><strong>Optimizing Caching DSM for Distributed Software Speculation</strong> (short paper)<br />
+<em>Sai Charan Koduru, Keval Vora and Rajiv Gupta</em></li>
+<li><strong>Empirical Comparison of Three Versioning Architectures</strong> (short paper)<br />
+<em>Hajime Fujita, Kamil Iskra, Pavan Balaji and Andrew A. Chien</em></li>
+</ul>
+<div id="session17"></div>
+<p><strong>Session 17: Cluster Tools-</strong>(Room: LaSalle Ballroom II)<br />
+Chair: Ioan Raicu (IIT)</p>
+<ul>
+<li><strong>Toward Rapid Understanding of Production HPC Applications and Systems<br />
+</strong><em>Anthony Agelastos, Benjamin Allan, Jim Brandt, Ann Gentile, Sophia Lefantzi, Steve Monk, Jeff Ogden, Mahesh Rajan and Joel Stevenson</em></li>
+<li><strong>ObsCon: Integrated Monitoring and Control for Parallel, Real-time Applications</strong> (short paper)<br />
+<em>Shwetha Mathangi Chandra Choodamani, Alan Nussbaum and Karsten Schwan</em></li>
+<li><strong>VecMeter: An Easy-to-use Tool to Analyze Vectorization in HPC Codes</strong> (short paper)<br />
+<em>Joshua Peraza, Ananta Tiwari, William Ward, Roy Campbell and Laura Carrington</em></li>
+<li><strong>Toward Interlanguage </strong><b>Parallel Scripting for Distributed-Memory Scientific Computing</b> (short paper)<br />
+<em>Justin Wozniak, Timothy Armstrong, Ketan Maheshwari, Daniel Katz, Michael Wilde and Ian Foster</em></li>
+</ul>
+											</div><!-- .entry-content -->
+
+					<footer class="entry-meta">
+											</footer><!-- .entry-meta -->
+				</article><!-- #post -->
+
+				
+<div id="comments" class="comments-area">
+
+	
+	
+</div><!-- #comments -->
+			
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+	<div id="tertiary" class="sidebar-container" role="complementary">
+		<div class="sidebar-inner">
+			<div class="widget-area">
+				<aside id="text-10" class="widget widget_text">			<div class="textwidget"><span style="color: #ff0000"><strong>Important Dates (AOE time):</strong></span><br>
+<br>July 25, 2015<br>
+Early Bird Registration Cut-off Date<br>
+<br>August 1, 2015<br>
+Camera-ready Copy Deadline for Papers, Posters, and Workshops<br>
+<br>
+August 17, 2015<br>
+Hotel Reservation Cut-off Date<br>
+<br>
+
+<i>Read more <a href="../../author-information/important-dates/index.html">here</a></i></div>
+		</aside><aside id="text-4" class="widget widget_text">			<div class="textwidget"><td style="width: 20%" align="center" valign="middle"><a href="https://www.facebook.com/ieee.cluster"><img src="../../files/2014/03/fb_icon_325x325.png" style="width: 20%" align="center" />
+
+<td style="width: 24%" align="center" valign="middle"><a href="http://www.linkedin.com/groups/IEEE-International-Conference-on-Cluster-7428925"><img src="../../files/2014/03/InBug-60px-TM.png" style="width: 24%" align="center" />
+
+<a href="https://twitter.com/IEEECluster"><img src="../../files/2014/03/Twitter_logo_blue.png" style="width: 20%" align="center" />
+
+<td style="width: 20%" align="center" valign="middle"><a href="http://page.renren.com/601908387"><img src="../../files/2014/03/Renren_logo_100x100.png" style="width: 20%" align="center" />
+
+<p>
+
+
+<!-- Twitter Feed for WordPress: http://peadig.com/wordpress-plugins/wp-twitter-feed/ -->
+<div class="twitter-feed"><a class="twitter-timeline" href="https://twitter.com/IEEECluster" data-widget-id="443854468849758208">Tweets by IEEECluster</a>
+<p><a href="https://twitter.com/IEEECluster" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @IEEECluster</a></p><p>Powered by <a href="http://peadig.com/wordpress-plugins/wp-twitter-feed/">Twitter Feed</a></p></div>
+
+
+
+</div>
+		</aside><aside id="text-3" class="widget widget_text">			<div class="textwidget"><img class="aligncenter" alt="" src="../../files/2015/02/ComputerSocietyLogo-RGB-stacked.gif" width="239" height="86" /></div>
+		</aside>			</div><!-- .widget-area -->
+		</div><!-- .sidebar-inner -->
+	</div><!-- #tertiary -->
+
+		</div><!-- #main -->
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			
+			<div class="site-info">
+												<a href="https://wordpress.org/" class="imprint">
+					Proudly powered by WordPress				</a>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+	<script type='text/javascript' src='../../wp-content/themes/twentythirteen/js/functions.js@ver=20160717'></script>
+<script type='text/javascript' src='../../wp-includes/js/wp-embed.min.js@ver=4.9.9'></script>
+</body>
+</html>
