@@ -1,0 +1,50 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180912T133000
+DTEND;TZID=Europe/London:20180912T150000
+UID:ieeecluster_IEEE Cluster 2018_sess115@linklings.com
+SUMMARY:Paper session VII: Benchmarking and Modeling
+DESCRIPTION:Next Stop “NoOps": Enabling Cross-System Diagnostics Through G
+ raph-based Composition of Logs and Metrics\n\nZasadziński, Solé, Bran
+ don, Muntés-Mulero, Carrera\n\nPerforming diagnostics in IT systems is an 
+ increasingly complicated task, and it is not doable in satisfactory time b
+ y even most skillful operators. Systems and their architecture change very
+  rapidly in response to business and user demand. Many organizations see v
+ alue in the maintenance and managem...\n\n---------------------\nA Methodo
+ logy for Characterizing the Correspondence Between Real and Proxy Applicat
+ ions\n\nAaziz, Cook, Cook, Juedeman, Richards...\n\nProxy applications are
+  a simplified means for stakeholders to evaluate how both hardware and sof
+ tware stacks might perform on the class of real applications that they are
+  meant to model. However, characterizing the re- lationship between them a
+ nd their behavior is not an easy task. We present a data...\n\n-----------
+ ----------\nLightweight Requirements Engineering for Exascale Co-design\n\
+ nCalotoiu, Graf, Hoefler, Lorenz, Wolf\n\nGiven the tremendous cost of an 
+ exascale system, its architecture\n  must match the requirements of the ap
+ plications it is supposed to\n  run as precisely as possible. Conversely, 
+ applications must be\n  designed such that building an appropriate system 
+ becomes feasible,\n  motivating the idea of co-des...\n
+END:VEVENT
+END:VCALENDAR
+

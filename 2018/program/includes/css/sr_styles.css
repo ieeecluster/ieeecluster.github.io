@@ -1,0 +1,199 @@
+
+/* Overall html element settings. */
+body.normal {
+    background: white;
+    color: black;
+/*    line-height: 1.25;*/
+}
+body.in_iframe {
+    color: black;
+/*    line-height: 1.25;*/
+    padding: 0px;
+    margin: 5px;
+    border: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 5px 0px 5px 0px;
+}
+h1, h2 { font-size: 18px }
+h3, h4 { font-size: 16px }
+h5, h6 { font-size: 14px }
+
+/* Lists */
+ul { margin: 1ex 0ex 1ex 0ex; list-style-type: disc }
+ul ul, ol ul { margin: 1ex 0ex 1ex 0ex; list-style-type: disc }
+ol { margin: 1ex 0ex 1ex 0ex; }
+ul ol, ol ol { margin: 1ex 0ex 1ex 0ex; }
+
+.internal_sidebar {
+    margin: 0px 5px 0px 0px;
+    border-width: 0px;
+    border-color: rgb(65%,65%,65%);
+    border-style: solid;
+}
+
+iframe {
+    border: 1px solid lightgray;
+    /* border: medium double lightgray; */
+}
+
+object {
+    /* border: 1px solid lightgray; */
+    /* border: medium double lightgray; */
+}
+
+form {
+    margin: 0px;
+}
+
+/* The topbar. */
+.topbar b {
+    font-size: 14px;
+}
+.topbar ul {
+    margin: 0.5ex 0.5ex 0.5ex 0.5ex; padding: 0; font-size: 14px;
+}
+.topbar li { list-style-type: none; line-height: 110%; font-size: 14px; font-family: sans-serif; }
+.topbar A { color: blue; text-decoration: none }
+.topbar .logo { background: white; color: blue; }
+.topbar .conf_name { background: #336699; color: white; }
+/*.topbar .user_name { background: #336699; color: white; } */
+.topbar .menu { background: rgb(75%,75%,75%); color: #336699; }
+
+/* The banner. */
+/* .banner { background: #336699; color: white; font-size: 25px; font-family: Arial, Helvetica, sans-serif; font-variant: small-caps } */
+/* .event_name { background: #336699; color: white; font-size: 14px; font-family: Arial, Helvetica, sans-serif; } */
+/* .user_name { background: #336699; color: white; font-size: 14px; font-family: Arial, Helvetica, sans-serif; } */
+/* The title bar. */
+.site_title {
+    font-size: 14px;
+}
+.site_title A { color: yellow; font-size: 12px; text-decoration: none }
+.event_name {
+    color: white;
+    font-size: 14px;
+}
+.banner_top {
+    padding: 5px;
+}
+.banner_right {
+/*    font-size: 14px;*/
+    padding-right: 5px;
+}
+.no_logo_banner_right {
+/*    font-size: 14px;*/
+    padding-right: 5px;
+}
+.user_name {
+    color: white; font-size: 12px;
+}
+.user_name A { color: yellow; font-size: 12px; text-decoration: none }
+
+/* For the role / submission type select bar. */
+.role_stype_bar {
+    font-size: 14px;
+    padding: 3px;
+}
+.role_stype_bar A {
+    color: blue; text-decoration: none;
+}
+
+#breadcrumbs {
+	margin: 3px 0px 0px 7px;
+	/* float: left; */
+	/* height: 1%; */
+	font-size: 12px;
+}
+#breadcrumbs a {
+	color: black;
+}
+
+.links_and_docs {
+    padding: 0px 5px 0px 5px;
+}
+
+.page_title {
+    /* background: #FFFFE9 none repeat scroll 0%; */
+    line-height: 1.25;
+    /* margin: 5px 0px 10px 0px; */
+    padding: 0px;
+    padding-top: 8px;
+    padding-bottom: 16px;
+    font-size: 16px;
+    color: brown;
+}
+
+/* For likely links. */
+.likely_links {
+    border-width: 0px 0px 1px 0px; border-color: rgb(65%,65%,65%); border-style: solid;
+    padding: 3px 3px 3px 3px;
+    line-height: 1;
+}
+
+/* About-this-page section. */
+.pagedoc {
+    padding: 3px 3px 3px 3px;
+    line-height: 1;
+}
+
+/* surround tables in a no_padding div to get rid of auto (from above) padding */
+.no_padding td, .no_padding tr td, .no_padding table tr td {
+     padding: 0px;
+     margin: 0px;
+}
+.no_padding table tr.even td, .no_padding table tr.odd td {
+    padding: 0px 0px;
+}
+
+.announcement,
+.todolist {
+    /* background-color: #FEDBA3; same as typical dark even row */
+    background-color: #fcc56e; /* darker orange for contrast with even odd rows */
+    /* background-color: #e0ab76; same as default role select bar, darkish orange brown */
+    padding: 5px 7px;
+    border-radius: 4px;
+}
+
+.announcement .announcement_title,
+.todolist .todolist_title {
+    font-size: 140%;
+}
+
+/* Tool-tip links for showing info. */
+img.tooltip:hover {
+    cursor: help;
+}
+
+/* Program at a glance page */
+.pg_timeslot {
+    padding: 1px 5px 1px 5px;
+    background-color: rgb(55%, 95%, 55%);
+}
+
+.editable {
+    color: blue;
+}
+.editable:hover {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* jquery-ui */
+.ui-dialog-titlebar {
+    background-color: #BBBBBB;
+    color: #204a85;
+    padding: 3px 5px 0px 10px;
+    border: none;
+    text-align: left;
+}
+.ui-dialog-title {
+    float: left;
+}
+.ui-dialog-titlebar-close, ui-dialog-titlebar-close-hover {
+    float: right;
+}
+.ui-dialog-content {
+    background-color: #E5E5E5;
+}

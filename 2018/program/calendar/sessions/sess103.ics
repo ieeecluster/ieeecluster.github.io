@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180911T104500
+DTEND;TZID=Europe/London:20180911T121500
+UID:ieeecluster_IEEE Cluster 2018_sess103@linklings.com
+SUMMARY:Session I: best papers (Areas 1 and 2)
+DESCRIPTION:PaSTRI: Error-Bounded Lossy Compression for Two-Electron Integ
+ rals in Quantum Chemistry\n\nGok, Di, Alexeev, Tao, Mironov...\n\nComputat
+ ion of two-electron repulsion integrals is the critical and the most time-
+ consuming step in a typical quantum chemistry simulation. Such calculation
+ s have massive computing and storage requirements, which scale as O(n^4) w
+ ith the size of a chemical system. Compressing the integral's data and...\
+ n\n---------------------\nSALaR: Scalable and Adaptive Designs for Large M
+ essage Reduction Collectives\n\nBayatpour, Maqbool Hashmi, Chakraborty, Ko
+ usha, Subramoni...\n\nMessage Passing Interface (MPI), thus far, has remai
+ ned a dominant programming models to program large-scale scientific applic
+ ations. Collective communication operations in MPI are of significant impo
+ rtance due to their communication intensive nature and use in scientific a
+ pplications. With the emer...\n
+END:VEVENT
+END:VCALENDAR
+

@@ -1,0 +1,52 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180913T163000
+DTEND;TZID=Europe/London:20180913T164500
+UID:ieeecluster_IEEE Cluster 2018_sess129_pap164@linklings.com
+SUMMARY:A Server-managed Transparent Object Storage Abstraction for HPC
+DESCRIPTION:A Server-managed Transparent Object Storage Abstraction for HP
+ C\n\nMu, Soumagne, Tang...\n\n\nOn the road to exascale, the high-performa
+ nce computing (HPC) community is seeing the emergence of multi-tier storag
+ e systems that take aim at the unprecedented amount of data being produced
+  by scientific applications. Multi-tier storage in HPC systems take advant
+ age of new technologies such as non-volatile memory, burst buffer, etc., a
+ nd bring the benefit of increased I/O bandwidth. However, existing data ma
+ nagement solutions for HPC applications, which were mainly developed for s
+ ingle-tier storage, are no longer suitable at handling the increased level
+  of complexity and currently delegate the task of handling deep memory hie
+ rarchies back to the user. This presents programming challenges for applic
+ ation developers and is an opportunity for defining new storage and I/O pa
+ radigms. \nWe describe a novel object-based data abstraction that takes ad
+ vantage of deep memory hierarchies by providing a simplified programming i
+ nterface that enables autonomous, asynchronous, and transparent data movem
+ ent with a server-driven architecture. Users can define a mapping between 
+ application memory and these abstract storage objects, creating a linkage 
+ between either all or part of an object’s content without making data copy
+  or transfer calls, avoiding explicit management of complex data movement 
+ across multiple storage hierarchies. We evaluate our system by storing pla
+ sma physics simulation data with different storage layouts.
+END:VEVENT
+END:VCALENDAR
+

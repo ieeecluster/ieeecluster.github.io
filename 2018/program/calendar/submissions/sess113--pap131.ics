@@ -1,0 +1,58 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180912T113000
+DTEND;TZID=Europe/London:20180912T121500
+UID:ieeecluster_IEEE Cluster 2018_sess113_pap131@linklings.com
+SUMMARY:An Efficient Transformation Scheme for Lossy Data Compression with
+  Point-wise Relative Error Bound
+DESCRIPTION:An Efficient Transformation Scheme for Lossy Data Compression 
+ with Point-wise Relative Error Bound\n\nLiang, Di, Tao...\n\n\nBecause of 
+ the ever-increasing execution scale of scientific applications, how to sto
+ re the extremely large volume of data efficiently is becoming a serious is
+ sue. A significant reduction of the scientific data size can effectively m
+ itigate the I/O burden and save considerable storage space. Since lossless
+  compressors suffer from limited compression ratios, error-controlled loss
+ y compressors have been studied for years. Existing error-controlled lossy
+  compressors, however,  focus mainly on absolute error bounds, which canno
+ t meet users' diverse demands such as pointwise relative error bounds. Alt
+ hough some of the state-of-the-art lossy compressors support pointwise rel
+ ative error bound, the compression ratios are generally low because of the
+  limitation in their designs and possible spiky data changes in local data
+  regions. In this work, we propose a novel, efficient approach to perform 
+ compression based on the pointwise relative error bound with higher compre
+ ssion ratios than existing solutions provide. Our contribution is threefol
+ d. (1) We propose a novel transformation scheme that can transfer the poin
+ twise relative-error-bounded compression problem to an absolute-error-boun
+ ded compression issue. We also analyze the practical properties of our tra
+ nsformation scheme both theoretically and experimentally. (2) We implement
+  the proposed technique in two of the most popular absolute-error-bounded 
+ lossy compressors, SZ and ZFP. (3) We evaluate our solution using multiple
+  real-world application data across different scientific domains on a supe
+ rcomputer with up to 4,096 cores and 12 TB of data. Experiments show that 
+ our solution achieves over $1.38X$ dumping and $1.31X$ loading performance
+  over the second-best lossy compressor, respectively.
+END:VEVENT
+END:VCALENDAR
+

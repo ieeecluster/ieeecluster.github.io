@@ -1,0 +1,52 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180911T153000
+DTEND;TZID=Europe/London:20180911T160000
+UID:ieeecluster_IEEE Cluster 2018_sess108_pap244@linklings.com
+SUMMARY:SciDP: Support HPC and Big Data Applications via Integrated Scient
+ ific Data Processing
+DESCRIPTION:SciDP: Support HPC and Big Data Applications via Integrated Sc
+ ientific Data Processing\n\nFeng, Sun, Yang...\n\n\nModern High Performanc
+ e Computing (HPC) applications, such as Earth science simulations, produce
+  large amounts of data due to the surging of computing power, while big da
+ ta applications have become more compute-intensive due to increasingly sop
+ histicated analysis algorithms. The needs of both HPC and big data technol
+ ogies for advanced HPC and big data applications create a demand for integ
+ rated system support. In this study, we introduce Scientific Data Processi
+ ng (SciDP) to support both HPC and big data applications via integrated sc
+ ientific data processing. SciDP can directly process scientific data store
+ d on a Parallel File System (PFS), which is typically deployed in an HPC e
+ nvironment, in a big data programming environment running atop Hadoop Dist
+ ributed File System (HDFS). SciDP seamlessly integrates PFS, HDFS, and the
+  widely-used R data analysis system to support highly efficient processing
+  of scientific data. It utilizes the merits of both PFS and HDFS for fast 
+ data transfer, overlaps computing with data accessing, and integrates R in
+ to the data transfer process. Experimental results show that SciDP acceler
+ ates analysis and visualization of a production NASA Center for Climate Si
+ mulation (NCCS) climate and weather application by 6x to 8x when compared 
+ to existing solutions.
+END:VEVENT
+END:VCALENDAR
+

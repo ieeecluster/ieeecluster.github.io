@@ -1,0 +1,51 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180912T143000
+DTEND;TZID=Europe/London:20180912T150000
+UID:ieeecluster_IEEE Cluster 2018_sess114_pap105@linklings.com
+SUMMARY:A Heterogeneity-Aware Task Scheduler for Spark
+DESCRIPTION:A Heterogeneity-Aware Task Scheduler for Spark\n\nXu, Butt, Li
+ m...\n\n\nBig data processing systems such as Spark are employed in an inc
+ reasing number of diverse applications such as machine learning, graph com
+ putation, and scientific computing, each with dynamic and different resour
+ ce needs. These applications increasingly run on heterogeneous hardware, e
+ .g., with out-of-core accelerators. However, big data platforms do not fac
+ tor in this multi-dimensional heterogeneity of applications and hardware l
+ eading to a fundamental mismatch between the application and hardware char
+ acteristics, and the resource scheduling adopted in big data platforms. Fo
+ r example, Hadoop and Spark consider only data locality when assigning tas
+ ks to nodes and typically disregard the hardware capabilities and their su
+ itability to specific application requirements.\n\nIn this paper, we prese
+ nt RUPAM, a heterogeneity-aware task scheduling system for big data platfo
+ rms, which considers both task-level resource characteristics and underlyi
+ ng hardware characteristics, as well as preserves data locality. RUPAM ado
+ pts a simple yet effective heuristic to decide the dominant scheduling fac
+ tor, e.g., CPU, memory, or I/O, given a task in a particular stage. Our ex
+ periments show that RUPAM is able to improve the performance of representa
+ tive applications by up to 62.26% compared to the standard Spark scheduler
+ .
+END:VEVENT
+END:VCALENDAR
+
