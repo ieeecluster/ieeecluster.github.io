@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/xslt/rss.xslt" ?>
+<?xml-stylesheet type="text/css" href="/assets/css/rss.css" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>IEEE Cluster 2017</title>
+		<description>Website for IEEE Cluster 2017, September 2017, Hawaii, USA</description>
+		<link>https://ieeecluster.github.io/2017/</link>
+		<atom:link href="https://ieeecluster.github.io/2017/feed.xml" rel="self" type="application/rss+xml" />
+		
+	</channel>
+</rss>

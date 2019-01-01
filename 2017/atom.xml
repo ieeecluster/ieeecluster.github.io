@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/xslt/atom.xslt" ?>
+<?xml-stylesheet type="text/css" href="/assets/css/atom.css" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<id>https://ieeecluster.github.io/2017/</id>
+	<title>IEEE Cluster 2017</title>
+	<updated>2019-01-02T00:23:45+08:00</updated>
+
+	<subtitle>Website for IEEE Cluster 2017, September 2017, Hawaii, USA</subtitle>
+
+	
+		
+		<author>
+			
+				<name>Leo</name>
+			
+			
+			
+				<uri>http://leobago.com/</uri>
+			
+		</author>
+	
+
+	<link href="https://ieeecluster.github.io/2017/atom.xml" rel="self" type="application/rss+xml" />
+	<link href="https://ieeecluster.github.io/2017/" rel="alternate" type="text/html" />
+
+	<generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator>
+
+	
+</feed>
