@@ -1,0 +1,53 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180913T104500
+DTEND;TZID=Europe/London:20180913T111500
+UID:ieeecluster_IEEE Cluster 2018_sess123_pap308@linklings.com
+SUMMARY:Leveraging Dependency in Scheduling and Preemption for High Throug
+ hput in Data-Parallel Clusters
+DESCRIPTION:Leveraging Dependency in Scheduling and Preemption for High Th
+ roughput in Data-Parallel Clusters\n\nLiu, Shen, Sarker\n\n\nTask scheduli
+ ng and preemption are two important functions in data-parallel clusters. T
+ hough directed acyclic graph task dependencies are common in data-parallel
+  clusters, previous task scheduling and preemption methods do not fully ut
+ ilize such task dependency to increase throughput since they simply schedu
+ le precedent tasks prior to their dependent tasks or neglect the dependenc
+ y. We notice that in both scheduling and preemption, choosing a task with 
+ more dependent tasks to run allows more tasks to be runnable next, which f
+ acilitates to select a task that can more increase throughput. Accordingly
+ , in this paper, we propose a Dependency-aware Scheduling and Preemption s
+ ystem (DSP) to achieve high throughput. First, we build an integer linear 
+ programming model to minimize the makespan (i.e., the time when all jobs f
+ inish execution) with the consideration of task dependency and deadline, a
+ nd derive the target server and start time for each task, which can minimi
+ ze the makespan. Second, we utilize task dependency to determine tasks' pr
+ iorities for preemption. Finally, we propose a method to reduce the number
+  of unnecessary preemptions that cause more overhead than the throughput g
+ ain. Extensive experimental results based on a real cluster and Amazon EC2
+  cloud service show that DSP achieves much higher throughput compared to e
+ xisting strategies.
+END:VEVENT
+END:VCALENDAR
+

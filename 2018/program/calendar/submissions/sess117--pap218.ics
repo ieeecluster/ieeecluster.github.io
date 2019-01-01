@@ -1,0 +1,50 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180912T163000
+DTEND;TZID=Europe/London:20180912T170000
+UID:ieeecluster_IEEE Cluster 2018_sess117_pap218@linklings.com
+SUMMARY:Optimizing Distributed Data-Intensive Workflows
+DESCRIPTION:Optimizing Distributed Data-Intensive Workflows\n\nFriese, Tal
+ lent, Schram...\n\n\nWe present techniques for optimizing the performance 
+ of data-intensive workflows that execute on geographically distributed and
+  heterogeneous resources. We optimize for both throughput and response tim
+ e. Optimizing for throughput, we alleviate data-transfer bottlenecks. To h
+ ide access times of accessing remote data, we transparently introduce pref
+ etching (overlapping data transfer and computation), without changing work
+ flow source code. Optimizing for response time, we introduce intelligent s
+ cheduling for a set of high-priority tasks. We replace a greedy scheduler 
+ that assigns tasks without accounting for differing performance on heterog
+ eneous resources, leading to long latencies. Intelligent scheduling rapidl
+ y selects a near-optimal solution for a bi-objective optimization problem.
+  One objective is a good task assignment; the other objective is minimize 
+ I/O contention by distributing load across resources and time. To reason a
+ bout task completion times, we use modeling tools to generate accurate pre
+ dictions of execution times. We show performance results for Belle II work
+ flow for high energy physics. The combination of these techniques can impr
+ ove throughput over production Belle II configurations by 20-40%. Our work
+  is general and adaptable to other distributed workflows.
+END:VEVENT
+END:VCALENDAR
+

@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180913T090000
+DTEND;TZID=Europe/London:20180913T101500
+UID:ieeecluster_IEEE Cluster 2018_sess120_key101@linklings.com
+SUMMARY:Programmability, Portability and Performance: Challenges and Oppor
+ tunities in Enabling Usable Systems in the Exascale Era
+DESCRIPTION:Programmability, Portability and Performance: Challenges and O
+ pportunities in Enabling Usable Systems in the Exascale Era\n\nO’Brien\n\n
+ \nIBM recently assumed 1st and 3rd position on the Top 500 with the DOE CO
+ RAL Summit and Sierra systems respectively. This achievement represents th
+ e culmination of a strong technical collaboration between various groups w
+ ithin IBM as well as the CORAL partners. In this talk I will discuss the c
+ hallenges and opportunities encountered in the course of building a CORAL 
+ programming environment to address the critical requirements of Programmab
+ ility, Performance and Portability. I will also briefly look forward to th
+ e ongoing challenges in evolving these programming environment beyond pure
+ ly HPC, to address the broader and ubiquitous requirements of machine lear
+ ning applications.
+END:VEVENT
+END:VCALENDAR
+

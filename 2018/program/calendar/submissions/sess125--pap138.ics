@@ -1,0 +1,52 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180913T133000
+DTEND;TZID=Europe/London:20180913T140000
+UID:ieeecluster_IEEE Cluster 2018_sess125_pap138@linklings.com
+SUMMARY:Efficient Training of Convolutional Neural Nets on Large Distribut
+ ed Systems
+DESCRIPTION:Efficient Training of Convolutional Neural Nets on Large Distr
+ ibuted Systems\n\nSreedhar, Saxena, Sabharwal...\n\n\nDeep Neural Networks
+  (DNNs) have achieved impressive accuracy in many application domains incl
+ uding image classification. Training of DNNs is an extremely compute inten
+ sive process and is solved using variants of the stochastic gradient desce
+ nt (SGD) algorithm. A lot of recent research has focused on improving the 
+ performance of DNN training. In this paper, we present optimization techni
+ ques to improve the performance of the data parallel synchronous SGD algor
+ ithm using the Torch framework: (i) we maintain data in-memory to avoid fi
+ le I/O overheads, (ii) we propose optimizations to the Torch data parallel
+  table framework that handles multithreading, and (iii) we present MPI opt
+ imization to minimize communication overheads. We evaluate the performance
+  of our optimizations on a Power 8 Minsky cluster with 64 nodes and 256 NV
+ idia Pascal P100 GPUs. With our optimizations, we are able to train 90 epo
+ chs of the ResNet-50 model on the Imagenet-1k dataset using 256 GPUs in ju
+ st 48 minutes. This significantly improves on the previously best known pe
+ rformance of training 90 epochs of the ResNet-50 model on the same dataset
+  using the same number of GPUs in 65 minutes. To the best of our knowledge
+ , this is the best known training performance demonstrated for the Imagene
+ t-1k dataset using 256 GPUs.
+END:VEVENT
+END:VCALENDAR
+

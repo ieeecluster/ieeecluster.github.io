@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180911T143000
+DTEND;TZID=Europe/London:20180911T150000
+UID:ieeecluster_IEEE Cluster 2018_sess105_pap290@linklings.com
+SUMMARY:A New Approach for Sparse Matrix Classification Based on Deep Lear
+ ning Techniques
+DESCRIPTION:A New Approach for Sparse Matrix Classification Based on Deep 
+ Learning Techniques\n\nPichel, Pateiro-López\n\n\nIn this paper, a new met
+ hodology to select the best storage format for sparse matrices based on de
+ ep learning techniques is introduced. We focus on the selection of the pro
+ per format for the sparse matrix-vector multiplication (SpMV), which is on
+ e of the most important computational kernels in many scientific and engin
+ eering applications. Our approach considers the sparsity pattern of the ma
+ trices as an image, using the RGB channels to code several of the matrix p
+ roperties. As a consequence, we generate image datasets that include enoug
+ h information to successfully train a Convolutional Neural Network (CNN). 
+ Considering GPUs as target platforms, the trained CNN selects the best sto
+ rage format 90.1% of the time, obtaining 99.4% of the highest SpMV perform
+ ance among the tested formats.
+END:VEVENT
+END:VCALENDAR
+

@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180912T153000
+DTEND;TZID=Europe/London:20180912T170000
+UID:ieeecluster_IEEE Cluster 2018_sess117@linklings.com
+SUMMARY:Paper session IX: Graphs and Big Data Analytics
+DESCRIPTION:A Scalable Distributed Louvain Algorithm for Large-scale Graph
+  Community Detection\n\nZeng, Yu\n\nWe present a new distributed community
+  detection algorithm for large graphs based on the Louvain method. We expl
+ oit a distributed delegate partitioning to ensure the workload and communi
+ cation balancing among processors. In addition, we design a new heuristic 
+ strategy to carefully coordinate the com...\n\n---------------------\nOpti
+ mizing Distributed Data-Intensive Workflows\n\nFriese, Tallent, Schram, Ha
+ lappanavar, Barker\n\nWe present techniques for optimizing the performance
+  of data-intensive workflows that execute on geographically distributed an
+ d heterogeneous resources. We optimize for both throughput and response ti
+ me. Optimizing for throughput, we alleviate data-transfer bottlenecks. To 
+ hide access times of acces...\n\n---------------------\nComputing Exact Ve
+ rtex Eccentricity on Massive-scale Distributed Graphs\n\nIwabuchi, Sanders
+ , Henderson, Pearce\n\nThe eccentricity of a vertex is defined as the leng
+ th of the longest shortest path to any other vertex. While eccentricity is
+  an important measure of vertex centrality, directly computing exact eccen
+ tricity for all vertices on large-scale graphs is prohibitively costly. Ta
+ kes and Kosters proposed an...\n
+END:VEVENT
+END:VCALENDAR
+

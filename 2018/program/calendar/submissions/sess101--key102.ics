@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180911T090000
+DTEND;TZID=Europe/London:20180911T101500
+UID:ieeecluster_IEEE Cluster 2018_sess101_key102@linklings.com
+SUMMARY:Crossing the Chasm: How to develop weather and climate models for 
+ next generation computers
+DESCRIPTION:Crossing the Chasm: How to develop weather and climate models 
+ for next generation computers\n\nMaynard\n\n\nEnergy constraints in proces
+ sor design have led to radically different computer architectures than for
+  example the ubiquitous x86 architecture. The newer generations of process
+ ors are not faster but inherently more parallel. For scientific and numeri
+ cal computing in general this poses a number of challenges. Rapidly evolvi
+ ng hardware and the absence of a programming model in which to express thi
+ s explosion of parallelism further compound these problems. This is partic
+ ular acute for weather and climate codes which are large and complex, with
+  many hundreds of thousands of lines of code, representing a significant i
+ nvestment in scientific development and have long development cycles of a 
+ decade or more. In this talk I will outline some approaches to this softwa
+ re challenge, such as developing domain specific languages, being taken by
+  several European groups to cross the chasm between our scientific aspirat
+ ion to exploit  Exascale computing and our ability to port, develop a
+ nd adapt existing code to new architectures.
+END:VEVENT
+END:VCALENDAR
+

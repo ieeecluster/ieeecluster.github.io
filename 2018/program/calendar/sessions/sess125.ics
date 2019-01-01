@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180913T133000
+DTEND;TZID=Europe/London:20180913T150000
+UID:ieeecluster_IEEE Cluster 2018_sess125@linklings.com
+SUMMARY:Paper session XIII: Deep Learning
+DESCRIPTION:Accelerating Deep Learning Frameworks with Micro-batches\n\nOy
+ ama, Ben-Nun, Hoefler, Matsuoka\n\ncuDNN is a low-level library that provi
+ des GPU kernels frequently used in deep learning. Specifically, cuDNN impl
+ ements several equivalent convolution algorithms, whose performance and me
+ mory footprint may vary considerably, depending on the layer dimensions. W
+ hen an algorithm is automatically selec...\n\n---------------------\nswCaf
+ fe: a Parallel Framework for Accelerating Deep Learning Applications on Su
+ nway TaihuLight\n\nLi, Fang, Fu, Jiang, Zhao...\n\nThis paper reports our 
+ efforts on swCaffe, a high-efficient parallel framework for accelerating d
+ eep neural networks (DNNs) training on Sunway TaihuLight, one of the faste
+ st supercomputers in the world that adopts a unique heterogeneous many-cor
+ e architecture. First, we point out some insightful pri...\n\n------------
+ ---------\nEfficient Training of Convolutional Neural Nets on Large Distri
+ buted Systems\n\nSreedhar, Saxena, Sabharwal, Verma, Kumar\n\nDeep Neural 
+ Networks (DNNs) have achieved impressive accuracy in many application doma
+ ins including image classification. Training of DNNs is an extremely compu
+ te intensive process and is solved using variants of the stochastic gradie
+ nt descent (SGD) algorithm. A lot of recent research has focused o...\n
+END:VEVENT
+END:VCALENDAR
+

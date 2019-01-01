@@ -1,0 +1,21 @@
+- menu_name: "Related Links"
+
+- name: "IEEE Home"
+  url: "http://www.ieee.org/"
+  class: "network"
+  title: "Institute of Electrical and Electronics Engineers"
+
+- name: "IEEE Cluster 2017"
+  url: "https://cluster17.github.io"
+  class: "network"
+  title: "IEEE Cluster 2017"
+
+- name: "IEEE Cluster 2016"
+  url: "http://ieeecluster2016.org"
+  class: "network"
+  title: "IEEE Cluster 2016"
+
+- name: "IEEE Computer Society"
+  url: "http://www.computer.org"
+  class: "network"
+  title: "The Community for Technology Leaders"

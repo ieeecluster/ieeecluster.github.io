@@ -1,0 +1,30 @@
+
+/* 
+Should be used when curr.for_printing is on - simple styles good for black-and-white
+printing, exporting pages to PDFs, etc.
+*/
+
+body {
+    background: white;
+    margin: 10px;
+}
+.contents { 
+     background: white; 
+     padding: 15px 15px 15px 15px;
+     line-height: 1.25; 
+}
+.contents A { color: blue }
+
+#footer { 
+    background: white;
+    color: black;
+    font-size: 12px;
+    font-style: italic;
+}
+#footer a {
+    color: blue;
+    text-decoration: none;
+}
+#footer a:hover {
+    text-decoration: underline;
+}

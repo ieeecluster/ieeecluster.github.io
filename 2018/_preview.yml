@@ -1,0 +1,7 @@
+# This config sets localhost:4000 as the site url.
+# Use it like this for previewing the site:
+#
+#    jekyll serve --config _config.yml,_preview.yml
+#
+#
+url: 'http://localhost:4000'

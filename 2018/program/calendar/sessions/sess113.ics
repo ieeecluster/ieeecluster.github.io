@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180912T104500
+DTEND;TZID=Europe/London:20180912T121500
+UID:ieeecluster_IEEE Cluster 2018_sess113@linklings.com
+SUMMARY:Session VI: Best papers - Areas 3 and 4
+DESCRIPTION:Neural network based silent error detector\n\nWang, Dryden, Ca
+ ppello, Snir\n\nAs we move toward exascale platforms, silent data corrupti
+ ons (SDC) are likely to occur more frequently. Such errors can lead to inc
+ orrect results. Attempts have been made to use generic algorithms to detec
+ t such errors. Such detectors have demonstrated high precision and recall 
+ for detecting errors...\n\n---------------------\nAn Efficient Transformat
+ ion Scheme for Lossy Data Compression with Point-wise Relative Error Bound
+ \n\nLiang, Di, Tao, Chen, Cappello\n\nBecause of the ever-increasing execu
+ tion scale of scientific applications, how to store the extremely large vo
+ lume of data efficiently is becoming a serious issue. A significant reduct
+ ion of the scientific data size can effectively mitigate the I/O burden an
+ d save considerable storage space. Since l...\n
+END:VEVENT
+END:VCALENDAR
+
