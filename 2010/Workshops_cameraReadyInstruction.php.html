@@ -1,0 +1,451 @@
+<HTML>	
+<HEAD>	
+<TITLE>CLUSTER 2010 WORKSHOPS AND POSTERS Author Kit</TITLE>
+
+
+
+<meta name="keywords" content="CS Store"> 
+<meta name="description" content="CS Store"> 
+<meta HTTP-EQUIV="Content-Language" CONTENT="en-US"> 
+<meta HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="DC.Language" content="en"> 
+<meta rel="schema.DC" href="http://dublincore.org/documents/dces/">
+<meta name="DC.Publisher" content="IEEE Computer Society"> 
+<meta name="DC.Type" content="text"> 
+<meta name="DC.Format" content="text/html"> 
+<meta name="DC.Title" content="IEEE Computer Society Store"> 
+<meta name="DC.Description" content="IEEE Computer Society Store"> 
+<meta name="DC.Date" content="2005-11"> 
+<meta name="NEWDATE" content="2005/11/04"> 
+<meta name="DC.Relation.IsPartOf" content="CS Store"> 
+<meta name="DC.Subject" content="CS Store"> 
+<meta name="DC.Source" content="http://www.computer.org/portal/site/store/">
+<meta name="DC.Rights" content="Copyright &copy; 2005 Institute of Electrical and Electronics Engineers, Inc. All rights reserved."> 
+<meta name="DC.Creator" content="IEEE">
+
+<SCRIPT language=JavaScript
+src="CPSLibrary/flatirons.js"
+type=text/javascript></SCRIPT>
+
+<script language=JavaScript
+src="http://www.computer.org/portal/cms_docs_cs/ieeecs/js/etokle_jscript.js"
+ type="text/javascript"></script>
+<SCRIPT language=JavaScript
+src="http://www.computer.org/portal/cms_docs_cs/ieeecs/js/milonic_src.js"
+type=text/javascript></SCRIPT>
+<script     language=JavaScript>
+if(ns4)_d.write("<scr"+"ipt language=JavaScript src=http://www.computer.org/portal/cms_docs_cs/ieecs/js/mmenuns4.js><\/scr"+"ipt>");
+  else _d.write("<scr"+"ipt language=JavaScript src=http://www.computer.org/portal/cms_docs_cs/ieeecs/js/mmenudom.js><\/scr"+"ipt>");
+</script>
+<SCRIPT language=JavaScript
+src="http://www.computer.org/portal/cms_docs_cs/cscps/js/menu_data.js"
+type=text/javascript></SCRIPT>
+
+<LINK rel="stylesheet"
+href="http://www.computer.org/portal/cms_docs_cs/cscps/port_includes/cscps_stylesheet.css"
+ type="text/css">
+
+<link rel="stylesheet" type="text/css" media="print"
+href="http://www.computer.org/portal/cms_docs_cs/csdl/port_includes/csdl_printonly.css">
+
+<style type="text/css">
+      @media print {
+      .mmenu {
+            position:absolute;
+            display: none;
+            }
+      }
+      .required {
+			color: red;
+			font-weight: bold;
+	  }
+</style>
+
+<base target="_top">
+</head>
+<body leftmargin="0" rightmargin="0" topmargin="0" marginheight="0"
+marginwidth="0">
+
+
+<script Language = JavaScript>
+function validatePaperSubmission ()
+{
+	var returnMsg = "";
+	var warnToWait = "Please do not close the browser or click the back button while the File is uploading. This can take a while depending on the file size.";
+	if (document.PaperSubmitForm.Copyright[1].checked){
+		returnMsg = returnMsg + "Copyright transfer must be complete before you can submit a paper.\n";
+	} 
+	if (document.PaperSubmitForm.PDFExpress[1].checked){
+		returnMsg = returnMsg + "PDF eXpress validation must be complete before you can submit a paper.\n";
+	} 
+	var emailAddress = document.PaperSubmitForm.SubmitterEmail.value;
+	returnMsg = returnMsg + emailCheck(emailAddress);
+	
+	var submitterName = document.PaperSubmitForm.SubmitterName.value;
+	if (submitterName == "") {
+		returnMsg = returnMsg + "You must enter the Submitter's name to upload.\n";
+	} else 
+	if (submitterName.hasNumeric()){
+		returnMsg = returnMsg + "Submitter must not contain numeric characters.\n";
+	}
+	
+    if(document.PaperSubmitForm.File1.value == "")
+    {
+         returnMsg = returnMsg + "You must select a File to upload.\n";
+    }
+    
+    var authors = document.PaperSubmitForm.Authors.value; 
+    if (authors == "") {
+		returnMsg = returnMsg + "You must enter the Authors to upload.\n";
+	}/* else 
+	if (authors.hasNumeric()){
+		returnMsg = returnMsg + "Author input must not contain numeric characters.\n";
+	} */
+	//replace ' & ' and ' and ' with ','
+	authors = authors.replace(/ & /g, ", ");
+	authors = authors.replace(/ and /ig, ", ");
+	document.PaperSubmitForm.Authors.value = authors;
+	
+	if(document.PaperSubmitForm.Abstract.value.trim() == "")
+    {
+         returnMsg = returnMsg + "You must enter the Abstract to upload.\n";
+    }
+    
+    /*if(document.PaperSubmitForm.Keywords.value.trim() == "")
+    {
+         returnMsg = returnMsg + "You must enter Keywords to upload.\n";
+    }*/
+    
+    var totalPages = document.PaperSubmitForm.PageCount.value;
+
+	if (isNaN(parseInt(totalPages)))
+	{
+		returnMsg = returnMsg + "Total Pages must be an integer value and is required.\n";
+	} 
+	
+    if (returnMsg != "") {
+		alert(returnMsg);
+		return false;
+    } else {
+		alert(warnToWait);
+		return true; 
+    } 
+} 
+
+function validateAndUpdateECFFields ()
+{
+	var returnMsg = "";
+	
+	var authNameValue = document.ECFSubmitForm.AuthName.value.trim();
+	if(authNameValue == "")
+    {
+         returnMsg = returnMsg + "Author name is a required field.\n";
+    } else 
+    if (authNameValue.hasNumeric()){
+		returnMsg = returnMsg + "Author name must not contain numeric characters.\n";
+	} 
+	var emailAddress = document.ECFSubmitForm.AuthEmail.value;
+	returnMsg = returnMsg + emailCheck(emailAddress);
+	
+    if (returnMsg != "") {
+		alert(returnMsg);
+		return false;
+    } else {
+		document.ECFSubmitForm.rtrnurl.value = location.href + "&From=ECF";
+		document.PaperSubmitForm.SubmitterName.value = document.ECFSubmitForm.AuthName.value.trim();
+		document.PaperSubmitForm.SubmitterEmail.value = emailAddress.trim();
+		document.PaperSubmitForm.PaperTitle.value = document.ECFSubmitForm.ArtTitle.value.trim();
+        return true; 
+    } 
+	
+}
+
+function checkFile(){
+	if (document.PaperSubmitForm.File1.value != ""){
+		document.PaperSubmitForm.Submit2.disabled=false;
+	}
+}
+</script>
+<!--
+left nav will appear here
+-->
+<div id="maincontent">
+  <!-- Begin pageContent -->
+<epi-html:portalHttpRoot/>
+
+<table cellspacing="0" cellpadding="0" border="0" ID="Table2">
+      <tr>
+            <td id="PortalColumn1" valign="top" align="left">
+      <center>
+
+		<p>Congratulations on having your paper accepted for publication in the proceedings of the<br>
+		<b>2010 IEEE International Conference on Cluster Computing Workshops and Posters (CLUSTER 2010 WORKSHOPS)</b><br>to be held<br>
+		<b>20-24 September 2010</b> in <b>Heraklion, Crete, GREECE</b> 
+		</p>
+      </center>
+      <p><div class="user">The following information is provided to help you in the preparation and submission of your final paper as it will be published in the proceedings. Please follow all STEPs to insure the submission process is completed successfully.</div></p>
+      <p>
+		<A href="#PaperSpecs"><b>STEP 1:</b> Paper Specifications</A><br>
+		<A href="#Deadlines"><b>STEP 2:</b> Important Deadlines</A><br>
+		<A href="#PaperPrep"><b>STEP 3:</b> Important Information about Preparing your Paper</A><br>
+		<A href="#Formatting"><b>STEP 4:</b> Formatting your Paper</A><br>
+		<A href="#PDFeXpress"><b>STEP 5:</b> <u>PDF eXpress</u> Online File Conversion/PDF Validation Tool</A><br>
+		<A href="#Renaming"><b>STEP 6:</b> Renaming your PDF File for Submission</A><br>
+		<A href="#Copyright"><b>STEP 7:</b> Submitting a Copyright Release Form</A><br>
+		<A href="#Submission"><b>STEP 8:</b> Final Paper PDF File Submission</A><br>
+      </p>
+      <hr width="100%">
+      <p>
+		<A class=quoteAnchor name="PaperSpecs"><b><u>STEP 1:</u> Paper Specifications</b></A><BR>
+		<br>
+		<b>PAPER PAGE LIMIT:</b>
+		<ul>
+			<li><b>Poster Papers: </b><b>4 pages</b>, including all figures, tables, and references. </li><li><b>Workshop Papers: </b><b>8 pages</b>, including all figures, tables, and references. </li>
+		</ul>
+		<b>PURCHASING EXTRA PAGES:</b>
+		<ul>
+			</li><li><b>Poster Papers: </b>Up to <b>1 extra pages</b> may be purchased at <b>$183</b> (US dollars) per extra page.</li><li><b>Workshop Papers: </b>Up to <b>2 extra pages</b> may be purchased at <b>$183</b> (US dollars) per extra page.</li><li><b>PLEASE NOTE: </b>For information regarding extra page payment, please contact your conference representative.</li>
+		</ul>
+      </p>
+      
+      <hr width="100%">
+      <p>
+		<A class=quoteAnchor name="Deadlines"><b><u>STEP 2:</u> Important Deadlines</b></A><BR><br>
+		<b>PAPER DEADLINE:</b>  Final paper is due by <b>20 August 2010</b>.<br><br>
+		<b>COPYRIGHT DEADLINE:</b> A signed copyright release form is due by <b>20 August 2010</b>.<br><br>
+		<b>CLUSTER 2010 WORKSHOPS</b> should be included on all correspondence. For questions, send e-mail to <b>cluster2010@ics.forth.gr</b>
+	      </p>
+     
+      <hr width="100%">
+      <p>
+		<A class=quoteAnchor name="PaperPrep"><b><u>STEP 3:</u> Important Information about Preparing your Paper</b></A><BR><br><div class="user">The IEEE is dedicated to the worldwide distribution of conference papers to engineering professionals. The IEEE digital libraries are the primary delivery method, especially the IEEE Xplore digital library. This requires that all papers submitted for publication must meet a minimum standard for both print and electronic publishing.</div>
+<div class="user"><br></div>
+<div class="user">We now offer conferences free access to PDF eXpress&#8482;, the IEEE's online file conversion/PDF validation tool, to assist authors in preparing suitable electronic files of their final papers. PDF eXpress&#8482; helps authors convert their papers into IEEE Xplore-compatible PDF files (conversion function) or to check their own PDF files for IEEE Xplore compatibility (PDF validation function).</div>
+<div class="user"><br></div>
+<div class="user">PDF eXpress&#8482; is not a file submission system and does not capture files. An author's file simply passes through the system returning a PDF file or an error report.</div>
+<div class="user"><br></div>
+<div class="user">After using PDF eXpress&#8482;, you will still need to submit the IEEE Xplore-compatible PDF file of your final paper later in this publication submission process (see STEP 8).</div>
+      </p>
+      <hr width="100%">
+      <p>
+		<A class=quoteAnchor name="Formatting"><b><u>STEP 4:</u> Formatting your Paper</b></A><BR><br>
+		<div class="user">Your final papers <b><u>MUST </u></b>be formatted to IEEE Computer Society Proceedings Manuscript Formatting Guidelines (see link to &quot;formatting 
+        instructions&quot; below). It is highly recommended that you proofread and check the layout of your paper BEFORE submitting it to PDF eXpress&#8482;.</div>
+<div class="user"><br></div>
+<div class="user"><b>Copyright Notice Instructions:</b></div> All papers must include on the bottom of the first page the appropriate copyright notice:
+<ul>
+<li>For papers in which all authors are employed by the US Government, the notice is: <br><b>US Government work not protected by U.S. copyright</b>.
+<li> For papers in which all authors are employed by a Crown Government (UK, Canada and Australia) the notice is:<br>
+<b>978-1-4244-8396-9/10/$26.00 &copy;2010 Crown</b>.
+<li> For all other papers the notice is: <br><b>978-1-4244-8396-9/10/$26.00 &copy;2010 IEEE</b>.
+</ul>
+<b>Formatting instructions:</b> 8.5" x 11" x 2 (<a href="ftp://pubftp.computer.org/Press/Outgoing/proceedings/instruct8.5x11x2.doc">DOC</a>, <a href="ftp://pubftp.computer.org/Press/Outgoing/proceedings/instruct8.5x11x2.pdf">PDF</a>)<br>
+				<a href="ftp://pubftp.computer.org/Press/Outgoing/proceedings/IEEE_CS_Latex8.5x11x2.zip"><b>LaTex Formatting Macros</b></a>
+		
+      </p>
+      <hr width="100%">
+      <p>
+		<A class=quoteAnchor name="PDFeXpress"><b><u>STEP 5:</u> <u>PDF eXpress</u> Online File Conversion/PDF Validation Tool</b></A><BR><br>
+		<div class="user"><b>5.1)</b> If you would like to create your own PDF file, please change the setting on your PDF distiller to insure your paper meets IEEE PDF specifications. Basic PDF distiller settings MUST be changed to:</div>
+<div class="user"><br></div>
+<div class="user"><ul><li>Optimized,</li>
+<li>Acrobat 5.0 compatibility,</li>
+<li>ALL graphics at least 300 dpi resolution (higher if preferred),</li>
+<li>ALL fonts MUST be embedded and subset,</li>
+<li>Postscript settings DO NOT override distiller settings,</li>
+<li>Page size is 612.0 x 792.0 points (8.5&quot; x 11&quot;).</li>
+</ul></div>
+<div class="user"><b><u>IMPORTANT:</u></b> Authors must check their final PDF files before submission to verify that all fonts have been properly embedded and subset. Some font manufacturers now flag their fonts to not embed. These fonts must be avoided.</div>
+		<br>
+		<b>5.2)</b> If you would like to submit your source file to PDF eXpress for conversion and validation, PDF eXpress converts the following file types to PDF:<br>
+		<table>
+			<tr>
+				<td>
+					<ul>
+						<li><b>Postscript</b><br><br></li>
+						<li><b>Microsoft Word</b><br><br></li>
+						<li><b>Freelance</b><br><br></li>
+						<li><b>PageMaker</b><br><br></li>
+						<li><b>FrameMaker</b><br><br></li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li><b>Word Pro</b><br><br></li>
+						<li><b>WordPerfect</b><br><br></li> 
+						<li><b>QuarkXpress*</b><br><br></li>
+						<li><b>Rich Text Format</b><br><br></li>
+						<li><b>(La)TeX (DVI and all support files required)*</b><br><br></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		<b>*</b> For documents created in formats that do not embed source files, include all support files with the final manuscript in a compressed 
+		archive for submission. If it is possible to embed images in the source document, you should do so to avoid potential issues, such as missing graphics.<br><br>
+		<b>5.3)</b> PDF eXpress will be available for use on <b>TBD</b>.<br><br>
+		<ol type=1>
+			<li>Click button to go to PDF eXpress.<br>
+				<a id="PDF eXxpress" target="_blank" href="http://www.pdf-express.org/" name="PDF eXxpress">
+					<img alt="" width="125" src="CPSLibrary/pdfexp.bmp" border="0" height="60" />
+				</a><br>
+				(PDF eXpress will open in a new browser window)
+			</li>
+			<li>Click button: "First time logging in PDF eXpress click here"</li>
+			<li>Enter Conference ID: <b>clusterworkshops10x</b></li>
+			<li>Enter your email address</li>
+			<li>Choose a password</li>
+			<li>Continue to enter information as prompted (You will receive an email confirming the successful creation of your account).</li>
+			<li>Upload either your source file or PDF file for Conversion; and/or PDF Checking</li>
+			<li>Use PDF eXpress to obtain an IEEE Xplore-compatible PDF file.
+				<ol type="a">
+					<li>The site contains extensive instructions, resources, and helpful hints.</li> 
+					<li>Through your PDF eXpress account, you may submit your source application files for conversion to PDF, and/or submit PDFs for checking.</li>
+					<li>You will have the opportunity to revise your submission if you are not satisfied with the PDF that PDF eXpress creates for you, 
+					or if the system finds problems with your paper, or if your PDF fails the PDF Check.</li>
+					<li>Technical support via email and telephone is available if you experience trouble in creating your PDF.</li>
+					<li>If there is a problem with your file, you will receive an e-mail detailing the problem(s). Otherwise the system will e-mail you a copy of 
+					your IEEE Xplore-compatible PDF file.</li>
+				</ol>
+			</li>
+		</ol>
+		If you have any questions, please do not hesitate to contact your editor or the IEEE PDF help desk at 
+		<a href="mailto:PDFsupport@ieee.org">PDFsupport@ieee.org</a>. 
+		If you have technical questions regarding PDF eXpress Web site, please contact the PDF eXpress support staff at 
+		<a href="mailto:icpsupport@redshift.net">icpsupport@redshift.net</a>.
+      </p>
+      <hr width="100%">
+      <p>
+		<A class=quoteAnchor name="Renaming"><b><u>STEP 6:</u> Renaming your PDF File for Submission</b></A><BR><br>
+		<div class="user">Your paper will be automatically renamed to the paper title once you submit the PDF file and correct information through <b><u>STEP 8:</u> Final Paper PDF File Submission</b>.</div>
+      </p>
+      <hr width="100%">
+      <p>
+		<A class=quoteAnchor name="Copyright"><b><u>STEP 7:</u> Submitting a Copyright Release Form</b></A><BR><br>
+		<div class="user">Please fill out and submit the following form to access the IEEE Electronic Copyright Form (eCF) system. The eCF system allows you to complete and sign the copyright release form. You must complete the IEEE copyright release form using the eCF system in order to submit your paper. This copyright release form <span style="color: #ff0000;"><b>MUST be COMPLETED</b></span> when you are submitting your paper.</div>
+<div class="user"><br></div>
+<div class="user"><b>Please note:</b> You are stating that the material in your paper is original and you have not previously released copyright for this paper to another party. We cannot publish your paper without this properly completed form.</div>
+	  </p>
+
+		<p><em class="required">* Required</em></p>
+		
+		<form name=ECFSubmitForm action="https://ecopyright.ieee.org/ECTT/IntroPage.jsp" method=post>
+			<table>
+				<tr>
+					<td align="right">Author (full name)<em CLASS="required">*</em>: </td>
+					<td><input type="text" name=AuthName size=100 ID="Text8"></td>
+				</tr>
+				<tr>
+					<td align="right">Author Email<em CLASS="required">*</em>: </td>
+					<td><input type="text" name=AuthEmail size=100 ID="Text12"></td>
+				</tr>
+				<tr>
+					<td align="right">Paper Title<em class="required">*</em>: </td>
+					<td><input type="text" name=ArtTitle size=100 ID="Text7"></td>
+				</tr>
+				<tr>
+					<td align="right">Date Submitted: </td>
+					<td>Sunday, 02 June 2013<input type=hidden name=ArtDate value="Sunday, 02 June 2013" size=20 ID="Text9"></td>
+				</tr>
+			</table>
+			<input type=hidden name=PubTitle value="2010 IEEE International Conference on Cluster Computing Workshops and Tutorials">
+ 			<input type=hidden name=ArtId value="cluster10-workshops-51ab82b22f5186.24354816">
+			<input type=hidden name=ArtSource value="CSS">
+			<input type=hidden name=rtrnurl value="https://ieeecluster.github.io/2010/Workshops_cameraReadyInstruction.php.html">
+			<br>
+			<input type=submit name=Submit onclick="return validateAndUpdateECFFields ()" value="Copyright Submission" ID="Submit1">
+		</form>
+			
+      <hr width="100%">
+      <p>
+		<A class=quoteAnchor name="Submission"><b><u>STEP 8:</u> Final Paper PDF File Submission</b></A><BR><br>
+		<div class="user">Please complete the following form and click the submit button below when you are ready to upload the PDF file of your final paper.</div>
+		<em class="required">* Required</em><br>
+		<form name=PaperSubmitForm enctype="multipart/form-data" method="post" action="upload.php" ID="Form2">
+			<table>
+				<tr>
+					<td align="right">Publication Title : </td>
+					<td>2010 International Conference on Cluster Computing Workshops and Posters (CLUSTER 2010 WORKSHOPS)</td>
+				</tr>
+				<tr>
+					<td align="right">Submitter (full name) <em CLASS="required">*</em>: </td>
+					<td><input type="text" name=SubmitterName size=100 ID="Text1"></td>
+				</tr>
+				<tr>
+					<td align="right">Submitter Email <em CLASS="required">*</em>: </td>
+					<td><input type="text" name=SubmitterEmail size=100 ID="Text2"></td>
+				</tr>
+				<tr>
+					<td align="right">Paper Title <em CLASS="required">*</em>: </td>
+					<td><input type="text" name=PaperTitle size=100 ID="Text3"></td>
+				</tr>
+				<tr>
+					<td align="right">Author(s) (full name(s), separated by commas) <em CLASS="required">*</em>: </td>
+					<td><input name=Authors type=text size=100 ID="Text5"></td>
+				</tr>
+				<tr>
+					<td align="right">Total Pages <em CLASS="required">*</em>: </td>
+					<td><input type=text name=PageCount size=20 ID="Text14"></td>
+				</tr>
+				<tr>
+					<td align="right">Abstract <em CLASS="required">*</em>: </td>
+					<td><textarea cols=60 rows=3 id="TextArea1" name=Abstract></textarea></td>
+				</tr>
+				<tr>
+					<td align="right">Keywords (separated by commas): </td>
+					<td><input name=Keywords type=text size=100 ID="Text17"></td>
+				</tr>
+				<tr>
+					<td align="right">Have You Transferred Copyright? </td>
+					<td>
+						<table>
+							<tr>
+								<td>Yes</td>
+								<td><input type=radio name=Copyright value=Yes ID="Radio1"></td>
+								<td>No</td>
+								<td><input type=radio name=Copyright value=No checked ID="Radio2"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">Have You Successfully Completed PDF eXpress Validation? </td>
+					<td>
+						<table>
+							<tr>
+								<td>Yes</td>
+								<td><input type=radio name=PDFExpress value=Yes ID="Radio3"></td>
+								<td>No</td>
+								<td><input type=radio name=PDFExpress value=No checked ID="Radio4"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">Enter filename to upload <em CLASS="required">*</em>:
+					<br>(Please select a file to enable the Submit button)
+					</td>
+					<td><input type="file" name=File1 ID="File1" size=100 onmouseout="checkFile();">
+					</td>
+				</tr>
+				<tr>
+					<td align="right">Date Submitted: </td>
+					<td>28 July 2010<input type=hidden name=PaperAcceptDate value=28 July 2010 size=20 ID="Text4"></td>
+				</tr>
+			</table>
+			<input type="submit" disabled="true" name="Submit" value="Submit Paper" onclick="return validatePaperSubmission ()" ID="Submit2">
+		</form>				
+	  </p>
+  	  <hr width="100%">
+ </TD>
+    </TR></TBODY></TABLE>
+    
+</div>
+<div id="footer">
+  <table ID="Table1">
+    <tr>
+      <td>This site and all contents (unless otherwise noted) are Copyright &copy;2007, IEEE, Inc. All rights reserved.</td>
+    </tr>
+  </table>
+</div>
+</BODY>
+</HTML>
