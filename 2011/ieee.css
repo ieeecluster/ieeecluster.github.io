@@ -1,0 +1,143 @@
+/* CSS Document */
+
+body {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 13px;
+	color:#002659;
+	background-color: #fff;
+	margin:0;
+	padding:0;
+	}
+	
+
+div#stripe {          
+	padding:0;
+	margin: 25px auto 0 auto;
+	background-image: url(images/stripe.jpg);
+	height: 248px;
+	}
+	
+div#wrapper {          
+	width: 1000px;
+	margin: 0 auto 20px auto;
+	padding:0;
+	}
+
+div#navbar {
+	height:50px;	
+	margin: 0;
+	padding:0;
+	background-color:#bcbdbf;
+	}
+	
+div#allcontent{
+		margin: 5px 0 0 0;
+		}
+	
+div#sidenav {          
+	width: 215px;
+	margin: 0;
+	padding:0;
+	background-color:#f0f0f0;
+	float:left;
+	}
+	
+div#maincontent{
+		width:760px;
+		margin: 0;
+		padding:0;
+		float:right;
+		border-top: 2px #ccc solid;
+		}
+		
+div#content {          
+	width: 370px;
+	margin: 0;
+	padding:39px 15px 10px 15px;
+	background-color:#ffffff;
+	float:left;
+	border-right: 1px #bcbdbf solid;
+	}
+	
+div#content2 {          
+	width: 769px;
+	margin: 0;
+	padding:39px 0px 10px 15px;
+	background-color:#ffffff;
+	float:left;
+	}
+	
+div#news {          
+	width: 369px;
+	margin: 0;
+	padding:39px 0px 10px 10px;
+	background-color:#ffffff;
+	float:right;
+	}
+	
+div#bonus {          
+	width: 250px;
+	margin: 0px 0px 10px 10px;
+	padding:10px;
+	background-color:#ffffff;
+	float:right;
+	border: 1px #bcbdbf solid;
+	}
+	
+	
+p.navigation {
+	text-align:center;
+	color:#002659;
+	margin:0;
+	padding:0;
+	font-size:15px;
+	font-weight:bold;
+	}
+
+	a.nav { text-decoration: none; color: #333333; }
+	a.nav:link, a.nav:visited, a.nav:active { text-decoration: none; color: #333333; }
+	a.nav:hover { color: #007bc1}
+	#inactivenav { color: #007bc1; }
+
+a:link, a:visited, a:active {text-decoration: none; color: #003366;}
+a:hover {color: #999999;}
+	
+
+p {
+	margin:5px 5px 5px 0;
+	padding:0;
+	}
+
+h1 {
+	margin:10px 5px 5px 0;
+	font-size:16px;
+	font-weight:bold;
+	}
+	
+h2 {
+	margin:10px 5px 5px 0;
+	font-size:14px;
+	font-weight:bold;
+	}
+	
+h3 {
+	margin:25px 5px 10px 0;
+	font-size:14px;
+	font-weight:bold;
+	}
+
+ul {margin-top:0;
+padding-top:0;}
+	
+div#copyright {
+	color:#003366;
+	background-color:#fff;
+	width: 1000px;
+	vertical-align:middle;
+	margin: 5px auto 0 auto;
+	padding:5px 0;
+	border-top: 1px #ccc solid;
+	text-align:right;
+	font-size:10px;
+	font-weight:bold;
+	}
