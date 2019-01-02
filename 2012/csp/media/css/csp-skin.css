@@ -1,0 +1,262 @@
+@CHARSET "UTF-8";
+/* 命名规则 */
+/* csp_控件名称
+ *	csp-base.css 中定义过的基本控件
+ *	修改时请参考 csp-base.css 中的定义，以避免不必要的覆盖和冲突
+ *	不得以该格式命名新的外观样式。如需定义新的控件，请修改 csp-base.css
+ *
+ * csp_sk_名称
+ *	本文件首次定义的外观样式
+ *	这些样式已列出属性的修改不会造成任何冲突
+ *	在添加新的属性（特别是 margin, padding, display等）时，
+ *		请参考 csp-base.css 中对原始类型的定义，以避免不必要的覆盖和冲突
+ *	可以按需要以该格式创建新的外观样式。
+ */
+
+/* 标题 */
+.csp_wrap h1 {
+	padding-bottom:10px;
+	border-bottom:1px solid #999;
+}
+.csp_wrap h3 {
+	background-color:#eee;
+	border-top:1px solid #666;
+}
+.csp_wrap h4 {
+	margin-bottom:0px;
+}
+
+/* 表格 */
+
+
+/* 信息面板 */
+div.csp_panel {
+	background:;
+	border:;
+}	
+div.csp_panel p.csp_panel-title,
+	div.csp_panel p.csp_panel-fold, div.csp_panel p.csp_panel-expand {
+	background:#eee url(images-csp/panel-title.gif) repeat-x top;
+}
+div.csp_panel-sub p.csp_panel-title {
+	background:#f2f2f2 url(images-csp/panel-sub-title.gif) repeat-x top;
+}
+
+/* 步骤导航 */
+ul.csp_sk_stepNav {}
+ul.csp_sk_stepNav li {}
+ul.csp_sk_stepNav li.csp_sk_stepNav-done {}
+ul.csp_sk_stepNav li.csp_sk_stepNav-current {}
+
+/* 列表图标 */
+ul.csp_sk_list-doubleArrow {}
+ul.csp_sk_list-circledArrow {}
+ul.csp_sk_list-squaredArrow {}
+
+/* 标签栏 */
+div.csp_tab-ver {
+	height:150px;
+}
+div.csp_tab-ver li {
+	width:100px;
+}
+div.csp_tab-ver div.csp_tab-content {
+	height:136px;
+	margin-left:112px;
+	_margin-left:0px;
+}
+
+img.upTopMenuItem, img.downTopMenuItem,img.upPPItem, img.downPPItem, img.editPPItem,img.delPPItem,img.upLeftMenuItem, img.downLeftMenuItem {
+	cursor:pointer;
+}
+
+ul.csp_choiceList {
+	margin-left:1em;
+}
+ul.csp_choiceList li p {
+	margin-left:3em;
+	text-indent:2em;
+	line-height:1.5em;
+	max-width:40em;
+}
+
+
+ul.csp_choiceList.sk_categoryList li label,
+ul.csp_choiceList.sk_intentionList li label {
+	margin-left:1em;
+}
+
+
+
+.csp_panel-child h4 {
+	margin-left:5%;
+}
+h4.csp_sk_space-left {
+	margin-left:1em;
+}
+
+.csp_groupButton {
+	margin-top:-5px !important;
+	margin-bottom:5px !important;
+}
+
+a.csp_iconButton { color:#369; }
+a.csp_iconButton:hover { } 
+
+
+/* tab */
+div.csp_tab { border:0px !important; background:none !important; }
+div.csp_tab ul.csp_tab-list { border-bottom:1px solid #ccc; _height:20px; _margin-bottom:0px; }
+div.csp_tab div.csp_tab-content { border:1px solid #ccc; border-top:0px; }
+div.csp_tab li.csp_tab-current { 
+	border:1px solid #ccc; border-bottom:0px;
+	padding-top:3px;
+	position:relative; top:1px;
+}
+
+/*feedback reply*/
+textarea.replyContent.message {
+    height: 2.2em;
+}
+textarea.replyContent.standby {
+    color: #999999;
+    height: 1.2em;
+}
+textarea.replyContent {
+    height: 3em;
+    max-width: 455px;
+    min-width: 455px;
+    width: 455px;
+}
+ul.a1-comment li {
+    background-color: #F5F5FF;
+    margin-bottom: 1px;
+    padding: 5px 1em;
+    border-bottom: 1px solid #EEEEFF;
+}
+
+.csp-feedback {
+    background-color: #05F5FF;
+    margin-bottom: 1px;
+    padding: 5px 1em;
+    border-bottom: 1px solid #EEEEFF;
+}
+
+ul.a1-comment li p, ul.a1-feed div.a1-feed-body ul.a1-comment li p {
+    margin: 0;
+}
+ul.a1-comment {
+    font-size: 10pt;
+    list-style: none outside none;
+    margin: 0 0 1em 2em;
+    padding: 0;
+    width: 38em;
+}
+.a1-comment-time, .a1-time {
+    color: #666666;
+    font-size: 8pt;
+    margin-left: 1em;
+}
+.replyCtrl {
+    display: none;
+    width: 35em;
+}
+
+.flow-steps {
+    margin: 20px 0;
+    overflow: hidden;
+}
+.flow-steps .num3 li {
+    width: 301px;
+}
+.flow-steps .num4 li {
+    width: 222px;
+}
+.flow-steps .num5 li {
+    width: 175px;
+}
+.flow-steps .num6 li {
+    width: 143px;
+}
+.flow-steps li {
+    background: url("../images/flow_steps_bg.png") no-repeat scroll 100% 0 #E4E4E4;
+    color: #404040;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 23px;
+    line-height: 23px;
+    overflow: hidden;
+    padding: 0 15px 0 0;
+    text-align: center;
+}
+.flow-steps li span, .flow-steps li strong {
+    display: block;
+}
+.flow-steps li .first {
+    background: url("../images/flow_steps_bg.png") no-repeat scroll -12px -69px #E4E4E4;
+}
+.flow-steps li.last {
+    background-position: 100% -138px;
+}
+.flow-steps li.current {
+    background-color: #FF6600;
+    color: #FFFFFF;
+}
+.flow-steps li.current .first {
+    background-color: #FF6600;
+    background-position: -12px -92px;
+}
+.flow-steps li.current-prev {
+    background-position: 100% -23px !important;
+}
+.flow-steps li.done {
+    background-color: #FFE6BA;
+    background-position: 100% -46px;
+    color: #FF6600;
+}
+.flow-steps li.done .first {
+    background-color: #FFE6BA;
+    background-position: -12px -115px;
+}
+.flow-steps li.last-current {
+    background-color: #FF6600;
+    background-position: 100% -161px;
+    color: #FFFFFF;
+}
+
+#csp_login, #csp_register {
+	border-left: 1px solid #ccc;
+	border-right:1px solid #ccc;
+	margin-left: 10px;
+	padding:0px;
+	background-color:#fff;
+}
+
+#csp_login, #csp_login-top, #csp_login-bottom {
+	width: 310px;
+	text-align:center;
+	float:right;
+}
+
+#csp_register, #csp_register-top, #csp_register-bottom {
+	width: 585px;
+	float:left;
+}
+#csp_login-top, #csp_register-top { position:relative; top:-3px; margin-top:0px; }
+#csp_login-bottom, #csp_register-bottom { position:relative; top:10px; margin-bottom:0px; }
+
+#csp_login h3, #csp_register h3 {
+	margin:0px;
+	background:none;
+	border:none;
+}
+
+.csp_table-form th {
+	padding-right: 0.5em;
+}
+
+th, td { padding-top:2px; padding-bottom;2px; }
+#csp_login .csp_table-form td.errorMessage {
+	padding-bottom: 1em;
+}

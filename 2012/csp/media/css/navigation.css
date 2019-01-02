@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*leftMenuConfig.jsp,topMenuConfig.jsp*/
+.menuItemTypeSign {color: green;font-weight: bold;}
+.csp_wrap{margin:0 auto; font-family:Arial,"宋体"}
+.csp_content1 div.csp_tab ul.csp_tab-list li:first-child{margin-left:0px;}
+.csp_content1 .csp_tab ul.csp_tab-list li.csp_tab-current,.csp_content1 .csp_tab ul.csp_tab-list li{padding:5px 20px; margin-left:0px;}
+.csp_content1 .csp_tab ul.csp_tab-list li.csp_tab-current{font-weight:bold;}
+.csp_tab-content table.csp_table-horizon {border-bottom:0px solid #999;}
+table.csp_table-navigation {
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	margin:5px 0;
+	border-collapse:collapse;
+	float:left;
+	background-color:#f4f8ff;
+}
+table.csp_table-navigation tr {
+	border-right:1px solid #ccc;
+	border-left:1px solid #ccc;
+	height:35px;
+}
+table.csp_table-navigation td {
+	text-align:left;
+	padding:2px 0em;
+	border-bottom:1px solid #ccc;
+	text-align:center;
+	
+}
+table.csp_table-navigation th {
+	text-align:left;
+	padding:2px 0em;
+	background-color:#eef;
+	border-bottom:1px solid #ccc;
+	text-align:center;
+}
+.csp_wrap {margin-top:20px; margin-left:10px;}
+.csp_wrap .csp_leftmenu{margin:0;}
+.csp_wrap .csp_content{margin:0;}
+.positionShow{width:260px; float:left; padding:5px 0 0 0px; font-size:14px; color:#999; font-weight:bold; background-color:#f9f9f9; margin:5px 2px 0 50px; text-align:center; line-height:40px; border:2px solid #efefef;}
+
+/*websiteConfigHead.jsp*/
+.skinImg {
+	border: 5px solid #EEEEEE;
+}
+
+.skinImg:hover {
+	border: 5px solid #afcaf7;
+	cursor:pointer;
+}
+
+.currentSkin{
+border: 5px solid #ff9400;
+}
+
+.menuItemTypeSign {
+	color: green;
+	font-weight: bold;
+}
+
+div.csp_navigationContent {
+	padding:0px;
+	overflow:auto;
+	
+	margin-left:-20px;
+    width:100%;
+    *margin-top:-20px;
+}
+div.csp_imgDiv {
+	width:200px;
+	float:left;
+	margin:20px 0 0 30px;
+}
+
+/*navigation.jsp*/
+div.csp_tab-content{background-color:transparent; padding-left:2em;}
+div.csp_guideTitle {height:39px;width:100%;}
+div.csp_guideTitle { border:0px !important; background:none !important; }
+div.csp_guideTitle ul{ list-style-type:none ; _margin-bottom:0px;}
+div.csp_guideTitle li{float:left;width:153px;height:39px;background:url(/csp/media/images/steps.png) no-repeat 129px 0 #e4e4e4; color:#404040; font-weight:bold; text-align:center; font-weight:14px;}
+div.csp_guideTitle li p{*line-height:39px; *font-weight:bold;}
+div.csp_guideTitle li.done{float:left;width:153px;height:39px;background:url(/csp/media/images/steps.png) no-repeat 129px -78px #d9faa4; color:#4a7506;}
+div.csp_guideTitle li.current-prev{float:left;width:153px;height:39px;background:url(/csp/media/images/steps.png) no-repeat 129px -39px #d9faa4; color:#4a7506;}
+div.csp_guideTitle li.step{float:left;width:153px;height:39px;background:url(/csp/media/images/steps.png) no-repeat 129px 0 #a2d84e; color:#fff;}
+div.csp_guideTitle li.last{float:left;width:153px;height:39px;background:#e4e4e4;}
+div.csp_guideTitle li.lastDone{float:left;width:153px;height:39px;background:#a2d84e;}
+.status{float:left; line-height:35px; margin:3px; margin-left:35px; color:#404040;}
+#backStepButton,#nextStepButton,#createConf{float:right; margin-right:30px; width:106px; height:32px; background:url(/csp/media/images/btn.png); color:#fff; font-weight:bold; font-size:14px; text-align:center; border:none;}
+a#skip{float:right; margin-right:30px; height:32px;line-height:32px; color:#00f; text-decoration:underline; cursor:pointer;}
+.greenBtn,#nextStepAndRelease{float:right; margin-right:30px; height:32px; background:url(/csp/media/images/btn_bg.png); color:#fff; font-weight:bold; font-size:14px; text-align:center; border:1px solid #5b9400;}
+.finished,.constructing{margin:20px auto; width:900px; height:160px; border:1px solid #ccc; }
+.finished .leftone,.constructing.leftone{float:left; width:80px;}
+.finished .rightone,.constructing.rightone{float:left; width:750px; }
+.finished img,.constructing img,.csp_panel img{float:left; margin:20px;}
+.finished span.ok,.constructing span.ok,.csp_panel .ok{line-height:64px; display:block; float:left; font-weight:bold; font-size:20px; color:#75b512;vertial-align:middle; margin:20px 0 0 30px;}
+.finished span.go,.constructing span.go,.csp_panel .go{line-height:64px; display:block; float:left; margin:20px 0 0 30px;}
+.finished span.connect,.constructing span.connect{display:block; float:left; margin:20px 0 0 30px; background-color:#F8F8FF; padding:5px; font-weight:bold;}
+.publish_ok_alt{padding:10px; line-height:30px;}
+
+
+/*confAdmin.jsp*/
+.csp_wrap div.csp_confAdmin-top, .csp_wrap div.csp_confAdmin-bottom, .csp_wrap div.csp_confAdmin-body{width:900px; }
+.setting{margin:10px 0 0 50px; font-weight:bold; font-size:14px; color:#537b02;}
+
+/*applyConference.jsp*/
+#op{width:100%; height:35px; line-height:35px;}
+div.csp_guideTitle {height:39px;width:100%;}
+div.csp_guideTitle { border:0px !important; background:none !important; }
+div.csp_guideTitle ul{ list-style-type:none ; _margin-bottom:0px;}
+div.csp_guideTitle li{float:left;width:153px;height:39px;background:url(/csp/media/images/steps.png) no-repeat 129px 0 #e4e4e4; color:#404040; font-weight:bold; text-align:center; font-weight:14px;}
+div.csp_guideTitle li p{*line-height:39px; *font-weight:bold;}
+div.csp_guideTitle li.done{float:left;width:153px;height:39px;background:url(/csp/media/images/steps.png) no-repeat 129px -78px #d9faa4; color:#4a7506;}
+div.csp_guideTitle li.current-prev{float:left;width:153px;height:39px;background:url(/csp/media/images/steps.png) no-repeat 129px -39px #d9faa4; color:#4a7506;}
+div.csp_guideTitle li.step{float:left;width:153px;height:39px;background:url(/csp/media/images/steps.png) no-repeat 129px 0 #a2d84e; color:#fff;}
+div.csp_guideTitle li.last{float:left;width:153px;height:39px;background:#e4e4e4;}
+div.csp_guideTitle li.lastDone{float:left;width:153px;height:39px;background:#a2d84e;}
+.csp_table-form tr td,.csp_table-form tr th{padding:5px 0;}
+.csp_table-form .left{text-align:right; width:160px; font-weight:bold;}
+.csp_table-form .blue{background-color:#eef9ff;}
+.csp_table-form .bottomLine{border-bottom:2px solid #eee;}
+.csp_table-form .bottomLine td,.csp_table-form .bottomLine th{padding-bottom:1em; }
+.csp_table-form .topBlank td,.csp_table-form .topBlank th{padding-top:1em;}
+
+/*leftMenu userbox*/
+.leftMenuWhole{border:1px solid #ccc; margin-top:16px; *margin-top:0; padding:0 0 30px 0; width:100%;}
+p.csp_navList-title{background-color:#fff; padding:3px 0 0 10px; line-height:30px; margin:0; color:#000;}
+.userLogin{padding-left:5px; line-height:30px; border-bottom:1px dotted #dfddd8; background:#eee;}
+.userLogin #statusSpan{}
+.userLogin .userName{font-weight:bold;}
+.userName{float:left;}
+.zhuxiao{float:right; margin-right:10px;}
+
+.csp_wrap h3{background-image:url(/csp/media/images/navTitle.jpg);border:none; border-right:1px solid #dfddd8; border-left:1px solid #dfddd8; height:41px; padding:0; line-height:41px; padding-left:20px;}
+#csp_login h3, #csp_register h3{height:20px; line-height:20px;}
+/*abstract*/
+#content #center_right #right{background-image:none;}
+#leftmenu_wrap .csp_leftmenu-body{border:none;}
+table.csp_table-horizon{background-color:#f4f8ff; border:1px solid #ccc;}
+table#comPersonTable{}
+.noFile{text-align:center; font-weight:bold; color:#f0883c;}
+.csp_content table.csp_table-horizon table.csp_table-form th{width:10%; text-align:right; padding-right:10px;}
+
+/*leftMenu nav*/
+ul.csp_navList li a, ol.csp_navList li a{display:block;}
+.conf_topStatus{border:1px solid transparent;}
+
+/*protocal added on 2012.3.9 by zhangshixiang*/
+.csp_wrap-narrow p.csp_protocal{padding:1em; font-weight:bold; font-size:18px; text-align:center; border-bottom:1px solid #ccc;}
+.csp_wrap-narrow p.csp_protocal_title{padding:0.5em 0 0 0; font-weight:bold; line-height:1.4em;}
+.csp_wrap-narrow p.csp_protocal_content{padding:0 0 0.5em 0;  line-height:1.4em;}

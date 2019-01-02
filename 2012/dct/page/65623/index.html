@@ -1,0 +1,460 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+
+
+<link rel="stylesheet" media="screen, projection, print" type="text/css"
+     href="/dct/css.css"/>
+<link rel="stylesheet" type="text/css" media="print" href="/dct/css.css" />
+<!-- INCLUDERESOURCES (stylesheet) -->
+
+<!-- INCLUDERESOURCES (inlinecss) -->
+
+
+
+
+<script type="text/javascript" src="/dct/scripts/page/pageName.js"></script>
+<script type="text/javascript" src="/dct/scripts/ajax/ajax.js"></script>
+<script type="text/javascript" src="/dct/scripts/ajax/comm-manager.js"></script>
+<script type="text/javascript" src="/dct/scripts/js.js"></script>
+     <script type="text/javascript"  src="/dct/scripts/jquery/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="/dct/scripts/ajax/site.js"></script>
+
+<script type="text/javascript">
+	site.init('https://ieeecluster.github.io/2012/dct');
+//<![CDATA[
+
+/* Localized javascript strings: LocalizedStrings[] */
+var LocalizedStrings = {
+"javascript.site.properties.siteconfig":"Site Config",
+"javascript.slimbox.error":"<h2>Error</h2>There was a problem with your request.<br />Please try again",
+"javascript.slimbox.remoteRequest":"Remote Request {0} of {1}",
+"javascript.grant.write":"Write",
+"javascript.update.choosetag":"Please choose tag!",
+"javascript.searchclb.grant.condition":"Please enter the grant condition!",
+"javascript.grant.tip.adduser":"Add Group/User",
+"javascript.sort.descending":"Descending order. Click to reverse sort order",
+"javascript.window.info":"Infomation",
+"javascript.grant.select.noadd":"Please select user/group firstly!",
+"javascript.searchclb.addpage":"Add to page",
+"javascript.quick.bottom":"Go To Bottom",
+"javascript.newpage.new":"Create new page",
+"javascript.grant.noselect":"Please select privileges firstly!",
+"javascript.addpage.enter":"Please enter the page name!",
+"javascript.grant.tree.title":"VO Tree",
+"javascript.grant.name":"Group/User Name",
+"javascript.hint.emptycombo":"Please select parent page (Press down arrow key to list all pages)",
+"javascript.button.submit":"Submit",
+"javascript.page.alledit.tip":"Grant all privileges to all entities",
+"javascript.page.view.text":"View",
+"javascript.quick.top":"Go To Top",
+"javascript.edit.areyousure":"Without clicking the Save button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.error.sms.fail":"Send SMS failure, maybe system busy now!",
+"javascript.grant.delete.error":"Error while delete privileges!",
+"javascript.grant.tip.add":"Add privileges",
+"javascript.slimbox.directLink":"Direct Link to the target",
+"javascript.grant.window.delete":"Cancel selected user/group",
+"javascript.searchclb.taget":"Please choose target page!",
+"javascript.site.properties.sysconfig":"System Config",
+"javascript.grant.select.nodelete":"Please select user/group firstly!",
+"javascript.page.warning.priv":"Please select privileges!",
+"javascript.error.sms.nomobile":"No mobile phone number is saved in this system, can not send SMS the user, please contact user directly!",
+"javascript.grant.button.grant.tip":"Grant privileges",
+"javascript.myresult.confirm":"Are you sure to delete all selected documents?",
+"javascript.tip.default.title":"More...",
+"javascript.edit.findandreplace.nomatch":"No match found!",
+"javascript.searchclb.choose":"Please choose document!",
+"javascript.info.samename":"The rename page name must not be the same with the original page name！",
+"javascript.sort.ascending":"Ascending order. Click to reverse sort order",
+"javascript.upload.choose.title":"Please enter document title!",
+"javascript.grant.window.deleteall":"Cancel all user/group",
+"javascript.info.renameto":"Please enter the rename page name!",
+"javascript.version.noright":"Nobody has the rights of this document, can not modify the rights.",
+"javascript.grant.read":"Read",
+"javascript.quick.previous":"Go To Previous Section",
+"javascript.myresult.remove":"Are you sure to remove all selected documents from My Result?",
+"javascript.dmlform.savewaring":"Save failure!Plz use Save&Exit button",
+"javascript.grant.confirm":"Are you sure to delete the privilege?",
+"javascript.pagename.rules.tip":"Page name:Allowed Chars(.a-zA-Z_- and other language characters) <=255",
+"javascript.searchclb.myresult":"Are you sure to add the documents to My Result?",
+"javascript.upload.addtag":"Please enter tag name!",
+"javascript.version.modify":"Modify rights",
+"javascript.navpage.hint.emptycombo":"Please select navigation page (Press down arrow key to list all pages)",
+"javascript.grant.list.title":"Selected Group/User",
+"javascript.grant.window.title":"Grant privileges to VO Group/User",
+"javascript.page.edit.text":"Edit",
+"javascript.newpage.maxlength":"Page name length is no more than 32 characters(ASCII length), please reenter!",
+"javascript.edit.startOfPage":"( start of page )",
+"javascript.grant.tip.delete":"Delete privileges",
+"javascript.grant.button.grantread":"Grant read",
+"javascript.site.properties.emailconfig":"Email Config",
+"javascript.myresult.target":"Please choose target page!",
+"javascript.leftMenu.hint.emptycombo":"Please select left page (Press down arrow key to list all pages)",
+"javascript.page.alledit.error":"Error while grant all entities editable!",
+"javascript.quick.edit":"Edit This Section",
+"javascript.plain.choose.operation":"Please choose operation type!",
+"javascript.sharepage.email":"Please enter the email address!",
+"javascript.upload.choose.file.maxsize":"File length exceed 64 bytes, please rechoose document path!",
+"javascript.grant.user":"User",
+"javascript.page.title":"Page Privilege List",
+"javascript.configevents.big":"Your input numeric is too large, can not exceed 999!",
+"javascript.upload.closeadd":"Close add tag",
+"javascript.update.confirm":"Are you sure only update the tags? Otherwise, you need to choose document path!",
+"javascript.expand":"[show]",
+"javascript.group.validName":"Please provide a valid name for the new Group",
+"javascript.window.warning":"Warning",
+"javascript.page.window.title":"Grant privileges to VO Group/User",
+"javascript.grant.type":"Type",
+"javascript.configtag.remove":"Are you sure delete the Tag? Notice: If the documents use the tag, it will fail!",
+"javascript.grant.button.grant":"Grant",
+"javascript.page.alledit":"All entities editable",
+"javascript.grant.button.cancel.tip":"Cancel grant privileges",
+"javascript.TAG_ADD_ERROR":"Error in add new tag, maybe the tag already exist!",
+"javascript.configevents.numeric":"Please enter digital characters, reenter it!",
+"javascript.plain.overwrite.changed":"You have modifed this page at {0}, and haven't saved it. Are you sure to recover this page while someone else have updated this page?",
+"javascript.grant.title":"Document Privilege List",
+"javascript.page.warning.entity":"Please select user/group!",
+"javascript.newpage.empty":"Please enter charater (A-Z,a-z), numeric key or Chinese(No more than 32 chars)",
+"javascript.slimbox.next":"Next&raquo;",
+"javascript.search.hint":"On Searching...",
+"javascript.page.button.grant.tip":"Grant privileges",
+"javascript.filter.all":"( All )",
+"javascript.configtag.confirm":"Are you sure remove the tag from favourate tag?",
+"javascript.site.properties.domainconfig":"Domain Name Config",
+"javascript.grant.status.ready":"Ready",
+"javascript.grant.status.hint":"Inherit parent page privilege if empty",
+"javascript.grant.button.grantedit":"Grant edit",
+"javascript.page.type.text":"Privilege type:",
+"javascript.upload.choose.file":"Please choose document path!",
+"javascript.page.allentities":"All entities(All)",
+"javascript.searchclb.confirm":"Are you sure to delete the document?",
+"javascript.sbox.clone.suffix":"-New",
+"javascript.slimbox.info":"Image {0} of {1}",
+"javascript.version.right":"Please choose rights!",
+"javascript.site.properties.clbconfig":"CLB Config",
+"javascript.upload.newtag":"Add new Tag",
+"javascript.PRIVILEGE_ERROR":"You may not have the privilege to access the resource or execute the function!",
+"javascript.edit.resize":"Drag to resize the text area",
+"javascript.grant.group":"Group",
+"javascript.grant.status.complete":"Operation complete",
+"javascript.sharepage.error.email":"Illegal mail address format or wrong splitter(Please split the addresses with ',').",
+"javascript.edit.toolbar.makeSelection":"Please make first a selection.",
+"javascript.plain.confirm":"Are you sure to execute this progress? It will copy the content of template to current page.",
+"javascript.searchclb.enter":"Please enter search condition!",
+"javascript.grant.button.grantwrite":"Grant write",
+"javascript.upload.warning.add":"Can not use batch document and add to page concurrently!",
+"javascript.upload.warning.zip":"Your upload file is non a zip format. You may not use the batch upload!",
+"javascript.slimbox.previous":"&laquo;Previous",
+"javascript.grant.button.grantview":"Grant view",
+"javascript.error.sms.empty":"Please enter message!",
+"javascript.grant.confirm.title":"Confirm",
+"javascript.collapse":"[hidden]",
+"javascript.quick.next":"Go To Next Section",
+"javascript.error.sms.exceed":"Your sms length is exceeded one sms length!",
+"javascript.plain.choose.grant":"Please choose the grant object!",
+"javascript.grant.button.cancel":"Cancel",
+"javascript.button.cancel":"Cancel",
+"javascript.configtag.entertag":"Please enter the new tag name!",
+"javascript.version.close":"Close modify",
+"javascript.plain.overwrite.nochange":"You have modifed this page at {0}, and haven't saved it. Are you sure to recover this page?",
+"javascript.page.allview":"All entities viewable",
+"javascript.upload.choose.tag":"Please choose tag!",
+"javascript.sort.click":"Click to sort",
+"javascript.hint.stastics.emptycombo":"Please select query page (Press down arrow key to list all pages)",
+"javascript.sharepage.vo":"Please enter the users!",
+"javascript.grant.status.failure":"Operation failure"
+};
+
+
+
+var Wiki = {
+	'BaseUrl': 'https://ieeecluster.github.io/2012/dct',
+	'PageUrl': '/dct/page/%23%24%25',
+	'TemplateDir': '/dct/',
+	'PageName': '65623',
+	'UserName': 'Guest', 
+	'JsonUrl' : '/dct/JSON-RPC'
+	}
+	
+var contextPath='/dct';
+	
+/* INCLUDERESOURCES (jsfunction) */
+
+//]]>
+</script>
+<script type="text/javascript" src="/dct/scripts/DucklingCommon.js?ver=5.3.9"></script>
+
+
+ <META NAME="ROBOTS" CONTENT="all">
+ 
+ 
+ 
+<link rel="start"  href="/dct/1"  title="Front page" />
+
+
+
+	<link rel="shortcut icon" type="image/x-icon" href="/dct/images/favicon.ico" />
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, projection, print"
+     href="http://clbs.escience.cn/trivial/516da843e4b014e06e6f89ba/skin.css" />
+
+     <!--  script type="text/javascript"  src="http://clbs.escience.cn/trivial/516da843e4b014e06e6f89ba/skin.js"></script>-->
+
+	
+	<title>IEEE Cluster 2012, Beijing, China: Banquet
+	</title>
+
+
+	<script type="text/javascript"
+		src="https://passport.escience.cn/js/passport.js"
+		charset="utf-8"></script>
+	<script type="text/javascript">
+			$(document).ready(function(){
+				var loginUrl = "https://ieeecluster.github.io/2012/dct/login";
+				var passport=new Passport({
+					umtUrl:"https://passport.escience.cn",
+					viewPort:"#content",
+					message:"Loging..."
+				});
+				passport.checkLogin(function(isLoggedIn){
+					if (isLoggedIn){
+						window.location.href=loginUrl;
+					}
+				});
+			});
+		</script>
+
+
+	</head>
+	<body class="view">
+		<div class="DCT_body">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="info-username" name="info-username" value="">
+<div id="info-commpopup" class="DCT_hideoutmenu" >
+	<table cellspacing="0">
+	<tr> <td onmouseover="javascript:samewithspan()" onmouseout="javascript:hidePopup()"><a id="homepage" href="">Home Page</a></td></tr>
+	
+	<tr> <td onmouseover="javascript:samewithspan()" onmouseout="javascript:hidePopup()"><a id="mailto" href="">Send E-Mail</a>
+	</td></tr>
+	</table>
+</div>
+
+<div id="window-sendinfo" style="display: none; border: 1px solid rgb(0, 0, 0); padding: 5px; background-color: rgb(255, 255, 255); position: absolute; z-index: 11001; width: 350px; height: 230px; font-size: 14px; left: 300px; top: 300px;">
+	<div id="TitleArea">
+	<table width="100%"><tr><td align="left"><strong>Send SMS</strong></td><td style='width:1px;'> <input type='button' onclick='closewindow();' title="Close window" class='close' value="Close" /></td></tr></table>
+	</div>
+	<table class="DCT_wikitable">
+	<tr><td>
+	<span><input type="checkbox" id="info-signature" name="info-signature" value="on"/>Display mobile</span>
+	<!--
+		<input id="info-signature" type="text" name="info-signature" value="" onpaste="return onCharsChange(this);" onKeyUp="return onCharsChange(this);"/>
+	-->
+	</td></tr>
+	<tr><td>
+	You still can enter <font color="red"><span id="charsmonitor">200</span></font> words.
+	</td></tr>
+	<tr><td>
+		<textarea name="info-message" id="info-message" rows="4" cols="40" style="font-size:10pt" onpaste="return onCharsChange(this);" onKeyUp="return onCharsChange(this);"></textarea>
+	</td></tr>
+	<tr><td>
+		<div align="center">
+		<input type="button" id="info-send" name="info-send" value="Send" onclick="javascript:sendSMSAjax();"/>&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="button" id="info-cancel" name="info-cancel" value="Cancel" onclick="javascript:closewindow();"/>
+		</div>
+	</td></tr>
+	</table>
+</div>
+
+<div id="window-overwrite" style="display: none; border: 0pt none ; margin: 0pt; padding: 0pt; background-color: #FFFFFF; background-image: none; position: absolute; z-index: 11000; top: 0px; left: 0px; filter：alpha(opacity=20); width: 0px; height: 0px;"></div>
+
+ <div onmouseover='Move_obj("dynamic_tip_check_pagename")' onmouseout="setto()" onmousemove="clearTimeoutO()" id="dynamic_tip_check_pagename" style="display:none;position:absolute;left:0px;top:0px;cursor:move;z-index:11999;border:1px solid #fb7;">
+	   <div style=" height:20px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; padding:3 5 0 5; color:red"><img src="/dct/images/j_ico.gif"/>&nbsp;&nbsp;Error Tip</div>
+   	   <div id="page_error_info"> </div>
+</div>
+
+
+	<script type="text/javascript"
+		src="/dct/scripts/ajax/langmenu.js"></script>
+	
+
+	
+<link rel="stylesheet" media="screen, projection, print" type="text/css"
+	href="/dct/sites/site97/bannerLoc/uNGSTLCMQIcHUup/banner.css" />
+
+
+
+<div id="header" style="line-height: 0; position:relative; margin-top:0; min-height:90px;">
+  	<img id="type3_background_img_id"  src="/dct/sites/site97/bannerLoc/uNGSTLCMQIcHUup/images/bAqatSes_Left.jpg"> 
+	<div class="clear"></div>   
+	<div style="width:900px; position:absolute; text-align:left; bottom:20%; left:50px; margin:0 auto;">
+		
+		
+		
+	</div>
+</div>
+
+	
+
+
+
+			
+				
+				
+					<div id="nav" class="DCT_nav_bg">
+						<div class="DCT_nav">
+							<ul><li><span style="font-size: 14px"><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/1" class="DPage"><strong><span style="font-family: Arial">Home</span></strong></a> </span></li><li><span style="color: #0000ff"><span style="font-family: Arial"><strong><span style="font-size: 14px"><a  class="Portal" href="https://ieeecluster.github.io/2012/dct/page/65574" class="Portal"><span style="font-size: 14px">Login</span></a></span></strong></span></span></li><li><strong><span style="font-size: 14px"><span style="font-family: Arial"><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65558" class="DPage"><span style="font-size: 14px">Submission Guide</span></a></span></span></strong></li><li><span style="font-size: 14px"><a  class="Portal" href="https://ieeecluster.github.io/2012/dct/page/65554" class="Portal"><strong><span style="font-family: Arial">Registration</span></strong></a> </span></li><li><strong><span style="font-size: 14px"><span style="font-size: 14px"><span style="font-family: Arial"><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65608" class="DPage"><span style="color: rgb(255,255,0)"><span style="font-size: 14px">R<span style="color: rgb(0,255,0)">e</span>g<span style="color: rgb(0,255,0)">i</span>s<span style="color: rgb(0,255,0)">t</span>r<span style="color: rgb(0,255,0)">a</span>t<span style="color: rgb(0,255,0)">i</span>o<span style="color: rgb(0,255,0)">n</span> F<span style="color: rgb(0,255,0)">e</span></span><span style="color: rgb(0,255,0)"><span style="font-size: 14px">e</span></span></span></a></span></span></span></strong><span style="font-size: 14px"><strong><font color="#ffff00"> </font></strong></span></li><li><span style="font-size: 14px"><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65559" class="DPage"><strong><span style="font-family: Arial">Hotel Reservation</span></strong></a> </span></li><li><span style="font-size: 14px"><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65605" class="DPage"><strong><span style="font-family: Arial">FAQ</span></strong></a></span></li></ul>
+							
+						</div>
+					</div>
+				
+				<div class="DCT_center_t_d"></div>
+			
+			
+			<div id="content" class="DCT_center">
+				
+					
+					
+						<div id="leftcol" class="DCT_center_left">
+							<div class="DCT_liebiao">
+								<div id="left" class="DCT_bar">
+									<ul>    <li><span style="font-family: Arial"><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65615" class="DPage"><strong>AUTHOR GUIDE</strong></a></span></li>    <li><a  href="https://ieeecluster.github.io/2012/dct/page/65622"><span style="color: rgb(255,255,0)"><em><strong><span style="font-family: Arial">O<span style="color: rgb(0,255,0)">R</span>A<span style="color: rgb(0,255,0)">L</span> P<span style="color: rgb(0,255,0)">R</span>E<span style="color: rgb(0,255,0)">S</span>E<span style="color: rgb(0,255,0)">N</span>T<span style="color: rgb(0,255,0)">A</span>T<span style="color: rgb(0,255,0)">I</span>O</span><span style="color: rgb(0,255,0)"><span style="font-family: Arial">N</span></span></strong></em></span></a></li>    <li><em><span style="font-family: Arial"><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65618" class="DPage"><span style="color: #00ff00"><strong><span style="font-family: Arial">PROGRAMME<br/>    </span></strong></span></a></span></em></li>    <li><a  href="https://ieeecluster.github.io/2012/dct/page/65621"><span style="color: rgb(0,255,0)"><em><strong><span style="font-family: Arial"><span style="font-size: 12px">ADVANCED PROGRAMME</span></span></strong></em></span></a></li>    <li><strong><span style="font-family: Arial"><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65583" class="DPage"><span style="font-family: Arial"><span style="font-size: 12px"><strong>VISA GUIDE</strong></span></span></a></span></strong></li>    <li><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65587" class="DPage"><strong><span style="font-family: Arial"><span style="font-size: 12px"><strong>ACCOMMODATION</strong></span></span></strong></a></li>    <li><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65616" class="DPage"><strong><strong><span style="font-family: Arial">TRAVEL TIPS</span></strong></strong></a></li>    <li><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65594" class="DPage"><strong><span style="font-family: Arial">NEWS</span></strong></a></li>    <li><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65578" class="DPage"><span style="font-family: Arial"><span style="font-size: 12px"><strong>ORGANIZING COMMITTEE</strong></span></span></a></li>    <li><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65541" class="DPage"><strong><span style="font-family: Arial"><span style="font-size: 12px"><strong>IMPORTANT DATES</strong></span></span></strong></a></li>    <li><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65581" class="DPage"><span style="font-family: Arial"><span style="font-size: 12px"><strong>INVITED SPEAKERS</strong></span></span></a></li>    <li><span style="font-family: Arial"><span style="font-size: 14px"><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65596" class="DPage"><span style="font-size: 12px"><strong>WORKSHOPS</strong></span></a></span></span></li>    <li><span style="font-size: 14px"><span style="font-size: 14px"><span style="font-family: Arial"><span style="font-size: 12px"><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65611" class="DPage"><strong>TUTORIALS</strong></a></span></span></span></span></li>    <li><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65579" class="DPage"><span style="font-family: Arial"><span style="font-size: 12px"><strong>SPONSORSHIP &amp; EXHIBITION</strong></span></span></a></li>    <li><span style="font-family: Arial"><span style="font-size: 12px"><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65589" class="DPage"><strong>CALL FOR PAPERS</strong></a></span></span></li>    <li><span style="font-family: Arial"><span style="font-size: 14px"><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65599" class="DPage"><span style="font-size: 12px"><strong>CALL FOR SPONSORSHIPS</strong></span></a></span></span></li>    <li><a  href="https://ieeecluster.github.io/2012/dct/page/65586"><span style="font-family: Arial"><span style="font-size: 12px"><strong>CONTACT US</strong></span></span></a></li>    <li><span style="color: rgb(255,255,0)"><span style="font-family: Arial"><span style="font-size: 12px"><strong>    SPONSORS</strong></span></span></span><br/>    <a  href="http://www.ieee.org/" target="_blank"><img style="width: 103px; height: 43px" src="http://clb.csp.escience.cn/getCachedDocument.do?docid=20498"></img></a> <a  href="http://www.computer.org/portal/web/cscps/" target="_blank"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=20501" height="66" width="98"></img></a><a  href="http://www.computer.org/portal/web/guest/home" target="_blank"><img style="width: 99px; height: 65px" src="http://clb.csp.escience.cn/getCachedDocument.do?docid=20499"></img></a> <a  href="http://www.ieeetcsc.org/" target="_blank"><img style="width: 98px; height: 52px" src="http://clb.csp.escience.cn/getCachedDocument.do?docid=20500"></img></a></li>    <li><span style="color: rgb(255,255,0)"><span style="font-family: Arial"><span style="font-size: 12px"><strong>    PLATINUM SPONSORS</strong></span></span></span> <a  href="http://www.dawning.com.cn/" target="_blank"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=27849" height="112" width="140"></img></a></li>    <li><span style="color: rgb(255,255,0)"><span style="font-family: Arial"><span style="font-size: 12px"><strong>    SILVER SPONSORS</strong></span></span></span><br/>    <a  href="http://www.intel.com/" target="_blank"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=20504" height="74" width="98"></img></a>    <table width="136" height="348" border="0" cellspacing="1" cellpadding="1" class="DCT_oldtable">        <tbody>            <tr>                <td class="header"><a  href="http://www.inspur.com/" target="_blank"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=27848" height="50" width="140"></img></a></td>            </tr>            <tr>                <td class="header"><a  href="http://www.vmware.com/cn/" target="_blank"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=26074" height="43" width="140"></img></a></td>            </tr>            <tr>                <td class="header"><a  href="http://www.mellanox.com/" target="_blank"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=27844" height="32" width="140"></img></a></td>            </tr>            <tr>                <td class="header" valign="top" align="center"><a  href="http://www.blsc.com.cn/index.html" target="_blank"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=27843" height="26" width="140"></img></a></td>            </tr>            <tr>                <td class="header"><a  href="http://www.paratera.com/" target="_blank"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=28490" height="36" width="140"></img></a></td>            </tr>            <tr>                <td class="header"><a  href="http://www.loongstore.com.cn/" target="_blank"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=24585" alt="龙存科技" height="80" width="100"></img></a></td>            </tr>            <tr>                <td class="header"><a  href="http://www.nvidia.cn/page/home.html" target="_blank"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=26508" height="78" width="100"></img></a></td>            </tr>        </tbody>    </table>    </li></ul><p><span style="color: rgb(255,255,0)"><strong><span style="font-size: 14px"><span style="font-family: Arial">SUPPORTED BY</span></span></strong></span></p><p><a  href="http://www.ccf.org.cn/sites/ccf/">     <img style="width: 96px; height: 68px" src="http://clb.csp.escience.cn/getCachedDocument.do?docid=20502"></img></a></p>
+								</div>
+							</div>
+						</div>
+					
+					
+				
+				<div id="center_right" class="DCT_center_right">
+					
+					
+
+
+<script type="text/javascript"
+	src="/dct/scripts/page/page.js"></script>
+
+<div id="right" class="DCT_right_body">
+	
+	
+		<div id="pagecontent">
+			<div id="DCT_viewcontent">
+				
+
+
+
+
+
+
+
+
+
+
+
+
+<p style="text-align: center;"><strong><span style="font-size: 22px;"><span style="font-family: Arial;">Banquet  </span></span></strong><span style="font-size: 22px;"><span style="font-family: Arial;"><br/></span></span><em><strong><span style="font-size: 16px;"><span style="font-family: Arial;">（<span class="short_text"><span>Click the following picture to</span> <span class="hps">download</span> <span class="hps">the original photo files</span></span>）  </span></span></strong></em><span style="font-size: 22px;"><span style="font-family: Arial;"> <br/></span></span></p><p><a  class="attachment" href="https://ieeecluster.github.io/2012/dct/attach/Y2xiOmNsYjpKUEc6MzA0NjY=" class="attachment"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=30445" height="220" width="330"></img></a><img border="0" src="https://ieeecluster.github.io/2012/dct/images/attachment_small.png" alt="(info)" /><a  class="attachment" href="https://ieeecluster.github.io/2012/dct/attach/Y2xiOmNsYjpKUEc6MzA0Njc=" class="attachment"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=30446" height="220" width="330"></img></a><img border="0" src="https://ieeecluster.github.io/2012/dct/images/attachment_small.png" alt="(info)" /></p><p><a  class="attachment" href="https://ieeecluster.github.io/2012/dct/attach/Y2xiOmNsYjpKUEc6MzA0Njk=" class="attachment"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=30448" height="220" width="330"></img></a><img border="0" src="https://ieeecluster.github.io/2012/dct/images/attachment_small.png" alt="(info)" /> <a  class="attachment" href="https://ieeecluster.github.io/2012/dct/attach/Y2xiOmNsYjpKUEc6MzA0NzA=" class="attachment"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=30449" height="220" width="330"></img></a><img border="0" src="https://ieeecluster.github.io/2012/dct/images/attachment_small.png" alt="(info)" /></p><p><a  class="attachment" href="https://ieeecluster.github.io/2012/dct/attach/Y2xiOmNsYjpKUEc6MzA1MDA=" class="attachment"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=30450" height="220" width="330"></img></a><img border="0" src="https://ieeecluster.github.io/2012/dct/images/attachment_small.png" alt="(info)" /> <a  class="attachment" href="https://ieeecluster.github.io/2012/dct/attach/Y2xiOmNsYjpKUEc6MzA1MDE=" class="attachment"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=30451" height="220" width="330"></img></a><img border="0" src="https://ieeecluster.github.io/2012/dct/images/attachment_small.png" alt="(info)" /></p><p><a  class="attachment" href="https://ieeecluster.github.io/2012/dct/attach/Y2xiOmNsYjpKUEc6MzA1MDI=" class="attachment"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=30452" height="220" width="330"></img></a><img border="0" src="https://ieeecluster.github.io/2012/dct/images/attachment_small.png" alt="(info)" /> <a  class="attachment" href="https://ieeecluster.github.io/2012/dct/attach/Y2xiOmNsYjpKUEc6MzA1MDM=" class="attachment"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=30453" height="220" width="330"></img></a><img border="0" src="https://ieeecluster.github.io/2012/dct/images/attachment_small.png" alt="(info)" /></p><p><a  class="attachment" href="https://ieeecluster.github.io/2012/dct/attach/Y2xiOmNsYjpKUEc6MzA1MDQ=" class="attachment"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=30454" height="220" width="330"></img></a><img border="0" src="https://ieeecluster.github.io/2012/dct/images/attachment_small.png" alt="(info)" /> <a  class="attachment" href="https://ieeecluster.github.io/2012/dct/attach/Y2xiOmNsYjpKUEc6MzA1MDU=" class="attachment"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=30455" height="220" width="330"></img></a><img border="0" src="https://ieeecluster.github.io/2012/dct/images/attachment_small.png" alt="(info)" /></p><p><a  class="attachment" href="https://ieeecluster.github.io/2012/dct/attach/Y2xiOmNsYjpKUEc6MzA1MDY=" class="attachment"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=30456" height="220" width="330"></img></a><img border="0" src="https://ieeecluster.github.io/2012/dct/images/attachment_small.png" alt="(info)" /> <a  class="attachment" href="https://ieeecluster.github.io/2012/dct/attach/Y2xiOmNsYjpKUEc6MzA1MDc=" class="attachment"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=30457" height="220" width="330"></img></a><img border="0" src="https://ieeecluster.github.io/2012/dct/images/attachment_small.png" alt="(info)" /></p><p><a  class="attachment" href="https://ieeecluster.github.io/2012/dct/attach/Y2xiOmNsYjpKUEc6MzA1MDg=" class="attachment"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=30458" height="220" width="330"></img></a><img border="0" src="https://ieeecluster.github.io/2012/dct/images/attachment_small.png" alt="(info)" /> <a  class="attachment" href="https://ieeecluster.github.io/2012/dct/attach/Y2xiOmNsYjpKUEc6MzA1MDk=" class="attachment"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=30459" height="220" width="330"></img></a><img border="0" src="https://ieeecluster.github.io/2012/dct/images/attachment_small.png" alt="(info)" /></p><p><a  class="attachment" href="https://ieeecluster.github.io/2012/dct/attach/Y2xiOmNsYjpKUEc6MzA1MTI=" class="attachment"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=30460" height="220" width="330"></img></a><img border="0" src="https://ieeecluster.github.io/2012/dct/images/attachment_small.png" alt="(info)" /> <a  class="attachment" href="https://ieeecluster.github.io/2012/dct/attach/Y2xiOmNsYjpKUEc6MzA1MTM=" class="attachment"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=30461" height="220" width="330"></img></a><img border="0" src="https://ieeecluster.github.io/2012/dct/images/attachment_small.png" alt="(info)" /></p><p style="text-align: center;"><a  class="attachment" href="https://ieeecluster.github.io/2012/dct/attach/Y2xiOmNsYjpKUEc6MzA1MTQ=" class="attachment"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=30462" height="330" width="220"></img></a><img border="0" src="https://ieeecluster.github.io/2012/dct/images/attachment_small.png" alt="(info)" />      <a  class="attachment" href="https://ieeecluster.github.io/2012/dct/attach/Y2xiOmNsYjpKUEc6MzA1MTU=" class="attachment"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=30463" height="330" width="220"></img></a><img border="0" src="https://ieeecluster.github.io/2012/dct/images/attachment_small.png" alt="(info)" /></p><p style="text-align: center;"><a  class="attachment" href="https://ieeecluster.github.io/2012/dct/attach/Y2xiOmNsYjpKUEc6MzA1MTA=" class="attachment"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=30464" height="330" width="220"></img></a><img border="0" src="https://ieeecluster.github.io/2012/dct/images/attachment_small.png" alt="(info)" />       <a  class="attachment" href="https://ieeecluster.github.io/2012/dct/attach/Y2xiOmNsYjpKUEc6MzA1MTE=" class="attachment"><img src="http://clb.csp.escience.cn/getCachedDocument.do?docid=30465" height="330" width="220"></img></a><img border="0" src="https://ieeecluster.github.io/2012/dct/images/attachment_small.png" alt="(info)" /></p><p style="text-align: center;"> </p>
+
+
+			</div>
+		</div>
+	
+	<div class="DCT_clear"></div>
+</div>
+
+
+<script type="text/javascript">
+function changeByTagName(pageTag)
+{
+  if('attachmentTag' == pageTag)
+  {
+    document.getElementById("pagecontent").className = "DCT_hidetab";
+    document.getElementById("menu-attach").className = "activetab";
+    document.getElementById("menu-pagecontent").className = "";  
+    document.getElementById("attach").className = "";
+    document.getElementById("attach").style.display = "";
+  }
+}
+changeByTagName('null');
+</script>
+
+				</div>
+				<div class="DCT_clear"></div>
+			</div>
+			<div class="DCT_clear"></div>
+			
+			<div id="bottom">
+				<p style="text-align: center"><span style="font-family: Times New Roman"><strong><span style="font-size: 12px"><span style="color: rgb(51,102,255)"><span>Hosted by Key Laboratory of Computer System and Architecture</span> </span></span></strong></span></p><p style="text-align: center"><span style="font-family: Times New Roman"><strong><span style="font-size: 12px"><span style="color: rgb(51,102,255)"><span>Institute of Computing Technology, Chinese Academy of Sciences</span></span></span></strong></span></p><p style="text-align: center"><a  href="https://ieeecluster.github.io/2012/dct/page/65555"><span style="color: rgb(255,102,0)"><span style="font-size: 14px">Conference Admin</span></span></a>    <a  href="http://new.cnzz.com/v1/login.php?siteid=4293307" target="_blank"><img style="width: 50px; height: 12px;" src="http://clb.csp.escience.cn/getCachedDocument.do?docid=11453"></img></a> <br/></p>
+				
+<font color="#666666"> Powered by </font>
+<font style="font-size:9pt"><a href="http://duckling.escience.cn/"
+	target="_blank">Duckling</a>(<a href="http://csp.escience.cn/" target="_blank" >CSP 1.4.8p7</a>)</font>
+	
+			</div>
+			
+		</div>
+		<script type="text/javascript">
+		function displayLeftMenu()
+		{
+		  var pos = getElementPos('leftcol');
+		  var edit_button=document.getElementById('leftmenu_edit_buttom_id');
+		  edit_button.style.display='block';
+		  edit_button.style.left =pos.x+document.getElementById('leftcol').offsetWidth-40+"px";
+		}
+		function displayNav()
+		{
+		  var pos = getElementPos('nav');
+		  var edit_button = document.getElementById('nav_edit_buttom_id');
+		  edit_button.style.display='block';
+		  edit_button.style.left =pos.x+document.getElementById('nav').offsetWidth-40+"px";
+		  edit_button.style.top=pos.y+10+'px';   
+		}
+	</script>
+	
+<div style="display:none;">
+                        <script src="http://s14.cnzz.com/stat.php?id=3269071&web_id=3269071" language="JavaScript"></script>
+                        <script src="http://s13.cnzz.com/stat.php?id=3802355&web_id=3802355" language="JavaScript"></script>
+                        <script src="http://s21.cnzz.com/stat.php?id=3913621&web_id=3913621" language="JavaScript"></script>
+                        <script src="http://s23.cnzz.com/stat.php?id=4257623&web_id=4257623" language="JavaScript"></script>
+                        <script src="http://s24.cnzz.com/stat.php?id=4293307&web_id=4293307" language="JavaScript"></script>
+                </div>
+        <script language="javascript">
+if (typeof isAdmin != "undefined" && isAdmin=='true'){
+
+document.write( '<scr' + 'ipt type="text/javascript" src="http://chat56.live800.com/live800/chatClient/skillButton.js?jid=4539271383&companyID=186804&configID=61061&codeType=custom"><\/scr' + 'ipt>' ) ;
+
+document.write( '<scr' + 'ipt type="text/javascript" src="http://chat56.live800.com/live800/chatClient/monitor.js?jid=4539271383&companyID=186804&configID=59653&codeType=custom"><\/scr' + 'ipt>' ) ;
+
+}
+
+</script>
+
+	</body>
+</html>

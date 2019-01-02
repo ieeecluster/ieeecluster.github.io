@@ -1,0 +1,53 @@
+.DCT_banner_first {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: #000000;
+}
+
+.DCT_banner_left_first {
+	width: 447px;
+	height: 100px;
+	background-image: url(images/leftBanner.gif);
+	background-repeat: no-repeat;
+	position: absolute;
+	float: left;
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+	overflow:hidden;
+}
+
+.DCT_banner_center_first {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	background-image: url(images/filledBanner.gif);
+	background-repeat: repeat-x;
+	float: left;
+	z-index: 0;
+}
+
+.DCT_banner_right_first {
+	width: 554px;
+	height: 100px;
+	position: absolute;
+	background-image: url(images/rightBanner.gif);
+	background-repeat: no-repeat;
+	float: left;
+	top: 0px;
+	right: 0px;
+	z-index: 1;
+}
+
+.DCT_banner_font_first {
+	width: 100%;
+	height: 100px;
+	color: #0065b8;
+	font-size: 30px;
+	font-weight: bold;
+	position: absolute;
+	left: 100px;
+	padding: 0px;
+	z-index: 199999;
+}

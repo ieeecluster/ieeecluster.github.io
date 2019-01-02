@@ -1,0 +1,690 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+
+
+<link rel="stylesheet" media="screen, projection, print" type="text/css"
+     href="/dct/css.css"/>
+<link rel="stylesheet" type="text/css" media="print" href="/dct/css.css" />
+<!-- INCLUDERESOURCES (stylesheet) -->
+
+<!-- INCLUDERESOURCES (inlinecss) -->
+
+
+
+
+<script type="text/javascript" src="/dct/scripts/page/pageName.js"></script>
+<!-- script type="text/javascript" src="/dct/scripts/mootools.js"></script>
+<script type="text/javascript" src="/dct/scripts/prettify.js"></script>
+<script type="text/javascript" src="/dct/scripts/jspwiki-common.js"></script> -->
+<script type="text/javascript" src="/dct/scripts/ajax/ajax.js"></script>
+<script type="text/javascript" src="/dct/scripts/ajax/comm-manager.js"></script>
+<script type="text/javascript" src="/dct/scripts/js.js"></script>
+     <script type="text/javascript"  src="/dct/scripts/jquery/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="/dct/scripts/ajax/site.js"></script>
+
+<script type="text/javascript">
+	site.init('https://ieeecluster.github.io/2012/dct');
+//<![CDATA[
+
+/* Localized javascript strings: LocalizedStrings[] */
+var LocalizedStrings = {
+"javascript.site.properties.siteconfig":"Site Config",
+"javascript.slimbox.error":"<h2>Error</h2>There was a problem with your request.<br />Please try again",
+"javascript.slimbox.remoteRequest":"Remote Request {0} of {1}",
+"javascript.grant.write":"Write",
+"javascript.update.choosetag":"Please choose tag!",
+"javascript.searchclb.grant.condition":"Please enter the grant condition!",
+"javascript.grant.tip.adduser":"Add Group/User",
+"javascript.sort.descending":"Descending order. Click to reverse sort order",
+"javascript.window.info":"Infomation",
+"javascript.grant.select.noadd":"Please select user/group firstly!",
+"javascript.searchclb.addpage":"Add to page",
+"javascript.quick.bottom":"Go To Bottom",
+"javascript.newpage.new":"Create new page",
+"javascript.grant.noselect":"Please select privileges firstly!",
+"javascript.addpage.enter":"Please enter the page name!",
+"javascript.grant.tree.title":"VO Tree",
+"javascript.grant.name":"Group/User Name",
+"javascript.hint.emptycombo":"Please select parent page (Press down arrow key to list all pages)",
+"javascript.button.submit":"Submit",
+"javascript.page.alledit.tip":"Grant all privileges to all entities",
+"javascript.page.view.text":"View",
+"javascript.quick.top":"Go To Top",
+"javascript.edit.areyousure":"Without clicking the Save button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.error.sms.fail":"Send SMS failure, maybe system busy now!",
+"javascript.grant.delete.error":"Error while delete privileges!",
+"javascript.grant.tip.add":"Add privileges",
+"javascript.slimbox.directLink":"Direct Link to the target",
+"javascript.grant.window.delete":"Cancel selected user/group",
+"javascript.searchclb.taget":"Please choose target page!",
+"javascript.site.properties.sysconfig":"System Config",
+"javascript.grant.select.nodelete":"Please select user/group firstly!",
+"javascript.page.warning.priv":"Please select privileges!",
+"javascript.error.sms.nomobile":"No mobile phone number is saved in this system, can not send SMS the user, please contact user directly!",
+"javascript.grant.button.grant.tip":"Grant privileges",
+"javascript.myresult.confirm":"Are you sure to delete all selected documents?",
+"javascript.tip.default.title":"More...",
+"javascript.edit.findandreplace.nomatch":"No match found!",
+"javascript.searchclb.choose":"Please choose document!",
+"javascript.info.samename":"The rename page name must not be the same with the original page name！",
+"javascript.sort.ascending":"Ascending order. Click to reverse sort order",
+"javascript.upload.choose.title":"Please enter document title!",
+"javascript.grant.window.deleteall":"Cancel all user/group",
+"javascript.info.renameto":"Please enter the rename page name!",
+"javascript.version.noright":"Nobody has the rights of this document, can not modify the rights.",
+"javascript.grant.read":"Read",
+"javascript.quick.previous":"Go To Previous Section",
+"javascript.myresult.remove":"Are you sure to remove all selected documents from My Result?",
+"javascript.dmlform.savewaring":"Save failure!Plz use Save&Exit button",
+"javascript.grant.confirm":"Are you sure to delete the privilege?",
+"javascript.pagename.rules.tip":"Page name:Allowed Chars(.a-zA-Z_- and other language characters) <=255",
+"javascript.searchclb.myresult":"Are you sure to add the documents to My Result?",
+"javascript.upload.addtag":"Please enter tag name!",
+"javascript.version.modify":"Modify rights",
+"javascript.navpage.hint.emptycombo":"Please select navigation page (Press down arrow key to list all pages)",
+"javascript.grant.list.title":"Selected Group/User",
+"javascript.grant.window.title":"Grant privileges to VO Group/User",
+"javascript.page.edit.text":"Edit",
+"javascript.newpage.maxlength":"Page name length is no more than 32 characters(ASCII length), please reenter!",
+"javascript.edit.startOfPage":"( start of page )",
+"javascript.grant.tip.delete":"Delete privileges",
+"javascript.grant.button.grantread":"Grant read",
+"javascript.site.properties.emailconfig":"Email Config",
+"javascript.myresult.target":"Please choose target page!",
+"javascript.leftMenu.hint.emptycombo":"Please select left page (Press down arrow key to list all pages)",
+"javascript.page.alledit.error":"Error while grant all entities editable!",
+"javascript.quick.edit":"Edit This Section",
+"javascript.plain.choose.operation":"Please choose operation type!",
+"javascript.sharepage.email":"Please enter the email address!",
+"javascript.upload.choose.file.maxsize":"File length exceed 64 bytes, please rechoose document path!",
+"javascript.grant.user":"User",
+"javascript.page.title":"Page Privilege List",
+"javascript.configevents.big":"Your input numeric is too large, can not exceed 999!",
+"javascript.upload.closeadd":"Close add tag",
+"javascript.update.confirm":"Are you sure only update the tags? Otherwise, you need to choose document path!",
+"javascript.expand":"[show]",
+"javascript.group.validName":"Please provide a valid name for the new Group",
+"javascript.window.warning":"Warning",
+"javascript.page.window.title":"Grant privileges to VO Group/User",
+"javascript.grant.type":"Type",
+"javascript.configtag.remove":"Are you sure delete the Tag? Notice: If the documents use the tag, it will fail!",
+"javascript.grant.button.grant":"Grant",
+"javascript.page.alledit":"All entities editable",
+"javascript.grant.button.cancel.tip":"Cancel grant privileges",
+"javascript.TAG_ADD_ERROR":"Error in add new tag, maybe the tag already exist!",
+"javascript.configevents.numeric":"Please enter digital characters, reenter it!",
+"javascript.plain.overwrite.changed":"You have modifed this page at {0}, and haven't saved it. Are you sure to recover this page while someone else have updated this page?",
+"javascript.grant.title":"Document Privilege List",
+"javascript.page.warning.entity":"Please select user/group!",
+"javascript.newpage.empty":"Please enter charater (A-Z,a-z), numeric key or Chinese(No more than 32 chars)",
+"javascript.slimbox.next":"Next&raquo;",
+"javascript.search.hint":"On Searching...",
+"javascript.page.button.grant.tip":"Grant privileges",
+"javascript.filter.all":"( All )",
+"javascript.configtag.confirm":"Are you sure remove the tag from favourate tag?",
+"javascript.site.properties.domainconfig":"Domain Name Config",
+"javascript.grant.status.ready":"Ready",
+"javascript.grant.status.hint":"Inherit parent page privilege if empty",
+"javascript.grant.button.grantedit":"Grant edit",
+"javascript.page.type.text":"Privilege type:",
+"javascript.upload.choose.file":"Please choose document path!",
+"javascript.page.allentities":"All entities(All)",
+"javascript.searchclb.confirm":"Are you sure to delete the document?",
+"javascript.sbox.clone.suffix":"-New",
+"javascript.slimbox.info":"Image {0} of {1}",
+"javascript.version.right":"Please choose rights!",
+"javascript.site.properties.clbconfig":"CLB Config",
+"javascript.upload.newtag":"Add new Tag",
+"javascript.PRIVILEGE_ERROR":"You may not have the privilege to access the resource or execute the function!",
+"javascript.edit.resize":"Drag to resize the text area",
+"javascript.grant.group":"Group",
+"javascript.grant.status.complete":"Operation complete",
+"javascript.sharepage.error.email":"Illegal mail address format or wrong splitter(Please split the addresses with ',').",
+"javascript.edit.toolbar.makeSelection":"Please make first a selection.",
+"javascript.plain.confirm":"Are you sure to execute this progress? It will copy the content of template to current page.",
+"javascript.searchclb.enter":"Please enter search condition!",
+"javascript.grant.button.grantwrite":"Grant write",
+"javascript.upload.warning.add":"Can not use batch document and add to page concurrently!",
+"javascript.upload.warning.zip":"Your upload file is non a zip format. You may not use the batch upload!",
+"javascript.slimbox.previous":"&laquo;Previous",
+"javascript.grant.button.grantview":"Grant view",
+"javascript.error.sms.empty":"Please enter message!",
+"javascript.grant.confirm.title":"Confirm",
+"javascript.collapse":"[hidden]",
+"javascript.quick.next":"Go To Next Section",
+"javascript.error.sms.exceed":"Your sms length is exceeded one sms length!",
+"javascript.plain.choose.grant":"Please choose the grant object!",
+"javascript.grant.button.cancel":"Cancel",
+"javascript.button.cancel":"Cancel",
+"javascript.configtag.entertag":"Please enter the new tag name!",
+"javascript.version.close":"Close modify",
+"javascript.plain.overwrite.nochange":"You have modifed this page at {0}, and haven't saved it. Are you sure to recover this page?",
+"javascript.page.allview":"All entities viewable",
+"javascript.upload.choose.tag":"Please choose tag!",
+"javascript.sort.click":"Click to sort",
+"javascript.hint.stastics.emptycombo":"Please select query page (Press down arrow key to list all pages)",
+"javascript.sharepage.vo":"Please enter the users!",
+"javascript.grant.status.failure":"Operation failure"
+};
+
+
+
+/* Initialise glboal Wiki js object with server and page dependent variables */
+/* FIXME : better is to add this to the window.onload handler 
+Wiki.init({
+	'BaseUrl': 'https://ieeecluster.github.io/2012/dct',
+	'PageUrl': '/dct/page/%23%24%25',
+	'TemplateDir': '/dct/',
+	'PageName': '65574',
+	'UserName': 'Guest', 
+	'JsonUrl' : '/dct/JSON-RPC'
+	});*/
+	
+	
+var Wiki = {
+	'BaseUrl': 'https://ieeecluster.github.io/2012/dct',
+	'PageUrl': '/dct/page/%23%24%25',
+	'TemplateDir': '/dct/',
+	'PageName': '65574',
+	'UserName': 'Guest', 
+	'JsonUrl' : '/dct/JSON-RPC'
+	}
+	
+	
+/* INCLUDERESOURCES (jsfunction) */
+
+
+//]]>
+</script>
+
+<script type="text/javascript" src="/dct/scripts/DucklingCommon.js?ver=5.3.9"></script>
+
+
+ <META NAME="ROBOTS" CONTENT="all">
+ 
+ 
+ 
+<link rel="start"  href="/dct/1"  title="Front page" />
+
+
+
+	<link rel="shortcut icon" type="image/x-icon" href="/dct/images/favicon.ico" />
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, projection, print"
+     href="/dct/skins/默认皮肤蓝色/skin.css" />
+
+     <!--  script type="text/javascript"  src="/dct/skins/默认皮肤蓝色/skin.js"></script>-->
+
+	
+		<title>IEEE Cluster 2012, Beijing, China: CSPMySpace
+		</title>
+	</head>
+	<body class="view">
+		<script language="javascript">
+var isAdmin='false';
+</script>
+		<div class="DCT_body">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="info-username" name="info-username" value="">
+<div id="info-commpopup" class="DCT_hideoutmenu" >
+	<table cellspacing="0">
+	<tr> <td onmouseover="javascript:samewithspan()" onmouseout="javascript:hidePopup()"><a id="homepage" href="">Home Page</a></td></tr>
+	
+	<tr> <td onmouseover="javascript:samewithspan()" onmouseout="javascript:hidePopup()"><a id="mailto" href="">Send E-Mail</a>
+	</td></tr>
+	</table>
+</div>
+
+<div id="window-sendinfo" style="display: none; border: 1px solid rgb(0, 0, 0); padding: 5px; background-color: rgb(255, 255, 255); position: absolute; z-index: 11001; width: 350px; height: 230px; font-size: 14px; left: 300px; top: 300px;">
+	<div id="TitleArea">
+	<table width="100%"><tr><td align="left"><strong>Send SMS</strong></td><td style='width:1px;'> <input type='button' onclick='closewindow();' title="Close window" class='close' value="Close" /></td></tr></table>
+	</div>
+	<table class="DCT_wikitable">
+	<tr><td>
+	<span><input type="checkbox" id="info-signature" name="info-signature" value="on"/>Display mobile</span>
+	<!--
+		<input id="info-signature" type="text" name="info-signature" value="" onpaste="return onCharsChange(this);" onKeyUp="return onCharsChange(this);"/>
+	-->
+	</td></tr>
+	<tr><td>
+	You still can enter <font color="red"><span id="charsmonitor">200</span></font> words.
+	</td></tr>
+	<tr><td>
+		<textarea name="info-message" id="info-message" rows="4" cols="40" style="font-size:10pt" onpaste="return onCharsChange(this);" onKeyUp="return onCharsChange(this);"></textarea>
+	</td></tr>
+	<tr><td>
+		<div align="center">
+		<input type="button" id="info-send" name="info-send" value="Send" onclick="javascript:sendSMSAjax();"/>&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="button" id="info-cancel" name="info-cancel" value="Cancel" onclick="javascript:closewindow();"/>
+		</div>
+	</td></tr>
+	</table>
+</div>
+
+<div id="window-overwrite" style="display: none; border: 0pt none ; margin: 0pt; padding: 0pt; background-color: #FFFFFF; background-image: none; position: absolute; z-index: 11000; top: 0px; left: 0px; filter：alpha(opacity=20); width: 0px; height: 0px;"></div>
+
+ <div onmouseover='Move_obj("dynamic_tip_check_pagename")' onmouseout="setto()" onmousemove="clearTimeoutO()" id="dynamic_tip_check_pagename" style="display:none;position:absolute;left:0px;top:0px;cursor:move;z-index:11999;border:1px solid #fb7;">
+	   <div style=" height:20px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; padding:3 5 0 5; color:red"><img src="/dct/images/j_ico.gif"/>&nbsp;&nbsp;Error Tip</div>
+   	   <div id="page_error_info"> </div>
+</div>
+
+
+<script language="javascript"
+	src="/dct/scripts/ajax/langmenu.js"></script>
+	
+	
+	
+<link rel="stylesheet" media="screen, projection, print" type="text/css"
+	href="/dct/sites/site97/bannerLoc/uNGSTLCMQIcHUup/banner.css" />
+
+
+
+<div id="header" style="line-height: 0; position:relative; margin-top:0; min-height:90px;">
+  	<img id="type3_background_img_id"  src="/dct/sites/site97/bannerLoc/uNGSTLCMQIcHUup/images/bAqatSes_Left.jpg"> 
+	<div class="clear"></div>   
+	<div style="width:900px; position:absolute; text-align:left; bottom:20%; left:50px; margin:0 auto;">
+		
+		
+		
+	</div>
+</div>
+	
+	
+	
+
+
+
+
+			
+				
+				
+					<div id="nav" class="DCT_nav_bg">
+						<div class="DCT_nav">
+							<ul><li><span style="font-size: 14px"><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/1" class="DPage"><strong><span style="font-family: Arial">Home</span></strong></a> </span></li><li><span style="color: #0000ff"><span style="font-family: Arial"><strong><span style="font-size: 14px"><a  class="Portal" href="https://ieeecluster.github.io/2012/dct/page/65574" class="Portal"><span style="font-size: 14px">Login</span></a></span></strong></span></span></li><li><strong><span style="font-size: 14px"><span style="font-family: Arial"><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65558" class="DPage"><span style="font-size: 14px">Submission Guide</span></a></span></span></strong></li><li><span style="font-size: 14px"><a  class="Portal" href="https://ieeecluster.github.io/2012/dct/page/65554" class="Portal"><strong><span style="font-family: Arial">Registration</span></strong></a> </span></li><li><strong><span style="font-size: 14px"><span style="font-size: 14px"><span style="font-family: Arial"><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65608" class="DPage"><span style="color: rgb(255,255,0)"><span style="font-size: 14px">R<span style="color: rgb(0,255,0)">e</span>g<span style="color: rgb(0,255,0)">i</span>s<span style="color: rgb(0,255,0)">t</span>r<span style="color: rgb(0,255,0)">a</span>t<span style="color: rgb(0,255,0)">i</span>o<span style="color: rgb(0,255,0)">n</span> F<span style="color: rgb(0,255,0)">e</span></span><span style="color: rgb(0,255,0)"><span style="font-size: 14px">e</span></span></span></a></span></span></span></strong><span style="font-size: 14px"><strong><font color="#ffff00"> </font></strong></span></li><li><span style="font-size: 14px"><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65559" class="DPage"><strong><span style="font-family: Arial">Hotel Reservation</span></strong></a> </span></li><li><span style="font-size: 14px"><a  class="DPage" href="https://ieeecluster.github.io/2012/dct/page/65605" class="DPage"><strong><span style="font-family: Arial">FAQ</span></strong></a></span></li></ul>
+							
+						</div>
+					</div>
+				
+				<div class="DCT_center_t_d"></div>
+			
+			
+			<div id="content" class="DCT_center">
+				
+				<div id="center_right" class="">
+					
+					
+
+
+
+
+
+
+
+<div id="right" class="DCT_right_body">
+ 
+	
+
+
+
+
+
+
+
+
+<!-- Left column -->
+
+	
+
+	
+		<div id="portlets-left-column">
+			
+				
+				
+
+
+
+<!-- Use pluto portlet tag to render the portlet -->
+
+
+  <!-- Assemble the rendering result -->
+<!-- <div class="portlet"> -->
+<div>
+<!-- <h3 class="title">MySpace</h3>  -->
+
+    <div class="body">
+      
+
+<!-- jstl tag -->
+
+
+
+<!-- portlet tag -->
+
+<!-- i18n tag -->
+
+<!-- custom tag -->
+
+<!-- package import -->
+
+
+
+
+<!-- spring tags -->
+
+
+<!-- jquery lib -->
+<script src="/csp/media/js/csp-js-base.js" language="javascript" ></script>
+<script src="/csp/media/js/jquery/jquery-1.4.2.min.js" language="javascript" ></script>
+<script src="/csp/media/js/jquery/jquery-ui-1.8.custom.min.js" language="javascript" ></script>
+<script src="/csp/media/js/jquery/jquery.alerts.js" language="javascript" ></script>
+<script src="/csp/media/js/jquery/jquery.floatdialog.js" language="javascript" ></script>
+<script src="/csp/media/js/jquery/jquery.editinplace.js" language="javascript" ></script>
+<script src="/csp/media/js/jquery/jquery.metadata.js" language="javascript" ></script>
+<script src="/csp/media/js/jquery/jquery.validate.min.js" language="javascript" ></script>
+
+<script src="/csp/media/js/json.min.js" language="javascript" ></script>
+<script src="/csp/media/js/jquery/jquery.pop.js" language="javascript" ></script>
+<script src="/csp/media/js/jquery/jquery.pagination.js" language="javascript" ></script>
+<script src="/csp/media/js/jquery/jquery.datepicker.js" language="javascript" ></script>
+<script src="/csp/media/js/jquery/jquery.cal.js" language="javascript" ></script>
+<script src="/csp/media/js/jquery/jquery.PrintArea.js" language="javascript" ></script>
+<script src="/csp/media/js/jquery/ajaxupload.3.6.js" language="javascript" ></script>
+<script src="/csp/media/js/jquery/jquery.citypicker.js" language="javascript" ></script>
+<script src="/csp/media/js/jquery/jquery.json-2.2.min.js" language="javascript" ></script>
+
+<script src="/csp/media/js/i18n.js" language="javascript" ></script>
+<!-- i18n -->
+<script type="text/javascript">
+	var i18n = new I18nManager("javascript.",{
+"javascript.validate.min":"Please enter a value greater than or equal to {0}.",
+"javascript.validate.phoneNumber":"Please enter a valid number,'+' and '-'.",
+"javascript.validate.creditcard":"Please enter a valid credit card number.",
+"javascript.validate.rangelength":"Please enter a value between {0} and {1} characters long.",
+"javascript.validate.minlength":"Please enter at least {0} characters.",
+"javascript.validate.maxlength":"Please enter no more than {0} characters.",
+"javascript.validate.date":"Please enter valid date format.",
+"javascript.validate.url":"Please enter a valid URL.",
+"javascript.validate.dateISO":"Please enter valid date format(ISO).",
+"javascript.validate.accept":"Please enter legal suffix strings.",
+"javascript.validate.required":"This field is required.",
+"javascript.validate.digits":"Please enter integer.",
+"javascript.validate.number":"Please enter a valid number.",
+"javascript.validate.range":"Please enter a value between {0} and {1}.",
+"javascript.validate.assureTotal":"Maximum value must equal to or less than total quality.",
+"javascript.validate.remote":"Please fix this field.",
+"javascript.validate.noLessThanAvailable":"Minimum value must equal to or less than available quality.",
+"javascript.validate.email":"Please enter a valid email address.",
+"javascript.validate.compareTo":"Minimum value must less than maximum value.",
+"javascript.validate.equalTo":"Please enter the same value again.",
+"javascript.validate.max":"Please enter a value less than or equal to {0}."
+});
+
+
+</script>
+<script src="/csp/media/js/jquery/messages_localize.js" language="javascript" ></script>
+<!-- global css  declare -->
+<link type="text/css" href="/csp/media/css/csp-base.css" rel="stylesheet" >
+<link type="text/css" href="/csp/media/css/csp-skin.css" rel="stylesheet" >
+<link type="text/css" href="/csp/media/css/navigation.css" rel="stylesheet" >
+<link type="text/css" href="/csp/media/css/calendar.css" rel="stylesheet" >
+<!--<link type="text/css" href="/csp/media/css/common.css" rel="stylesheet" >  -->
+<link type="text/css" href="/csp/media/css/jquery.alerts.css" rel="stylesheet" >
+<link type="text/css" href="/csp/media/css/jquery.pop.css" rel="stylesheet" >
+<link type="text/css" href="/csp/media/css/pagination.css" rel="stylesheet" >
+<link type="text/css" href="/csp/media/css/jquery.datepicker.css" rel="stylesheet" >
+<link type="text/css" href="/csp/media/css/jquery.citypicker.css" rel="stylesheet" >
+<!-- portlet Object declare-->
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$.getScript("http://passport.escience.cn/js/isLogin.do",function(){
+			if(data.result){
+				$("#goDctLogin").submit();
+				return;
+			}
+		});
+
+		//login form validation
+		$("#loginForm").validate({
+  			rules:{
+  				loginEmail:{required:true,email:true},
+  				loginPass: {
+					required: true
+				}
+  			},
+  			messages:{
+  				loginEmail:{
+  					required: 'Please enter email',
+  					email: 'Please enter valid email address'
+  				},
+  				loginPass:{
+					required: 'Please enter password'
+				}
+  			},
+  			errorPlacement: function(error, element) {
+  				error.appendTo(element.parent().parent().next().children('.errorMessage'));
+			}
+		});
+	});
+	
+</script>
+
+<style>
+#csp_login {
+	border-left: 1px solid #ccc;
+	border-right:1px solid #ccc;
+	margin-left: 20px;
+	padding:0px;
+	background-color:#fff;
+}
+
+#csp_login, #csp_login-top, #csp_login-bottom {
+	width: 410px;
+	text-align:center;
+	margin:0px auto;
+	float:none;
+}
+
+#csp_login-top { position:relative; top:-3px; margin-top:0px; }
+#csp_login-bottom { position:relative; top:10px; margin-bottom:0px; }
+
+#csp_login h3 {
+	margin-top:0px;
+	background:none;
+	border:none;
+}
+
+.csp_table-form th {
+	padding-right: 0.5em;
+}
+
+th, td { padding-top:2px; padding-bottom;2px; }
+#csp_login .csp_table-form td.errorMessage {
+	padding-bottom: 1em;
+}
+</style>
+<form action="https://ieeecluster.github.io/2012:80/dct/login" method="post" id="goDctLogin">
+</form>
+<div class="csp_wrap" style="padding-top:20px">
+	
+	<div id="csp_login">
+		<div id="csp_login-top" class="csp_confAdmin-top">
+			<span class="confAdmin-right" style="width:100px;"></span>
+			<span class="confAdmin-center" ></span>
+		</div>
+	
+		<form id="loginForm" name="loginForm" action="/dct/page/65574/__accsp0x2MySpace!65574%7C0;jsessionid=7D82F6B891743E2DEDAAEA149DA796DC?action=login" method="post">
+			<h3>
+				Sign in to conference
+			</h3>
+			
+			<!--################## IF LOGIN FAILED, SHOW THIS MESSAGE -->
+			
+			
+			<table class="csp_table-form">
+				<tr>
+					<th>
+						Email
+					</th>
+					<td>
+						<input type="text" name="loginEmail" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="errorMessage"></td>
+					<!-- error placement -->
+				</tr>
+				<tr>
+					<th>
+						Password
+					</th>
+					<td>
+						<input type="password" name="loginPass" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="errorMessage"></td>
+					<!-- error placement -->
+				</tr>
+				<tr>
+					<td></td>
+					<td class="csp_layout-innerCenter">
+						<input type="submit" name="login" class="csp_button-large"
+							value="Sign in" />
+							
+						 <a href="http://passport.escience.cn/password.jsp" target="_blank" class="csp_text-note"/>
+							Forgot password?
+						 </a>
+					 	 <a href="/dct/page/65574/__rpcsp0x2MySpace!65574%7C0_action/registerView;jsessionid=7D82F6B891743E2DEDAAEA149DA796DC?" class="csp_text-note"/>
+					 		Registration Conference
+					 	 </a>
+					 	 
+					</td>
+				</tr>
+			</table>
+		</form>
+		<div id="csp_login-bottom" class="csp_confAdmin-bottom">
+			<span class="confAdmin-right"></span>
+			<span class="confAdmin-center" style="width:150px;"></span>
+		</div>
+	</div>
+	
+</div>
+<br />
+<br />
+
+
+
+    </div>
+  </div>
+
+
+
+
+			
+		</div>
+
+		<!-- Right column -->
+		<div id="portlets-right-column">
+			
+		</div>
+
+	
+
+
+	<div class="DCT_clear"></div>
+</div>
+
+
+				</div>
+				<div class="DCT_clear"></div>
+			</div>
+			<div class="DCT_clear"></div>
+			
+			<div id="bottom">
+				<p style="text-align: center"><span style="font-family: Times New Roman"><strong><span style="font-size: 12px"><span style="color: rgb(51,102,255)"><span>Hosted by Key Laboratory of Computer System and Architecture</span> </span></span></strong></span></p><p style="text-align: center"><span style="font-family: Times New Roman"><strong><span style="font-size: 12px"><span style="color: rgb(51,102,255)"><span>Institute of Computing Technology, Chinese Academy of Sciences</span></span></span></strong></span></p><p style="text-align: center"><a  href="https://ieeecluster.github.io/2012/dct/page/65555"><span style="color: rgb(255,102,0)"><span style="font-size: 14px">Conference Admin</span></span></a>    <a  href="http://new.cnzz.com/v1/login.php?siteid=4293307" target="_blank"><img style="width: 50px; height: 12px;" src="http://clb.csp.escience.cn/getCachedDocument.do?docid=11453"></img></a> <br/></p>
+				
+
+
+<font style="font-size:9pt">此会议由</font>
+<font style="font-size:9pt">
+<a href="http://csp.escience.cn" target="_blank">中科院国际会议服务平台</a> </font>
+</a></font>
+<font style="font-size:9pt">提供技术支持。</font>
+<a href="http://csp.escience.cn" target="_blank">中科院国际会议服务平台:</a> </font>
+<font style="font-size:9pt">会务信息化管理云平台，助您轻松办会！</font>
+
+			</div>
+			
+		</div>
+		
+		<div style="display:none;">
+                        <script src="http://s14.cnzz.com/stat.php?id=3269071&web_id=3269071" language="JavaScript"></script>
+                        <script src="http://s13.cnzz.com/stat.php?id=3802355&web_id=3802355" language="JavaScript"></script>
+                        <script src="http://s21.cnzz.com/stat.php?id=3913621&web_id=3913621" language="JavaScript"></script>
+                        <script src="http://s14.cnzz.com/stat.php?id=3279287&web_id=3279287" language="JavaScript"></script>
+			<script src="http://s23.cnzz.com/stat.php?id=4257623&web_id=4257623" language="JavaScript"></script>
+			<script src="http://s24.cnzz.com/stat.php?id=4293307&web_id=4293307" language="JavaScript"></script>
+                </div>
+        <script language="javascript">
+if(isAdmin=='true'){
+document.write( '<scr' + 'ipt type="text/javascript" src="http://chat56.live800.com/live800/chatClient/skillButton.js?jid=4539271383&companyID=186804&configID=61061&codeType=custom"><\/scr' + 'ipt>' ) ;
+
+document.write( '<scr' + 'ipt type="text/javascript" src="http://chat56.live800.com/live800/chatClient/monitor.js?jid=4539271383&companyID=186804&configID=59653&codeType=custom"><\/scr' + 'ipt>' ) ;
+
+}
+
+</script>
+	</body>
+</html>
