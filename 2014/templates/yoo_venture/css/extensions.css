@@ -1,0 +1,29 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* Widgetkit
+----------------------------------------------------------------------------------------------------*/
+
+.wk-twitter-single .content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+.wk-twitter-single p {
+    font-style: italic;
+    margin: 0;
+}
+.wk-twitter-single .meta {
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+
+/* ZOO
+----------------------------------------------------------------------------------------------------*/
+
+#page #yoo-zoo h1,
+#page #yoo-zoo h2,
+#page #yoo-zoo h3,
+#page #yoo-zoo h4,
+#page #yoo-zoo h5,
+#page #yoo-zoo h6 { font-weight: normal;}

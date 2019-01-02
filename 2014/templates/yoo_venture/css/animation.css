@@ -1,0 +1,47 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@media (min-device-width: 1025px)  {
+
+    /* Layout
+    ----------------------------------------------------------------------------------------------------*/
+
+    /* Hyperlink Animation */
+    a {
+        -webkit-transition: color 200ms ease-in-out;
+        transition: color 200ms ease-in-out;
+    }
+
+    /* Form Animations */
+    form.style input:not([type='button']),
+    form.style select,
+    form.style textarea {
+        -webkit-transition: all 200ms ease-in-out;
+        transition: all 200ms ease-in-out;
+    }
+
+    /* Button + Menu Animations */
+    .menu-dropdown a.level1,
+    .menu-dropdown span.level1,
+    .menu-sidebar li.level1 .level1,
+    .menu-sidebar li.level1 > .level1:hover,
+    .button-primary,
+    .button-default,
+    form.style button,
+    form.style input[type="button"],
+    form.style input[type="submit"],
+    .searchbox .results li.result.selected {
+        -webkit-transition: box-shadow 100ms linear, border 100ms linear, color 100ms linear;
+        transition: box-shadow 100ms linear, border 100ms linear, color 100ms linear;
+    }
+
+    /* Remove Animation */
+    .menu-dropdown a.level2,
+    .mod-black .button-default,
+    .mod-black form.style button,
+    .mod-black form.style input[type="button"],
+    .mod-black form.style input[type="submit"] {
+        -webkit-transition: none;
+        transition: none;
+    }
+
+}

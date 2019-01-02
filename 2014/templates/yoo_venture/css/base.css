@@ -1,0 +1,41 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/base.css);
+
+
+/* New style-related Base Values
+----------------------------------------------------------------------------------------------------*/
+
+body { font: normal 14px/18px Arial, Helvetica, sans-serif; }
+
+h1 { font-size: 20px; line-height: 20px; border-left: 20px solid #00ABE9; border-right: 150px solid #00ABE9; border-radius:4px 4px 4px 4px; color:#00ABE9; padding:8px;}
+h2 { font-size: 32px; line-height: 32px; }
+h3 { font-size: 20px; line-height: 20px; }
+h4 { font-size: 18px; line-height: 18px; }
+h5 { font-size: 16px; line-height: 16px; }
+h5 { font-size: 14px; line-height: 14px; }
+
+small { font-size: 12px; }
+
+a:hover { text-decoration: underline; }
+
+em { color: #ababab; }
+
+code { color: #45A933; }
+
+ins, mark { background-color: #ffa; }
+mark { color: #444; }
+
+hr {
+	border-top-color: #ddd;
+	border-top-color: rgba(0,0,0,0.1);
+}
+
+pre {
+	border: 1px solid #ddd;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 6px;
+	background: #fafafa;
+}
+
+select, input, textarea, button { font-size: 14px; } 

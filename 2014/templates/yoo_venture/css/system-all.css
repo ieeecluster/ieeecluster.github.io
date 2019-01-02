@@ -1,0 +1,168 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* General
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Item
+----------------------------------------------------------------------------------------------------*/
+
+#system .item > header .meta {
+	line-height: 15px;
+	font-size: 13px;
+}
+
+#system .item > .links a:after {
+	content: " »";
+	font-size: 16px;
+}
+
+
+/* Items
+----------------------------------------------------------------------------------------------------*/
+
+#system .items .item {
+	margin-top: 12px;
+	padding-top: 18px;
+	border-top: 1px solid #ddd;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 0 1px 0 rgba(255,255,255,1) inset;
+}
+
+#system .items .item:first-child {
+	margin-top: 0;
+	padding-top: 0;
+	border-width: 0;
+	box-shadow: none;
+}
+
+
+/* Pagination
+----------------------------------------------------------------------------------------------------*/
+
+#system .pagination a,
+#system .pagination strong {
+	border-radius: 3px;
+	line-height: 24px;
+	font-size: 15px;
+}
+
+
+/* Search Box
+----------------------------------------------------------------------------------------------------*/
+
+.searchbox {
+	width: 100px;
+	height: 30px;
+	margin-top: 4px;
+	margin-left: 10px;
+	padding: 0 25px;
+	border-radius: 3px;
+	background-image: url(../images/searchbox_magnifier.png);
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+}
+
+.searchbox:hover { background-color: #fff; }
+
+.searchbox input {
+	height: 30px;
+	font-size: 13px;
+}
+
+.searchbox input:-moz-placeholder { color: #999; }
+.searchbox input:-ms-input-placeholder { color: #999; }
+.searchbox input::-webkit-input-placeholder { color: #999; }
+.searchbox input.placeholder { color: #999; }
+
+.searchbox.filled button {
+	width: 25px;
+	background: url(../images/searchbox_reset.png) 50% 50% no-repeat; 
+}
+.searchbox.loading button { background: url(../images/searchbox_loader.gif) 50% 50% no-repeat; }
+
+/* Drop-Down Results */
+.searchbox .results {
+	top: 41px;
+	right: -1px;
+	width: 300px;
+	border-radius: 5px;
+}
+
+.searchbox .results li {
+	border-top: 1px solid #ddd;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 0 1px 0 rgba(255,255,255,1) inset;
+	line-height: 18px;
+	text-shadow: 0 1px 0 rgba(255,255,255,1);
+}
+
+.searchbox .results li.result div { font-size: 13px; }
+
+.searchbox .results li.results-header {
+	border-top: none;
+	box-shadow: none;
+}
+
+.searchbox .results li.result.selected { background-color: #fafafa; }
+
+
+/* Breadcrumbs
+----------------------------------------------------------------------------------------------------*/
+
+.breadcrumbs { margin-bottom: 15px; }
+
+.breadcrumbs a,
+.breadcrumbs > span {
+	padding-right: 15px;
+	background: url(../images/breadcrumbs.png) 100% 50% no-repeat;
+}
+
+/* Author Box
+----------------------------------------------------------------------------------------------------*/
+
+#system .author-box {
+	padding: 15px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background: #fafafa;
+}
+
+#system .author-box .avatar {
+	padding: 3px;
+	border: 1px solid #ddd;
+	background: #fff;
+}
+
+#system .author-box .name { color: #444; }
+
+
+/* Comments
+----------------------------------------------------------------------------------------------------*/
+
+/* Head */
+#system #comments .comment-head {
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-bottom-color: #ccc;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-bottom-color: rgba(0,0,0,0.15);
+	border-radius: 5px;
+	background: #fff;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+}
+
+#system #comments .comment-byadmin .comment-head {
+	border: 1px solid #dce6be;
+	background: #faffe6;
+}
+
+/* Body */
+#system #comments ul.level1 ul { background: url(../images/comments_arrow.png) 0 0 no-repeat; }
+
+
+/* Latest Comments
+----------------------------------------------------------------------------------------------------*/
+
+.comments-list .meta { color: #999; }
+

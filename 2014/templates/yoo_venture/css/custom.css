@@ -1,0 +1,93 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Custom Style Sheet - Use this file to style your content
+ */
+
+ /* Custom Logo
+----------------------------------------------------------------------------------------------------*/
+
+ .custom-logo {
+	display: inline-block;
+	width: 190px;
+	height: 60px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/* Only Phones (Portrait) */
+@media (max-width: 380px) {
+
+	.custom-logo { width: 145px; }
+	
+}
+
+
+ /* Widgetkit Slideshow Tabs Venture
+----------------------------------------------------------------------------------------------------*/
+
+.wk-slideshow-tabs-venture .nav li span {
+	padding-top: 48px;
+	background: url(../../../images/yootheme/demo/icons_tabs.png) 50% 0 no-repeat;
+}
+
+.wk-slideshow-tabs-venture .nav li.tab-1.active span { background-position: 50% -80px; }
+.wk-slideshow-tabs-venture .nav li.tab-2 span { background-position: 50% -160px; }
+.wk-slideshow-tabs-venture .nav li.tab-2.active span { background-position: 50% -240px; }
+.wk-slideshow-tabs-venture .nav li.tab-3 span { background-position: 50% -320px; }
+.wk-slideshow-tabs-venture .nav li.tab-3.active span { background-position: 50% -400px; }
+
+
+ /* Frontpage Demo Content
+----------------------------------------------------------------------------------------------------*/
+
+.push33,
+.pull33 { position: relative; }
+.push33 { left: 33.333%; }
+.pull33 { left: -33.333%; }
+
+#top-b .frontpage .button-primary,
+#top-b .frontpage .button-default { margin-top: 70px; }
+
+/* No Phones */
+@media (min-width: 768px) {
+
+	/* Custom */
+	#top-b .frontpage .width50 h3 { margin-top: 40px; }
+	#top-b .frontpage.fp3 { margin-top: 15px; }
+}
+
+/* Only Phones */
+@media (max-width: 767px) {
+
+	/* Tools */
+	.quote h1 {
+		font-size: 32px;
+		line-height: 32px;
+	}
+	.quote h2 {
+		font-size: 18px;
+		line-height: 18px;
+	}
+	.quote h1:before,
+	.quote h2:after { display: none; }
+
+	/* Custom */
+	.push33 { left: auto; }
+	.pull33 { left: auto; }
+
+	#top-b .frontpage .button-primary,
+	#top-b .frontpage .button-default { margin-top: 0; }
+
+	#top-b .frontpage.fp1 .width33 { width: 100%; }
+
+	#bottom-a .mod-dotted .frontpage { padding-bottom: 45px; }
+	#bottom-a .mod-dotted .frontpage .button-default.float-right {
+		float: none;
+		position: absolute;
+		bottom: 15px;
+		left: 15px;
+	}
+
+}

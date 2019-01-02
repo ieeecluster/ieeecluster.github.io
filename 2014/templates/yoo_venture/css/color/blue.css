@@ -1,0 +1,165 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* Color */
+h2,
+h4,
+a,
+.menu-dropdown li.level1:hover .level1,
+.menu-dropdown li.remain .level1,
+.menu-sidebar li.level1 > a:hover,
+.menu-sidebar li.level1 > span:hover,
+#toolbar .menu-line li a:hover,
+.module-title .color,
+.button-default:hover,
+.mod-black .button-default:hover,
+em.box,
+#system .title a:hover,
+.searchbox .results li h3,
+.searchbox .results li.more-results { color: #008ADA; }
+
+/* Hover Color */
+a:hover,
+code,
+.menu-dropdown a.level3:hover,
+.menu-sidebar a.level2:hover,
+#system .title a,
+.searchbox .results li.more-results:hover { color: #004C7D; }
+
+/* Black Color */
+.mod-black a,
+.mod-black .menu-sidebar a.level2,
+.mod-black .menu-sidebar li.level1 > a:hover,
+.mod-black .menu-sidebar li.level1 > span:hover,
+.mod-black .module-title .color { color: #00AFF8; }
+
+/* Black Hover Color */
+.mod-black code,
+#footer a:hover,
+.mod-black a:hover,
+.mod-black .menu-sidebar a.level2:hover { color: #72C4FA; }
+
+/* Button Primary Style */
+.button-primary,
+.mod-black .button-primary,
+.menu-dropdown li.active .level1,
+.menu-dropdown li.active:hover .level1,
+.module.mod-header-color .module-title,
+#system .pagination strong {
+	position: relative;
+	border: 1px solid #0067a2;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-top-color: rgba(0,0,0,0.05);
+	border-bottom-color: rgba(0,0,0,0.35);
+	background: #008ADA;
+	background: -moz-linear-gradient(top, #00AFF8 0%, #008ADA 100%);
+	background: -webkit-linear-gradient(top, #00AFF8 0%, #008ADA 100%);
+	background: -o-linear-gradient(top, #00AFF8 0%, #008ADA 100%);
+	background: linear-gradient(to bottom, #00AFF8 0%, #008ADA 100%);
+	box-shadow: 0 2px 0 rgba(192,226,255,0.3) inset,
+				0 0 0 1px rgba(122,206,255,0.2) inset,
+				0 0 10px rgba(0,61,104,0.25) inset,
+				0 1px 1px rgba(0,61,104,0.1),
+				0 7px 4px -4px rgba(0,61,104,0.15);
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,61,104,0.2);
+}
+
+/* Button Primary Hover Background */
+.menu-dropdown li.active:hover .level1,
+.menu-dropdown li.remain.active:hover .level1,
+.button-primary:hover,
+.mod-black .button-primary:hover,
+#system .pagination strong:hover {
+	box-shadow: 0 2px 0 rgba(192,226,255,0.3) inset,
+				0 0 0 1px rgba(122,206,255,0.2) inset,
+				0 0 10px rgba(122,206,255,0.2) inset,
+				0 1px 1px rgba(0,61,104,0.1),
+				0 7px 4px -4px rgba(0,61,104,0.05);
+}
+
+/* Button Primary Hover + Active Text Color */
+.menu-dropdown li.active .level1,
+.menu-dropdown li.level1.active:hover .level1,
+.menu-dropdown li.level1.remain.active .level1,
+.menu-dropdown li.active .level1 span.subtitle,
+.menu-dropdown li.level2.active > a:hover,
+.menu-dropdown a.level2:hover,
+.menu-dropdown a.level2:hover span.subtitle,
+.button-primary:hover,
+.mod-black .button-primary:hover {
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,61,104,0.2);
+}
+
+.menu-dropdown li.level1.active:hover .level1,
+.button-primary:hover,
+.mod-black .button-primary:hover { text-shadow: 0 1px 1px rgba(0,61,104,0.3); }
+
+/* Button Primary Active */
+.menu-dropdown li.active .level1:active,
+.menu-dropdown li.level1.active:hover .level1:active,
+.menu-dropdown li.level1.remain.active .level1:active,
+.button-primary:active,
+.mod-black .button-primary:active,
+#system .pagination strong:active {
+	border: 1px solid #0067a2;
+	border: 1px solid rgba(0,61,104,0.4);
+	border-top-color: rgba(0,61,104,0.5);
+	background: #008ADA;
+	box-shadow: 0 1px 1px rgba(0,61,104,0.15) inset,
+				0 0 5px rgba(0,61,104,0.1) inset,
+				0 1px 0 rgba(255,255,255,1);
+}
+
+/* Button Primary Line Effect */
+.menu-dropdown li.active a.level1:before,
+.menu-dropdown li.active span.level1:before,
+.module.mod-header-color .module-title:before,
+.button-primary:before {
+	top: 1px;
+	bottom: auto;
+	opacity: 0.3;
+}
+
+/* Menu-Dropdown Level2 Hover */
+.menu-dropdown a.level2:hover {
+	background: #008ADA;
+	background: -moz-linear-gradient(top, #008ADA 0%, #00AFF8 100%);
+	background: -webkit-linear-gradient(top, #008ADA 0%, #00AFF8 100%);
+	background: -o-linear-gradient(top, #008ADA 0%, #00AFF8 100%);
+	background: linear-gradient(to bottom, #008ADA 0%, #00AFF8 100%);
+	box-shadow: 0 1px 2px rgba(0,61,104,0.4) inset;
+}
+
+/* Selection */
+::-moz-selection { background: #008ADA; color: #fff; }
+::selection { background: #008ADA; color: #fff; }
+
+/* Form Elements */
+form.style input:focus,
+form.style textarea:focus {
+	border-color: #6BB7E0;
+	box-shadow: 0 0 5px rgba(0,138,218,0.3);
+}
+
+/* Color Images */
+.menu-dropdown a.level1.parent > span,
+.menu-dropdown span.level1.parent > span { background-image: url(../../images/color/blue/menu_dropdown_level1_parent.png); }
+.menu-dropdown a.level3 { background-image: url(../../images/color/blue/menu_dropdown_level3.png); }
+
+.menu-sidebar li.parent .level1 > span { background-image: url(../../images/color/blue/menu_sidebar_parent.png); }
+.menu-sidebar a.level2 { background-image: url(../../images/color/blue/menu_sidebar_level2.png); }
+.mod-black .menu-sidebar a.level2 { background-image: url(../../images/color/blue/menu_sidebar_level2_black.png); }
+
+ul.line-icon > li { background-image: url(../../images/color/blue/tools/list_line_icon.png); }
+ul.check > li { background-image: url(../../images/color/blue/tools/list_check.png); }
+
+.quote h1:before,
+.quote h2:after { background-image: url(../../images/color/blue/tools/quotes.png); }
+
+
+ /* Custom Logo
+----------------------------------------------------------------------------------------------------*/
+
+.custom-logo { 	background-image: url(../../../../images/yootheme/logo.png); }
+

@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.azul{
+	color:#00ABE9;	
+	}
+.naranja {
+	color: #B3A16F;
+	}
+.titulo{
+	background-color: #00ABE9;
+	color: #FFF;
+	font-weight:bold;
+    border-radius: 4px 4px 0px 0px;
+	padding:3px;
+	}
+.subtitulo{
+	color: #00ABE9;
+	font-weight:bold;
+	border-bottom: 2px groove #B3A16F;
+	}
+.columna {
+	background-color: #00ABE9;
+	color: #FFF;
+	font-weight:bold;
+	padding:3px;
+	}
+.lineav {
+	border-right: 1px solid #CCC;
+	}
+.lineah {
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	}
