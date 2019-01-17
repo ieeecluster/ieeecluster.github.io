@@ -1,0 +1,131 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+#main {
+	font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+}
+#header {
+	width: 751px;
+	margin-top: 10px;
+}
+#tab {
+	padding: 10px;
+	width: 731px;
+}
+#tab a{
+	border:1px solid #000000;
+	background-color: #FFFFFF;
+	text-decoration:none;
+	text-align:center;
+	font-size: 14px;
+	padding:1px;
+	font-weight: bold;
+	color: #660066;
+	margin-right: 2px;
+}
+#tab a:hover {
+	background-color: #FFCC33;
+	border:1px solid #000000;
+	color: #660066;
+	text-decoration: none;
+}
+#footer {
+	padding: 5px;
+	text-align: left;
+	font-size: 12px;
+}
+#menu {
+	background-color: #FFCC33;
+	text-align: left;
+}
+#menu a {
+	font-size: 12px;
+	color: #660066;
+	text-decoration: underline;
+	line-height: 20px;
+}
+#news {
+	text-align: left;
+	font-size: 12px;
+	line-height: 14px;
+}
+#content {
+	margin: 12px;
+	text-align: left;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.backgroundSelect {
+	background-color: #FDD5F5;
+}
+.frontgroudSelect {
+	color: #AE098D;
+}
+.greyBackground {
+	background-color: #ECECEC;
+}
+.forestBackground,.leftMenu,.highlightLeftMenu {
+	background-color: #FFCC33;
+}
+.blueBackground,.brandBackground {
+	background-color: #EAECFD;	
+}
+.aquaBackground,.itemBackground,.highlightItemBackground {
+	background-color: #E6F2F2;	
+}
+.orangeBackground,.highlightOrangeBackground {
+	background-color: #FFEEDD;
+}
+.normal {
+	font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: normal;	
+}
+.smallSelectBox {
+	font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+	font-size: 10px;
+	font-weight: normal;	
+}
+.smallMenuTitle {
+	font-size: 15px;
+	font-weight: bold;	
+}
+.largeTitle {
+	font-size: 30px;
+	font-weight: bold;	
+}
+.greyOut {
+	color: #B6B8CB;
+}
+.f10 {
+	font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+	font-size: 10px;
+	line-height: 18px;
+}
+.f11 {
+	font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+	font-size: 11px;
+	line-height: 18px;
+}
+.f12 {
+	font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+}
+.f13 {
+	font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 22px;
+}
+.f14 {
+	font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+}
+.f16 {
+	font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
