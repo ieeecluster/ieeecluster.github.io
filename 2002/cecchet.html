@@ -1,0 +1,31 @@
+Memory Mapped Networks: A New Deal for Distributed Shared Memories?
+<br>
+Emmanuel  Cecchet
+<P>
+Distributed Shared Memories performance has always suffered
+from high network latencies and software communication
+layers with a large overhead. Memory mapped networks such
+as Scalable Coherent Interface (SCI) allow to reliably
+access remote memory without involving the operating system.
+<P>
+SCI provides both PIO (Programmed IO) with very low latency
+and RDMA (Remote DMA) for bulk transfers. To show how DSM
+systems can benefit from these techniques, we have developed
+SciFS, a DSM tightly integrated with the operating system,
+that exploits the high performance and the remote memory
+access capabilities of SCI.
+We first show the respective advantages of PIO and RDMA.
+Then, we describe how to build a scalable page transfer
+mechanism by mixing PIO and RDMA. Despite the lack of a
+broadcast mechanism with SCI, we demonstrate that it is
+possible to build scalable synchronization primitives
+using PIO.
+Finally, we evaluate various consistency models with
+scientific computing applications from the Splash benchmark.
+We observe that, even if the rough network performance is
+good, it is not sufficient to obtain acceptable results with
+applications that require fine grain parallelism. However,
+we show that memory mapped networks provide an efficient
+hardware support to implement software DSM systems without
+requiring complex relaxed consistency models. This way, DSM
+design can be greatly simplified using this technology.

@@ -1,0 +1,25 @@
+An Architecture for Integrated Resource Management of MPI Jobs
+<br>
+Steven  Sistare, Jack Test
+<P>
+We present a new architecture for the integration of
+distributed resource management systems and parallel
+run-time environments such as MPI.  The architecture solves
+the long-standing problem of achieving a tight integration
+between the two in a clean and robust manner that fully
+enables the functionality of both systems, including
+resource limit enforcement and accounting. We also present
+a more uniform command interface to the user, which
+simplifies the task of running parallel jobs and tools
+under a resource manager. The architecture is extensible
+and allows new systems to be incorporated.  We describe the
+properties that a resource management system must have to
+work in this architecture, and find that these are
+ubiquitous in the resource management world.  Using the Sun
+(TM) Cluster Runtime Environment, we show the generality of
+the approach by implementing tight integrations with PBS,
+LSF, and Sun Grid Engine, and we demonstrate the advantages
+of a tight integration.  No modifications or enhancements
+to these resource management systems were required, which
+is in marked contrast to ad-hoc approaches which typically
+require such changes.

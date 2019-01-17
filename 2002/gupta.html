@@ -1,0 +1,39 @@
+Efficient Barrier Using Remote Memory Operations on VIA-based Clusters
+<br>
+Rinku  Gupta, Jarek Nieplocha, Vinod Tipparaju, Dhabaleswar Panda
+<P>
+Most high performance scientific applications
+require efficient support for collective communication.
+Point-to-point message-passing communication in current
+generation
+clusters are based on Send/Recv communication model.
+Collective
+communication operations built on top of such point-to-point
+message-passing operations might achieve suboptimal
+performance.
+VIA and the emerging InfiniBand support remote DMA
+operations.
+Such operations not only allow data to be moved between the
+nodes
+with low overhead, they also allow to create and provide a
+logical shared
+memory address space across the nodes. This feature
+is valuable for implementing high performance and scalable
+collective
+operations. In this paper, we focus on barrier, probably the
+most
+frequently used collective operation. We demonstrate how
+RDMA write
+operations can be used to support inter-node barrier in a
+cluster
+with SMP nodes. We also propose a scheme to exploit the
+shared memory
+within a SMP node to support fast intra-node barrier.
+Combining these two schemes, we developed an overall
+barrier scheme for cluster of SMP nodes with cLAN VIA
+interconnect.Compared to the current barrier algorithms
+using
+send/recv communication model, the new approach is shown
+to reduce barrier latency on a 64 processor (32 dual nodes)
+system by up to 66 percent.
+

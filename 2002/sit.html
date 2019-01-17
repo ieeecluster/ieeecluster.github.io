@@ -1,0 +1,28 @@
+Socket Cloning for Cluster-Based Web Servers
+<br>
+Yiu-fai  Sit, Cho-Li Wang, Francis Lau
+<P>
+Cluster-based web servers are a popular approach to
+achieving high performance for the ever-growing web traffic.
+Most existing systems use a Layer 4 dispatcher to assign
+client requests to the web server nodes. Some content-based
+dispatching solutions need to parse the HTTP request in
+order to make the dispatching decision. They either can
+achieve only coarse-grain load balancing or would introduce
+heavy load on the dispatcher. Cooperative caching allows the
+requested document to be fetched from a peer server node\222s
+in-memory cache, rather than from the local hard disk. While
+this can greatly improve the performance, it consumes much
+network resources when transferring large cache objects. In
+this paper, we present a new network support mechanism,
+called Socket Cloning (SC), in which an opened socket can be
+migrated efficiently between cluster nodes. With SC, the
+processing of HTTP requests can be moved to the node that
+has a cached copy of the requested document, thus bypassing
+any object transfer between peer servers. A prototype has
+been implemented and micro-benchmark tests show that SC
+incurs much less overhead than all the mentioned approaches
+for any file size. In trace-driven benchmark tests, our
+system can outperform other approaches by
+90%.
+

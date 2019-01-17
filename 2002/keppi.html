@@ -1,0 +1,22 @@
+Supporting MPI Collective Communication on Network Processors
+<br>
+Chamath   Keppitiyagama, Qianfeng Zhang, Alan Wagner
+<P>
+We present the work that extends
+our previous Myrinet port
+for LAM/MPI, MPI-NP, with collective communication
+primitives on the NIC. This work is another step in our
+experiment of making the NIC  MPI aware. We believe that an
+MPI aware control program on the NIC can deliver a richer
+set of performance enhancements, not restricted to just the
+better bandwidth/latency,  to MPI applications. MPI
+collective communication involves considerable interactions
+between the communication subsystems of the nodes that are
+not of any direct interest to the application. By migrating
+these talkative components to the Myrinet Network Interface
+Card we allow this dialog between the nodes to happen with
+minimum latency. We explore the advantage of supporting
+several MPI collective communication routines on the NIC.
+These include MPI_Bcast(), MPI_Barrier() and
+MPI_Comm_Create().
+

@@ -1,0 +1,39 @@
+Integrated Admission and Congestion Control for QoS Support in Clusters
+<br>
+Ki Hwan  Yum, Eun Jung Kim, Chita R. Das, Mazin Yousif, Jose Duato
+<P>
+Admission and congestion control mechanisms are
+integral parts of any Quality of Service (QoS) design for
+networks that support integrated traffic.
+While an admission control algorithm helps in delivering
+the assured performance, a congestion control algorithm
+regulates traffic injection to avoid network saturation.
+In this paper, we propose an
+admission control algorithm and a congestion control
+algorithm for clusters,
+which are increasingly being used in a diverse set of
+applications that require QoS guarantees.
+The uniqueness of our approach is that we develop these
+algorithms for wormhole-switched networks, which have been
+used in designing clusters.
+We use QoS-capable wormhole routers and QoS-capable
+network interface cards (NICs), referred to as Host Channel
+Adapters (HCAs) in InfiniBand Architecture (IBA),
+to evaluate the effectiveness of these algorithms.
+The admission control is applied at the HCAs and the
+routers, while the congestion control is deployed only at
+the HCAs. A mixed workload consisting of
+best effort, real-time, and control traffic is used to
+investigate the effectiveness of the proposed schemes.
+<P>
+Simulation results with a single router (8-port) cluster
+and a 2-D mesh network cluster indicate that the
+admission and congestion control algorithms are quite
+effective
+in delivering the assured performance.
+The proposed
+credit-based congestion control algorithm is simple
+and practical in that it relies on hardware already
+available
+in the HCA/NIC to regulate traffic injection.
+

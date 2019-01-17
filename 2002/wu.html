@@ -1,0 +1,37 @@
+Impact of On-Demand Connection Management in MPI over VIA
+<br>
+Jiesheng  Wu, Jiuxing Liu, Pete Wyckoff,
+Dhabaleswar Panda
+<P>
+Designing scalable and efficient Message Passing
+Interface (MPI)implementations for emerging cluster
+interconnects such as VIA-based networks and
+InfiniBand are important building next generation
+clusters.  In this paper, we address the scalability
+issue in the implementation of MPI over VIA by
+on-demand connection management mechanism.
+The on-demand connection management is
+designed to limit the use of resources to what
+applications absolutely require. Thus, the MPI
+implementation ensures that resource usage
+scales only as demanded by the application itself,
+not the underlying system.
+
+<P>
+We address the design issues of incorporating the on-demand connection mechanism into an implementation
+of MPI over VIA.  A complete implementation was done for
+MVICH over both cLAN VIA and Berkeley VIA. Performance
+evaluation on a set of microbenchmarks and NAS parallel
+benchmarks demonstrates that the on-demand mechanism
+ can increase the scalability of MPI implementations by
+limiting the use of resources as needed by application.
+<P>
+Furthermore, performance evaluation also shows that the
+on-demand mechanism delivers comparable performance
+as the static mechanism in which a fully-connected process
+model exists in MVICH over cLAN VIA. It even performs
+better for certain applications. It performs better in
+MVICH over Berkeley VIA on Myrinet. These results
+demonstrate that the on-demand connection mechanism is a
+feasible solution to increase the scalability of MPI
+implementations over VIA- and InfiniBand-based networks.

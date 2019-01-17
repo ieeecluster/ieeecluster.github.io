@@ -1,0 +1,23 @@
+Mixed Mode Matrix Multiplication
+<br>
+Meng-Shiou  Wu, Srinivas Aluru, Ricky A. Kendall
+<P>
+In modern clustering environments where memory hierarchy has many layers (distributed memory, shared memory layer, cache, etc.), an important question is how to fully utilize all
+available resources and identify the most dominant layer in
+certain computation.  When combining algorithms on all
+layers together, what would be the best method to get the
+best performance out of all the resources we have?
+<P>
+Mixed mode programming model that uses thread programming on
+the shared memory layer and message passing programming on
+the distributed memory layer is a method that many
+researchers are using to utilize the memory resources.  In
+this paper, we take an algorithmic approach that uses matrix
+multiplication as a tool to show how cache algorithms
+affect the performance of both shared memory and istributed
+memory algorithms.  It is also important to consider the
+underlying sequential component of the algorithm; in fact
+not doing so may be misleading and simply combining shared
+memory and distributed memory algorithms could lead to
+incorrect
+conclusions.
