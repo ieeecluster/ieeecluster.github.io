@@ -1,0 +1,21 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en>"
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title> Cluster 2004 Abstract: An Efficient End-host Architecture for Cluster Communication Services </title>
+</head>
+<center>
+<h2>An Efficient End-host Architecture for Cluster Communication Services</h2>
+</center>
+<p> 
+<center>
+<h3>Richard West, et. al</h3>
+</center>
+<hr>
+<blockquote>
+Cluster computing environments built from commodity hardware have provided a cost-effective solution for many scientific and high-performance applications. Likewise, middleware techniques have provided the basis for large-scale applications to communicate and exchange data across the  various end-hosts in a distributed system. Unfortunately, middleware services are typically encapsulated in user-level address spaces that suffer from scheduling delays and communication overheads induced by the host kernel. For various high performance distributed computing applications such overheads are unacceptable. This paper therefore   addresses the problem of providing an efficient end-host architecture to support application-specific communication services at user-level, without the need to explicitly schedule such services or copy data via the kernel.   We briefly describe a sandboxing mechanism that allows applications to configure and deploy services at user-level, that may execute in the context of any address space. Using Linux as the basis for our approach, we focus specifically on the implementation of a user-space network protocol stack, that avoids copying data via the kernel when  communicating with the network interface. Our approach enables services to efficiently process and forward data via proxies, or intermediate hosts, in the communication path of high performance data streams.  Unlike other user-level networking implementations, our method makes no special hardware requirements. Results show that we achieve a substantial increase in throughput over comparable user-space methods using our networking stack implementation. Additionally, the elimination of scheduling overheads greatly reduces the delay variation between service invocations, which is critical to jitter-sensitive applications. 
+</blockquote>
+<hr>
+<font size=-1><a href="../program.html">Back to Program</a></font>
+</body>
+</<html>

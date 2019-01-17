@@ -1,0 +1,21 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en>"
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title> Cluster 2004 Abstract: Implementation and Design Analysis of a Network Messaging Module Using Virtual Interface Architectur </title>
+</head>
+<center>
+<h2>Implementation and Design Analysis of a Network Messaging Module Using Virtual Interface Architectur</h2>
+</center>
+<p> 
+<center>
+<h3>Gregory Amerson, et. al</h3>
+</center>
+<hr>
+<blockquote>
+PVFSv2 is a redesign of the first PVFS that improves  the modularity of the implementation.  The BMI layer of  PVFSv2 was designed to give the needed network  abstraction and messaging layer.  This work presents a  new BMI module that supports the VIA.  The shows that  the BMI requirements and semantics for messaging were  accomplished along with several other design goals.    The implementation successfully operates on both  Myrinet and InfiniBand.  It implements a credit based  flow control mechanism to fulfill one of the BMI  requirements and allows for benchmarking and  examination of its performance.  The baseline  bandwidth and latency of the implementation were  compared to the BMI modules and were shown to achieve  significantly higher performance than the TCP module,  but slightly less than the GM module.  The CQueue  version of the implementation offers the best overall  performance when running over the VI-GM  implementation. Test results show that the InfiniBand  Verbs used to implement VI-IB are not as mature as the  GM protocol for Myrinet used in VI-GM.  At the time of  this study, the VIPL from Intel was meant as an early  reference design and may not be fully optimized.    BMI is a network abstraction layer well suited for  systems-level programmers. Most BMI users will be  using the API to build flexibility in their parallel  system such as PVFSv2.  If each BMI application that  uses the implementation knows the most prevalent size  of messages that will be sent, it should configure the  implementation at runtime to use the eager protocol  for this message size.  In general, immediate messages  offer better performance than rendezvous messages,  especially if the VIPL is implemented using another  low-level protocol such as GM.  If the  immediate/rendezvous threshold is going to a large  message size, the send the credit limit should be also  configured at runtime to a smaller number to decrease  memory requirements of implementation.  It was also  shown that a low send credit limit combined with a  large IR-threshold has a negligible impact on  performance. The Notify mechanism was only able to  out-perform the CQueue version in one benchmark.  This  was an unexpected result, because having routines  handle the incoming message immediately would seem to  offer better throughput.  However, the context switch  time and the overhead of multiple threads decreased  throughput.  
+</blockquote>
+<hr>
+<font size=-1><a href="../program.html">Back to Program</a></font>
+</body>
+</<html>

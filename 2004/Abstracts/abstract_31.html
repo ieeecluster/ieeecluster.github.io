@@ -1,0 +1,21 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en>"
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title> Cluster 2004 Abstract: A Comparison of Local and Gang Scheduling on a Beowulf Cluster </title>
+</head>
+<center>
+<h2>A Comparison of Local and Gang Scheduling on a Beowulf Cluster</h2>
+</center>
+<p> 
+<center>
+<h3>Peter Strazdins, et. al</h3>
+</center>
+<hr>
+<blockquote>
+Gang Scheduling and related techniques are widely believed to be  necessary for efficient job scheduling on distributed memory parallel  computers.  This is because they minimize context switching overheads  and permit the parallel job currently running to progress at the fastest  possible rate.  However, in the case of cluster computers, and particularly those with  COTS networks, these benefits can be outweighed in the multiple job  time-sharing context by the loss the ability to utilize the CPU for  other jobs when the current job is waiting for messages.  Experiments on a Linux Beowulf cluster with 100 Mb fast Ethernet  switches are made comparing the SCore buddy-based gang scheduling with  local scheduling (provided by the Linux 2.4 kernel with MPI implemented  over TCP/IP).  Results for communication-intensive numerical  applications on 16 nodes reveal that gang scheduling results in  `slowdowns' up to a factor of two greater for 8 simultaneous jobs.  This  phenomenon is not due to any deficiencies in SCore but due to the  relative costs of context switching versus message overhead, and we  expect similar results will hold for any gang scheduling implementation.   A performance analysis of local scheduling indicates that cache  pollution due to context switching is more significant than the direct  context switching overhead on the applications studied.  When this is  taken into account, local scheduling behaviour comes close to achieving  ideal slowdowns for finer-grained computations such as Linpack.  The  performance models also indicate that similar trends are to be expected  for clusters with faster networks.  
+</blockquote>
+<hr>
+<font size=-1><a href="../program.html">Back to Program</a></font>
+</body>
+</<html>

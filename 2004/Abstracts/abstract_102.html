@@ -1,0 +1,21 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en>"
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title> Cluster 2004 Abstract: FTC-Charm++: An In-Memory Checkpoint-Based Fault Tolerant Runtime for Charm++ and MPI </title>
+</head>
+<center>
+<h2>FTC-Charm++: An In-Memory Checkpoint-Based Fault Tolerant Runtime for Charm++ and MPI</h2>
+</center>
+<p> 
+<center>
+<h3>GENGBIN ZHENG, et. al</h3>
+</center>
+<hr>
+<blockquote>
+As high performance clusters continue to grow in size, the mean time between failure shrinks. Thus, the issues of fault tolerance and reliability are becoming one of the challenging factors for application scalability. The traditional disk-based method of dealing with faults is to checkpoint the state of the entire application periodically to reliable storage and restart from the recent checkpoint. The recovery of the application from faults involves (often manually) restarting applications on all processors and having it read the data from disks on all processors. The restart can therefore take minutes after it has been initiated. Such a strategy requires that the failed processor can be replaced so that the number  of processors at checkpoint-time and recovery-time are the same. We present FTC-Charm++, a fault-tolerant runtime based  on a scheme for fast and scalable in-memory checkpoint and restart. At restart, the program can continue to run on the remaining processors without performance penalty due to load imbalance. The recovery time is reduced to seconds without actual ``down time''. The method is useful for applications whose memory footprint is small at the checkpoint state, while a variation of this scheme --- in-disk checkpoint/restart can be applied to applications with large memory footprint. The scheme does not require any individual component to be fault-free. We have implemented this scheme for Charm++ and AMPI (an adaptive version of MPI). This paper will describe the scheme and show performance data on a cluster using 128 processors.  
+</blockquote>
+<hr>
+<font size=-1><a href="../program.html">Back to Program</a></font>
+</body>
+</<html>

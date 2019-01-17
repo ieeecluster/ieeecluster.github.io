@@ -1,0 +1,35 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en>"
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title> Cluster 2004 Abstract: Give your bootstrap the boot: Using the Operating System to boot the Operating System </title>
+</head>
+<center>
+<h2>Give your bootstrap the boot: Using the Operating System to boot the Operating System</h2>
+</center>
+<p> 
+<center>
+<h3>Ronald Minnich</h3>
+</center>
+<hr>
+<blockquote>
+One of the slowest and most annoying aspects of system management is
+the simple act of rebooting the system. The sysadmin starts from a known
+state -- the OS is running -- and hands the computer over to an
+untrustworthy piece of software. With enough nodes involved, there is a
+good chance that the process will fail on one of them. Bootstrapping is
+well named -- it takes the system down to a low level, from which return
+is uncertain. It would be much better if we could use the known, trusted
+OS software to manage the boot process. The OS can apply all its power to
+the problem of locating, verfying, and loading a new OS image. Error
+checking and feedback can be far more robust. All that is needed is the OS
+software to make this possible. In this paper, we discuss five systems for
+Linux and Plan 9 that allow the OS to boot the OS. These systems allow for
+the complete elimination of old-fashioned boostraps. We also discuss our
+use of this technology in several different clusters, ranging from 1408 K8
+nodes to 1024 P4 nodes to a 9-node Plan 9 cluster.
+</blockquote>
+<hr>
+<font size=-1><a href="../program.html">Back to Program</a></font>
+</body>
+</<html>

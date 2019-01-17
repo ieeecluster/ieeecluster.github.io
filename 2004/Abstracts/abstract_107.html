@@ -1,0 +1,21 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en>"
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title> Cluster 2004 Abstract: Improved Message logging versus Improved coordinated checkpointing for fault tolerant MPI </title>
+</head>
+<center>
+<h2>Improved Message logging versus Improved coordinated checkpointing for fault tolerant MPI</h2>
+</center>
+<p> 
+<center>
+<h3>Aurélien Bouteiller, et. al</h3>
+</center>
+<hr>
+<blockquote>
+Fault tolerance is a very important concern for critical high performance applications using the MPI library. Several protocols provide automatic and transparent fault detection and recovery for message passing systems with different impact on application performance and the capacity to tolerate a high fault rate.   In a recent paper, we have demonstrated that the main differences between pessimistic sender based message logging and coordinated checkpointing are 1) the communication latency and 2) the performance penalty in case of faults. Pessimistic message logging increases the latency, due to additional blocking control messages. When faults occur at a high rate, coordinated checkpointing implies a higher performance penalty than message logging due to a higher stress on the checkpoint server.   In this paper we extend this study to improved versions of message logging and coordinated checkpoint protocols which respectively reduces the latency overhead of pessimistic message logging and the server stress of coordinated checkpoint. We detail the protocols and their implementation into the new MPICH-V fault tolerant framework. We compare their performance against the previous versions and we compare the novel message logging protocols against the improved coordinated checkpointing one using the NAS benchmark on a typical high performance cluster equipped with a high speed network.   The contribution of this paper is two folds: a) an original message logging protocol and an improved coordinated checkpointing protocol and b) the comparison between them.  
+</blockquote>
+<hr>
+<font size=-1><a href="../program.html">Back to Program</a></font>
+</body>
+</<html>

@@ -1,0 +1,21 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en>"
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title> Cluster 2004 Abstract: RFS: Implementing Efficient and Flexible Remote File Access for MPI-IO </title>
+</head>
+<center>
+<h2>RFS: Implementing Efficient and Flexible Remote File Access for MPI-IO</h2>
+</center>
+<p> 
+<center>
+<h3>Jonghyun Lee, et. al</h3>
+</center>
+<hr>
+<blockquote>
+Scientific applications often need to access remote file systems. Because of slow networks and large data size, however, remote I/O can become an even more serious performance bottleneck than local I/O performance. In this work, we present RFS, a high-performance remote I/O facility for ROMIO, which is a well-known MPI-IO implementation. Our simple, portable, and flexible design eliminates the shortcomings of previous remote I/O efforts. Particularly, RFS improves the remote I/O performance by adopting active buffering with threads (ABT), which hides I/O cost by aggressively buffering the output data using available memory and performing background I/O using threads while computation is taking place. Our experimental results show that RFS with ABT can significantly reduce the remote I/O visible cost, giving throughput up to 92% of the theoretical peak. The computation slowdown caused by the concurrent I/O activities was 0.2-6.2%, which is dwarfed by the overall performance improvement in application turnaround time.  
+</blockquote>
+<hr>
+<font size=-1><a href="../program.html">Back to Program</a></font>
+</body>
+</<html>

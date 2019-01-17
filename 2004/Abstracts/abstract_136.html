@@ -1,0 +1,21 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en>"
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title> Cluster 2004 Abstract: A Novel Adaptive Home Migration Protocol in Home-based DSM </title>
+</head>
+<center>
+<h2>A Novel Adaptive Home Migration Protocol in Home-based DSM</h2>
+</center>
+<p> 
+<center>
+<h3>Weijian Fang, et. al</h3>
+</center>
+<hr>
+<blockquote>
+Home migration is used to tackle the home assignment problem  in home-based software distributed shared memory systems. We  propose an adaptive home migration protocol to optimize single-writer pattern. It is unique in that it uses a per-object threshold that is continuously adjusted to facilitate home migration decision. This adaptive threshold is monotone decreasing against the likelihood that a particular object presents lasting single-writer pattern. And it is tuned according to the feedback of previous  home migration decisions at runtime. We implement this adaptive home migration protocol in a distributed Java Virtual Machine that supports transparent truly-parallel execution of multi-threaded Java applications on clusters, where a global object space virtualizes a single object heap  for distributed Java threads. Both the analysis and experiments show that our new home migration protocol demonstrates both sensitivity to the lasting single-writer pattern and robusticity to the transient single-writer pattern. In the later case, home migration is prohibited to reduce the heavy-weighted home redirection overhead.  
+</blockquote>
+<hr>
+<font size=-1><a href="../program.html">Back to Program</a></font>
+</body>
+</<html>

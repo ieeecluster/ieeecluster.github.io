@@ -1,0 +1,21 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en>"
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title> Cluster 2004 Abstract: Hierarchical Bloom Filter Arrays (HBA): A Novel, Scalable Metadata Management System for Large Stora </title>
+</head>
+<center>
+<h2>Hierarchical Bloom Filter Arrays (HBA): A Novel, Scalable Metadata Management System for Large Stora</h2>
+</center>
+<p> 
+<center>
+<h3>Yifeng Zhu, et. al</h3>
+</center>
+<hr>
+<blockquote>
+Decentralizing metadata management is becoming increasingly more critical in improving the scalability and performance for cluster-based storage as clusters and cluster-based storage systems scale up in size. An important aspect of metadata management is that of file mapping (or file lookup) in a large distributed system. Existing solutions for file mapping include table-based mapping, modulus-based hashing, and static namespace partition. Table-based mapping provides the flexibility of storing a file on any server but suffers from large memory overhead. Modulus-based hashing balances the workload of accessing metadata but requires metadata migration during file or directory renaming and metadata server additions or deletions. Static namespace partition requires no metadata migration but suffers from poor flexibility and load unbalance. Furthermore, hot spots may result from static namespace partition if a subdirectory becomes popular. We present a novel technique called HBA (Hierarchical Bloom Filter Arrays) metadata management that has the advantages of the above three schemes while avoiding their disadvantages. Two levels of probabilistic arrays, i.e., Bloom Filter Arrays, with different accuracies are used. One array, with lower accuracy and representing the distribution of the entire metadata, trades accuracy for significantly reduced memory overhead, while the other, with higher accuracy, caches partial distribution information and exploits the temporal locality of file access patterns. Extensive trace-driven simulations have shown our HBA design to be highly effective and efficient in improving performance and scalability of file systems in clusters with 1,000 to 10,000 nodes (or super-clusters).  
+</blockquote>
+<hr>
+<font size=-1><a href="../program.html">Back to Program</a></font>
+</body>
+</<html>

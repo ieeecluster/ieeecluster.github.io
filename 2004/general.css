@@ -1,0 +1,61 @@
+/* Cascading Stylesheets template for general documents */
+
+BODY {
+	color: #666666;
+	background-color: #f5fFcF;
+	font-family: sans-serif;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+:link { 
+	color: #006600; 
+}
+
+:active {
+	color: #00ff00;
+}
+
+:visited {
+	color: #003300;
+}
+
+.title {
+	color: #336600;
+	font-family: sans-serif;
+	text-align: left;
+	border-style: solid;
+	border-color: #CCCC99;
+	border-top-width: 8px;
+	border-right-width: 2px;
+	margin-top: 30px;
+}
+
+.inv {
+	color: #FFFFFF;
+	background-color: #CCCC99;
+	padding-top: 0px; 
+}
+
+.header {
+	font-family: sans-serif;
+	text-align: left;
+	padding-top: 0px;
+	boder-style: solid;
+	border-color: #CCCC99;
+	border-left-width: 5px;
+	border-bottom-width: 1px;
+}
+
+.subheader {
+	font-family: sans-serif;
+	text-align: left;
+	padding-top: 20px;
+}
+
+HR {
+	color: #336600;
+	border-top: solid;
+}

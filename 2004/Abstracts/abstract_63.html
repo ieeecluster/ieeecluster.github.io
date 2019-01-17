@@ -1,0 +1,21 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en>"
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title> Cluster 2004 Abstract: LOTS: A Software DSM Supporting Large Object Space </title>
+</head>
+<center>
+<h2>LOTS: A Software DSM Supporting Large Object Space</h2>
+</center>
+<p> 
+<center>
+<h3>Benny Wang-Leung Cheung, et. al</h3>
+</center>
+<hr>
+<blockquote>
+Software DSM systems provide good programmability for  cluster computing. Yet it does not gain as wide acceptance  as it should, because of performance issue and the size  limitation of shared memory space available for large  applications. This paper introduces LOTS, a C++ runtime  library supporting a large shared object space through the  dynamic memory mapping mechanism. LOTS allows more objects  to be mapped in the process space, since only a trace of  control information for each object is resident locally,  while the object data is mapped lazily from the local disk  to the virtual memory during access. To our knowledge,  LOTS is the first pure runtime software DSM supporting a  shared object space larger than the local process space.  Our testing shows that LOTS can allocate 117.77 GB of  shared objects on a cluster of 4 machines, utilizing all  the free hard disk space available. LOTS only pays a small  overhead on supporting large object space, but with its  scope consistency and a new mixed coherence protocol, LOTS  achieves better scalability on problem size and cluster  size. It also retains good programmability as most of the  C++ programming syntax is preserved. Content-Disposition: form-data; name="OLDPASSWORD"  
+</blockquote>
+<hr>
+<font size=-1><a href="../program.html">Back to Program</a></font>
+</body>
+</<html>
