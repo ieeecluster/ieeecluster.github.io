@@ -1,0 +1,156 @@
+Call For Papers
+
+*************************************************
+* Submission Deadline extended to June 30, 2003 *
+*************************************************
+
+Cluster 2003
+IEEE International Conference on Cluster Computing 
+December 1-4, 2003, Hong Kong
+
+
+URL: http://www.csis.hku.hk/cluster2003/
+
+Organized by Department of Computer Science and Information Systems, 
+The University of Hong Kong
+
+
+Clusters today are an important element of mainstream computing. In
+less than a decade, "lowly" computer clusters have come to prominence
+as the most convenient and cost-effective tool for solving many
+complex computational problems. Being able to bring enough computing
+cycles together in a pool is one thing, but to be able to use these
+cycles efficiently so that the aggregate power of a cluster can be
+fully harnessed is another. Research and development efforts must
+continue to explore better strategies to make clusters an even greater
+tool when facing the grandest challenges of this age.  Cluster 2003,
+to be held in the most dynamic city in the Orient, will provide an open
+forum for cluster researchers and system builders, as well as cluster
+users, to present and discuss new directions and results that could
+shape the future of cluster computing.
+
+Cluster 2003 welcomes paper submissions from engineers and scientists
+in academia, industry, and government describing their latest research
+findings in any aspects of cluster computing. Topics of interest
+include, but are not limited to:
+
+Cluster Middleware
+-- Single-System Image Services
+-- Software Environments and Tools
+-- Standard Software for Clusters
+-- I/O Libraries, File Systems, and Distributed RAID
+
+Cluster Networking
+-- High-Speed System Interconnects
+-- Lightweight Communication Protocols
+-- Fast Message Passing Libraries
+
+Managing Clusters
+-- Cluster Security and Reliability
+-- Tools for Managing Clusters
+-- Cluster Job and Resource Management
+-- High-Availability Cluster Solutions
+
+Applications
+-- Scientific and E-Commerce Applications
+-- Data Distribution and Load Balancing
+-- Innovative Cluster Applications
+
+Performance Analysis and Evaluation
+-- Benchmarking and Profiling Tools
+-- Performance Prediction and Modeling
+-- Analysis and Visualization
+
+Grid Computing and Clusters
+-- Grid Applications Integration
+-- Network-Based Distributed Computing
+-- Mobile Agents and Java for Clusters/Grids
+-- Middleware, Tools and Environments
+
+Paper Submission:
+Paper Format: Not to exceed 25 double-spaced pages (including figures,
+tables and references) using 10-12 point font on 8.5 x 11-inch
+pages. Show page number at each page. Include an abstract, five to ten
+keywords, and the corresponding author's e-mail address.
+
+Electronic Submission: Web-based submissions are strongly
+encouraged. The URL will be announced two weeks before the submission
+deadline at the conference web site. Authors should submit a
+PostScript (level 2) or PDF file. Postal submissions are not accepted.
+
+Journal Special Issue:
+Authors of the best papers from the conference will be invited to submit an
+expand version of their papers for possible publication in a special issue
+of the International Journal of High Performance Computing and
+Networking (IJHPCN), which will appear in 2004.
+
+Tutorials:
+For more information about proposals for organizing tutorials, please
+contact Tutorials Chair Ira Pramanick (ira.pramanick@sun.com) by June
+30, 2003.
+
+Exhibitions:
+Companies interested in presenting exhibits at the meeting should
+contact one of the Exhibits Co-Chairs - Jim Ang (jaang@sandia.gov) or
+Nam Ng (Nng@cc.hku.hk) by August 31, 2003.
+
+Important Dates:
+
+-- Papers Submission Deadline:      June 30, 2003 (Extended)
+-- Tutorial Proposals Due:          June 30, 2003
+-- Author Notification:             August 15, 2003
+-- Exhibition Proposal Due:         August 31, 2003
+-- Final Manuscript Due:            September 15, 2003
+-- Pre-Conference Tutorials:        December 1, 2003
+-- Conference:                      December 2-4, 2003
+
+Proceedings of the conference and workshops will be available at the
+conference.
+
+------------------
+Chairs/Committees
+------------------
+
+General Co-Chairs
+Jack Dongarra (University of Tennessee)
+Lionel Ni (Hong Kong University of Science and Technology)
+
+General Vice Chair
+Francis C.M. Lau (The University of Hong Kong)
+
+Program Co-Chairs
+Daniel S. Katz (Jet Propulsion Laboratory)
+Cho-Li Wang (The University of Hong Kong)
+
+Program Vice Chairs
+Bill Gropp (Argonne National Laboratory) -- Middleware
+Wolfgang Rehm (Technische Universita"t Chemnitz) -- Hardware
+Zhiwei Xu (Chinese Academy of Sciences, China) -- Applications
+
+Tutorials Chair
+Ira Pramanick (Sun Microsystems)
+
+Workshops Chair
+Jiannong Cao (Hong Kong Polytechnic University)
+
+Exhibits/Sponsors Co-Chairs
+Jim Ang (Sandia National Lab)
+Nam Ng (The University of Hong Kong)
+
+Publications Chair
+Rajkumar Buyya (The University of Melbourne)
+
+Publicity Chair
+Arthur B. Maccabe (The University of New Mexico)
+
+Poster Chair
+Putchong Uthayopas (Kasetsart University)
+
+Finance/Registration Chair
+Alvin Chan (Hong Kong Polytechnic University)
+
+Local Arrangements Chair
+Anthony T.C. Tam (The University of Hong Kong)
+
+For further information please send e-mail to: cluster2003@csis.hku.hk
+
