@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Cluster2001: Abstracts</title>
+<link rel="stylesheet" type="text/css" href="../../cluster2001.css">
+</head>
+
+<body>
+
+<h1>Clusterfile: A Flexible Physical Layout Parallel File System</h1>
+<p>      <b>      Florin Isaila<br>
+</b><a href="mailto:florin@ira.uka.de">florin@ira.uka.de</a>      <b>      &nbsp;<br>
+      Walter F. Tichy</b>&nbsp;<br>
+<b>University of Karlsruhe</b>
+</p>
+<p>      
+This paper presents Clusterfile,  a file system that&nbsp;<br>
+provides parallel file access on a cluster of computers.&nbsp;<br>
+Existing parallel file systems offer little control&nbsp;<br>
+over matching I/O access patterns  and file data layouts.&nbsp;<br>
+Without a suitable  matching, however, applications may&nbsp;<br>
+face the following problems: contention at I/O nodes,&nbsp;<br>
+fragmentation of file data,  false  sharing,  numerous,&nbsp;<br>
+small network  messages,  and  high overhead  for scat-<br>
+tering/gathering  the  data.  Clusterfile  addresses some<br>
+of these issues.  With  Clusterfile, parallel  applications<br>
+can fully control the layout of a file over a cluster and&nbsp;<br>
+can tailor it to access patterns.  They can also  set&nbsp;<br>
+arbitrary views on a file.  Views hide  the parallel&nbsp;<br>
+structure of  the file  and ease  the programmer's burden&nbsp;<br>
+of computing complex access indices.  The mapping between&nbsp;<br>
+views and layouts are  pre-computed automatically,&nbsp;<br>
+optimizing disk accesses. Clusterfile uses the same&nbsp;<br>
+internal representation for specifying file layouts,&nbsp;<br>
+access patterns, and the mappings between them.<br>
+</p>
+<p><a href="../index.html">Back to Program</a></p>
+
+</body>
+
+</html>

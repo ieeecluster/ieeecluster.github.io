@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Cluster2001: Abstracts</title>
+<link rel="stylesheet" type="text/css" href="../../cluster2001.css">
+</head>
+
+<body>
+
+<h1>Building a Scalable Web Server with Global Object Space Support on Heterogeneous Clusters&nbsp;</h1>
+<p><b>
+      Ge Chen&nbsp;<br>
+</b><a href="mailto:gechen@csis.hku.hk">gechen@csis.hku.hk<br>
+</a><b>Cho-Li Wang&nbsp;<br>
+      Francis C.M. Lau&nbsp;<br>
+University of Hong Kong
+</b><br>
+<br>
+Cluster provides a viable approach to build a scalable Web server<br>
+system. However, current Web server clusters do not fully utilize the<br>
+underlying features of the cluster environment, and most parallel web<br>
+servers are designed for homogeneous cluster. In this paper, we present<br>
+a pure Java implemented parallel Web server with the aims to achieve<br>
+good scalability, load balancing, as well as to run on heterogeneous<br>
+clusters. An application- level global object space (GOS) is<br>
+constructed to effectively utilize the available physical memory of the<br>
+cluster as a giant object cache to shorten the object access time.<br>
+Global object space also provides a unified view of cluster-wide<br>
+resource allocation to help achieve better load balance. A cooperative<br>
+object caching mechanism based on the concept of ¡°hot object¡± is<br>
+built in the global object space for improving the whole system<br>
+performance. A preliminary prototype system is implemented by modifying<br>
+the W3C¡¯s Jigsaw Web server, and good speedup was gained in the<br>
+benchmark tests. The hot object caching greatly improved the<br>
+performance as compared with a Web server system without a<br>
+cluster-aware object caching mechanism.</p>
+<p><a href="../index.html">Back to Program</a></p>
+
+</body>
+
+</html>

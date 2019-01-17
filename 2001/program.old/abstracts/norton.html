@@ -1,0 +1,40 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Cluster2001: Abstracts</title>
+<link rel="stylesheet" type="text/css" href="../../cluster2001.css">
+</head>
+
+<body>
+
+<h1>Early Experiences with the Myricom-2000 Switch on an<br>
+SMP Beowulf-Class Cluster for Unstructured Adaptive Meshing</h1>
+<p><b>    Charles D. Norton<br>
+</b><a href="mailto:Charles.D.Norton@jpl.nasa.gov">Charles.D.Norton@jpl.nasa.gov</a><b>    <br>
+    Thomas A. Cwik<br>
+NASA Jet Propulsion Laboratory<br>
+</b><br>
+We explore the current capabilities of the recently released Myricom<br>
+2000 switch, using MPICH-GM for communication, on a 2-way SMP Pentium<br>
+III Beowulf-Class cluster. Performance measurements indicate that data<br>
+transfer rates of approximately 225 Mbytes/s with 9.3 microseconds<br>
+latency for ping-pong tests can be achieved for messages as large as<br>
+32 Mbytes. When shared-memory communication is used approximately 130<br>
+MBytes/s with 1.5 microseconds latency for long messages (250 MBytes/s<br>
+peak) is possible. The performance varies depending on how processors<br>
+communicate; either within an SMP node or across nodes. Performance<br>
+for parallel unstructured adaptive refinement of 3D tetrahedral meshes<br>
+shows noticeable improvement when compared to 100BaseT<br>
+Ethernet. Furthermore, when compared to traditional systems such as<br>
+the SGI Origin 2000, the combination of this fast network with high<br>
+performance SMP processors demonstrate that Beowulf-Clusters compare<br>
+favorably with such systems--even for communication intensive<br>
+applications.</p>
+<p><a href="../index.html">Back to Program</a></p>
+
+</body>
+
+</html>

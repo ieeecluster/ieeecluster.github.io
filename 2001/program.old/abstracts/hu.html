@@ -1,0 +1,52 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Cluster2001: Abstracts</title>
+<link rel="stylesheet" type="text/css" href="../../cluster2001.css">
+<base target="_self">
+</head>
+
+<body>
+
+<h1>Communication with Threads in Software DSMs</h1>
+<p><b>      Weiwu Hu&nbsp;<br>
+</b><a href="mailto:hww@ict.ac.cn">hww@ict.ac.cn<br>
+</a><b>Gang Shi&nbsp;<br>
+      Fuxin Zhang&nbsp;</b>&nbsp;<br>
+<br>
+Most software DSMs use the interrupt mechanism to asynchronously notify<br>
+applications that messages have arrived. Interrupt, however, is<br>
+expensive and may not be available in user-level communication<br>
+protocols.  This paper studies the performance of software DSMs using<br>
+threads instead of interrupt for communication. We implement three<br>
+thread communication methods in the JIAJIA software DSM. The first<br>
+method separates a communication thread from the main thread, the<br>
+second method divides the communication thread into a sending thread<br>
+and a receiving thread, and the third method further splits a serving<br>
+thread from the receiving thread.<br>
+<br>
+The effect of the thread communication methods is evaluated in a PC<br>
+cluster and a cluster of PowerPC workstations with some well-accepted<br>
+benchmarks.  Evaluation results show that the performance of thread<br>
+communication is slightly worse than that of interrupt communication in<br>
+JIAJIA when there is only one processor to run a process, but is better<br>
+than that of interrupt communication when there are more than one<br>
+processors in a node to run a process. The thread communication method<br>
+with one sending thread and one receiving thread achieves the best<br>
+performance in the three thread communication methods. Besides, the<br>
+effect of the thread communication in JIAJIA is also related to the<br>
+operating system.<br>
+<br>
+Analysis of the evaluation results reveals that the waiting time<br>
+constitutes the major overhead of the execution, and the dominant<br>
+factor that influence waiting time is neither the interrupt overhead<br>
+nor the thread switching overhead but the responsiveness of requests<br>
+(i.e., whether requests can be processed and replied promptly).</p>
+<p><a href="../index.html">Back to Program</a></p>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Cluster2001: Abstracts</title>
+<link rel="stylesheet" type="text/css" href="../../cluster2001.css">
+</head>
+
+<body>
+
+<h1> Intelligence in high performance network interface card:&nbsp;<br>
+ hardware vs. software</h1>
+<p>
+<b>
+Bernard Tourancheau&nbsp;<br>
+</b><a href="mailto:Bernard.Tourancheau@Sun.com">Bernard.Tourancheau@Sun.com<b><br>
+</b></a><b>Sun Microsystems, Inc.<br>
+</b>Roland Westrelin<br>
+<b>RESAM ENS/INRIA/UCB</b></p>
+<table border="0" width="400">
+  <tr>
+    <td width="100%"> Cluster computing has clearly shown the necessity of high performance
+      communication systems. Several high performance network vendors are competing with different approaches: all-in-harware vs.
+      programmable interfaces.  Using the programmable Myrinet NICs we show that the
+      performance limits of this approach are far better from the usual expectation when using optimized pipeline software design.
+      Moreover, the ability to propose classical API like MPI with efficient protocols, partially embedded at the NIC level are very promising in
+      terms of performances and communication/computation overlap.<br>
+      <br>
+      NIC communication system:<br>
+      <br>
+      The BIP, Basic Interface for Parallelism, developed at CNRS/ENS/INRIA/UCB in Lyon is a low-level communication system for
+      Myrinet programmable network interface cards (NIC) which includes a dedicated firmware. We identified several flaws in the early design of
+      our firmware and decided to rethink it in BIPng. Our first goal in BIPng was to better use the hardware resources and to ensure the best
+      possible flows of data through the channel controlled by the firmware. This results in a new more flexible architecture based on an
+      event-driven heart, optimized pipelining of communications and the possibility to use hardware communication channels asynchronously.
+      On one hand BIP has proven that a very small latency and a very large throughput can be delivered. On another hand all-in-hardware NIC
+      implementations, like Giganet or NICs that implement the Scalable Coherent Interface (SCI), demonstrate better performance for
+      medium-sized messages. Our second goal was thus to study how the programmable NICs can compare with the hardware solutions for
+      medium-sized messages. We built a very precise model of the pipeline behavior driven by the NIC program in order to identify the
+      bottlenecks. The results show that the pipeline quality is critical. We then developed
+      an adaptive strategy as in Duke's Trapeze system and introduced it in
+      BIPng. Experiments show up to a two-fold gain over the previous results and thus reach performances above the
+      hardware solutions!<br>
+      <br>
+      NIC-embedded MPI communication library:<br>
+      <br>
+      Commodity components and high speed interconnects allow to build fast and cheap parallel machines for MPI applications. Several research
+      works already demonstrated that the raw performance of MPI ports on top of user level network interfaces are close to the network hardware
+      specifications.  However, most of these implementations offer poor possibilities of communication/computation overlapping because the
+      application thread on the host processor is also responsible of a large part of the protocol. Thus, application performances are limited
+      by this intrinsic no-overlap. One solution to this problem is to move the critical
+      part of the protocol at the programmable network interface card level. We implemented such a communication system that
+      relies on the embedded processor of the Myrinet host interface. We present the
+      problems that occurs while moving part of the protocol at the network interface level, then introduce our design choices and the
+      resulting performance measurements of classical benchmarks with our MPI-BIPng prototype.</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><a href="../index.html">Back to Program</a></p>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Cluster2001: Abstracts</title>
+<link rel="stylesheet" type="text/css" href="../../cluster2001.css">
+</head>
+
+<body>
+
+<h1>Parallel and Adaptive Reduction of Hyperspectral Data to Intrinsic Dimensionality</h1>
+<p><b>Tarek El-Ghazawi<br>
+</b><a href="mailto:tarek@scs.gmu.edu">tarek@scs.gmu.edu</a><b><br>
+      Sinthop Kaewpijit&nbsp;<br>
+George Mason University<br>
+Jacqueline Le Moigne&nbsp;<br>
+NASA Goddard Space Flight Center&nbsp;</b><br>
+<br>
+Recent advances in sensor technology have led to the development of<br>
+hyperspectral sensors capable of collecting remote sensing imagery at<br>
+several hundred bands over the spectrum. These advances provide the<br>
+possible benefit of not only collecting more detailed information than<br>
+previously possible, but also of producing more accurate data. While<br>
+these developments hold great promise for Earth and space science, they<br>
+create new computational challenges due to the large data volumes, now<br>
+needed to characterize hyperspectral data cubes for applications such<br>
+as land use and land cover classifications. Therefore efficient<br>
+utilization of hyperspectral data using new analytic approaches and<br>
+techniques is a must.  One such method of effectively using<br>
+hyperspectral data is through dimension reduction prior to the use of<br>
+data in an application. Principal Component Analysis (PCA) is perhaps<br>
+the most popular dimension reduction technique. The outcome is a number<br>
+of principal components (PCs), each being basically a 2D image, in a<br>
+descending order of information content. It is often the case, that<br>
+only a small number of these components contain the effective<br>
+information needed.  A significant part of computing PCs can be<br>
+performed using two alternative methods, the Jacobi Method and the<br>
+power Method.  In this paper we show that there are different scaling<br>
+and wall clock time tradeoffs between these two methods. In specific,<br>
+we show that while the power method has smaller computing time<br>
+requirements when data has smaller intrinsic dimensionality, which is<br>
+often the case, the Jacobi has better scalability characteristics.<br>
+Thus, when a large number of processors is used or when the intrinsic<br>
+dimensionality is high, the Jacobi will be shown to perform better. In<br>
+this paper, we propose an adaptive technique for determining the<br>
+effective dimensionality of hyperspectral data. Based on a user<br>
+specified desired level of information content, the method selects the<br>
+faster technique for solving the eigenproblem and computes only the<br>
+needed components for that level of information.</p>
+<p><a href="../index.html">Back to Program</a></p>
+
+</body>
+
+</html>

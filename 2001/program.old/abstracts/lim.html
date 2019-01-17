@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Cluster2001: Abstracts</title>
+<link rel="stylesheet" type="text/css" href="../../cluster2001.css">
+</head>
+
+<body>
+
+<h1>A Parallel programming environment for a V-bus based PC-cluster&nbsp;</h1>
+<p><b>Sang Seok Lim<br>
+</b><a href="mailto:sslim@core.kaist.ac.kr">sslim@core.kaist.ac.kr<br>
+</a><b>Yunheung Paek&nbsp;<br>
+      Kyu Ho Park</b>&nbsp;<br>
+<b>Korea Advanced Institute of Science and Technology&nbsp;</b></p>
+<p>
+Nowadays PC-cluster architectures are widely accepted for parallel<br>
+computing. In a PC-cluster system, memories are physically<br>
+distributed.  To harness the computational power of a<br>
+distributed-memory PC-cluster, a user must write efficient software for<br>
+the machine by hand. The absence of global address space makes the<br>
+process laborious because the user must manually assign computations to<br>
+processors, distribute data across processors and explicitly manage<br>
+communication among processors. This paper introduces our recent three<br>
+related studies on parallel computing.  The first is a V-Bus based<br>
+PC-cluster in which all PCs are interconnected through V-Bus network<br>
+cards. The second is the implementation of an one-sided communication<br>
+library on our PC-cluster system, which provides the user with a view<br>
+of global address space on top of the distributed-memory PC-cluster.<br>
+This encapsulation of global address allows the user to write shared<br>
+memory code on our cluster system, which simplifies programming our<br>
+cluster because the user does not need to explicitly cope with<br>
+distributed memories. The third is a parallelizing compiler that<br>
+automatically translates sequential code to shared-memory code for the<br>
+PC-cluster. This compiler not only enables legacy code to be compiled<br>
+for our cluster, but also further simplifies programming our cluster by<br>
+allowing the user to continue using conventional sequential languages<br>
+such as Fortran 77. In this work, the compiler was optimized<br>
+particularly for our V-Bus based PC-cluster. The paper also reports our<br>
+experimental results with the compiler on our PC-cluster system.</p>
+<p><a href="../index.html">Back to Program</a></p>
+
+</body>
+
+</html>
