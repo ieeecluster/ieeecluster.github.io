@@ -1,0 +1,121 @@
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<title>文档库</title>
+
+<style type="text/css">
+body{
+    background:url(/images/bg1.png) repeat-x;
+}
+
+.footer {
+    background:url(/images/line.png) repeat-x;
+}
+
+.box{
+    margin-top:15px;
+    border:1px solid #A0A0A0;
+	background:url(/images/top_line.gif) no-repeat;
+	height:25px;
+	color:#CC0000;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.box2{
+	padding:1px;
+	background:url(/images/caution.png) no-repeat;
+}
+
+.box3{
+    background:url(/images/text.png) no-repeat;
+}
+
+.text{
+    font-size:12px;
+	font-weight:bold;
+	color:#CC0000;
+	line-height:150%;
+}
+
+
+/* CSS container shadow */ 
+#shadow-container { 
+position: relative; 
+left: 3px; 
+top: 3px; 
+margin-right: 3px; 
+margin-bottom: 3px; 
+} 
+#shadow-container .shadow2, 
+#shadow-container .shadow3, 
+#shadow-container .container { 
+position: relative; 
+left: -1px; 
+top: -1px; 
+} 
+#shadow-container .shadow1 { 
+background: #F1F0F1; 
+} 
+#shadow-container .shadow2 { 
+background: #DBDADB; 
+} 
+#shadow-container .shadow3 { 
+background: #B8B6B8; 
+} 
+#shadow-container .container { 
+background: #ffffff; 
+border: 1px solid #848284; 
+padding: 10px; 
+}
+</style>
+</head><body>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td align="center" valign="middle" height="61"><table border="0" width="800">
+      <tbody><tr>
+        <td align="left"><img src="/images/banner-w.jpg" width="970" height="120"/></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+  <tr align="center" valign="middle">
+    <td><table border="0" cellpadding="0" cellspacing="0" width="740">
+      <tbody><tr>
+        <td class="box" align="center" valign="middle">系统消息</td>
+      </tr>
+      <tr>
+        <td class="box2" align="center" valign="middle" height="400"><table border="0" cellpadding="0" cellspacing="0" width="700" >
+          <tbody><tr>
+            <td class="text" align="center" valign="middle"><table border="0" cellpadding="0" cellspacing="0" width="500">
+              <tbody><tr>
+                <td class="box3" align="center" valign="top" height="350">
+				<br/><br/><br/><br/>
+				
+				没有找到您要的文档。
+				
+                	请<a href="logOut.do">注销</a>或返回<a href="/index.jsp">首页</a>。<br/>
+                
+                </td>
+                	
+              </tr>
+            </tbody></table></td>
+            <td align="center" valign="middle" width="128"><img src="/images/Delete.png" alt="" width="128" height="128"/></td>
+          </tr>
+          
+          
+        </tbody></table></td>
+        </tr>
+    </tbody></table></td>
+  </tr>
+</tbody></table>
+</body></html>
+
+
