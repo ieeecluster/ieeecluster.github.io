@@ -1,0 +1,222 @@
+*** Apologies for multiple copies. Please circulate. ***
+=================================================================
+
+                       Call for Papers
+     2006 IEEE International Conference on Cluster Computing
+                        (Cluster 2006)
+           September 25-28, 2006, Barcelona, Spain
+                  http://www.cluster2006.org
+
+                        Sponsored by:
+      IEEE Technical Committee on Scalable Computing (TCSC) 
+=================================================================
+
+------
+Scope:
+------
+
+In less than a decade, clusters of commodity PCs have become the 
+most cost-effective computing platforms for executing a wide 
+range of high performance applications, from molecular biology to 
+search and indexing on the internet.
+
+In spite of countless deployed platforms and resounding 
+application successes, many research and development challenges 
+remain for achieving better cluster performance, scalability, and 
+usability. The IEEE TCSC sponsored International Conference on 
+Cluster Computing 2006 provides an open forum for researchers, 
+practitioners, and users to present and discuss issues, directions, 
+and results that will shape the future of cluster computing.
+
+As cluster architecture is becoming a more mature field of 
+application, it remains particularly important to maintain an event 
+that links academic interests and new ideas to experience reports 
+of practitioners and applications developers.
+
+Cluster 2006 welcomes paper and poster submissions from engineers 
+and scientists in academia and industry, describing original 
+research work in all areas of cluster computing. Topics of interest 
+include, but are not limited to:
+
+	Cluster networking
+	Performance analysis and evaluation
+	Cluster management and maintenance
+	Cluster software and middleware
+	Cluster storage and I/O subsystems
+	Clustering for high availability
+	Applications
+	Grid computing and clusters
+
+-----------------
+Paper Submission:
+-----------------
+
+Format for submission: full paper drafts, not to exceed 25 
+double-spaced, numbered pages (including title, author affiliations, 
+abstract, keywords, figures, tables, and bibliographic references) 
+using 12 point font on 8.5x11-pages with 1-inch margins all around.
+
+A web based submission mechanism will be activated on the conference 
+web site (www.cluster2006.org) a few weeks before the submission 
+deadline. Authors should submit a PostScript (level2) or PDF file. 
+Hard copy submissions will not be accepted.
+
+An extended version of the best papers will be published in the 
+Cluster Computing Journal, published by Springer Science+Business 
+Media B.V.
+
+-------------------
+Last Minute Papers:
+-------------------
+
+In addition to regular papers, and for late-breaking results, 
+Cluster 2006 will accept a limited number of papers for consideration 
+in a special session. These papers will be reviewed, and accepted 
+papers will be included in a hardcopy supplement to the proceedings.  
+If you are interested in this option, please submit an abstract by 
+the regular paper deadline (April 28th) and the full paper by August 
+4th.  Papers considered for this category must be particularly timely 
+and the abstract submitted must contain a brief explanation on why 
+the paper should be considered for this session.
+
+---------------
+Panel Proposal:
+---------------
+
+Panel proposals are solicited for the Cluster 2006 panel, in any of 
+the topics of interest listed in the scope of this conference. Panel 
+proposals that focus on novel and/or contentious aspects of cluster 
+computing are particularly encouraged. 
+
+A panel proposal should be between 1 and 3 pages with the same format 
+as that of a technical paper. If possible, the panel should include 
+names/affiliations of tentative panelists.
+
+Submission information will be placed in the conference web page a 
+few weeks before the deadline.
+
+http://www.cluster2006.org/CallForPanels.htm
+
+------------------
+Tutorial Proposal:
+------------------
+
+Tutorial proposals are solicited for Cluster 2006, in any of the 
+topics of interest listed in the scope of this conference.
+
+A tutorial proposal should include a brief description of the 
+tutorial outline, a description of the intended audience, and a 
+biographical sketch of the instructor(s).
+
+Submission information will be placed in the conference web page a 
+few weeks before the deadline.
+
+http://www.cluster2006.org/Tutorials.htm
+
+------------------
+Workshop Proposal:
+------------------
+
+Cluster2006 expects to hold a small number of workshops immediately 
+after the main technical sessions. We expect that some of these 
+workshops will be continuations from past years (such as RAIT and 
+HeteroPar), but we are also interested in exploring the possibilities 
+that new workshops might offer the Cluster2006 attendees.
+
+Submission information will be placed in the conference web page a 
+few weeks before the deadline.
+
+http://www.cluster2006.org/Workshops.htm
+
+----------------
+Important Dates:
+----------------
+
+February  2     Workshop Proposals Due
+May       5     Technical Paper and Poster Submissions Due
+May       5     Last Minute Technical Paper Abstracts Due
+May       5     Tutorial Proposals Due
+June     12     Technical Papers Acceptance Notification
+June     19     Technical Posters Acceptance Notification
+June     30     Panel Proposals Due
+July     10     Camera-ready Technical Papers and Posters Due
+July     15     Exhibit Proposals Due
+August    4     Last Minute Technical Paper Submissions Due
+August    15    Last Minute Technical Paper Acceptance Notification
+August    25    Last Minute Technical Paper final version Due
+
+-------------
+Organization:
+-------------
+
+General co-chairs:
+	Toni Cortes (Barcelona Supercomputing Center, Spain)
+	Ira Pramanick (Sun Microsystems Inc., USA)
+General vice-chair:
+	Mateo Valero (Universitat Politècnica de Catalunya, Spain)
+Program chair:
+	Bill Gropp (Argonne National Lab., USA)
+Finances & Exhibit/sponsor chairs:
+	Rosa M. Badia (Barcelona Supercomputing Center, Spain)
+	Faith Singer-Villalobos (Texas Advanced Computing Center, USA)
+Publicity chair:
+	Julita Corbalán (Universitat Politècnica de Catalunya, Spain)
+Publication chair:
+	Xavier Martorell (Universitat Politècnica de Catalunya, Spain)
+Tutorial chair:
+	Salim Hariri (University of Arizona, USA)
+Workshop chair:
+	Daniel S. Katz (Jet Propulsion Laboratory, USA)
+Poster chair:
+	Hai Jin (Huazhong University of Science and Technology, China)
+
+
+Program Committee:
+
+David Abramson (Monash University, Australia)
+Gheorghe Almasi (IBM Research, USA)
+Amy Apon (University of Arkansas, USA)
+David Bader (Georgia Tech, USA)
+Mark Baker (University of Reading, United Kingdom)
+Kim Baldridge (University of Zurich, Switzerland)
+Pete Beckman (Argonne National Lab, USA)
+Angelos Bilas (University of Crete, Greece)
+Ronald Brightwell (Sandia National Laboratories, USA)
+Christopher Catherasoo (Jet Propulsion Lab, USA)
+Giovanni Chiola (Università degli Studi di genova, Italy)
+Peter A. Dinda (Northwestern University, USA)
+Markus Fischer (HPC Cluster Solutions, Ltd)
+Al Geist (Oak Ridge National Laboratory, USA)
+Patrick Geoffray (Myricom, Inc, USA)
+Ralf Gruber (Ecole Polytechnique Fédérale, Switzerland)
+Johannes Gutleber (CERN, Switzerland)
+Heath James (Massey University at Albany, New Zealand)
+David A. Lifka (Cornell University, USA)
+Tong Liu (Dell HPCC Development, USA)
+Ewing Lusk (Argonne National Lab, USA)
+Barney Maccabe (University of New Mexico, USA)
+Phillip Merkey (Michigan Tech, USA)
+Ronald G. Minnich (Los Alamos National Laboratory, USA)
+Christine Morin (INRIA, France)
+Jason Nieh (Columbia University, USA)
+Charles Norton (Jet Propulsion Lab, USA)
+Philip Papadopoulos (San Diego Supercomputer Center, USA)
+Maria Perez (Universidad Politécnica de Madrid, Spain)
+Wolfgang Rehm (Technische Universität Chemnitz, Germany)
+Ana Ripoll (Universidad Autonoma de Barcelona, Spain)
+Rob Ross (Argonne National Lab, USA)
+Faisal Saied (Purdue University, USA)
+Jennifer Schopf (Argonne National Lab, USA)
+Thomas Stricker (Google, Switzerland)
+Xian-He Sun (Illinois Institute of Technology, USA)
+Keith Underwood (Sandia National Laboratories, USA)
+Putchong Uthayopas (Kasetsart University, Thailand)
+Geoffroy Vallee (Oak Ridge National Laboratory, USA)
+Murali Vilayannur (Argonne National Lab, USA)
+David W. Walker (Cardiff University, United Kingdom)
+Cho-Li Wang (The University of Hong Kong, Hong Kong)
+William Yurcik (National Center for Supercomputing Applications, USA)
+Xiaodong Zhang (Ohio State University)
+
+
+
