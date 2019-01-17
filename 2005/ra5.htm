@@ -1,0 +1,298 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0047)http://www.cs.inf.ethz.ch/stricker/ccc/107.html -->
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="ra5_files/filelist.xml">
+<link rel=Edit-Time-Data href="ra5_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Cluster 2005 - Accelerating List Management for MPI</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Kurt</o:Author>
+  <o:LastAuthor>Kurt</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2005-08-02T15:14:00Z</o:Created>
+  <o:LastSaved>2005-08-02T15:14:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>294</o:Words>
+  <o:Characters>1680</o:Characters>
+  <o:Company> </o:Company>
+  <o:Lines>14</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>1971</o:CharactersWithSpaces>
+  <o:Version>10.6626</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>150</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+A:hover {
+	COLOR: #32426c; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:11.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+h4
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:10.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:#32426C;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:#32426C;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+<script  type="text/javascript">
+<!--
+function setDone() {
+   isDone = 1;
+   return false;
+}
+// -->
+</script>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor="#595A6D" lang=EN-US link="#32426C" vlink="#32426C"
+style='tab-interval:.5in;border-top:4.5pt;border-left:6.0pt;border-bottom:4.5pt;
+border-right:6.0pt;border-color:#A6A7B1;border-style:solid;padding:0in 0in 0in 0in'
+onload="setDone()">
+
+<div class=Section1>
+
+<div align=center>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:0in' height=24>
+ <tr style='mso-yfti-irow:0;mso-yfti-lastrow:yes'>
+  <td style='background:#595A6D;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;
+  color:white'>&nbsp;&nbsp;&nbsp;Cluster 2005</span><span style='font-size:
+  10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+  <td style='background:#595A6D;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.0pt;font-family:Arial;color:white'>START <span
+  class=SpellE>ConferenceManager</span> &nbsp;&nbsp;&nbsp;</span><span
+  style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<b><span style='font-size:12.0pt;font-family:Arial;mso-fareast-font-family:
+"Times New Roman";color:black;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<h2 style='background:white'><span style='color:black'>Memory Management
+Support for Multi-Programmed Remote Direct Memory Access (RDMA) Systems<o:p></o:p></span></h2>
+
+<p class=MsoNormal style='background:white'><span class=SpellE><b><span
+style='font-size:11.0pt;font-family:Arial;color:black'>Kostas</span></b></span><b><span
+style='font-size:11.0pt;font-family:Arial;color:black'> <span class=SpellE>Magoutis</span>
+<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:11.0pt;
+font-family:Arial;color:black'>RAIT Workshop<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:10.0pt;
+font-family:Arial;color:black'><a href="http://cluster2005.org/">IEEE
+International Conference on Cluster Computing (Cluster 2005)</a></span></b><span
+style='font-size:10.0pt;font-family:Arial;color:black'> <br>
+Boston, Massachusetts, USA, September 26, 2005 <o:p></o:p></span></p>
+
+<div class=MsoNormal align=center style='text-align:center;background:white'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h2 style='background:white'><span style='color:black'>Abstract<o:p></o:p></span></h2>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+font-family:Arial;color:black'>Current operating systems offer basic support
+for network interface controllers (<span class=SpellE>NICs</span>) supporting
+remote direct memory access (RDMA). Such support typically consists of a device
+driver responsible for configuring communication channels between the device
+and user-level processes but not involved in data transfer. Unlike standard <span
+class=SpellE>NICs</span>, RDMA-capable devices incorporate significant memory
+resources for address translation purposes. In a multi-programmed operating
+system (OS) environment, these memory resources must be efficiently shareable
+by multiple processes. For such sharing to occur in a fair manner, the OS and
+the device must cooperate to arbitrate access to NIC memory, similar to the way
+CPUs and <span class=SpellE>OSes</span> cooperate to arbitrate access to
+translation <span class=SpellE>lookaside</span> buffers (<span class=SpellE>TLBs</span>)
+or physical memory. A problem with this approach is that today&#8217;s RDMA <span
+class=SpellE>NICs</span> are not integrated into the functions provided by OS
+memory management systems. As a result, RDMA NIC hardware resources are often
+monopolized by a single application. In this paper, I propose two practical
+mechanisms to address this problem: (a) Use of RDMA only in kernel-resident I/O
+subsystems, transparent to user-level software; (b) An extended registration
+API and a kernel <span class=SpellE>upcall</span> mechanism delivering NIC TLB
+entry replacement notifications to user-level libraries. Both options are
+designed to re-instate the multiprogramming principles that are violated in
+early commercial RDMA systems. <o:p></o:p></span></p>
+
+<div class=MsoNormal align=center style='text-align:center;background:white'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<p style='background:white'><span style='color:black'>&nbsp;&nbsp; <o:p></o:p></span></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=0 cellspacing=1 cellpadding=0 width="90%"
+ style='width:90.0%;mso-cellspacing:.7pt'>
+ <tr style='mso-yfti-irow:0'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:7.5pt;font-family:Arial;color:black'><a
+  href="http://www.softconf.com/START" target="_blank">START</a> Conference
+  Manager (V2.49.7) </span><span style='font-size:10.0pt;font-family:Arial;
+  color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:7.5pt;font-family:Arial;color:black'>Maintainer: <em><span
+  style='font-family:Arial'><a href="mailto:rrgerber@softconf.com">rrgerber@softconf.com</a></span></em>
+  </span><span style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

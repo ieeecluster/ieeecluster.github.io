@@ -1,0 +1,299 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0047)http://www.cs.inf.ethz.ch/stricker/ccc/107.html -->
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="ra2_files/filelist.xml">
+<link rel=Edit-Time-Data href="ra2_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Cluster 2005 - Accelerating List Management for MPI</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Kurt</o:Author>
+  <o:LastAuthor>Kurt</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>44</o:TotalTime>
+  <o:Created>2005-08-02T16:07:00Z</o:Created>
+  <o:LastSaved>2005-08-02T16:07:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>237</o:Words>
+  <o:Characters>1352</o:Characters>
+  <o:Company> </o:Company>
+  <o:Lines>11</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>1586</o:CharactersWithSpaces>
+  <o:Version>10.6626</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>150</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+A:hover {
+	COLOR: #32426c; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+
+ /* Font Definitions */
+ @font-face
+	{font-family:"Nimbus Rom No 9 L";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-alt:"Nimbus Rom";
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:auto;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:11.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+h4
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:10.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:#32426C;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:#32426C;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+<script  type="text/javascript">
+<!--
+function setDone() {
+   isDone = 1;
+   return false;
+}
+// -->
+</script>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor="#595A6D" lang=EN-US link="#32426C" vlink="#32426C"
+style='tab-interval:.5in;border-top:4.5pt;border-left:6.0pt;border-bottom:4.5pt;
+border-right:6.0pt;border-color:#A6A7B1;border-style:solid;padding:0in 0in 0in 0in'
+onload="setDone()">
+
+<div class=Section1>
+
+<div align=center>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="85%"
+ style='width:85.94%;mso-cellspacing:0in;margin-left:.5in' height=24>
+ <tr style='mso-yfti-irow:0;mso-yfti-lastrow:yes'>
+  <td style='background:#595A6D;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;
+  color:white'>&nbsp;&nbsp;&nbsp;Cluster 2005</span><span style='font-size:
+  10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+  <td style='background:#595A6D;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.0pt;font-family:Arial;color:white'>START <span
+  class=SpellE>ConferenceManager</span> &nbsp;&nbsp;&nbsp;</span><span
+  style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div style='border-top:4.5pt;border-left:6.0pt;border-bottom:4.5pt;border-right:
+6.0pt;border-color:#A6A7B1;border-style:solid;padding:0in 0in 0in 0in;
+margin-left:.1pt;margin-top:5.0pt;margin-right:.1pt;margin-bottom:5.0pt'>
+
+<p class=MsoNormal style='background:white'><b style='mso-bidi-font-weight:
+normal'>A Performance Analysis of the <span class=SpellE>Ammasso</span> RDMA Enabled
+Ethernet Adapter and its <span class=SpellE>iWARP</span> API<o:p></o:p></b></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:11.0pt;
+font-family:Arial;color:black'>Dennis <span class=SpellE>Dalessandro</span><span
+class=GramE>,<span style='mso-spacerun:yes'>  </span>Pete</span> Wyckoff<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:11.0pt;
+font-family:Arial;color:black'>RAIT Workshop<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:10.0pt;
+font-family:Arial;color:black'><a href="http://cluster2005.org/">IEEE
+International Conference on Cluster Computing (Cluster 2005)</a></span></b><span
+style='font-size:10.0pt;font-family:Arial;color:black'> <br>
+Boston, Massachusetts, USA, September 26, 2005 <o:p></o:p></span></p>
+
+<div class=MsoNormal align=center style='text-align:center;background:white'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h2 style='background:white'><span style='color:black'>Abstract<o:p></o:p></span></h2>
+
+<p style='background:white'>N<span style='mso-bidi-font-family:"Nimbus Rom No 9 L";
+color:black'>etwork speeds are increasing well beyond the capabil­ities of
+today&#8217;s CPUs to <span class=SpellE>ef&#64257;ciently</span> handle the <span
+class=SpellE>traf&#64257;c</span>. This bottleneck at the CPU causes the
+processor to spend more of its time handling communication and less time on
+actual processing. As network speeds reach 10 <span class=SpellE><span
+class=GramE>Gb</span></span><span class=GramE>/</span>s and more, the CPU
+simply can not keep up with the data. Various methods have been proposed to
+solve this problem. High performance interconnects, such as <span class=SpellE>In&#64257;niband</span>,
+have been developed that rely on RDMA and protocol <span class=SpellE>of&#64258;oad</span>
+in or­der to achieve higher throughput and lower latency. In this paper we
+evaluate the feasibility of a similar approach which, unlike existing high
+performance interconnects, re­quires no special infrastructure. RDMA over
+Ethernet, oth­erwise known as <span class=SpellE>iWARP</span>, facilitates the
+zero copy exchange of data over ordinary local area networks. Since it is based
+on TCP, <span class=SpellE>iWARP</span> enables RDMA in the wide area network
+as well. This paper provides a look into the performance of one of the earliest
+commodity implementations of this emerging technology, the <span class=SpellE>Ammasso</span>
+1100 RNIC</span><span style='color:black'>.&nbsp;&nbsp; <o:p></o:p></span></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=0 cellspacing=1 cellpadding=0 width="90%"
+ style='width:90.0%;mso-cellspacing:.7pt'>
+ <tr style='mso-yfti-irow:0'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:7.5pt;font-family:Arial;color:black'><a
+  href="http://www.softconf.com/START" target="_blank">START</a> Conference
+  Manager (V2.49.7) </span><span style='font-size:10.0pt;font-family:Arial;
+  color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:7.5pt;font-family:Arial;color:black'>Maintainer: <em><span
+  style='font-family:Arial'><a href="mailto:rrgerber@softconf.com">rrgerber@softconf.com</a></span></em>
+  </span><span style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

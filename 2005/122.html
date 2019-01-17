@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<TITLE>Cluster 2005 - Exploiting Remote Memeory in InfiniBand Clusters using a High Performance Network Blocking Device &#40;HPBD&#41;</TITLE>
+
+<style>
+
+BODY {
+   MARGIN: 0px;
+   BORDER-TOP: #a6a7b1 5px solid;
+   BORDER-BOTTOM: #a6a7b1 5px solid;
+   BORDER-LEFT: #a6a7b1 8px solid;
+   BORDER-RIGHT: #a6a7b1 8px solid;
+   PADDING: 0px;
+   FONT-SIZE: 10pt;
+   FONT-FAMILY: Arial, Helvetica, sans-serif;
+   COLOR: #000000;
+   BACKGROUND-COLOR: #595a6d;
+}
+
+P {
+   FONT-SIZE: 10pt;
+   FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+TD {
+   FONT-SIZE: 10pt;
+   FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+TH {
+   FONT-SIZE: 10pt;
+   FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+
+A {
+   COLOR: #32426c;
+   FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+A:visited {
+   COLOR: #32426c;
+   FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+A:active {
+   COLOR: #32426c;
+   FONT-FAMILY: Arial, Helvetica, sans-serif;
+   TEXT-DECORATION: none
+}
+A:hover {
+   COLOR: #32426c;
+   FONT-FAMILY: Arial, Helvetica, sans-serif;
+   TEXT-DECORATION: underline
+}
+H4 {
+   FONT-SIZE: 10pt;
+   FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+H3 {
+   FONT-SIZE: 11pt;
+   FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+H2 {
+   FONT-SIZE: 12pt;
+   FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+H1 {
+   FONT-SIZE: 14pt;
+   FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+</style>
+
+<script type="text/javascript">
+<!--
+function setDone() {
+   isDone = 1;
+   return false;
+}
+// -->
+</script>
+</HEAD>
+<BODY BGCOLOR='#ffffff' onload="setDone()">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH="100%" align=center height="24">
+<TR>
+<TD VALIGN='MIDDLE' BGCOLOR=#595a6d align=left><FONT COLOR='white'>&nbsp;&nbsp;&nbsp;Cluster 2005</font></td>
+<TD VALIGN='MIDDLE' BGCOLOR=#595a6d align=right><FONT COLOR='white'>START ConferenceManager &nbsp;&nbsp;&nbsp;</FONT></TD>
+</TR>
+</TABLE>
+
+
+<div style="width=100%; COLOR: #000000; BACKGROUND-COLOR: #ffffff; margin-top: 5px; margin-bottom: 5px; margin-left: 2%; margin-right: 2%; padding-left: 10px; padding-right: 10px; padding-top: 15px; padding-bottom: 5px">
+<p>
+
+<p>
+
+    <h2>Swapping to Remote Memory over InfiniBand: An Approach using a High Performance Network Block Device</h2>
+    <h3>Shuang Liang, Ranjit Noronha and Dhabaleswar K. Panda</h3>
+    <b><a href=http://cluster2005.org/>IEEE International Conference on Cluster Computing (Cluster 2005)</a></b>
+    <br>Boston, Massachusetts, USA, September 27 - 30, 2005
+    <p>
+    <hr>
+    <p>
+    <h2>Abstract</h2>
+    Traditionally, remote memory accesses in cluster systems are very expensive operations, which perform 20-100 times slower than local memory accesses. Modern RDMA capable networks such as InfiniBand and Quadrics provide low latency of a few microseconds and high bandwidth of up to 10 Gbps. This has made remote memory much closer to the local memory system. Using remote idle memory to enhance local memory hierarchy thus becomes an attractive choice, especially for data intensive applications in cluster environment. In this paper, we take the challenge to design a remote paging system for remote memory utilization in InfiniBand clusters. We present the design and implementation of a high performance networking blocking device &#40;HPBD&#41;, which serves as a swap device for kernel Virtual Memory &#40;VM&#41; system for efficient page transfer to/from memory servers. Our experiments show that using HPBD, quick sort perform only 1.7 times slower than local memory system, and up to 21 times faster than local disk. And Our design is completely transparent to user applications. To the best of our knowledge, it is the first work of a remote pager design using InfiniBand for remote memory utilization.
+    <p>
+    <hr>
+<p>
+&nbsp;&nbsp;
+
+<TABLE cellpadding=1 CELLSPACING=1 BORDER=0 WIDTH="90%" align=center>
+<tr>
+<td align=center>
+<small>
+<a href="http://www.softconf.com/START" target="_blank">START</a>
+Conference Manager (V2.49.7)
+</small>
+</td>
+</tr>
+<tr>
+<td align=center>
+<small>
+Maintainer: <em><A HREF="mailto:rrgerber@softconf.com">rrgerber@softconf.com</a></em>
+</td>
+</tr>
+</table>
+<p>&nbsp;
+</div>
+<p>
+</body>
+</html>

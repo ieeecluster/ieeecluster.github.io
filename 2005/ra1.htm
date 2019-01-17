@@ -1,0 +1,296 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0047)http://www.cs.inf.ethz.ch/stricker/ccc/107.html -->
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="ra1_files/filelist.xml">
+<link rel=Edit-Time-Data href="ra1_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Cluster 2005 - Accelerating List Management for MPI</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place" downloadurl="http://www.5iantlavalamp.com/"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Kurt</o:Author>
+  <o:LastAuthor>Kurt</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>8</o:TotalTime>
+  <o:Created>2005-08-02T15:20:00Z</o:Created>
+  <o:LastSaved>2005-08-02T15:20:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>213</o:Words>
+  <o:Characters>1217</o:Characters>
+  <o:Company> </o:Company>
+  <o:Lines>10</o:Lines>
+  <o:Paragraphs>2</o:Paragraphs>
+  <o:CharactersWithSpaces>1428</o:CharactersWithSpaces>
+  <o:Version>10.6626</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>150</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+A:hover {
+	COLOR: #32426c; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:11.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+h4
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:10.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:#32426C;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:#32426C;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+<script  type="text/javascript">
+<!--
+function setDone() {
+   isDone = 1;
+   return false;
+}
+// -->
+</script>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor="#595A6D" lang=EN-US link="#32426C" vlink="#32426C"
+style='tab-interval:.5in;border-top:4.5pt;border-left:6.0pt;border-bottom:4.5pt;
+border-right:6.0pt;border-color:#A6A7B1;border-style:solid;padding:0in 0in 0in 0in'
+onload="setDone()">
+
+<div class=Section1>
+
+<div align=center>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:0in' height=24>
+ <tr style='mso-yfti-irow:0;mso-yfti-lastrow:yes'>
+  <td style='background:#595A6D;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;
+  color:white'>&nbsp;&nbsp;&nbsp;Cluster 2005</span><span style='font-size:
+  10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+  <td style='background:#595A6D;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.0pt;font-family:Arial;color:white'>START <span
+  class=SpellE>ConferenceManager</span> &nbsp;&nbsp;&nbsp;</span><span
+  style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<b><span style='font-size:12.0pt;font-family:Arial;mso-fareast-font-family:
+"Times New Roman";color:black;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<h2 style='background:white'><span style='color:black'>Transparently Achieving </span><st1:place><span
+ style='color:black'>Superior</span></st1:place><span style='color:black'>
+Socket Performance Using Zero Copy Socket Direct Protocol over 20Gb/s <span
+class=SpellE>InfiniBand</span> Links<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></h2>
+
+<p class=MsoNormal style='background:white'><span class=SpellE><b><span
+style='font-size:11.0pt;font-family:Arial;color:black'>Dror</span></b></span><b><span
+style='font-size:11.0pt;font-family:Arial;color:black'> Goldenberg,<span
+style='mso-spacerun:yes'>   </span>Michael <span class=SpellE>Kagan</span>,<span
+style='mso-spacerun:yes'>   </span>Ran <span class=SpellE>Ravid</span><span
+class=GramE>,<span style='mso-spacerun:yes'>  </span>Michael</span> S. <span
+class=SpellE>Tsirkin</span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:11.0pt;
+font-family:Arial;color:black'>RAIT Workshop<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:10.0pt;
+font-family:Arial;color:black'><a href="http://cluster2005.org/">IEEE
+International Conference on Cluster Computing (Cluster 2005)</a></span></b><span
+style='font-size:10.0pt;font-family:Arial;color:black'> <br>
+Boston, Massachusetts, USA, September 26, 2005 <o:p></o:p></span></p>
+
+<div class=MsoNormal align=center style='text-align:center;background:white'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h2 style='background:white'><span style='color:black'>Abstract<o:p></o:p></span></h2>
+
+<p style='background:white'><span style='color:black'>Sockets Direct Protocol
+(SDP) is a byte stream protocol that utilizes the capabilities of the
+InfiniBand fabric to transparently achieve performance gains for existing
+socket-based networked applications. In this paper we discuss an implementation
+of Zero Copy support for synchronous send()/<span class=SpellE>recv</span>()
+socket calls, that uses the remote DMA capability of <span class=SpellE>InfiniBand</span>
+for SDP data transfers. We added this support to the open-source implementation
+of SDP over <span class=SpellE>InfiniBand</span>. We evaluate this
+implementation over a 20 <span class=SpellE><span class=GramE>Gb</span></span><span
+class=GramE>/</span>s <span class=SpellE>InfiniBand</span> link. We demonstrate
+scalability of Zero Copy and show its benefits for systems that utilize
+multiple socket connections in parallel. For example, enabling Zero Copy with 8
+active connections yields a bandwidth growth from 630MB/s to 1360MB/s, at the
+same time reducing the CPU utilization by a factor of ten.&nbsp;&nbsp; <o:p></o:p></span></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=0 cellspacing=1 cellpadding=0 width="90%"
+ style='width:90.0%;mso-cellspacing:.7pt'>
+ <tr style='mso-yfti-irow:0'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:7.5pt;font-family:Arial;color:black'><a
+  href="http://www.softconf.com/START" target="_blank">START</a> Conference
+  Manager (V2.49.7) </span><span style='font-size:10.0pt;font-family:Arial;
+  color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:7.5pt;font-family:Arial;color:black'>Maintainer: <em><span
+  style='font-family:Arial'><a href="mailto:rrgerber@softconf.com">rrgerber@softconf.com</a></span></em>
+  </span><span style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
