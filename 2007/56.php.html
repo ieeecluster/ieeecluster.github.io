@@ -1,0 +1,20 @@
+<i>
+OpenMP can be supported in cluster environments
+by using distributed shared memory (DSM) systems. A portable
+approach for building DSM systems is to layer it on MPI. With
+these goals in mind, this paper makes two contributions. The first
+is a discussion about two software DSM systems that we have
+implemented using MPI. One uses background polling threads
+while the other uses processes that are driven only by incoming
+MPI messages. Comparisons of the two approaches show the
+latter to be a more scalable architecture that is better suited for
+the multi-core processors that are becoming commonplace. The
+second contribution recognizes that a common workaround for
+sub-team synchronizations in OpenMP is to use the flush directive
+on shared variables within busy-wait loops. In such a situation,
+only the flush in the last iteration of the busy-wait loop will result
+in the conditions necessary for exiting the loop. Thus transfer
+of the shared value need only be done if there were changes.
+We implement in our DSM a flush mechanism that eliminates
+the unnecessary data transfers entirely without any additional
+support or hints from the programmer.</i>

@@ -1,0 +1,19 @@
+<i>Economy-based admission control of jobs in a grid,
+or migration of guest jobs from a disconnecting cluster in a grid, as
+well as checkpointing parallel jobs in a cluster to a central repository
+are demanding tasks that can exhaust essential resources such as
+the communication networks, due to the requirement to quickly move
+large amounts of data from many nodes. Compressing memory images
+might make these operations more efficient provided that the overall
+throughput is increased. Existing serial compression algorithms are
+not suitable for such purposes because they do not exploit interfile
+redundancy. This paper presents decentralized algorithms for
+parallel compression of correlated memory images of a job in a
+cluster or in a grid. The algorithms use block suppression to eliminate
+inter-file redundancy. They take advantage of the multiple processor
+environment to simultaneously map memory blocks to hash values
+in order to detect redundancies. It is shown that exploiting interfile
+redundancy of correlated files can increase the overall transfer
+throughput of parallel jobs. It is also shown that combining serial
+compression with our algorithms further increases this throughput.
+The paper presents the algorithms and their performance.</i>

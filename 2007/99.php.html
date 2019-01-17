@@ -1,0 +1,28 @@
+<i><p>
+Various mechanisms for fault-tolerance (FT) are
+used today in order to reduce the impact of failures on application
+execution. In the case of system failure, standard FT mechanisms
+are checkpoint/restart (for reactive FT) and migration (for
+pro-active FT). However, each of these mechanisms create an
+overhead on application execution, overhead that for instance
+becomes critical on large-scale systems where previous studies
+have shown that applications may spend more time checkpointing
+state than performing useful work.
+<p>In order to decrease this overhead, researchers try to both
+optimize existing FT mechanisms and implement new FT policies.
+For instance, combining reactive and pro-active approaches in
+order to decrease the number of checkpoints that must be
+performed during the applications execution. However, currently
+no solutions exist which enable the evaluation of these FT
+approaches through simulation, instead experimentations must
+be done using real platforms. This increases complexity and limits
+experimentation into alternate solutions.
+<p>This paper presents a simulation framework that evaluates
+different FT mechanisms and policies. The framework uses
+system failure logs for the simulation with a default behavior
+based on logs taken from the ASCI White at Lawrence Livermore
+National Laboratory. We evaluate the accuracy of our simulator
+comparing simulated results with those taken from experiments
+done on a 32-node compute cluster. Therefore such a simulator
+can be used to develop new FT policies and/or to tune existing
+policies.</i>

@@ -1,0 +1,30 @@
+<i>
+Memory copies are widely regarded as detrimental to the
+overall performance of applications. High-performance systems
+make every effort to reduce the number of memory
+copies, especially the copies incurred during message passing.
+State of the art implementations of message-passing
+libraries, such as MPI, utilize user-level networking protocols
+to reduce or eliminate memory copies. InfiniBand is
+an emerging user-level networking technology that is gaining
+rapid acceptance in several domains, including HPC.
+In order to eliminate message copies while transferring
+large messages, MPI libraries over InfiniBand employ zerocopy
+protocols which use Remote Direct Memory Access
+(RDMA). RDMA is available only in the connection-oriented
+transports of InfiniBand, such as Reliable Connection (RC).
+However, the Unreliable Datagram (UD) transport of Infini-
+Band has been shown to scale much better than the RC transport
+in regard to memory usage. In an optimal design, it
+should be possible to perform zero-copy message transfers
+over scalable transports (such as UD).
+In this paper, we present our design of a novel zero-copy
+protocol which is directly based over the scalable UD transport.
+Thus, our protocol achieves the twin objectives of scalability
+and good performance. Our analysis shows that unidirectional
+messaging bandwidth can be within 9% of what
+is achievable over RC for messages of 64KB and above. Application
+benchmark evaluation shows that our design delivers
+a 21% speedup for the in.rhodo dataset for LAMMPS
+over a copy-based approach, giving performance within 1%
+of RC.</i>

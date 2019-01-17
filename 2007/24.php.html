@@ -1,0 +1,29 @@
+<i>
+Disk subsystem is known to be a major contributor
+to the overall power budget of large-scale parallel systems. Most
+scientific applications today rely heavily on disk I/O for outof-
+core computations, checkpointing, and visualization of data.
+To reduce excess energy consumption on disk system, prior
+studies proposed several hardware or OS-based disk power
+management schemes. While such schemes have been known
+to be effective in certain cases, they might miss opportunities
+for better energy savings due to their reactive nature. While
+compiler based schemes can make more accurate decisions on
+a given application by extracting disk access patterns statically,
+the lack of runtime information on the status of shared disks
+may lead to wrong decisions when multiple applications exercise
+the same set of disks concurrently. In this paper, we propose a
+runtime system based approach that provides more effective disk
+power management. In our scheme, the compiler provides crucial
+information on the future disk access patterns and preferred
+disk speeds from the perspective of individual applications, and
+a runtime system uses this information along with current state
+of the shared disks to make decisions that are agreeable to all
+applications.We implemented our runtime system support within
+PVFS2, a parallel file system. Our experimental results with
+four I/O-intensive scientific applications indicate large energy
+savings: 19.4% and 39.9% over the previously-proposed pure
+software and pure hardware based schemes, respectively. We
+further show in this paper that our scheme can achieve consistent
+energy savings with a varying number and mix of applications
+and different disk layouts of data.</i>

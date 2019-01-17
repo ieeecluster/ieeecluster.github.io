@@ -1,0 +1,22 @@
+<i><p>The concept of Remote Procedure Call (RPC) was
+proposed more than 30 years ago. Although various RPC systems
+have been studied and implemented, the existing RPC systems
+lack many crucial features and flexibility required for building
+modern cluster file systems.
+<p>This paper presents FlexRPC, a flexible user-level RPC system
+that enables to develop high-performance cluster file systems
+easily. FlexRPC ensures client-side thread-safeness and fully supports
+multithreaded RPC servers. Parallel and serial multicasting
+mechanisms allow for implementing sophisticated replication in
+modern cluster file systems. The remote procedure can be invoked
+using both UDP and TCP transports with at-most-once semantics.
+The concurrent call requests are handled by a set of worker
+threads on the client and server side where the number of
+workers varies dynamically according to the request rate. In
+addition, the semantics and the specification of remote procedures
+are designed to be as close as possible to SunRPC.
+<p>The experimental results show that FlexRPC improves both
+latency and bandwidth significantly in spite of added functionalities.
+We also demonstrate the performance and the flexibility
+provided by FlexRPC by building working prototype of cluster
+file system called Kadoop on top of FlexRPC.</i>

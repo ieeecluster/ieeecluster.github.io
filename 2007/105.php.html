@@ -1,0 +1,24 @@
+<i><p>
+While much high-performance computing is performed
+using massively parallel MPI applications, many workflows
+execute jobs with a mix of processor counts. At the extreme
+end of the scale, some workloads consist of large quantities of
+single-processor jobs. These types of workflows lead to inefficient
+usage of massively parallel architectures such as the IBM Blue
+Gene/L (BG/L) because of allocation constraints forced by its
+unique system design. Recently, IBM introduced the ability to
+schedule individual processors on BG/L  a feature named
+High Throughput Computing (HTC)  creating an opportunity
+to exploit the systems power efficiency for other classes of
+computing.
+<p>In this paper, we present a Grid-enabled interface supporting
+HTC on BG/L. This interface accepts single-processor tasks using
+Globus GRAM, aggregates HTC tasks into BG/L partitions,
+and requests partition execution using the underlying system
+scheduler. By separating HTC task aggregation from scheduling,
+we provide the ability for workflows constructed using standard
+Grid middleware to run both parallel and serial jobs on the BG/L.
+We examine the startup latency and performance of running
+large quantities of HTC jobs. Finally, we deploy Daymet, a
+component of a coupled climate model, on a BG/L system using
+our HTC interface.</i>

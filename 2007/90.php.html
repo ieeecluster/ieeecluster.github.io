@@ -1,0 +1,26 @@
+<i>
+Understanding the behavior and impact of various
+sources of Operating System Jitter (OS Jitter) is important
+not only for tuning a system for HPC applications, but
+also for the ongoing efforts to create light-weight versions
+of commercial operating systems such as Linux, that can
+be used on compute nodes of large scale HPC systems.
+In this paper, we present a tool that helps in identifying
+sources of OS Jitter in a commodity operating system such
+as Linux and measures the impact of OS Jitter through
+ne grained kernel instrumentation. Our methodology
+comprises of running a user-level micro-benchmark and
+measuring the latencies experienced by the benchmark. We
+then associate each latency to operating system daemons
+and interrupts using data obtained from kernel instrumentation.
+We present experimental results that help identify
+the biggest contributors to the total OS Jitter perceived by
+an application on a commodity operating system such as
+Linux. Our results revealed that while 63% of the total
+jitter comes from timer interrupts, the rest comes from
+various system daemons and interrupts, most of which can
+be easily eliminated. The tool presented in this paper can
+also be used to tune .out of the box. commodity operating
+systems as well as to detect new sources of operating
+system jitter that get introduced as software get installed
+and upgraded on a tuned system.</i>
