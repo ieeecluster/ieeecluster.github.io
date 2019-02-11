@@ -5,7 +5,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/404.html</loc>
+	<loc>https://clustercomp.org/2017/404.html</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -20,24 +20,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/blog/archive/</loc>
-	
-		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-
-	
-	<url>
-	<loc>https://ieeecluster.github.io/2017/atom.xml</loc>
+	<loc>https://clustercomp.org/2017/blog/archive/</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -54,7 +37,24 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/pages/contact/</loc>
+	<loc>https://clustercomp.org/2017/atom.xml</loc>
+	
+		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2017/pages/contact/</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -69,7 +69,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/feed.xml</loc>
+	<loc>https://clustercomp.org/2017/feed.xml</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -84,7 +84,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/humans.txt</loc>
+	<loc>https://clustercomp.org/2017/humans.txt</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -99,7 +99,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/blog/</loc>
+	<loc>https://clustercomp.org/2017/blog/</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -114,7 +114,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/workshops/</loc>
+	<loc>https://clustercomp.org/2017/workshops/</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -129,7 +129,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/registration/</loc>
+	<loc>https://clustercomp.org/2017/registration/</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -144,7 +144,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/contact/</loc>
+	<loc>https://clustercomp.org/2017/contact/</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -159,7 +159,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/posters/</loc>
+	<loc>https://clustercomp.org/2017/posters/</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -174,7 +174,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/authors/</loc>
+	<loc>https://clustercomp.org/2017/authors/</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -189,7 +189,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/committees/</loc>
+	<loc>https://clustercomp.org/2017/committees/</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -204,7 +204,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/student/</loc>
+	<loc>https://clustercomp.org/2017/student/</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -219,7 +219,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/program/</loc>
+	<loc>https://clustercomp.org/2017/program/</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -234,7 +234,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/venue/</loc>
+	<loc>https://clustercomp.org/2017/venue/</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -249,7 +249,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/pages/pages-root-folder/</loc>
+	<loc>https://clustercomp.org/2017/pages/pages-root-folder/</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -264,7 +264,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/technical/</loc>
+	<loc>https://clustercomp.org/2017/technical/</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -279,7 +279,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/</loc>
+	<loc>https://clustercomp.org/2017/</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -294,7 +294,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/pages/info/</loc>
+	<loc>https://clustercomp.org/2017/pages/info/</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -309,7 +309,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/redirect-page/</loc>
+	<loc>https://clustercomp.org/2017/redirect-page/</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -324,7 +324,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/robots.txt</loc>
+	<loc>https://clustercomp.org/2017/robots.txt</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -343,7 +343,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/search/</loc>
+	<loc>https://clustercomp.org/2017/search/</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	
@@ -358,7 +358,7 @@
 
 	
 	<url>
-	<loc>https://ieeecluster.github.io/2017/sitemap.xml</loc>
+	<loc>https://clustercomp.org/2017/sitemap.xml</loc>
 	
 		<lastmod>2019-01-02T00:23:45+08:00</lastmod>
 	

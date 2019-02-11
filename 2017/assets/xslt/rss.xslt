@@ -9,8 +9,8 @@
 			<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>RSS Feed (Styled)</title>
-	<link rel="stylesheet" type="text/css" href="https://ieeecluster.github.io/2017/assets/css/styles_feeling_responsive.css" />
-	<script src="https://ieeecluster.github.io/2017/assets/js/modernizr.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://clustercomp.org/2017/assets/css/styles_feeling_responsive.css" />
+	<script src="https://clustercomp.org/2017/assets/js/modernizr.min.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
   <script>
@@ -36,67 +36,67 @@
 
 
 	
-	<link rel="icon" sizes="32x32" href="https://ieeecluster.github.io/2017/assets/img/favicon-32x32.png" />
+	<link rel="icon" sizes="32x32" href="https://clustercomp.org/2017/assets/img/favicon-32x32.png" />
 
 
 
 
 	
-	<link rel="icon" sizes="192x192" href="https://ieeecluster.github.io/2017/assets/img/touch-icon-192x192.png" />
+	<link rel="icon" sizes="192x192" href="https://clustercomp.org/2017/assets/img/touch-icon-192x192.png" />
 
 
 
 
 	
-	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://ieeecluster.github.io/2017/assets/img/apple-touch-icon-180x180-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://clustercomp.org/2017/assets/img/apple-touch-icon-180x180-precomposed.png" />
 
 
 
 
 	
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://ieeecluster.github.io/2017/assets/img/apple-touch-icon-152x152-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://clustercomp.org/2017/assets/img/apple-touch-icon-152x152-precomposed.png" />
 
 
 
 
 	
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ieeecluster.github.io/2017/assets/img/apple-touch-icon-144x144-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://clustercomp.org/2017/assets/img/apple-touch-icon-144x144-precomposed.png" />
 
 
 
 
 	
-	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://ieeecluster.github.io/2017/assets/img/apple-touch-icon-120x120-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://clustercomp.org/2017/assets/img/apple-touch-icon-120x120-precomposed.png" />
 
 
 
 
 	
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://ieeecluster.github.io/2017/assets/img/apple-touch-icon-114x114-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://clustercomp.org/2017/assets/img/apple-touch-icon-114x114-precomposed.png" />
 
 
 
 
 	
-	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://ieeecluster.github.io/2017/assets/img/apple-touch-icon-76x76-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://clustercomp.org/2017/assets/img/apple-touch-icon-76x76-precomposed.png" />
 
 
 
 
 	
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://ieeecluster.github.io/2017/assets/img/apple-touch-icon-72x72-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://clustercomp.org/2017/assets/img/apple-touch-icon-72x72-precomposed.png" />
 
 
 
 
 	
-	<link rel="apple-touch-icon-precomposed" href="https://ieeecluster.github.io/2017/assets/img/apple-touch-icon-precomposed.png" />	
+	<link rel="apple-touch-icon-precomposed" href="https://clustercomp.org/2017/assets/img/apple-touch-icon-precomposed.png" />	
 
 
 
 
 	
-	<meta name="msapplication-TileImage" content="https://ieeecluster.github.io/2017/assets/img/msapplication_tileimage.png" />
+	<meta name="msapplication-TileImage" content="https://clustercomp.org/2017/assets/img/msapplication_tileimage.png" />
 
 
 
@@ -111,7 +111,7 @@
 	
 	<meta property="og:title" content="RSS Feed (Styled)" />
 	<meta property="og:description" content="Website for IEEE Cluster 2017, September 2017, Hawaii, USA" />
-	<meta property="og:url" content="https://ieeecluster.github.io/2017//assets/xslt/rss.xslt" />
+	<meta property="og:url" content="https://clustercomp.org/2017//assets/xslt/rss.xslt" />
 	<meta property="og:site_name" content="IEEE Cluster 2017" />
 	
 
@@ -120,7 +120,7 @@
 	<!-- Search Engine Optimization -->
 	
 
-	<link type="text/plain" rel="author" href="https://ieeecluster.github.io/2017/humans.txt" />
+	<link type="text/plain" rel="author" href="https://clustercomp.org/2017/humans.txt" />
 
 	
 
@@ -135,7 +135,7 @@
   <nav class="top-bar" role="navigation" data-topbar>
     <ul class="title-area">
       <li class="name">
-      <h1 class="show-for-small-only"><a href="https://ieeecluster.github.io/2017" class="icon-tree"> IEEE Cluster 2017</a></h1>
+      <h1 class="show-for-small-only"><a href="https://clustercomp.org/2017" class="icon-tree"> IEEE Cluster 2017</a></h1>
     </li>
        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
       <li class="toggle-topbar menu-icon"><a href="#"><span>Navigation</span></a></li>
@@ -217,7 +217,7 @@
 
             
             
-              <li><a href="https://ieeecluster.github.io/2017/">Home</a></li>
+              <li><a href="https://clustercomp.org/2017/">Home</a></li>
               <li class="divider"></li>
 
             
@@ -232,7 +232,7 @@
 
             
             
-              <li><a href="https://ieeecluster.github.io/2017/technical">Papers</a></li>
+              <li><a href="https://clustercomp.org/2017/technical">Papers</a></li>
               <li class="divider"></li>
 
             
@@ -247,7 +247,7 @@
 
             
             
-              <li><a href="https://ieeecluster.github.io/2017/authors">Authors</a></li>
+              <li><a href="https://clustercomp.org/2017/authors">Authors</a></li>
               <li class="divider"></li>
 
             
@@ -262,7 +262,7 @@
 
             
             
-              <li><a href="https://ieeecluster.github.io/2017/workshops">Workshops</a></li>
+              <li><a href="https://clustercomp.org/2017/workshops">Workshops</a></li>
               <li class="divider"></li>
 
             
@@ -277,7 +277,7 @@
 
             
             
-              <li><a href="https://ieeecluster.github.io/2017/posters">Posters</a></li>
+              <li><a href="https://clustercomp.org/2017/posters">Posters</a></li>
               <li class="divider"></li>
 
             
@@ -292,7 +292,7 @@
 
             
             
-              <li><a href="https://ieeecluster.github.io/2017/program">Program</a></li>
+              <li><a href="https://clustercomp.org/2017/program">Program</a></li>
               <li class="divider"></li>
 
             
@@ -307,7 +307,7 @@
 
             
             
-              <li><a href="https://ieeecluster.github.io/2017/student">Mentoring</a></li>
+              <li><a href="https://clustercomp.org/2017/student">Mentoring</a></li>
               <li class="divider"></li>
 
             
@@ -322,7 +322,7 @@
 
             
             
-              <li><a href="https://ieeecluster.github.io/2017/registration">Registration</a></li>
+              <li><a href="https://clustercomp.org/2017/registration">Registration</a></li>
               <li class="divider"></li>
 
             
@@ -337,7 +337,7 @@
 
             
             
-              <li><a href="https://ieeecluster.github.io/2017/committees">Committees</a></li>
+              <li><a href="https://clustercomp.org/2017/committees">Committees</a></li>
               <li class="divider"></li>
 
             
@@ -352,7 +352,7 @@
 
             
             
-              <li><a href="https://ieeecluster.github.io/2017/venue">Venue</a></li>
+              <li><a href="https://clustercomp.org/2017/venue">Venue</a></li>
               <li class="divider"></li>
 
             
@@ -370,8 +370,8 @@
 <div id="masthead-no-image-header">
 	<div class="row">
 		<div class="small-12 columns">
-			<a id="logo" href="https://ieeecluster.github.io/2017" title="IEEE Cluster 2017 – International Conference on Cluster Computing">
-				<img src="https://ieeecluster.github.io/2017/assets/img/logo.png" alt="IEEE Cluster 2017 – International Conference on Cluster Computing">
+			<a id="logo" href="https://clustercomp.org/2017" title="IEEE Cluster 2017 – International Conference on Cluster Computing">
+				<img src="https://clustercomp.org/2017/assets/img/logo.png" alt="IEEE Cluster 2017 – International Conference on Cluster Computing">
 			</a>
 		</div><!-- /.small-12.columns -->
 	</div><!-- /.row -->
@@ -552,7 +552,7 @@
 		
 
 
-<script src="https://ieeecluster.github.io/2017/assets/js/javascript.min.js"></script>
+<script src="https://clustercomp.org/2017/assets/js/javascript.min.js"></script>
 
 
 

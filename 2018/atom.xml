@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/assets/xslt/atom.xslt" ?>
 <?xml-stylesheet type="text/css" href="/assets/css/atom.css" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<id>https://ieeecluster.github.io/2018/</id>
+	<id>https://clustercomp.org/2018/</id>
 	<title>IEEE Cluster 2018</title>
 	<updated>2019-01-02T00:20:05+08:00</updated>
 
@@ -19,8 +19,8 @@
 		</author>
 	
 
-	<link href="https://ieeecluster.github.io/2018/atom.xml" rel="self" type="application/rss+xml" />
-	<link href="https://ieeecluster.github.io/2018/" rel="alternate" type="text/html" />
+	<link href="https://clustercomp.org/2018/atom.xml" rel="self" type="application/rss+xml" />
+	<link href="https://clustercomp.org/2018/" rel="alternate" type="text/html" />
 
 	<generator uri="http://jekyllrb.com" version="3.5.2">Jekyll</generator>
 

@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://ieeecluster.github.io/2017/sitemap.xml
+Sitemap: https://clustercomp.org/2017/sitemap.xml
