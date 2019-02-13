@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180912T160000
+DTEND;TZID=Europe/London:20180912T163000
+UID:ieeecluster_IEEE Cluster 2018_sess117_pap214@linklings.com
+SUMMARY:A Scalable Distributed Louvain Algorithm for Large-scale Graph Com
+ munity Detection
+DESCRIPTION:A Scalable Distributed Louvain Algorithm for Large-scale Graph
+  Community Detection\n\nZeng, Yu\n\n\nWe present a new distributed communi
+ ty detection algorithm for large graphs based on the Louvain method. We ex
+ ploit a distributed delegate partitioning to ensure the workload and commu
+ nication balancing among processors. In addition, we design a new heuristi
+ c strategy to carefully coordinate the community constitution in a distrib
+ uted environment, and ensure the convergence of the distributed clustering
+  algorithm. Our intensive experimental study has demonstrated the scalabil
+ ity and the correctness of our algorithm with various large-scale real-wor
+ ld and synthetic graph datasets using up to 32,768 processors.
+END:VEVENT
+END:VCALENDAR
+

@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180913T153000
+DTEND;TZID=Europe/London:20180913T170000
+UID:ieeecluster_IEEE Cluster 2018_sess129@linklings.com
+SUMMARY:Paper session XV: Scalable Filesystems
+DESCRIPTION:A Server-managed Transparent Object Storage Abstraction for HP
+ C\n\nMu, Soumagne, Tang, Byna, Koziol...\n\nOn the road to exascale, the h
+ igh-performance computing (HPC) community is seeing the emergence of multi
+ -tier storage systems that take aim at the unprecedented amount of data be
+ ing produced by scientific applications. Multi-tier storage in HPC systems
+  take advantage of new technologies such as non-...\n\n-------------------
+ --\nPDFE: Flexible Parallel State Machine Replication for Cloud Computing\
+ n\nWu, Wu, Huang, Chen\n\nState machine replication (SMR) is a fundamental
+  fault tolerant technique for distributed systems to guarantee consistency
+  among replicas via sequential execution of commands. With the development
+  of cloud computing, parallel SMR has been recently proposed for large sca
+ le cloud datacenters. In this ...\n\n---------------------\nIOMiner: Large
+ -scale Analytics Framework for Gaining Knowledge from I/O Logs\n\nWang, By
+ na, Lockwood, Wright, Carns...\n\nModern HPC systems are collecting abunda
+ nt I/O performance\ninstrumentation. The massive volume and heterogeneity\
+ nof this instrumentation has made it difficult to\nperform in-depth integr
+ ated analysis in a timely manner,\nhowever. To overcome this gap and to al
+ low users to identify\nthe root causes of p...\n
+END:VEVENT
+END:VCALENDAR
+

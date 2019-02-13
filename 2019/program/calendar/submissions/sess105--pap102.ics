@@ -1,0 +1,50 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180911T133000
+DTEND;TZID=Europe/London:20180911T140000
+UID:ieeecluster_IEEE Cluster 2018_sess105_pap102@linklings.com
+SUMMARY:Energy Analysis and Optimization for Resilient Linear Systems
+DESCRIPTION:Energy Analysis and Optimization for Resilient Linear Systems\
+ n\nMiao, Calhoun, Ge\n\n\nExascale computing must simultaneously address b
+ oth energy efficiency and\nresilience as power limits impact scalability a
+ nd faults are more common.\nUnfortunately, energy efficiency and resilienc
+ e have been traditionally studied\nin isolation and optimizing one typical
+ ly detrimentally impacts the other. To deliver the promised performance wi
+ thin the given\npower budget, exascale computing mandates a deep understan
+ ding of the interplay\namong energy efficiency, resilience, and scalabilit
+ y.\n\nIn this work, we propose novel methods to analyze and optimize costs
+  of\nresilience techniques including checkpoint-restart and forward recove
+ ry for large sparse linear system solvers. In\nparticular, we present expe
+ rimental and analytical methods to analyze and\nquantify the time and ener
+ gy costs of recovery schemes on computer clusters. We\nfurther develop and
+  prototype performance optimization and power management\nstrategies to im
+ prove energy efficiency.  Experimental results show that\nrecovery schemes
+  incur different time and energy overheads and optimization\ntechniques si
+ gnificantly reduce such overheads. This work suggests that\nresilience tec
+ hniques should be adaptively adjusted to a given fault rate, system\nsize,
+  and power budget.
+END:VEVENT
+END:VCALENDAR
+

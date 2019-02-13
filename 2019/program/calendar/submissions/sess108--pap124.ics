@@ -1,0 +1,52 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180911T170000
+DTEND;TZID=Europe/London:20180911T171500
+UID:ieeecluster_IEEE Cluster 2018_sess108_pap124@linklings.com
+SUMMARY:HIDStore: A Hierarchical Intermediate Data Storage System for Seis
+ mic Processing Application
+DESCRIPTION:HIDStore: A Hierarchical Intermediate Data Storage System for 
+ Seismic Processing Application\n\nWang, Zhao, Wang...\n\n\nSeismic process
+ ing is an important technology in petroleum industry. During the execution
+  of seismic processing applications, large amount of intermediate data are
+  generated and accessed. Providing high-performance services for intermedi
+ ate data in the traditional storage architecture is expensive. In addition
+ , because of the existence of new storage devices, the heterogeneity of st
+ orage environment has brought much inconvenience to the application develo
+ pers and petroleum scientists. In this paper, we present a hierarchical in
+ termediate data storage system called HIDStore. HIDStore employs distribut
+ ed storage system based on the local storage devices and idle network reso
+ urces to accelerate intermediate data access. Our experiments show that us
+ ing HIDStore could improve the performance of various seismic processing a
+ pplications and the resource utilization in compute cluster. HIDStore also
+  abstracts different kinds of storage devices into hierarchical logical vo
+ lumes and provides easy-to-use API to access data. Developers could deal w
+ ith intermediate data in a high level of abstraction. Applications based o
+ n the HIDStore could fit into different storage environment and gain optim
+ al performance automatically. Intermediate data in HIDStore could be autom
+ atically evicted once they expire.
+END:VEVENT
+END:VCALENDAR
+

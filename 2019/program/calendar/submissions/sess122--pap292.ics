@@ -1,0 +1,52 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180913T111500
+DTEND;TZID=Europe/London:20180913T114500
+UID:ieeecluster_IEEE Cluster 2018_sess122_pap292@linklings.com
+SUMMARY:Hybrid MPI+OpenMP Reactive Work Stealing in Distributed Memory in 
+ the PDE Framework sam(oa)^2
+DESCRIPTION:Hybrid MPI+OpenMP Reactive Work Stealing in Distributed Memory
+  in the PDE Framework sam(oa)^2\n\nSamfass, Klinkenberg, Bader\n\n\n“Equal
+  work results in equal execution time” is an\nassumption that has fundamen
+ tally driven design and implemen-\ntation of parallel applications for dec
+ ades. However, increasing\nhardware variability on current architectures (
+ e.g., through\nTurbo Boost, dynamic voltage and frequency scaling or therm
+ al\neffects) necessitate a revision of this assumption. Expecting an\nincr
+ ease of these effects on future (exascale-)systems, we develop a\nnovel MP
+ I+OpenMP-only distributed work stealing concept that\n– based on on-line p
+ erformance monitoring – selectively steals\nand remotely executes tasks ac
+ ross MPI boundaries. This concept\nhas been implemented in the parallel ad
+ aptive mesh refinement\n(AMR) framework sam(oa)^2 for OpenMP tasks of trav
+ ersing\na grid section. Corresponding performance measurements in\nthe pre
+ sence of enforced CPU clock frequency imbalances\ndemonstrate that a state
+ -of-the-art cost-based (chains-on-chains\npartitioning) load balancing mec
+ hanism is insufficient and can\neven degrade performance, whereas addition
+ al distributed work\nstealing successfully mitigates the frequency-induced
+  imbalances.\nFurthermore, our results indicate that our approach is also\
+ nsuitable for load balancing work-induced imbalances in a realistic\nAMR t
+ est case.
+END:VEVENT
+END:VCALENDAR
+

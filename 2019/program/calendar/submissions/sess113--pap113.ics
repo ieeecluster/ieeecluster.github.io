@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180912T104500
+DTEND;TZID=Europe/London:20180912T113000
+UID:ieeecluster_IEEE Cluster 2018_sess113_pap113@linklings.com
+SUMMARY:Neural network based silent error detector
+DESCRIPTION:Neural network based silent error detector\n\nWang, Dryden, Ca
+ ppello...\n\n\nAs we move toward exascale platforms, silent data corruptio
+ ns (SDC) are likely to occur more frequently. Such errors can lead to inco
+ rrect results. Attempts have been made to use generic algorithms to detect
+  such errors. Such detectors have demonstrated high precision and recall f
+ or detecting errors, but only if they run immediately after an error has b
+ een injected. In this paper, we propose a neural network based detector th
+ at can detect SDCs even multiple iterations after they were injected. We h
+ ave evaluated our detector with 6 FLASH applications and 2 Mantevo mini-ap
+ ps. Experiments show that our detector can detect more than 89% of SDCs wi
+ th a false positive rate of less than 2%.
+END:VEVENT
+END:VCALENDAR
+

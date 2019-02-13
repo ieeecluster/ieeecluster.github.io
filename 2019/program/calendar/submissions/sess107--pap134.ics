@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180911T160000
+DTEND;TZID=Europe/London:20180911T163000
+UID:ieeecluster_IEEE Cluster 2018_sess107_pap134@linklings.com
+SUMMARY:OpenACC vs the Native Programming on Sunway TaihuLight: A Case Stu
+ dy with GTC-P
+DESCRIPTION:OpenACC vs the Native Programming on Sunway TaihuLight: A Case
+  Study with GTC-P\n\nCai, Wang, Lin\n\n\nSunway TaihuLight is China's rece
+ nt top-ranked supercomputer worldwide that was the first to be built entir
+ ely with home-grown processors. This supercomputer can be programmed with 
+ two approaches: directive-based OpenACC and native programming. These appr
+ oaches are studied here using GTC-P, a particle-in-cell code for investiga
+ ting micro-turbulence in magnetic fusion plasmas. We have compared the per
+ formance and programming efforts between the OpenACC and the native versio
+ n of GTC-P. Associated results show that in the OpenACC version, the kerne
+ l with irregular memory access becomes the main performance bottleneck due
+  to poor data locality. To address this issue, we have applied two optimiz
+ ations on the native version: (1) register level communication (RLC); and 
+ (2) an “asynchronization” strategy. With these two optimizations, the nati
+ ve version can achieve up to 2.5X speedup for the memory-bound kernel comp
+ ared with the OpenACC version. In addition, we have now scaled GTC-P on 4,
+ 259,840 cores of TaihuLight and demonstrate performance comparisons with s
+ everal world-leading supercomputers.
+END:VEVENT
+END:VCALENDAR
+

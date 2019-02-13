@@ -1,0 +1,55 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180912T160000
+DTEND;TZID=Europe/London:20180912T163000
+UID:ieeecluster_IEEE Cluster 2018_sess118_pap205@linklings.com
+SUMMARY:CRUM: Checkpoint-Restart Support for CUDA's Unified Memory
+DESCRIPTION:CRUM: Checkpoint-Restart Support for CUDA's Unified Memory\n\n
+ Garg, Mohan, Sullivan...\n\n\nUnified Virtual Memory (UVM) was recently in
+ troduced with CUDA version 8 and the Pascal GPU. The older CUDA programmin
+ g style is akin to older large-memory UNIX applications which used to dire
+ ctly load and unload memory segments. Newer CUDA programs have started tak
+ ing advantage of UVM for the same reasons of superior programmability that
+  UNIX applications long ago switched to assuming the presence of virtual m
+ emory. Therefore, checkpointing of UVM has become increasing important, es
+ pecially as NVIDIA CUDA continues to gain wider popularity: 87 of the top 
+ 500 supercomputers in the latest listings use NVIDIA GPUs, with a current 
+ trend of ten additional NVIDIA-based supercomputers each year.            
+  \n                                                                       
+                                                                           
+                                                                           
+                   \nA new scalable checkpointing mechanism, CRUM (Checkpoi
+ nt-Restart for Unified Memory), is demonstrated for hybrid CUDA/MPI comput
+ ations across multiple computer nodes.  The support for UVM is particularl
+ y attractive for programs requiring more memory than resides on the GPU, s
+ ince the alternative to UVM is for the application to directly copy memory
+  between device and host.  Furthermore, CRUM supports a fast, forked check
+ pointing, which mostly overlaps the CUDA computation with storage of the c
+ heckpoint image in stable storage.  The runtime overhead of using CRUM is 
+ 6% on average, and the time for forked checkpointing is seen to be a facto
+ r of up to 40 times less than traditional, synchronous checkpointing.
+END:VEVENT
+END:VCALENDAR
+
