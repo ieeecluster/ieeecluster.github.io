@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://clustercomp.org/2018/sitemap.xml
+Sitemap: https://clustercomp.org/2019/sitemap.xml
