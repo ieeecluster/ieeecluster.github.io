@@ -5,7 +5,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/404.html</loc>
+	<loc>https://clustercomp.org/2019/404.html</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -20,24 +20,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/blog/archive/</loc>
-	
-		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-
-	
-	<url>
-	<loc>https://clustercomp.org/2018/atom.xml</loc>
+	<loc>https://clustercomp.org/2019/blog/archive/</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -54,7 +37,24 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/pages/contact/</loc>
+	<loc>https://clustercomp.org/2019/atom.xml</loc>
+	
+		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2019/pages/contact/</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -69,7 +69,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/feed.xml</loc>
+	<loc>https://clustercomp.org/2019/feed.xml</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -84,7 +84,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/humans.txt</loc>
+	<loc>https://clustercomp.org/2019/humans.txt</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -99,7 +99,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/blog/</loc>
+	<loc>https://clustercomp.org/2019/blog/</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -114,7 +114,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/venue/</loc>
+	<loc>https://clustercomp.org/2019/venue/</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -129,7 +129,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/workshops/</loc>
+	<loc>https://clustercomp.org/2019/workshops/</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -144,7 +144,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/registration/</loc>
+	<loc>https://clustercomp.org/2019/registration/</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -159,7 +159,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/contact/</loc>
+	<loc>https://clustercomp.org/2019/contact/</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -174,7 +174,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/posters/</loc>
+	<loc>https://clustercomp.org/2019/posters/</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -189,7 +189,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/authors/</loc>
+	<loc>https://clustercomp.org/2019/authors/</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -204,7 +204,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/committees/</loc>
+	<loc>https://clustercomp.org/2019/committees/</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -219,7 +219,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/student/</loc>
+	<loc>https://clustercomp.org/2019/student/</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -234,7 +234,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/sponsors/</loc>
+	<loc>https://clustercomp.org/2019/sponsors/</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -249,7 +249,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/program/</loc>
+	<loc>https://clustercomp.org/2019/program/</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -264,7 +264,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/pages/pages-root-folder/</loc>
+	<loc>https://clustercomp.org/2019/pages/pages-root-folder/</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -279,7 +279,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/technical/</loc>
+	<loc>https://clustercomp.org/2019/technical/</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -294,7 +294,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/</loc>
+	<loc>https://clustercomp.org/2019/</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -309,7 +309,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/pages/info/</loc>
+	<loc>https://clustercomp.org/2019/pages/info/</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -324,7 +324,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/redirect-page/</loc>
+	<loc>https://clustercomp.org/2019/redirect-page/</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -339,7 +339,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/robots.txt</loc>
+	<loc>https://clustercomp.org/2019/robots.txt</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -358,7 +358,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/search/</loc>
+	<loc>https://clustercomp.org/2019/search/</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
@@ -373,7 +373,7 @@
 
 	
 	<url>
-	<loc>https://clustercomp.org/2018/sitemap.xml</loc>
+	<loc>https://clustercomp.org/2019/sitemap.xml</loc>
 	
 		<lastmod>2019-01-02T00:20:05+08:00</lastmod>
 	
