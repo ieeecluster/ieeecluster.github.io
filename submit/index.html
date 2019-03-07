@@ -2,6 +2,14 @@
   <head>
     <title>IEEE Cluster Conference</title>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <meta http-equiv="Refresh" content="0; URL=https://ssl.linklings.net/conferences/ieeecluster/">
+    <script>
+        var param = window.location.href.split("?")[1]
+        if (param.length > 0) {
+            window.location = "https://ssl.linklings.net/conferences/ieeecluster?"+param
+        }
+        else {
+            window.location = "https://ssl.linklings.net/conferences/ieeecluster"
+        }
+    </script>
   </head>
 </html>
