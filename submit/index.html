@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <script>
         var param = window.location.href.split("?")[1];
-        if (param.length > 0) {
+        if (param.length !== undefined) {
             window.location.href = "https://ssl.linklings.net/conferences/ieeecluster?"+param;
         }
         else {
