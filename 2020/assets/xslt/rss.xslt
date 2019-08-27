@@ -165,12 +165,6 @@
           
           
         
-
-              
-
-          
-          
-        
         
       </ul>
 
@@ -185,21 +179,6 @@
             
             
               <li><a  href="https://clustercomp.org/2020/">Start</a></li>
-              <li class="divider"></li>
-
-            
-            
-          
-        
-
-              
-
-          
-          
-
-            
-            
-              <li><a  href="https://clustercomp.org/2020/getting-started/">Getting Started</a></li>
               <li class="divider"></li>
 
             
