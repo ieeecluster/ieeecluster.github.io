@@ -444,7 +444,7 @@
 				</span>
 			</header>
 
-<table align="center" class="page_box_table"><tr align="left" valign="top"><td align="left" class="page_box_print" valign="top"><a name="top"></a><div><div style="background: #284a83"></div></div><span id="async_error"></span><div style="margin: 40px;"><b style="font-size: 2em">IEEE Cluster 2019 Final Program</b><br /><br /><b style="font-size: 1.3em">Tuesday 24 September  8:45-9:00</b><hr /><br /><b>Cluster 2019 Opening<br />Room: Ambassador/Registry<br /></b><hr /><br /><br /><b style="font-size: 1.3em">Tuesday 24 September  9:00-10:00</b><hr /><br /><b>Keynote 1<br />Room: Ambassador/Registry<br /></b><hr /><br /><br /><b style="font-size: 1.3em">Tuesday 24 September  10:00-10:30</b><hr /><br /><b>Top 3 Papers of Cluster 2019 (1/3)<br />Room: Ambassador/Registry<br /></b><hr /><table class="cellpadding3px"><tr><td valign="top"><span style="white-space: nowrap">10:00-10:30</span></td><td valign="top"><b>Evaluating Burst Buffer Placement in HPC Systems </b><br /><i>Harsh Khetawat, Christopher Zimmer, Frank Mueller, Scott Atchley, Sudharshan Vazhkudai, Misbah Mubarak</i><br /></td></tr></table><br />Burst buffers are increasingly exploited in contemporary supercomputers to bridge the performance gap between compute and storage systems. The design of burst buffers, particularly the placement of these devices and the underlying network topology, impacts both performance and cost. As the cost of other components such as memory and accelerators is increasing, it is becoming more important that HPC centers provision burst buffers tailored to their workloads.
+<table align="center" class="page_box_table"><tr align="left" valign="top"><td align="left" class="page_box_print" valign="top"><a name="top"></a><div><div style="background: #284a83"></div></div><span id="async_error"></span><div style="margin: 40px;"><b style="font-size: 2em">IEEE Cluster 2019 Program</b><br /><br /><b style="font-size: 1.3em">Tuesday 24 September  8:45-9:00</b><hr /><br /><b>Cluster 2019 Opening<br />Room: Ambassador/Registry<br /></b><hr /><br /><br /><b style="font-size: 1.3em">Tuesday 24 September  9:00-10:00</b><hr /><br /><b>Keynote 1<br />Room: Ambassador/Registry<br /></b><hr /><br /><br /><b style="font-size: 1.3em">Tuesday 24 September  10:00-10:30</b><hr /><br /><b>Top 3 Papers of Cluster 2019 (1/3)<br />Room: Ambassador/Registry<br /></b><hr /><table class="cellpadding3px"><tr><td valign="top"><span style="white-space: nowrap">10:00-10:30</span></td><td valign="top"><b>Evaluating Burst Buffer Placement in HPC Systems </b><br /><i>Harsh Khetawat, Christopher Zimmer, Frank Mueller, Scott Atchley, Sudharshan Vazhkudai, Misbah Mubarak</i><br /></td></tr></table><br />Burst buffers are increasingly exploited in contemporary supercomputers to bridge the performance gap between compute and storage systems. The design of burst buffers, particularly the placement of these devices and the underlying network topology, impacts both performance and cost. As the cost of other components such as memory and accelerators is increasing, it is becoming more important that HPC centers provision burst buffers tailored to their workloads.
 This work contributes a provisioning system to provide accurate, multi-tenant simulations that model realistic application and storage workloads from HPC systems. The framework aids HPC centers in modeling their workloads against multiple network and burst buffer configurations rapidly. In experiments with our framework, we provide acomparison of representative OLCF I/O workloads against multiple burst buffer designs. We analyze the impact of these designs on latency, I/O phase lengths, contention for network and storage devices, and choice of network topology.<br /><hr /><br /><br /><b style="font-size: 1.3em">Tuesday 24 September  10:30-11:00</b><hr /><br /><b>Break<br />Room: Wurlitzer<br /></b><hr /><br /><br /><b style="font-size: 1.3em">Tuesday 24 September  11:00-12:30</b><hr /><br /><b>Deep Learning 1<br />Room: Ambassador/Registry<br /></b><hr /><table class="cellpadding3px"><tr><td valign="top"><span style="white-space: nowrap">11:00-11:30</span></td><td valign="top"><b>Efficient User-Level Storage Disaggregation for Deep Learning </b><br /><i>Yue Zhu, Weikuan Yu, Bing Jiao, Kathryn Mohror, Adam Moody, Fahim Chowdhury</i><br /></td></tr></table><br />On large-scale High-Performance Computing (HPC) systems, applications are provisioned with aggregated resources to meet their peak demands for brief periods. This results in resource underutilization because application requirements vary a lot during execution. This problem is particularly pronounced for deep learning applications that are running on leadership HPC systems with a large pool of burst buffers in the form of flash or non-volatile memory (NVM) devices. In this paper, we examine the I/O patterns of deep neural networks and reveal their critical need of loading many small samples randomly for successful training. We have designed a special Deep Learning File System (DLFS) that provides a thin set of APIs. Particularly, we design the metadata management of DLFS through an in-memory tree-based sample directory and its file services through the user-level SPDK protocol that can disaggregate the capabilities of NVM Express (NVMe) devices to parallel training tasks. Our experimental results show that DLFS can dramatically
 improve the throughput of training for deep neural networks on NVMe over Fabric, compared with the kernel-based Ext4 file system. Furthermore, DLFS achieves efficient user-level storage
 disaggregation with very little CPU utilization.<br /><hr /><table class="cellpadding3px"><tr><td valign="top"><span style="white-space: nowrap">11:30-12:00</span></td><td valign="top"><b>FluentPS: A Parameter Server Design with Low-frequency Synchronization for Distributed Deep Learning </b><br /><i>Xin Yao, Xueyu Wu, Cho-Li Wang</i><br /></td></tr></table><br />With pursuing high accuracy on big datasets, current research prefers designing complex neural networks, which need to maximize data parallelism for short training time. Many distributed deep learning systems, such as MXNet and Petuum, widely use parameter server framework with relaxed synchronization models. Although these models could cost less on each synchronization, its frequency is still high among many workers, e.g., the soft barrier introduced by Stale Synchronous Parallel (SSP) model. In this paper, we introduce our parameter server design, namely FluentPS, which can reduce frequent synchronization and optimize communication overhead in a large-scale cluster. Different from using a single scheduler to manage all parameters synchronization in some previous designs, our system allows each server to independently adjust schemes for synchronizing its own parameter shard and overlaps the push and pull processes of different servers. We also explore two methods to improve the SSP model: (1) lazy execution of buffered pull requests to reduce the synchronization frequency and (2) a probability-based strategy to pause the fast worker at a probability under SSP condition, which avoids unnecessary waiting of fast workers. We evaluate ResNet-56 with the same large batch size at different cluster scales. While guaranteeing robust convergence, FluentPS gains up to 6× speedup and reduce 93.7% communication costs than PS-Lite. The raw SSP model causes up to 131× delayed pull requests than our improved synchronization model, which can provide fine-tuned staleness controls and achieve higher accuracy.<br /><hr /><table class="cellpadding3px"><tr><td valign="top"><span style="white-space: nowrap">12:00-12:30</span></td><td valign="top"><b>Performance Characterization of DNN Training using TensorFlow and PyTorch on Modern Clusters </b><br /><i>Arpan Jain, Ammar Ahmad Awan, Quentin Anthony, Hari Subramoni, Dhabaleswar K. Panda</i><br /></td></tr></table><br />The recent surge of Deep Learning (DL) models and applications can be attributed to the rise in computational resources, availability of large-scale datasets, and accessible DL frameworks such as TensorFlow and PyTorch. Because these frameworks have been heavily optimized for NVIDIA GPUs, several performance characterization studies exist for GPU-based training. However, there exist very few research studies that focus on CPU-based DNN training. In this paper, we provide an in-depth performance characterization of state-of-the-art Deep Neural Networks (DNNs) such as ResNet(s) and Inception-v3/v4 on multiple CPU architectures including Intel Xeon Broadwell, three variants of the Intel Xeon Skylake, AMD EPYC, and NVIDIA GPUs like K80, P100, and V100. We provide three key insights: 1) Multi-process (MP) training should be used even for a single-node as single-process (SP) approach cannot fully exploit all the cores, 2) Performance of both SP and MP depend on various features such as the number of cores, the processes per node (ppn), and DNN architecture, and 3) There is a non-linear and complex relationship between CPU/system characteristics (core-count, ppn, hyper-threading, etc) and DNN specifications such as inherent parallelism between layers. We further provide a comparative analysis for CPU and GPU based training as well as profiling analysis for Horovod. The fastest Skylake we had access to is up to 2.35x better than a K80 GPU but up to 3.32x slower than a V100 GPU. For ResNet-152 training, we observed that MP is up to 1.47x faster than SP and achieves 125x speedup on 128 Skylake nodes.<br /><hr /><br /><b>Parallel Applications Using Alternate Models<br />Room: Regal<br /></b><hr /><table class="cellpadding3px"><tr><td valign="top"><span style="white-space: nowrap">11:00-11:30</span></td><td valign="top"><b>Leveraging Task-Based Polar Decomposition Using PARSEC on Massively Parallel Systems </b><br /><i>Dalal Sukkari, Mathieu Faverge, Hatem Ltaief, David Keyes</i><br /></td></tr></table><br />This paper describes how to leverage task-based implementation of the polar decomposition on massively parallel systems using the PARSEC dynamic runtime system. Based on a formulation of the iterative QR Dynamically-Weighted Halley (QDWH) algorithm, our novel implementation reduces data traffic while exploiting high concurrency from the underlying hardware architecture. First, we replace the most time-consuming classical QR factorization phase with a new hierarchical variant, customized for the specific structure of the matrix during the QDWH iterations. The newly developed hierarchical QR for QDWH exploits not only the matrix structure, but also shortens the length of the critical path to maximize hardware occupancy. We then deploy PARSEC to seamlessly orchestrate, pipeline, and track the data dependencies of the various linear algebra building blocks involved during the iterative QDWH algorithm. PARSEC enables to overlap communications with computations thanks to its asynchronous scheduling of fine-grained computational tasks. It employs look-ahead techniques to further expose parallelism, while actively pursuing the critical path. In addition, we identify synergistic opportunities between the task-based QDWH algorithm and the PARSEC framework. We exploit them during the hierarchical QR factorization to enforce a locality- aware task execution. The latter feature permits to minimize the expensive inter-node communication, which represents one of the main bottlenecks for scaling up applications on challenging distributed-memory systems. We report numerical accuracy and performance results using well and ill-conditioned matrices. The benchmarking campaign reveals up to 2X performance speedup against the existing state-of-the-art implementation for the polar decomposition on 36,864 cores.<br /><hr /><table class="cellpadding3px"><tr><td valign="top"><span style="white-space: nowrap">11:30-12:00</span></td><td valign="top"><b>Engineering a Distributed Histogram Sort </b><br /><i>Roger Kowalewski, Pascal Jungblut, Karl Fuerlinger</i><br /></td></tr></table><br />Sorting is one of the most critical non-numerical algorithms and covers use cases in a wide spectrum of scientific applications. Although we can build upon excellent research over the last decades, scaling to thousands of processing units on modern many-core architectures reveals a gap between theory and practice.  We adopt ideas of the well-known quickselect and sample sort algorithms to minimize data movement. Our evaluation demonstrates that we can keep up with recently proposed distribution sort algorithms in large-scale experiments, without any assumptions on the input keys. Additionally, our implementation outperforms an efficient multi-threaded merge sort on a single node. Our implementation is based on a C++ PGAS approach with an STL-like interface and can easily be integrated into many application codes.  As part of the presented experiments, we further reveal challenges with multi-threaded MPI and one-sided communication.<br /><hr /><table class="cellpadding3px"><tr><td valign="top"><span style="white-space: nowrap">12:00-12:30</span></td><td valign="top"><b>Asynchronous Task-Based Execution of the Reverse Time Migration for the Oil and Gas Industry </b><br /><i>Amani Alonazi, Hatem Ltaief, Issam Said, Samuel Thibault, David Keyes</i><br /></td></tr></table><br />We propose a new framework for deploying Reverse Time Migration (RTM) simulations
@@ -584,87 +584,7 @@ blocks and approximating blocks independently to high degrees of accuracy,
 multidimensional smooth-step functions. We prove that this approach,
 which can be viewed as an extended partition of unity approximation method,
 is highly scalable on modern architectures.<br /><hr /><br /><br /><b style="font-size: 1.3em">Thursday 26 September  12:30-12:45</b><hr /><br /><b>Closing Remarks<br />Room: Ambassador/Registry<br /></b><hr /></div></div>
-<!--
-<script type="text/javascript">
-            var timeout_ms = 17400000;
-            var loadtime;
-
-            function show_login() {
-                $.colorbox({
-                    className: 'no_close_colorbox',
-                    innerWidth: '300px',
-                    inline: true,
-                    href: '#login_renewal',
-                    open: true,
-                    overlayClose: false,
-                    escKey: false,
-                    trapFocus: true,
-                    closeButton: false,
-                    onComplete: function () {
-                        $('#login_renewal').show();
-                        $('input[name="passwd"]').val('');
-
-                        // This is to try to fix the modal background sometimes not being blacked out.
-                        $('#cboxOverlay').css({
-                            'visibility': 'visible',
-                            'opacity': 0.5
-                        });
-
-                        $('input[name="passwd"]').focus();
-                        $.colorbox.resize();
-                    },
-                    onCleanup: function () {$('#login_renewal').hide()}
-                });
-            }
-
-            function check_time() {
-                var now = $.now()
-                if ((loadtime > 0) && (now - loadtime > timeout_ms)) {
-                    loadtime = 0
-                    show_login()
-                }
-            }
-
-            $(function () {
-                // Check every 10 seconds.
-                loadtime = $.now() // milliseconds since 1970
-                window.setInterval(check_time, 10000) // 10000ms = 10s
-            })
-
-            function renew_session() {
-
-                jQuery('#login_form').hide()
-                jQuery('#validating_msg').show()
-
-                $('#1_1566896557_67_args').html('<input type="hidden" name="button_args=tUbprcnt3DsfGbprcnt3DsfNaNTtUbb0XfQbGCffftsUzIfb9MNcTJUHtGYQHxsf0zfzzCprcnt3DH0bfHf4QsTzYprcnt3D40Iprcnt3Dxprcnt3DGdbUfTAprcnt3DxGsprcnt3DyCH0IQ3Tz0Cx0zfsG_RM_pTrJUHtGzYfbCxQH0rbprcnt3DybQATrAprcnt3DxGrbprcnt3DybQA0xprcnt3D4Hsprcnt3DQxzTHf40HQP0Aprcnt3DxfGbfPCf4fb0HQP0Aprcnt3DxfTHQP0Aprcnt3DxfGbfPCf4fb0HQP0Aprcnt3DxfTEGph_RaTxprcnt3D0Hprcnt3DI0rbCHIGdbUfTzYprcnt3D40QHHGdbUfTtbIXrfGzIXrfNMN2TtIbQtvGQssTzYprcnt3D40bprcnt3DQxGdbUfTtzIXrfGzIXrfNMN" value="1">')
-                var form = $('#login_renewal').find('*').serialize()
-                $('#login_err_msg').html('')
-                $('input[name="passwd"]').val('')
-                $.post('?ts='+new Date().getMilliseconds(), form, function(data) {
-                    if (data.indexOf('success') != -1) {
-                        $.colorbox.close()
-                        loadtime = $.now()
-                        jQuery('#validating_msg').hide()
-                        jQuery('#login_form').show()
-                    }
-                    else if (data.indexOf('error') != -1) {
-                        jQuery('#validating_msg').hide()
-                        jQuery('#login_form').show()
-                        $('#login_err_msg').html('Unable to renew session.  Please logout and log back in to continue.<br>')
-                        $.colorbox.resize()
-                    }
-                    else {
-                        jQuery('#validating_msg').hide()
-                        jQuery('#login_form').show()
-                        $('#login_err_msg').html('Incorrect password.<br>')
-                        $.colorbox.resize()
-                        $('input[name="passwd"]').focus()
-                    }
-                })
-
-            }
-
-        </script><div id="login_renewal" style="display: none;"><div id="login_form"><table class="cellpadding5px input_box" style="width: auto;"><tr><td class="title"><div><span style="float: left;"><span id="login_err_msg" style="color: brown;"></span></span><span style="float: right;"></span></div></td></tr><tr class="box_body"><td align="left">Your session has expired from inactivity. Please enter your password to continue.<br /><br />Password:&nbsp;<input id="2_1566896557_67" name="passwd" size="27" type="password" /><br /><div width="100%"><input name="username" type="hidden" value="sllevy@sandia.gov" /><span id="1_1566896557_67_args"></span><br /><div style="float: left;"><a href="?args=z0Cx0zfsG_RM_pTtIbQtvGQssTrJUHtGzYfbCxQH0rbprcnt3DybQATrAprcnt3DxGrbprcnt3DybQA0xprcnt3D4Hsprcnt3DQxzTtUbb0XfQbGCffftsUzIfb9MNcTHQP0Aprcnt3DxfGbfPCf4fb0HQP0Aprcnt3DxfTEGph_RRTtUbprcnt3DsfGbprcnt3DsfNaNTzYprcnt3D40QHHGdbUfTtbIXrfGzIXrfNMN2TJUHtGsprcnt3Dyprcnt3DUITzYprcnt3D40bprcnt3DQxGdbUfTzYprcnt3D40Iprcnt3Dxprcnt3DGdbUfTtzIXrfGzIXrfNMNTAprcnt3DxGsprcnt3DyCH0IQ3">Logout</a></div><div style="float: right;"><button name="submit" onclick="renew_session()" type="submit" value="submit">Renew session</button></div><div style="clear: both;"></div></div></td></tr></table></div><div id="validating_msg" style="display: none; text-align: center; padding: 30px;">Validating password...</div></div><a name="bottom"></a></td></tr></table></body></html>
+</td></tr></table>
 			
     </article>
   </div> <!-- /.medium-8.columns -->
