@@ -332,7 +332,7 @@
 	<div class="row">
 		<div class="small-12 columns">
 			<a id="logo" href="https://clustercomp.org/2020/" title="IEEE Cluster 2020 – Kobe">
-				<img src="https://clustercomp.org/2020/assets/img/logo2.png" alt="IEEE Cluster 2020 – Kobe">
+				<img src="https://clustercomp.org/2020/assets/img/logo3.png" alt="IEEE Cluster 2020 – Kobe">
 			</a>
 		</div><!-- /.small-12.columns -->
 	</div><!-- /.row -->
