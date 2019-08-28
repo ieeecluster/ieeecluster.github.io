@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://clustercomp.org/2020/</id>
 	<title>IEEE Cluster 2020</title>
-	<updated>2019-08-28T01:21:31+09:00</updated>
+	<updated>2019-08-28T11:58:37+09:00</updated>
 
 	<subtitle>»Feeling Responsive« is a responsive theme for Jekyll based on the fabulous foundation framework with beautiful typography and a bright color palette.</subtitle>
 
@@ -12,11 +12,9 @@
 		
 		<author>
 			
-				<name>Phlow</name>
+				<name>ieeecluster</name>
 			
 			
-			
-				<uri>http://phlow.de/</uri>
 			
 		</author>
 	
@@ -37,11 +35,11 @@
 				
 				<author>
 					
-						<name>Phlow</name>
+						<name>IEEE Cluster 2020</name>
 					
 					
 					
-						<uri>http://phlow.de/</uri>
+						<uri>https://twitter.com/ieeecluster</uri>
 					
 				</author>
 			
@@ -101,11 +99,11 @@
 				
 				<author>
 					
-						<name>Phlow</name>
+						<name>IEEE Cluster 2020</name>
 					
 					
 					
-						<uri>http://phlow.de/</uri>
+						<uri>https://twitter.com/ieeecluster</uri>
 					
 				</author>
 			
@@ -569,11 +567,11 @@ element&lt;/td&gt;
 				
 				<author>
 					
-						<name>Phlow</name>
+						<name>IEEE Cluster 2020</name>
 					
 					
 					
-						<uri>http://phlow.de/</uri>
+						<uri>https://twitter.com/ieeecluster</uri>
 					
 				</author>
 			
@@ -602,11 +600,11 @@ element&lt;/td&gt;
 				
 				<author>
 					
-						<name>Phlow</name>
+						<name>IEEE Cluster 2020</name>
 					
 					
 					
-						<uri>http://phlow.de/</uri>
+						<uri>https://twitter.com/ieeecluster</uri>
 					
 				</author>
 			
@@ -668,11 +666,11 @@ element&lt;/td&gt;
 				
 				<author>
 					
-						<name>Phlow</name>
+						<name>IEEE Cluster 2020</name>
 					
 					
 					
-						<uri>http://phlow.de/</uri>
+						<uri>https://twitter.com/ieeecluster</uri>
 					
 				</author>
 			
@@ -738,11 +736,11 @@ image:
 				
 				<author>
 					
-						<name>Phlow</name>
+						<name>IEEE Cluster 2020</name>
 					
 					
 					
-						<uri>http://phlow.de/</uri>
+						<uri>https://twitter.com/ieeecluster</uri>
 					
 				</author>
 			
@@ -809,11 +807,11 @@ image:
 				
 				<author>
 					
-						<name>Phlow</name>
+						<name>IEEE Cluster 2020</name>
 					
 					
 					
-						<uri>http://phlow.de/</uri>
+						<uri>https://twitter.com/ieeecluster</uri>
 					
 				</author>
 			
@@ -872,11 +870,11 @@ image:
 				
 				<author>
 					
-						<name>Phlow</name>
+						<name>IEEE Cluster 2020</name>
 					
 					
 					
-						<uri>http://phlow.de/</uri>
+						<uri>https://twitter.com/ieeecluster</uri>
 					
 				</author>
 			
@@ -947,11 +945,11 @@ image:
 				
 				<author>
 					
-						<name>Phlow</name>
+						<name>IEEE Cluster 2020</name>
 					
 					
 					
-						<uri>http://phlow.de/</uri>
+						<uri>https://twitter.com/ieeecluster</uri>
 					
 				</author>
 			
@@ -1018,11 +1016,11 @@ image:
 				
 				<author>
 					
-						<name>Phlow</name>
+						<name>IEEE Cluster 2020</name>
 					
 					
 					
-						<uri>http://phlow.de/</uri>
+						<uri>https://twitter.com/ieeecluster</uri>
 					
 				</author>
 			
