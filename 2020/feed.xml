@@ -4,7 +4,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>IEEE Cluster 2020</title>
-		<description>»Feeling Responsive« is a responsive theme for Jekyll based on the fabulous foundation framework with beautiful typography and a bright color palette.</description>
+		<description>Website for IEEE Cluster 2020, September 2020, Kobe, Hyougo Japan</description>
 		<link>https://clustercomp.org/2020/</link>
 		<atom:link href="https://clustercomp.org/2020/feed.xml" rel="self" type="application/rss+xml" />
 		
