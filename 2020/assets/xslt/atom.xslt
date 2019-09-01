@@ -31,7 +31,7 @@
 
 
 	<!-- Search Engine Optimization -->
-	<meta name="description" content="Website for IEEE Cluster 2020, September 2020, Kobe, Hyougo Japan">
+	<meta name="description" content="Website for IEEE Cluster 2020, September 2020, Kobe, Japan">
 	<meta name="google-site-verification" content="">
 	<meta name="msvalidate.01" content="" >
 	
@@ -43,7 +43,7 @@
 
 	<!-- Facebook Open Graph -->
 	<meta property="og:title" content="Atom Feed (Styled)">
-	<meta property="og:description" content="Website for IEEE Cluster 2020, September 2020, Kobe, Hyougo Japan">
+	<meta property="og:description" content="Website for IEEE Cluster 2020, September 2020, Kobe, Japan">
 	<meta property="og:url" content="https://clustercomp.org/2020/assets/xslt/atom.xslt">
 	<meta property="og:locale" content="">
 	<meta property="og:type" content="website">
@@ -409,7 +409,7 @@
             <h5 class="shadow-black">About This Site</h5>
 
             <p class="shadow-black">
-              Website for IEEE Cluster 2020, September 2020, Kobe, Hyougo Japan
+              Website for IEEE Cluster 2020, September 2020, Kobe, Japan
               <a href="https://clustercomp.org/2020/info/">More ›</a>
             </p>
           </div><!-- /.large-6.columns -->
