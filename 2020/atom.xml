@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://clustercomp.org/2020/</id>
 	<title>IEEE Cluster 2020</title>
-	<updated>2019-09-02T16:32:06+09:00</updated>
+	<updated>2019-09-09T11:18:56+09:00</updated>
 
 	<subtitle>Website for IEEE Cluster 2020, September 2020, Kobe, Japan</subtitle>
 
@@ -12,9 +12,11 @@
 		
 		<author>
 			
-				<name>ieeecluster</name>
+				<name>IEEE Cluster 2020</name>
 			
 			
+			
+				<uri>https://twitter.com/ieeecluster</uri>
 			
 		</author>
 	
@@ -35,11 +37,9 @@
 				
 				<author>
 					
-						<name>IEEE Cluster 2020</name>
+						<name>phlow</name>
 					
 					
-					
-						<uri>https://twitter.com/ieeecluster</uri>
 					
 				</author>
 			
@@ -99,11 +99,9 @@
 				
 				<author>
 					
-						<name>IEEE Cluster 2020</name>
+						<name>phlow</name>
 					
 					
-					
-						<uri>https://twitter.com/ieeecluster</uri>
 					
 				</author>
 			
@@ -567,11 +565,9 @@ element&lt;/td&gt;
 				
 				<author>
 					
-						<name>IEEE Cluster 2020</name>
+						<name>phlow</name>
 					
 					
-					
-						<uri>https://twitter.com/ieeecluster</uri>
 					
 				</author>
 			
@@ -600,11 +596,9 @@ element&lt;/td&gt;
 				
 				<author>
 					
-						<name>IEEE Cluster 2020</name>
+						<name>phlow</name>
 					
 					
-					
-						<uri>https://twitter.com/ieeecluster</uri>
 					
 				</author>
 			
@@ -666,11 +660,9 @@ element&lt;/td&gt;
 				
 				<author>
 					
-						<name>IEEE Cluster 2020</name>
+						<name>phlow</name>
 					
 					
-					
-						<uri>https://twitter.com/ieeecluster</uri>
 					
 				</author>
 			
@@ -736,11 +728,9 @@ image:
 				
 				<author>
 					
-						<name>IEEE Cluster 2020</name>
+						<name>phlow</name>
 					
 					
-					
-						<uri>https://twitter.com/ieeecluster</uri>
 					
 				</author>
 			
@@ -807,11 +797,9 @@ image:
 				
 				<author>
 					
-						<name>IEEE Cluster 2020</name>
+						<name>phlow</name>
 					
 					
-					
-						<uri>https://twitter.com/ieeecluster</uri>
 					
 				</author>
 			
@@ -870,11 +858,9 @@ image:
 				
 				<author>
 					
-						<name>IEEE Cluster 2020</name>
+						<name>phlow</name>
 					
 					
-					
-						<uri>https://twitter.com/ieeecluster</uri>
 					
 				</author>
 			
@@ -945,11 +931,9 @@ image:
 				
 				<author>
 					
-						<name>IEEE Cluster 2020</name>
+						<name>phlow</name>
 					
 					
-					
-						<uri>https://twitter.com/ieeecluster</uri>
 					
 				</author>
 			
@@ -1016,11 +1000,9 @@ image:
 				
 				<author>
 					
-						<name>IEEE Cluster 2020</name>
+						<name>phlow</name>
 					
 					
-					
-						<uri>https://twitter.com/ieeecluster</uri>
 					
 				</author>
 			
