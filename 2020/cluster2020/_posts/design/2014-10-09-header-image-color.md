@@ -21,8 +21,6 @@ It's so easy to do. Just define in front matter an image and a background color.
 
 ## Front Matter Code
 
-{% include alert alert="WARNING: To make this work the value of `background-color` must be inbetween quotes." %}
-
 ~~~
 header:
     image: "header_unsplash_2-970x.jpg"
