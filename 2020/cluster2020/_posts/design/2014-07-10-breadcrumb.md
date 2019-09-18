@@ -12,7 +12,6 @@ tags:
 ---
 <!--more-->
 
-{% include alert alert="WARNING: If you use breadcrumbs be aware, that if you use categories, you need pages for those categories. If not, the link in the breadcrumb won't work." %}
 
 ## Front Matter Code
 ~~~
