@@ -20,7 +20,6 @@ header:
 
 
 <div class="medium-8 medium-pull-4 columns" markdown="1">
-{% include _improve_content.html %}
 
 ## Edit Navigation   {#edit-navigation}
 
@@ -271,20 +270,12 @@ This include lets you easily display an alert. To use the include no `.html` end
 {% include alert text='Just a note!' %}{% endraw %}
 ~~~
 
-{% include alert warning='This is a warning.' %}
-{% include alert info='An info box.' %}
-{% include alert success='Yeah, you made it!' %}
-{% include alert alert='Danger!' %}
-{% include alert terminal='jekyll -serve' %}
-{% include alert text='Just a note!' %}
-
 You can even use `<html>`-tags inside the alert. Beware: Use " and ' properly.
 
 ~~~
 {% raw %}{% include alert info='<em>Feeling Responsive</em> is listed on <a href="http://jekyllthemes.org/">http://jekyllthemes.org</a>' %}{% endraw %}
 ~~~
 
-{% include alert info='<em>Feeling Responsive</em> is listed on <a href="http://jekyllthemes.org/">http://jekyllthemes.org</a>' %}
 
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
@@ -307,7 +298,6 @@ I only added one other javascript-module: [`backstretch`][3] by Scott Robbin. Th
 /foundation/js/jquery.backstretch.js'
 ~~~
 
-{% include _improve_content.html %}
 
 </div><!-- /.medium-8.columns -->
 </div><!-- /.row -->
