@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/2021/assets/xslt/atom.xslt" ?>
 <?xml-stylesheet type="text/css" href="/2021/assets/css/atom.css" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<id>https://clustercomp.org/2021/</id>
+	<id>./</id>
 	<title>IEEE Cluster 2021</title>
 	<updated>2020-03-18T15:45:53+09:00</updated>
 
@@ -21,8 +21,8 @@
 		</author>
 	
 
-	<link href="https://clustercomp.org/2021/atom.xml" rel="self" type="application/rss+xml" />
-	<link href="https://clustercomp.org/2021/" rel="alternate" type="text/html" />
+	<link href="./atom.xml" rel="self" type="application/rss+xml" />
+	<link href="./" rel="alternate" type="text/html" />
 
 	<generator uri="http://jekyllrb.com" version="3.8.5">Jekyll</generator>
 
