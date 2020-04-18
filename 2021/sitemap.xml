@@ -5,7 +5,7 @@
 
 	
 	<url>
-	<loc>./404.html</loc>
+	<loc>https://clustercomp.org/2021/404.html</loc>
 	
 		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
 	
@@ -20,24 +20,7 @@
 
 	
 	<url>
-	<loc>./blog/archive/</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-
-	
-	<url>
-	<loc>./atom.xml</loc>
+	<loc>https://clustercomp.org/2021/blog/archive/</loc>
 	
 		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
 	
@@ -54,386 +37,7 @@
 
 	
 	<url>
-	<loc>./authors/</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./changelog/</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./committees/</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./contact/</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./design/</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./documentation/</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./feed.xml</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./getting-started/</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./headers/</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./humans.txt</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./blog/</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./info/</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./mentoring/</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./mentoring2/</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./papers/index.html</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./policy</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./posters/</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./program/</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./redirect-page/</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./registration/</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./roadmap/</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./robots.txt</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-
-	
-
-	
-	<url>
-	<loc>./search/</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./sitemap.xml</loc>
-	
-		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>./sponsors/</loc>
+	<loc>https://clustercomp.org/2021/atom.xml</loc>
 	
 		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
 	
@@ -450,7 +54,403 @@
 
 	
 	<url>
-	<loc>./workshops/</loc>
+	<loc>https://clustercomp.org/2021/authors/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/changelog/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/committees/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/contact/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/design/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/documentation/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/feed.xml</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/getting-started/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/headers/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/humans.txt</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/blog/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/info/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/mentoring/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/mentoring2/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/papers/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/policy</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/posters/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/program/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/redirect-page/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/registration/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/roadmap/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/robots.txt</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/search/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/sitemap.xml</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/sponsors/</loc>
+	
+		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+
+	
+	<url>
+	<loc>https://clustercomp.org/2021/workshops/</loc>
 	
 		<lastmod>2020-03-18T15:45:53+09:00</lastmod>
 	
