@@ -1,0 +1,114 @@
+============================================================================
+                             CALL FOR POSTERS
+22nd IEEE International Conference on Cluster Computing (IEEE Cluster 2020)
+                    Kobe, Japan, September 14-17, 2020.
+                       https://clustercomp.org/2020/
+============================================================================
+
+Overview:
+
+Clusters remain the primary system architecture for building many of today's
+rapidly evolving computing infrastructures and are used to solve some of the
+most world's most complex problems. The challenges to make them scalable,
+efficient, productive, and increasingly effective requires a community effort
+in the areas of cluster system design, advancing the capabilities of the
+software stack, system management and monitoring, and the design of
+algorithms, methods, and applications to leverage the overall infrastructure.
+
+Following the successes of previous IEEE Cluster conferences, for IEEE Cluster
+2020, we again solicit high-quality original work that advances the
+state-of-the-art in clusters and closely related fields. All posters will be
+rigorously peer-reviewed for their originality, technical depth and correctness,
+potential impact, relevance to the conference, and quality of presentation.
+
+
+Topics of interest include:
+
+Area 1: Application, Algorithms, and Libraries
+
+* HPC and Big Data application studies on large-scale clusters
+* Applications at the boundary of HPC and Big Data
+* New applications for converged HPC/Big Data clusters
+* Application-level performance and energy modeling and measurement
+* Novel algorithms on clusters
+* Hybrid programming techniques in applications and libraries (e.g., MPI+X)
+* Cluster benchmarks
+* Application-level libraries on clusters
+* Effective use of clusters in novel applications
+* Performance evaluation tools
+
+Area 2: Architecture, Network/Communications, and Management
+
+* Node and system architecture for HPC and Big Data clusters
+* Architecture for converged HPC/Big Data clusters
+* Energy-efficient cluster architectures
+* Packaging, power and cooling
+* Accelerators, reconfigurable and domain-specific hardware
+* Heterogeneous clusters
+* Interconnect/memory architectures
+* Single system/distributed image clusters
+* Administration, monitoring and maintenance tools
+
+Area 3: Programming and System Software
+
+* Cluster system software/operating systems
+* Programming models for converged HPC/Big Data/Machine Learning systems
+* System software supporting the convergence of HPC, Big Data, and Machine
+Learning processing
+* Cloud-enabling cluster technologies and virtualization
+* Energy-efficient middleware
+* Cluster system-level protocols and APIs
+* Cluster security
+* Resource and job management
+* Programming and software development environments on clusters
+* Fault tolerance and high-availability
+
+Area 4: Data, Storage, and Visualization
+
+* Cluster architectures for Big Data storage and processing
+* Middleware for Big Data management
+* Cluster-based cloud architectures for Big Data
+* Storage systems supporting the convergence of HPC and Big Data processing
+* File systems and I/O libraries
+* Support and integration of non-volatile memory
+* Visualization clusters and tiled displays
+* Big data visualization tools
+* Programming models for big data processing
+* Big data application studies on cluster architectures
+
+Important dates
+* Posters due: July 10, 2020 (AoE)
+* Poster Acceptance Notification: July 29, 2020
+* Camera-ready deadline: August 14, 2020 (AoE)
+
+
+Poster Submission:
+
+The extended abstract should be structured similar to a technical paper, and may not
+exceed 2 letter-sized (8.5 x 11) pages including figures, tables and references using the
+IEEE format for conference proceedings (PDF, single-spaced, double column, 10pt text).
+Extended abstracts and posters will NOT be reviewed double-blind. Author names and
+affiliations should be included in the submission, and appropriate citations of prior work
+must be included. If accepted, this extended abstract will be published in the proceedings
+of the conference. 
+
+
+General Co-Chairs:
+ * Taisuke Boku - University of Tsukuba
+ * Pete Beckmann - Argonne National Laboratory
+
+Poster Chair:
+ * Kento Sato - RIKEN R-CCS
+
+Poster Committee:
+ * Eishi Arima, The University of Tokyo
+ * Leonardo Bautista-Gomez, Barcelona Supercomputing Center
+ * David Boehme, Lawrence Livermore National Laboratory
+ * Kevin Brown, Argonne National Laboratory
+ * IHsin Chung, IBM
+ * Sheng Di, Argonne National Laboratory
+ * Jian Guo, RIKEN R-CCS
+ * Ignacio Laguna, Lawrence Livermore National Laboratory
+ * Miquel Pericàs, Chalmers University of Technology
+ * Philip C. Roth, Oak Ridge National Laboratory
+ * En Shao, Institute of Computing Technology of the Chinese Academy of Sciences
