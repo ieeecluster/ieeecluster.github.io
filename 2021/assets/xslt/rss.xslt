@@ -231,7 +231,7 @@
 
             
             
-              <li><a  href="https://clustercomp.org/2021/sponsors/">SPONSORS</a></li>
+              <li><a  href="https://clustercomp.org/2021/sponsors/">Sponsors and support</a></li>
               <li class="divider"></li>
 
             
