@@ -161,18 +161,6 @@
           
           
         
-
-              
-
-          
-          
-        
-
-              
-
-          
-          
-        
         
       </ul>
 
@@ -201,7 +189,7 @@
 
             
             
-              <li><a  href="https://clustercomp.org/2020/papers/">PAPERS</a></li>
+              <li><a  href="https://clustercomp.org/2020/operation/">OPERATION</a></li>
               <li class="divider"></li>
 
             
@@ -216,7 +204,7 @@
 
             
             
-              <li><a  href="https://clustercomp.org/2020/authors/">AUTHORS</a></li>
+              <li><a  href="https://clustercomp.org/2020/registration/">REGISTRATION</a></li>
               <li class="divider"></li>
 
             
@@ -231,10 +219,62 @@
 
             
             
-              <li><a  href="https://clustercomp.org/2020/sponsors/">SPONSORS</a></li>
+
+              <li class="has-dropdown">
+                <a  href="https://clustercomp.org/2020">PROGRAM</a>
+
+                  <ul class="dropdown">
+                    
+
+                      
+
+                      <li><a  href="https://clustercomp.org/2020/keynote/">KEYNOTE</a></li>
+                    
+
+                      
+
+                      <li><a  href="https://clustercomp.org/2020/timetable/">TIMETABLE</a></li>
+                    
+                  </ul>
+
+              </li>
               <li class="divider"></li>
+            
+          
+        
+
+              
+
+          
+          
 
             
+            
+
+              <li class="has-dropdown">
+                <a  href="https://clustercomp.org/2020">SUBMIT</a>
+
+                  <ul class="dropdown">
+                    
+
+                      
+
+                      <li><a  href="https://clustercomp.org/2020/authors/">AUTHOR KIT</a></li>
+                    
+
+                      
+
+                      <li><a  href="https://clustercomp.org/2020/papers/">PAPERS</a></li>
+                    
+
+                      
+
+                      <li><a  href="https://clustercomp.org/2020/posters/">POSTERS</a></li>
+                    
+                  </ul>
+
+              </li>
+              <li class="divider"></li>
             
           
         
@@ -261,52 +301,7 @@
 
             
             
-              <li><a  href="https://clustercomp.org/2020/posters/">POSTERS</a></li>
-              <li class="divider"></li>
-
-            
-            
-          
-        
-
-              
-
-          
-          
-
-            
-            
-              <li><a  href="https://clustercomp.org/2020/program/">PROGRAM</a></li>
-              <li class="divider"></li>
-
-            
-            
-          
-        
-
-              
-
-          
-          
-
-            
-            
-              <li><a  href="https://clustercomp.org/2020/mentoring/">MENTORING</a></li>
-              <li class="divider"></li>
-
-            
-            
-          
-        
-
-              
-
-          
-          
-
-            
-            
-              <li><a  href="https://clustercomp.org/2020/registration/">REGISTRATION</a></li>
+              <li><a  href="https://clustercomp.org/2020/sponsors/">SPONSORS</a></li>
               <li class="divider"></li>
 
             
