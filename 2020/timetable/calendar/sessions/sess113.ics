@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051327Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T080000
+DTEND;TZID=Asia/Tokyo:20200917T085000
+UID:ieeecluster_IEEE Cluster 2020_sess113@linklings.com
+SUMMARY:Keynote-3
+DESCRIPTION:Keynote\n\nAI for Science (Alok N. Choudhary)\n\nChoudhary\n\n
+ "AI for Science" seeks to understand, explore and develop Machine Learning
+  and Data Mining approaches for accelerating scientific discoveries as wel
+ l as designs. An example of this is learning from data to build predictive
+  models that can enable exploration of scientific questions without relyin
+ g up...\n
+END:VEVENT
+END:VCALENDAR
+

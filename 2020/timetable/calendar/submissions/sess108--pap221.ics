@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T085000
+DTEND;TZID=Asia/Tokyo:20200917T094000
+UID:ieeecluster_IEEE Cluster 2020_sess108_pap221@linklings.com
+SUMMARY:Predicting MPI Collective Communication Performance Using Machine 
+ Learning
+DESCRIPTION:Paper\n\nPredicting MPI Collective Communication Performance U
+ sing Machine Learning\n\nHunold, Bhatele, Bosilca, Knees\n\nThe Message Pa
+ ssing Interface (MPI) defines the semantics of data communication operatio
+ ns, while the implementing libraries provide several parameterized algorit
+ hms for each operation. Each algorithm of an MPI collective operation may 
+ work best on a particular system and may be dependent on the specific comm
+ unication problem. Internally, MPI libraries employ heuristics to select t
+ he best algorithm for a given communication problem when being called by a
+ n MPI application. The majority of MPI libraries allow users to override t
+ he default algorithm selection, enabling the tuning of this selection proc
+ ess. The problem then becomes how to select the best possible algorithm fo
+ r a specific case automatically.\nIn this paper, we address the algorithm 
+ selection problem for MPI collective communication operations. To solve th
+ is problem, we propose an auto-tuning framework for collective MPI operati
+ ons based on machine-learning techniques. First, we execute a set of bench
+ marks of an MPI library and its entire set of collective algorithms. Secon
+ d, for each algorithm, we fit a performance model by applying regression l
+ earners. Last, we use the regression models to predict the best possible (
+ fastest) algorithm for an unseen communication problem. We evaluate our ap
+ proach for different MPI libraries and several parallel machines. The expe
+ rimental results show that our approach outperforms the standard algorithm
+  selection heuristics, which are hard-coded into the MPI libraries, by a s
+ ignificant margin.
+END:VEVENT
+END:VCALENDAR
+

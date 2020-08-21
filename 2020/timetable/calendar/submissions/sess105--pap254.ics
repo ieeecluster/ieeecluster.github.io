@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200916T080000
+DTEND;TZID=Asia/Tokyo:20200916T085000
+UID:ieeecluster_IEEE Cluster 2020_sess105_pap254@linklings.com
+SUMMARY:Dynamic Kernel Fusion for Bulk Non-contiguous Data Transfer on GPU
+  Clusters
+DESCRIPTION:Paper\n\nDynamic Kernel Fusion for Bulk Non-contiguous Data Tr
+ ansfer on GPU Clusters\n\nChu, Shafie Khorassani, Zhou, Subramoni, Panda\n
+ \nIn the last decade, many scientific applications have been significantly
+  accelerated by large-scale GPU systems.\nHowever, the movement of non-con
+ tiguous GPU-resident data is one of the most challenging parts to scale th
+ ese applications using communication middleware like MPI.\nAlthough plenty
+  of research has discussed improving non-contiguous data movement within c
+ ommunication middleware, the pack/unpacking operations on GPU are still ex
+ pensive. They cannot be hidden due to the limitation of MPI standard and t
+ he not-well-optimized designs in existing MPI implementations for GPU-resi
+ dent data.\nConsequently, application developers tend to implement customi
+ zed packing/unpacking kernels to improve GPU utilization by avoiding unnec
+ essary synchronizations in MPI routines.\nHowever, this reduces productivi
+ ty as well as performance as it cannot overlap the packing/unpacking opera
+ tions with communication.\nIn this paper, we propose a novel approach to a
+ chieve low-latency and high-bandwidth by dynamically fusing the packing/un
+ packing GPU kernels to reduce the expensive kernel launch overhead.\nThe e
+ valuation of the proposed designs shows up to 8X and 5X performance improv
+ ement for sparse and dense non-contiguous layout, respectively, compared t
+ o the state-of-the-art approaches on the Lassen system.\nSimilarly, we obs
+ erve up to 19X improvement over existing approaches on the ABCI system.\nF
+ urthermore, the proposed design also outperforms the production library, s
+ uch as SpectrumMPI, OpenMPI, and MVAPICH2, by many orders of magnitude.
+END:VEVENT
+END:VCALENDAR
+

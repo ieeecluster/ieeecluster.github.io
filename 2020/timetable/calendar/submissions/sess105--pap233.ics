@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200916T080000
+DTEND;TZID=Asia/Tokyo:20200916T085000
+UID:ieeecluster_IEEE Cluster 2020_sess105_pap233@linklings.com
+SUMMARY:SSP: Speeding up Small Flows for Proactive Transport in Datacenter
+ s.
+DESCRIPTION:Paper\n\nSSP: Speeding up Small Flows for Proactive Transport 
+ in Datacenters.\n\nBai, Dong, Huan, Zhou, Liao\n\nProactive transport nowa
+ days has drawn much attention because of fast convergence, near-zero queue
+ ing and low latency. Proactive protocols, however, need an extra RTT to al
+ locate ideal sending rate for new flows. To solve this, some studies, such
+  as pHost, Homa, send unscheduled packets with line rate in the first RTT,
+  which will causes severe network congestion. To avoid queue buildup, Aeol
+ us directly drops unscheduled packets when congestion occurs. Nevertheless
+ , based on our experiment, a considerable part of small flows (0-100KB) wi
+ ll be completed in the first RTT under 100 Gbps network, so that dropping 
+ unscheduled packets will severely affect performance of the small flows.\n
+ \nIn this paper we propose SSP, a new scheme aimed to eliminate the extra 
+ RTT delay and improve the FCT of small flows under proactive mechanisms. L
+ ike pHost and Homa, SSP sends unscheduled packets at line rate when new fl
+ ow arrives. Different from Aeolus, SSP selectively drops scheduled packets
+  once queue buildup happens in switch, thus protecting unscheduled packets
+  which are more likely belong to small flows. Besides, based on the short-
+ job-first principle, we give relative higher priorities for small flows at
+  the sender. Our simulation results with realistic workloads show that SSP
+  can improve the FCT of small flows significantly. Specifically, under Web
+  Search workload, SSP facilitates nearly 63% of 0-100 KB flows to complete
+  one RTT faster. Also, SSP reduces the tail FCT by 56.8% at the 99th perce
+ ntile compared with Expresspass and 29.2% compared with Aeolus while not l
+ eads to large queue buildup.
+END:VEVENT
+END:VCALENDAR
+

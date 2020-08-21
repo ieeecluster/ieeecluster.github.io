@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200916T080000
+DTEND;TZID=Asia/Tokyo:20200916T085000
+UID:ieeecluster_IEEE Cluster 2020_sess105_pap184@linklings.com
+SUMMARY:Autoscaling High-Throughput Workloads on Container Orchestrators
+DESCRIPTION:Paper\n\nAutoscaling High-Throughput Workloads on Container Or
+ chestrators\n\nZheng, Kremer-Herman, Shaffer, Thain\n\nHigh-throughput com
+ puting (HTC) workloads seek to complete as many jobs as possible over a lo
+ ng period of time. Such workloads require efficient execution of many para
+ llel jobs and can occupy a large number of resources for a long time, such
+  that full utilization is the normal state of an HTC facility. The widespr
+ ead use of container orchestrators eases the deployment of HTC frameworks 
+ across different platforms, which also provides an opportunity to scale up
+  HTC workloads with almost infinite resources on the public cloud. However
+ , the autoscaling mechanisms of container orchestrators are primarily desi
+ gned to support latency-sensitive microservices, and result in unexpected 
+ behavior when presented with HTC workloads. In this paper, we design a fee
+ dback autoscaler, High Throughput Autoscaler (HTA), that leverages the uni
+ que characteristics of the HTC workload to autoscales the resource pools u
+ sed by HTC workloads on container orchestrators. HTA takes into account a 
+ reference input, the real-time status of the jobs’ queue, as well as two f
+ eedback inputs, resource consumption of jobs, and the resource initializat
+ ion time of the container orchestrator. We implement HTA using the Makeflo
+ w workload manager, Work Queue job scheduler, and the Kubernetes cluster m
+ anager. We evaluate its performance on both CPU-bound and IO-bound workloa
+ ds. The evaluation results show that, by using HTA, we improve resource ut
+ ilization by 5.6× with a slight increase in execution time (about 15%) for
+  the CPU-bound workload, and shorten the workload execution time by up to 
+ 3.65× for the IO-bound workload.
+END:VEVENT
+END:VCALENDAR
+

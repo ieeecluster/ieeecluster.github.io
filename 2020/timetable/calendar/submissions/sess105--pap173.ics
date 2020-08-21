@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200916T080000
+DTEND;TZID=Asia/Tokyo:20200916T085000
+UID:ieeecluster_IEEE Cluster 2020_sess105_pap173@linklings.com
+SUMMARY:MonSTer: An Out-of-the-Box Monitoring Tool for High Performance Co
+ mputing Systems
+DESCRIPTION:Paper\n\nMonSTer: An Out-of-the-Box Monitoring Tool for High P
+ erformance Computing Systems\n\nLi, Ali, Nguyen, Hass, Sill...\n\nUndersta
+ nding the status of high-performance computing platforms and correlating a
+ pplications to resource usage provide insight into the interactions among 
+ platform components. A lot of efforts have been devoted into developing mo
+ nitoring solutions; however, a large-scale HPC system usually requires a c
+ ombination of methods/tools to successfully monitor all metrics, which wil
+ l lead to a huge effort in configuration and monitoring. Besides, monitori
+ ng tools are often left behind in the procurement of large-scale HPC syste
+ ms. These challenges have motivated the development of a next-generation o
+ ut-of-the-box monitoring tool that can be easily deployed without losing i
+ nformative metrics.\n\nIn this work, we introduce MonSTer, an ``out-of-the
+ -box'' monitoring tool for high-performance computing platforms. MonSTer u
+ ses the evolving specification Redfish to retrieve sensor data from Basebo
+ ard Management Controller (BMC), and resource management tools such as Uni
+ va Grid Engine (UGE) or Slurm to obtain application information and resour
+ ce usage data. Additionally, it also uses a time-series database (e.g. Inf
+ luxDB) for data storage. MonSTer correlates applications to resource usage
+  and reveals insightful knowledge without having additional overhead on th
+ e application and computing nodes. This paper presents the design and impl
+ ementation of MonSTer, as well as experiences gained through real-world de
+ ployment on the 467-node Quanah cluster at Texas Tech University's High Pe
+ rformance Computing Center (HPCC) over the past year.
+END:VEVENT
+END:VCALENDAR
+

@@ -1,0 +1,66 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051327Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200916T080000
+DTEND;TZID=Asia/Tokyo:20200916T085000
+UID:ieeecluster_IEEE Cluster 2020_sess105@linklings.com
+SUMMARY:Architecture and Network Support for HPC Workloads
+DESCRIPTION:Paper\n\nAnalysis of Cooling Water Temperature Impact on Compu
+ ting Performance and Energy Consumption\n\nNonaka, Hanawa, Shoji\n\nThe ho
+ t water cooling technique has been widely accepted as one of the standard 
+ techniques to improve the energy efficiency for the HPC and Data Centers. 
+ However, the higher operating temperature may impact the CPU power consump
+ tion due to the leakage current. Moreover, it may degrade the computatio..
+ .\n\n---------------------\nAutoscaling High-Throughput Workloads on Conta
+ iner Orchestrators\n\nZheng, Kremer-Herman, Shaffer, Thain\n\nHigh-through
+ put computing (HTC) workloads seek to complete as many jobs as possible ov
+ er a long period of time. Such workloads require efficient execution of ma
+ ny parallel jobs and can occupy a large number of resources for a long tim
+ e, such that full utilization is the normal state of an HTC facili...\n\n-
+ --------------------\nMonSTer: An Out-of-the-Box Monitoring Tool for High 
+ Performance Computing Systems\n\nLi, Ali, Nguyen, Hass, Sill...\n\nUnderst
+ anding the status of high-performance computing platforms and correlating 
+ applications to resource usage provide insight into the interactions among
+  platform components. A lot of efforts have been devoted into developing m
+ onitoring solutions; however, a large-scale HPC system usually requires...
+ \n\n---------------------\nOpportunities and limitations of Quality-of-Ser
+ vice in Message Passing applications on adaptively routed Dragonfly and Fa
+ t Tree networks\n\nWilke, Kenny\n\nAvoiding communication bottlenecks rema
+ ins a critical challenge in high-performance computing (HPC) as systems gr
+ ow to exascale. Numerous design possibilities exist for avoiding network c
+ ongestion including topology, adaptive routing, congestion control, and qu
+ ality-of-service (QoS). While network d...\n\n---------------------\nSSP: 
+ Speeding up Small Flows for Proactive Transport in Datacenters.\n\nBai, Do
+ ng, Huan, Zhou, Liao\n\nProactive transport nowadays has drawn much attent
+ ion because of fast convergence, near-zero queueing and low latency. Proac
+ tive protocols, however, need an extra RTT to allocate ideal sending rate 
+ for new flows. To solve this, some studies, such as pHost, Homa, send unsc
+ heduled packets with line ra...\n\n---------------------\nQuantifying the 
+ impact of network congestion on application performance and network metric
+ s\n\nZhang, Groves, Cook, Wright, Coskun\n\nIn modern high-performance com
+ puting (HPC) systems, network congestion is an important factor that contr
+ ibutes to performance degradation. However, how network congestion impacts
+  application performance is not fully understood. As Aries network, a rece
+ nt HPC network architecture featuring a dragonfl...\n\n-------------------
+ --\nDynamic Kernel Fusion for Bulk Non-contiguous Data Transfer on GPU Clu
+ sters\n\nChu, Shafie Khorassani, Zhou, Subramoni, Panda\n\nIn the last dec
+ ade, many scientific applications have been significantly accelerated by l
+ arge-scale GPU systems.\nHowever, the movement of non-contiguous GPU-resid
+ ent data is one of the most challenging parts to scale these applications 
+ using communication middleware like MPI.\nAlthough plenty of rese...\n
+END:VEVENT
+END:VCALENDAR
+

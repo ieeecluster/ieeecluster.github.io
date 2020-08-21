@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200915T090000
+DTEND;TZID=Asia/Tokyo:20200915T095000
+UID:ieeecluster_IEEE Cluster 2020_sess102_pap154@linklings.com
+SUMMARY:CuVPP: Filter-based Longest Prefix Matching in Software Data Plane
+ s
+DESCRIPTION:Paper\n\nCuVPP: Filter-based Longest Prefix Matching in Softwa
+ re Data Planes\n\nKwon, Neupane, Marshall, Rafique\n\nProgrammability in t
+ he data plane has become increasingly important as virtualization is intro
+ duced into networking and software-defined networking becomes more prevale
+ nt. Yet, the performance of programmable data planes, often on commodity h
+ ardware, is a major concern, especially in light of ever-increasing networ
+ k link speed and routing table size. This paper focuses on IP lookup, spec
+ ifically the longest prefix matching for IPv6 addresses, which is a major 
+ performance bottleneck in programmable switches. As a solution, the paper 
+ presents CuVPP, a programmable switch that uses packet batch processing an
+ d cache locality for both instructions and data by leveraging Vector Packe
+ t Processing (VPP). We thoroughly evaluate CuVPP with both real network tr
+ affic and file-based lookup on a commodity hardware server connected via 8
+ 0~Gbps network links and compare its performance with the other popular ap
+ proaches. Our evaluation shows that CuVPP can achieve up to 4.5 million lo
+ okups per second with real traffic, higher than other trie- or filter-base
+ d lookup approaches, and scales well even when the routing table size grow
+ s to 2 million prefixes.
+END:VEVENT
+END:VCALENDAR
+

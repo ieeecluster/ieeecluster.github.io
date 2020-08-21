@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T145000
+DTEND;TZID=Asia/Tokyo:20200917T154000
+UID:ieeecluster_IEEE Cluster 2020_sess110_pap262@linklings.com
+SUMMARY:ECS2: A Fast Erasure Coding Library for GPU-Accelerated Storage Sy
+ stems With Parallel & Direct IO
+DESCRIPTION:Paper\n\nECS2: A Fast Erasure Coding Library for GPU-Accelerat
+ ed Storage Systems With Parallel & Direct IO\n\nChang, Chou, Chou, Chung\n
+ \nAs data volume keeps increasing in a rapid rate, there is an urgent need
+  for large, reliable and cost-effective storage systems. Erasure coding ha
+ s drawn increasing attention because of its ability to ensure data reliabi
+ lity with higher storage efficiency, and it has been widely adopted in man
+ y distributed and large-scale storage systems, such as Azure cloud storage
+  and HDFS. However, the storage efficiency of erasure code comes at the pr
+ ice of higher computing complexity. While many studies have shown the codi
+ ng computations can be significantly accelerated using GPU, the overhead o
+ f data transfer between storage devices and GPUs become a new performance 
+ bottleneck. In this work, we designed and implemented, ECS2, a fast erasur
+ e coding library on GPU-accelerated storage to let users enhance their dat
+ a protection with transparent IO performance and file system like programm
+ ing interface. By taking advantage of the latest GPUDirect technology supp
+ orted on Nvidia GPU, our library is able to bypass CPU and host memory cop
+ y from the IO path, so that both the computing and IO overhead from coding
+  can be minimized. Using synthetic IO workload based on real storage syste
+ m trace, we show that the IO latency can be reduced by 10%~20% with GPUDir
+ ect technology, and the overall IO throughput of a storage system can be i
+ mproved up to 70%.
+END:VEVENT
+END:VCALENDAR
+

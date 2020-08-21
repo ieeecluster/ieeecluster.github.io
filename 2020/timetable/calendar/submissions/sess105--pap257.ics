@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200916T080000
+DTEND;TZID=Asia/Tokyo:20200916T085000
+UID:ieeecluster_IEEE Cluster 2020_sess105_pap257@linklings.com
+SUMMARY:Quantifying the impact of network congestion on application perfor
+ mance and network metrics
+DESCRIPTION:Paper\n\nQuantifying the impact of network congestion on appli
+ cation performance and network metrics\n\nZhang, Groves, Cook, Wright, Cos
+ kun\n\nIn modern high-performance computing (HPC) systems, network congest
+ ion is an important factor that contributes to performance degradation. Ho
+ wever, how network congestion impacts application performance is not fully
+  understood. As Aries network, a recent HPC network architecture featuring
+  a dragonfly topology, is equipped with network counters measuring packet 
+ transmission statistics on each router, these network metrics can potentia
+ lly be utilized to understand network performance. In this work, by experi
+ ments on a large HPC system, we quantify the impact of network congestion 
+ on various applications' performance in terms of execution time, and we co
+ rrelate application performance with network metrics. Our results demonstr
+ ate diverse impacts of network congestion: while applications with intensi
+ ve MPI operations (such as HACC and MILC) suffer from more than 40% extens
+ ion in their execution times under network congestion, applications with l
+ ess intensive MPI operations (such as Graph500 and HPCG) are mostly not af
+ fected. We also demonstrate that a stall-to-flit ratio metric derived from
+  Aries network counters is positively correlated with performance degradat
+ ion and, thus, this metric can serve as an indicator of network congestion
+  in HPC systems.
+END:VEVENT
+END:VCALENDAR
+

@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T085000
+DTEND;TZID=Asia/Tokyo:20200917T094000
+UID:ieeecluster_IEEE Cluster 2020_sess108_pap112@linklings.com
+SUMMARY:Decomposing MPI Collectives for Exploiting Multi-lane Communicatio
+ n
+DESCRIPTION:Paper\n\nDecomposing MPI Collectives for Exploiting Multi-lane
+  Communication\n\nTräff, Hunold\n\nMany modern, high-performance systems i
+ ncrease the cumulated node-bandwidth by offering more than a single commun
+ ication network and/or by having multiple connections to the network, such
+  that a single processor-core cannot by itself saturate the off-node bandw
+ idth. Efficient algorithms and implementations for collective operations a
+ s found in, e.g., MPI, must be explicitly designed for exploiting such mul
+ ti-lane capabilities. We are interested in gauging to which extent this mi
+ ght be the case.  We systematically decompose the MPI collectives into sim
+ ilar operations that can execute concurrently on and exploit multiple netw
+ ork lanes. Our decomposition is applicable to all standard MPI collectives
+  (broadcast, gather, scatter, allgather, reduce allreduce, reduce-scatter,
+  scan, alltoall), and our implementations' performance can be readily comp
+ ared to the native collectives of any given MPI library. Contrary to expec
+ tation, our full-lane, performance guideline implementations in many cases
+  show surprising performance improvements with different MPI libraries on 
+ a  dual-socket, dual-network Intel OmniPath cluster, indicating a large po
+ tential for improving the performance of native MPI library implementation
+ s. Our full-lane implementations are in many cases large factors faster th
+ an the corresponding MPI collectives. We see similar results on  a larger,
+  dual-rail Intel InfiniBand cluster. The results indicate considerable roo
+ m for improvement of the MPI collectives in current MPI libraries includin
+ g a more efficient use of multi-lane capabilities.
+END:VEVENT
+END:VCALENDAR
+

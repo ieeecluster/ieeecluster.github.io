@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T085000
+DTEND;TZID=Asia/Tokyo:20200917T094000
+UID:ieeecluster_IEEE Cluster 2020_sess108_pap268@linklings.com
+SUMMARY:DeepClone: Scalable Live Migration of Deep Learning Models for Dat
+ a Parallel Training
+DESCRIPTION:Paper\n\nDeepClone: Scalable Live Migration of Deep Learning M
+ odels for Data Parallel Training\n\nNicolae, Dorier, Wozniak, Cappello\n\n
+ Training modern deep neural network (DNN) models involves complex workflow
+ s triggered by model exploration, sensitivity analysis, explainability, et
+ c.  A key primitive in this context is the ability to clone a model traini
+ ng instance, i.e. "fork" the training process in a potentially different d
+ irection, which enables comparisons of different evolution paths using var
+ iations of training data and model parameters. However, in a quest improve
+  the training throughput, a mix of data parallel, model parallel, pipeline
+  parallel and layer-wise parallel approaches are making the problem of clo
+ ning highly complex. In this paper, we explore the problem of efficient cl
+ oning \nunder such circumstances. To this end, we leverage several propert
+ ies of data-parallel training and layer-wise parallelism to design DeepClo
+ ne, a cloning approach based on augmenting the execution graph to gain dir
+ ect access to tensors, which are then sharded and reconstructed \nasynchro
+ nously in order to minimize runtime overhead, standby duration, readiness 
+ duration. Compared with state-of-art approaches, DeepClone shows orders of
+  magnitude improvement for several classes of DNN models.
+END:VEVENT
+END:VCALENDAR
+

@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T145000
+DTEND;TZID=Asia/Tokyo:20200917T154000
+UID:ieeecluster_IEEE Cluster 2020_sess110_pap150@linklings.com
+SUMMARY:tf-Darshan: Understanding Fine-grained I/O Performance in Machine 
+ Learning Workloads
+DESCRIPTION:Paper\n\ntf-Darshan: Understanding Fine-grained I/O Performanc
+ e in Machine Learning Workloads\n\nChien, Podobas, Peng, Markidis\n\nMachi
+ ne Learning applications on HPC systems have been gaining popularity in re
+ cent years. The upcoming large scale systems will offer tremendous paralle
+ lism for training through GPUs. However, another heavy aspect of Machine L
+ earning is I/O, and this can potentially be a performance bottleneck. Tens
+ orFlow, one of the most popular Deep-Learning platforms, now offers a new 
+ profiler interface and allows instrumentation of TensorFlow operations. Ho
+ wever, the current profiler only enables analysis at the TensorFlow platfo
+ rm level and does not provide system-level information. In this paper, we 
+ extend TensorFlow Profiler and introduce tf-Darshan, both a profiler and t
+ racer, that performs instrumentation through Darshan. We use the same Dars
+ han shared instrumentation library and implement a runtime attachment with
+ out using a system preload. We can extract Darshan profiling data structur
+ es during TensorFlow execution to enable analysis through the TensorFlow p
+ rofiler. We visualize the performance results through TensorBoard, the web
+ -based TensorFlow visualization tool. At the same time, we do not alter Da
+ rshan’s existing implementation. We illustrate tf-Darshan by performing tw
+ o case studies on ImageNet image and Malware classification. We show that 
+ by guiding optimization using data from tf-Darshan, we increase POSIX I/O 
+ bandwidth by up to 19% by selecting data for staging on fast tier storage.
+  We also show that Darshan has the potential of being used as a runtime li
+ brary for profiling and providing information for future optimization.
+END:VEVENT
+END:VCALENDAR
+

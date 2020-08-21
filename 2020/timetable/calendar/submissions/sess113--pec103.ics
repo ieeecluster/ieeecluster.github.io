@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T080000
+DTEND;TZID=Asia/Tokyo:20200917T085000
+UID:ieeecluster_IEEE Cluster 2020_sess113_pec103@linklings.com
+SUMMARY:AI for Science (Alok N. Choudhary)
+DESCRIPTION:Keynote\n\nAI for Science (Alok N. Choudhary)\n\nChoudhary\n\n
+ "AI for Science" seeks to understand, explore and develop Machine Learning
+  and Data Mining approaches for accelerating scientific discoveries as wel
+ l as designs. An example of this is learning from data to build predictive
+  models that can enable exploration of scientific questions without relyin
+ g upon underlying theory. Given that modern instruments, supercomputing si
+ mulations, experiments, sensors and IoT are creating massive amounts of da
+ ta at an astonishing speed and diversity, AI for Science has the potential
+  to accelerate science discoveries by orders of magnitude. Another example
+  is the acceleration of so called the "inverse problems" which explore the
+  design space based on desired properties. This talk presents examples, po
+ ssibilities and limitations of "AI for Science".
+END:VEVENT
+END:VCALENDAR
+

@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200915T090000
+DTEND;TZID=Asia/Tokyo:20200915T095000
+UID:ieeecluster_IEEE Cluster 2020_sess102_pap119@linklings.com
+SUMMARY:Efficient Process-to-Node Mapping Algorithms for Stencil Computati
+ ons
+DESCRIPTION:Paper\n\nEfficient Process-to-Node Mapping Algorithms for Sten
+ cil Computations\n\nvon Kirchbach, Lehr, Hunold, Schulz, Träff\n\nGood pro
+ cess-to-compute-node mappings can be decisive\nfor well performing HPC app
+ lications. A special, important\nclass of process-to-node mapping problems
+  is the problem of\nmapping processes that communicate in a sparse stencil
+  pattern\nto Cartesian grids. By thoroughly exploiting the inherently\npre
+ sent structure in this type of problem, we devise three novel\ndistributed
+  algorithms that are able to handle arbitrary stencil\ncommunication patte
+ rns effectively. We analyze the expected\nperformance of our algorithms ba
+ sed on an abstract model of\ninter- and intra-node communication. An exten
+ sive experimental\nevaluation on several HPC machines shows that our algor
+ ithms\nare up to two orders of magnitude faster in running time\nthan a (s
+ equential) high-quality general graph mapping tool,\nwhile obtaining simil
+ ar results in communication performance.\nFurthermore, our algorithms also
+  achieve significantly better\nmapping quality compared to previous state-
+ of-the-art Cartesian\ngrid mapping algorithms. This results in up to a thr
+ eefold\nperformance improvement of an MPI_Neighbor_alltoall\nexchange oper
+ ation. Our new algorithms can be used to implement\nthe MPI_Cart_create fu
+ nctionality.
+END:VEVENT
+END:VCALENDAR
+

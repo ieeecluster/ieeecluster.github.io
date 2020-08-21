@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T145000
+DTEND;TZID=Asia/Tokyo:20200917T154000
+UID:ieeecluster_IEEE Cluster 2020_sess110_pap235@linklings.com
+SUMMARY:Optimizing GPU Memory Transactions for Convolution Operations
+DESCRIPTION:Paper\n\nOptimizing GPU Memory Transactions for Convolution Op
+ erations\n\nLu, Zhang, Wang\n\nCnvolution computation is a common operatio
+ n in deep neural networks (DNNs) and is often responsible for performance 
+ bottlenecks during training and inferencing. Existing approaches for accel
+ erating convolution operations aim to reduce computational complexity. How
+ ever, these strategies often increase the memory footprint with extra memo
+ ry accesses, thereby leaving much room for performance improvement. This p
+ aper presents a novel approach to optimize memory access for convolution o
+ perations, specically targeting GPU execution. Our approach leverages two 
+ optimization techniques to reduce the number of memory operations for conv
+ olution operations performed on the width and height dimensions. For convo
+ lution computations on the width dimension, we exploit shuffle instruction
+ s to exchange the overlapped columns of the input for reducing the number 
+ of memory transactions. For convolution operations on the height dimension
+ , we multiply each overlapped row of the input with multiple rows of a fi
+ lter to compute multiple output elements to improve the data locality of r
+ ow elements. We apply our approach to 2D and multi-channel 2D convolutions
+  on an NVIDIA 2080Ti GPU. For 2D convolution, our approach delivers over 2
+ x faster performance than the state-of-the-art image processing libraries.
+  For multi-channel 2D convolutions, we obtain up to 2x speedups over the q
+ uickest algorithm of cuDNN.
+END:VEVENT
+END:VCALENDAR
+

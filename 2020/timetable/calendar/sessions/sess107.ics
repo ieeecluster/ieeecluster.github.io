@@ -1,0 +1,54 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051327Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200916T145000
+DTEND;TZID=Asia/Tokyo:20200916T154000
+UID:ieeecluster_IEEE Cluster 2020_sess107@linklings.com
+SUMMARY:Framework for Data and Storage
+DESCRIPTION:Paper\n\nE2Clab: Exploring the Computing Continuum through Rep
+ eatable, Replicable and Reproducible Edge-to-Cloud Experiments\n\nRosendo,
+  Silva, Simonin, Costan, Antoniu\n\nDistributed digital infrastructures fo
+ r computation and analytics are now evolving towards an interconnected eco
+ system allowing complex applications to be executed from IoT Edge devices 
+ to the HPC Cloud (aka the Computing Continuum, the Digital Continuum, or t
+ he Transcontinuum). Understanding end-to...\n\n---------------------\nExpl
+ oring the Potential of Fast Delta Encoding: Marching to a Higher Compressi
+ on Ratio\n\nTan, Zhang, Zou, Liao, Xia\n\nDelta compression (or called del
+ ta encoding) is a data reduction technique capable of calculating the diff
+ erences (i.e., delta) among the very similar files and chunks, and is thus
+  widely used for optimizing synchronization replication, backup/archival s
+ torage, cache compression, etc. However, delta...\n\n---------------------
+ \nFlexible Data Redistribution in a Task-Based Runtime System\n\nCao, Bosi
+ lca, Wu, Zhong, Bouteiller...\n\nData redistribution aims to reshuffle dat
+ a to optimize some objective for an algorithm. The objective can be multi-
+ dimensional, such as improving computational load balance or decreasing co
+ mmunication volume or cost, with the ultimate goal to increase the efficie
+ ncy and therefore decrease the time-t...\n\n---------------------\nA Stagi
+ ng Based Task Execution Framework for Data-driven Scientific Workflows\n\n
+ Wang, Subedi, Dorier, Davis, Parashar\n\nAs scientific workflows increasin
+ gly use extreme-scale resources, the imbalance between higher computationa
+ l capabilities, generated data volumes, and available I/O bandwidth is lim
+ iting the ability to translate these scales into insights. In-situ workflo
+ ws (and the in-situ approach) are leveraging ...\n\n---------------------\
+ nStreaming File Transfer Optimization for Distributed Science Workflows\n\
+ nUcar, Arslan\n\nDriven by the advancements in computing and sensing techn
+ ology, scientific applications started to generate a huge volume of data w
+ hich needs to be streamed to high-performance computing clusters timely fo
+ r real-time (or near-real time) processing, necessitating reliable network
+  performance to opera...\n
+END:VEVENT
+END:VCALENDAR
+

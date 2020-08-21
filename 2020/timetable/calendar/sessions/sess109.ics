@@ -1,0 +1,53 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051327Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T140000
+DTEND;TZID=Asia/Tokyo:20200917T145000
+UID:ieeecluster_IEEE Cluster 2020_sess109@linklings.com
+SUMMARY:HPC Applications
+DESCRIPTION:Paper\n\nFast Scalable Approximate Nearest Neighbor Search for
+  High-dimensional Data\n\nK G, Vadhiyar\n\nK-Nearest Neighbor (k-NN) searc
+ h is one of the most commonly used approaches for similarity search. It fi
+ nds extensive applications in machine learning and data mining. This era o
+ f big data warrants efficiently scaling k-NN search algorithms for billion
+ -scale datasets with high dimensionality. In th...\n\n--------------------
+ -\nA Hybrid MPI+PGAS Approach to Improve Strong Scalability Limits of Fini
+ te Element Solvers\n\nJansson\n\nCurrent finite element codes scale reason
+ ably well as long as each core has sufficient amount of local work that ca
+ n balance communication costs. However, achieving efficient performance at
+  exascale will require unreasonable large problem sizes, in particular for
+  low-order methods, where the small a...\n\n---------------------\nTowards
+  End-to-end SDC Detection for HPC Applications Equipped with Lossy Compres
+ sion\n\nLi, Di, Zhao, Liang, Chen...\n\nData reduction techniques have bee
+ n widely demanded and used by large-scale high performance computing (HPC)
+  applications because of vast volumes of data to be produced and stored fo
+ r post-analysis. Due to very limited compression ratios of lossless compre
+ ssors, error-bounded lossy compression has b...\n\n---------------------\n
+ Efficient Execution of Dynamic Programming Algorithms on Apache Spark\n\nJ
+ avanmard, Ahmad, Zola, Pouchet, Chowdhury...\n\nOne of the most important 
+ properties of distributed computing systems (e.g., Apache Spark, Apache Ha
+ doop, etc) on clusters and computation clouds is the ability to scale out 
+ by adding more compute nodes to the cluster. This important feature can le
+ ad to performance gain provided the computation (or ...\n\n---------------
+ ------\nTowards Data-Flow Parallelization for Adaptive Mesh Refinement App
+ lications\n\nSala, Rico, Beltran\n\nAdaptive Mesh Refinement (AMR) is a pr
+ evalent method used by distributed-memory simulation applications to adapt
+  the accuracy of their solutions depending on the turbulent conditions in 
+ each of their domain regions. These applications are usually dynamic since
+  their domain areas are refined or coars...\n
+END:VEVENT
+END:VCALENDAR
+

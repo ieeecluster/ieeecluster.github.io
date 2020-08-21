@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200916T145000
+DTEND;TZID=Asia/Tokyo:20200916T154000
+UID:ieeecluster_IEEE Cluster 2020_sess107_pap196@linklings.com
+SUMMARY:Flexible Data Redistribution in a Task-Based Runtime System
+DESCRIPTION:Paper\n\nFlexible Data Redistribution in a Task-Based Runtime 
+ System\n\nCao, Bosilca, Wu, Zhong, Bouteiller...\n\nData redistribution ai
+ ms to reshuffle data to optimize some objective for an algorithm. The obje
+ ctive can be multi-dimensional, such as improving computational load balan
+ ce or decreasing communication volume or cost, with the ultimate goal to i
+ ncrease the efficiency and therefore decrease the time-to-solution for the
+  algorithm. The classical redistribution problem focuses on optimally sche
+ duling communications when reshuffling data between two regular, usually b
+ lock-cyclic, data distributions. Recently, task-based runtime systems have
+  gained popularity as a potential candidate to address the programming com
+ plexity on the way to exascale. In addition to an increase in portability 
+ against complex hardware and software systems, task-based runtime systems 
+ have the potential to be able to more easily cope with less-regular data d
+ istribution, providing a more balanced computational load during the lifet
+ ime of the execution. \nIn this scenario, it becomes paramount to develop 
+ a general redistribution algorithm for task-based runtime systems, which c
+ ould support all types of regular and irregular data distributions. In thi
+ s paper, we detail a flexible redistribution algorithm, capable of dealing
+  with redistribution problems without constraints of data distribution and
+  data size and implement it in a task-based runtime system, PaRSEC. Perfor
+ mance results show great capability compared to ScaLAPACK, and application
+ s highlight an increased efficiency with little overhead in terms of data 
+ distribution and data size.
+END:VEVENT
+END:VCALENDAR
+

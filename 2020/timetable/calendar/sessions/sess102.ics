@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051327Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200915T090000
+DTEND;TZID=Asia/Tokyo:20200915T095000
+UID:ieeecluster_IEEE Cluster 2020_sess102@linklings.com
+SUMMARY:Best Papers
+DESCRIPTION:Paper\n\nHAN: a Hierarchical AutotuNed Collective Communicatio
+ n Framework\n\nLuo, Wu, Bosilca, Pei, Cao...\n\nHigh-performance computing
+  (HPC) systems keep growing in scale and heterogeneity to satisfy the incr
+ easing computational need, and this brings new challenges to the design of
+  MPI libraries, especially with regard to collective operations.\n\nTo add
+ ress these challenges, we present "HAN," a new hierarc...\n\n-------------
+ --------\nDelveFS - An event-driven semantic file system for object stores
+ \n\nVef, Steiner, Salkhordeh, Steinkamp, Vennetier...\n\nData-driven appli
+ cations are becoming increasingly important in numerous industrial and sci
+ entific fields, growing the need for scalable data storage, such as object
+  storage.\nYet, many data-driven applications cannot use object interfaces
+  directly and often have to rely on third-party file system co...\n\n-----
+ ----------------\nEfficient Process-to-Node Mapping Algorithms for Stencil
+  Computations\n\nvon Kirchbach, Lehr, Hunold, Schulz, Träff\n\nGood proces
+ s-to-compute-node mappings can be decisive\nfor well performing HPC applic
+ ations. A special, important\nclass of process-to-node mapping problems is
+  the problem of\nmapping processes that communicate in a sparse stencil pa
+ ttern\nto Cartesian grids. By thoroughly exploiting the inherently\npres..
+ .\n\n---------------------\nCuVPP: Filter-based Longest Prefix Matching in
+  Software Data Planes\n\nKwon, Neupane, Marshall, Rafique\n\nProgrammabili
+ ty in the data plane has become increasingly important as virtualization i
+ s introduced into networking and software-defined networking becomes more 
+ prevalent. Yet, the performance of programmable data planes, often on comm
+ odity hardware, is a major concern, especially in light of ever-i...\n
+END:VEVENT
+END:VCALENDAR
+

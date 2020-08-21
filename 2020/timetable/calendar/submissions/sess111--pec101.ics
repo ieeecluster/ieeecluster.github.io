@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200915T081000
+DTEND;TZID=Asia/Tokyo:20200915T090000
+UID:ieeecluster_IEEE Cluster 2020_sess111_pec101@linklings.com
+SUMMARY:Fugaku: the First `Exascale' Supercomputer (Satoshi Matsuoka)
+DESCRIPTION:Keynote\n\nFugaku: the First `Exascale' Supercomputer (Satoshi
+  Matsuoka)\n\nMatsuoka\n\nFugaku is the first `exascale’ supercomputer of 
+ the world, not due to its peak double precision flops, but rather, its dem
+ onstrated performance in real applications that were expected of exascale 
+ machines on their conceptions 10 years ago, as well as reaching actual exa
+ flops in new breed of benchmarks such as HPL-AI. But the importance of Fug
+ aku is "applications first" philosophy under which it was developed, and i
+ ts resulting mission to be the centerpiece for rapid realization of the so
+ -called Japanese `Society 5.0' as defined by the Japanese S&T national pol
+ icy. As such, Fugaku’s immense power is directly applicable not only to tr
+ aditional scientific simulation applications, but can be a target of Socie
+ ty 5.0 applications that encompasses conversion of HPC & AI & Big Data as 
+ well as Cyber (IDC & Network) vs. Physical (IoT) space, with immediate soc
+ ietal impact. In fact, Fugaku is already in partial operation a year ahead
+  of schedule, primarily to obtain early Society 5.0 results including comb
+ atting COVID-19 as well as resolving other important societal issues.
+END:VEVENT
+END:VCALENDAR
+

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T085000
+DTEND;TZID=Asia/Tokyo:20200917T094000
+UID:ieeecluster_IEEE Cluster 2020_sess108_pap204@linklings.com
+SUMMARY:HCL: Distributing Parallel Data Structures in Extreme Scales
+DESCRIPTION:Paper\n\nHCL: Distributing Parallel Data Structures in Extreme
+  Scales\n\nDevarajan, Kougkas, Bateman, Sun\n\nMost parallel programs use 
+ irregular control flow and data structures, which are perfect for one-side
+ d communication paradigms such as MPI or PGAS programming languages. Howev
+ er, these environments lack the presence of efficient function-based appli
+ cation libraries that can utilize popular communication fabrics such as TC
+ P, IB, and RoCE. Additionally, there is a lack of high-performance data st
+ ructure interfaces. We present Hermes Container Library (HCL), a high-perf
+ ormance distributed data structures library that offers high-level abstrac
+ tions including hash-maps, sets, and queues. HCL uses a RPC over RDMA tech
+ nology that implements a novel functional programming paradigm. In this pa
+ per, we present the HCL DataBox abstraction that enables fast data seriali
+ zation of complex data types, data persistency on flash storage, and inter
+ - and intra-node data access optimization via a hybrid data access model. 
+ Evaluation results from testing the performance of a set of HCL data struc
+ tures shows that HCL programs are 2x to 12x faster compared to BCL, a stat
+ e-of-the-art distributed data structure library.
+END:VEVENT
+END:VCALENDAR
+

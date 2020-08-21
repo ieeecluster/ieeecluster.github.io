@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200915T140000
+DTEND;TZID=Asia/Tokyo:20200915T145000
+UID:ieeecluster_IEEE Cluster 2020_sess103_pap134@linklings.com
+SUMMARY:NeoMPX: Characterizing and Improving Estimation of Multiplexing Ha
+ rdware Counters for PAPI
+DESCRIPTION:Paper\n\nNeoMPX: Characterizing and Improving Estimation of Mu
+ ltiplexing Hardware Counters for PAPI\n\nWang, Wang, Chen, Zuo, Su...\n\nM
+ odern processors provide hundreds of low-level hardware events (such as ca
+ che miss rate), but offer only a small number (usually 6–12) of hardware c
+ ounters to collect these events due to limited register resource. Multiple
+ xing (MPX) is an estimation-based technique designed to collect hardware e
+ vents simultaneously with few hardware counters. However, the lowaccuracy 
+ of existing MPX methods prevents this technique from wide usage in real co
+ nditions. To obtain accurate and reliable hardware counter values, we cond
+ ucted this work in three steps: 1) to explore the root cause of inaccuracy
+ , we characterized the estimation errors of MPX, and found that estimation
+  errors arise from the outliers in PAPI; 2) to eliminate these outliers an
+ d improve MPX accuracy, we proposed two non-linear growth rate gradient es
+ timation methods: divided curved-area method (DCAM) and curved-area method
+  (CAM); 3) based on these two methods, we developed a new MPX library for 
+ PAPI, NeoMPX. We evaluated NeoMPX with six Rodinia benchmarks on four main
+ stream x86 and ARM server processors, and compared the results with PAPI d
+ efault MPX and two other state-of-art MPX methods, DIRA, and TAM. Evaluati
+ ons show that, for collecting 16 evaluated hardware events, our methods ca
+ n improve up to 59% accuracy than PAPI default MPX, and achieve 36% and 5%
+  higher accuracy than DIRA and TAM, respectively. We have open-sourced Neo
+ MPX and expect it to enable PAPI MPX for practical usage.
+END:VEVENT
+END:VCALENDAR
+

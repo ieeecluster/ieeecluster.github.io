@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200915T140000
+DTEND;TZID=Asia/Tokyo:20200915T145000
+UID:ieeecluster_IEEE Cluster 2020_sess103_pap213@linklings.com
+SUMMARY:Co-scheML: Interference-aware Container Co-scheduling Scheme using
+  Machine Learning Application Profiles for GPU Clusters
+DESCRIPTION:Paper\n\nCo-scheML: Interference-aware Container Co-scheduling
+  Scheme using Machine Learning Application Profiles for GPU Clusters\n\nKi
+ m, Kim\n\nRecently, efficient execution of applications on Graphic Process
+ ing Unit(GPU) has emerged as a research topic to increase overall system t
+ hroughput in cluster environment. As a current cluster orchestration platf
+ orm using GPUs only supports an exclusive execution of an application on a
+  GPU, the platform may not utilize resource of GPUs fully relying on appli
+ cation characteristics. Nonetheless, co-execution of GPU applications lead
+ s to interference coming from resource contention among applications. If d
+ iverse resource usage characteristics of GPU applications are not delibera
+ ted, unbalanced usage of computing resources and performance degradation c
+ ould be induced in a GPU cluster. This study introduces Co-scheML  for co-
+ execution of various GPU applications such as High Performance Computing (
+ HPC), Deep Learning (DL) Training, and DL Inference. Interference model is
+  constructed by applying Machine Learning (ML) model with GPU metrics sinc
+ e predicting interference has a difficulty. Predicted interference is util
+ ized and deployment of an application is determined by Co-scheML scheduler
+ . Experimental results of the Co-ScheML strategy show that average job com
+ pletion time is improved by 23%, and the makespan is shortened by 22% in a
+ verage, as compared to baseline schedulers.
+END:VEVENT
+END:VCALENDAR
+

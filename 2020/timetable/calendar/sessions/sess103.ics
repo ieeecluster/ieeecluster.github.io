@@ -1,0 +1,60 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051327Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200915T140000
+DTEND;TZID=Asia/Tokyo:20200915T145000
+UID:ieeecluster_IEEE Cluster 2020_sess103@linklings.com
+SUMMARY:Performance Characterization and Scheduling
+DESCRIPTION:Paper\n\nNeoMPX: Characterizing and Improving Estimation of Mu
+ ltiplexing Hardware Counters for PAPI\n\nWang, Wang, Chen, Zuo, Su...\n\nM
+ odern processors provide hundreds of low-level hardware events (such as ca
+ che miss rate), but offer only a small number (usually 6–12) of hardware c
+ ounters to collect these events due to limited register resource. Multiple
+ xing (MPX) is an estimation-based technique designed to collect hardware e
+ ven...\n\n---------------------\nGrade10: A Framework for Performance Char
+ acterization of Distributed Graph Processing\n\nHegeman, Trivedi, Iosup\n\
+ nGraph processing is one of the most important and ubiquitous classes of a
+ nalytical workloads. To process large graph datasets with diverse algorith
+ ms, tens of distributed graph processing frameworks emerged. Their users a
+ re increasingly expecting high performance for diversifying workloads. Mee
+ ting ...\n\n---------------------\nEvaluating Worksharing Tasks on Distrib
+ uted Environments\n\nMaroñas, Teruel, Bull, Ayguadé, Beltran\n\nHybrid pro
+ gramming is a promising approach to exploit clusters of multicore systems.
+  Our focus is on the combination of MPI and tasking. This hybrid approach 
+ combines the low-latency and high throughput of MPI with the flexibility o
+ f tasking models and their inherent ability to handle load imbalance...\n\
+ n---------------------\nCo-scheML: Interference-aware Container Co-schedul
+ ing Scheme using Machine Learning Application Profiles for GPU Clusters\n\
+ nKim, Kim\n\nRecently, efficient execution of applications on Graphic Proc
+ essing Unit(GPU) has emerged as a research topic to increase overall syste
+ m throughput in cluster environment. As a current cluster orchestration pl
+ atform using GPUs only supports an exclusive execution of an application o
+ n a GPU, the plat...\n\n---------------------\nModeling the Performance of
+  Scientific Workflow Executions on HPC Platforms with Burst Buffers\n\nPot
+ tier, Da Silva, Casanova, Deelman\n\nScientific domains ranging from bioin
+ formatics to astronomy and earth\nscience rely on traditional high-perform
+ ance computing (HPC) codes, often\nencapsulated in scientific workflows. I
+ n contrast to traditional HPC codes that\nemploy a few programming and run
+ time approaches that are highly\noptimized fo...\n\n---------------------\
+ nResilient Scheduling of Moldable Jobs on Failure-Prone Platforms\n\nBenoi
+ t, Le Fèvre, Perotin, Raghavan, Robert...\n\nThis paper focuses on the res
+ ilient scheduling of moldable parallel jobs on high-performance computing 
+ (HPC) platforms. Moldable jobs allow for choosing a processor allocation b
+ efore execution, and their execution time obeys various speedup models. Th
+ e objective is to minimize the overall completion...\n
+END:VEVENT
+END:VCALENDAR
+

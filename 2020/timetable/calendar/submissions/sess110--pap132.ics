@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T145000
+DTEND;TZID=Asia/Tokyo:20200917T154000
+UID:ieeecluster_IEEE Cluster 2020_sess110_pap132@linklings.com
+SUMMARY:Parallel Particle Advection Bake-Off For Scientific Visualization 
+ Workloads
+DESCRIPTION:Paper\n\nParallel Particle Advection Bake-Off For Scientific V
+ isualization Workloads\n\nBinyahib, Pugmire, Yenpure, Childs\n\nThere are 
+ multiple algorithms for parallelizing particle advection for scientific vi
+ sualization workloads. While many previous studies have contributed to the
+  understanding of individual algorithms, our study aims to provide a holis
+ tic understanding of how algorithms perform relative to each other on vari
+ ous workloads. To accomplish this, we consider four popular parallelizatio
+ n algorithms and run a “bake-off” study (i.e., an empirical study) to iden
+ tify the best matches for each. The study includes 216 tests, going to a c
+ oncurrency of up to 8192 cores and considering data sets as large as 34 bi
+ llion cells with 300 million particles. Overall, our study informs three i
+ mportant research questions: (1) which parallelization algorithms perform 
+ best for a given workload?, (2) why?, and (3) what are the unsolved proble
+ ms in parallel particle advection? In terms of findings, we find that the 
+ seeding box is the most important factor in choosing the best algorithm, a
+ nd also that there is a significant opportunity for improvement in executi
+ on time, scalability, and efficiency.
+END:VEVENT
+END:VCALENDAR
+

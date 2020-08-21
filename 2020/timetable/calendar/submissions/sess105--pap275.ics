@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200916T080000
+DTEND;TZID=Asia/Tokyo:20200916T085000
+UID:ieeecluster_IEEE Cluster 2020_sess105_pap275@linklings.com
+SUMMARY:Analysis of Cooling Water Temperature Impact on Computing Performa
+ nce and Energy Consumption
+DESCRIPTION:Paper\n\nAnalysis of Cooling Water Temperature Impact on Compu
+ ting Performance and Energy Consumption\n\nNonaka, Hanawa, Shoji\n\nThe ho
+ t water cooling technique has been widely accepted as one of the standard 
+ techniques to improve the energy efficiency for the HPC and Data Centers. 
+ However, the higher operating temperature may impact the CPU power consump
+ tion due to the leakage current. Moreover, it may degrade the computationa
+ l performance due to the DVFS mechanism activated to maintain the power an
+ d temperature within the TDP limit. In that sense, to fairly evaluate the 
+ efficiency of the hot water cooling technique, it becomes important to tak
+ e into consideration not only the energy reduction on the HPC facility sid
+ e (cooling system) but also the impact on the power consumption and the pe
+ rformance degradation on the HPC system side. In this paper, we utilized t
+ he Oakforest-PACS system and its facility, jointly administrated by Univer
+ sity of Tsukuba and The University of Tokyo, in order to execute a quantit
+ ative and systematic analysis on the impact of the cooling water temperatu
+ re onto the HPC system and its facility. For this purpose, we utilized low
+ er (9oC) and higher (18oC) cooling water temperature other than the regula
+ r operational temperature (12oC). Contrary to the gain in the energy consu
+ mption, on the HPC facility side, when using higher cooling water temperat
+ ure, we observed an increase in the number of nodes suffering from perform
+ ance degradation on the HPC system side. As a result, it can directly incr
+ ease the probability of including low-performance nodes on multiple node j
+ obs, and thus affecting their overall performance, especially during barri
+ er synchronizations.
+END:VEVENT
+END:VCALENDAR
+

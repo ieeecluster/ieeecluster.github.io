@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200915T140000
+DTEND;TZID=Asia/Tokyo:20200915T145000
+UID:ieeecluster_IEEE Cluster 2020_sess103_pap232@linklings.com
+SUMMARY:Evaluating Worksharing Tasks on Distributed Environments
+DESCRIPTION:Paper\n\nEvaluating Worksharing Tasks on Distributed Environme
+ nts\n\nMaroñas, Teruel, Bull, Ayguadé, Beltran\n\nHybrid programming is a 
+ promising approach to exploit clusters of multicore systems. Our focus is 
+ on the combination of MPI and tasking. This hybrid approach combines the l
+ ow-latency and high throughput of MPI with the flexibility of tasking mode
+ ls and their inherent ability to handle load imbalance. However, combining
+  tasking with standard MPI implementations can be a challenge. The Task-Aw
+ are MPI library (TAMPI) eases the development of applications combining ta
+ sking with MPI. TAMPI enables developers to overlap computation and commun
+ ication\nphases by relying on the tasking data-flow execution model. Using
+  this approach, the original computation that was distributed in many diff
+ erent MPI ranks is grouped together in fewer\nMPI ranks, and split into se
+ veral tasks per rank. Nevertheless, programmers must be careful with task 
+ granularity. Too fine-grained tasks introduce too much overhead, while too
+  coarse-grained tasks lead to lack of parallelism. An adequate granularity
+  may not always exist, especially in distributed environments where the sa
+ me amount of work is distributed among many more\ncores. Worksharing tasks
+  are a special kind of tasks, recently proposed, that internally leverage 
+ worksharing techniques. By doing so, a single worksharing task may run in 
+ several cores\nconcurrently. Nonetheless, the task management costs remain
+  the same than a regular task. In this work, we study the combination of w
+ orksharing tasks and TAMPI on distributed environments using two well know
+ n mini-apps: HPCCG and LULESH. Our results show significant improvements u
+ sing worksharing tasks compared to regular tasks, and to other state-of-th
+ e-art alternatives such as OpenMP worksharing.
+END:VEVENT
+END:VCALENDAR
+

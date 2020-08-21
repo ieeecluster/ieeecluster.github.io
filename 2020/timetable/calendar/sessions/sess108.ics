@@ -1,0 +1,65 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051327Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T085000
+DTEND;TZID=Asia/Tokyo:20200917T094000
+UID:ieeecluster_IEEE Cluster 2020_sess108@linklings.com
+SUMMARY:Programming, System Software and Container
+DESCRIPTION:Paper\n\nPower Budgeting of Big Data Applications in Container
+ -based Clusters\n\nEnes, Fieni, Expósito, Rouvoy, Touriño\n\nEnergy consum
+ ption is currently highly regarded on computing systems for many reasons, 
+ such as improving the environmental impact and reducing operational costs 
+ considering the rising price of energy. Previous works have analysed how t
+ o improve energy efficiency from the entire infrastructure down t...\n\n--
+ -------------------\nEstimating Power Consumption of Containers and Virtua
+ l Machines in Data Centers\n\nZhang, Shen, Xia, Liu, Li\n\nVirtualization 
+ technologies provide solutions of cloud computing. Virtual resource schedu
+ ling is a crucial task in data centers, and the power consumption of virtu
+ al resources is a critical foundation of virtualization scheduling. Contai
+ ners are the smallest unit of virtual resource scheduling and m...\n\n----
+ -----------------\nDeepClone: Scalable Live Migration of Deep Learning Mod
+ els for Data Parallel Training\n\nNicolae, Dorier, Wozniak, Cappello\n\nTr
+ aining modern deep neural network (DNN) models involves complex workflows 
+ triggered by model exploration, sensitivity analysis, explainability, etc.
+   A key primitive in this context is the ability to clone a model training
+  instance, i.e. "fork" the training process in a potentially different dir
+ ec...\n\n---------------------\nHCL: Distributing Parallel Data Structures
+  in Extreme Scales\n\nDevarajan, Kougkas, Bateman, Sun\n\nMost parallel pr
+ ograms use irregular control flow and data structures, which are perfect f
+ or one-sided communication paradigms such as MPI or PGAS programming langu
+ ages. However, these environments lack the presence of efficient function-
+ based application libraries that can utilize popular communica...\n\n-----
+ ----------------\nExploring Non-Volatility of Non-Volatile Memory for High
+  Performance Computing Under Failures\n\nRen, Wu, Li\n\nHardware failures 
+ and faults often result in application crash in HPC. The emergence of non-
+ volatile memory (NVM) provides a solution to address this problem. Leverag
+ ing the non-volatility of NVM, one can build in-memory checkpoints or enab
+ le crash-consistent data objects. However, these solutions c...\n\n-------
+ --------------\nPredicting MPI Collective Communication Performance Using 
+ Machine Learning\n\nHunold, Bhatele, Bosilca, Knees\n\nThe Message Passing
+  Interface (MPI) defines the semantics of data communication operations, w
+ hile the implementing libraries provide several parameterized algorithms f
+ or each operation. Each algorithm of an MPI collective operation may work 
+ best on a particular system and may be dependent on the spe...\n\n--------
+ -------------\nDecomposing MPI Collectives for Exploiting Multi-lane Commu
+ nication\n\nTräff, Hunold\n\nMany modern, high-performance systems increas
+ e the cumulated node-bandwidth by offering more than a single communicatio
+ n network and/or by having multiple connections to the network, such that 
+ a single processor-core cannot by itself saturate the off-node bandwidth. 
+ Efficient algorithms and implemen...\n
+END:VEVENT
+END:VCALENDAR
+

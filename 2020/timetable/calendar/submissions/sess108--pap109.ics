@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T085000
+DTEND;TZID=Asia/Tokyo:20200917T094000
+UID:ieeecluster_IEEE Cluster 2020_sess108_pap109@linklings.com
+SUMMARY:Exploring Non-Volatility of Non-Volatile Memory for High Performan
+ ce Computing Under Failures
+DESCRIPTION:Paper\n\nExploring Non-Volatility of Non-Volatile Memory for H
+ igh Performance Computing Under Failures\n\nRen, Wu, Li\n\nHardware failur
+ es and faults often result in application crash in HPC. The emergence of n
+ on-volatile memory (NVM) provides a solution to address this problem. Leve
+ raging the non-volatility of NVM, one can build in-memory checkpoints or e
+ nable crash-consistent data objects. However, these solutions cause large 
+ memory consumption, extra writes to NVM, or disruptive changes to applicat
+ ions. We introduces a fundamentally new methodology to handle HPC under fa
+ ilures based on NVM. In particular, we attempt to use remaining data objec
+ ts in NVM (possibly stale ones because of losing data updates in caches) t
+ o restart crashed applications. To address the challenge of possibly unsuc
+ cessful recomputation after the application restarts, we introduce a frame
+ work EasyCrash that uses a systematic approach to automatically decide how
+  to selectively persist application data objects to significantly increase
+  possibility of successful recomputation. EasyCrash enables up to 30\% imp
+ rovement (20\% on average) in system efficiency at various system scales.
+END:VEVENT
+END:VCALENDAR
+

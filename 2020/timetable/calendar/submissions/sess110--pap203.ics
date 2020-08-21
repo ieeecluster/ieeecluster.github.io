@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T145000
+DTEND;TZID=Asia/Tokyo:20200917T154000
+UID:ieeecluster_IEEE Cluster 2020_sess110_pap203@linklings.com
+SUMMARY:Data Life Aware Model Updating Strategy for Stream-based Online De
+ ep Learning
+DESCRIPTION:Paper\n\nData Life Aware Model Updating Strategy for Stream-ba
+ sed Online Deep Learning\n\nRang, Yang, Cheng, Suo, Chen\n\nMany deep lear
+ ning applications deployed in dynamic environments change over time, in wh
+ ich the training models are supposed to be continuously updated with strea
+ ming data in order to guarantee better descriptions on data trends. Howeve
+ r, most of the state-of-the-art learning frameworks support well in offlin
+ e training methods while omitting online model updating strategies. In thi
+ s work, we propose and implement iDlaLayer, a thin middleware layer on top
+  of existing training frameworks that streamlines the support and implemen
+ tation of online deep learning applications. In pursuit of good model qual
+ ity as well as fast data incorporation, we design a Data Life Aware model 
+ updating strategy (DLA), which builds training data samples according to c
+ ontributions of data from different life stages, and considers the trainin
+ g cost consumed in model updating. We evaluate iDlaLayer’s performance thr
+ ough both simulations and experiments based on TensorflowOnSpark with thre
+ e representative online learning workloads. Our experimental results demon
+ strate that iDlaLayer reduces the overall elapsed time of MNIST, Criteo an
+ d PageRank by 11.3%, 28.2% and 15.2% compared to the periodic update strat
+ egy, respectively. It further achieves an average 20% decrease in training
+  cost and brings about 5% improvement in model quality against the traditi
+ onal continuous training method.
+END:VEVENT
+END:VCALENDAR
+

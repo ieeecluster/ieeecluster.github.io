@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T145000
+DTEND;TZID=Asia/Tokyo:20200917T154000
+UID:ieeecluster_IEEE Cluster 2020_sess110_pap269@linklings.com
+SUMMARY:Profiling and Visualizing Performance of FPGAs in High-Performance
+  Computing Environments
+DESCRIPTION:Paper\n\nProfiling and Visualizing Performance of FPGAs in Hig
+ h-Performance Computing Environments\n\nHuthmann, Podobas, Sommer, Koch, S
+ ano\n\nThe recent maturity in High-Level Synthesis (HLS) has renewed the i
+ nterest of using Field-Programmable Gate-Arrays (FPGAs) to accelerate High
+ -Performance Computing (HPC) applications. Today, several studies have sho
+ wn performance- and power-benefits of using FPGAs compared to existing app
+ roaches for several HPC applications with ample room for improvements. Unf
+ ortunately, tracing and visualizing the performance of applications runnin
+ g on FPGAs is nearly non-existent, and understanding FPGA performance is o
+ ften left to intuition or expert guesses.\n\nIn this work, we hypothesize 
+ that existing profiling and visualization tools used in the HPC domain are
+  suitable to visualize FPGA performance. Through several non-trivial hardw
+ are extensions to support both event- and state-driven trace collection, w
+ e show how modern HLS tools can support Paraver-- a state-of-the-art visua
+ lization and profiling tool well-known in HPC. Finally, we show how contri
+ bution can be used to visualize and provide unique insights into the execu
+ tion of three well-known application kernels running on an FPGA, and how w
+ e can use the visualization to guide optimizations
+END:VEVENT
+END:VCALENDAR
+

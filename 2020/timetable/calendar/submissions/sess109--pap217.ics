@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T140000
+DTEND;TZID=Asia/Tokyo:20200917T145000
+UID:ieeecluster_IEEE Cluster 2020_sess109_pap217@linklings.com
+SUMMARY:Towards Data-Flow Parallelization for Adaptive Mesh Refinement App
+ lications
+DESCRIPTION:Paper\n\nTowards Data-Flow Parallelization for Adaptive Mesh R
+ efinement Applications\n\nSala, Rico, Beltran\n\nAdaptive Mesh Refinement 
+ (AMR) is a prevalent method used by distributed-memory simulation applicat
+ ions to adapt the accuracy of their solutions depending on the turbulent c
+ onditions in each of their domain regions. These applications are usually 
+ dynamic since their domain areas are refined or coarsened in various refin
+ ement stages during their execution. Thus, they periodically redistribute 
+ their workloads among processes to avoid load imbalance. Although the defa
+ cto standard for scientific computing in distributed environments is MPI, 
+ in recent years, pure MPI applications are being ported to hybrid ones, at
+ tempting to cope with modern multi-core systems. Recently, the Task-Aware 
+ MPI library was proposed to efficiently integrate MPI communications and t
+ asking models, providing also the transparent management of communications
+  issued by tasks.\n\nIn this paper, we demonstrate the benefits of porting
+  AMR applications to data-flow programming models leveraging that novel hy
+ brid approach. We exploit most of the application parallelism by taskifyin
+ g all stages, allowing their natural overlap. We employ these techniques o
+ n the miniAMR proxy application, which mimics the refinement, load balanci
+ ng, communication, and computation patterns of general AMR applications. W
+ e evaluate how this approach reduces the time in its computation and commu
+ nication phases while achieving better programmability than other conventi
+ onal hybrid techniques.
+END:VEVENT
+END:VCALENDAR
+

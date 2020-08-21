@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T140000
+DTEND;TZID=Asia/Tokyo:20200917T145000
+UID:ieeecluster_IEEE Cluster 2020_sess109_pap263@linklings.com
+SUMMARY:Towards End-to-end SDC Detection for HPC Applications Equipped wit
+ h Lossy Compression
+DESCRIPTION:Paper\n\nTowards End-to-end SDC Detection for HPC Applications
+  Equipped with Lossy Compression\n\nLi, Di, Zhao, Liang, Chen...\n\nData r
+ eduction techniques have been widely demanded and used by large-scale high
+  performance computing (HPC) applications because of vast volumes of data 
+ to be produced and stored for post-analysis. Due to very limited compressi
+ on ratios of lossless compressors, error-bounded lossy compression has bec
+ ome an indispensable part in many HPC applications nowadays, because it ca
+ n significantly reduce science data volume with user-acceptable data disto
+ rtion. Since the large- scale HPC applications equipped with lossy compres
+ sion techniques always need to deal with vast volume of data, soft errors 
+ or silent data corruptions (SDC) are non-negligible. Although SDC detectio
+ n techniques have been studied for years, no studies were performed toward
+  the HPC applications with lossy compression, leaving a significant gap be
+ tween these applications and confidence of execution results. To fill this
+  gap, this paper proposes a couple of SDC detection strategies for scienti
+ fic simulations with lossy compression. Experimental results on 4 widely u
+ sed scientific simulation datasets show promising detection ability could 
+ be still obtained with two popular lossy compressors. Our parallel experim
+ ents with up to 1,024 cores confirm that the time overheads could be limit
+ ed within 7.9%.
+END:VEVENT
+END:VCALENDAR
+

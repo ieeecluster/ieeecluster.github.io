@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200916T145000
+DTEND;TZID=Asia/Tokyo:20200916T154000
+UID:ieeecluster_IEEE Cluster 2020_sess107_pap246@linklings.com
+SUMMARY:Streaming File Transfer Optimization for Distributed Science Workf
+ lows
+DESCRIPTION:Paper\n\nStreaming File Transfer Optimization for Distributed 
+ Science Workflows\n\nUcar, Arslan\n\nDriven by the advancements in computi
+ ng and sensing technology, scientific applications started to generate a h
+ uge volume of data which needs to be streamed to high-performance computin
+ g clusters timely for real-time (or near-real time) processing, necessitat
+ ing reliable network performance to operate seamlessly. However, existing 
+ data transfer applications are predominantly designed for batch workloads 
+ in a way that transfer configurations cannot be altered once they are set.
+  This, in turn, severely limits streaming applications from adapting to ch
+ anging dataset and network conditions therefore meeting stringent performa
+ nce requirements. In this paper, we propose FStream to offer performance g
+ uarantees to time-sensitive streaming applications by dynamically adjustin
+ g transfer settings when system conditions deviate from initial assumption
+ s to sustain high network performance throughout the runtime. We evaluate 
+ the performance of FStream by transferring several synthetic and real-worl
+ d workloads in high-performance production networks and show that it offer
+ s up to 9x performance improvement over state-of-the-art data transfer sol
+ utions.
+END:VEVENT
+END:VCALENDAR
+

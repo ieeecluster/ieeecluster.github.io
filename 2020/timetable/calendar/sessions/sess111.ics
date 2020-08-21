@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051327Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200915T081000
+DTEND;TZID=Asia/Tokyo:20200915T090000
+UID:ieeecluster_IEEE Cluster 2020_sess111@linklings.com
+SUMMARY:Keynote-1
+DESCRIPTION:Keynote\n\nFugaku: the First `Exascale' Supercomputer (Satoshi
+  Matsuoka)\n\nMatsuoka\n\nFugaku is the first `exascale’ supercomputer of 
+ the world, not due to its peak double precision flops, but rather, its dem
+ onstrated performance in real applications that were expected of exascale 
+ machines on their conceptions 10 years ago, as well as reaching actual exa
+ flops in new breed of benchmar...\n
+END:VEVENT
+END:VCALENDAR
+

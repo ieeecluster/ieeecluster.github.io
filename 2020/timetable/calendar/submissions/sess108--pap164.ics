@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T085000
+DTEND;TZID=Asia/Tokyo:20200917T094000
+UID:ieeecluster_IEEE Cluster 2020_sess108_pap164@linklings.com
+SUMMARY:Estimating Power Consumption of Containers and Virtual Machines in
+  Data Centers
+DESCRIPTION:Paper\n\nEstimating Power Consumption of Containers and Virtua
+ l Machines in Data Centers\n\nZhang, Shen, Xia, Liu, Li\n\nVirtualization 
+ technologies provide solutions of cloud computing. Virtual resource schedu
+ ling is a crucial task in data centers, and the power consumption of virtu
+ al resources is a critical foundation of virtualization scheduling. Contai
+ ners are the smallest unit of virtual resource scheduling and migration. A
+ lthough many effective models for estimating power consumption of virtual 
+ machines (VM) have been proposed, few power estimation models of container
+ s have been put forth. In this paper, we offer a fast-training piecewise r
+ egression model based on decision tree to build a VM power estimation mode
+ l and estimate the containers’ power by treating the container as a group 
+ of processes on the VM. In our model, we characterize the nonlinear relati
+ onship between power and features and realize the effective estimation of 
+ the containers on the VM. We evaluate the proposed model on 13 workloads i
+ n PARSEC and compare it with several models. The experimental results prov
+ e the effectiveness of our proposed model on most workloads. Moreover, the
+  estimated power of the containers is in line with expectations.
+END:VEVENT
+END:VCALENDAR
+

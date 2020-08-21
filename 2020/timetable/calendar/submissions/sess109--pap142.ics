@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T140000
+DTEND;TZID=Asia/Tokyo:20200917T145000
+UID:ieeecluster_IEEE Cluster 2020_sess109_pap142@linklings.com
+SUMMARY:Fast Scalable Approximate Nearest Neighbor Search for High-dimensi
+ onal Data
+DESCRIPTION:Paper\n\nFast Scalable Approximate Nearest Neighbor Search for
+  High-dimensional Data\n\nK G, Vadhiyar\n\nK-Nearest Neighbor (k-NN) searc
+ h is one of the most commonly used approaches for similarity search. It fi
+ nds extensive applications in machine learning and data mining. This era o
+ f big data warrants efficiently scaling k-NN search algorithms for billion
+ -scale datasets with high dimensionality. In this paper, we propose a solu
+ tion towards this end where we use vantage point trees for partitioning th
+ e dataset across multiple processes and exploit an existing graph-based se
+ quential approximate k-NN search algorithm called HNSW (Hierarchical Navig
+ able Small World) for searching locally within a process. Our hybrid MPI-O
+ penMP solution employs techniques including exploiting MPI one-sided commu
+ nication for reducing communication times and partition replication for be
+ tter load balancing across processes. We demonstrate computation of k-NN f
+ or 10,000 queries in the order of seconds using our approach on ~8000 core
+ s on a dataset with billion points in a 128-dimensional space. We also sho
+ w 10X speedup over a completely k-d tree-based solution for the same datas
+ et, thus demonstrating better suitability of our solution for high dimensi
+ onal datasets. Our solution shows almost linear strong scaling.
+END:VEVENT
+END:VCALENDAR
+

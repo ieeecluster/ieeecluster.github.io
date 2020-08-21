@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200915T090000
+DTEND;TZID=Asia/Tokyo:20200915T095000
+UID:ieeecluster_IEEE Cluster 2020_sess102_pap135@linklings.com
+SUMMARY:HAN: a Hierarchical AutotuNed Collective Communication Framework
+DESCRIPTION:Paper\n\nHAN: a Hierarchical AutotuNed Collective Communicatio
+ n Framework\n\nLuo, Wu, Bosilca, Pei, Cao...\n\nHigh-performance computing
+  (HPC) systems keep growing in scale and heterogeneity to satisfy the incr
+ easing computational need, and this brings new challenges to the design of
+  MPI libraries, especially with regard to collective operations.\n\nTo add
+ ress these challenges, we present "HAN," a new hierarchical autotuned coll
+ ective communication framework in Open MPI, which selects suitable homogen
+ eous collective communication modules as submodules for each hardware leve
+ l, uses collective operations from the submodules as tasks, and organizes 
+ these tasks to perform efficient hierarchical collective operations. With 
+ a task-based design, HAN can easily swap out submodules, while keeping tas
+ ks intact, to adapt to new hardware. This makes HAN suitable for the curre
+ nt platform and provides a strong and flexible support for future HPC syst
+ ems.\n\nTo provide a fast and accurate autotuning mechanism, we present a 
+ novel cost model based on benchmarking the tasks instead of a whole collec
+ tive operation. This method drastically reduces tuning time, as the cost o
+ f tasks can be reused across different message sizes, and is more accurate
+  than existing cost models. Our cost analysis suggests the autotuning comp
+ onent can find the optimal configuration in most cases.\n\nThe evaluation 
+ of the HAN framework suggests our design significantly improves the defaul
+ t Open MPI and achieves decent speedups against state-of-the-art MPI imple
+ mentations on tested applications.
+END:VEVENT
+END:VCALENDAR
+

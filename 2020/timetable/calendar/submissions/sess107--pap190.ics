@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200916T145000
+DTEND;TZID=Asia/Tokyo:20200916T154000
+UID:ieeecluster_IEEE Cluster 2020_sess107_pap190@linklings.com
+SUMMARY:A Staging Based Task Execution Framework for Data-driven Scientifi
+ c Workflows
+DESCRIPTION:Paper\n\nA Staging Based Task Execution Framework for Data-dri
+ ven Scientific Workflows\n\nWang, Subedi, Dorier, Davis, Parashar\n\nAs sc
+ ientific workflows increasingly use extreme-scale resources, the imbalance
+  between higher computational capabilities, generated data volumes, and av
+ ailable I/O bandwidth is limiting the ability to translate these scales in
+ to insights. In-situ workflows (and the in-situ approach) are leveraging s
+ torage levels close to the computation in novel ways in order to reduce th
+ e required I/O. However, to be effective, it is important that the mapping
+  and execution of such in-situ workflows adopts a data-driven approach, en
+ abling in-situ tasks to be executed flexibly based upon data content. This
+  paper first explores the design space for data-driven in-situ workflows. 
+ Specifically, it presents a model that captures different factors that inf
+ luence the mapping, execution, and performance of data-driven in-situ work
+ flows and experimentally studies the impact of different mapping decisions
+  and execution patterns. The paper then presents the design, implementatio
+ n, and experimental evaluation of a data-driven in-situ workflow execution
+  framework that leverages in-memory distributed data management and user-d
+ efined task-triggers to enable efficient and scalable in-situ workflow exe
+ cution.
+END:VEVENT
+END:VCALENDAR
+

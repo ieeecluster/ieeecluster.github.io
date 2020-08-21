@@ -1,0 +1,52 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200915T140000
+DTEND;TZID=Asia/Tokyo:20200915T145000
+UID:ieeecluster_IEEE Cluster 2020_sess103_pap169@linklings.com
+SUMMARY:Grade10: A Framework for Performance Characterization of Distribut
+ ed Graph Processing
+DESCRIPTION:Paper\n\nGrade10: A Framework for Performance Characterization
+  of Distributed Graph Processing\n\nHegeman, Trivedi, Iosup\n\nGraph proce
+ ssing is one of the most important and ubiquitous classes of analytical wo
+ rkloads. To process large graph datasets with diverse algorithms, tens of 
+ distributed graph processing frameworks emerged. Their users are increasin
+ gly expecting high performance for diversifying workloads. Meeting this ex
+ pectation depends on understanding the performance of each framework. Howe
+ ver, performance analysis and characterization of a distributed graph proc
+ essing framework is challenging. Contributing factors are the irregular na
+ ture of\ngraph computation across datasets and algorithms, the semantic ga
+ p between workload-level and system-level monitoring, and the lack of ligh
+ tweight mechanisms for collecting fine-grained\nperformance data. Addressi
+ ng the challenge, in this work we present Grade10, an experimental framewo
+ rk for fine-grained performance characterization of distributed graph proc
+ essing workloads. Grade10 captures the graph workload execution as a perfo
+ rmance graph from logs and application traces, and builds a fine-grained, 
+ unified workload-level and system-level\nview of performance. Grade10 samp
+ les sparsely for lightweight monitoring and addresses the problem of accur
+ acy through a novel approach for resource attribution. Last, it can identi
+ fy automatically resource bottlenecks and common classes of performance is
+ sues. Our real-world experimental evaluation with Giraph and PowerGraph, t
+ wo state-of-the-art distributed graph\nprocessing systems, shows that Grad
+ e10 can reveal large differences in the nature and severity of bottlenecks
+  across systems and workloads. We also show that Grade10 can be used in de
+ bugging processes, by exemplifying how we find with it a synchronization b
+ ug in PowerGraph that slows down affected phases by 1.10−2.50x. Grad
+ e10 is an open-source project available at https://github.com/atlarge-rese
+ arch/grade10.
+END:VEVENT
+END:VCALENDAR
+

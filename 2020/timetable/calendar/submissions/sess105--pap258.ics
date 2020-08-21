@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200916T080000
+DTEND;TZID=Asia/Tokyo:20200916T085000
+UID:ieeecluster_IEEE Cluster 2020_sess105_pap258@linklings.com
+SUMMARY:Opportunities and limitations of Quality-of-Service in Message Pas
+ sing applications on adaptively routed Dragonfly and Fat Tree networks
+DESCRIPTION:Paper\n\nOpportunities and limitations of Quality-of-Service i
+ n Message Passing applications on adaptively routed Dragonfly and Fat Tree
+  networks\n\nWilke, Kenny\n\nAvoiding communication bottlenecks remains a 
+ critical challenge in high-performance computing (HPC) as systems grow to 
+ exascale. Numerous design possibilities exist for avoiding network congest
+ ion including topology, adaptive routing, congestion control, and quality-
+ of-service (QoS). While network design often focuses on topological featur
+ es like diameter, bisection bandwidth, and routing, efficient QoS implemen
+ tations will be critical for next-generation interconnects. HPC workloads 
+ are dominated by tightly-coupled mathematics, making delays in a single me
+ ssage manifest as delays across an entire parallel job. QoS can spread tra
+ ffic onto different virtual lanes (VLs), lowering the impact of network ho
+ tspots by providing priorities or bandwidth guarantees that prevent starva
+ tion of critical traffic. Two leading topology candidates, Dragonfly and F
+ at Tree, are often discussed in terms of routing properties and cost, but 
+ the topology can have a major impact on QoS. While Dragonfly has attractiv
+ e routing flexibility and cost relative to Fat Tree, the extra routing com
+ plexity requires several VLs to avoid deadlock. Here we discuss the specia
+ l challenges of Dragonfly, proposing configurations that use different rou
+ ting algorithms for different service levels (SLs) to limit VL requirement
+ s. We provide simulated results showing how each QoS strategy performs on 
+ different classes of application and different workload mixes. Despite Dra
+ gonfly's desirable characteristics for adaptive routing, Fat Tree is shown
+  to be an attractive option when QoS is considered.
+END:VEVENT
+END:VCALENDAR
+

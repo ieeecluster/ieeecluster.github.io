@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T140000
+DTEND;TZID=Asia/Tokyo:20200917T145000
+UID:ieeecluster_IEEE Cluster 2020_sess109_pap172@linklings.com
+SUMMARY:A Hybrid MPI+PGAS Approach to Improve Strong Scalability Limits of
+  Finite Element Solvers
+DESCRIPTION:Paper\n\nA Hybrid MPI+PGAS Approach to Improve Strong Scalabil
+ ity Limits of Finite Element Solvers\n\nJansson\n\nCurrent finite element 
+ codes scale reasonably well as long as each core has sufficient amount of 
+ local work that can balance communication costs. However, achieving effici
+ ent performance at exascale will require unreasonable large problem sizes,
+  in particular for low-order methods, where the small amount of work per e
+ lement already is a limiting factor on current post petascale machines. Ke
+ y bottlenecks for these methods are sparse matrix assembly, where communic
+ ation latency starts to limit performance as the number of cores increases
+ , and linear solvers, where efficient overlapping is necessary to amortize
+  communication and synchronization cost of sparse matrix vector multiplica
+ tion and dot products. We present our work on improving strong scalability
+  limits of message passing based general low-order finite element based so
+ lvers. Using lightweight one-sided communication offered by partitioned gl
+ obal address space languages (PGAS), we demonstrate that the scalability o
+ f performance critical, latency sensitive sparse matrix assembly can achie
+ ve almost an order of magnitude better scalability. Linear solvers are als
+ o addressed via a signaling put algorithm for low-cost point-to-point sync
+ hronization, achieving similar performance as message passing based linear
+  solvers. We introduce a new hybrid MPI+PGAS implementation of the open so
+ urce general finite element framework FEniCS, replacing the linear algebra
+  backend with a new library written in Unified Parallel C (UPC).  A detail
+ ed description of the implementation and the hybrid interface to FEniCS is
+  given, and the feasibility of the approach is demonstrated via a performa
+ nce study of the hybrid implementation on Cray XC40 machines.
+END:VEVENT
+END:VCALENDAR
+

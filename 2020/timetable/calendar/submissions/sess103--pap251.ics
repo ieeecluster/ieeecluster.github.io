@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200915T140000
+DTEND;TZID=Asia/Tokyo:20200915T145000
+UID:ieeecluster_IEEE Cluster 2020_sess103_pap251@linklings.com
+SUMMARY:Modeling the Performance of Scientific Workflow Executions on HPC 
+ Platforms with Burst Buffers
+DESCRIPTION:Paper\n\nModeling the Performance of Scientific Workflow Execu
+ tions on HPC Platforms with Burst Buffers\n\nPottier, Da Silva, Casanova, 
+ Deelman\n\nScientific domains ranging from bioinformatics to astronomy and
+  earth\nscience rely on traditional high-performance computing (HPC) codes
+ , often\nencapsulated in scientific workflows. In contrast to traditional 
+ HPC codes that\nemploy a few programming and runtime approaches that are h
+ ighly\noptimized for HPC platforms, scientific workflows are not necessari
+ ly\noptimized for these platforms. As an effort to reduce the gap between 
+ compute \nand I/O performance, HPC platforms have adopted intermediate sto
+ rage layers \nknown as burst buffers. A burst buffer (BB) is a fast\nstora
+ ge layer positioned between the global parallel file system and the comput
+ e\nnodes. Two designs currently exist: (i) shared, where the BBs\nare loca
+ ted on dedicated nodes; and (ii) on-node, in which\neach compute node embe
+ ds a private BB.\nIn this paper, using accurate simulations and real-world
+  experiments, we\nstudy how to best use these new storage layers when exec
+ uting scientific\nworkflows. These applications are not necessarily optimi
+ zed to run on HPC\nsystems, and thus can exhibit I/O patterns that differ 
+ from that of HPC codes.\nThus, we first characterize the I/O behaviors of 
+ a real-world workflow under\ndifferent configuration scenarios on two lead
+ ership-class HPC systems \n(Cori at NERSC and Summit at ORNL).\nThen, we u
+ se these characterizations to calibrate a simulator for workflow\nexecutio
+ ns on HPC systems featuring shared and private BBs.\nLast, we evaluate our
+  approach against a large I/O-intensive workflow, \nand we provide insight
+ s on the performance levels and the potential\nlimitations of these two BB
+ s architectures.
+END:VEVENT
+END:VCALENDAR
+

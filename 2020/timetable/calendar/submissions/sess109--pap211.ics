@@ -1,0 +1,50 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T140000
+DTEND;TZID=Asia/Tokyo:20200917T145000
+UID:ieeecluster_IEEE Cluster 2020_sess109_pap211@linklings.com
+SUMMARY:Efficient Execution of Dynamic Programming Algorithms on Apache Sp
+ ark
+DESCRIPTION:Paper\n\nEfficient Execution of Dynamic Programming Algorithms
+  on Apache Spark\n\nJavanmard, Ahmad, Zola, Pouchet, Chowdhury...\n\nOne o
+ f the most important properties of distributed computing systems (e.g., Ap
+ ache Spark, Apache Hadoop, etc) on clusters and computation clouds is the 
+ ability to scale out by adding more compute nodes to the cluster. This imp
+ ortant feature can lead to performance gain provided the computation (or t
+ he algorithm) itself can scale out. In other words, the computation (or th
+ e algorithm) should be easily decomposable into smaller units of work to b
+ e distributed among the workers based on the hardware/software configurati
+ on of the cluster or the cloud. Additionally, on such clusters, there is a
+ n important trade-off between communication cost, parallelism, and memory 
+ requirement. Due to the scalability need as well as this trade-off, it is 
+ crucial to have a well-decomposable, adaptive, tunable, and scalable progr
+ am. Tunability enables the programmer to find an optimal point in the trad
+ e-off spectrum to execute the program efficiently on a specific cluster. W
+ e design and implement well-decomposable and tunable dynamic programming a
+ lgorithms from the Gaussian Elimination Paradigm (GEP), such as Floyd-Wars
+ hall’s all-pairs shortest path and Gaussian elimination without pivoting, 
+ for execution on Apache Spark. Our implementations are based on parametric
+  multi-way recursive divide-&-conquer algorithms. We explain how to map im
+ plementations of those grid-based parallel algorithms to the Spark framewo
+ rk. Finally, we provide experimental results illustrating the performance,
+  scalability, and portability of our Spark programs. We show that offloadi
+ ng the computation to an OpenMP environment (by running parallel recursive
+  kernels) within Spark is at least partially responsible for a 2-5x speedu
+ p of the DP benchmarks.
+END:VEVENT
+END:VCALENDAR
+

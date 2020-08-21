@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200916T140000
+DTEND;TZID=Asia/Tokyo:20200916T145000
+UID:ieeecluster_IEEE Cluster 2020_sess112_pec102@linklings.com
+SUMMARY:The Price Performance of Performance Models (Felix Wolf)
+DESCRIPTION:Keynote\n\nThe Price Performance of Performance Models (Felix 
+ Wolf)\n\nWolf\n\nTo understand the scaling behavior of HPC applications, d
+ evelopers often use performance models. A performance model is a formula t
+ hat expresses a key performance metric, such as runtime, as a function of 
+ one or more execution parameters, such as core count and input size. Perfo
+ rmance models offer quick insights on a very high level of abstraction, in
+ cluding predictions of future behavior. In view of the complexity of today
+ ’s applications, which often combine several sophisticated algorithms, cre
+ ating performance models manually is extremely laborious. Empirical perfor
+ mance modeling, the process of learning such models from performance data,
+  offers a convenient alternative, but comes with its own set of challenges
+ . The two most prominent ones are noise and the cost of the experiments ne
+ eded to generate the underlying data. In this talk, we will review the sta
+ te of the art in empirical performance modeling and investigate how we can
+  employ machine learning and other strategies to improve the quality and l
+ ower the cost of the resulting models.
+END:VEVENT
+END:VCALENDAR
+

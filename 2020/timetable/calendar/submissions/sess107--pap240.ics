@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200916T145000
+DTEND;TZID=Asia/Tokyo:20200916T154000
+UID:ieeecluster_IEEE Cluster 2020_sess107_pap240@linklings.com
+SUMMARY:E2Clab: Exploring the Computing Continuum through Repeatable, Repl
+ icable and Reproducible Edge-to-Cloud Experiments
+DESCRIPTION:Paper\n\nE2Clab: Exploring the Computing Continuum through Rep
+ eatable, Replicable and Reproducible Edge-to-Cloud Experiments\n\nRosendo,
+  Silva, Simonin, Costan, Antoniu\n\nDistributed digital infrastructures fo
+ r computation and analytics are now evolving towards an interconnected eco
+ system allowing complex applications to be executed from IoT Edge devices 
+ to the HPC Cloud (aka the Computing Continuum, the Digital Continuum, or t
+ he Transcontinuum). Understanding end-to-end performance in such a complex
+  continuum is challenging. This breaks down to reconciling many, typically
+  contradicting application requirements and constraints with low-level inf
+ rastructure design choices. One important  challenge is to accurately repr
+ oduce relevant behaviors of a given application workflow and representativ
+ e settings of the physical infrastructure underlying this complex continuu
+ m. In this paper we introduce a rigorous methodology for such a process an
+ d validate it through E2Clab.  It is the first platform to support the com
+ plete analysis cycle of an application on the Computing Continuum: (i) the
+  configuration of the experimental environment, libraries and frameworks; 
+ (ii) the mapping between the application parts and machines on the Edge, F
+ og and Cloud; (iii) the deployment of the application on the infrastructur
+ e; (iv) the automated execution; and (v) the gathering of experiment metri
+ cs. We illustrate its usage with  a real-life application deployed on the 
+ Grid'5000 testbed, showing that our framework allows one to understand and
+  improve performance, by correlating it to the parameter settings, the res
+ ource usage and the specifics of the underlying infrastructure.
+END:VEVENT
+END:VCALENDAR
+

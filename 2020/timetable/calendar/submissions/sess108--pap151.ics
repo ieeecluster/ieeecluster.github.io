@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T085000
+DTEND;TZID=Asia/Tokyo:20200917T094000
+UID:ieeecluster_IEEE Cluster 2020_sess108_pap151@linklings.com
+SUMMARY:Power Budgeting of Big Data Applications in Container-based Cluste
+ rs
+DESCRIPTION:Paper\n\nPower Budgeting of Big Data Applications in Container
+ -based Clusters\n\nEnes, Fieni, Expósito, Rouvoy, Touriño\n\nEnergy consum
+ ption is currently highly regarded on computing systems for many reasons, 
+ such as improving the environmental impact and reducing operational costs 
+ considering the rising price of energy. Previous works have analysed how t
+ o improve energy efficiency from the entire infrastructure down to individ
+ ual computing instances (e.g., virtual machines). However, the research is
+  more scarce when it comes to controlling energy consumption, specially in
+  real time and at the software level. This paper presents a platform that 
+ manages a power budget to cap the energy along several hierarchies, from u
+ sers to applications and down to individual computing instances. Using sof
+ tware containers as the underlying virtualization technology, the energy l
+ imitation is implemented thanks to the platform’s ability to monitor conta
+ iner energy consumption and dynamically adjust its CPU resources via verti
+ cal scaling as required. Several representative Big Data applications have
+  been deployed on the proposed platform to prove the feasibility of this p
+ ower budgeting approach for energy control, showing that it is possible to
+  effectively distribute and enforce a power budget among several users and
+  applications.
+END:VEVENT
+END:VCALENDAR
+

@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200915T140000
+DTEND;TZID=Asia/Tokyo:20200915T145000
+UID:ieeecluster_IEEE Cluster 2020_sess103_pap126@linklings.com
+SUMMARY:Resilient Scheduling of Moldable Jobs on Failure-Prone Platforms
+DESCRIPTION:Paper\n\nResilient Scheduling of Moldable Jobs on Failure-Pron
+ e Platforms\n\nBenoit, Le Fèvre, Perotin, Raghavan, Robert...\n\nThis pape
+ r focuses on the resilient scheduling of moldable parallel jobs on high-pe
+ rformance computing (HPC) platforms. Moldable jobs allow for choosing a pr
+ ocessor allocation before execution, and their execution time obeys variou
+ s speedup models. The objective is to minimize the overall completion time
+  of the jobs, or makespan, assuming that jobs are subject to arbitrary fai
+ lure scenarios, and hence need to be re-executed each time they fail until
+  successful completion. This work generalizes the classical framework wher
+ e jobs are known offline and do not fail. We introduce a list-based algori
+ thm, and prove new %complexity results and\napproximation ratios for three
+  prominent speedup models (roofline, communication, Amdahl). We also intro
+ duce a batch-based algorithm, where each job is allowed a restricted numbe
+ r of failures per batch, and prove a new approximation ratio for the arbit
+ rary speedup model. We conduct an extensive set of simulations to evaluate
+  and compare different variants of the two algorithms. The results show th
+ at they consistently outperform some baseline heuristics. In particular, t
+ he list algorithm performs better for the roofline and communication model
+ s, while the batch algorithm has better performance for the Amdahl's model
+ . Overall, our best algorithm is within a factor of 1.47 of a lower bound 
+ on average over the whole set of experiments, and within a factor of 1.8 i
+ n the worst case.
+END:VEVENT
+END:VCALENDAR
+

@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200916T145000
+DTEND;TZID=Asia/Tokyo:20200916T154000
+UID:ieeecluster_IEEE Cluster 2020_sess107_pap140@linklings.com
+SUMMARY:Exploring the Potential of Fast Delta Encoding: Marching to a High
+ er Compression Ratio
+DESCRIPTION:Paper\n\nExploring the Potential of Fast Delta Encoding: March
+ ing to a Higher Compression Ratio\n\nTan, Zhang, Zou, Liao, Xia\n\nDelta c
+ ompression (or called delta encoding) is a data reduction technique capabl
+ e of calculating the differences (i.e., delta) among the very similar file
+ s and chunks, and is thus widely used for optimizing synchronization repli
+ cation, backup/archival storage, cache compression, etc. However, delta co
+ mpression is costly because of its time-consuming wordmatching operations 
+ for delta calculation. Existing delta encoding approaches, are either at a
+  slow encoding speed, such as Xdelta and Zdelta, or at a low compression r
+ atio, such as Ddelta and Edelta. In this paper, we propose Gdelta, a fast 
+ delta encoding approach with a high compression ratio, that improves the d
+ elta encoding speed by employing an improved fast Gear-based rolling hash 
+ for scanning fine-grained words, and a quick arraybased indexing scheme fo
+ r word-matching, and then, after wordmatching, further batch compressing t
+ he rest to improve the compression ratio. Our evaluation results driven by
+  six real-world datasets suggest that Gdelta achieves encoding/decoding sp
+ eedups of 2X∼4X over the classic Xdelta and Zdelta approaches while 
+ increasing the compression ratio by about 10%∼120%.
+END:VEVENT
+END:VCALENDAR
+

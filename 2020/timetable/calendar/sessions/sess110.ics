@@ -1,0 +1,60 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051327Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200917T145000
+DTEND;TZID=Asia/Tokyo:20200917T154000
+UID:ieeecluster_IEEE Cluster 2020_sess110@linklings.com
+SUMMARY:IO, Visualization, and Machine Learning
+DESCRIPTION:Paper\n\nECS2: A Fast Erasure Coding Library for GPU-Accelerat
+ ed Storage Systems With Parallel & Direct IO\n\nChang, Chou, Chou, Chung\n
+ \nAs data volume keeps increasing in a rapid rate, there is an urgent need
+  for large, reliable and cost-effective storage systems. Erasure coding ha
+ s drawn increasing attention because of its ability to ensure data reliabi
+ lity with higher storage efficiency, and it has been widely adopted in man
+ y dist...\n\n---------------------\nParallel Particle Advection Bake-Off F
+ or Scientific Visualization Workloads\n\nBinyahib, Pugmire, Yenpure, Child
+ s\n\nThere are multiple algorithms for parallelizing particle advection fo
+ r scientific visualization workloads. While many previous studies have con
+ tributed to the understanding of individual algorithms, our study aims to 
+ provide a holistic understanding of how algorithms perform relative to eac
+ h other o...\n\n---------------------\ntf-Darshan: Understanding Fine-grai
+ ned I/O Performance in Machine Learning Workloads\n\nChien, Podobas, Peng,
+  Markidis\n\nMachine Learning applications on HPC systems have been gainin
+ g popularity in recent years. The upcoming large scale systems will offer 
+ tremendous parallelism for training through GPUs. However, another heavy a
+ spect of Machine Learning is I/O, and this can potentially be a performanc
+ e bottleneck. Ten...\n\n---------------------\nProfiling and Visualizing P
+ erformance of FPGAs in High-Performance Computing Environments\n\nHuthmann
+ , Podobas, Sommer, Koch, Sano\n\nThe recent maturity in High-Level Synthes
+ is (HLS) has renewed the interest of using Field-Programmable Gate-Arrays 
+ (FPGAs) to accelerate High-Performance Computing (HPC) applications. Today
+ , several studies have shown performance- and power-benefits of using FPGA
+ s compared to existing approaches for...\n\n---------------------\nOptimiz
+ ing GPU Memory Transactions for Convolution Operations\n\nLu, Zhang, Wang\
+ n\nCnvolution computation is a common operation in deep neural networks (D
+ NNs) and is often responsible for performance bottlenecks during training 
+ and inferencing. Existing approaches for accelerating convolution operatio
+ ns aim to reduce computational complexity. However, these strategies often
+  increa...\n\n---------------------\nData Life Aware Model Updating Strate
+ gy for Stream-based Online Deep Learning\n\nRang, Yang, Cheng, Suo, Chen\n
+ \nMany deep learning applications deployed in dynamic environments change 
+ over time, in which the training models are supposed to be continuously up
+ dated with streaming data in order to guarantee better descriptions on dat
+ a trends. However, most of the state-of-the-art learning frameworks suppor
+ t well...\n
+END:VEVENT
+END:VCALENDAR
+

@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:18871231T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200821T051330Z
+LOCATION:Zoom
+DTSTART;TZID=Asia/Tokyo:20200915T090000
+DTEND;TZID=Asia/Tokyo:20200915T095000
+UID:ieeecluster_IEEE Cluster 2020_sess102_pap116@linklings.com
+SUMMARY:DelveFS - An event-driven semantic file system for object stores
+DESCRIPTION:Paper\n\nDelveFS - An event-driven semantic file system for ob
+ ject stores\n\nVef, Steiner, Salkhordeh, Steinkamp, Vennetier...\n\nData-d
+ riven applications are becoming increasingly important in numerous industr
+ ial and scientific fields, growing the need for scalable data storage, suc
+ h as object storage.\nYet, many data-driven applications cannot use object
+  interfaces directly and often have to rely on third-party file system con
+ nectors that support only a basic representation of objects as files in a 
+ flat namespace.\nWith sometimes millions of objects per bucket, this simpl
+ e organization is insufficient for users and applications who are usually 
+ only interested in a small subset of objects.\nThese huge buckets are not 
+ only lacking basic semantic properties and structure, but they are also ch
+ allenging to manage from a technical perspective as object store file syst
+ ems cannot cope with such directory sizes. \n\n\nDelveFS is the first obje
+ ct store file system that solves this challenge by offering the ability to
+  compose a custom semantic file system that allows multiple unique views o
+ nto the object store.\nThrough flexible filters, users can specify each vi
+ ew's content, tailored to their unique interests or an application's requi
+ rements.\nBy processing object store events which describe changes in the 
+ object store, DelveFS is able to keep all views eventually consistent. \nD
+ elveFS allows to operate concurrently through the object and file system i
+ nterfaces on the same set of objects, delivering similar file system throu
+ ghput compared to the native object store interfaces or other file system 
+ connectors.
+END:VEVENT
+END:VCALENDAR
+
