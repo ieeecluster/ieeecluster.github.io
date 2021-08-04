@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180911T163000
+DTEND;TZID=Europe/London:20180911T170000
+UID:ieeecluster_IEEE Cluster 2018_sess108_pap284@linklings.com
+SUMMARY:UniviStor: Integrated Hierarchical and Distributed Storage for HPC
+DESCRIPTION:UniviStor: Integrated Hierarchical and Distributed Storage for
+  HPC\n\nWang, Byna, Dong...\n\n\nHigh performance computing (HPC) architec
+ tures have been adding new layers of storage, such as burst buffers to tol
+ erate latency between memory and disk-based file systems.\nHowever, existi
+ ng file system and burst buffer solutions typically manage each storage la
+ yer individually. Consequently, the burden of managing data across multipl
+ e layers falls upon HPC system users. \n\nTo hide the complexity of managi
+ ng the scattered storage devices from applications, we introduce \textit{U
+ niviStor}, a novel system offering a unified view of  storage layers. By c
+ onsidering each layer's distinct characteristics, UniviStor provides perfo
+ rmance optimization algorithms and data structures for distributed and hie
+ rarchical data placement, interference-aware data movement scheduling, ada
+ ptive data striping, and lightweight workflow management. UniviStor suppor
+ ts parallel I/O libraries, such as MPI-IO and HDF5. Our evaluations on a l
+ arge-scale supercomputer demonstrated that UniviStor outperforms Data Elev
+ ator, a state-of-the-art transparent caching solution for burst buffers by
+  up to 17x and Lustre by up to 46x
+END:VEVENT
+END:VCALENDAR
+

@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180911T133000
+DTEND;TZID=Europe/London:20180911T140000
+UID:ieeecluster_IEEE Cluster 2018_sess106_pap274@linklings.com
+SUMMARY:The Tofu Interconnect D
+DESCRIPTION:The Tofu Interconnect D\n\nAjima, Kawashima, Okamoto...\n\n\nI
+ n this paper, we introduce a new and highly scalable interconnect called T
+ ofu interconnect D that will be used in the post-K machine. This machine w
+ ill officially be operational around 2021. The letter D represents high “d
+ ensity” node and “dynamic” packet slicing for “dual-rail” transfer. Herein
+  we describe the design and the evaluation results of TofuD. Due to the hi
+ gh-density packaging, the optical link ratio of TofuD has decreased to 25%
+  from the 66% optical link ratio of Tofu2. TofuD applies a new technique c
+ alled dynamic packet slicing to reduce latency and to improve fault resili
+ ence. The evaluation results show that the one-way 8-byte Put latency is 0
+ .49 μs. This is 31% lower than the latency of Tofu2. The injection ra
+ te per node is 38.1 GB/s which is approximately 83% of the injection rate 
+ of Tofu2. The link efficiency is as high as approximately 93%.
+END:VEVENT
+END:VCALENDAR
+

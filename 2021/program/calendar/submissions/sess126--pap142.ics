@@ -1,0 +1,57 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180913T143000
+DTEND;TZID=Europe/London:20180913T150000
+UID:ieeecluster_IEEE Cluster 2018_sess126_pap142@linklings.com
+SUMMARY:The AllScale Runtime Application Model
+DESCRIPTION:The AllScale Runtime Application Model\n\nJordan, Heller, Gsch
+ wandtner...\n\n\nContemporary state-of-the-art runtime systems underlying 
+ widely utilized general purpose parallel programming languages and librari
+ es like OpenMP, MPI, or OpenCL provide the foundation for accessing the pa
+ rallel capabilities of modern computing architectures. In the tradition of
+  their respective imperative host languages those runtime systems' main fo
+ cus is on providing means for the distribution and synchronization of oper
+ ations --- while the organization and management of manipulated data is le
+ ft to application developers. Consequently, the distribution of data remai
+ ns inaccessible to those runtime systems. However, many desirable system-l
+ evel features depend on a runtime system's ability to exercise control on 
+ the distribution of data. Thus, program models underlying traditional syst
+ ems lack the potential for the support of those features.\n\nIn this paper
+ , we present a novel application model granting parallel runtime systems s
+ ystem-wide control over the distribution of user-defined shared data struc
+ tures. Our model utilizes the high-level nature of parallel programming la
+ nguages, in particular, the usage of well-typed data structures and the as
+ sociated hiding of implementation details from the application developers.
+  By being based on a generalization of such data structures and extending 
+ the resulting abstraction with features facilitating the automated managem
+ ent of the distribution of those, our model enables runtime systems to dyn
+ amically influence the placement and replication of shared data. This pape
+ r covers a rigorous formal description of our application model, as well a
+ s details on our prototype implementation and experimental results demonst
+ rating its ability to efficiently and scalably manage various data structu
+ res in real-world environments.
+END:VEVENT
+END:VCALENDAR
+

@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180913T133000
+DTEND;TZID=Europe/London:20180913T150000
+UID:ieeecluster_IEEE Cluster 2018_sess126@linklings.com
+SUMMARY:Paper session XIV: Languages and Programming Models
+DESCRIPTION:The AllScale Runtime Application Model\n\nJordan, Heller, Gsch
+ wandtner, Zangerl, Thoman...\n\nContemporary state-of-the-art runtime syst
+ ems underlying widely utilized general purpose parallel programming langua
+ ges and libraries like OpenMP, MPI, or OpenCL provide the foundation for a
+ ccessing the parallel capabilities of modern computing architectures. In t
+ he tradition of their respective imp...\n\n---------------------\nCharmpy:
+  A Python Parallel Programming Model\n\nGalvez, Senthil, Kale\n\nParallel 
+ programming can be extremely challenging. Programming models have been pro
+ posed to simplify this task, but wide acceptance of these remains elusive 
+ for many reasons, including the demand for greater accessibility and produ
+ ctivity.\n\nIn this paper, we introduce a parallel programming model an...
+ \n\n---------------------\nAnd Now for Something Completely Different: Run
+ ning Lisp on GPUs\n\nSuess, Doering, Brinkmann, Nagel\n\nThe internal para
+ llelism of compute resources increases permanently, and graphics processin
+ g units (GPUs) and other accelerators have been gaining importance in many
+  domains. Researchers from life science, bioinformatics or artificial inte
+ lligence, for example, use GPUs to accelerate their computati...\n
+END:VEVENT
+END:VCALENDAR
+

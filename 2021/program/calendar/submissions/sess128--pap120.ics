@@ -1,0 +1,57 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180913T160000
+DTEND;TZID=Europe/London:20180913T163000
+UID:ieeecluster_IEEE Cluster 2018_sess128_pap120@linklings.com
+SUMMARY:Relaxing Scalability Limits with Speculative Parallelism in Sequen
+ tial Monte Carlo
+DESCRIPTION:Relaxing Scalability Limits with Speculative Parallelism in Se
+ quential Monte Carlo\n\nNemeth, Haber, Liesenborgs...\n\n\nSequential Mont
+ e Carlo methods are a useful tool to tackle non-linear problems in a Bayes
+ ian setting. A target posterior distribution is approximated by moving a s
+ et of weighted particles through a sequence of distributions. To counterac
+ t degeneracy caused by sequentially changing the underlying distribution, 
+ particles occasionally need to be resampled. Deciding if this is necessary
+  requires a reduction operation on the weights after each update. Hence, s
+ calability on a cluster is not only determined by the number of particles 
+ used, but also by how well load is balanced. This paper shows how speculat
+ ive execution in Sequential Monte Carlo with Markov Chain Monte Carlo step
+ s can improve parallel scalability. The key insight is that decisions take
+ n based on the reduction result in each step can be accurately predicted. 
+ Consequently, synchronization inherent in the reduction can, in most cases
+ , be avoided, relaxing the limit imposed by load imbalance. Particles are 
+ renumbered during resampling to further improve accuracy. Multiple test sc
+ enarios, each with different load balance characteristics, are studied emp
+ irically on a compute cluster. Tests show that when decisions are predicte
+ d correctly, execution time is reduced drastically for use cases with high
+  load imbalance. Furthermore, the maximum theoretical gain, derived from e
+ xecution characteristics, is compared with the measured improvement to ver
+ ify that most speculative evaluations are actually useful. If predictions 
+ are incorrect, or load is balanced, speculation has no measurable negative
+  impact. Performance is also evaluated in a weak scaling setting on cluste
+ r with 36 cores in each system.
+END:VEVENT
+END:VCALENDAR
+

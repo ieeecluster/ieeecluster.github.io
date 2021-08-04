@@ -1,0 +1,57 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180913T133000
+DTEND;TZID=Europe/London:20180913T140000
+UID:ieeecluster_IEEE Cluster 2018_sess126_pap239@linklings.com
+SUMMARY:Charmpy: A Python Parallel Programming Model
+DESCRIPTION:Charmpy: A Python Parallel Programming Model\n\nGalvez, Senthi
+ l, Kale\n\n\nParallel programming can be extremely challenging. Programmin
+ g models have been proposed to simplify this task, but wide acceptance of 
+ these remains elusive for many reasons, including the demand for greater a
+ ccessibility and productivity.\n\nIn this paper, we introduce a parallel p
+ rogramming model and framework called Charmpy, based on the Python languag
+ e. Charmpy builds on Charm++, and runs on top of its C++ runtime. It prese
+ nts several unique features in the form of a simplified model and API, inc
+ reased flexibility, and the ability to write everything in Python. Charmpy
+  is a high-level model based on the paradigm of distributed migratable obj
+ ects. It retains the benefits of the Charm++ runtime, \nincluding dynamic 
+ load balancing, asynchronous execution model with automatic \noverlap of c
+ ommunication and computation, high performance, and scalability from \nlap
+ tops to supercomputers. By being Python-based, Charmpy also benefits from 
+ \nmodern language features, access to popular scientific computing and dat
+ a \nscience software, and interoperability with existing technologies like
+  C, \nFortran and OpenMP.\n\nTo illustrate the simplicity of the model, we
+  show how to implement a \ndistributed parallel map function based on the 
+ Master-Worker pattern using \nCharmpy, supporting asynchronous concurrent 
+ jobs. We also present \nperformance results running stencil code and molec
+ ular dynamics mini-apps fully \nwritten in Python, on Blue Waters and Cori
+  supercomputers. For \nstencil3d, we show performance similar to an equiva
+ lent MPI-based program,\nand significantly improved performance for imbala
+ nced computations. Using \nNumba to JIT-compile the critical parts of the 
+ code, we show performance for \nboth mini-apps similar to the equivalent C
+ ++ code.
+END:VEVENT
+END:VCALENDAR
+

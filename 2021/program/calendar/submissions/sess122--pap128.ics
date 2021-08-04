@@ -1,0 +1,54 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180913T104500
+DTEND;TZID=Europe/London:20180913T111500
+UID:ieeecluster_IEEE Cluster 2018_sess122_pap128@linklings.com
+SUMMARY:Hierarchical Clock Synchronization in MPI
+DESCRIPTION:Hierarchical Clock Synchronization in MPI\n\nHunold, Carpen-Am
+ arie\n\n\nMPI benchmarks are used for analyzing or tuning the performance 
+ of MPI libraries. Generally, every MPI library should be adjusted to the g
+ iven parallel machine, especially on supercomputers. System operators can 
+ define which algorithm should be selected for a specific MPI operation, an
+ d this decision which algorithm to select is usually made after analyzing 
+ bench- mark results. The problem is that the latency of communication oper
+ ations in MPI is very sensitive to the chosen data acquisition and data pr
+ ocessing method. For that reason, depending on how the performance is meas
+ ured, system operators may end up with a completely different MPI library 
+ setup.\nIn the present work, we focus on the problem of precisely measurin
+ g the latency of collective operations, in particular, for small payloads,
+  where external experimental factors play a significant role. We present a
+  novel clock synchronization algorithm, which exploits the hierarchical ar
+ chitecture of compute clusters, and we show that it outperforms previous a
+ pproaches, both in run-time and in precision. We also propose a different 
+ scheme to obtain precise MPI run-time measurements (called Round-Time), wh
+ ich is based on given, fixed time slices, as opposed to the traditional wa
+ y of measuring for a predefined number of repetitions. We also highlight t
+ hat the use of MPI_Barrier has a significant effect on experimentally dete
+ rmined latency values of MPI collectives. We argue that MPI_Barrier should
+  be avoided if the average run- time of the barrier function is in the sam
+ e order of magnitude as the run-time of the MPI function to be measured.
+END:VEVENT
+END:VCALENDAR
+

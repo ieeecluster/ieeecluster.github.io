@@ -1,0 +1,54 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180912T153000
+DTEND;TZID=Europe/London:20180912T160000
+UID:ieeecluster_IEEE Cluster 2018_sess117_pap255@linklings.com
+SUMMARY:Computing Exact Vertex Eccentricity on Massive-scale Distributed G
+ raphs
+DESCRIPTION:Computing Exact Vertex Eccentricity on Massive-scale Distribut
+ ed Graphs\n\nIwabuchi, Sanders, Henderson...\n\n\nThe eccentricity of a ve
+ rtex is defined as the length of the longest shortest path to any other ve
+ rtex. While eccentricity is an important measure of vertex centrality, dir
+ ectly computing exact eccentricity for all vertices on large-scale graphs 
+ is prohibitively costly. Takes and Kosters proposed an iterative algorithm
+  that uses multiple runs of single-source shortest path (SSSP) to compute 
+ lower and upper bounds on eccentricity at every vertex. Their technique co
+ nverges to exact eccentricity by performing SSSP from only a small percent
+ age of vertices, when sources are efficiently selected. However, their sou
+ rce selection strategies do not always yield rapid convergence.\n\nWe prop
+ ose a pincer movement source selection algorithm that efficiently selects 
+ source vertices based on analysis of the lower and upper bounds produced b
+ y SSSP. We also leverage k-BFS, which runs breadth-first search (BFS) from
+  multiple sources concurrently on HavoqGT, a high-performance vertex-centr
+ ic message-passing graph processing framework, to achieve an additional si
+ gnificant performance improvement on distributed-memory systems.\n\nWe dem
+ onstrate that our novel source vertex selection strategy has better perfor
+ mance on\nvarious real-world graph datasets compared with the previous str
+ ategy. In addition, we compute exact eccentricity for graphs with more tha
+ n 1000X more edges (112B undirected edges) than graphs in the previous lit
+ erature.
+END:VEVENT
+END:VCALENDAR
+
