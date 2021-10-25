@@ -1,0 +1,7 @@
+baseurl: /2022
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+title: IEEE Cluster 2022
+description: Welcome to the website for the IEEE Cluster 2022 conference!
