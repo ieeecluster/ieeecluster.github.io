@@ -6,7 +6,7 @@ layout: default
 
 [Review the double-blind review policy]({% link double_blind.md %})
 
-IEEE Cluster 2022 is the 24th edition of the IEEE Cluster conference series, organized in cooperation with SIGHPC.
+IEEE Cluster 2022 is the 24th edition of the IEEE Cluster conference series.
 
 Clusters remain the primary system architecture for building many of today’s rapidly evolving computing infrastructures and are used to solve some of the most complex problems. The challenges to make them scalable, efficient, productive, and increasingly effective requires a community effort in the areas of cluster system design, advancing the capabilities of the software stack, system management and monitoring, and the design of algorithms, methods, and applications to leverage the overall infrastructure.
 

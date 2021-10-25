@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
+  <title>{{ page.title }}::Cluster 2022</title>
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles_feeling_responsive.css">
 
@@ -91,10 +91,10 @@
               <li><a href="{% link sponsors/index.md %}">Sponsors & Support</a></li>
           -->
           <li class="divider"></li>
-          <li class="has-dropdown {% if page.url == '/keynote/' or page.url == '/program/' %} active{% endif %}">
+          <li class="has-dropdown {% if page.url == '/keynotes/' or page.url == '/program/' %} active{% endif %}">
             <a>Program</a>
             <ul class="dropdown">
-              <li><a href="{% link keynote/index.md %}">Keynotes</a></li>
+              <li><a href="{% link keynotes/index.md %}">Keynotes</a></li>
               <li><a href="{% link program/index.md %}">Schedule</a></li>
             </ul>
           </li>
@@ -138,7 +138,11 @@
       <article itemscope itemtype="http://schema.org/Article">
         <div itemprop="name">
           <p><img src="{{ site.baseurl }}/assets/img/IEEE-Cluster-2022-date-location.png" alt="IEEE Cluster 2022"></p>
-          <h1>{{ page.title }}</h1>
+            <h1>{{ page.title }}
+              {% if page.title != "Welcome!" %}
+              <span style="font-size: 20pt;">&#x25CF;</span> Cluster 2022
+              {% endif %}
+            </h1>
         </div>
         </header>
         <div itemprop="articleSection" markdown="1">
