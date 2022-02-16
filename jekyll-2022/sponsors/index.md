@@ -1,5 +1,7 @@
 ---
-title: Call for Sponsors
+#title: Call for Sponsors
+# empty title to prevent title generation in the default layout
+title: ''
 layout: default
 ---
 # Financial Support Tiers
