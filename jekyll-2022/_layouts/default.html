@@ -136,11 +136,13 @@
       <article itemscope itemtype="http://schema.org/Article">
         <div itemprop="name">
           <p><img src="{{ site.baseurl }}/assets/img/IEEE-Cluster-2022-date-location.png" alt="IEEE Cluster 2022"></p>
-          {% if page.title != '' %}
+          {% if page.title == 'Welcome!' %}
+            <h1>{{ page.title }}</h1>
+          {% elsif page.title == 'Call for Sponsors' %}
+            <h1></h1>
+          {% else %}
             <h1>{{ page.title }}
-              {% if page.title != "Welcome!" %}
               <span style="font-size: 20pt;">&#x25CF;</span> Cluster 2022
-              {% endif %}
             </h1>
           {% endif %}
         </div>
