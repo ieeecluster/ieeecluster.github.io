@@ -86,10 +86,6 @@
               <!--<li><a href="{% link authors/index.md %}">Authors</a></li>-->
             </ul>
           </li>
-          <!--
-              <li class="divider"></li>
-              <li><a href="{% link sponsors/index.md %}">Sponsors & Support</a></li>
-          -->
           <li class="divider"></li>
           <li class="has-dropdown {% if page.url == '/keynotes/' or page.url == '/program/' %} active{% endif %}">
             <a>Program</a>
@@ -98,6 +94,8 @@
               <li><a href="{% link program/index.md %}">Schedule</a></li>
             </ul>
           </li>
+          <li class="divider"></li>
+          <li{% if page.url == '/sponsors/'%} class="active"{% endif %}><a href="{% link sponsors/index.md %}">Sponsors & Support</a></li>
           <li class="divider"></li>
           <li{% if page.url == '/mentoring/'%} class="active"{% endif %}><a href="{% link mentoring/index.md %}">Mentoring</a></li>
           <li class="divider"></li>

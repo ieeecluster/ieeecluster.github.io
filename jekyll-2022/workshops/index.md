@@ -9,7 +9,7 @@ layout: default
 
 Experts in cluster computing are invited to share their expertise with the
 community by submitting proposals for workshops to be co-located with the
-Cluster 2022 conference that will be held on September 5-8, 2022 in Heidelberg,
+Cluster 2022 conference that will be held on September 6-9, 2022 in Heidelberg,
 Germany. The Cluster 2022 workshop program will provide an opportunity to
 present preliminary work related to the topics covered by the conference and
 will give attendees access to the latest works-in-progress in the field.
