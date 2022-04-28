@@ -138,34 +138,7 @@ Michela Taufer, University of Tennessee, Knoxville, USA
 * Christopher Zimmer, *ORNL*
 
 
-### Area 3: Data, Storage, and Visualization
-**Chair:** Jay Lofstead, *Sandia National Labs*\
-**Chair:** Lavanya Ramakrishnan, *Lawrence Berkeley National Lab*
-* Gabriel Antoniu, *Inria*
-* Leonardo Bautista-Gomez, *Barcelona Supercomputing Center*
-* Suren Byna, *Lawrence Berkeley National Laboratory*
-* Silvina Caino-Lores, *University of Tennessee-Knoxville*
-* Jesus Carretero, *University Carlos III of Madrid*
-* Hank Childs, *University of Oregon*
-* Hariharan Devarajan, *Illinois Institute of Technology*
-* Rosa Filgueira, *Heriot-Watt University, MACS*
-* Shadi Ibrahim, *Inria*
-* Anthony Kougkas, *Illinois Institute of Technology*
-* Dong Li, *University of California, Merced*
-* Neda Maleki, *Lund University*
-* Bogdan Nicolae, *Argonne National Laboratory*
-* Tom Peterka, *Argonne National Laboratory*
-* David Pugmire, *Oak Ridge National Laboratory*
-* Caitlin Ross, *Kitware*
-* Kento Sato, *RIKEN R-CCS*
-* Song Wu, *Huazhong University of Science and Technology*
-* Bing Xie, *Oak Ridge National Laboratory*
-* Haiying Xu, *UCAR*
-* Guangyan Zhang, *Tsinghua University*
-* Amelie Chi Zhou, *Shenzhen University*
-
-
-### Area 4: Programming and System Software
+### Area 3: Programming and System Software
 **Chair:** Seetharami Seelam, *IBM*\
 **Chair:** Didem Unat, *Koc University*
 * Mehmet Esat Belviranlı, *Colorado School of Mines*
@@ -192,3 +165,29 @@ Michela Taufer, University of Tennessee, Knoxville, USA
 * Patrick Widener, *Sandia National Laboratories*
 * Yiqi Xu, *VMware Inc*
 * Rio Yokota, *Tokyo Institute of Technology*
+
+### Area 4: Data, Storage, and Visualization
+**Chair:** Jay Lofstead, *Sandia National Labs*\
+**Chair:** Lavanya Ramakrishnan, *Lawrence Berkeley National Lab*
+* Gabriel Antoniu, *Inria*
+* Leonardo Bautista-Gomez, *Barcelona Supercomputing Center*
+* Suren Byna, *Lawrence Berkeley National Laboratory*
+* Silvina Caino-Lores, *University of Tennessee-Knoxville*
+* Jesus Carretero, *University Carlos III of Madrid*
+* Hank Childs, *University of Oregon*
+* Hariharan Devarajan, *Illinois Institute of Technology*
+* Rosa Filgueira, *Heriot-Watt University, MACS*
+* Shadi Ibrahim, *Inria*
+* Anthony Kougkas, *Illinois Institute of Technology*
+* Dong Li, *University of California, Merced*
+* Neda Maleki, *Lund University*
+* Bogdan Nicolae, *Argonne National Laboratory*
+* Tom Peterka, *Argonne National Laboratory*
+* David Pugmire, *Oak Ridge National Laboratory*
+* Caitlin Ross, *Kitware*
+* Kento Sato, *RIKEN R-CCS*
+* Song Wu, *Huazhong University of Science and Technology*
+* Bing Xie, *Oak Ridge National Laboratory*
+* Haiying Xu, *UCAR*
+* Guangyan Zhang, *Tsinghua University*
+* Amelie Chi Zhou, *Shenzhen University*
