@@ -9,7 +9,7 @@ IEEE Cluster 2022 is soliciting submissions from academia, laboratory, and indus
 
 Posters will be prominently displayed and presented during a session in the conference. Additionally, posters will be made publicly available on the conference website.
 
-The topics of interest are the same as in the[ Call for Papers](https://easychair.org/conferences/?conf=clusterposter2022).
+The topics of interest are the same as in the[ Call for Papers]({{ site.baseurl }}/papers).
 
 
 ### **Submissions**
