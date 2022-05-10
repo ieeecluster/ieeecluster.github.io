@@ -100,7 +100,7 @@ IEEE Cluster 2022 will use a **double-blind review process**, which is a change 
 
 
 * Submission site open: March 1, 2022
-* Full Papers due: May 13, 2022
+* Full Papers due: <span style="color:red;font-weight:bold">May 20, 2022 (final extension)</span>
 * Paper Acceptance Notification: July 4, 2022
 * Camera-ready deadline: July 25, 2022
 * Conference: September 6-9, 2022
