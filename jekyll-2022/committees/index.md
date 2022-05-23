@@ -106,7 +106,6 @@ Michela Taufer, University of Tennessee, Knoxville, USA
 * Piotr Luszczek, *University of Tennessee, Innovative Computing Laboratory*
 * Kamesh Madduri, *Pennsylvania State University*
 * John D. Owens, *UC Davis*
-* Guillaume Pallez (Aupy), *Inria*
 * Eric Phipps, *Sandia National Laboratories*
 * A. Erdem Sariyuce, *University at Buffalo*
 * Christian Schulz, *University of Vienna*
