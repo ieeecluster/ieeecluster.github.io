@@ -135,6 +135,11 @@ Michela Taufer, University of Tennessee, Knoxville, USA
 * Shinji Sumimoto, *Fujitsu*
 * Keith Underwood, *HPE*
 * Christopher Zimmer, *ORNL*
+* Nan Ding, *Lawrence Berkeley National Laboratory*
+* Tyler Allen, *University of North Carolina Charlotte*
+* Saurabh Jha, *IBM*
+* Pavel Shamis, *ARM*
+* Yijia Zhang, *Peng Cheng Laboratory*
 
 
 ### Area 3: Programming and System Software
