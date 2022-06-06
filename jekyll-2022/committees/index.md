@@ -33,6 +33,10 @@ Giorgis Georgakoudis, Lawrence Livermore National Laboratory, USA
 
 Sarah Neuwirth, Goethe-University Frankfurt, Germany
 
+### Student Volunteer Chair
+
+Kazem Shekofteh, Heidelberg University, Germany
+
 ### Student Funding Liaison
 
 Sunita Chandrasekaran, University of Delaware, USA
