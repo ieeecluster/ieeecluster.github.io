@@ -19,6 +19,8 @@ Comprehensive information about the main attractions, activities, events and res
 
 ## Visa Procedures
 
+All participants who need a Visa Confirmation Letter are requested to send an email providing the information below to the VDE-Conference Services &lt;vde-conferences AT vde.com> with subject IEEE Cluster 2022-Confirmation letter for VISA application. Please note that a visa application letter will be sent only after completed and paid registration.
+
 Information to be added at a later date.
 
 ## Travel and Local Transportation
