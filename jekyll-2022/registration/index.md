@@ -26,7 +26,7 @@ Early registration policy:
 Registration cancellation policy:
 
 * Registration can be canceled until **August 5, 2022** with a refund of the original registration fee minus a processing fee of € 50.00.
-* It requires a written notice by email to the VDE-Conference Services &lt;vde-conferneces AT vde.com> and the Cluster 2022 Finance Chair &lt;minsi.atwork AT gmail.com>.
+* It requires a written notice by email to the VDE-Conference Services &lt;vde-conferences AT vde.com> and the Cluster 2022 Finance Chair &lt;minsi.atwork AT gmail.com>.
 * No refund is provided on or after August 6, 2022.
 
 Visa letter:

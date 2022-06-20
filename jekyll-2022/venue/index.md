@@ -21,7 +21,15 @@ Comprehensive information about the main attractions, activities, events and res
 
 All participants who need a Visa Confirmation Letter are requested to send an email providing the information below to the VDE-Conference Services &lt;vde-conferences AT vde.com> with subject IEEE Cluster 2022-Confirmation letter for VISA application. Please note that a visa application letter will be sent only after completed and paid registration.
 
-Information to be added at a later date.
+Following information is required in the email when requesting a visa letter:
+
+* Full Name
+* Company
+* Date of Birth
+* Passport No.
+* Date of Expiry of the Passport
+* Date of Issue of the Passport
+* Place of Issue of the Passport
 
 ## Travel and Local Transportation
 
