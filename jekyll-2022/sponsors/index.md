@@ -37,7 +37,7 @@ The following tiers of support are available:
     be located in prime space near the conference halls.
 -   Symposium Advertisements: listed in Agenda, listed on Website,
     opportunity to share promotional items at Commitment desk.
--   Includes attendance to Cluster 2021 for one person.
+-   Includes attendance to Cluster 2022 for one person.
 
 **Silver** - "Breakfast" (Early Commitment: €5,500, Late Commitment: €6,500).
 
@@ -52,7 +52,7 @@ The following tiers of support are available:
 -   Table Top Display and Symposium Advertisement as above.
 -   “Lunch supported by…”: display of company banner if provided,
     display of company logo on signage for supported function.
--   Includes attendance to Cluster2021 for three persons.
+-   Includes attendance to Cluster 2022 for three persons.
 
 **Platinum** - "Evening Event" (Early Commitment: €15,000, Late Commitment: €18,000).
 
@@ -89,6 +89,10 @@ Contact William Jalby (william.jalby@uvsq.fr) or Georg Hager
 
 ![SIGHPC]({{ site.baseurl }}/assets/img/sighpc_logo_72dpi.jpg){: style="margin-left:80px;width:150px"}
 
+## Bronze Sponsors
+![MEGWARE]({{ site.baseurl }}/assets/img/MEGWARE-Logo.png){: width="250"}
+![Meta]({{ site.baseurl }}/assets/img/Meta_logo.svg){: width="250"}
+![MEGWARE]({{ site.baseurl }}/assets/img/ParaTools.svg){: width="250"}
 
 <!--
 ### Bronze level support:
