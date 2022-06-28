@@ -18,6 +18,9 @@ discuss recent advances and trends in, but not limited to:
 -   Programming and Systems Software
 -   Data, Storage, and Visualization
 
+![IEEE]({{ site.baseurl }}/assets/img/ieee_mb_blue.png){: width="170" height="60"}
+![IEEE_CS]({{ site.baseurl }}/assets/img/ieee-computer-society-v1.png){: width="170" height="60" style="margin:1em;"}
+
 ![ACM In Cooperation]({{ site.baseurl }}/assets/img/ACM-In-Cooperation_large.jpg){: width="250"}
 
 

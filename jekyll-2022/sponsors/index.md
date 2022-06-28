@@ -79,15 +79,16 @@ Contact William Jalby (william.jalby@uvsq.fr) or Georg Hager
 
 ------------------------------------------------------------------------
 
-### Sponsors
+### Technical Sponsors
+
+![IEEE]({{ site.baseurl }}/assets/img/ieee_mb_blue.png){: width="170" height="60"}
+![IEEE_CS]({{ site.baseurl }}/assets/img/ieee-computer-society-v1.png){: width="170" height="60" style="margin:1em;"}
 
 ![ACM In Cooperation]({{ site.baseurl }}/assets/img/ACM-In-Cooperation_large.jpg){: width="250"}
 
 
 ![SIGHPC]({{ site.baseurl }}/assets/img/sighpc_logo_72dpi.jpg){: style="margin-left:80px;width:150px"}
 
-<img src="{{ site.baseurl }}/assets/img/ieee_mb_blue.png" width="170" height="60" style="margin:1em;" />
-<img src="{{ site.baseurl }}/assets/img/ieee-computer-society-v1.png" width="170" height="60" style="margin:1em;"/>
 
 <!--
 ### Bronze level support:
