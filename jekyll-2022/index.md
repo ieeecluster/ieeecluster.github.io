@@ -18,6 +18,11 @@ discuss recent advances and trends in, but not limited to:
 -   Programming and Systems Software
 -   Data, Storage, and Visualization
 
+![ACM In Cooperation]({{ site.baseurl }}/assets/img/ACM-In-Cooperation_large.jpg){: width="250"}
+
+
+![SIGHPC]({{ site.baseurl }}/assets/img/sighpc_logo_72dpi.jpg){: style="margin-left:80px;width:150px"}
+
 <!--
 ### Sponsors:
 <img src="{{ site.baseurl }}/assets/img/ieee_mb_blue.png" width="170" height="60" style="margin:1em;" />
