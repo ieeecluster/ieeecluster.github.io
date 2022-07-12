@@ -24,6 +24,7 @@ The workshop is split into lectures, interactive exercises and practical hands-o
 participants questions.
 
 * Marcel Nellesen, RWTH Aachen University
+* Christian Loeschen, TU Dresden
 
 ### Heterogeneous Programming in Modern C++ with SYCL
 
