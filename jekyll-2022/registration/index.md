@@ -11,7 +11,7 @@ layout: default
 | Student Non-Member        | -                   | €715                 | €800                      |
 | Life Member               | -                   | €470                 | €525                      |
 
-Registration site: TBD
+Registration site: Please follow the [link](https://online-registration.vde.com/vdev20/emc00/register.aspx?OrgCode=10&EvtID=10059&AppCode=REG&CC=122032940026)
 
 Author registration policy:
 
