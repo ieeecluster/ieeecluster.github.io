@@ -30,7 +30,7 @@ Please submit the extended abstract and the poster draft via the[ online submiss
 
 
 
-* Poster submission deadline: July 8, 2022
+* Poster submission deadline: <del>July 8, 2022</del> <b>July 15, 2022</b>
 * Acceptance Notification: July 22, 2022
 * Camera-ready deadline: July 29, 2022 (firm)
 * All deadlines are Anywhere on Earth (AoE)
