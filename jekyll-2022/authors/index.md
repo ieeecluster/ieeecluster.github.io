@@ -18,7 +18,8 @@ and paper validation (plagiarism/format check) via IEEE PDF eXpress.
 
 ## Important dates
 
--   **Camera-ready paper deadline:** July 25, 2022
+-   **Camera-ready paper deadline:** <strike>July 25, 2022</strike>
+<span style="color:red;font-weight:bold">July 31, 2022</span>
 -   **Conference:** September 6-9, 2022
 -   All deadlines are [Anywhere on Earth (AoE)](https://www.timeanddate.com/time/zones/aoe)
 
@@ -31,4 +32,4 @@ and paper validation (plagiarism/format check) via IEEE PDF eXpress.
 -   **Poster papers:** 2 pages (no reference pages or additional pages)
 -   **Workshop papers:** up to 10 pages (maximum length is set by
     workshop organizers) + additional pages for a fee
--   (Additional pages fee: 100 USD/page)
+-   (Additional pages fee: 100 EUR/page)
