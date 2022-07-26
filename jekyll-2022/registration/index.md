@@ -16,7 +16,8 @@ Registration site: Please follow the [link](https://online-registration.vde.com/
 Author registration policy:
 
 * We require one non-student registration per accepted paper (see Author registration column in the table above).
-* At least one author should register for each accepted paper by **July 25, 2022**.
+* At least one author should register for each accepted paper by <strike>July 25, 2022</strike>
+<span style="color:red;font-weight:bold">July 31, 2022</span>.
 * Each Author Registration can be applied to only one paper.
 
 Early registration policy:
