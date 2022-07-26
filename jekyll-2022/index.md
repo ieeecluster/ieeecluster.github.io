@@ -17,6 +17,7 @@ discuss recent advances and trends in, but not limited to:
 -   Architecture, Networks/Communication, and Management
 -   Programming and Systems Software
 -   Data, Storage, and Visualization
+### Sponsors and support
 
 ![IEEE]({{ site.baseurl }}/assets/img/ieee_mb_blue.png){: width="170" height="60"}
 ![IEEE_CS]({{ site.baseurl }}/assets/img/ieee-computer-society-v1.png){: width="170" height="60" style="margin:1em;"}
@@ -26,19 +27,9 @@ discuss recent advances and trends in, but not limited to:
 
 ![SIGHPC]({{ site.baseurl }}/assets/img/sighpc_logo_72dpi.jpg){: style="margin-left:80px;width:150px"}
 
-<!--
-### Sponsors:
-<img src="{{ site.baseurl }}/assets/img/ieee_mb_blue.png" width="170" height="60" style="margin:1em;" />
-<img src="{{ site.baseurl }}/assets/img/ieee-computer-society-v1.png" width="170" height="60" style="margin:1em;" />
--->
-<!--
-### In cooperation with:
+![HUAWEI]({{ site.baseurl }}/assets/img/Huawei_POS_RBG_Vertical-300ppi.jpg){: width="250"}
 
-<img src="{{ site.baseurl }}/assets/img/logo_sighpc.jpg" width="170" height="60" style="margin:1em;" />
--->
-
-<!--
-### Supported by:
-<img src="{{ site.baseurl }}/assets/img/logo_paratools.svg" width="170" height="60" style="margin:1em;" />
-<img src="{{ site.baseurl }}/assets/img/logo_google.png" width="170" height="60" style="margin:1em;" />
--->
+![MEGWARE]({{ site.baseurl }}/assets/img/MEGWARE-Logo.png){: width="250"}
+![Meta]({{ site.baseurl }}/assets/img/Meta_logo.svg){: width="250"}
+![MEGWARE]({{ site.baseurl }}/assets/img/ParaTools.svg){: width="250"}
+![GRAPHCORE]({{ site.baseurl }}/assets/img/graphcore.png){: width="250"}
