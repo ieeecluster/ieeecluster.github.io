@@ -3,7 +3,7 @@ title: Registration
 layout: default
 ---
 
-| Category            | Author Registration (Due July 25, 2022) | Early Registration (Due August 5, 2022) | Late/On-site Registration |
+| Category            | Author Registration (Due July 25, 2022) | Early Registration (Due August 12, 2022) | Late/On-site Registration |
 |---------------------------|---------------------|----------------------|---------------------------|
 | IEEE/ACM-SIGHPC Member    | €850                | €850                 | €950                      |
 | Non-Member                | €1020               | €1020                | €1140                     |
@@ -22,13 +22,13 @@ Author registration policy:
 
 Early registration policy:
 
-* Early registration is due **August 5, 2022**. Late registration fee applies on or after August 6, 2022.
+* Early registration is due **August 12, 2022**. Late registration fee applies on or after August 13, 2022.
 
 Registration cancellation policy:
 
-* Registration can be canceled until **August 5, 2022** with a refund of the original registration fee minus a processing fee of € 50.00.
+* Registration can be canceled until **August 12, 2022** with a refund of the original registration fee minus a processing fee of € 50.00.
 * It requires a written notice by email to the VDE-Conference Services &lt;vde-conferences AT vde.com> and the Cluster 2022 Finance Chair &lt;minsi.atwork AT gmail.com>.
-* No refund is provided on or after August 6, 2022.
+* No refund is provided on or after August 13, 2022.
 
 Visa letter:
 
