@@ -25,9 +25,10 @@ Min Si, Facebook, Inc., USA
 Nikhil Jain, NVIDIA, Inc., USA\
 Kento Sato, RIKEN, Japan
 
-### Web Chair
+### Web Co-Chairs
 
-Giorgis Georgakoudis, Lawrence Livermore National Laboratory, USA
+Giorgis Georgakoudis, Lawrence Livermore National Laboratory, USA\
+Daniel Nichols, University of Maryland, USA
 
 ### Student Program Chair
 
