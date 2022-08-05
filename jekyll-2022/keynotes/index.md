@@ -3,7 +3,7 @@ title: Keynotes
 layout: default
 ---
 
-## Wednesday, September 7 -- 9:15 - 10:30
+## Wednesday, September 7 -- 9:30 - 10:30
 
 <div style="float:left;margin:10px"><img src="LucaHeadShot2019.jpg" width="180px" /></div>
 <div style="padding:10px;">
@@ -21,7 +21,7 @@ Luca Benini holds the chair of digital Circuits and systems at ETHZ and is Full 
 micro-​systems and machine learning hardware. He has published more than 1000 peer-​reviewed papers and five books. He is a Fellow of the IEEE, of the ACM and a member of the Academia Europaea. He is the recipient of  the 2016 IEEE CAS Mac Van Valkenburg award, the 2020 EDAA achievement Award and the 2020 ACM/IEEE A. Richard Newton Award.
 
 
-## Thursday, September 8 -- 9:15 - 10:30
+## Thursday, September 8 -- 9:30 - 10:30
 
 <div style="float:left;margin:10px"><img src="michielsen.jpg" width="180px" /></div>
 <div style="padding:10px;">
@@ -59,7 +59,7 @@ electrodynamics and quantum mechanics to quantum computing and quantum computing
 architectures.
 
 
-## Friday, September 9 -- 9:15 - 10:30
+## Friday, September 9 -- 9:30 - 10:30
 
 <div style="float:left;margin:10px"><img src="rio.jpg" width="180px" /></div>
 <div style="padding:10px;">
