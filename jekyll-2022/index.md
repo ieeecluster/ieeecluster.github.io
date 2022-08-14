@@ -29,6 +29,8 @@ discuss recent advances and trends in, but not limited to:
 
 ![HUAWEI]({{ site.baseurl }}/assets/img/Huawei_POS_RBG_Vertical-300ppi.jpg){: width="250"}
 
+![INSPUR]({{ site.baseurl }}/assets/img/Inspur-Logo.png){: width="250"}
+
 ![MEGWARE]({{ site.baseurl }}/assets/img/MEGWARE-Logo.png){: width="250"}
 ![Meta]({{ site.baseurl }}/assets/img/Meta_logo.svg){: width="250"}
 ![MEGWARE]({{ site.baseurl }}/assets/img/ParaTools.svg){: width="250"}
