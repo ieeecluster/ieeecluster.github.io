@@ -89,11 +89,14 @@ Contact William Jalby (william.jalby@uvsq.fr) or Georg Hager
 
 ![SIGHPC]({{ site.baseurl }}/assets/img/sighpc_logo_72dpi.jpg){: style="margin-left:80px;width:150px"}
 
-## Platinum Sponsors
+## Platinum Support
 
 ![HUAWEI]({{ site.baseurl }}/assets/img/Huawei_POS_RBG_Vertical-300ppi.jpg){: width="250"}
 
+## Silver Support
 ![INSPUR]({{ site.baseurl }}/assets/img/Inspur-Logo.png){: width="250"}
+
+## Bronze Support
 ![MEGWARE]({{ site.baseurl }}/assets/img/MEGWARE-Logo.png){: width="250"}
 ![Meta]({{ site.baseurl }}/assets/img/Meta_logo.svg){: width="250"}
 ![MEGWARE]({{ site.baseurl }}/assets/img/ParaTools.svg){: width="250"}
