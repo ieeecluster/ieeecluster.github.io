@@ -33,3 +33,8 @@ and paper validation (plagiarism/format check) via IEEE PDF eXpress.
 -   **Workshop papers:** up to 10 pages (maximum length is set by
     workshop organizers) + additional pages for a fee
 -   (Additional pages fee: 100 EUR/page)
+
+## Instructions for Presenters
+
+- Please bring a presentation device with HDMI interface
+- The recommended aspect ratio is 16:9
