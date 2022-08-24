@@ -34,7 +34,7 @@ and paper validation (plagiarism/format check) via IEEE PDF eXpress.
     workshop organizers) + additional pages for a fee
 -   (Additional pages fee: 100 EUR/page)
 
-## Instructions for Presenters
+## Instructions for presenters
 
 - Please bring a presentation device with HDMI interface
 - The recommended aspect ratio is 16:9
