@@ -54,6 +54,10 @@ Michael Gerndt, Technical University of Munich, Germany\
 James Lin, Shanghai Jiao Tong University, China\
 Esteban Meneses, National High Technology Center, Costa Rica
 
+### Hybrid Logistics Chair
+
+Taylan Özden, Technical University of Darmstadt, Germany
+
 ## Technical Committee
 
 ### Program Co-Chairs
