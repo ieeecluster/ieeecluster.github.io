@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:Deadlock Detection of MPI Program Based on Refined Match-sets
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20220907T150000
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20220907T153000
+DESCRIPTION:Deadlock is one of the common problems in the message passing 
+ interface. At present\, most methods for detecting MPI deadlocks rely on e
+ xhausting all execution paths of a program\, which is inefficient. In addi
+ tion\, the number of execution paths increases exponentially with the numb
+ er of wildcard receive events and processes\, further worsening the situat
+ ion. To alleviate the problem\, we propose a deadlock detection approach b
+ ased on match-sets to avoid exploring execution paths. With this approach\
+ , a match detection rule is raised to form the rough match-sets based on L
+ azy Lamport Clocks Protocol\, then in order to refine the match-sets\, thr
+ ee refining algorithms are presented according to the non-overtaking rule 
+ and MPI communication mechanism\, finally deadlocks are detected by analyz
+ ing the refined match-sets. We have implemented a tool called SAMPI and pe
+ rformed experimental evaluation on 27 programs. The experimental results s
+ how that SAMPI is efficient to detect deadlocks in MPI programs\, especial
+ ly to handle programs with many interleavings.
+END:VEVENT
+END:VCALENDAR

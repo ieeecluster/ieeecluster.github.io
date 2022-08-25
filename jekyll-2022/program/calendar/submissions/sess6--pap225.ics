@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:FaaSt: Optimize Makespan of Serverless Workflows in Federated Comm
+ ercial FaaS
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20220907T163000
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20220907T170000
+DESCRIPTION:Nowadays\, scientists migrate workflow applications on serverl
+ ess Function-as-a-Service (FaaS) platforms in a form of so called function
+  choreographies (FCs) to benefit from FaaS high elasticity and instantly s
+ pawning numerous functions. However\, the heterogeneous nature of federate
+ d FaaS overburdens decisions for the most appropriate configuration setup.
+  Unfortunately\, related work mainly support either (i) scheduling algorit
+ hms for serverful workflow applications that run on virtual machines or (i
+ i) container-based algorithms to schedule individual serverless functions 
+ on specific container (executor). Either approach is hard to implement for
+  FCs in federated FaaS\; the former due to specifics of the FaaS resource 
+ model\, while the latter because they are primarily focused on bag of func
+ tions and reducing startup latency down to microseconds. Such optimization
+  is negligible for scientific FCs whose functions may run hundreds of seco
+ nds due to enormous compute and I/O operations to distributed cloud storag
+ e. Instead\, scientific FCs would benefit from schedulers that select the 
+ appropriate FaaS provider\, cloud region\, and memory settings. To bridge 
+ this gap in scheduling scientific FCs in federated FaaS\, this paper intro
+ duces FaaSt\, a novel listbased FC scheduler that optimizes makespan of an
+  FC that runs functions across multiple FaaS providers. The evaluation wit
+ h three other schedulers showed that FaaSt overcomes limitations of a sing
+ le FaaS region and generates speedup of up to 2.82× when running FCs acro
+ ss four cloud regions compared to a single region. Moreover\, the FaaSt FC
+  scheduler achieves speedup of up to 1.74× compared to the other state-of
+ -the-art FC schedulers across the same four regions.
+END:VEVENT
+END:VCALENDAR

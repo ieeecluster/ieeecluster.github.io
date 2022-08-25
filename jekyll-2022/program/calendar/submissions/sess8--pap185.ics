@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:Be SMART\, Save I/O: A Probabilistic Approach to Avoid Uncorrectab
+ le Errors in Storage Systems
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20220908T110000
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20220908T113000
+DESCRIPTION:Silent data corruption poses a significant risk to the integri
+ ty of data in storage systems. Although error correction codes (ECC) can r
+ ecover the majority of such errors\, a non-negligible portion of them esca
+ pe ECC\, referred as uncorrectable errors (UEs). Despite being rare in nat
+ ure\, increasing scale of storage systems and fast-growing I/O rates decre
+ ased the mean time between UEs from months to hours. Yet\, unlike disk fai
+ lures\, UEs are hard to predict with high precision\, making it difficult 
+ to use proactive measurements due to considerable overhead to system and a
+ pplication performance. In this paper\, we introduce a probabilistic appro
+ ach to deploy UE mitigation strategies (e.g.\, write verification\, data s
+ crubbing\, etc.) while keeping the system overhead at a tolerable range. T
+ o achieve this\, we first estimate the probability of I/O operations to be
+  exposed to UEs and determine a subset of disks for which employing UE avo
+ idance strategies can lower the UE probability to a desired range. Through
+  extensive simulations\, we demonstrate that when proposed probabilistic m
+ odel is used to implement \\emph{write verification} strategy to detect an
+ d recover from UEs\, more than $50\\%$ of all write-triggered UEs can be a
+ voided with $1\\%$ read overhead\, and more than $70\\%$ of UEs can be mit
+ igated with less than $3.5\\%$ read overhead. We further measure the impac
+ t of read overhead on write performance in production Lustre and Spectrum 
+ Scale file systems and validate our finding that that more than $50\\%$ of
+  UEs can be avoided with less than $0.2-0.9\\%$ decrease in write throughp
+ ut.
+END:VEVENT
+END:VCALENDAR
