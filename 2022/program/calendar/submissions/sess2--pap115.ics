@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:What does Inter-Cluster Job Submission and Execution Behavior Reve
+ al to Us?
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20220907T110000
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20220907T113000
+DESCRIPTION:Modern High Performing Computing (HPC) facilities have multipl
+ e computing clusters that serve different purposes. These include large-sc
+ ale computing clusters and smaller data visualization and analysis cluster
+ s\, which are meant to shift the load of data analytics jobs from the larg
+ e-scale systems. We perform the first in-depth characterization of cross-c
+ luster behavior of users and jobs and provide an analysis of three inter-r
+ elated systems at the Argonne Leadership Computing Facility (ALCF). We wil
+ l make our novel dataset\, prediction methodology and models open-source t
+ o the community upon acceptance.
+END:VEVENT
+END:VCALENDAR

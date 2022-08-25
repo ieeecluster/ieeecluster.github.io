@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:Fast Dynamic Updates and Dynamic SpGEMM on MPI-Distributed Graphs
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20220909T150000
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20220909T153000
+DESCRIPTION:Sparse matrix multiplication (SpGEMM) is a fundamental kernel 
+ used in many diverse application areas\, both numerical and discrete. For 
+ example\, many algebraic graph algorithms rely on SpGEMM in the tropical s
+ emiring to compute shortest paths in graphs. Recently\, SpGEMM has receive
+ d growing attention regarding implementations for specific (parallel) arch
+ itectures. Yet\, this concerns only the static problem\, where both input 
+ matrices do not change. In many applications\, however\, matrices (or thei
+ r corresponding graphs) change over time. Although recomputing from scratc
+ h is very expensive\, we are not aware of any dynamic SpGEMM algorithms in
+  the literature. In this paper\, we thus propose a batch-dynamic algorithm
+  for MPI-based parallel computing. Building on top of a distributed graph/
+ matrix data structure that allows for fast updates\, our dynamic SpGEMM re
+ duces the communication volume significantly. It does so by exploiting tha
+ t updates change far fewer matrix entries than there are non-zeros in the 
+ input operands. Our experiments with popular benchmark graphs show that ou
+ r approach pays off. For batches of insertions or removals of matrix entri
+ es\, our dynamic SpGEMM is substantially faster than the static algorithms
+  in the state-of-the-art competitors CombBLAS\, CTF and PETSc.
+END:VEVENT
+END:VCALENDAR
