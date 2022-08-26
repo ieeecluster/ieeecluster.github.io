@@ -35,3 +35,4 @@ discuss recent advances and trends in, but not limited to:
 ![Meta]({{ site.baseurl }}/assets/img/Meta_logo.svg){: width="250"}
 ![MEGWARE]({{ site.baseurl }}/assets/img/ParaTools.svg){: width="250"}
 ![GRAPHCORE]({{ site.baseurl }}/assets/img/graphcore.png){: width="250"}
+![INTEL-HO-COMPUTER]({{ site.baseurl }}/assets/img/Intel-ho-Kombi2022-Logo.png){: width="250"}

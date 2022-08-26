@@ -94,6 +94,7 @@ Contact William Jalby (william.jalby@uvsq.fr) or Georg Hager
 ![HUAWEI]({{ site.baseurl }}/assets/img/Huawei_POS_RBG_Vertical-300ppi.jpg){: width="250"}
 
 ## Silver Support
+
 ![INSPUR]({{ site.baseurl }}/assets/img/Inspur-Logo.png){: width="250"}
 
 ## Bronze Support
@@ -101,6 +102,7 @@ Contact William Jalby (william.jalby@uvsq.fr) or Georg Hager
 ![Meta]({{ site.baseurl }}/assets/img/Meta_logo.svg){: width="250"}
 ![MEGWARE]({{ site.baseurl }}/assets/img/ParaTools.svg){: width="250"}
 ![GRAPHCORE]({{ site.baseurl }}/assets/img/graphcore.png){: width="250"}
+![INTEL-HO-COMPUTER]({{ site.baseurl }}/assets/img/Intel-ho-Kombi2022-Logo.png){: width="250"}
 
 <!--
 ### Bronze level support:
