@@ -96,6 +96,7 @@ Contact William Jalby (william.jalby@uvsq.fr) or Georg Hager
 ## Silver Support
 
 ![INSPUR]({{ site.baseurl }}/assets/img/Inspur-Logo.png){: width="250"}
+![RISC]({{ site.baseurl }}/assets/img/risc2-logo.jpg){: width="250"}
 
 ## Bronze Support
 ![MEGWARE]({{ site.baseurl }}/assets/img/MEGWARE-Logo.png){: width="250"}
