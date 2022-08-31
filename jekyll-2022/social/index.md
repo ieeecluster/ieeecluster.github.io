@@ -3,10 +3,10 @@ title: Social Events
 layout: default
 ---
 
-**Tuesday, 19:00.** Networking dinner at the brewery [Kulturbrauerei Heidelberg](https://heidelberger-kulturbrauerei.de/), organized by the [EU Project RISC2](https://www.risc2-project.eu/) in collaboration with IEEE Cluster ‘22. Join us for a lovely evening with delicious food and beer at the Kulturbrauerei Heidelberg, just a few minutes walking distance from the conference site. **Registration is free but required. Please register [here](https://forms.gle/SBvLuJDinpBV5d5J9).[ ](https://forms.gle/SBvLuJDinpBV5d5J9)**
+**Tuesday, 19:00.** Networking dinner at the brewery [Kulturbrauerei Heidelberg](https://heidelberger-kulturbrauerei.de/en), organized by the [EU Project RISC2](https://www.risc2-project.eu/) in collaboration with IEEE Cluster ‘22. Join us for a lovely evening with delicious food and beer at the Kulturbrauerei Heidelberg, just a few minutes walking distance from the conference site. **Registration is free but required. Please register [here](https://forms.gle/SBvLuJDinpBV5d5J9).[ ](https://forms.gle/SBvLuJDinpBV5d5J9)**
 
 ![Kulturbrauerei Heidelberg]({{ site.baseurl }}/assets/img/social_1.jpg "Kulturbrauerei Heidelberg")
-Kulturbrauerei Heidelberg
+Kulturbrauerei Heidelberg.
 
 **Wednesday, 17:30.** Welcome reception at the [Bel Etage](https://www.uni-heidelberg.de/en/node/13054) of Heidelberg University, a baroque-style arrangement of rooms, with a short visit to [Alte Aula](https://www.uni-heidelberg.de/de/einrichtungen/rektorat/kommunikation-und-marketing/veranstaltungsmanagement/vergabe-der-raeumlichkeiten-in-der-alten-universitaet/alte-aula), a magnificent lecture hall. It is [located](https://goo.gl/maps/8gBGK3wdc7TWbdQQA) directly across the conference venue _Neue Universität_. Guided walks will be offered.
 
@@ -17,11 +17,13 @@ Lecture hall _Alte Aula_.
 
 
 ![Heidelberg Castle]({{ site.baseurl }}/assets/img/social_3.png "Heidelberg Castle")
-Heidelberg Castle
+Heidelberg Castle.
 
 **Photo credits**
 
 Kulturbrauerei Heidelberg: Kulturbrauerei Heidelberg AG
+<br>
 Alte Aula: Universität Heidelberg - Kommunikation und Marketing
+<br>
 Heidelberg Castle: Pumuckel42, [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
 
