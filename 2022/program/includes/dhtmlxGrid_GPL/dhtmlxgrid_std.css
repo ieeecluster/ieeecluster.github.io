@@ -1,0 +1,346 @@
+
+div.gridbox{overflow:hidden; text-align:left}
+.dhx_sub_row
+{background-color:white}
+div.gridbox .xhdr{background-color:#D4D0C8}
+div.gridbox table.obj{height:1px}
+div.gridbox table.hdr td {font-family:arial; font-size:12px; background-Color:#D4D0C8; border: 1px solid; border-color : white Gray Gray white; text-align: center; margin:0px; padding:5px 0px 5px 0px ; font-weight:normal; -moz-user-select:none; 
+ -moz-user-select:-moz-none; 
+ overflow:hidden; empty-cells:show}
+div.gridbox table.hdr td div.hdrcell{overflow:hidden}
+div.gridbox table.obj td {border: 1px solid; border-color : white Gray Gray white; font-family:Arial; font-size:12px; -moz-user-select:none; -moz-user-select:-moz-none; 
+ overflow:hidden; padding-top:0px; padding-bottom:0px; empty-cells:show}
+div.gridbox table.obj th, div.gridbox table.hdr th{padding:0px 0px 0px 0px ; margin:0px 0px 0px 0px}
+div.gridbox table.row20px tr td{height:20px; white-space: nowrap; padding:0px}
+div.gridbox .objbox {background-color:white; position:relative}
+div.gridbox table.obj td span.space, div.gridbox table.obj td img.space{width:18px}
+div.gridbox table.obj tr.rowselected td.cellselected, div.gridbox table.obj td.cellselected {background-color:#d8d8d8; color:black}
+div.gridbox table.obj tr.rowselected td{background-color:#e1e0d7; color:black}
+div.gridbox table.obj td.editable{-moz-user-select:text}
+div.gridbox table.obj td.group_row{vertical-align:middle; font-family:Tahoma; font-size:10pt; font-weight:bold; height:30px; border:0px; border-bottom: 2px solid navy; 
+} 
+.dragSpanDiv{font-size : 12px; border: 1px gray solid; background-color:white; z-index:999}
+.dhx_combo_select{font-family:arial; font-size:12px; border:1px solid; border-color:black silver silver black; background-color:white; overflow:hidden; cursor:default; position:absolute; height:auto; z-index:600}
+.dhx_combo_edit{width:100%; border:0px; padding:0px; padding-right:1px !ie; margin:0px; font:12px arial; overflow:hidden}
+.dhx_textarea{border:1px solid; border-color:black silver silver black; position:absolute; height:100px; z-index:600}
+.dhx_clist{background-color:white; border:1px solid black; padding:2px 2px 2px 2px; z-index:300}
+.gridDragLine{position:absolute; top:10px; left:0px; width:100%; height:2px; background-color:black; overflow:hidden}
+div.pagingBlock{font-size:12px; font-family:verdana,arial}
+div.pagingBlock .pagingCurrentPage{font-weight:bold; cursor:default}
+div.pagingBlock .pagingPage{cursor:pointer; text-decoration:underline}
+span.recordsInfoBlock {font-size:12px; font-family:verdana,arial}
+div.pagingBlock a{text-decoration:none; padding-right:2px; color:black; cursor:pointer}
+div.pagingBlock a.dhx_not_active{text-decoration:none; cursor:default}
+.toolbar_select{font-size:10px}
+.dhtmlxGrid_selection {-moz-opacity: 0.5; filter: alpha(opacity = 50); background-color:yellow; opacity:0.5; border: 1px dotted black}
+div.gridbox_xp{border:1px solid lightgrey}
+div.gridbox_xp .xhdr{background-image:url('imgs/header_bg_60.gif')}
+div.gridbox_xp table.hdr td {color:#616161; background-image:url('imgs/header_bg_60.gif'); border:0px; text-align: center; margin:0px; padding:5px 0px 5px 0px ; font-weight:bold; -moz-user-select:none; -moz-user-select:-moz-none; 
+ overflow:hidden}
+div.gridbox_xp table.hdr td div.hdrcell{border-left: 1px solid white; border-right: 1px solid gray; height:16px; white-space : nowrap; font-family:Arial; font-size:12px}
+div.gridbox_xp table.obj td {border:0px; border-bottom: 1px solid lightgrey; border-right: 1px solid lightgrey; font-family:Arial; font-size:12px; -moz-user-select:none; -moz-user-select:-moz-none; 
+ overflow:hidden; padding-top:0px; padding-bottom:0px}
+div.gridbox_xp table.obj tr.rowselected td{background-color:whitesmoke; color:black}
+div.gridbox_xp table.obj tr.rowselected td.cellselected, div.gridbox table.obj td.cellselected {background-color:whitesmoke}
+div.gridbox_xp table.row20px tr td{height:22px; white-space: nowrap; padding:1px}
+div.gridbox_gray {border:1px solid gray; background-color:#D4D0C8}
+div.gridbox_mt{border:1px solid lightgrey}
+div.gridbox_mt .dhx_sub_row
+{background-color:transparent}
+div.gridbox_mt .xhdr{background-image:url('imgs/header_bg.gif')}
+div.gridbox_mt .xhdr_last{border:0px; border-bottom: 1px solid lightgrey; border-left: 1px solid lightgrey}
+div.gridbox_mt table.hdr td {color:#616161; border:0px; border-bottom: 1px solid lightgrey; border-left: 1px solid lightgrey; text-align: center; margin:0px; background-image:url('imgs/header_bg.gif'); padding: 0px 0px 0px 0px; -moz-user-select:none; -moz-user-select:-moz-none; 
+ overflow:hidden}
+div.gridbox_mt table.hdr td div.hdrcell{height:16px; white-space : nowrap; font-family:Verdana; font-size:12px}
+div.gridbox_mt table.obj td {border:0px; border-bottom: 1px solid lightgrey; border-right: 0px solid lightgrey; font-family:Verdana; font-size:12px; -moz-user-select:none; -moz-user-select:-moz-none; 
+ overflow:hidden; padding-top:0px; padding-bottom:0px}
+div.gridbox_mt table.obj tr.rowselected td{background-color:#D6D3FA; color:black}
+div.gridbox_mt table.obj tr.rowselected td.cellselected, div.gridbox table.obj td.cellselected {background-color:#D6D3FA}
+div.gridbox_mt table.row20px tr td{height:22px; white-space: nowrap; padding:1px}
+div.gridbox div.ftr{position:absolute; left:0px; bottom:1px; width:100%; overflow:hidden}
+div.gridbox div.ftr td {padding:0px; padding-left:10px; padding-right:5px; border-top:1px solid gray; border-right:1px solid gray; background-color:#ffffcc; font-style : italic; font-family:arial; font-size:12px; overflow:hidden}
+div.gridbox table.hdr td.columnTargetR div.hdrcell{border-right:3px double #FF6600; border-left:3px solid #D4D0C8}
+div.gridbox table.hdr td.columnTargetL div.hdrcell{border-right:3px solid #D4D0C8; border-left:3px double #FF6600}
+.dhx_dragColDiv{font-family:Arial; font-size:12px; background-color:#D4D0C8; border: 1px solid; border-color : white Gray Gray white; text-align: center; margin:0px; padding:5px 20px 5px 20px ; font-weight:normal; filter:alpha(opacity:75); -moz-opacity:0.75; opacity:0.75}
+div.gridbox_light {border:1px solid #c2d5dc}
+div.gridbox_light .xhdr{background-image:url(imgs/skin_light_header.png)}
+div.gridbox_light .xhdr_last{border: 1px solid; border-color : #FDFDFD #93AFBA #93AFBA #FDFDFD}
+div.gridbox_light table.hdr{background-image:url(imgs/skin_light_header.png)}
+div.gridbox_light table.hdr td {border: 1px solid; border-color : #FDFDFD #93AFBA #93AFBA #FDFDFD; background-color:transparent; font-family:Tahoma; font-size:11px; font-weight:bold; color:#055A78; vertical-align:top; text-align:left}
+div.gridbox_light table.hdr td div.hdrcell{width:auto; padding-left:10px}
+div.gridbox_light table.hdr .filter{padding-left:0px !important; text-align:center; -moz-user-select:text}
+div.gridbox_light table.obj td {border-width: 0px 1px 0px 1px; border-left: 1px solid white; border-right: 1px solid #D6D6D6; font-family:Tahoma; font-size:11px; padding-right:4px; padding-left:4px}
+div.gridbox_light table.obj{border-bottom: 1px solid #D6D6D6}
+div.gridbox_light table.row20px tr td {padding-right:4px; padding-left:4px}
+div.gridbox_light .dhx_combo_edit{font-family:Tahoma; font-size:11px}
+div.gridbox_light table.obj tr.rowselected td{background-color:#ededed; color:black}
+div.gridbox_light table.obj tr.rowselected td.cellselected, div.gridbox table.obj td.cellselected {background-color:#ededed}
+div.gridbox_light .odd_light{background-color:#E5F2F8}
+div.gridbox_light div.ftr td {empty-cells:show}
+div.gridbox_modern {border:1px solid #D6D6D6}
+div.gridbox_modern .dhx_sub_row
+{background-color:transparent}
+div.gridbox_modern .xhdr{background-image:url(imgs/skin_modern_header.png)}
+div.gridbox_modern .xhdr_last{border: 1px solid; border-color : #FDFDFD #B5B5B5 #B5B5B5 #FDFDFD}
+div.gridbox_modern table.hdr{background-image:url(imgs/skin_modern_header.png)}
+div.gridbox_modern table.hdr td {border-right:1px solid #B5B5B5; border-left:1px solid #FDFDFD; border-top:1px solid #FDFDFD; border-bottom:1px solid #B5B5B5; background-color:transparent; font-family:Tahoma; font-size:11px; font-weight:bold; color:#055A78; vertical-align:top; text-align:left}
+div.gridbox_modern table.hdr td div.hdrcell{width:auto; padding-left:10px}
+div.gridbox_modern table.hdr .filter{padding-left:0px !important; text-align:center}
+div.gridbox_modern table.obj td {border: 0px solid; font-family:Tahoma; font-size:11px; padding-right:4px; padding-left:4px}
+div.gridbox_modern table.row20px tr td {padding-right:4px; padding-left:4px}
+div.gridbox_modern .dhx_combo_edit{font-family:Tahoma; font-size:11px}
+div.gridbox_modern table.obj tr.rowselected td{background-color:#9ac2e5; color:black}
+div.gridbox_modern table.obj tr.rowselected td.cellselected, div.gridbox table.obj td.cellselected {background-color:#9ac2e5}
+div.gridbox_modern .odd_modern{background-color:#EDEDED}
+div.gridbox_modern div.ftr td {padding:0px; padding-left:10px; padding-right:5px; border-top:0px solid gray; border-right:0px solid gray; background-color:#ffffcc; font-style : italic; font-family:arial; font-size:12px}
+div.gridbox_clear .xhdr{background-color:transparent}
+div.gridbox_clear div.topMumba{position:absolute; left:0px; width:100%; height:3px; background-image:url(imgs/skinC_header.png); overflow:hidden; padding:0px; margin:0px}
+div.gridbox_clear div.bottomMumba{position:absolute; left:0px; width:100%; height:3px; background-image:url(imgs/skinD_header.png); overflow:hidden}
+div.gridbox_clear div.bottomMumba img,div.gridbox_clear div.topMumba img{border:0px; position:absolute; top:0px}
+div.gridbox_clear{padding-left: 10px; padding-right: 10px}
+div.gridbox_clear table.hdr td {border:0px; background-color:transparent; font-family:Tahoma; font-size:11px; font-weight:bold; color:#055A78; vertical-align:top; text-align:left}
+div.gridbox_clear table.hdr td div.hdrcell{width:auto; padding-left:10px; padding-bottom:2px}
+div.gridbox_clear table.hdr .filter{padding-left:0px !important; text-align:center}
+div.gridbox_clear table.obj td {border-width: 0px 1px 0px 0px ; border-color:#D6D6D6; font-family:Tahoma; font-size:11px; padding-right:4px; padding-left:4px}
+div.gridbox_clear table.row20px tr td {padding-right:4px; padding-left:4px}
+div.gridbox_clear .dhx_combo_edit{font-family:Tahoma; font-size:11px}
+div.gridbox_clear .odd_clear{background-color:#E5F2F8}
+div.gridbox_clear div.ftr td {padding:0px; padding-left:10px; padding-right:5px; border-top:1px solid gray; border-right:0px solid gray; background-color:#ffffcc; font-style : italic; font-family:arial; font-size:12px}
+div.gridbox_sbdark .objbox {background: #313131 !important}
+div.gridbox_sbdark .xhdr{background-color:#313131}
+div.gridbox_sbdark .xhdr_last{border: 1px solid; border-color : #474948 #202220 #202220 #202220}
+div.gridbox_sbdark {
+ background: #313131 !important; 
+}
+div.gridbox_sbdark table {border-collapse: collapse}
+div.gridbox_sbdark table.hdr tr {border-top: 1px solid #202220}
+div.gridbox_sbdark table.hdr, 
+div.gridbox_sbdark table.hdr td {border-right:1px solid #202220; border-left:1px solid #202220; border-top: 1px solid #474948; border-bottom:1px solid #202220; background-color: #313131; 
+ font-size:11px; 
+ color:#8A8F84; vertical-align:top; text-align:left; padding: 2px 5px}
+div.gridbox_sbdark .hdrcell {padding-left: 0px !important; font-family: 'Lucida Sans Unicode','Tahoma'; 
+}
+div.gridbox_sbdark table.hdr td div.hdrcell{width:auto; padding-left:10px}
+div.gridbox_sbdark table.obj td {border-width: 0px 1px 0px 1px; border-left: 1px solid #202220; border-right: 1px solid #EDF3F0; font-family: 'Consolas','Lucida Sans Unicode','Tahoma'; font-size:11px; 
+}
+div.gridbox_sbdark table.row20px tr td {padding: 0px 5px !important; 
+ text-indent:1px}
+div.gridbox_sbdark .dhx_combo_edit{font-family: 'Lucida Sans Unicode','Tahoma'; font-size:11px}
+div.gridbox_sbdark table.obj tr.rowselected td, 
+div.gridbox_sbdark table.obj tr:hover, 
+div.gridbox_sbdark .odd_light:hover {background-color: #8A8F84; color: white !important}
+div.gridbox_sbdark table.obj tr.rowselected td.cellselected , 
+div.gridbox_sbdark table.obj td.cellselected {background-color:#8A8F84}
+div.gridbox_sbdark .cellselected {background-color: #6e6f64 !important; 
+}
+div.gridbox_sbdark .ev_sbdark {background-color: #FFFFFF}
+div.gridbox_sbdark .odd_sbdark {background-color:#EDF3F0} 
+.dhtmlx_live_validation_error{background-color:#FFE0E0 !important}
+.dhtmlx_validation_error{border-bottom:2px solid red !important}
+.dhx_header_cmenu{background-color:#ffffff; border:2px outset silver; z-index:2}
+.dhx_header_cmenu_item{white-space:nowrap}
+div.gridbox_dhx_skyblue div.ftr td{text-align:right; background-image:url(./imgs/sky_blue_grid.gif); border-color:#A4BED4}
+.dhtmlxcalendar{background: url(imgs/cal_bg_single.gif) no-repeat; border: 0px solid green; font-family: Arial; z-index:99; height:146px; width:146px; padding:16px}
+.dhtmlxcalendar_ifr,
+.dhtmlxcalendar_mini_ifr,
+.dhtmlxcalendar_maxi_ifr,
+.dhtmlxcalendar_long_ifr {height:173px; width:178px}
+ 
+.dhtmlxcalendar_maxi_ifr {height: 176px}
+.dhtmlxcalendar_long {background: url(imgs/cal_bg_single_long.gif) no-repeat; height: 190px}
+.dhtmlxcalendar_long_ifr{height: 190px}
+.dhtmlxcalendar_mini{background: url(imgs/cal_bg_single_mini.gif) no-repeat; height:25px; width:146px}
+.dhtmlxcalendar_mini_ifr{height: 25px}
+.dhtmlxcalendar_mini .winHeader{margin-top:0px; -moz-user-select:none}
+.dhtmlxcalendar .winHeader {height: 13px; width:146px; -moz-user-select:none; border: 0; margin-top:-11px; margin-bottom: 12px}
+.dhtmlxcalendar .winTitle {color:black; font-size:11px; float:left; cursor: move; 
+ width: 100px}
+.dhtmlxcalendar .btn_maxi, 
+.dhtmlxcalendar .btn_mini,
+.dhtmlxcalendar .btn_close,
+.dhtmlxcalendar .btn_today,
+.dhtmlxcalendar .btn_clear {background: url(imgs/btns.gif); float:right; height:12px; width:12px; 
+ margin-left: 1px; font-size: 0}
+.dhtmlxcalendar .btn_close {background-position: 0 0}
+.dhtmlxcalendar .btn_today {background-position: -12px 0}
+.dhtmlxcalendar .btn_clear {background-position: -24px 0}
+.dhtmlxcalendar .btn_maxi {background-position: -36px 0}
+.dhtmlxcalendar .btn_mini {background-position: -48px 0}
+.dhtmlxcalendar .entbox{width:145px; clear:both}
+.dhtmlxcalendar td {font-size: 10px; font-family: Tahoma; text-align:center}
+.dhtmlxcalendar .dxcalmonth td.month_btn_left,
+.dhtmlxcalendar .dxcalmonth td.month_btn_right {background: url(imgs/btns.gif) no-repeat; background-position:-60px; width:8px}
+.dhtmlxcalendar .dxcalmonth td.month_btn_right {background-position:-68px}
+.dhtmlxcalendar .dxcalmonth td.month_btn_left span,
+.dhtmlxcalendar .dxcalmonth td.month_btn_right span{visibility: hidden}
+.dhtmlxcalendar .dxcalmonth table {margin: auto}
+.dhtmlxcalendar .dxcaldlabel {border-bottom: 1px solid #7e7e7e; color:#7e7e7e; border-top: 0px; padding-left:2px}
+.dhtmlxcalendar .dxcaldlabel td,
+.dhtmlxcalendar .dxcaldays td,
+.dhtmlxcalendar .dxcaldays_ie td{font-size: 10px; font-family: Tahoma; text-align: center; vertical-align: middle; width: 18px; height: 18px; color: #7e7e7e}
+.dhtmlxcalendar .dxcaldays td,
+.dhtmlxcalendar .dxcaldays_ie td{border: 0px; cursor: pointer}
+.dhtmlxcalendar .dxcaldays_ie td{height:16px}
+.dhtmlxcalendar td.comma{visibility:visible}
+.dhtmlxcalendar div.planeMonth,
+.dhtmlxcalendar div.planeYear {height: auto; overflow: hidden}
+div.dhtmlxcalendar div.planeYear{display:inline; width:28px}
+.dhtmlxcalendar td.thismonth{color:black; padding:1px}
+.dhtmlxcalendar td.othermonth{visibility:hidden; 
+}
+.dhtmlxcalendar td.weekend{color:#a70000; padding:1px}
+.dhtmlxcalendar td.insensitive{color:#b5b5b5; cursor: default; padding:1px}
+.dhtmlxcalendar td.selected{background-color: #36b1df; color:white !important}
+.dhtmlxcalendar td.current{font-weight:bold !important; color:black}
+.dhtmlxcalendar td.hover{border:1px solid #b5b5b5; color: #000000; padding:0px}
+.dhtmlxcalendar td.holiday{
+ font-weight:bold; color:#a70000}
+.dhtmlxdblcalendar {background: url(imgs/cal_bg_double.gif) no-repeat; z-index:100; padding: 0px}
+.dhtmlxdblcalendar .dhtmlxcalendar {background-image: url(imgs/blank.gif)}
+.dhtmlxcalendar div.dhtmlxRichSelector {position: relative; background-color:#ffffff; display: block; width: 1px; height: 1px}
+.dhtmlxcalendar textarea.dhtmlxRichSelector,
+.dhtmlxcalendar select.dhtmlxRichSelector {font-family: Tahoma; position: absolute; font-size: 10px; overflow: hidden; border-width: 0px; z-index:100; left: 0px; top: 0px}
+.dhtmlxcalendar select.dhtmlxRichSelector {border: 1px solid #555555}
+.dhtmlxcalendar_yahoolike {background: url(imgs//__dhxCal_skin_Yahoolike/cal_bg_single.gif) no-repeat; border: 1px solid gray; font-family: Arial, Helvetica, sans-serif; font-size:small; background-color: #f7f9fb; width:178px; height:166px; padding:5px; z-index:99}
+.dhtmlxcalendar_yahoolike_mini {background-color: #f7f9fb; height:13px}
+.dhtmlxcalendar_yahoolike_maxi {height:178px}
+.dhtmlxcalendar_yahoolike_ifr,
+.dhtmlxcalendar_yahoolike_mini_ifr,
+.dhtmlxcalendar_yahoolike_maxi_ifr {height:184px; width:188px
+}
+.dhtmlxcalendar_yahoolike_maxi_ifr {height:195px}
+.dhtmlxcalendar_yahoolike_mini_ifr {height:26px}
+.dhtmlxcalendar_yahoolike_mini .winHeader{-moz-user-select: none}
+.dhtmlxcalendar_yahoolike .winHeader {height: 16px; margin-bottom: 3px; width:178px; -moz-user-select:none}
+.dhtmlxcalendar_yahoolike .winTitle {color:#575757; font-size:12px; float:left; cursor: move; 
+ width: 100px; margin-top: -1px; overflow: hidden}
+.dhtmlxcalendar_yahoolike .btn_mini,
+.dhtmlxcalendar_yahoolike .btn_maxi,
+.dhtmlxcalendar_yahoolike .btn_close,
+.dhtmlxcalendar_yahoolike .btn_today,
+.dhtmlxcalendar_yahoolike .btn_clear {background: url(imgs//__dhxCal_skin_Yahoolike/btns.gif) no-repeat; float:right; height:12px; width:12px; 
+ margin-left: 1px}
+.dhtmlxcalendar_yahoolike .btn_close {background-position: 0 0}
+.dhtmlxcalendar_yahoolike .btn_today {background-position: -12px 0}
+.dhtmlxcalendar_yahoolike .btn_clear {background-position: -24px 0}
+.dhtmlxcalendar_yahoolike .btn_maxi {background-position: -36px 0}
+.dhtmlxcalendar_yahoolike .btn_mini {background-position: -48px 0}
+.dhtmlxcalendar_yahoolike .entbox{margin:3px 3px 3px 3px; width:172px}
+.dhtmlxcalendar_yahoolike td {font-size: 9px; font-family: Arial, Helvetica, sans-serif}
+.dhtmlxcalendar_yahoolike .dxcalmonth {background-color: #f7f9fb; border: 0px solid #e0e0e0; height: 16px}
+.dhtmlxcalendar_yahoolike .dxcalmonth td.month_btn_left,
+.dhtmlxcalendar_yahoolike .dxcalmonth td.month_btn_right {background: url(imgs//__dhxCal_skin_Yahoolike/btns.gif) no-repeat; background-position: -60px 0; width: 9px}
+.dhtmlxcalendar_yahoolike .dxcalmonth td.month_btn_right {background-position: -69px 0}
+.dhtmlxcalendar_yahoolike .dxcaldlabel {border-width: 0px}
+.dhtmlxcalendar_yahoolike .dxcaldlabel td,
+.dhtmlxcalendar_yahoolike .dxcaldays td,
+.dhtmlxcalendar_yahoolike .dxcaldays_ie td{font-size: 10pt; text-align: left; vertical-align: middle; width: 20px; height: 17px; color: #666; padding: 1px}
+.dhtmlxcalendar_yahoolike .dxcaldays_ie td{height: 18px}
+.dhtmlxcalendar_yahoolike .dxcaldays td,
+.dhtmlxcalendar_yahoolike .dxcaldays_ie td{border: 1px solid #e0e0e0; background-color: #fff; text-align: center; cursor: pointer}
+.dhtmlxcalendar_yahoolike td.comma{visibility:hidden}
+.dhtmlxcalendar_yahoolike .dxcalmonth table {margin: auto}
+.dhtmlxcalendar_yahoolike div.planeMonth,
+.dhtmlxcalendar_yahoolike div.planeYear {height: auto; overflow: auto; font-size:12px; font-weight: bold}
+.dhtmlxcalendar_yahoolike td.thismonth{color:#003db8}
+.dhtmlxcalendar_yahoolike td.othermonth{color:#999; background-color:#eee; visibility: visible}
+.dhtmlxcalendar_yahoolike td.weekend{color:#003db8}
+.dhtmlxcalendar_yahoolike td.insensitive{color:#ccc; font-style:italic; cursor: default}
+.dhtmlxcalendar_yahoolike td.selected{border:1px solid white; background-color: lightblue; color: #ffffff}
+.dhtmlxcalendar_yahoolike td.current{color: #00c; font-weight:bold !important}
+.dhtmlxcalendar_yahoolike td.hover{border:1px solid #426FD9; background-color: #426FD9; color: white}
+.dhtmlxcalendar_yahoolike td.holiday{
+ font-weight:bold; color:#00c; text-decoration:underline}
+.dhtmlxcalendar_yahoolike div.dhtmlxRichSelector {position: relative; background-color:#ffffff; display: block; width: 1px; height: 1px}
+.dhtmlxcalendar_yahoolike textarea.dhtmlxRichSelector,
+.dhtmlxcalendar_yahoolike select.dhtmlxRichSelector {position: absolute; font-family: Arial; font-size: 10pt; overflow: hidden; border-width: 0px; z-index:100; left: 0px; top: 0px}
+.dhtmlxcalendar_yahoolike select.dhtmlxRichSelector {border: 1px solid #7b9ebd}
+div.gridbox_dhx_skyblue .xhdr{background-image:url(imgs//sky_blue_grid.gif); 
+}
+div.gridbox_dhx_skyblue table.hdr tr{background-image:url(imgs//sky_blue_grid.gif); background-position:0px -1px\9}
+body:nth-of-type(1) div.gridbox_dhx_skyblue table.hdr tr{background-image:url(imgs//sky_blue_grid.gif); background-position:0px -1px}
+div.gridbox_dhx_skyblue table.obj tr td{font-family:Tahoma; font-size:11px; border-width:0px 0px 0px 0px; padding-right:4px; padding-left:4px}
+div.gridbox_dhx_skyblue table.hdr td div.hdrcell{padding-left:10px; width:auto}
+html > body div.gridbox_dhx_skyblue table.hdr td div.hdrcell{width=100%}
+div.gridbox_dhx_skyblue table.hdr td {border-width: 1px 1px 1px 1px; border-color : #FDFDFD #A4BED4 #A4BED4 #FDFDFD; background-color:transparent; 
+ font-family:Tahoma; font-size:11px; color:black; vertical-align:top; text-align:left}
+div.gridbox_dhx_skyblue {border:1px solid #A4BED4}
+div.gridbox table.obj tr td{padding-top:3px; padding-bottom:3px}
+* html .gridbox .obj td{height:auto; padding-top=3px; padding-bottom=3px}
+div.gridbox table.obj.row20px tr td{padding-top:0px; padding-bottom:0px}
+div.gridbox table.obj tr td.editable{padding:0px}
+div.gridbox table.obj tr td.editable div.treegrid_cell{padding-left:4px; padding-top:1px}
+div.gridbox_dhx_skyblue table.obj tr.rowselected{background-color:#FFF1CC}
+div.gridbox_dhx_skyblue table.obj tr.rowselected td{background-color:#FFF1CC; background-repeat:repeat-x; background-position:0px 0px; 
+ background-image:url(imgs//sky_blue_sel2.png)}
+div.gridbox_dhx_skyblue table.obj.row20px tr.rowselected td{background-repeat:repeat-x; background-position:0px 0px; 
+ background-image:url(imgs//sky_blue_sel.png); 
+}
+div.gridbox_dhx_skyblue table.obj tr.rowselected td.cellselected {background-color:#FFF1CC}
+div.gridbox_dhx_skyblue .odd_dhx_skyblue{background-color:#E3EFFF}
+.dhx_combo_select, .gridbox_dhx_skyblue .dhx_combo_edit, .gridbox_dhx_skyblue .dhx_textarea{font-family:Tahoma; font-size:11px}
+.gridbox_dhx_skyblue .dhx_combo_edit{padding:1px 0px 1px 1px}
+.gridbox_dhx_skyblue .dhx_sub_row {background-color:transparent}0
+.dhtmlxcalendar_dhx_skyblue{background: #fff; font: 12px Tahoma; color: #000; z-index:99; height:153px; padding-top:14px; width:193px; 
+ border: 1px solid #a4bed4}
+.dhtmlxcalendar_dhx_skyblue_mini{height:25px; padding-top: 0px}
+.dhtmlxcalendar_dhx_skyblue_maxi{height:179px !important; height:193px}
+.dhtmlxcalendar_dhx_skyblue_ifr,
+.dhtmlxcalendar_dhx_skyblue_mini_ifr,
+.dhtmlxcalendar_dhx_skyblue_maxi_ifr {height:173px; width:193px}
+.dhtmlxcalendar_dhx_skyblue_mini_ifr {height:25px}
+.dhtmlxcalendar_dhx_skyblue_maxi_ifr {height:185px}
+.dhtmlxcalendar_dhx_skyblue_mini .winHeader {margin:0 !important; border-bottom: 0 !important}
+.dhtmlxcalendar_dhx_skyblue .winHeader {background:url('imgs//__dhxCal_skin_Skyblue/cal_header_bg.gif'); border-style: solid; border-width: 0 1px 1px 1px; border-color: #fff #fff #a4bed4 #fff; padding: 9px 5px 0; height: 16px; 
+ 
+ margin: -14px 0 12px; -moz-user-select:none; 
+}
+.dhtmlxcalendar_dhx_skyblue .winTitle {font-size:11px; font-weight: bold; float:left; cursor: move; 
+ width: 105px; margin-top: -2px}
+.dhtmlxcalendar_dhx_skyblue .btn_maxi,
+.dhtmlxcalendar_dhx_skyblue .btn_mini,
+.dhtmlxcalendar_dhx_skyblue .btn_close,
+.dhtmlxcalendar_dhx_skyblue .btn_today,
+.dhtmlxcalendar_dhx_skyblue .btn_clear {background: url(imgs//__dhxCal_skin_Skyblue/btns.gif) no-repeat; float:right; height:12px; width:12px; 
+ margin-left: 3px}
+.dhtmlxcalendar_dhx_skyblue .btn_mini {background-position: -48px 0}
+.dhtmlxcalendar_dhx_skyblue .btn_maxi {background-position: -36px 0}
+.dhtmlxcalendar_dhx_skyblue .btn_close {background-position: 0 0}
+.dhtmlxcalendar_dhx_skyblue .btn_today {background-position: -12px 0}
+.dhtmlxcalendar_dhx_skyblue .btn_clear {background-position: -24px 0}
+.dhtmlxcalendar_dhx_skyblue .entbox{width:161px; height: 114px; clear:both; margin: 0 15px}
+.dhtmlxcalendar_dhx_skyblue td {text-align:center}
+.dhtmlxcalendar_dhx_skyblue .dxcalmonth td{font-size: 11px; font-weight: bold}
+.dhtmlxcalendar_dhx_skyblue .dxcalmonth td.month_btn_left,
+.dhtmlxcalendar_dhx_skyblue .dxcalmonth td.month_btn_right {background: url(imgs//__dhxCal_skin_Skyblue/btns.gif) no-repeat; background-position: -60px; width: 4px}
+.dhtmlxcalendar_dhx_skyblue .dxcalmonth td.month_btn_right {background-position: -64px}
+.dhtmlxcalendar_dhx_skyblue .dxcalmonth td.month_btn_left span,
+.dhtmlxcalendar_dhx_skyblue .dxcalmonth td.month_btn_right span{visibility: hidden}
+.dhtmlxcalendar_dhx_skyblue .dxcalmonth table {margin: auto}
+.dhtmlxcalendar_dhx_skyblue .dxcaldlabel {font-size: 11px; font-weight: bold; border-top: 0px; padding-left:2px; margin-top: 4px}
+.dhtmlxcalendar_dhx_skyblue .dxcaldays{margin-top:5px}
+.dhtmlxcalendar_dhx_skyblue .dxcaldays_ie{width: 161px; margin-top:5px}
+.dhtmlxcalendar_dhx_skyblue .dxcaldlabel td,
+.dhtmlxcalendar_dhx_skyblue .dxcaldays td,
+.dhtmlxcalendar_dhx_skyblue .dxcaldays_ie td{text-align: center; vertical-align: middle}
+.dhtmlxcalendar_dhx_skyblue .dxcaldays td,
+.dhtmlxcalendar_dhx_skyblue .dxcaldays_ie td{height: 19px; width: 21px; font-size:12px; border: 0px; cursor: pointer; padding: 0px}
+.dhtmlxcalendar_dhx_skyblue .dxcaldays_ie td{height:19px}
+.dhtmlxcalendar_dhx_skyblue td.comma{visibility:visible; padding-right: 3px}
+.dhtmlxcalendar_dhx_skyblue div.planeMonth,
+.dhtmlxcalendar_dhx_skyblue div.planeYear {height: auto; overflow: auto}
+div.dhtmlxcalendar_dhx_skyblue div.planeYear{display:inline; width:28px}
+.dhtmlxcalendar_dhx_skyblue td.othermonth{visibility: visible; color: #ccc}
+.dhtmlxcalendar_dhx_skyblue td.weekend{}
+.dhtmlxcalendar_dhx_skyblue td.insensitive{color:#ccc; cursor: default}
+.dhtmlxcalendar_dhx_skyblue td.selected{background: url(imgs//__dhxCal_skin_Skyblue/cell_select.gif) center no-repeat}
+.dhtmlxcalendar_dhx_skyblue td.current{font-weight:bold !important}
+.dhtmlxcalendar_dhx_skyblue td.hover{}
+.dhtmlxcalendar_dhx_skyblue td.holiday{
+ font-weight:bold; color:#ed3a64}
+.dhtmlxdblcalendar_dhx_skyblue {background: url(_dhx_blue/cal_bg_double.png) no-repeat; padding: 0px}
+.dhtmlxdblcalendar_dhx_skyblue .dhtmlxcalendar {background-image: url(imgs//blank.gif)}
+.dhtmlxcalendar_dhx_skyblue div.dhtmlxRichSelector {position: absolute; background-color:#ffffff; display: block}
+.dhtmlxcalendar_dhx_skyblue textarea.dhtmlxRichSelector,
+.dhtmlxcalendar_dhx_skyblue select.dhtmlxRichSelector {font-family: verdana; position: absolute; font-size: 9px; overflow: hidden; border-width: 0px; z-index:100}
+.dhtmlxcalendar_dhx_skyblue select.dhtmlxRichSelector {border: 1px solid #555555}
