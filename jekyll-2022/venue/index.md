@@ -7,6 +7,8 @@ The conference venue for IEEE Cluster 2022 is Heidelberg University, respectivel
 
 Location: [https://goo.gl/maps/76ckX9VD1TxGvSVX6](https://goo.gl/maps/76ckX9VD1TxGvSVX6)
 
+![Registration map]({{ site.baseurl }}/assets/img/registration-map.jpg)
+
 ## **Hotel Accommodation**
 
 * Special rates apply from Sept. 05-10, 2022
