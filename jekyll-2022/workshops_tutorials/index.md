@@ -34,3 +34,9 @@ Parallel programming can be used to take advantage of heterogeneous architecture
 * Igor Baratta, University of Cambridge
 * Tom Deakin, University of Bristol
 * Peter Žužek, Codeplay
+
+[Tutorials slides](https://raw.githubusercontent.com/illuhad/syclacademy/cluster22/Lesson_Materials/presentation.pdf)
+
+[Materials and exercise code](https://github.com/illuhad/syclacademy/tree/cluster22)
+
+[Main syclacademy repository](https://github.com/codeplaysoftware/syclacademy) (containing additional supplementary material and additional lessons for those eager to learn more)
