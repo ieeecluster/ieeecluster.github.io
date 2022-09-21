@@ -17,7 +17,7 @@ layout: default
 In the quest for computing efficiency in a regime of diminishing returns from technology scaling, we must minimize data copies and the overheads associated with data transfer, data-flow management as well as instruction fetching. To achieve this goal, it is useful to take a  "mempool" viewpoint, i.e. shifting focus from optimizing the amount of memory to be placed "close" to a processor, to optimizing the amount of processors to be pooled around a memory. In this talk I share insights gained in designing open-source RISC-V hardware and software for energy-efficient computing based on the mempool concept, moving from single die to multiple chiplet systems.
 
 ### Biography
-Luca Benini holds the chair of digital Circuits and systems at ETHZ and is Full Professor at the Universita di Bologna. He received a PhD from Stanford University. He has been visiting professor at Stanford University, IMEC, EPFL. He has worked in Synopsys,  Hewlett-Packard Labs and he served as chief architect in STmicroelectronics France. Dr. Benini’s research interests are in energy-​efficient parallel computing systems, smart sensing 
+Luca Benini holds the chair of digital Circuits and systems at ETHZ and is Full Professor at the Universita di Bologna. He received a PhD from Stanford University. He has been visiting professor at Stanford University, IMEC, EPFL. He has worked in Synopsys,  Hewlett-Packard Labs and he served as chief architect in STmicroelectronics France. Dr. Benini’s research interests are in energy-​efficient parallel computing systems, smart sensing
 micro-​systems and machine learning hardware. He has published more than 1000 peer-​reviewed papers and five books. He is a Fellow of the IEEE, of the ACM and a member of the Academia Europaea. He is the recipient of  the 2016 IEEE CAS Mac Van Valkenburg award, the 2020 EDAA achievement Award and the 2020 ACM/IEEE A. Richard Newton Award.
 
 
@@ -32,11 +32,11 @@ micro-​systems and machine learning hardware. He has published more than 1000 
 <div style="clear:both;"> </div>
 
 ### Abstract
-For practical quantum computing, HPC infrastructures shall integrate quantum computers and simulators (QCS) in addition to cloud access to stand-alone QCS. 
+For practical quantum computing, HPC infrastructures shall integrate quantum computers and simulators (QCS) in addition to cloud access to stand-alone QCS.
 
 As longterm experience in conventional supercomputing demonstrate, the successful integration of QCS into HPC systems requires a focus on all three fundamental components of the HPC ecosystem: users and their applications, software, and hardware.
 
-A broad user community will need to invest time and effort in developing new kinds of algorithms and software for real-world applications that take full advantage of the QCS as accelerators that speed up existing classical algorithms and software. In addition, a QCS full software stack will have to be developed that takes into account the various kinds of QCS hardware that is implemented on a variety of qubit platforms. 
+A broad user community will need to invest time and effort in developing new kinds of algorithms and software for real-world applications that take full advantage of the QCS as accelerators that speed up existing classical algorithms and software. In addition, a QCS full software stack will have to be developed that takes into account the various kinds of QCS hardware that is implemented on a variety of qubit platforms.
 
 Finally, the development of use cases in a co-design approach with "hybrid" computing architectures in mind, will make it possible to address research challenges that cannot be met with current HPC architectures.
 
@@ -58,6 +58,8 @@ JSC. Her research interests range from classical simulations of
 electrodynamics and quantum mechanics to quantum computing and quantum computing
 architectures.
 
+[Slides]({% link keynotes/Cluster22_Keynote_Michielsen_20220908.pdf %})
+
 
 ## Friday, September 9 -- 9:30 - 10:30
 
@@ -74,3 +76,5 @@ Large dense matrices such as Hessian, Gauss-Netwon, Fisher, Jacobian, and Kernel
 
 ### Biography
 Rio Yokota is an Associate Professor at the Global Scientific Information and Computing Center, Tokyo Institute of Technology. His research interests lie at the intersection of high performance computing, linear algebra, and machine learning. He is the developer numerous libraries for fast multipole methods (ExaFMM), hierarchical low-rank algorithms (Hatrix), and information matrices in deep learning (ASDFGHJKL) that scale to the full system on the largest supercomputers today. He has been optimizing algorithms on GPUs since 2006, and was part of a team that received the Gordon Bell prize in 2009 using the first GPU supercomputer.
+
+[Slides]({% link keynotes/Cluster22_Keynote_Yokota_20220909.pdf %})
