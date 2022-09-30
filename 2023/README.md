@@ -26,3 +26,4 @@
 - Update IEEE Cluster logo
 - Before publishing make index.html broken_index.html
 - Change CPFs to TBD
+- Fix Sponsor amounts
