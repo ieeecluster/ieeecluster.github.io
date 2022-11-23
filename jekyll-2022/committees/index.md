@@ -205,3 +205,16 @@ Michela Taufer, University of Tennessee, Knoxville, USA
 * Guangyan Zhang, *Tsinghua University*
 * Amelie Chi Zhou, *Shenzhen University*
 * Qing Zheng, *Los Alamos National Laboratory*
+
+## Posters Committee
+**Chair:** Wanling Gao, *ICT, CAS*\
+**Chair:** Sascha Hunold, *Vienna University of Technology*
+
+* David Boehme, *Lawrence Livermore National Laboratory*
+* Alexandra Carpen-Amarie, *Fraunhofer ITWM*
+* Matthias Diener, *University of Illinois at Urbana-Champaign*
+* Jason Jia, *AWS*
+* Chunjie Luo, *Chinese Academy of Sciences*
+* Bartłomiej Przybylski, *University of Warsaw*
+* Rui Ren, *Beijing Institute of Open Source Chip*
+* Ioannis Vardas, *Vienna University of Technology*
