@@ -75,11 +75,6 @@ Christian Terboven, RWTH Aachen University, Germany
 Cedric Valensi, University of Versailles, France\
 Sandra Wienke, RWTH Aachen University, Germany
 
-### Posters Co-Chairs
-
-Wanling Gao, ICT, CAS, China\
-Sascha Hunold, Vienna University of Technology, Austria
-
 ### Panels Co-Chairs
 
 Guillaume Pallez, INRIA, France\
