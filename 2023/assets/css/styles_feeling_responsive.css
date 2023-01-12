@@ -4884,6 +4884,7 @@ dialog[open] {
     background: #2c424f
 }
 
+
 table {
     background: #fff;
     margin-bottom: 1.25rem;
@@ -4934,6 +4935,10 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
 table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, table tbody tr td, table tr td {
     display: table-cell;
     line-height: 1.125rem
+}
+
+table#borderless{
+    border: none;
 }
 
 .th {
