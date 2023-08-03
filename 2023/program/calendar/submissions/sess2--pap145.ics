@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:ACCLAiM: Advancing the Practicality of MPI Collective Communicatio
+ n Autotuning Using Machine Learning
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20220907T170000
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20220907T173000
+DESCRIPTION:MPI collective communication is an omnipresent communication m
+ odel for High-Performance Computing (HPC) systems. The performance of a co
+ llective operation depends strongly on the algorithm used to implement it.
+  MPI libraries use inaccurate heuristics to select these algorithms\, caus
+ ing applications to suffer unnecessary slowdowns. Machine learning (ML)-ba
+ sed autotuners are a promising alternative. ML autotuners can intelligentl
+ y select algorithms for individual jobs\, resulting in near-optimal perfor
+ mance. However\, these approaches currently spend more time training than 
+ they save by accelerating applications\, rendering them impractical. We ma
+ ke the case that ML-based collective algorithm selection autotuners can be
+  made practical and accelerate production applications on large-scale supe
+ rcomputers. We identify multiple impracticalities in the existing work\, s
+ uch as slow training point selection and ignoring non-power-of-two feature
+  values. We address these challenges through variance-based point selectio
+ n and model testing alongside topology-aware benchmark parallelization. Ou
+ r approach minimizes training time by eliminating unnecessary training poi
+ nts and maximizing machine utilization. We incorporate our improvements in
+ to a prototype active learning system\, ACCLAiM (Advancing Collective Comm
+ unication (L) Autotuning using Machine Learning). We show that each of ACC
+ LAiM’s advancements significantly reduce training time compared to the b
+ est existing machine learning approach. Then\, we apply ACCLAiM on a leade
+ rship-class supercomputer and demonstrate the conditions where ACCLAiM can
+  accelerate HPC applications\, provide the advantage of ML autotuners in a
+  production setting for the first time.
+END:VEVENT
+END:VCALENDAR
