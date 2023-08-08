@@ -680,7 +680,6 @@
                 <div class="program-session">
                     <div class="session-title">Keynote: Bill Magro (Google)</div>
                     <div class="room-name">Mesa Ballroom</div>
-
                     <div class="slot-title">
                         <div class="slot-wrapper">
                                     <span class="ttip_object_info_very_wide" rel="#kn1_info" title="#kn1_title">
@@ -710,7 +709,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="session-chair">Chair: TBD</div>
                     <div style="clear: both;"></div>
                 </div>
@@ -722,154 +720,7 @@
                 </div>
             </div>
 
-            <div class="timeslot"><h3 class="session-time">11:00 - 12:30</h3>
-                <div class="program-session">
-                    <div class="session-title">Best Paper presentations</div>
-                    <div class="room-name">Mesa Ballroom</div>
-                    <div class="session-chair">Chair: TBD</div>
-                    <div class="slot-title">
-                        <div class="slot-wrapper">
-                                    <span class="ttip_object_info_very_wide" rel="#bpta1_info" title="#bpta1_title">
-                                        A Dynamic Network-Native MPI Partitioned Aggregation Over InfiniBand Verbs
-                                        <i class="fa fa-caret-right"></i>
-                                    </span>
-                            <div class="info_link_object_info" style="display: none;">
-                                <div id="bpta1_popup">
-                                    <b id="bpta1_title">
-                                        A Dynamic Network-Native MPI Partitioned Aggregation Over InfiniBand Verbs
-                                        <span class="calendar-links"> <a
-                                                href="program/calendar/submissions/sess1--pap280.ics" target="_blank"
-                                                title="Import this presentation into your desktop calendar program."><img
-                                                height="15"
-                                                src="program/includes/images/ical_icon2.gif" style="border: none;"
-                                                width="15"/></a> </span>
-                                    </b>
-                                    <hr/>
-                                    <div id="bpta1_info">
-                                        <div>
-                                            <div class="author-names">
-                                                Yiltan Temucin (Queen's University),
-                                                Ryan Grant (Queen's University, University of New Mexico),
-                                                Scott Levy (Sandia National Laboratories),
-                                                Ahmad Afsahi (Queen’s University), and
-                                                Whit Schonbein (Sandia National Laboratories)
-                                            </div>
-                                            <div>
-                                                <div>Abstract
-                                                    <blockquote>
-                                                        <p>Modern HPC systems require efficient hybrid programming model to utilize their hardware resources effectively. The Message Passing Interface (MPI) has accommodated next generation hardware by providing new APIs such as the MPI Partitioned interface. This API provides a user with fine-grain communication without the overhead of traditional MPI point-to-point communication in multi-threaded workloads. To the best of our knowledge, we present the first work on detailed hardware-level design for an MPI Partitioned implementation. We guide readers through a method to map the MPI Partitioned interface to the InfiniBand Verbs API. Alongside implementation details, we also study the aggregation of user partitions and how we can efficiently send them over the network. We study a brute force approach and using the Partitioned LogGP (PLogGP) model to predict ideal aggregation. We observe that using the PLogGP model provides provides comparable performance without exhausting computing resources to search the entire solution space. The PLogGP design was further optimized by considering how the partition arrival pattern can be used to dynamically modify our aggregation scheme. We profiled our micro-benchmarks to provide analysis on how and why this additional optimization is beneficial to our results and how we can fine-tune this mechanism. Finally, we evaluated our PLogGP and Timer-based PLogGP designs with a commonly used communication pattern in HPC (communication sweep) to observe the impact when communicating with multiple processes in an application-like scenario at 1024 cores.</p>
-                                                    </blockquote>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slot-title">
-                        <div class="slot-wrapper">
-                                    <span class="ttip_object_info_very_wide" rel="#bpta2_info" title="#bpta2_title">
-                                        DoW-KV: A DPU-offloaded and Write-optimized Key-Value Store on Disaggregated Persistent Memory
-                                        <i class="fa fa-caret-right"></i>
-                                    </span>
-                            <div class="info_link_object_info" style="display: none;">
-                                <div id="bpta2_popup">
-                                    <b id="bpta2_title">
-                                        DoW-KV: A DPU-offloaded and Write-optimized Key-Value Store on Disaggregated Persistent Memory
-                                        <span class="calendar-links"> <a
-                                                href="program/calendar/submissions/sess1--pap266.ics" target="_blank"
-                                                title="Import this presentation into your desktop calendar program."><img
-                                                height="15"
-                                                src="program/includes/images/ical_icon2.gif" style="border: none;"
-                                                width="15"/></a> </span>
-                                    </b>
-                                    <hr/>
-                                    <div id="bpta2_info">
-                                        <div>
-                                            <div class="author-names">
-                                                Yiwen Zhang (Huazhong University of Science and Technology, Wuhan National Laboratory for Optoelectronics),
-                                                Jun Li (Wuhan National Laboratory for Optoelectronics, Huazhong University of Science and Technology; Wuhan National Laboratory for Optoelectronics),
-                                                Guokuan Li (the Wuhan National Laboratory for Optoelectronics, Huazhong University of Science and Technology; Huazhong University of Science and Technology),
-                                                Ting Yao (Cloud Storage Service Product Dept, Huawei Technologies Co.,Ltd; Huawei Technologies Co.,Ltd),
-                                                Jiguang Wan (Huazhong University of Science and Technology, Wuhan National Laboratory for Optoelectronics),
-                                                Huatao Wu (Huawei Cloud; Huawei Technologies Co.,Ltd),
-                                                Junyue Wang (the School of Computer Science and Technology,Huazhong University of Science and Technology; the School of Computer Science and Technology), and
-                                                Daohui Wang (Huawei Cloud; Huawei Technologies Co.,Ltd)
-                                            </div>
-                                            <div>
-                                                <div>Abstract
-                                                    <blockquote>
-                                                        <p>Disaggregated Persistent Memory (DPM) is a promising technology offering elasticity, high resource utilization, persistent data storage, and lower power consumption. While building KV stores on the DPM benefit from these merits, it is also challenging to achieve efficient writes due to the bottleneck of low bandwidth caused by small random writes to PM, and the intensive CPU consumption on the persistent memory server (PMS) is inevitable. Integrating the SmartNIC such as the Data Processing Unit (DPU) to the DPM gives developers the chance to optimize writing to KV stores by utilizing both the DPU memory and the DPU processor. However, simple offloading cannot make full use of the DPU’s potential capacity. To address these chal- lenges, we propose DoW-KV, a persistent hash KV store on DPM. DoW-KV employs a two-tier hash index consisting of a DPU cache table in DPU memory and multiple PM persistent tables on the PM. It relocates small random writes to the DPU memory and consolidate them to the PM at a coarse granularity. Furthermore, DoW-KV uses DPU-offloaded step merge and a coroutine-based asynchronous processing framework to efficiently manage the PM persistent tables. DoW-KV also introduces a client-mixed read strategy to boost key searching on the two-tier hash index. Experiment results show that DoW-KV outperforms the state- of-the-art DINOMO by 2.1× and 1.3× in the Put and Get operations, respectively.</p>
-                                                    </blockquote>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slot-title">
-                        <div class="slot-wrapper">
-                                    <span class="ttip_object_info_very_wide" rel="#bpta3_info" title="#bpta3_title">
-                                        Uniform Algorithms for Reduce-scatter and (most) other Collectives for MPI
-                                        <i class="fa fa-caret-right"></i>
-                                    </span>
-                            <div class="info_link_object_info" style="display: none;">
-                                <div id="bpta3_popup">
-                                    <b id="bpta3_title">
-                                        Uniform Algorithms for Reduce-scatter and (most) other Collectives for MPI
-                                        <span class="calendar-links"> <a
-                                                href="program/calendar/submissions/sess1--pap209.ics" target="_blank"
-                                                title="Import this presentation into your desktop calendar program."><img
-                                                height="15"
-                                                src="program/includes/images/ical_icon2.gif" style="border: none;"
-                                                width="15"/></a> </span>
-                                    </b>
-                                    <hr/>
-                                    <div id="bpta3_info">
-                                        <div>
-                                            <div class="author-names">
-                                                Jesper Larsson Traff (TU Wien),
-                                                Ioannis Vardas (Vienna University of Technology),
-                                                Sascha Hunold (Vienna University of Technology), and
-                                                Nikolaus Manes Funk (TU Wien)
-                                            </div>
-                                            <div>
-                                                <div>Abstract
-                                                    <blockquote>
-                                                        <p>We explore the use of a regular, circulant graph communication pattern for the implementation of the reduction-to-all, by specialization the reduction-to-root, the reduce-scatter, the all-to-all-broadcast and the rooted gather and scatter collective operations, all as found in MPI, for commutative operators and for any number of processes. The reduction-to-all algorithm reconstructs the little known algorithm by Bar-Noy, Kipnis and Schieber (1993), which the paper considerably extends.</p>
-                                                        <p>We experiment with extensions and combinations of the algorithms for these operations, and examine their performance from the perspective of performance guidelines, and in direct comparison to the implementations in common MPI libraries. On a small cluster with 36x 32 cores, and two larger HPC production systems we show that we can especially for MPI_Reduce_scatter_block achieve considerably better performance than standard MPI library implementations. Our algorithms can perform consistently which the implementations in standard MPI libraries sometimes do not.</p>
-                                                        <p>n a homogeneous, one-ported communication system with linear transmission costs, reduction-to-all, reduce-scatter and all-to-all-broadcast can all be implemented in O(log p+m) time steps for problems of size m with small constants which we analyze and discuss.</p>
-                                                    </blockquote>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="clear: both;"></div>
-                </div>
-            </div>
-
-            <div class="timeslot"><h3 class="session-time">12:30 - 14:00</h3>
-                <div class="program-session">
-                    <div class="session-title">
-                        <div class="slot-wrapper">
-                                    <span class="ttip_object_info_very_wide" rel="#poster_info" title="#poster_title">
-                                        Lunch
-
-                                    </span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="timeslot"><h3 class="session-time">14:00 - 15:30 -- Parallel Sessions</h3>
+            <div class="timeslot"><h3 class="session-time">11:00 - 12:30 -- Parallel Sessions</h3>
                 <div class="program-session">
                     <div class="session-title">Distributed Machine Learning (Session I)</div>
                     <div class="room-name">TBD</div>
@@ -1124,150 +975,24 @@
                     <div style="clear: both;"></div>
                 </div>
             </div>
-
-            <div class="timeslot"><h3 class="session-time">15:30 - 16:00</h3>
+            <div class="timeslot"><h3 class="session-time">12:30 - 14:00</h3>
                 <div class="program-session">
-                    <div class="session-title">Coffee Break</div>
+                    <div class="session-title">
+                        <div class="slot-wrapper">
+                                    <span class="ttip_object_info_very_wide" rel="#poster_info" title="#poster_title">
+                                        Lunch
+
+                                    </span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="timeslot"><h3 class="session-time">16:00 - 17:30 -- Parallel Sessions</h3>
+            <div class="timeslot"><h3 class="session-time">14:00 - 15:30 -- Parallel Sessions</h3>
                 <div class="program-session">
-                    <div class="session-title">Storage Systems and Data Management (Session III)</div>
-                    <div class="room-name">HS13</div>
-                    <div class="session-chair">Chair: TBD</div>
-                    <div class="slot-title">
-                        <div class="slot-wrapper">
-                                    <span class="ttip_object_info_very_wide" rel="#s3ta1_info" title="#s3ta1_title">
-                                        FullRepair: Towards Optimal Repair Pipelining in Erasure-Coded Clustered Storage Systems
-                                        <i class="fa fa-caret-right"></i>
-                                    </span>
-                            <div class="info_link_object_info" style="display: none;">
-                                <div id="s3ta1_popup">
-                                    <b id="s3ta1_title">
-                                        FullRepair: Towards Optimal Repair Pipelining in Erasure-Coded Clustered Storage Systems
-                                        <span class="calendar-links"> <a
-                                                href="program/calendar/submissions/sess5--pap186.ics" target="_blank"
-                                                title="Import this presentation into your desktop calendar program."><img
-                                                height="15"
-                                                src="program/includes/images/ical_icon2.gif" style="border: none;"
-                                                width="15"/></a> </span>
-                                    </b>
-                                    <hr/>
-                                    <div id="s3ta1_info">
-                                        <div>
-                                            <div class="author-names">
-                                                Yuzuo Zhang (Huazhong University Of Science And Technology),
-                                                Yuchong Hu (Huazhong University of Science and Technology),
-                                                Xinyuan Tu (Huazhong University of Science and Technology),
-                                                Fang Wang (Huazhong University of Science and Technology),
-                                                Lin Wang (Huazhong University of Science and Technology), and
-                                                Ye Wang (Huazhong University of Science and Technology)
-                                            </div>
-                                            <div>
-                                                <div>Abstract
-                                                    <blockquote>
-                                                        <p>Clustered storage systems often deploy erasure coding that encodes data into coded chunks and distributes them across nodes to tolerate node failures. It is a storage-efficient redundancy scheme but incurs high repair penalty; thus there are many studies focusing on the erasure-coded repair of failed blocks, and some state-of-the-arts pipeline the repair of failed data to improve the repair performance. However, we observe that all existing repair pipelining methods only use a single pipeline, making network bandwidth resources of storage nodes underutilized. In this paper, we propose FullRepair, a new repair pipelining mechanism based on multiple pipelines with the aim of fully exploiting all available bandwidth resources during repair. We construct four constraints to model the repair pipelining problem such that FullRepair can obtain the optimal pipelined repair throughput under fully bandwidth utilization. We design a multi-pipeline scheduling scheme for FullRepair so as to achieve the above optimality. Experiments on the Amazon EC2 show that compared with the state-of-the-art repair pipelining methods RP and PivotRepair, FullRepair reduces the repair time of single chunk by up to 45.4% and 33.19%, respectively.</p>
-                                                    </blockquote>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slot-title">
-                        <div class="slot-wrapper">
-                                    <span class="ttip_object_info_very_wide" rel="#s3ta2_info" title="#s3ta2_title">
-                                       Performance Characterization of NVMe Flash Devices with Zoned Namespaces (ZNS)
-                                        <i class="fa fa-caret-right"></i>
-                                    </span>
-                            <div class="info_link_object_info" style="display: none;">
-                                <div id="s3ta2_popup">
-                                    <b id="s3ta2_title">
-                                        Performance Characterization of NVMe Flash Devices with Zoned Namespaces (ZNS)
-                                        <span class="calendar-links"> <a
-                                                href="program/calendar/submissions/sess5--pap274.ics" target="_blank"
-                                                title="Import this presentation into your desktop calendar program."><img
-                                                height="15"
-                                                src="program/includes/images/ical_icon2.gif" style="border: none;"
-                                                width="15"/></a> </span>
-                                    </b>
-                                    <hr/>
-                                    <div id="s3ta2_info">
-                                        <div>
-                                            <div class="author-names">
-                                                Krijn Doekemeijer (Vrije Universiteit Amsterdam),
-                                                Matias Bjorling (Western Digital),
-                                                Nick Tehrany (TU Delft),
-                                                Animesh Trivedi (Vrije Universiteit Amsterdam), and
-                                                Balakrishnan Chandrasekaran (Vrije Universiteit Amsterdam)
-                                            </div>
-                                            <div>
-                                                <div>Abstract
-                                                    <blockquote>
-                                                        <p>The recent emergence of NVMe flash devices with Zoned Namespace support, ZNS SSDs, represents a significant new advancement in flash storage. ZNS SSDs introduce a new storage abstraction of append-only zones with a set of new I/O (i.e., append) and management (zone state machine transition) commands. With the new abstraction and commands, ZNS SSDs offer more control to the host software stack than a (non-zoned) SSD for flash management, which is known to be complex (because of garbage collection, scheduling, block allocation, parallelism management, over-provisioning). ZNS SSDs are, consequently, gaining adoption in a variety of applications (e.g., file systems, key-value stores, and databases), particularly latency-sensitive big data applications. Despite this enthusiasm, there has yet to be a systematic characterization of ZNS SSD performance with its zoned storage model abstractions and I/O operations. This work addresses this crucial shortcoming. We report on the performance features of a commercially available ZNS SSD (13 key observations), explain how these features can be incorporated into publicly available state-of-the-art ZNS emulators, and recommend guidelines for ZNS SSD application developers. All artifacts (code and data sets) of this study are publicly available at: https://anonymous.4open.science/r/NVMeBenchmarks-0551.</p>
-                                                    </blockquote>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slot-title">
-                        <div class="slot-wrapper">
-                                    <span class="ttip_object_info_very_wide" rel="#s3ta3_info" title="#s3ta3_title">
-                                        TomDB: A Hardware-Accelerated Key-Value Store for Data-Intensive Applications<i class="fa fa-caret-right"></i>
-                                    </span>
-                            <div class="info_link_object_info" style="display: none;">
-                                <div id="s3ta3_popup">
-                                    <b id="s3ta3_title">
-                                        TomDB: A Hardware-Accelerated Key-Value Store for Data-Intensive Applications
-                                        <span class="calendar-links"> <a
-                                                href="program/calendar/submissions/sess5--pap145.ics" target="_blank"
-                                                title="Import this presentation into your desktop calendar program."><img
-                                                height="15"
-                                                src="program/includes/images/ical_icon2.gif" style="border: none;"
-                                                width="15"/></a> </span>
-                                    </b>
-                                    <hr/>
-                                    <div id="s3ta3_info">
-                                        <div>
-                                            <div class="author-names">
-                                                Inhyuk Park (SK hynix),
-                                                David Bonnie (Los Alamos National Laboratory),
-                                                Qing Zheng (Carnegie Mellon University, New Mexico Consortium),
-                                                Bradley Settlemyer (NVIDIA),
-                                                Dominic Manno (Los Alamos National Laboratory),
-                                                Youngjae Kim (Sogang University),
-                                                Soonyeal Yang (SK hynix),
-                                                Woosuk Chung (SK hynix),
-                                                Jason Lee (Los Alamos National Laboratory), and
-                                                Gary Grider (Los Alamos National Lab)
-                                            </div>
-                                            <div>
-                                                <div>Abstract
-                                                    <blockquote>
-                                                        <p>Popular write-optimized software key-value stores such as LevelDB and RocksDB are often good at reads. While data is initially stored in a write-optimized format, in the background it is asynchronously transformed into a read-optimized format for efficient followup queries. Write-optimized key-value stores can still block writes. This happens when those background workers cannot keep up with the foreground insertion workload.</p>
-                                                        <p>This paper makes a case for a hardware-accelerated key-value store that allows for running performance-critical operations --- such as background data reorganization and queries --- on storage rather than on a host. This better hides background work latency, prevents it from blocking foreground writes, and improves overall I/O efficiency. Our prototype, called TomDB, is a key-value based computational storage device consisting of an NVMe SSD and a System-on-a-Chip (SoC) that implements an ordered key-value store atop the SSD. Through offloaded processing, TomDB streamlines data insertion, reduces host-device data movement for both background data reorganization and query processing, and shows up to 10.6x lower write times and up to 7.4x faster queries compared to the current state-of-the-art on a real-world scientific dataset.</p>
-                                                    </blockquote>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="hr">
-                        <hr/>
-                    </div>
-
-                    <div class="session-title">Software Systems for ML (Session IV)</div>
+                    <div class="session-title">Software Systems for ML (Session III)</div>
                     <div class="room-name">TBD</div>
                     <div class="session-chair">Chair: TBD</div>
                     <div class="slot-title">
@@ -1397,146 +1122,45 @@
                         </div>
                     </div>
 
-                    <div style="clear: both;"></div>
-                </div>
-            </div>
-
-            <div class="timeslot"><h3 class="session-time">18:00 - 20:00</h3>
-                <div class="program-session">
-                    <div class="session-title">Social event: Meow Wolf</div>
-
-                    <div class="slot-title">
-                        <div class="slot-wrapper">
-                                    <span class="ttip_object_info_very_wide" rel="#reception_info"
-                                          title="#reception_title">
-                                        Meow Wolf: House of Eternal Return
-                                        <i class="fa fa-caret-right"></i>
-                                    </span>
-                            <div class="info_link_object_info" style="display: none;">
-                                <div id="reception_popup">
-                                    <b id="reception_title">
-                                        Meow Wolf as a psychedelic interactive art installation that's fun for all ages.
-                                    </b>
-                                    <hr/>
-                                    <div id="reception_info">
-                                        <div>
-                                            <!--<div class="author-names"></div>-->
-                                            <div>
-                                                <div>
-                                                    Buses will run continually between the Hilton and Meow Wolf from 5:30pm – 10:30pm.  Food and drink will be provided.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </td>
-
-        <td style="min-width: 225px; max-width: 225px;" valign="top">
-            <h2 class="section-title">Conference - Thursday, Nov 2</h2>
-
-            <div class="timeslot"><h3 class="session-time">8:45-9:15</h3>
-                <div class="program-session">
-                    <div class="session-title">Registration</div>
-                </div>
-            </div>
-
-            <div class="timeslot"><h3 class="session-time">9:15 - 9:30</h3>
-                <div class="program-session">
-                    <div class="session-title">Announcements</div>
-                    <div class="room-name">TBD</div>
-                </div>
-            </div>
-
-            <div class="timeslot"><h3 class="session-time">9:30 - 10:30</h3>
-                <div class="program-session">
-                    <div class="session-title">Keynote: Jesús Labarta (BSC)</div>
-                    <div class="room-name">TBD</div>
-
-                    <div class="slot-title">
-                        <div class="slot-wrapper">
-                                    <span class="ttip_object_info_very_wide" rel="#kn2_info" title="#kn2_title">
-                                        The European Processor Initiative.
-                                        <i class="fa fa-caret-right"></i>
-                                    </span>
-                            <div class="info_link_object_info" style="display: none;">
-                                <div id="kn2_popup">
-                                    <b id="kn2_title">
-                                        The European Processor Initiative.
-                                        <!--span class="calendar-links"> <a href="program/calendar/submissions/sess115--pap212.ics" target="_blank" title="Import this presentation into your desktop calendar program."><img height="15" src="program/includes/images/ical_icon2.gif" style="border: none;" width="15" /></a> </span-->
-                                    </b>
-                                    <hr/>
-                                    <div id="kn2_info">
-                                        <div>
-                                            <div class="author-names">
-                                                Jesús Labarta (BSC)
-                                            </div>
-                                            <div>
-                                                <div>Abstract
-                                                    <blockquote><p>TBD</p></blockquote>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="hr">
+                        <hr/>
                     </div>
 
+                    <div class="session-title">Storage Systems and Data Management (Session IV)</div>
+                    <div class="room-name">HS13</div>
                     <div class="session-chair">Chair: TBD</div>
-                    <div style="clear: both;"></div>
-                </div>
-            </div>
-
-            <div class="timeslot"><h3 class="session-time">10:30 - 11:00</h3>
-                <div class="program-session">
-                    <div class="session-title">Coffee Break</div>
-                </div>
-            </div>
-
-            <div class="timeslot"><h3 class="session-time">11:00 - 12:30</h3>
-                <div class="program-session">
-                    <div class="session-title">Best Paper presentations</div>
                     <div class="slot-title">
                         <div class="slot-wrapper">
-                                    <span class="ttip_object_info_very_wide" rel="#bpta4_info" title="#bpta4_title">
-                                        JACO: Java Code Layout Optimizer Enabling Continuous Optimization without Pausing Application Services Pengfei Su
+                                    <span class="ttip_object_info_very_wide" rel="#s3ta1_info" title="#s3ta1_title">
+                                        FullRepair: Towards Optimal Repair Pipelining in Erasure-Coded Clustered Storage Systems
                                         <i class="fa fa-caret-right"></i>
                                     </span>
                             <div class="info_link_object_info" style="display: none;">
-                                <div id="bpta4_popup">
-                                    <b id="bpta4_title">
-                                        JACO: Java Code Layout Optimizer Enabling Continuous Optimization without Pausing Application Services Pengfei Su
+                                <div id="s3ta1_popup">
+                                    <b id="s3ta1_title">
+                                        FullRepair: Towards Optimal Repair Pipelining in Erasure-Coded Clustered Storage Systems
                                         <span class="calendar-links"> <a
-                                                href="program/calendar/submissions/sess7--pap161.ics" target="_blank"
+                                                href="program/calendar/submissions/sess5--pap186.ics" target="_blank"
                                                 title="Import this presentation into your desktop calendar program."><img
                                                 height="15"
                                                 src="program/includes/images/ical_icon2.gif" style="border: none;"
                                                 width="15"/></a> </span>
                                     </b>
                                     <hr/>
-                                    <div id="bpta4_info">
+                                    <div id="s3ta1_info">
                                         <div>
                                             <div class="author-names">
-                                                Wenhai Lin (Zhejiang University),
-                                                Yuzhong Zhang (Alibaba Group),
-                                                Jingchang Qin (Zhejiang University),
-                                                Shishun Cai (Alibaba Group),
-                                                Yiquan Chen (Zhejiang University, Alibaba Group),
-                                                Lirong Fu (Zhejiang University),
-                                                Zhen Jin (Zhejiang University), Yi Chen (University of Michigan),
-                                                Jiexiong Xu (Zhejiang University), and	Wenzhi Chen (Zhejiang University)
-
+                                                Yuzuo Zhang (Huazhong University Of Science And Technology),
+                                                Yuchong Hu (Huazhong University of Science and Technology),
+                                                Xinyuan Tu (Huazhong University of Science and Technology),
+                                                Fang Wang (Huazhong University of Science and Technology),
+                                                Lin Wang (Huazhong University of Science and Technology), and
+                                                Ye Wang (Huazhong University of Science and Technology)
                                             </div>
                                             <div>
                                                 <div>Abstract
                                                     <blockquote>
-                                                        <p>Many Java applications in data centers suffer from severe processor pipeline frontend bottlenecks, which can be mitigated by profile-guided code layout optimizations (PGCLO). To maximize optimization opportunities, state-of-the-art PGCLO solutions adopt continuous optimization to ensure that the code layout consistently matches ever-changing application control flow characteristics. However, existing continuous optimizations inevitably pause the application to execute the new code com- pletely, which leads to high response latency and significantly deteriorates user experience.</p>
-                                                        <p>In this paper, we propose JACO, a novel profile-guided Java code layout optimizer, enabling continuous optimization without pausing application services. The key idea of JACO is to enable the execution of both the old and new code simultaneously rather than completely switching to the new code. In particular, JACO is composed of three components: (1) A lightweight profiler captures the control flow information of the application and then generates an optimized function order. (2) A control flow switcher generates new code based on optimized function order and switches the application to execute the new code without pausing the application services. (3) A selective code reclaimer only frees the memory occupied by the inactive old code. We evaluated JACO on both open-source applications and real-world applications from a world-leading company. JACO achieved up to a 16.36% performance improvement for real-world applications. The state-of-the-art approach introduces up to 37.93x latency overhead that will interrupt application services, while JACO only introduces a negligible 7% latency overhead.</p>
+                                                        <p>Clustered storage systems often deploy erasure coding that encodes data into coded chunks and distributes them across nodes to tolerate node failures. It is a storage-efficient redundancy scheme but incurs high repair penalty; thus there are many studies focusing on the erasure-coded repair of failed blocks, and some state-of-the-arts pipeline the repair of failed data to improve the repair performance. However, we observe that all existing repair pipelining methods only use a single pipeline, making network bandwidth resources of storage nodes underutilized. In this paper, we propose FullRepair, a new repair pipelining mechanism based on multiple pipelines with the aim of fully exploiting all available bandwidth resources during repair. We construct four constraints to model the repair pipelining problem such that FullRepair can obtain the optimal pipelined repair throughput under fully bandwidth utilization. We design a multi-pipeline scheduling scheme for FullRepair so as to achieve the above optimality. Experiments on the Amazon EC2 show that compared with the state-of-the-art repair pipelining methods RP and PivotRepair, FullRepair reduces the repair time of single chunk by up to 45.4% and 33.19%, respectively.</p>
                                                     </blockquote>
                                                 </div>
                                             </div>
@@ -1546,30 +1170,101 @@
                             </div>
                         </div>
                     </div>
-                    <div class="room-name">Mesa Ballroom</div>
-                    <div class="session-title">
+                    <div class="slot-title">
                         <div class="slot-wrapper">
-                                    <span class="ttip_object_info_very_wide" rel="#poster_info" title="#poster_title">
-                                        Lunch
+                                    <span class="ttip_object_info_very_wide" rel="#s3ta2_info" title="#s3ta2_title">
+                                       Performance Characterization of NVMe Flash Devices with Zoned Namespaces (ZNS)
+                                        <i class="fa fa-caret-right"></i>
                                     </span>
+                            <div class="info_link_object_info" style="display: none;">
+                                <div id="s3ta2_popup">
+                                    <b id="s3ta2_title">
+                                        Performance Characterization of NVMe Flash Devices with Zoned Namespaces (ZNS)
+                                        <span class="calendar-links"> <a
+                                                href="program/calendar/submissions/sess5--pap274.ics" target="_blank"
+                                                title="Import this presentation into your desktop calendar program."><img
+                                                height="15"
+                                                src="program/includes/images/ical_icon2.gif" style="border: none;"
+                                                width="15"/></a> </span>
+                                    </b>
+                                    <hr/>
+                                    <div id="s3ta2_info">
+                                        <div>
+                                            <div class="author-names">
+                                                Krijn Doekemeijer (Vrije Universiteit Amsterdam),
+                                                Matias Bjorling (Western Digital),
+                                                Nick Tehrany (TU Delft),
+                                                Animesh Trivedi (Vrije Universiteit Amsterdam), and
+                                                Balakrishnan Chandrasekaran (Vrije Universiteit Amsterdam)
+                                            </div>
+                                            <div>
+                                                <div>Abstract
+                                                    <blockquote>
+                                                        <p>The recent emergence of NVMe flash devices with Zoned Namespace support, ZNS SSDs, represents a significant new advancement in flash storage. ZNS SSDs introduce a new storage abstraction of append-only zones with a set of new I/O (i.e., append) and management (zone state machine transition) commands. With the new abstraction and commands, ZNS SSDs offer more control to the host software stack than a (non-zoned) SSD for flash management, which is known to be complex (because of garbage collection, scheduling, block allocation, parallelism management, over-provisioning). ZNS SSDs are, consequently, gaining adoption in a variety of applications (e.g., file systems, key-value stores, and databases), particularly latency-sensitive big data applications. Despite this enthusiasm, there has yet to be a systematic characterization of ZNS SSD performance with its zoned storage model abstractions and I/O operations. This work addresses this crucial shortcoming. We report on the performance features of a commercially available ZNS SSD (13 key observations), explain how these features can be incorporated into publicly available state-of-the-art ZNS emulators, and recommend guidelines for ZNS SSD application developers. All artifacts (code and data sets) of this study are publicly available at: https://anonymous.4open.science/r/NVMeBenchmarks-0551.</p>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="session-chair">Chair: TBD</div>
-                    <div class="hr">
-                        <hr/>
+                    <div class="slot-title">
+                        <div class="slot-wrapper">
+                                    <span class="ttip_object_info_very_wide" rel="#s3ta3_info" title="#s3ta3_title">
+                                        TomDB: A Hardware-Accelerated Key-Value Store for Data-Intensive Applications<i class="fa fa-caret-right"></i>
+                                    </span>
+                            <div class="info_link_object_info" style="display: none;">
+                                <div id="s3ta3_popup">
+                                    <b id="s3ta3_title">
+                                        TomDB: A Hardware-Accelerated Key-Value Store for Data-Intensive Applications
+                                        <span class="calendar-links"> <a
+                                                href="program/calendar/submissions/sess5--pap145.ics" target="_blank"
+                                                title="Import this presentation into your desktop calendar program."><img
+                                                height="15"
+                                                src="program/includes/images/ical_icon2.gif" style="border: none;"
+                                                width="15"/></a> </span>
+                                    </b>
+                                    <hr/>
+                                    <div id="s3ta3_info">
+                                        <div>
+                                            <div class="author-names">
+                                                Inhyuk Park (SK hynix),
+                                                David Bonnie (Los Alamos National Laboratory),
+                                                Qing Zheng (Carnegie Mellon University, New Mexico Consortium),
+                                                Bradley Settlemyer (NVIDIA),
+                                                Dominic Manno (Los Alamos National Laboratory),
+                                                Youngjae Kim (Sogang University),
+                                                Soonyeal Yang (SK hynix),
+                                                Woosuk Chung (SK hynix),
+                                                Jason Lee (Los Alamos National Laboratory), and
+                                                Gary Grider (Los Alamos National Lab)
+                                            </div>
+                                            <div>
+                                                <div>Abstract
+                                                    <blockquote>
+                                                        <p>Popular write-optimized software key-value stores such as LevelDB and RocksDB are often good at reads. While data is initially stored in a write-optimized format, in the background it is asynchronously transformed into a read-optimized format for efficient followup queries. Write-optimized key-value stores can still block writes. This happens when those background workers cannot keep up with the foreground insertion workload.</p>
+                                                        <p>This paper makes a case for a hardware-accelerated key-value store that allows for running performance-critical operations --- such as background data reorganization and queries --- on storage rather than on a host. This better hides background work latency, prevents it from blocking foreground writes, and improves overall I/O efficiency. Our prototype, called TomDB, is a key-value based computational storage device consisting of an NVMe SSD and a System-on-a-Chip (SoC) that implements an ordered key-value store atop the SSD. Through offloaded processing, TomDB streamlines data insertion, reduces host-device data movement for both background data reorganization and query processing, and shows up to 10.6x lower write times and up to 7.4x faster queries compared to the current state-of-the-art on a real-world scientific dataset.</p>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div style="clear: both;"></div>
                 </div>
             </div>
-
-            <div class="timeslot"><h3 class="session-time">12:30 - 14:00</h3>
+            <div class="timeslot"><h3 class="session-time">15:00 - 16:00</h3>
                 <div class="program-session">
-                    <div class="session-title">Lunch</div>
+                    <div class="session-title">Coffee Break</div>
                 </div>
             </div>
-
-            <div class="timeslot"><h3 class="session-time">14:00 - 15:30 -- Parallel Sessions</h3>
+            <div class="timeslot"><h3 class="session-time">16:00 - 17:30 -- Parallel Sessions</h3>
                 <div class="program-session">
                     <div class="session-title">Communication (Session V)</div>
                     <div class="room-name">TBD</div>
@@ -1830,22 +1525,103 @@
                     <div style="clear: both;"></div>
                 </div>
             </div>
-            <div class="timeslot"><h3 class="session-time">15:30 - 15:45</h3>
+            <div class="timeslot"><h3 class="session-time">17:30 - 20:00</h3>
                 <div class="program-session">
-                    <div class="session-title">Best Paper Awards</div>
+                    <div class="session-title">Social event: Meow Wolf</div>
+
+                    <div class="slot-title">
+                        <div class="slot-wrapper">
+                                    <span class="ttip_object_info_very_wide" rel="#reception_info"
+                                          title="#reception_title">
+                                        Meow Wolf: House of Eternal Return
+                                        <i class="fa fa-caret-right"></i>
+                                    </span>
+                            <div class="info_link_object_info" style="display: none;">
+                                <div id="reception_popup">
+                                    <b id="reception_title">
+                                        Meow Wolf as a psychedelic interactive art installation that's fun for all ages.
+                                    </b>
+                                    <hr/>
+                                    <div id="reception_info">
+                                        <div>
+                                            <!--<div class="author-names"></div>-->
+                                            <div>
+                                                <div>
+                                                    Buses will run continually between the Hilton and Meow Wolf from 5:30pm – 10:30pm.  Food and drink will be provided.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="timeslot"><h3 class="session-time">15:45 - 16:15</h3>
+        </td>
+
+        <td style="min-width: 225px; max-width: 225px;" valign="top">
+            <h2 class="section-title">Conference - Thursday, Nov 2</h2>
+
+            <div class="timeslot"><h3 class="session-time">8:45-9:15</h3>
+                <div class="program-session">
+                    <div class="session-title">Registration</div>
+                </div>
+            </div>
+
+            <div class="timeslot"><h3 class="session-time">9:15 - 9:30</h3>
+                <div class="program-session">
+                    <div class="session-title">Announcements</div>
+                    <div class="room-name">TBD</div>
+                </div>
+            </div>
+
+            <div class="timeslot"><h3 class="session-time">9:30 - 10:30</h3>
+                <div class="program-session">
+                    <div class="session-title">Keynote: Jesús Labarta (BSC)</div>
+                    <div class="room-name">TBD</div>
+
+                    <div class="slot-title">
+                        <div class="slot-wrapper">
+                                    <span class="ttip_object_info_very_wide" rel="#kn2_info" title="#kn2_title">
+                                        The European Processor Initiative.
+                                        <i class="fa fa-caret-right"></i>
+                                    </span>
+                            <div class="info_link_object_info" style="display: none;">
+                                <div id="kn2_popup">
+                                    <b id="kn2_title">
+                                        The European Processor Initiative.
+                                        <!--span class="calendar-links"> <a href="program/calendar/submissions/sess115--pap212.ics" target="_blank" title="Import this presentation into your desktop calendar program."><img height="15" src="program/includes/images/ical_icon2.gif" style="border: none;" width="15" /></a> </span-->
+                                    </b>
+                                    <hr/>
+                                    <div id="kn2_info">
+                                        <div>
+                                            <div class="author-names">
+                                                Jesús Labarta (BSC)
+                                            </div>
+                                            <div>
+                                                <div>Abstract
+                                                    <blockquote><p>TBD</p></blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="session-chair">Chair: TBD</div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+
+            <div class="timeslot"><h3 class="session-time">10:30 - 11:00</h3>
                 <div class="program-session">
                     <div class="session-title">Coffee Break</div>
                 </div>
             </div>
-            <div class="timeslot"><h3 class="session-time">16:15 - 16:45</h3>
-                <div class="program-session">
-                    <div class="session-title">Poster lightning talks</div>
-                </div>
-            </div>
-            <div class="timeslot"><h3 class="session-time">16:45 - 17:45 -- Parallel Sessions</h3>
+            <div class="timeslot"><h3 class="session-time">11:00 - 12:00 -- Parallel Sessions</h3>
                 <div class="program-session">
                     <div class="session-title">Disaggregated Architectures (Session VII)</div>
                     <div class="room-name">TBD</div>
@@ -2023,7 +1799,205 @@
                     <div style="clear: both;"></div>
                 </div>
             </div>
-            <div class="timeslot"><h3 class="session-time">18:00 - 23:00</h3>
+            <div class="timeslot"><h3 class="session-time">12:00 - 13:30</h3>
+                <div class="program-session">
+                    <div class="session-title">Lunch</div>
+                </div>
+            </div>
+            <div class="timeslot"><h3 class="session-time">13:30 - 15:45</h3>
+                <div class="program-session">
+                    <div class="session-title">Best Paper presentations</div>
+                    <div class="room-name">Mesa Ballroom</div>
+                    <div class="session-chair">Chair: TBD</div>
+                    <div class="slot-title">
+                        <div class="slot-wrapper">
+                                    <span class="ttip_object_info_very_wide" rel="#bpta1_info" title="#bpta1_title">
+                                        A Dynamic Network-Native MPI Partitioned Aggregation Over InfiniBand Verbs
+                                        <i class="fa fa-caret-right"></i>
+                                    </span>
+                            <div class="info_link_object_info" style="display: none;">
+                                <div id="bpta1_popup">
+                                    <b id="bpta1_title">
+                                        A Dynamic Network-Native MPI Partitioned Aggregation Over InfiniBand Verbs
+                                        <span class="calendar-links"> <a
+                                                href="program/calendar/submissions/sess1--pap280.ics" target="_blank"
+                                                title="Import this presentation into your desktop calendar program."><img
+                                                height="15"
+                                                src="program/includes/images/ical_icon2.gif" style="border: none;"
+                                                width="15"/></a> </span>
+                                    </b>
+                                    <hr/>
+                                    <div id="bpta1_info">
+                                        <div>
+                                            <div class="author-names">
+                                                Yiltan Temucin (Queen's University),
+                                                Ryan Grant (Queen's University, University of New Mexico),
+                                                Scott Levy (Sandia National Laboratories),
+                                                Ahmad Afsahi (Queen’s University), and
+                                                Whit Schonbein (Sandia National Laboratories)
+                                            </div>
+                                            <div>
+                                                <div>Abstract
+                                                    <blockquote>
+                                                        <p>Modern HPC systems require efficient hybrid programming model to utilize their hardware resources effectively. The Message Passing Interface (MPI) has accommodated next generation hardware by providing new APIs such as the MPI Partitioned interface. This API provides a user with fine-grain communication without the overhead of traditional MPI point-to-point communication in multi-threaded workloads. To the best of our knowledge, we present the first work on detailed hardware-level design for an MPI Partitioned implementation. We guide readers through a method to map the MPI Partitioned interface to the InfiniBand Verbs API. Alongside implementation details, we also study the aggregation of user partitions and how we can efficiently send them over the network. We study a brute force approach and using the Partitioned LogGP (PLogGP) model to predict ideal aggregation. We observe that using the PLogGP model provides provides comparable performance without exhausting computing resources to search the entire solution space. The PLogGP design was further optimized by considering how the partition arrival pattern can be used to dynamically modify our aggregation scheme. We profiled our micro-benchmarks to provide analysis on how and why this additional optimization is beneficial to our results and how we can fine-tune this mechanism. Finally, we evaluated our PLogGP and Timer-based PLogGP designs with a commonly used communication pattern in HPC (communication sweep) to observe the impact when communicating with multiple processes in an application-like scenario at 1024 cores.</p>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slot-title">
+                        <div class="slot-wrapper">
+                                    <span class="ttip_object_info_very_wide" rel="#bpta2_info" title="#bpta2_title">
+                                        DoW-KV: A DPU-offloaded and Write-optimized Key-Value Store on Disaggregated Persistent Memory
+                                        <i class="fa fa-caret-right"></i>
+                                    </span>
+                            <div class="info_link_object_info" style="display: none;">
+                                <div id="bpta2_popup">
+                                    <b id="bpta2_title">
+                                        DoW-KV: A DPU-offloaded and Write-optimized Key-Value Store on Disaggregated Persistent Memory
+                                        <span class="calendar-links"> <a
+                                                href="program/calendar/submissions/sess1--pap266.ics" target="_blank"
+                                                title="Import this presentation into your desktop calendar program."><img
+                                                height="15"
+                                                src="program/includes/images/ical_icon2.gif" style="border: none;"
+                                                width="15"/></a> </span>
+                                    </b>
+                                    <hr/>
+                                    <div id="bpta2_info">
+                                        <div>
+                                            <div class="author-names">
+                                                Yiwen Zhang (Huazhong University of Science and Technology, Wuhan National Laboratory for Optoelectronics),
+                                                Jun Li (Wuhan National Laboratory for Optoelectronics, Huazhong University of Science and Technology; Wuhan National Laboratory for Optoelectronics),
+                                                Guokuan Li (the Wuhan National Laboratory for Optoelectronics, Huazhong University of Science and Technology; Huazhong University of Science and Technology),
+                                                Ting Yao (Cloud Storage Service Product Dept, Huawei Technologies Co.,Ltd; Huawei Technologies Co.,Ltd),
+                                                Jiguang Wan (Huazhong University of Science and Technology, Wuhan National Laboratory for Optoelectronics),
+                                                Huatao Wu (Huawei Cloud; Huawei Technologies Co.,Ltd),
+                                                Junyue Wang (the School of Computer Science and Technology,Huazhong University of Science and Technology; the School of Computer Science and Technology), and
+                                                Daohui Wang (Huawei Cloud; Huawei Technologies Co.,Ltd)
+                                            </div>
+                                            <div>
+                                                <div>Abstract
+                                                    <blockquote>
+                                                        <p>Disaggregated Persistent Memory (DPM) is a promising technology offering elasticity, high resource utilization, persistent data storage, and lower power consumption. While building KV stores on the DPM benefit from these merits, it is also challenging to achieve efficient writes due to the bottleneck of low bandwidth caused by small random writes to PM, and the intensive CPU consumption on the persistent memory server (PMS) is inevitable. Integrating the SmartNIC such as the Data Processing Unit (DPU) to the DPM gives developers the chance to optimize writing to KV stores by utilizing both the DPU memory and the DPU processor. However, simple offloading cannot make full use of the DPU’s potential capacity. To address these chal- lenges, we propose DoW-KV, a persistent hash KV store on DPM. DoW-KV employs a two-tier hash index consisting of a DPU cache table in DPU memory and multiple PM persistent tables on the PM. It relocates small random writes to the DPU memory and consolidate them to the PM at a coarse granularity. Furthermore, DoW-KV uses DPU-offloaded step merge and a coroutine-based asynchronous processing framework to efficiently manage the PM persistent tables. DoW-KV also introduces a client-mixed read strategy to boost key searching on the two-tier hash index. Experiment results show that DoW-KV outperforms the state- of-the-art DINOMO by 2.1× and 1.3× in the Put and Get operations, respectively.</p>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slot-title">
+                        <div class="slot-wrapper">
+                                    <span class="ttip_object_info_very_wide" rel="#bpta3_info" title="#bpta3_title">
+                                        Uniform Algorithms for Reduce-scatter and (most) other Collectives for MPI
+                                        <i class="fa fa-caret-right"></i>
+                                    </span>
+                            <div class="info_link_object_info" style="display: none;">
+                                <div id="bpta3_popup">
+                                    <b id="bpta3_title">
+                                        Uniform Algorithms for Reduce-scatter and (most) other Collectives for MPI
+                                        <span class="calendar-links"> <a
+                                                href="program/calendar/submissions/sess1--pap209.ics" target="_blank"
+                                                title="Import this presentation into your desktop calendar program."><img
+                                                height="15"
+                                                src="program/includes/images/ical_icon2.gif" style="border: none;"
+                                                width="15"/></a> </span>
+                                    </b>
+                                    <hr/>
+                                    <div id="bpta3_info">
+                                        <div>
+                                            <div class="author-names">
+                                                Jesper Larsson Traff (TU Wien),
+                                                Ioannis Vardas (Vienna University of Technology),
+                                                Sascha Hunold (Vienna University of Technology), and
+                                                Nikolaus Manes Funk (TU Wien)
+                                            </div>
+                                            <div>
+                                                <div>Abstract
+                                                    <blockquote>
+                                                        <p>We explore the use of a regular, circulant graph communication pattern for the implementation of the reduction-to-all, by specialization the reduction-to-root, the reduce-scatter, the all-to-all-broadcast and the rooted gather and scatter collective operations, all as found in MPI, for commutative operators and for any number of processes. The reduction-to-all algorithm reconstructs the little known algorithm by Bar-Noy, Kipnis and Schieber (1993), which the paper considerably extends.</p>
+                                                        <p>We experiment with extensions and combinations of the algorithms for these operations, and examine their performance from the perspective of performance guidelines, and in direct comparison to the implementations in common MPI libraries. On a small cluster with 36x 32 cores, and two larger HPC production systems we show that we can especially for MPI_Reduce_scatter_block achieve considerably better performance than standard MPI library implementations. Our algorithms can perform consistently which the implementations in standard MPI libraries sometimes do not.</p>
+                                                        <p>n a homogeneous, one-ported communication system with linear transmission costs, reduction-to-all, reduce-scatter and all-to-all-broadcast can all be implemented in O(log p+m) time steps for problems of size m with small constants which we analyze and discuss.</p>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slot-title">
+                        <div class="slot-wrapper">
+                                    <span class="ttip_object_info_very_wide" rel="#bpta4_info" title="#bpta4_title">
+                                        JACO: Java Code Layout Optimizer Enabling Continuous Optimization without Pausing Application Services Pengfei Su
+                                        <i class="fa fa-caret-right"></i>
+                                    </span>
+                            <div class="info_link_object_info" style="display: none;">
+                                <div id="bpta4_popup">
+                                    <b id="bpta4_title">
+                                        JACO: Java Code Layout Optimizer Enabling Continuous Optimization without Pausing Application Services Pengfei Su
+                                        <span class="calendar-links"> <a
+                                                href="program/calendar/submissions/sess7--pap161.ics" target="_blank"
+                                                title="Import this presentation into your desktop calendar program."><img
+                                                height="15"
+                                                src="program/includes/images/ical_icon2.gif" style="border: none;"
+                                                width="15"/></a> </span>
+                                    </b>
+                                    <hr/>
+                                    <div id="bpta4_info">
+                                        <div>
+                                            <div class="author-names">
+                                                Wenhai Lin (Zhejiang University),
+                                                Yuzhong Zhang (Alibaba Group),
+                                                Jingchang Qin (Zhejiang University),
+                                                Shishun Cai (Alibaba Group),
+                                                Yiquan Chen (Zhejiang University, Alibaba Group),
+                                                Lirong Fu (Zhejiang University),
+                                                Zhen Jin (Zhejiang University), Yi Chen (University of Michigan),
+                                                Jiexiong Xu (Zhejiang University), and	Wenzhi Chen (Zhejiang University)
+
+                                            </div>
+                                            <div>
+                                                <div>Abstract
+                                                    <blockquote>
+                                                        <p>Many Java applications in data centers suffer from severe processor pipeline frontend bottlenecks, which can be mitigated by profile-guided code layout optimizations (PGCLO). To maximize optimization opportunities, state-of-the-art PGCLO solutions adopt continuous optimization to ensure that the code layout consistently matches ever-changing application control flow characteristics. However, existing continuous optimizations inevitably pause the application to execute the new code com- pletely, which leads to high response latency and significantly deteriorates user experience.</p>
+                                                        <p>In this paper, we propose JACO, a novel profile-guided Java code layout optimizer, enabling continuous optimization without pausing application services. The key idea of JACO is to enable the execution of both the old and new code simultaneously rather than completely switching to the new code. In particular, JACO is composed of three components: (1) A lightweight profiler captures the control flow information of the application and then generates an optimized function order. (2) A control flow switcher generates new code based on optimized function order and switches the application to execute the new code without pausing the application services. (3) A selective code reclaimer only frees the memory occupied by the inactive old code. We evaluated JACO on both open-source applications and real-world applications from a world-leading company. JACO achieved up to a 16.36% performance improvement for real-world applications. The state-of-the-art approach introduces up to 37.93x latency overhead that will interrupt application services, while JACO only introduces a negligible 7% latency overhead.</p>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+            <div class="timeslot"><h3 class="session-time">15:45 - 16:00</h3>
+                <div class="program-session">
+                    <div class="session-title">Best Paper Awards</div>
+                </div>
+            </div>
+            <div class="timeslot"><h3 class="session-time">16:00 - 16:15</h3>
+                <div class="program-session">
+                    <div class="session-title">Coffee Break</div>
+                </div>
+            </div>
+            <div class="timeslot"><h3 class="session-time">16:15 - 16:45</h3>
+                <div class="program-session">
+                    <div class="session-title">Poster lightning talks</div>
+                </div>
+            </div>
+
+            <div class="timeslot"><h3 class="session-time">16:45 - 23:00</h3>
                 <div class="program-session">
                     <div class="session-title">
                         <div class="slot-wrapper">
@@ -2126,7 +2100,7 @@
                 </div>
             </div>
 
-            <div class="timeslot"><h3 class="session-time">16:00 - 17:30 -- Parallel Sessions</h3>
+            <div class="timeslot"><h3 class="session-time">11:00 - 12:30 -- Parallel Sessions</h3>
                 <div class="program-session">
                     <div class="session-title">GPU and FPGA Applications (Session IX)</div>
                     <div class="room-name">TBD</div>
@@ -2338,6 +2312,45 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>In the era of exascale computing, the adoption of a large number of CPU cores and nodes by high-performance computing (HPC) applications has made MPI collective performance increasingly crucial. As the number of cores and nodes increases, the importance of optimizing MPI collective performance becomes more evident. Current collective algorithms, including kernel-assisted inter-process data exchange techniques and data sharing based shared-memory approaches, are prone to significant performance degradation due to the overhead of system calls and page faults or the cost of extra data-copy latency. These issues can negatively impact the efficiency and scalability of HPC applications. To address these issues, we propose PiP-MColl, a Process-in-Process-based Multi-object Inter-process MPI Collective design that maximizes small message MPI collective performance at scale. We also present specific designs to boost the performance for larger messages, such that we observe a comprehensive improvement for a series of message sizes beyond small messages. PiP-MColl features efficient multiple sender and receiver collective algorithms and leverages Process-in-Process shared memory techniques to eliminate unnecessary system call, page fault overhead and extra data copy, which results in improved intra- and inter-node message rate and throughput. Experimental results demonstrate that PiP-MColl significantly outperforms popular MPI libraries, including OpenMPI, MVAPICH2, and Intel MPI, by up to 4.6X for the MPI collectives MPI_Scatter, MPI_Allgather, and MPI_Allreduce.</p>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slot-title">
+                        <div class="slot-wrapper">
+                                    <span class="ttip_object_info_very_wide" rel="#s10ta3_info" title="#s10ta3_title">
+                                        TopoCommit: A Topological Commit Protocol for Cross-Ledger Transactions in Scientific Computing
+                                        <i class="fa fa-caret-right"></i>
+                                    </span>
+                            <div class="info_link_object_info" style="display: none;">
+                                <div id="s10ta3_popup">
+                                    <b id="s10ta3_title">
+                                        TopoCommit: A Topological Commit Protocol for Cross-Ledger Transactions in Scientific Computing
+                                        <span class="calendar-links"> <a
+                                                href="program/calendar/submissions/sess6--pap225.ics" target="_blank"
+                                                title="Import this presentation into your desktop calendar program."><img
+                                                height="15"
+                                                src="program/includes/images/ical_icon2.gif" style="border: none;"
+                                                width="15"/></a> </span>
+                                    </b>
+                                    <hr/>
+                                    <div id="s10ta3_info">
+                                        <div>
+                                            <div class="author-names">
+                                                Olamide Timothy Tawose (University of Nevada, Reno),
+                                                Dongfang Zhao (University of Washington; University of Nevada, Reno), and
+                                                Lei Yang (University of Nevada, Reno)
+                                            </div>
+                                            <div>
+                                                <div>Abstract
+                                                    <blockquote>
+                                                        <p>While increasingly more applications are tempted to manage their data in decentralized systems, such as blockchains or distributed ledgers, the data exchange across multiple, potentially heterogeneous, decentralized systems remains an open problem: State-of-the-art protocols cannot meet one or more of the core requirements, such as atomicity, liveness, and scalability. Specifically, in the field of scientific computing, although a blockchain service was recently developed for scientific computing environments, the data exchanges and transactions among distinct ledgers are not supported. Observing that many modern scientific applications are collaborated on by multiple teams and the increasingly complicated (in-situ) workflows thereof, we argue that there is a pressing need to realize an efficient and scalable protocol for distinct ledgers to exchange data in scientific computing. This paper proposes a topological approach to enabling atomic, nonblocking, and scalable data exchanges among an arbitrary number of scientific ledgers in the context of collaborative scientific computing. Specifically, we construct a topological space formed by these ledgers—abstracting those nodes in a cross-ledger transaction as topological objects such as abstract simplex and simplicial complex. These topological objects, in turn, serve as the building blocks of a topological protocol, namely TopoCommit, under practical assumptions. We implement TopoCommit and integrate it into SciChain, a recently published distributed ledger for tracking scientific data provenance. The extensive evaluation of up to 1,008 nodes and 144 distinct ledgers on CloudLab shows that TopoCommit outperforms state-of-the-art protocols by up to 70×.
+                                                        </p>
                                                     </blockquote>
                                                 </div>
                                             </div>
