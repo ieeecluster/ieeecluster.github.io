@@ -27,3 +27,12 @@
 - Before publishing make index.html broken_index.html
 - Change CPFs to TBD
 - Fix Sponsor amounts
+- Make sure sponsors are correctly worded
+- Update Workshop CPF
+- Update Committee information
+- Update CFP
+- Update Visa information
+- Update Registration info.
+- Update Poster Committee
+- Update the created program.
+- 
