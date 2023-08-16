@@ -35,4 +35,4 @@
 - Update Registration info.
 - Update Poster Committee
 - Update the created program.
-- 
+  - Make sure u have all timeslots correctly defined. Each id in the timeslot should be unique so that your pop ups work.  
