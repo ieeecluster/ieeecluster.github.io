@@ -36,3 +36,4 @@
 - Update Poster Committee
 - Update the created program.
   - Make sure u have all timeslots correctly defined. Each id in the timeslot should be unique so that your pop ups work.  
+- Update author information - make sure we have all cps link, submission link, and author submission dates for main conference. workshop, and posters correctly updated.
