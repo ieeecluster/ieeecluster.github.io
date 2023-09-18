@@ -1661,7 +1661,45 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="slot-title">
+                        <div class="slot-wrapper">
+                                    <span class="ttip_object_info_very_wide" rel="#s10ta3_info" title="#s10ta3_title">
+                                        TopoCommit: A Topological Commit Protocol for Cross-Ledger Transactions in Scientific Computing
+                                        <i class="fa fa-caret-right"></i>
+                                    </span>
+                            <div class="info_link_object_info" style="display: none;">
+                                <div id="s10ta3_popup">
+                                    <b id="s10ta3_title">
+                                        TopoCommit: A Topological Commit Protocol for Cross-Ledger Transactions in Scientific Computing
+                                        <!--<span class="calendar-links"> <a
+                                                href="program/calendar/submissions/sess6&#45;&#45;pap225.ics" target="_blank"
+                                                title="Import this presentation into your desktop calendar program."><img
+                                                height="15"
+                                                src="program/includes/images/ical_icon2.gif" style="border: none;"
+                                                width="15"/></a> </span>-->
+                                    </b>
+                                    <hr/>
+                                    <div id="s10ta3_info">
+                                        <div>
+                                            <div class="author-names">
+                                                Olamide Timothy Tawose (University of Nevada, Reno),
+                                                Lei Yang (University of Nevada, Reno), and
+                                                Dongfang Zhao (University of Washington; University of Nevada, Reno)
+                                            </div>
+                                            <div>
+                                                <div>Abstract
+                                                    <blockquote>
+                                                        <p>While increasingly more applications are tempted to manage their data in decentralized systems, such as blockchains or distributed ledgers, the data exchange across multiple, potentially heterogeneous, decentralized systems remains an open problem: State-of-the-art protocols cannot meet one or more of the core requirements, such as atomicity, liveness, and scalability. Specifically, in the field of scientific computing, although a blockchain service was recently developed for scientific computing environments, the data exchanges and transactions among distinct ledgers are not supported. Observing that many modern scientific applications are collaborated on by multiple teams and the increasingly complicated (in-situ) workflows thereof, we argue that there is a pressing need to realize an efficient and scalable protocol for distinct ledgers to exchange data in scientific computing. This paper proposes a topological approach to enabling atomic, nonblocking, and scalable data exchanges among an arbitrary number of scientific ledgers in the context of collaborative scientific computing. Specifically, we construct a topological space formed by these ledgers—abstracting those nodes in a cross-ledger transaction as topological objects such as abstract simplex and simplicial complex. These topological objects, in turn, serve as the building blocks of a topological protocol, namely TopoCommit, under practical assumptions. We implement TopoCommit and integrate it into SciChain, a recently published distributed ledger for tracking scientific data provenance. The extensive evaluation of up to 1,008 nodes and 144 distinct ledgers on CloudLab shows that TopoCommit outperforms state-of-the-art protocols by up to 70×.
+                                                        </p>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="hr">
                         <hr/>
                     </div>
@@ -2318,45 +2356,6 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>In the era of exascale computing, the adoption of a large number of CPU cores and nodes by high-performance computing (HPC) applications has made MPI collective performance increasingly crucial. As the number of cores and nodes increases, the importance of optimizing MPI collective performance becomes more evident. Current collective algorithms, including kernel-assisted inter-process data exchange techniques and data sharing based shared-memory approaches, are prone to significant performance degradation due to the overhead of system calls and page faults or the cost of extra data-copy latency. These issues can negatively impact the efficiency and scalability of HPC applications. To address these issues, we propose PiP-MColl, a Process-in-Process-based Multi-object Inter-process MPI Collective design that maximizes small message MPI collective performance at scale. We also present specific designs to boost the performance for larger messages, such that we observe a comprehensive improvement for a series of message sizes beyond small messages. PiP-MColl features efficient multiple sender and receiver collective algorithms and leverages Process-in-Process shared memory techniques to eliminate unnecessary system call, page fault overhead and extra data copy, which results in improved intra- and inter-node message rate and throughput. Experimental results demonstrate that PiP-MColl significantly outperforms popular MPI libraries, including OpenMPI, MVAPICH2, and Intel MPI, by up to 4.6X for the MPI collectives MPI_Scatter, MPI_Allgather, and MPI_Allreduce.</p>
-                                                    </blockquote>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slot-title">
-                        <div class="slot-wrapper">
-                                    <span class="ttip_object_info_very_wide" rel="#s10ta3_info" title="#s10ta3_title">
-                                        TopoCommit: A Topological Commit Protocol for Cross-Ledger Transactions in Scientific Computing
-                                        <i class="fa fa-caret-right"></i>
-                                    </span>
-                            <div class="info_link_object_info" style="display: none;">
-                                <div id="s10ta3_popup">
-                                    <b id="s10ta3_title">
-                                        TopoCommit: A Topological Commit Protocol for Cross-Ledger Transactions in Scientific Computing
-                                        <!--<span class="calendar-links"> <a
-                                                href="program/calendar/submissions/sess6&#45;&#45;pap225.ics" target="_blank"
-                                                title="Import this presentation into your desktop calendar program."><img
-                                                height="15"
-                                                src="program/includes/images/ical_icon2.gif" style="border: none;"
-                                                width="15"/></a> </span>-->
-                                    </b>
-                                    <hr/>
-                                    <div id="s10ta3_info">
-                                        <div>
-                                            <div class="author-names">
-                                                Olamide Timothy Tawose (University of Nevada, Reno),
-                                                Lei Yang (University of Nevada, Reno), and
-                                                Dongfang Zhao (University of Washington; University of Nevada, Reno)
-                                            </div>
-                                            <div>
-                                                <div>Abstract
-                                                    <blockquote>
-                                                        <p>While increasingly more applications are tempted to manage their data in decentralized systems, such as blockchains or distributed ledgers, the data exchange across multiple, potentially heterogeneous, decentralized systems remains an open problem: State-of-the-art protocols cannot meet one or more of the core requirements, such as atomicity, liveness, and scalability. Specifically, in the field of scientific computing, although a blockchain service was recently developed for scientific computing environments, the data exchanges and transactions among distinct ledgers are not supported. Observing that many modern scientific applications are collaborated on by multiple teams and the increasingly complicated (in-situ) workflows thereof, we argue that there is a pressing need to realize an efficient and scalable protocol for distinct ledgers to exchange data in scientific computing. This paper proposes a topological approach to enabling atomic, nonblocking, and scalable data exchanges among an arbitrary number of scientific ledgers in the context of collaborative scientific computing. Specifically, we construct a topological space formed by these ledgers—abstracting those nodes in a cross-ledger transaction as topological objects such as abstract simplex and simplicial complex. These topological objects, in turn, serve as the building blocks of a topological protocol, namely TopoCommit, under practical assumptions. We implement TopoCommit and integrate it into SciChain, a recently published distributed ledger for tracking scientific data provenance. The extensive evaluation of up to 1,008 nodes and 144 distinct ledgers on CloudLab shows that TopoCommit outperforms state-of-the-art protocols by up to 70×.
-                                                        </p>
                                                     </blockquote>
                                                 </div>
                                             </div>
