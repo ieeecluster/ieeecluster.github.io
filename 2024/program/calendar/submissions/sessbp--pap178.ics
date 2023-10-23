@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:Efficient Hierarchical State Vector Simulation of Quantum Circuits
+  via Acyclic Graph Partitioning
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20220908T163000
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20220908T170000
+DESCRIPTION:Early but promising results in quantum computing have been ena
+ bled by the concurrent development of quantum algorithms\, devices\, and m
+ aterials. Classical simulation of quantum programs has enabled the design 
+ and analysis of algorithms and implementation strategies targeting current
+  and anticipated quantum device architectures. In this paper\, we present 
+ a graph-based approach to achieving efficient quantum circuit simulation. 
+ Our approach involves partitioning the graph representation of a given qua
+ ntum circuit into acyclic subgraphs/circuits that exhibit better data loca
+ lity. Simulation of each sub-circuit is organized hierarchically\, with th
+ e iterative construction and simulation of smaller state vectors\, improvi
+ ng overall performance. Also\, this partitioning reduces the number of pas
+ ses through data\, improving the total computation time. We present three 
+ partitioning strategies and observe that acyclic graph partitioning typica
+ lly results in the best time-to-solution. In contrast\, other strategies r
+ educe the partitioning time at the expense of potentially increased simula
+ tion times. Experimental evaluation demonstrates the effectiveness of our 
+ approach.
+END:VEVENT
+END:VCALENDAR
