@@ -1420,7 +1420,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 button.secondary, .button.secondary {
-    background-color: #861f4180;
+    background-color: #3F7FFF80;
     border-color: #84b02c;
     color: #fff
 }
@@ -1434,7 +1434,7 @@ button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button
 }
 
 button.success, .button.success {
-    background-color: #861f4180;
+    background-color: #3F7FFF80;
     border-color: #84b02c;
     color: #fff
 }
@@ -1559,7 +1559,7 @@ button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[dis
 }
 
 button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
-    background-color: #861f4180;
+    background-color: #3F7FFF80;
     border-color: #84b02c;
     color: #fff;
     cursor: default;
@@ -1576,11 +1576,11 @@ button.disabled.secondary:hover, button.disabled.secondary:focus, button[disable
 }
 
 button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-    background-color: #861f4180
+    background-color: #3F7FFF80
 }
 
 button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
-    background-color: #861f4180;
+    background-color: #3F7FFF80;
     border-color: #84b02c;
     color: #fff;
     cursor: default;
@@ -1597,7 +1597,7 @@ button.disabled.success:hover, button.disabled.success:focus, button[disabled].s
 }
 
 button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
-    background-color: #861f4180
+    background-color: #3F7FFF80
 }
 
 button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[disabled].alert {
@@ -2241,11 +2241,11 @@ meta.foundation-mq-topbar {
 }
 
 .top-bar.expanded .toggle-topbar a {
-    color: #861f4180
+    color: #3F7FFF80
 }
 
 .top-bar.expanded .toggle-topbar a span::after {
-    box-shadow: 0 0 0 1px #861f4180, 0 7px 0 1px #861f4180, 0 14px 0 1px #861f4180
+    box-shadow: 0 0 0 1px #3F7FFF80, 0 7px 0 1px #3F7FFF80, 0 14px 0 1px #3F7FFF80
 }
 
 .top-bar-section {
@@ -2272,7 +2272,7 @@ meta.foundation-mq-topbar {
 }
 
 .top-bar-section ul li {
-    background: #861f4180
+    background: #164f8180
 }
 
 .top-bar-section ul li>a {
@@ -2305,7 +2305,7 @@ meta.foundation-mq-topbar {
 }
 
 .top-bar-section ul li>a.button.secondary {
-    background-color: #861f4180;
+    background-color: #3F7FFF80;
     border-color: #84b02c;
     color: #fff
 }
@@ -2319,7 +2319,7 @@ meta.foundation-mq-topbar {
 }
 
 .top-bar-section ul li>a.button.success {
-    background-color: #861f4180;
+    background-color: #3F7FFF80;
     border-color: #84b02c;
     color: #fff
 }
@@ -2378,7 +2378,7 @@ meta.foundation-mq-topbar {
 }
 
 .top-bar-section ul li>button.secondary {
-    background-color: #861f4180;
+    background-color: #3F7FFF80;
     border-color: #84b02c;
     color: #fff
 }
@@ -2392,7 +2392,7 @@ meta.foundation-mq-topbar {
 }
 
 .top-bar-section ul li>button.success {
-    background-color: #861f4180;
+    background-color: #3F7FFF80;
     border-color: #84b02c;
     color: #fff
 }
@@ -2435,17 +2435,17 @@ meta.foundation-mq-topbar {
 
 .top-bar-section ul li:hover:not(.has-form)>a {
     background-color: #555;
-    background: #861f4180;
+    background: #3F7FFF80;
     color: #000
 }
 
 .top-bar-section ul li.active>a {
-    background: #861f4180;
+    background: #3F7FFF80;
     color: #000
 }
 
 .top-bar-section ul li.active>a:hover {
-    background: #45B29D;
+    background: #90CAF0;
     color: #000
 }
 
@@ -2546,7 +2546,7 @@ meta.foundation-mq-topbar {
     padding: 8px 1.0416666667rem 2px;
     margin-bottom: 0;
     text-transform: uppercase;
-    color: #45B29D;
+    color: #90CAF0;
     font-weight: bold;
     font-size: .625rem
 }
@@ -2607,7 +2607,7 @@ meta.foundation-mq-topbar {
     }
     .top-bar-section li.hover>a:not(.button) {
         background-color: #555;
-        background: #861f4180;
+        background: #3F7FFF80;
         color: #000
     }
     .top-bar-section li:not(.has-form) a:not(.button) {
@@ -2617,16 +2617,16 @@ meta.foundation-mq-topbar {
     }
     .top-bar-section li:not(.has-form) a:not(.button):hover {
         background-color: #555;
-        background: #861f4180
+        background: #3F7FFF80
     }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
         padding: 0 1.0416666667rem;
         line-height: 3.125rem;
         color: #000;
-        background: #861f4180
+        background: #3F7FFF80
     }
     .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-        background: #45B29D;
+        background: #90CAF0;
         color: #000
     }
     .top-bar-section .has-dropdown>a {
@@ -2691,16 +2691,16 @@ meta.foundation-mq-topbar {
         line-height: 3.125rem;
         white-space: nowrap;
         padding: 12px 1.0416666667rem;
-        background: #45B29D
+        background: #90CAF0
     }
     .top-bar-section .dropdown li:not(.has-form):not(.active)>a:not(.button) {
         color: #000;
-        background: #45B29D
+        background: #90CAF0
     }
     .top-bar-section .dropdown li:not(.has-form):not(.active):hover>a:not(.button) {
         color: #000;
         background-color: #555;
-        background: #861f4180
+        background: #3F7FFF80
     }
     .top-bar-section .dropdown li label {
         white-space: nowrap;
@@ -2739,11 +2739,11 @@ meta.foundation-mq-topbar {
     }
     .no-js .top-bar-section ul li:hover>a {
         background-color: #555;
-        background: #861f4180;
+        background: #3F7FFF80;
         color: #000
     }
     .no-js .top-bar-section ul li:active>a {
-        background: #861f4180;
+        background: #3F7FFF80;
         color: #000
     }
     .no-js .top-bar-section .has-dropdown:hover>.dropdown {
@@ -2852,7 +2852,7 @@ meta.foundation-mq-topbar {
 }
 
 .alert-box.success {
-    background-color: #861f4180;
+    background-color: #3F7FFF80;
     border-color: #8ebe30;
     color: #fff
 }
@@ -2864,7 +2864,7 @@ meta.foundation-mq-topbar {
 }
 
 .alert-box.secondary {
-    background-color: #861f4180;
+    background-color: #3F7FFF80;
     border-color: #8ebe30;
     color: #fff
 }
@@ -6607,7 +6607,7 @@ body.video cite {
 
 .meta-info a:hover {
     text-decoration: none;
-    color: #861f4180
+    color: #3F7FFF80
 }
 
 #up-to-top {
@@ -6637,7 +6637,7 @@ body.video cite {
 }
 
 #footer a {
-    color: #861f41
+    color: #164f81
 }
 
 #footer h4, #footer h5 {
@@ -6821,7 +6821,7 @@ body.video cite {
 
 .alert-box.terminal::before {
     content: "$ ";
-    color: #861f4180;
+    color: #3F7FFF80;
     float: left;
     margin: .25em .5em 0 0
 }
