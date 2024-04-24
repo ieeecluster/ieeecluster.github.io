@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:Optimizations of H-matrix-vector Multiplication for Modern Multi-c
+ ore Processors
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20220909T143000
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20220909T150000
+DESCRIPTION:The hierarchical matrices (H-matrices) are robust methods for 
+ approximating the dense matrices that appear in the Boundary Element Metho
+ d (BEM). In order to accelerate solving linear systems using an iterative 
+ method in the BEM\, it is essential to speed up the matrix-vector multipli
+ cation in the iterative linear solver. However\, compared with the case of
+  dense or sparse matrices\, there are not enough studies on speeding up th
+ e Hierarchical Matrix-Vector multiplication (HiMV). The HiMV algorithm con
+ sists of the multiplication of a number of sub-matrices and vectors\, but 
+ it is not clear how these should be implemented for acceleration. This pap
+ er discusses optimization methodologies of HiMV for modern multi-core CPUs
+ \, such as the H-matrix storage method for efficient memory access\, avoid
+ ance method of write contention during reduction operations on the solutio
+ n vector\, inter-thread load balancing\, and blocking and sub-matrix sorti
+ ng methods for cache efficiency. As a result\, we demonstrate these optimi
+ zations significantly impact on the performance of modern CPU-based superc
+ omputers. For instance\, we assumed that the best performance to aim for i
+ s the performance of dense matrix vector multiplication (GEMV) and obtaine
+ d 84.8%\, 100.7%\, and 98.7% performance of the GEMV Flops in single-socke
+ t runs on A64FX\, AMD EPYC\, and Intel Xeon Cascade Lake\, respectively. W
+ e found that optimization for better memory performance and cache efficien
+ cy is especially important for the A64FX with high- speed HBM2 memory.
+END:VEVENT
+END:VCALENDAR
