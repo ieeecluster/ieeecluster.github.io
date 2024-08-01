@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:Enabling Dynamic Virtual Frequency Scaling for Virtual Machines in
+  the Cloud
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20220909T110000
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20220909T113000
+DESCRIPTION:With the democratization of the Cloud paradigm\, many applicat
+ ions are developed to be executed inside virtual machines hosted by remote
+  data centers providing an Infrastructure-as-a-Service (IaaS). These appli
+ cations\, developed by different users with different goals\, tend to have
+  different behaviors\, hence a similar treatment on the Cloud provider sid
+ e seems to be sub-optimal. Indeed\, VM are black boxes to which are attach
+ ed vCPUs\, whose frequency are all the same\, and are mainly indicative. I
+ n our opinion\, an important limitation can be noted here. Because the Clo
+ ud provider is unaware of the applications that are executed inside the VM
+ s\, it has little insight on the behavior of the applications\, and how to
+  manage the VMs. For these reasons\, Cloud provider can assign too much or
+  too few resources to a VM\, and might rely on migration mechanism to cope
+  with that problem. In this paper\, we propose to attach a virtual frequen
+ cy to the VM template\, which can be configured by the customer to better 
+ describe her expected application requirements\, and the associated qualit
+ y of service. Then\, to enforce this virtual frequency\, we designed a con
+ troller that leverages the Linux cgroup system to dynamically adjust the c
+ onfiguration on the host machine. We evaluate our new controller on a real
+  infrastructure with real CPU-intensive applications executed by VM with d
+ ifferent frequencies. We also discuss the benefits of our virtual frequenc
+ y capping for VM placement.
+END:VEVENT
+END:VCALENDAR
