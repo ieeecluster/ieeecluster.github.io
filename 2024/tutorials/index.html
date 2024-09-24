@@ -76,13 +76,12 @@
         <ul class="left">
           <li><a href="./">Home</a></li>
           <li class="divider"></li>
-          <li class="has-dropdown  active">
+          <li class="has-dropdown">
             <a>Submit</a>
             <ul class="dropdown">
               <li><a href="papers/">Papers</a></li>
               <li><a href="posters/">Posters</a></li>
               <li><a href="workshops/call/">Workshops</a></li>
-              <li><a href="tutorials/">Tutorials</a></li>
               <li><a href="authors/">Camera Ready</a></li>
             </ul>
           </li>
@@ -95,11 +94,13 @@
             </ul>
           </li>
           <li class="divider"></li>
-          <li><a href="sponsors/">Sponsors & Support</a></li>
+          <li><a href="sponsors/">Sponsors & Supporters</a></li>
           <li class="divider"></li>
           <li><a href="workshops/">Workshops</a></li>
           <li class="divider"></li>          
-	  <li><a href="mentoring/">Students</a></li>
+          <li class="active"><a href="tutorials/">Tutorials</a></li>
+          <li class="divider"></li>          
+          <li><a href="mentoring/">Students</a></li>
           <li class="divider"></li>
           <li><a href="registration/">Registration</a></li>
           <li class="divider"></li>
@@ -108,6 +109,8 @@
           <li><a href="venue/">Venue</a></li>
           <li class="divider"></li>
           <li><a href="news/">News</a></li>
+          <li class="divider"></li>
+          <li><a href="contact/">Contact</a></li>
           <li class="divider"></li>
           <li><a>
               <p style="width:900px"></p>
@@ -137,11 +140,14 @@
       <article itemscope itemtype="http://schema.org/Article">
         <div itemprop="name">
           <p><img src="assets/img/IEEE-Cluster-2024-date-location.png" alt="IEEE Cluster 2024"></p>
-          
+<!--
             <h1>Call for Tutorials
               <span style="font-size: 20pt;">&#x25CF;</span> Cluster 2024
             </h1>
-          
+-->
+<h1>Tutorials
+  <span style="font-size: 20pt;">&#x25CF;</span> Cluster 2024
+</h1>
         </div>
         </header>
         <div itemprop="articleSection" markdown="1">
@@ -151,6 +157,89 @@
 -->
 
 
+
+<h2>Full Day</h2>
+<ul>
+    <li>
+      <b>Best Practices for HPC in the Cloud with AWS and Graviton (Arm) instances</b>
+      <details>
+      <summary style="margin-bottom: 1em;">Abstract (click to expand):</summary>
+      <p>
+      High Performance Computing in the cloud has grown significantly over the last five years. It is expected to grow at a pace more than twice that of the on-premises server market in the next five years (according to Hyperion Research). Weather, computational fluid dynamics (CFD), genomic analysis, AI/ML and more are workloads that leverage the elasticity and the broad compute choices of the cloud to innovate faster and deliver faster results. The large choice of compute, storage and network options and the dynamic nature of cloud can make the first experience a daunting proposition. Cloud technologies provide new capabilities to scientists, engineers and HPC specialists, however, how to use them may not be immediately clear.
+      </p>
+      <p>
+      This tutorial provides an intermediate and advanced content to run and manage HPC in the cloud. It is organized in a series of progressive lectures and labs that provides a hands-on learning experience. It starts with a primer on cloud foundations and how they map to common HPC concepts, dives deeper into cloud core components and presents the best practices to run HPC in the cloud. 
+      </p>
+      <p>
+      This tutorial uses a combination of lectures and hands-on labs on provided temporary Amazon Web Services (AWS) accounts to deliver both conceptual and hands-on learning. We will provide access to Arm / Graviton processors to run real-life scientific applications during the workshop and after (up to 72 hours). 
+      </p>
+      <p>
+      Prerequisites:
+      <ul>
+        <li>Laptop with a modern web browser</li>
+        <li>Basic understanding of HPC concepts and architectures</li>
+        <li>Basic proficiency with the Linux command line</li>
+      </ul>
+      </p>
+      <br>
+      </details>
+    </li>
+    <li>
+      <b>Embrace Arm and GPU in the datacenter using the NVIDIA Grace Hopper Superchip</b>
+      <details>
+      <summary style="margin-bottom: 1em;">Abstract (click to expand):</summary>
+      <p>
+      Arm technology has become a compelling choice for HPC due to its promise of efficiency, density, scalability, and broad software ecosystem support. To further advance datacenter and accelerated computing solutions, NVIDIA has built the Grace Hopper GH200 Superchip which brings together the groundbreaking performance of the NVIDIA Hopper GPU with the versatility of the NVIDIA Grace CPU, tightly connected with a high bandwidth and memory coherent chip-2-chip (C2C) interconnect.
+      </p>
+      <p>
+      In this tutorial participants will learn about the design principles and the architecture choices that make NVIDIA Grace Hopper GH200 Superchip a unique platform for accelerated computing and AI and the convergence of the two. To achieve that, the tutorial first introduces how to compile, execute, profile and optimize code for NVIDIA Grace CPU, then the presenters will cover various materials aiming to demonstrate how to leverage NVIDIA Hopper and the NVIDIA GH200 architecture via explanation of available programming models, toy examples and demonstration using real applications. Advanced users will be allowed to bring their own code and test live with the supervision of NVIDIA experts. Hands-on exercises are designed to teach and provide practical hands-on feedback of key techniques and best practices that can be applied to more complex codes.
+      </p>
+      <p>
+      Prerequisites:
+      <ul>
+        <li>Laptop with a SSH terminal</li>
+        <li>Basic understanding of HPC concepts and architectures</li>
+        <li>Basic proficiency with the Linux command line</li>
+      </ul>
+      </p>
+      <br>
+      </details>
+    </li>
+</ul>
+
+<h2>Half Day</h2>
+<ul>
+    <li>
+      <b>GPU accelerated applications with CUDA-Q: An integrated framework for hybrid classical-quantum computing workloads</b>
+      <details>
+      <summary style="margin-bottom: 1em;">Abstract (click to expand):</summary>
+      <p>
+      A quantum computer utilizes the laws of quantum mechanics and phenomena such as superposition, entanglement, and interference to encode and process information. This new paradigm of computation is expected to have wide-ranging applications in materials simulation, high energy physics, optimization, finance, and machine learning. As quantum hardware matures, algorithms that combine quantum and High-Performance Computing (HPC) are increasingly being investigated by the research community. Broadly, these fall under the category of variational quantum algorithms, hybrid quantum-classical models or using classical machine learning approaches to enhance quantum computations. Providing researchers with the tool and the ability to enhance this workflow is the goal of CUDA-Q.
+      </p>
+      <p>
+      CUDA-Q is a hybrid programming framework enabling researchers to program workflows for disparate architectures. It enables integrations of QPUs (quantum processing units), CPUs and GPUs (graphical processing units) in one system and enables built in parallelization with the ability to go from a single CPU to 1000s of GPUs with minimal changes enabling quantum research at scale and performance.
+      </p>
+      <p>
+      This tutorial will introduce quantum computing with basic introductory examples that will highlight key features required in a hybrid programming framework. We then build upon this by introducing variational quantum algorithms for finding eigenvalues of a matrix. We discuss how this can be scaled using techniques built into CUDA-Q enabling parallelization at scale.
+      </p>
+      <p>
+      Only knowledge of simple linear algebra (e.g. unitary matrices) is assumed in this tutorial. Knowledge of quantum computation is not required. So please feel free to participate.
+      </p>
+      <p>
+      Prerequisites:
+      <ul>
+        <li>Device and account to access Google Colab</li>
+      </ul>
+      </p>
+      <br>
+      </details>
+    </li>
+    <li>
+      <b><a href="https://buaa-hipo.github.io/vprofiler-tutorial-cluster24/">Identifying Software Inefficiency with Fine-grained Value Profilers</a></b>
+    </li>
+</ul>
+
+<!--
 <p>Experts in cluster computing are invited to share their expertise with the community by submitting proposals for tutorials to be co-located with the Cluster 2024 conference that will be held on September 24 - 27, 2024 in Kobe, Japan. The Cluster 2024 tutorials program will give attendees in depth instruction on a broad range of topics on the design of clusters and related technologies and on effectively managing or using cluster resources and services. All tutorials will be held on September 24, 2024.</p>
 
 <h3 id="topic-categories"><strong>Topic Categories</strong></h3>
@@ -227,6 +316,10 @@
 </ul>
 
 cluster2024-workshop AT ml.riken.jp
+-->
+
+<h2> </h2>
+<strong>Conference registration includes workshops and tutorials (with no additional fee). Tutorial-only registration is NOT available.</strong>
 
         </div>
       </article>
@@ -310,10 +403,6 @@ cluster2024-workshop AT ml.riken.jp
             <li>
               <a href="http://twitter.com/ieeecluster" target="_blank" class="icon-twitter"
                 title="twitter.com/ieeecluster"></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/ieeeclusterconference" target="_blank" class="icon-facebook"
-                title="facebook.com/ieeeclusterconference"></a>
             </li>
           </ul>
         </section>
