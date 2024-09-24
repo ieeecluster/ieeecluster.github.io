@@ -1,7 +1,7 @@
 # cluster2025.github.io
 - [Website preview](https://hirota-na.github.io/2025/)
 - The website is base on IEEE Cluster 2024 site https://clustercomp.org/2024/
-- No jekyll source files found. All the html files are manually modified.
+- All the html files are manually modified.
 
 # Main Actions:
 - The items are based on https://github.com/ieeecluster/ieeecluster.github.io/blob/master/2024/README.md .
@@ -11,20 +11,21 @@
 - point base on each html to 2025 instead of 2024
   - Change all files to point to new 2025
   - ```<base href="/2024/"> to <base href="/2025/">```
+   <li><strong>Mohamed Wahib</strong>, RIKEN Center for Computational Science (R-CCS), Japan (mohamed.attia AT riken.jp)</li>
+- Copy previous year (2024) into 2025
+- Update Venue info
+- Update venue into dev
+- Fix gmaps location
 
 
 ## Pending
 - Create a team for new year (say 2025)
 - Give Team permission for repo 2025
-- Copy previous year (2023) into 2025
 - Update robots.txt
 - Update sitemap.xml
 - Update Committee information
 - Update header photo
 - Twitter and Facebook?
-- Update Venue info
-- Update venue into dev
-- Fix gmaps location
 - Updated chairs info
 - Updated chairs in papers, posters and workshops
 - Change image from previous to new image
