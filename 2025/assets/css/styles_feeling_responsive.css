@@ -2252,7 +2252,8 @@ meta.foundation-mq-topbar {
     left: 0;
     position: relative;
     width: auto;
-    transition: left 300ms ease-out
+    transition: left 300ms ease-out;
+    background: #041E42
 }
 
 .top-bar-section ul {
@@ -2261,7 +2262,8 @@ meta.foundation-mq-topbar {
     height: auto;
     display: block;
     font-size: 16px;
-    margin: 0
+    margin: 0;
+    color: #000
 }
 
 .top-bar-section .divider, .top-bar-section [role="separator"] {
@@ -2272,13 +2274,13 @@ meta.foundation-mq-topbar {
 }
 
 .top-bar-section ul li {
-    background: #164f8180
+    background: #041E42
 }
 
 .top-bar-section ul li>a {
     display: block;
     width: 100%;
-    color: #000;
+    color: #fff;
     padding: 12px 0 12px 0;
     padding-left: 1.0416666667rem;
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2600,7 +2602,8 @@ meta.foundation-mq-topbar {
         display: inline
     }
     .top-bar-section ul li {
-        float: left
+        float: left;
+	color: #000
     }
     .top-bar-section ul li .js-generated {
         display: none
@@ -2613,7 +2616,8 @@ meta.foundation-mq-topbar {
     .top-bar-section li:not(.has-form) a:not(.button) {
         padding: 0 1.0416666667rem;
         line-height: 3.125rem;
-        background: #fdfdfd
+        background: #fdfdfd;
+	color: #000
     }
     .top-bar-section li:not(.has-form) a:not(.button):hover {
         background-color: #555;
@@ -6448,11 +6452,11 @@ body.video cite {
 }
 
 #masthead {
-    background-color: #334D5C
+    background-color: #041E42
 }
 
 #masthead-no-image-header {
-    background-color: #334D5C
+    background-color: #041E42
 }
 
 #masthead-with-text {
@@ -6637,7 +6641,7 @@ body.video cite {
 }
 
 #footer a {
-    color: #164f81
+    color: #041E42
 }
 
 #footer h4, #footer h5 {
