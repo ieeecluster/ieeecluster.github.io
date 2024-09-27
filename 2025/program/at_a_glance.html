@@ -1,0 +1,543 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <base href="/2025/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IEEE Cluster 2025 Program</title>
+    <link  rel="stylesheet" type="text/css" href="program/includes/css/jquery-ui.css"/>
+    <link href="program/includes/css/shared_styles.css" rel="stylesheet" type="text/css"/>
+    <link href="program/includes/css/block_styles.css?v=1" rel="stylesheet" type="text/css"/>
+    <link href="program/includes/css/jquery.qtip.min.css" rel="stylesheet" type="text/css"/>
+    <link href="program/includes/css/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="program/includes/css/user_generated.css" rel="stylesheet" type="text/css"/>
+    <link href="program/archive_at_a_glance_styles.css" rel="stylesheet" type="text/css"/>
+    <style>
+
+        .tabs {
+            background: #e8ca9b;
+        }
+
+        .tabs .divider,
+        .tabs .bg_tab {
+            background-color: #e8ca9b;
+            border-top-color: #e8ca9b;
+            color: #000000;
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+            text-transform: none;
+        }
+
+        .tabs .fg_tab {
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+            color: #CC1A1A;
+            text-transform: none;
+        }
+
+        .tab_menu_label, .tab_no_menu_label {
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .qtip.qtip-rm-tab-menu {
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+        }
+
+
+        .filter_bar,
+        .filter_bar_w_legend {
+            background-color: #C9DDF9;
+        }
+
+        .filter_bar_w_legend .instr,
+        .filter_bar .instr {
+            background-color: #A2C2FC;
+        }
+
+
+        .role_stype_bar {
+            background-color: #E0AB76;
+            color: #000000;
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+            text-transform: none;
+        }
+
+
+        #footer {
+            background-color: #EAEAEA;
+            color: #999999;
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+            text-transform: none;
+        }
+
+        #footer a {
+            color: #777777;
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+            text-transform: none;
+        }
+
+
+        div.banner_top,
+        div.banner_top .site_title,
+        div.banner_top .no_logo_banner_right,
+        div.logo_banner,
+        div.logo_banner .user_name,
+        #header {
+            background-color: #0066CC;
+            color: #FFFFFF;
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+            text-transform: none;
+        }
+
+
+        a:link,
+        a:visited,
+        a:active,
+        .clickable,
+        a.clickable,
+        a.clickable:link,
+        a.clickable:visited,
+        a.clickable:active,
+        .ttip_object_info_blue,
+        .ttip_object_info_blue_no_clone,
+        .ttip_object_info_blue_wide,
+        .ttip_object_info_blue_wide_no_clone,
+        .ttip_object_info_blue_very_wide,
+        .ttip_object_info_blue_very_wide_no_clone,
+        .ttip_object_info_blue_extra_wide,
+        .ttip_object_info_blue_extra_wide_no_clone,
+        .ttip_object_info_blue_modal,
+        .ttip_object_info_blue_modal_no_clone,
+        .colorbox_object_info,
+        span.menu_item_label,
+        .page_box_print .contents A,
+        .page_box_print #footer a {
+            color: #0000EE;
+        }
+
+        /* Light Links */
+        .light_link a,
+        .light_arrow,
+        .light_link a:link,
+        .light_link a:active,
+        .light_link a:visited,
+        .light_clickable,
+        a.light_clickable,
+        a.light_clickable:link,
+        a.light_clickable:active,
+        a.light_clickable:visited {
+            color: #5088F0;
+        }
+
+        /* user hovers     */
+        a:hover,
+        .light_link a:hover,
+        .light_arrow:hover,
+        .light_clickable:hover,
+        a.light_clickable:hover,
+        .hover_link:hover,
+        .ttip_object_info_blue:hover,
+        .ttip_object_info_blue_no_clone:hover,
+        .ttip_object_info_blue_wide:hover,
+        .ttip_object_info_blue_wide_no_clone:hover,
+        .ttip_object_info_blue_very_wide:hover,
+        .ttip_object_info_blue_very_wide_no_clone:hover,
+        .ttip_object_info_blue_extra_wide:hover,
+        .ttip_object_info_blue_extra_wide_no_clone:hover,
+        .ttip_object_info_blue_modal:hover,
+        .ttip_object_info_blue_modal_no_clone:hover,
+        .ttip_object_info:hover,
+        .ttip_object_info_no_clone:hover,
+        .ttip_object_info_wide:hover,
+        .ttip_object_info_wide_no_clone:hover,
+        .ttip_object_info_very_wide:hover,
+        .ttip_object_info_very_wide_no_clone:hover,
+        .ttip_object_info_extra_wide:hover,
+        .ttip_object_info_extra_wide_no_clone:hover,
+        .ttip_object_info_modal:hover,
+        .ttip_object_info_modal_no_clone:hover,
+        .colorbox_object_info:hover,
+        .subtabs .fg_tab:hover div,
+        .subtabs .fg_tab:hover A,
+        .subtabs .bg_tab:hover,
+        .subtabs .bg_tab:hover A {
+            color: #0000EE;
+        }
+
+        ul.rm_mega_menu li.mega > div,
+        ul.rm_mega_menu > li.mega-link > a:hover,
+        .disp_details_header,
+        .disp_details_sub_header,
+        .disp_details I, /* This is deprecated, since it clashes with font awesome using I tags. */
+        .disp_red,
+        .disp_label {
+            color: #B32626;
+        }
+
+
+        #related_col .block-title {
+            background-color: #BBBBBB;
+            color: #000000;
+        }
+
+        #related_col .block-title a {
+            color: #0000FF;
+        }
+
+        #related_col .block-content {
+            background-color: #E5E5E5;
+        }
+
+        #related_col .block-content .instr {
+            background-color: #D0D0D0;
+        }
+
+        #related_col .block-content .odd {
+            background-color: #DEDEDE;
+        }
+
+        #related_col .block-content .even {
+            background: #D0D0D0;
+        }
+
+
+        .contents .output_box .title {
+            background-color: #D89655;
+        }
+
+        .block-content,
+        .block2-content,
+        .contents .output_box table tr th,
+        .contents .output_box {
+            background-color: #F9F4E6;
+        }
+
+        .output_box_instr,
+        .contents .output_box .instr,
+        .block .instr,
+        .block-content .instr {
+            background-color: #F2E0C5;
+        }
+
+        .odd,
+        .contents .output_box .odd,
+        .block-content .odd {
+            background-color: #F6EAD5;
+        }
+
+        .even,
+        .contents .output_box .even,
+        .block-content .even {
+            background-color: #F2E0C5;
+        }
+
+
+        .tabs .fg_tab {
+            background-color: #F0DBBC;
+            color: #CC1A1A;
+            border-bottom-color: #F0DBBC;
+        }
+
+        .tab_menu_label:hover, .active .tab_menu_label,
+        .tab_no_menu_label:hover,
+        .tab_no_menu_label:hover a {
+            color: #CC1A1A;
+        }
+
+        .subtabs {
+            background-color: #F0DBBC;
+            color: #000000;
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+            text-transform: none;
+        }
+
+        .subtabs .divider,
+        .subtabs .bg_tab,
+        .subtabs .bg_tab a {
+            background-color: #F0DBBC;
+            border-top-color: #F0DBBC;
+            color: #000000;
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+            text-transform: none;
+        }
+
+        .subtabs .fg_tab {
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+            color: #CC1A1A;
+            text-transform: none;
+        }
+
+        /*
+        uncomment this to make the subtabs follow the selected tab color instead
+        of the link color
+
+        .subtabs .bg_tab:hover a {
+            color: #CC1A1A;
+        }
+        .subtabs .fg_tab:hover a, {
+            color: #CC1A1A;
+        }
+        */
+
+        .subtabs .fg_tab a {
+            color: #CC1A1A;
+        }
+
+
+        .documentation_box {
+            background: #F0E0BC;
+            color: #000000;
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+        }
+
+
+        body.in_iframe {
+            background-color: #FFFFF7;
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .pagedoc {
+            background-color: #FFFFF7;
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .page_box {
+            background-color: #FFFFF7;
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .page_box_in_iframe {
+            background-color: #FFFFF7;
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .contents {
+            background-color: #FFFFF7;
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .contents_options {
+            background-color: #FFFFF7;
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        #top-links {
+            background-color: #FFFFF7;
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .fullscreen {
+            background-color: #FFFFF7;
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .subtabs .fg_tab {
+            border-bottom-color: #FFFFF7;
+        }
+
+        .subtabs .fg_tab div {
+            background-color: #FFFFF7;
+            border-bottom-color: #FFFFF7;
+        }
+
+        .fullscreen_schedule {
+            background-color: #FFFFF7;
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .contents input,
+        .contents input_box,
+        .contents textarea {
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .qtip.rm-qtip {
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        #cboxContent {
+            background-color: #FFFFF7;
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        /* For now, use the main site background color for tool tips. */
+        .qtip.qtip-rm,
+        .qtip.qtip-rm .qtip-titlebar {
+            background-color: #FFFFF7;
+        }
+
+        /* Not sure where this should live. */
+        #actions_col .block-title-text {
+            font-size: 15px;
+        }
+
+        #related_col .block-title-text {
+            font-size: 15px;
+        }
+
+        /* For jquery-ui. */
+        .ui-widget {
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .arrow-slidedown {
+            background-color: #FFFFF7;
+            color: #000000;
+        }
+
+
+        .contents .input .title,
+        .contents .input_box .title {
+            background-color: #247bf4;
+        }
+
+        .contents .input,
+        .contents .input_box,
+        .contents .input table tr th,
+        .contents .input_box table tr th,
+        .form .block-content {
+            background-color: #f6f9fe;
+        }
+
+        .contents .input .instr,
+        .contents .input_box .instr,
+        .multi_block_button,
+        .form .block .instr {
+            background-color: #dbe8fa;
+        }
+
+        .contents .input .odd,
+        .contents .input_box .odd,
+        .form .block-content .odd {
+            background-color: #edf3fc;
+        }
+
+        .contents .input .even,
+        .contents .input_box .even,
+        .form .block-content .even {
+            background-color: #dbe8fa
+        }
+
+
+        div.rm_mega_menus_container,
+        ul.rm_mega_menu.darker,
+        ul.rm_mega_menu > li.mega > a,
+        ul.rm_mega_menu.darker > li.mega > a,
+        ul.rm_mega_menu > li.mega-link > a,
+        ul.rm_mega_menu.darker > li.mega-link > a,
+        ul.rm_mega_menu > li.mega-label > span {
+            background-color: #777777;
+            border-color: #777777;
+            color: #FFFFFF;
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+            text-transform: none;
+        }
+
+        ul.rm_mega_menu > li.mega.selected > a {
+            background-color: #777777;
+            border-color: #CC1A1A;
+            color: #FFFFFF;
+        }
+
+        ul.rm_mega_menu > li.mega:hover > a {
+            color: #CC1A1A;
+        }
+
+        div.rm_mega_menus_container ul.rm_mega_menu > li.mega > div.menu_dropdown {
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .contents input,
+        .contents input_box,
+        .contents textarea {
+            font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+            font-size: 15px;
+        }
+
+
+        #actions_col .block-title {
+            background-color: #244A84;
+            color: #FFFFFF;
+        }
+
+        #actions_col .block-title a {
+            color: #FFFFFF;
+        }
+
+        #actions_col .block-content {
+            background-color: #BDD2F8;
+        }
+
+        #actions_col .block-content .instr {
+            background-color: #B0CBFC;
+        }
+
+        #actions_col .block-content .odd {
+            background-color: #C2D6FB;
+        }
+
+        #actions_col .block-content .even {
+            background: #B0CBFC;
+        }
+    </style>
+    <script src="program/includes/jquery/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="program/includes/jquery/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="program/includes/jquery/jquery.hoverIntent.minified.js" type="text/javascript"></script>
+    <script src="program/includes/jquery/basic.js" type="text/javascript"></script>
+    <script src="program/includes/jquery/jquery.qtip.min.js" type="text/javascript"></script>
+    <script src="program/includes/jquery/jquery.highlight-4.js"></script>
+    <script src="program/includes/jquery/jquery.instaFilter.js"></script>
+    <script type="text/javascript">$(function () {
+        setup_info_links();
+    });</script>
+    <script src="program/includes/jquery/user_generated.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $program_table = $("#program-table");
+            $("#program_filter").InstaFilter($program_table, {
+                typing_pause: 500,
+                search_unit_selector: "div.slot-wrapper",
+                search_unit_ancestor_fields_selector: ".session-title, .session-chair, .room-name, .session-type"
+            });
+            $('.author-names').prepend('<b>Presenter(s):</b>'); /* TODO -- remove */
+        });
+    </script>
+</head>
+<body>
+<a name="top"></a>
+<div class="centered">
+    <div>
+        <div style="float: left;"></div>
+        <div style="float: left; margin-top: 15px; height: 80px;"><span
+                class="page-title">IEEE Cluster 2025 Final Program</span></div>
+        <div style="clear: both;"></div>
+    </div>
+</div>
+<br/>
+</div>
+</body>
+</html>
