@@ -141,8 +141,73 @@
                     <h1>Keynotes
                         <span style="font-size: 20pt;">&#x25CF;</span> Cluster 2025
                     </h1>
-		    Under Development
+		    <!-- Under Development -->
                 </div>
+            </header>
+            <div itemprop="articleSection" markdown="1">
+                <h2 id="keynote1">Keynote 1</h2>
+                <div style="float:left;margin:10px"><img src="keynotes/garth_wells.jpg" width="180px"/></div>
+                <div style="padding:10px;">
+                    <span style="font-size:larger;font-weight:bolder;color:navy;">Performance analysis of GPU architectures for solving partial differential equations</span><br/>
+                    <span style="font-size:larger;font-weight:bolder;">Garth Well</span><br/>
+                    <span style="font-size:medium;">University of Cambridge</span><br/>
+                </div>
+<!--
+                <div>
+                    <p><a href="keynotes/Cluster24_Keynote_.pdf">[Slides]</a></p>
+                </div>
+-->
+                <div style="clear:both;"></div>
+                <h3 id="abstract-1">Abstract</h3>
+                <p>With the development of easy-to-use development tools and the maturing of compilers, it has become easy to create working programs for GPUs. However, it remains hard to create algorithms and implementations that reach a good fraction of peak performance, be that floating point operations, main memory bandwidth or fast local memory.</p>
+                <p>We consider the design and performance of GPU algorithms and implementations for finite element operators, including parametrised algorithms that can be adjusted to suit the characteristics of the target hardware. The performance of the algorithms is investigated on a range of architectures, including the AMD MI300X and the NVIDIA GH200 processors. We show that in nearly all cases the performance limiter is the local fast memory, and this has informed the design of the algorithms. We also show, contrary to accepted wisdom, that the performance of lower-order methods on GPUs can be good and can be faster than what has been reported in the literature. This is promising for engineering applications, where low-order methods are more robust. Finally, we explore the use of tensor cores for solving differential equations and analyse performance for practical engineering problems on the LUMI supercomputer.</p>
+                <h3 id="biography-1">Biography</h3>
+                <p>Garth Wells is the Hibbitt Professor of Solid Mechanics at the University of Cambridge. He received his undergraduate degree in engineering from The University of Western Australia and PhD from Delft University of Technology. Before joining University of Cambridge in 2007, he held a faculty position at Delft University of Technology and post-doctoral positions at Stanford University and The University of Texas at Austin. His interests include numerical analysis, scientific computing and mathematical software, motivated by challenging engineering applications. He is a leader of the <a href="https://fenicsproject.org" target="_blank" title="FEniCS Project">FEniCS Project</a> on mathematical software and a strong advocate for open-source scientific software. He serves as an Associate Editor os the SIAM Journal on Scientific Computing.</p>
+
+
+                <h2 id="keynote2">Keynote 2</h2>
+                <div style="float:left;margin:10px"><img src="keynotes/natalia_vassilieva.jpg" width="180px"/></div>
+                <div style="padding:10px;">
+                    <span style="font-size:larger;font-weight:bolder;color:navy;">Wafer-Scale Computing: AI and HPC with Fewer, Stronger Machines</span><br/>
+                    <span style="font-size:larger;font-weight:bolder;">Natalia Vassilieva</span><br/>
+                    <span style="font-size:medium;">Cerebras Systems</span><br/>
+                </div>
+<!--
+                <div>
+                    <p><a href="keynotes/Cluster24_Keynote_.pdf">[Slides]</a></p>
+                </div>
+-->
+                <div style="clear:both;"></div>
+                <h3 id="abstract-2">Abstract</h3>
+                <p>Computer performance has advanced by many orders of magnitude since the earliest systems, yet the demands of AI and scientific workloads continue to outpace what current large-scale clusters can provide. Demand engenders supply, and new approaches to maintaining computational progress are emerging. One such breakthrough is the development of a wafer-scale compute platform by Cerebras. Why wafer-scale? For many workloads, real achieved performance in supercomputers (as opposed to the peak speed) is limited by the bandwidth and latency barriers --- memory and communication walls --- that impose delay when off-processor-chip data is needed. By changing the scale of the chip by two orders of magnitude, we can pack a small, powerful, mini-supercomputer into a single piece of silicon, greatly reducing off-chip traffic and eliminating these bottlenecks.</p>
+                <p>Cerebras overcame technical challenges, including yield, packaging, cooling, and power delivery power, to make wafer-scale computing viable. This talk will present the details of the Cerebras hardware and software stack and discuss diverse use cases, from large-scale deep learning model training to high-throughput inference and scientific computing.</p>
+                <p>We will delve into the architecture of the Wafer-Scale-Engine (WSE), highlighting its wafer-scale integration, on-chip memory, and high-bandwidth communication fabric. We will cover the co-designed weight streaming execution strategy for training, which disaggregates parameter storage from compute, enabling independent scaling of model and cluster size. This approach allows for data-parallel distributed training for arbitrary-sized models and clusters with simple single-device model code, achieving linear scaling while avoiding the complexities of hybrid distribution techniques.</p>                     
+                <p>We will explore hardware-optimized LLM mapping to wafer-scale clusters for ultra-low-latency autoregressive inference, enabled by a large pool of on-chip memory. It unlocks interactivity for agentic and reasoning workflows, which require multiple sequential inference calls for planning and multi-step execution and reasoning.</p>
+                <p>Finally, we will highlight scientific computing applications which take full advantage of the unique architecture of the WSE. These include a stencil-based finite-difference solver for 3D wave equation, which shifts from being memory-bound to compute-bound on the WSE, as well as pioneering work in multi-dimensional seismic processing and molecular dynamics. These applications achieved up to 750x speedups over the world’s leading supercomputers and have been recognized as Gordon Bell Award finalists.</p>
+                <h3 id="biography-2">Biography</h3>
+                <p>Natalia Vassilieva is VP and Field CTO, ML at Cerebras Systems. She has decades of R&D experience in NLP, CV, ML and IR. Prior to Cerebras, Natalia was a Sr. Research Manager at Hewlett Packard Labs, where she led the Software and AI group in 2015-2019 and served as the head of HP Labs Russia in 2011-2015. She led research teams developing algorithms and applications for text, image and time series analysis and modelling. In 2012-2015 Natalia also was a part-time Associate Professor at St. Petersburg State University and a part-time lecturer at Computer Science Center, St. Petersburg, Russia. She holds a PhD in CS from St. Petersburg State University.</p>
+
+
+                <h2 id="keynote3">Keynote 3</h2>
+                <div style="float:left;margin:10px"><img src="keynotes/johnannes_doerfert.png" width="180px"/></div>
+                <div style="padding:10px;">
+                    <span style="font-size:larger;font-weight:bolder;color:navy;">TBD</span><br/>
+                    <span style="font-size:larger;font-weight:bolder;">Johannes Doerfert</span><br/>
+                    <span style="font-size:medium;">Lawrence Livermore National Laboratory</span><br/>
+                </div>
+<!--
+                <div>
+                    <p><a href="keynotes/Cluster24_Keynote_.pdf">[Slides]</a></p>
+                </div>
+-->
+                <div style="clear:both;"></div>
+                <h3 id="abstract">Abstract</h3>
+                <p>TBD</p>
+                <h3 id="biography">Biography</h3>
+                <p>Johannes Doerfert is a computer scientist in the Center for Applied Scientific Computing at Lawrence Livermore National Laboratory interested in new and exciting uses for compiler technologies. His research goal is to help people exploit hardware to the fullest without requiring them to become experts in the hardware or the software stack, including programming languages. Code is a means, not the final goal. As such, Johannes believes that manual efforts to rewrite, tune, or adapt code are often signs for missing tools, compiler shortcomings, misinformation, or a combination thereof.</p>
+                <p>Johannes has been involved in the LLVM compiler framework since 2014 and the OpenMP language standard since 2018. He received his Ph.D. in Computer Science from Saarland University in Germany in 2018.</p>
+            </div>
+
 	    </article>
 	</div>
     </div><!-- /.row -->
