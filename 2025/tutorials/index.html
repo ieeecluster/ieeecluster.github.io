@@ -152,7 +152,7 @@
 	    <li>
 	      <b>Write highly parallel, vendor neutral applications using C++ and SYCL</b>, Rod Burns (Codeplay), Tom Deakin (University of Bristol), Duncan McBain (Codeplay), Rafal Bielski (Codeplay)
 	      <details>
-		<summary style="margin-bottom: 1em;">Tutorial description (click to expand):</summary>
+		<summary style="margin-bottom: 1em;"><u>Tutorial description (click to expand)</u></summary>
 		<p>SYCL is an open standard from the Khronos Group and defines a programming model that lets developers support a wide variety of
       devices (CPUs, GPUs, and more) from a single code base. Given the growing heterogeneity of processor roadmaps in both HPC and AI, moving
       to an open standard, platform-independent model such as SYCL is essential for modern software developers. SYCL has the further
@@ -184,7 +184,7 @@
 	    <li>
 	      <b>Accelerate HPC and AI workloads with the NVIDIA GH200 Superchip and HPE EX Supercomputing Platform</b>, Tim Dykes (HPE), Richard Gilham (University of Bristol), Jessica Jones (HPE), Simon McIntosh-Smith (University of Bristol), Karin Sevegnani (Nvidia), Filippo Spiga (Nvidia)
 	      <details>
-		<summary style="margin-bottom: 1em;">Tutorial description (click to expand):</summary>
+		<summary style="margin-bottom: 1em;"><u>Tutorial description (click to expand)</u></summary>
 		<p>Arm technology has become a compelling choice for HPC due to its promise of efficiency, density, scalability, and broad software
       ecosystem support. Arm expansion in the datacentre started in 2018 with Arm Neoverse, a set of infrastructure CPU IPs designed for
       high-end computing. The Arm-based Fugaku supercomputer, first of its kind implementing Arm SVE instruction set, entered the Top 500 in June
@@ -218,13 +218,26 @@
 	      <b><a href="website link">Website link</a></b>
 	    </li> -->
 	  </ul>	  
-	  <h2>Half Day</h2>
 	  <ul>
 	    <li>
-	      <b>Title</b>
+	      <b>High-Performance and Smart Networking Technologies for HPC and AI</b>, Dhabaleswar K. Panda (Ohio State University), Hari Subramoni (Ohio State University), Benjamin Michalowicz (Ohio State University)
 	      <details>
-		<summary style="margin-bottom: 1em;">Abstract (click to expand):</summary>
-		<p>
+		<summary style="margin-bottom: 1em;"><u>Tutorial description (click to expand)</u></summary>
+		<p>High-Performance Networking technologies are generating a lot of excitement towards building next generation High-End Computing (HEC)
+      systems for HPC and AI with GPGPUs, accelerators, and Data Center Processing Units (DPUs), and a variety of application workloads. This
+      tutorial will provide an overview of these emerging technologies, their architectural features, current market standing, and suitability
+      for designing HEC systems. It will start with a brief overview of IB, HSE, RoCE, and Omni-Path interconnect. An in-depth overview of the
+      architectural features of these interconnects will be presented. It will be followed with an overview of the emerging NVLink/NVSwitch,
+      EFA, Slingshot and Tofu-D architectures. We will then present advanced features of commodity high-performance networks that enable
+      performance and scalability. We will then provide an overview of enhanced offload capable network adapters like DPUs/IPUs (Smart NICs),
+      their capabilities and features. After this, we will present an overview of dedicated AI hardware such as the Cerebras family of
+      processors and Intel’s Habana-Gaudi Processors along with their Habana Collective Communication Library (HCCL). Next, we will present an
+      overview of software stacks for high-performance networks like Open Fabrics Verbs, LibFabrics, and UCX comparing the performance of these
+      stacks will be given. Next, challenges in designing MPI library for these interconnects, solutions and sample performance numbers will be
+      presented. We will also provide some hands-on exercises to aid in the understanding of network-level performance and how the network impacts
+      MPI-level performance as well.
+		</p>
+		<!-- <p>
 		</p>
 		<p>
 		</p>
@@ -234,15 +247,86 @@
 		    <li></li>
 		  </ul>
 		</p>
-		<br>
+		<br> -->
 	      </details>
 	    </li>
-	    <li>
+	    <!-- <li>
 	      <b><a href="website link">Website link</a></b>
+	    </li> -->
+	  </ul>	  
+	  <h2>Half Day</h2>
+	  <ul>
+	    <li>
+	      <b>A practical introduction to programming the Tenstorrent Tensix architecture for HPC</b>, Nick Brown (EPCC, The University of Edinburgh), Felix Le Clair (Tenstorrent), Jake Davies (EPCC, The University of Edinburgh)
+	      <details>
+		<summary style="margin-bottom: 1em;"><u>Tutorial description (click to expand)</u></summary>
+		<p>Tenstorrent’s Tensix architecture forms the basis of a new class of accelerator built upon RISC-V that decouples the movement of data from
+      compute. In this technology each accelerator contains many Tensix cores, connected by a high-performance Network on Chip (NoC), with
+      each core containing a dedicated wide matrix and vector unit that is capable of performing 2048 multiplications and additions per cycle.
+      Whilst the Tensix was initially developed for machine learning workloads, the entire software stack was made open-source last year
+      and the wider HPC community have started to port codes to the architecture. Indeed, work to date has demonstrated significant energy
+      efficiency benefits for some HPC workloads on the Tensix without sacrificing performance. Moreover, the hardware itself is
+      competitively priced (around $1000), meaning that this is a realistic solution for workstation-class computing, potentially delivering a
+      useful performance boost (and energy saving) for workloads running on machines that range from large scale supercomputers to local “under
+      the desk” resources.
+    </p>
+    <p>
+      In this practical focussed tutorial you will become familiar with the Tensix architecture by getting hands on with the Wormhole accelerator
+      and learning how to program it using the SDK. Running on real physical hardware throughout, the overall purpose is for attendees to reach a
+      situation where they can start experimenting with the Tensix for their own applications and also gain a wider understanding of how RISC-V
+      enables this flexibility. With experienced Tensix developers as tutors, including a Tenstorrent engineer, attendees will be able to
+      discuss porting of their own codes to the machine as part of this session and ultimately join the rapidly growing global developer
+      community.
+		</p>
+		<!-- <p>
+		</p>
+		<p>
+		</p>
+		<p>
+		  Prerequisites:
+		  <ul>
+		    <li></li>
+		  </ul>
+		</p>
+		<br> -->
+	      </details>
 	    </li>
-	  </ul>
-	  
-
+	    <!-- <li>
+	      <b><a href="website link">Website link</a></b>
+	    </li> -->
+	  </ul>		  
+	  <ul>
+	    <li>
+	      <b>Identifying Software and Hardware Inefficiency at Scale</b>, Hailong Yang (Beihang University), Xin You (Beihang University), Zhibo Xuan ((Beihang University), Ningming Nie (Computer Network Information Center of the Chinese Academy of Sciences), Ziheng Wang (Xi’an Jiaotong University), Genshen Chu (University of Science and Technology Beijing)
+	      <details>
+		<summary style="margin-bottom: 1em;"><u>Tutorial description (click to expand)</u></summary>
+		<p>
+      Production HPC software and system is becoming increasingly complex due to its deep software abstractions as well as hardware hierarchies.
+      Such software and system complexity usually leads to unexpected inefficiencies that are hard to detect and locate at large scale
+      through manual inspection. Versatile profilers have revealed a promising way to detect the above inefficiencies with accurate root
+      cause analysis for optimization guidance, which is vital to achieve superior performance for scientific applications running at extremely
+      large scale. In this tutorial, we will present a series of works on various profilers that detect performance inefficiencies due to
+      sub-optimal computation, communication and I/O occurring at large scale. After the presentation of each profiler, we will provide
+      hands-on exercises to acquaint the audience with the usage of each profiler and showcase the effectiveness of each profiler for guiding
+      performance optimization. The profilers demonstrated in this tutorial have already been open-sourced for public access.
+    </p>
+		<!-- <p>
+		</p>
+		<p>
+		</p>
+		<p>
+		  Prerequisites:
+		  <ul>
+		    <li></li>
+		  </ul>
+		</p>
+		<br> -->
+	      </details>
+	    </li>
+	    <!-- <li>
+	      <b><a href="website link">Website link</a></b>
+	    </li> -->
+	  </ul>	
 	  <h2> </h2>
 	  <strong>Conference registration includes workshops and tutorials (with no additional fee). Tutorial-only registration is NOT available.</strong>
 	  
