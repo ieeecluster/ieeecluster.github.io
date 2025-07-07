@@ -1,7 +1,7 @@
-a.no-underline:link  { text-decoration: none; }
-a.no-underline:visited { text-decoration: none; }
-a.no-underline:hover { text-decoration: none; }
-a.no-underline:active { text-decoration: none; }
+a.no-underline:link  { text-decoration: none; border: none; outline: none;}
+a.no-underline:visited { text-decoration: none; order: none; outline: none;}
+a.no-underline:hover { text-decoration: none; order: none; outline: none;}
+a.no-underline:active { text-decoration: none; order: none; outline: none;}
 .font-size-h1 {
     font-size: 2.441em
 }
