@@ -811,7 +811,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+Molecular dynamics (MD) simulations are essential tools for investigating large-scale molecular systems, yet achieving high performance and scalability on CPU-based architectures remains challenging. In this study, we present a highly optimized framework based on DeepMD-kit for conducting 500 million-atom MD simulations on an ARMv8 SVE high-performance computing (HPC) system. Key optimizations include leveraging OpenMP for multi-threaded acceleration of DeepMD-kit and utilizing the ARMv8 SVE instruction set to optimize double-precision matrix multiplication in PyTorch. These enhancements enable single ARMv8 SVE 64-core processors to achieve 1.3x the training performance of NVIDIA V100 GPU, and two ARMv8 SVE 64-core processors to achieve 1.05x the inference performance of NVIDIA V100 GPU. Leveraging this optimized framework, we achieve large-scale MD simulations across 4,096 computing nodes.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -840,7 +840,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+In this paper, we present ROCK, a novel system for efficiently serving thousands of LoRA adapters for multimodal models in cloud environments. Through extensive analysis of production workloads, we identify key challenges in current cloud-based image generation services: extreme request burstiness (up to 90× normal rates), heterogeneous task characteristics, and inefficient adapter management that wastes 40% of GPU memory and increases delays by 3x during peak times. ROCK addresses these challenges through a three-layer architecture that decouples hardware, adapters, and requests. Our system features dynamic heterogeneous queues that match tasks to appropriate resources based on multidimensional feature vectors, and a multilevel orchestration framework that intelligently manages adapter placement across heterogeneous storage. Experiments on a 64-GPU testbed demonstrate that ROCK reduces average response latency by 16-26%, and achieves an 84.1% cache hit rate for LoRA adapters—outperforming traditional approaches while reducing adapter update frequency by up to 77%.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -868,7 +868,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+        Converged HPC-Cloud computing is an emerging computing paradigm that aims to support increasingly complex and multi-tenant scientific workflows. These systems require reconciliation of the isolation requirements of native cloud workloads and the performance demands of HPC applications. In this context, networking hardware is a critical boundary component: it is the conduit for high-throughput, low-latency communication and enables isolation across tenants. HPE Slingshot is a high-speed network interconnect that provides up to 200~Gbps of throughput per port and targets high-performance computing~(HPC) systems. The Slingshot host software, including hardware drivers and network middleware libraries, is designed to meet HPC deployments, which predominantly use single-tenant access modes. Hence, the Slingshot stack is not suited for secure use in multi-tenant deployments, such as converged HPC-Cloud deployments. In this paper, we design and implement an extension to the Slingshot stack targeting converged deployments on the basis of Kubernetes. Our integration provides secure, container-granular, and multi-tenant access to Slingshot RDMA networking capabilities at minimal overhead.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -911,7 +911,8 @@
                                             <div>
                                                 <div>Abstract
                                                     <blockquote>
-                                                        <p>
+                                                      <p>
+							In this paper, we present ROCK, a novel system for efficiently serving thousands of LoRA adapters for multimodal models in cloud environments. Through extensive analysis of production workloads, we identify key challenges in current cloud-based image generation services: extreme request burstiness (up to 90× normal rates), heterogeneous task characteristics, and inefficient adapter management that wastes 40% of GPU memory and increases delays by 3x during peak times. ROCK addresses these challenges through a three-layer architecture that decouples hardware, adapters, and requests. Our system features dynamic heterogeneous queues that match tasks to appropriate resources based on multidimensional feature vectors, and a multilevel orchestration framework that intelligently manages adapter placement across heterogeneous storage. Experiments on a 64-GPU testbed demonstrate that ROCK reduces average response latency by 16-26%, and achieves an 84.1% cache hit rate for LoRA adapters—outperforming traditional approaches while reducing adapter update frequency by up to 77%.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -942,7 +943,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+Modern large language models (LLMs) serving systems address distributed deployment challenges through two key techniques: distributed model partitioning for parallel computation across accelerators and quantization for reducing parameter size. While existing systems assume homogeneous GPU environments, we reveal significant untapped potential in heterogeneous systems with mixed-capacity accelerators where two critical limitations persist: (1) uniform partitioning and quantization strategies fail to adapt to hardware heterogeneity, exacerbating resource imbalance, and (2) decoupled optimization of partitioning and quantization overlooks critical performance synergies between these techniques. We present SplitQuant, a phase-aware distributed serving system that co-optimizes mixed-precision quantization, phase-aware model partitioning, and micro-batch sizing for heterogeneous environments. Our approach combines analytical modeling of quality-runtime tradeoffs with a lightweight planning algorithm to maximize throughput while preserving user-specified model quality targets. Evaluations across 10 production clusters show SplitQuant achieves up to 2.34x (1.61x mean) higher throughput than state-of-the-art approaches without violating accuracy targets. Our results underscore the value of hardware-conscious co-design between quantization and model partition strategies in heterogeneous environments.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -972,7 +973,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+Automatic differentiation (AD) is a set of techniques that systematically applies the chain rule to compute the gradients of functions without requiring human intervention. Although the fundamentals of this technology were established decades ago, it is experiencing a renaissance as it plays a key role in efficiently computing gradients for backpropagation in machine learning algorithms. AD is also crucial for many applications in scientific computing domains, particularly emerging techniques that integrate machine learning models within scientific simulations and schemes. Existing AD frameworks have four main limitations: limited support of programming languages, requiring code modifications for AD compatibility, limited performance on scientific computing codes, and a naive store-all solution for forward-pass data required for gradient calculations. These limitations force domain scientists to manually compute the gradients for large problems. This work presents DaCe AD, a general, efficient automatic differentiation engine that requires no code modifications. DaCe AD uses a novel ILP-based automatic checkpointing algorithm to optimize the trade-off between storing and recomputing to achieve maximum performance within a given memory constraint. We showcase the generality of our method by applying it to NPBench, a suite of HPC benchmarks with diverse scientific computing patterns, where we outperform JAX, a Python framework with state-of-the-art general AD capabilities, by more than $92$ times on average without requiring any code changes.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -1011,7 +1012,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+With the rise of large-scale data centers and increasing demand for energy-efficient operations, there is a growing need to optimize the use of green energy in cloud computing environments. However, current schedulers focus solely on performance, lacking awareness of energy types and opportunities to promote green, low-carbon operations. This paper presents a Green-Aware Scheduling Framework for Kubernetes, named GreenK8s, aimed at minimizing the use of brown energy and maximizing the utilization of renewable energy sources, specifically solar power. Our framework integrates real-time power consumption monitoring with predictive solar energy models to intelligently schedule workloads based on energy availability. The proposed solution incorporates an AI-based solar power prediction model, Pod oversubscription strategies, and a novel scheduler, enabling Kubernetes to dynamically adapt to both the type and availability of green energy. Extensive experiments using the real-world Google Borg dataset and a realistic Kubernetes testbed demonstrate that GreenK8s reduces total energy consumption by up to 39% and increases the average share of green energy in total consumption to 50.65%, compared to state-of-the-arts baselines. This work provides a promising approach to improve operational efficiency and sustainability in data centers.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -1042,7 +1043,9 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+Loosely coupled microservice architectures have been widely adopted in cloud-native applications due to their inherent advantages in modularity, development agility, and scalability. However, the resulting complex and dynamic service topologies introduce intricate inter-service dependencies, which often lead to backpressure effects and queuing delays. These phenomena significantly challenge traditional monolithic and rule-based resource management approaches, which struggle to capture the non-linear performance characteristics and long-term effects of resource allocation decisions in such environments.
+<br>
+To address these challenges, we propose DDRM, a two-stage predictor-decider collaborative framework for dynamic resource management in microservice systems. DDRM integrates deep learning to model inter-service interactions and predict the probability of Service Level Objective (SLO) violations, and employs reinforcement learning to optimize resource allocation decisions by maximizing long-term cumulative rewards while meeting SLO targets. Extensive evaluations demonstrate that DDRM outperforms state-of-the-art baselines by up to 29.8%, while exhibiting strong stability and adaptability under highly varying workloads.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -1073,7 +1076,9 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+Large high-performance computing systems are commonly shared among users that submit their workflows to a resource manager and scheduling framework such as SLURM. Most commonly available job schedulers provide built-in algorithms for performing job backfill and placement, where candidate jobs can be run out of order on currently free resources, provided that they do not negatively impact other jobs already waiting in the queue.
+<br>
+Backfilling relies on two key requirements: 1) the user’s own estimate of the runtime of their job and 2) the ability for the scheduler to create and maintain a future schedule of possibly all jobs in the queue at any one moment. Unfortunately, user-provided estimates are often erroneous, a well-known problem in parallel job scheduling. These estimates cause the scheduler to plan jobs out based on wildly inaccurate data, which in turn causes the scheduler-provided estimates of estimated user waiting time to also be quite inaccurate. As such, in this work, we leverage several machine learning (ML) techniques to provide a more accurate estimate of user waiting time and contrast them across a variety of different metrics including wait time and bounded per-processor slowdown using simulated data based on real job workload traces. The presented machine learning models improve overall wait time estimation by a factor of 4.1X over traditional scheduler-provided wait times.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -1475,7 +1480,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+Proactive SSD failure prediction can help maintenance personnel in addressing failing drives in advance and has long been a major research direction in the field of dependable systems. However, the improvement of existing modeling methods' accuracy has been severely hindered by issues such as inconsistent data distributions, extreme data imbalance, and dynamic changes in the correlation between attributes and failures. Herein, we propose an innovative framework called GMPpredictor, which significantly improves the accuracy of SSD failure prediction. Specifically, GMPpredictor first partitions the data based on drive models to handle the distribution differences among different models. Secondly, in addressing the issue of extreme data imbalance, we optimize both the data and model levels, employing a dynamically adjusted loss function to balance the class weights. Then, by leveraging gradient information, we assign higher weights to features that are strongly correlated with failures, further enhancing the model's focus on critical features. Finally, we combine LSTM and xLSTM in a hybrid structure for failure prediction, fully utilizing the advantages of both networks to handle complex patterns in failure data across different drive models. GMPpredictor achieves a precision of 93.77% and an F0.5 score of 85.44%, with a FAR of only 0.05%. Notably, we have evaluated the effectiveness of GMPpredictor using real-world data collected from large-scale solid-state drives in data centers, achieving successful application from laboratory-scale to industry-scale.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -1505,7 +1510,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+In high-performance computing systems, jobs typically have exclusive compute access but share storage resources, such as the parallel file system, often becoming a point of contention. Concurrent execution of data-intensive jobs can exacerbate this phenomenon, as jobs compete for shared resources, impeding each other's progress while suffering from limited I/O bandwidth. As a result, the increasing I/O intensity of workloads places greater demands on resource management systems to optimize the scheduling of data-intensive jobs. Although scheduling decisions significantly impact shared storage systems, scheduling algorithms on production systems generally ignore the I/O intensity of individual jobs. In this work, we present EquilibrIO, a novel job scheduling algorithm that minimizes resource contention and maintains fairness by balancing computation and I/O over time, while requiring minimal information collected by tools commonly used in high-performance computing systems. We show that, depending on the desired level of fairness, our algorithm can reduce the I/O slowdown caused by contention from 64% to 4%. The results further demonstrate that 25% of the jobs augmented with additional I/O information are sufficient to minimize file system congestion, cutting the effect of I/O slowdown by half.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -1534,7 +1539,10 @@
                                             <div>
                                                 <div>Abstract
                                                     <blockquote>
-                                                        <p>
+                                                      <p>
+							The rapid growth of network traffic has resulted in a substantial increase in log data, creating significant challenges for storage and processing. Although general-purpose compression algorithms are widely used, they often underperform on network logs due to their inability to exploit inherent structural characteristics. While advanced compression techniques can offer better performance, they typically require extensive system modifications and add deployment complexity.
+<br>
+This paper presents CFseq, a lightweight and efficient framework designed to construct compression-friendly field sequences that improve the compressibility of network logs. CFseq is founded on two key observations: first, some fields exhibit high redundancy; second, others contain shared prefixes or suffixes that are well suited to compression algorithms. The framework comprises two modules: the Text Similarity Enhancement module, which ranks fields based on information entropy, and the Brute-Force Search module, which identifies the optimal field order for compression. CFseq operates without modifying existing compression or decompression pipelines, allowing for seamless and low-cost integration. Experimental results show that CFseq improves the compression ratios of general-purpose compressors by up to 32% and enhances the performance of the state-of-the-art advanced compressor Denum by up to 20%.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -1573,7 +1581,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+Halo-exchange communication patterns occur in many stencil-based HPC applications such as MiniAMR, MiniGhost, and MILC. In this pattern, each process performs a mix of inter-node and intra-node transfers. Depending on the input and processor grid size, the amount of time spent in inter-node or intra-node could dominate the total communication time. Therefore, in this work, we propose a dynamic protocol for intra-node and inter-node transfers that optimizes the communication time. With the proposed designs, we show up to 20% benefits in 3D stencil communication benchmarks and 18% in the MiniAMR application at a scale of 2304 processes.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -1604,7 +1612,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+For the next-generation exascale supercomputing communication systems, Dragonfly topology offers strong scalability, low latency, and cost efficiency. Dragonfly networks have already been implemented in current supercomputers and will continue to expand in future systems. Adaptive routing in Dragonfly topologies is critical for network performance. The traditional UGAL routing algorithm, which uses the Valiant mechanism to select non-minimal paths, does not adequately consider the impact of high hops in non-minimal paths, often unnecessarily increasing the average path length, thereby increasing network latency and load. Furthermore, UGAL inaccurately estimates the congestion of the entire routing path based on local information, leading to suboptimal routing decisions that limit the algorithm's performance. In this paper, we propose PIAR, a novel path-improved adaptive routing algorithm. PIAR dynamically selects paths based on the status of local and global channels, prioritizing non-minimal paths with fewer hops to reduce network latency and load, thereby improving network performance. Additionally, we present the microarchitecture of the routing computation unit. Our evaluation results demonstrate that, compared with advanced algorithms such as PAR_PH, TPR, and UGAL_LE, PIAR achieves an average throughput improvement of 19.2% and reduces latency by up to 13.4% under synthetic traffic. Under mixed traffic, PIAR achieves an average throughput improvement of 23.6% and reduces the latency by up to 33.8%. For application workloads, PIAR achieves an average reduction of 24.0% in packet latency.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -1635,7 +1643,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+Neighborhood collectives are a critical feature of MPI, enabling efficient communication in applications with sparse communication patterns. This research proposes Cascade, a new algorithm for neighborhood allgather collective that organizes computing nodes along multiple paths based on their distance to the current node. In this approach, messages are forwarded along these paths and propagated until all outgoing neighbors receive them, reducing the communication time. A performance model is developed to analyze the algorithm’s efficiency. Experimental results demonstrate that the Cascade algorithm achieves up to 9.54× and 7.05× speedup over Open MPI for random sparse graphs and Moore neighborhoods, respectively. Additionally, the algorithm improves performance by up to 5.25× for a sparse matrix-matrix multiplication kernel.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -1683,7 +1691,11 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+        Python has become increasingly significant in domains such as data science, machine learning, scientific computing, and parallel programming. The libraries CuPy and Numba enable the development of parallel GPU code, while mpi4py and CuPy’s NCCL backend enable distributed computing across multiple GPUs. Despite its versatility, Python is often criticized for itsperformance limitations. Although pre-compilation and just-in-time compilation can minimize interpreter overhead, multi-GPU applications in Python often encounter significant performance bottlenecks due to the synchronization requirements between GPU kernels and communication libraries.
+<br>
+In this work, we present a detailed performance analysis of multi-GPU programming in Python using CuPy, Numba, NCCL and mpi4py. We identify excessive synchronization and costly array conversions as key sources of overhead and demonstrate that view-based data access can significantly improve performance. Furthermore, we show that using NCCL with asynchronous CUDA streams enables better overlap of computation and communication, mitigating interpreter-induced delays. Our evaluation includes both microbenchmarks and a multi-GPU implementation of the CloverLeaf mini-application. Results show that, with careful optimization, Python implementations can reach up to 90% of the performance of equivalent C-CUDA codes.
+<br>
+These findings highlight practical strategies for minimizing Python-specific overheads in multi-GPU scenarios and provide guidance for building efficient Python applications on modern GPU clusters.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -1714,7 +1726,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+The Finite Element Method (FEM) is a fundamental technique for solving large-scale and complex engineering problems. During the construction of the system equations, the efficiency of finite element matrix assembly plays a crucial role in the overall performance. However, existing approaches often overlook the sensitivity of assembly algorithm performance to mesh characteristics, making it difficult to achieve optimal performance across diverse problems. In this work, we propose a novel pattern-aware FEM matrix assembly method on GPUs. To this end, we thoroughly analyze the key factors affecting performance and extract a set of potentially influential mesh features and density representations. Based on this, we construct a Deep learning-based prediction model that fully captures the input mesh characteristics to predict the performance-optimal assembly strategy. Experimental results on mesh datasets with a wide range of feature variations demonstrate that our method achieves remarkable prediction accuracy and delivers up to 7.34× speedup in execution time compared to state-of-the-art approaches. To the best of our knowledge, this is the first work that introduces auto-tuning for the FEM matrix assembly process.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -1745,7 +1757,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+        This work presents a tool, a methodology, a set of metrics, and practical examples for evaluating the performance of large-scale AI and traditional HPC applications using GPUs. NSYS2PRV is a tool that converts NVIDIA Nsight Systems reports into traces compatible with Paraver, enabling significantly enhanced insight compared to current performance analysis practices. By leveraging the capabilities of a well-established HPC performance analysis tool, we enable the comparison of execution traces and the quantification of microscopic-level differences to explain behaviors across hundreds or more computing devices. We argue that large-scale GPU applications and AI workloads can greatly benefit from the type of large-scale performance analysis introduced here, an approach that is not yet widely adopted in this domain. Translating nsys-generated traces to Paraver allows analysts to combine the fine-grained, highly accurate execution data obtainable from proprietary tools with the flexibility and scalability of an open-source, parallel performance analysis environment. Paraver also enables easy, customizable computation of efficiency metrics. This work demonstrates a more effective and insightful analysis experience than that offered by the native visualization tools in Nsight Systems. Additionally, we introduce a set of Paraver-compatible metrics that guide the analysis process, and we showcase examples where these metrics were successfully applied to real-world AI and HPC workloads.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -1785,7 +1797,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+The rapid growth of global data traffic has exposed limitations in traditional content delivery architectures. Information-Centric Networking (ICN) addresses these challenges by leveraging in-network caching to enhance scalability, reduce latency, and improve overall performance. However, existing caching strategies either optimize single-node cache management without considering network-wide costs, or address distribution without hardware-aware cost modeling. We propose a unified, cost-aware distributed caching strategy that integrates multi-tier caching at each node with network-wide replication, guided by a comprehensive cost model including resource depreciation, bandwidth, energy, and Service Level Agreement compliance. Our approach minimizes redundant replication on the network while maximizing cache hit rates and reducing latency. Experiments show on average 19.15%, and up to 45.19%, cost reduction, 8.11%, and up to 32.15%, cache hit ratio increase, and 9.01%, and up to 27.21%, latency improvement over other methods, offering a cost-effective solution for next-generation ICN systems.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -1816,7 +1828,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+       Microservices have become an important design paradigm for large-scale distributed systems, offering flexible provisioning options. A fundamental challenge is the exponential growth of the solution space with the number of user requests, posing challenges to efficient provisioning and scheduling when aiming to balance cost and latency under resource constraints in large-scale dynamic edge environments. To tackle this problem, we formulate a joint optimization model for microservice provisioning and routing that integrates cost efficiency and latency reduction while accounting for uncertainties in the origin location of requests. To establish a unified framework that facilitates decision-making, we propose an integer linear programming (ILP) model that captures the dependencies between microservices in the service chain. Our Scalable optimization framework with Cost-efficiency and Latency reduction (SoCL) comprises three stages: an initial partitioning guarantees latency bounds, a pre-provisioning stage considers provisioning cost, and a multi-scale combination stage balances cost and latency through parallel and serial local search. Extensive experiments conducted across diverse scenarios based on a commonly used data set demonstrate that the proposed SoCL framework significantly increases cost efficiency and decreases latency compared to established baselines, while reducing execution time up to one order of magnitude compared to obtaining the optimal solution by optimizer.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -1847,7 +1859,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+Silent Data Corruptions (SDCs), which can manifest at the application level despite extensive screening and testing, can disrupt meaningful scientific interpretation, thereby necessitating robust monitoring tools capable of detecting them. While prior approaches have demonstrated competitive detection performance, they often require nontrivial modifications to algorithms or prior knowledge, such as spatial or temporal data patterns, to make those approaches effective. Furthermore, the error model through standard random bit flips may not reflect realistic scenarios, potentially including relatively easy-to-detect cases with obvious deviations. In this work, we study SDCs and their effects on sparse matrix computations, prevalent kernels in many scientific applications, using hardware counters, which could serve as a holistic indicator of revealing program behavior changes due to SDCs. We experiment with a set of sparse matrix benchmarks using a method that simulates data corruption to varying degrees based on our extensive analysis of error propagation, creating realistic SDC occurrences at the application level. We detail the process of sampling hardware performance counters with minimal disturbance. Using the collected hardware counters, we train various classes of classifiers, including standard ML, neural-network-based, and unsupervised, to accurately detect SDCs. Our experimental evaluations through k-fold cross-validation indicate that hardware counters can effectively detect the presence of SDCs with a low false positive rate, incurring comparable training overheads and minor inference overhead compared to the state-of-the-art. Our approach achieves a competitive average recall (>0.91) with a realistic error rate based on the observed error propagation and low runtime overhead (<2%) while avoiding program modifications.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -1892,7 +1904,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+Block-structured Adaptive Mesh Refinement (AMR), while essential for improving efficiency in large-scale irregular and dynamic simulations, poses unique optimization challenges. Previous work has identified load imbalance and synchronizations as key obstacles to performance, but the deep understanding of complex runtime behavior needed to systematically address them remains elusive. In this paper, we integrate telemetry collection, analysis, and intervention to bridge this understanding gap. We find that obtaining reliable, actionable telemetry requires systematic tuning across application, runtime, and hardware layers. Leveraging such trustworthy telemetry, we design CPLX, a tunable placement policy balancing compute load and communication locality, improving runtime by up to 21.6% over optimized baselines. Our experience highlights the empirical nature of tuning and motivates structured telemetry-driven optimization.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -1923,7 +1935,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-                            
+                            The power consumption of supercomputers is and will be a major concern in the future. Therefore, reducing the power consumption of high performance computing (HPC) applications is mandatory. Monitoring the energy consumption of HPC programs is a good first step: using external or software power meters, one can measure the energy consumption of an entire compute node or some of its hardware components. Unfortunately, the differences in scope and time scale between power meters and code level functions prevents the identification of power hungry code blocks. For this work, we propose leveraging the tracing mechanism of the StarPU runtime system in order to estimate task level power consumption. We trace the execution of the application while regularly measuring coarse-grain energy consumption of central processing units (CPUs) and graphics processing units (GPUs) using vendor software interfaces. After execution, we identify the executed tasks on each processing unit for every coarse- grain energy measurement interval. We then use this information to generate an overdetermined linear system linking tasks and energy measurements. Subsequently, solving the system allows us to estimate the fine-grain power consumption of each task independently of its actual duration. We achieve mean average percentage errors (MAPE) of 0.5 to 5% on various CPUs, and 10 to 28% on GPUs. We show that a solution generated from a run can be used to predict the energy consumption of other runs with different scheduling policies.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -1954,7 +1966,9 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+In situ processing does not only allow scientific applications to face the explosion in data volume and velocity but also addresses the time constraints of many simulation-analysis workflows by providing scientists with early insights about their applications at runtime. Multiple frameworks implement the concept of a data transport layer (DTL) to enable such in situ workflows. These tools are versatile, directly or indirectly access data on the same node, an another node of the same cluster, or a completely distinct node, and allow data publishers and subscribers to run on the same computing resources or not. This versatility puts on researchers the onus of taking key decisions related to resource allocation and data transport to ensure the most efficient execution of their workflows. However, they lack the appropriate tools to assess the performance of particular design and deployment options.
+<br>
+In this paper we introduce a versatile simulated DTL for the performance evaluation of in situ workflows. This open-source library builds on the SimGrid toolkit. It facilitates the evaluation of the performance behavior, at scale, of different data transport configurations and the study of the effects of resource allocation strategies. We demonstrate the scalability, versatility, and accuracy of this simulated DTL by reproducing the execution of two synthetic benchmarks and a real-world in situ workflow. Results show that the proposed library can simulate, on a single core, the interactions of tens of thousands of simulated processes in a few seconds and provide insights on the respective performance of different execution scenarios.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -1993,7 +2007,9 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+To improve storage efficiency in large-scale clustered storage systems, deduplication that removes duplicate chunks has been widely deployed in distributed ways. Many distributed deduplication-related studies focus on backup storage, and some recent studies focus on deploying deduplication in clustered primary storage systems which store active data. While fragmentation is one of the traditional challenges in backup deduplication, we observe that a new fragmentation problem arises when performing deduplication in the clustered primary storage system due to the system’s concurrent file writes. However, we find that existing state-of-the-art methods that address traditional fragmentation in backup deduplication fail to work effectively for the new fragmentation problem, as they significantly incur additional redundancy or lower the deduplication ratio.
+<br>
+In this paper, we revisit fragmentation-solving methods in memory management and our main idea is inspired by the classic garbage collection methods in memory management: relocating fragments consecutively. Based on the idea, we propose an effective deduplication mechanism for clustered primary storage systems, ReoDedup, which applies: i) a cosine-similarity based chunk relocating algorithm that aims to minimize the fragmentation; ii) an adjacency-table based relocating heuristic that reduces the relocating’s time complexity by placing two chunks residing in the same file consecutively; and iii) an indexremapping update scheme that alleviates the extra fragmentation caused by updates. We implement ReoDedup atop Ceph and our experiments via Alibaba Cloud show that the average read throughput of ReoDedup can be increased by up to 1.72× over state-of-the-arts, without any deduplication ratio loss.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -2024,7 +2040,9 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+To improve storage efficiency in large-scale clustered storage systems, deduplication that removes duplicate chunks has been widely deployed in distributed ways. Many distributed deduplication-related studies focus on backup storage, and some recent studies focus on deploying deduplication in clustered primary storage systems which store active data. While fragmentation is one of the traditional challenges in backup deduplication, we observe that a new fragmentation problem arises when performing deduplication in the clustered primary storage system due to the system’s concurrent file writes. However, we find that existing state-of-the-art methods that address traditional fragmentation in backup deduplication fail to work effectively for the new fragmentation problem, as they significantly incur additional redundancy or lower the deduplication ratio.
+<br>
+In this paper, we revisit fragmentation-solving methods in memory management and our main idea is inspired by the classic garbage collection methods in memory management: relocating fragments consecutively. Based on the idea, we propose an effective deduplication mechanism for clustered primary storage systems, ReoDedup, which applies: i) a cosine-similarity based chunk relocating algorithm that aims to minimize the fragmentation; ii) an adjacency-table based relocating heuristic that reduces the relocating’s time complexity by placing two chunks residing in the same file consecutively; and iii) an indexremapping update scheme that alleviates the extra fragmentation caused by updates. We implement ReoDedup atop Ceph and our experiments via Alibaba Cloud show that the average read throughput of ReoDedup can be increased by up to 1.72× over state-of-the-arts, without any deduplication ratio loss.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -2055,7 +2073,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+Caching technology is widely used in multiple areas particularly in distributed computing, where its performance is highly dependent on the cache efficiency. The cache eviction algorithm serves as the core component of a cache, primarily aimed at improving cache efficiency by reducing the cache miss ratio. Numerous eviction algorithms are proposed in recent decades and state-of-the-art methods tend to adopt lazy promotion and quick demotion designs. Lazy promotion simplifies cache-hit operations for higher throughput, while quick demotion effectively filters the low-popularity objects. However, the two designs either fail to identify burst objects or suffer from unstable demotion precision. In order to address the above problems, we propose FIFO-MEP, an efficient FIFO cache with Multiple Eviction Points. The key design of FIFO-MEP is to introduce multiple fixed-position eviction points near the head of a FIFO queue. These eviction points enable repeated inspections of objects, leading to effective identification of burst objects. Meanwhile, by fixing positions of these eviction points, FIFO-MEP delivers stable demotion precision. We implement FIFO-MEP using libCacheSim and evaluated it on 5439 production traces for three typical cache sizes, and further verify its efficiency based on Memcached. The evaluation results show that FIFO-MEP reduces the miss ratio by an average of 15.8% across all experimental configurations. Compared to the state-of-the-art S3-FIFO, FIFO-MEP achieves cache efficiency improvement by up to 21.8% for large cache sizes. Furthermore, FIFO-MEP yields the best performance under 51% of all tested conditions.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -2086,7 +2104,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+Distributed storage systems ensure data availability through fault-tolerant mechanisms, with erasure coding widely adopted for its low storage overhead. While effective, erasure coding incurs substantial repair traffic during data recovery, severely degrading repair performance. Recent research proposes repair algorithms to alleviate network bottlenecks at congested nodes. However, these algorithms primarily target downlink bottlenecks while overlooking uplink bottlenecks, which fundamentally limit repair efficiency, and fail to systematically handle diverse failure scenarios, increasing implementation complexity. In this paper, we propose RAN, an aggregation-based repair algorithm that alleviates both uplink and downlink bottlenecks by optimizing bandwidth utilization across all available nodes and aggregating network transfers via programmable network devices. Additionally, RAN systematically maximizes repair performance across diverse failure scenarios through a unified procedure. Experiments on Amazon EC2 show that RAN improves repair throughput by up to 68.9% for degraded read and 266.6% for full-node recovery compared to state-of-the-art algorithms.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -2175,7 +2193,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+Multi-tenancy in modern cloud service co-locates multiple virtual machines (VMs) into physical machines (PMs) to improve resource efficiency. However, co-location introduces interference among VMs, potentially degrading the quality-of-service (QoS) for users. Previous methods predict QoS degradation and schedule VMs accordingly, but they are hard to integrate with real-world cloud schedulers and often overlook important information provided by VM metrics. Considering the above factors, we present TRACE, a novel QoS-aware, lightweight, and decoupled recommender for VM scheduling. Firstly, TRACE employs a dual-tower feature extraction mechanism that independently extracts metrics from VMs and PMs, thereby reducing the time complexity of the model. Secondly, the dual-tower is enhanced by Deep & Cross Networks to explicitly model cross-feature interactions, and we further incorporate a Set Transformer to process overlooked multi-VM metrics from the PM. Thirdly, TRACE designs a trainable similarity gate and an adaptive mask to filter suboptimal migrations, decoupling it from the scheduler for easy integration. Experimental results on data collected from real-world clusters show that TRACE outperforms state-of-the-art methods in QoS prediction accuracy and ranking quality, achieving at least 6.3% QoS improvements.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -2189,12 +2207,12 @@
                     <div class="slot-title">
                         <div class="slot-wrapper">
                           <span class="ttip_object_info_very_wide" rel="#s9ta2_info" title="#s9ta2_title">
-			    TRACE: A Targeted Recommender for VM Assignment in Cloud Environment
+			    Scalable and Fast Inference Serving via Hybrid Communication Scheduling on Heterogeneous Networks
                             </span>
                             <div class="info_link_object_info" style="display: none;">
                                 <div>
                                   <b id="s9ta2_title">
-				    TRACE: A Targeted Recommender for VM Assignment in Cloud Environment
+				    Scalable and Fast Inference Serving via Hybrid Communication Scheduling on Heterogeneous Networks
                                     </b>
                                     <hr/>
                                     <div>
@@ -2206,7 +2224,9 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+							  Advances in large language models (LLMs) have opened up new possibilities across various fields, fueling a new wave of interactive AI applications such as DeepSeek and ChatGPT. Inference serving systems play a crucial role in supporting these applications. Recent research indicates that when cross-server parallelization is enabled in inference serving systems, data synchronization overhead can exceed 65% of the total inference delay, making the reduction of communication overhead essential for speeding up inference. While existing systems accelerate cross-server communications by offloading synchronization operations to programmable switches, they often suffer from limited aggregation throughput under bursty traffic conditions, posing challenges for homogeneous network environments.
+<br>
+To address these challenges, we propose HeroServe, an innovative inference serving system that leverages heterogeneous networks to accelerate data synchronization in distributed clusters. Our approach enables a fast and scalable inference serving system by employing an offline planner for joint computation allocation and communication scheduling, along with an online scheduler for dynamic traffic management and load balancing. We implement a prototype on a testbed comprising six servers and two programmable switches. Experimental results demonstrate that HeroServe improves scalability by 1.53x while achieving lower latency compared to state-of-the-art solutions.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -2219,13 +2239,13 @@
                     </div>
                     <div class="slot-title">
                         <div class="slot-wrapper">
-                            <span class="ttip_object_info_very_wide" rel="#s9ta3_info" title="#s9ta3_title">
-			      Communication Notification through User-Level Interrupts for the BXI Network
+                          <span class="ttip_object_info_very_wide" rel="#s9ta3_info" title="#s9ta3_title">
+			    Communication Notification through User-Level Interrupts for the BXI Network
                             </span>
                             <div class="info_link_object_info" style="display: none;">
                                 <div>
-                                    <b id="s9ta3_title">
-				      Communication Notification through User-Level Interrupts for the BXI Network
+                                  <b id="s9ta3_title">
+				    Communication Notification through User-Level Interrupts for the BXI Network
                                     </b>
                                     <hr/>
                                     <div>
@@ -2237,7 +2257,11 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+							  To reduce the cost of communications in high-performance computing, it is possible to overlap communications with computations. Some communication protocols, such as rendez-vous, multi-chunk messages, and collectives, may require a completion notification to be processed before they can further progress. With active polling or passive waiting, completions are not processed while the application is busy with computation, and thus communication does not progress. However, with an event-based method like interrupts, it is expected to be much more reactive. Nevertheless, using interrupts usually involves system calls, which are avoided with high-performance networks.
+<br>
+							  The Intel Sapphire Rapids processors introduced user-level interrupts (UINTR), hardware interrupts designed to be used directly in user space, without going through the kernel. However, their current implementation is limited to inter-process communication. They cannot be triggered from a device.
+<br>
+In this paper, we propose new mechanisms to extend the scope of user-level interrupts, so as to be able to trigger them from a device and not only from a CPU. We have implemented these mechanisms in the BXI network from Eviden. We have evaluated their performance: we obtain a latency only 2.4 times higher than active polling (v.s. 6 times higher for interrupts with system calls). We have assessed their ability to make communication progress when overlapped with computation; we observe a near-perfect computation/communication overlap.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -2276,7 +2300,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+Molecular dynamics (MD) simulations are essential tools for investigating large-scale molecular systems, yet achieving high performance and scalability on CPU-based architectures remains challenging. In this study, we present a highly optimized framework based on DeepMD-kit for conducting 500 million-atom MD simulations on an ARMv8 SVE high-performance computing (HPC) system. Key optimizations include leveraging OpenMP for multi-threaded acceleration of DeepMD-kit and utilizing the ARMv8 SVE instruction set to optimize double-precision matrix multiplication in PyTorch. These enhancements enable single ARMv8 SVE 64-core processors to achieve 1.3x the training performance of NVIDIA V100 GPU, and two ARMv8 SVE 64-core processors to achieve 1.05x the inference performance of NVIDIA V100 GPU. Leveraging this optimized framework, we achieve large-scale MD simulations across 4,096 computing nodes.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -2307,7 +2331,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+We present optimal parallel QR factorization algorithms with reduced communication overhead. QR factorization is widely applied to solve various problems in numerical linear algebra. Our focus is on problems involving dense tall-and-skinny matrices in large-scale parallel distributed memory systems. Reducing data communication is essential for achieving high performance in parallel algorithms because the communication cost is much greater than the computation cost. To date, several QR factorization algorithms have been optimized to reduce communication costs. This paper provides alternative parallel QR factorization algorithms based on the LU-CholeskyQR algorithm. Numerical experiment results demonstrated the accuracy and performance of the developed algorithms against benchmarks. The results indicate that the new algorithms are numerically stable even for ill-conditioned problems, and some of these algorithms are faster than other conventional algorithms.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -2338,7 +2362,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+Recent trends in the HPC field have introduced new CPU architectures with improved vectorization capabilities that require optimization to achieve peak performance and thus pose challenges for performance portability. The deployment of high-performing scientific applications for CPUs requires adapting the codebase and optimizing for performance. Evaluating these applications provides insights into the complex interactions between code, compilers, and hardware. We evaluate compiler auto-vectorization and explicit vectorization to achieve performance portability across modern CPUs with long vectors. We select a molecular docking application as a case study, as it represents computational patterns commonly found across HPC workloads. We report insights into the technical challenges, architectural trends, and optimization strategies relevant to the future development of scientific applications for HPC. Our results show which code transformations enable portable auto-vectorization, reaching performance similar to explicit vectorization. Experimental data confirms that x86 CPUs typically achieve higher execution performance than ARM CPUs, primarily due to their wider vectorization units. However, ARM architectures demonstrate competitive energy consumption and cost-effectiveness.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -2383,7 +2407,9 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+Mixture-of-Experts (MoE) has been extensively adopted for its incredible capability to expand model scale with a sub-linear increase in computational requirement. Training MoE models requires substantial computing nodes and extended periods, necessitating reliable distributed training systems. Checkpointing is a common approach to enhance training reliability by periodically saving model states. Current checkpointing optimizations focus on hiding checkpoint overhead in model training computations. However, these approaches overlook the dynamicity inherent in distributed MoE training, leading to an inefficient checkpointing mechanism.
+<br>
+In this paper, we propose MoE-Rckpt, a dynamicity-aware in-memory checkpointing approach for efficient MoE model training. We observe that the dynamicity impacts computation durations at both the layer and iteration levels. At the layer level, different model layers exhibit various computation durations, while at the iteration level, the computation time of the same layer differs across iterations. To adapt to the layer-level dynamicity, MoE-Rckpt employs online profiling at the granularity of individual layers. Based on the profiling results, it strategically partitions checkpoints into chunks and schedules checkpointing communication to overlap with model computations. To deal with the dynamicity across iterations, MoE-Rckpt speculatively activates the profiling and partitioning processes utilizing the temporal locality of the experts load. It can produce an optimal activation for low runtime overhead with high checkpoint partition accuracy. For mainstream MoE models, MoE-Rckpt achieves up to 1.56x and 5.98x end-to-end training speedup over Gemini and TorchSnapshot respectively under per-iteration checkpointing.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -2397,12 +2423,12 @@
                     <div class="slot-title">
                         <div class="slot-wrapper">
                           <span class="ttip_object_info_very_wide" rel="#s11ta2_info" title="#s11ta2_title">
-			    MoE-Rckpt: Efficient In-Memory Checkpointing for MoE Model Training with Dynamicity Awareness
+			    Multi-agent Independent PPO-based Automatic ECN Tuning for High-Speed Data Center Networks
                             </span>
                             <div class="info_link_object_info" style="display: none;">
                                 <div>
                                   <b id="s11ta2_title">
-				    MoE-Rckpt: Efficient In-Memory Checkpointing for MoE Model Training with Dynamicity Awareness
+				    Multi-agent Independent PPO-based Automatic ECN Tuning for High-Speed Data Center Networks
                                     </b>
                                     <hr/>
                                     <div>
@@ -2414,7 +2440,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+ Explicit Congestion Notification (ECN)-based congestion control schemes have been widely adopted in high-speed data center networks (DCNs), where the ECN marking threshold plays a determinant role in guaranteeing a packet lossless DCN. However, existing approaches either employ static settings with immutable thresholds that cannot be dynamically self-adjusted to adapt to network dynamics, or fail to take into account many-to-one traffic patterns and different requirements of different types of traffic, resulting in relatively poor performance. To address these problems, this paper proposes a novel learning-based automatic ECN tuning scheme, named PET, based on the multi-agent Independent Proximal Policy Optimization (IPPO) algorithm. PET dynamically adjusts ECN thresholds by fully considering pivotal congestion-contributing factors, including queue length, output data rate, output rate of ECN-marked packets, current ECN threshold, the extent of incast, and the ratio of mice and elephant flows. PET adopts the Decentralized Training and Decentralized Execution (DTDE) paradigm and combines offline and online training to accommodate network dynamics. PET is also fair and readily deployable with commodity hardware. Comprehensive experimental results demonstrate that, compared with state-of-the-art static schemes and the learning-based automatic scheme, our PET achieves better performance in terms of flow completion time, convergence rate, queue length variance, and system robustness.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -2445,7 +2471,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+Modern HPC and AI systems increasingly rely on multi-GPU clusters, where communication libraries such as MPI, NCCL/RCCL, and NVSHMEM enable data movement across GPUs. While these libraries are widely used in frameworks and solver packages, their distinct APIs, synchronization models, and integration mechanisms introduce programming complexity and limit portability. Performance also varies across workloads and system architectures, making it difficult to achieve consistent efficiency. These issues present a significant obstacle to writing portable, high-performance code for large-scale GPU systems. We present UNICONN, a unified, portable high-level C++ communication library that supports both point-to-point and collective operations across GPU clusters. UNICONN enables seamless switching between backends and APIs (host or device) with minimal or no changes to application code. We describe its design and core constructs, and evaluate its performance using network benchmarks, a Jacobi solver, and a Conjugate Gradient solver. Across three supercomputers, we compare UNICONN’s overhead against CUDA/ROCm-aware MPI, NCCL/RCCL, and NVSHMEM on up to 64 GPUs. In most cases, UNICONN incurs negligible overhead, typically under 3% for the Jacobi solver and under 2% for the Conjugate Gradient solver.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -2484,7 +2510,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+Pipeline parallelism and activation recomputation are widely adopted optimization techniques, among others, to scale DNN training on large accelerator clusters. However, as DNNs grow in complexity and heterogeneity, it becomes increasingly difficult to determine the optimal combination of pipeline partitioning and recomputation strategies. Existing solutions either propose manual optimization approaches that do not scale, or automated approaches that explore only a subset of optimization possibilities due to an explosion of search space. In this paper, we present <i>BMPipe</i>, a bubble--memory co-optimization planner that holistically optimizes computation imbalance, memory under utilization, redundant computation, and scheduling-induced idle time. At its core, <i>BMPipe</i> uses symbolic representations that unify computation, memory and bubbles into a single model that is solved by using an ILP-based planner. Using <i>BMPipe</i>, we perform a thorough experimental evaluation where we train several large, state-of-the-art DNN models on a 16K-NPU cluster. We show that <i>BMPipe</i> achieves up to 1.36$x speedup compared to the state-of-the-art solution <i>Megatron</i>. Against automatic planners <i>PipeDream</i>, <i>Merak</i> and <i>AdaPipe</i>, it yields as <b>1.27</b>x speed‑up. In addition, <i>BMPipe</i> boosts peak device‑memory utilization by <b>1.42</b>x compared with <i>Megatron</i>.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -2515,7 +2541,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+Serverless computing has become widely adopted as a cloud deployment model due to its ease of use and fine-grained pay-as-you-go pricing. By hiding infrastructure complexity, it simplifies access to cloud resources and lets developers focus on application code. However, most serverless platforms operate on a best-effort basis and provide limited mechanisms for performance tuning. Combined with limited visibility into the underlying hardware, reliably achieving Service Level Objectives (SLOs) becomes increasingly difficult. To address this, we introduce DHRT, a deadline- and heterogeneity-aware scheduling and resource allocation framework for performance-critical serverless workloads. Using heuristic-driven online optimisation, DHRT iteratively refines resource estimates by leveraging real-time metrics and historical data from live executions, accounting for workload characteristics and node heterogeneity. Evaluations on synthetic workloads compare it against baseline allocation and scheduling policies commonly used in FaaS platforms. Results show that DHRT accurately estimates resource demands within a few live executions, eliminating the need for manual resource tuning. By exploiting node heterogeneity and scaling vCPU allocations as deadlines approach, it improves resource efficiency and significantly reduces deadline violations.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -2546,7 +2572,7 @@
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-
+Advanced Vector Extensions 512 (AVX-512), a modern SIMD instruction set for x86 CPUs, enables fine-grained data-level parallelism through 512-bit ZMM registers. In this work, we present a SIMD-accelerated key-value datastore that leverages AVX-512 instructions to deliver scalable, high-throughput performance. Our memory layout partitions the allocated key space into two disjoint regions, using three hash functions to determine candidate slots for each key. Experimental results demonstrate that this layout achieves the lowest insertion failure rate among other alternative memory partitioning strategies. Our implementation achieves insertion performance within 6% of Intel TBBs multithreaded hash map, while substantially reducing synchronization overhead compared to STL, Boost, Robin-Hood, and Abseil. At 550 million entries and a 90% miss rate, our AVX-512-optimized design delivers a 4.0-5.1x speedup over all evaluated alternatives and a 2.0--2.5x improvement over Intel TBB and Abseil, with consistent performance gains across both 32-bit and 64-bit floating-point data types. These results highlight the effectiveness of SIMD-based parallelism in building scalable and efficient key-value stores, offering a cost-effective alternative to thread-level parallelism and multi-core scaling. Our findings suggest that enhancing SIMD capabilities in future CPU architectures can significantly improve performance and efficiency in data-intensive workloads.
                                                         </p>
                                                     </blockquote>
                                                 </div>
