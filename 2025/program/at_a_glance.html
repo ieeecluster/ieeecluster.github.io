@@ -1027,7 +1027,8 @@ With the rise of large-scale data centers and increasing demand for energy-effic
                                                     <blockquote>
                                                         <p>
 Loosely coupled microservice architectures have been widely adopted in cloud-native applications due to their inherent advantages in modularity, development agility, and scalability. However, the resulting complex and dynamic service topologies introduce intricate inter-service dependencies, which often lead to backpressure effects and queuing delays. These phenomena significantly challenge traditional monolithic and rule-based resource management approaches, which struggle to capture the non-linear performance characteristics and long-term effects of resource allocation decisions in such environments.
-<br/>
+							</p>
+							<p>
 To address these challenges, we propose DDRM, a two-stage predictor-decider collaborative framework for dynamic resource management in microservice systems. DDRM integrates deep learning to model inter-service interactions and predict the probability of Service Level Objective (SLO) violations, and employs reinforcement learning to optimize resource allocation decisions by maximizing long-term cumulative rewards while meeting SLO targets. Extensive evaluations demonstrate that DDRM outperforms state-of-the-art baselines by up to 29.8%, while exhibiting strong stability and adaptability under highly varying workloads.
                                                         </p>
                                                     </blockquote>
@@ -1060,7 +1061,8 @@ To address these challenges, we propose DDRM, a two-stage predictor-decider coll
                                                     <blockquote>
                                                         <p>
 Large high-performance computing systems are commonly shared among users that submit their workflows to a resource manager and scheduling framework such as SLURM. Most commonly available job schedulers provide built-in algorithms for performing job backfill and placement, where candidate jobs can be run out of order on currently free resources, provided that they do not negatively impact other jobs already waiting in the queue.
-<br/>
+							</p>
+							<p>
 Backfilling relies on two key requirements: 1) the user’s own estimate of the runtime of their job and 2) the ability for the scheduler to create and maintain a future schedule of possibly all jobs in the queue at any one moment. Unfortunately, user-provided estimates are often erroneous, a well-known problem in parallel job scheduling. These estimates cause the scheduler to plan jobs out based on wildly inaccurate data, which in turn causes the scheduler-provided estimates of estimated user waiting time to also be quite inaccurate. As such, in this work, we leverage several machine learning (ML) techniques to provide a more accurate estimate of user waiting time and contrast them across a variety of different metrics including wait time and bounded per-processor slowdown using simulated data based on real job workload traces. The presented machine learning models improve overall wait time estimation by a factor of 4.1X over traditional scheduler-provided wait times.
                                                         </p>
                                                     </blockquote>
@@ -1524,7 +1526,8 @@ In high-performance computing systems, jobs typically have exclusive compute acc
                                                     <blockquote>
                                                       <p>
 							The rapid growth of network traffic has resulted in a substantial increase in log data, creating significant challenges for storage and processing. Although general-purpose compression algorithms are widely used, they often underperform on network logs due to their inability to exploit inherent structural characteristics. While advanced compression techniques can offer better performance, they typically require extensive system modifications and add deployment complexity.
-<br/>
+						      </p>
+						      <p>
 This paper presents CFseq, a lightweight and efficient framework designed to construct compression-friendly field sequences that improve the compressibility of network logs. CFseq is founded on two key observations: first, some fields exhibit high redundancy; second, others contain shared prefixes or suffixes that are well suited to compression algorithms. The framework comprises two modules: the Text Similarity Enhancement module, which ranks fields based on information entropy, and the Brute-Force Search module, which identifies the optimal field order for compression. CFseq operates without modifying existing compression or decompression pipelines, allowing for seamless and low-cost integration. Experimental results show that CFseq improves the compression ratios of general-purpose compressors by up to 32% and enhances the performance of the state-of-the-art advanced compressor Denum by up to 20%.
                                                         </p>
                                                     </blockquote>
@@ -1946,7 +1949,8 @@ Block-structured Adaptive Mesh Refinement (AMR), while essential for improving e
                                                     <blockquote>
                                                         <p>
 In situ processing does not only allow scientific applications to face the explosion in data volume and velocity but also addresses the time constraints of many simulation-analysis workflows by providing scientists with early insights about their applications at runtime. Multiple frameworks implement the concept of a data transport layer (DTL) to enable such in situ workflows. These tools are versatile, directly or indirectly access data on the same node, an another node of the same cluster, or a completely distinct node, and allow data publishers and subscribers to run on the same computing resources or not. This versatility puts on researchers the onus of taking key decisions related to resource allocation and data transport to ensure the most efficient execution of their workflows. However, they lack the appropriate tools to assess the performance of particular design and deployment options.
-<br/>
+							</p>
+							<p>
 In this paper we introduce a versatile simulated DTL for the performance evaluation of in situ workflows. This open-source library builds on the SimGrid toolkit. It facilitates the evaluation of the performance behavior, at scale, of different data transport configurations and the study of the effects of resource allocation strategies. We demonstrate the scalability, versatility, and accuracy of this simulated DTL by reproducing the execution of two synthetic benchmarks and a real-world in situ workflow. Results show that the proposed library can simulate, on a single core, the interactions of tens of thousands of simulated processes in a few seconds and provide insights on the respective performance of different execution scenarios.
                                                         </p>
                                                     </blockquote>
@@ -1987,7 +1991,8 @@ In this paper we introduce a versatile simulated DTL for the performance evaluat
                                                     <blockquote>
                                                         <p>
 To improve storage efficiency in large-scale clustered storage systems, deduplication that removes duplicate chunks has been widely deployed in distributed ways. Many distributed deduplication-related studies focus on backup storage, and some recent studies focus on deploying deduplication in clustered primary storage systems which store active data. While fragmentation is one of the traditional challenges in backup deduplication, we observe that a new fragmentation problem arises when performing deduplication in the clustered primary storage system due to the system’s concurrent file writes. However, we find that existing state-of-the-art methods that address traditional fragmentation in backup deduplication fail to work effectively for the new fragmentation problem, as they significantly incur additional redundancy or lower the deduplication ratio.
-<br/>
+							</p>
+							<p>
 In this paper, we revisit fragmentation-solving methods in memory management and our main idea is inspired by the classic garbage collection methods in memory management: relocating fragments consecutively. Based on the idea, we propose an effective deduplication mechanism for clustered primary storage systems, ReoDedup, which applies: i) a cosine-similarity based chunk relocating algorithm that aims to minimize the fragmentation; ii) an adjacency-table based relocating heuristic that reduces the relocating’s time complexity by placing two chunks residing in the same file consecutively; and iii) an indexremapping update scheme that alleviates the extra fragmentation caused by updates. We implement ReoDedup atop Ceph and our experiments via Alibaba Cloud show that the average read throughput of ReoDedup can be increased by up to 1.72× over state-of-the-arts, without any deduplication ratio loss.
                                                         </p>
                                                     </blockquote>
@@ -2020,7 +2025,8 @@ In this paper, we revisit fragmentation-solving methods in memory management and
                                                     <blockquote>
                                                         <p>
 To improve storage efficiency in large-scale clustered storage systems, deduplication that removes duplicate chunks has been widely deployed in distributed ways. Many distributed deduplication-related studies focus on backup storage, and some recent studies focus on deploying deduplication in clustered primary storage systems which store active data. While fragmentation is one of the traditional challenges in backup deduplication, we observe that a new fragmentation problem arises when performing deduplication in the clustered primary storage system due to the system’s concurrent file writes. However, we find that existing state-of-the-art methods that address traditional fragmentation in backup deduplication fail to work effectively for the new fragmentation problem, as they significantly incur additional redundancy or lower the deduplication ratio.
-<br/>
+							</p>
+							<p>
 In this paper, we revisit fragmentation-solving methods in memory management and our main idea is inspired by the classic garbage collection methods in memory management: relocating fragments consecutively. Based on the idea, we propose an effective deduplication mechanism for clustered primary storage systems, ReoDedup, which applies: i) a cosine-similarity based chunk relocating algorithm that aims to minimize the fragmentation; ii) an adjacency-table based relocating heuristic that reduces the relocating’s time complexity by placing two chunks residing in the same file consecutively; and iii) an indexremapping update scheme that alleviates the extra fragmentation caused by updates. We implement ReoDedup atop Ceph and our experiments via Alibaba Cloud show that the average read throughput of ReoDedup can be increased by up to 1.72× over state-of-the-arts, without any deduplication ratio loss.
                                                         </p>
                                                     </blockquote>
@@ -2204,7 +2210,8 @@ Multi-tenancy in modern cloud service co-locates multiple virtual machines (VMs)
                                                     <blockquote>
                                                         <p>
 							  Advances in large language models (LLMs) have opened up new possibilities across various fields, fueling a new wave of interactive AI applications such as DeepSeek and ChatGPT. Inference serving systems play a crucial role in supporting these applications. Recent research indicates that when cross-server parallelization is enabled in inference serving systems, data synchronization overhead can exceed 65% of the total inference delay, making the reduction of communication overhead essential for speeding up inference. While existing systems accelerate cross-server communications by offloading synchronization operations to programmable switches, they often suffer from limited aggregation throughput under bursty traffic conditions, posing challenges for homogeneous network environments.
-<br/>
+							</p>
+							<p>
 To address these challenges, we propose HeroServe, an innovative inference serving system that leverages heterogeneous networks to accelerate data synchronization in distributed clusters. Our approach enables a fast and scalable inference serving system by employing an offline planner for joint computation allocation and communication scheduling, along with an online scheduler for dynamic traffic management and load balancing. We implement a prototype on a testbed comprising six servers and two programmable switches. Experimental results demonstrate that HeroServe improves scalability by 1.53x while achieving lower latency compared to state-of-the-art solutions.
                                                         </p>
                                                     </blockquote>
@@ -2237,9 +2244,11 @@ To address these challenges, we propose HeroServe, an innovative inference servi
                                                     <blockquote>
                                                         <p>
 							  To reduce the cost of communications in high-performance computing, it is possible to overlap communications with computations. Some communication protocols, such as rendez-vous, multi-chunk messages, and collectives, may require a completion notification to be processed before they can further progress. With active polling or passive waiting, completions are not processed while the application is busy with computation, and thus communication does not progress. However, with an event-based method like interrupts, it is expected to be much more reactive. Nevertheless, using interrupts usually involves system calls, which are avoided with high-performance networks.
-<br/>
-							  The Intel Sapphire Rapids processors introduced user-level interrupts (UINTR), hardware interrupts designed to be used directly in user space, without going through the kernel. However, their current implementation is limited to inter-process communication. They cannot be triggered from a device.
-<br/>
+</p>
+<p>
+							The Intel Sapphire Rapids processors introduced user-level interrupts (UINTR), hardware interrupts designed to be used directly in user space, without going through the kernel. However, their current implementation is limited to inter-process communication. They cannot be triggered from a device.
+</p>
+<p>
 In this paper, we propose new mechanisms to extend the scope of user-level interrupts, so as to be able to trigger them from a device and not only from a CPU. We have implemented these mechanisms in the BXI network from Eviden. We have evaluated their performance: we obtain a latency only 2.4 times higher than active polling (v.s. 6 times higher for interrupts with system calls). We have assessed their ability to make communication progress when overlapped with computation; we observe a near-perfect computation/communication overlap.
                                                         </p>
                                                     </blockquote>
@@ -2387,7 +2396,8 @@ Recent trends in the HPC field have introduced new CPU architectures with improv
                                                     <blockquote>
                                                         <p>
 Mixture-of-Experts (MoE) has been extensively adopted for its incredible capability to expand model scale with a sub-linear increase in computational requirement. Training MoE models requires substantial computing nodes and extended periods, necessitating reliable distributed training systems. Checkpointing is a common approach to enhance training reliability by periodically saving model states. Current checkpointing optimizations focus on hiding checkpoint overhead in model training computations. However, these approaches overlook the dynamicity inherent in distributed MoE training, leading to an inefficient checkpointing mechanism.
-<br/>
+							</p>
+							<p>
 In this paper, we propose MoE-Rckpt, a dynamicity-aware in-memory checkpointing approach for efficient MoE model training. We observe that the dynamicity impacts computation durations at both the layer and iteration levels. At the layer level, different model layers exhibit various computation durations, while at the iteration level, the computation time of the same layer differs across iterations. To adapt to the layer-level dynamicity, MoE-Rckpt employs online profiling at the granularity of individual layers. Based on the profiling results, it strategically partitions checkpoints into chunks and schedules checkpointing communication to overlap with model computations. To deal with the dynamicity across iterations, MoE-Rckpt speculatively activates the profiling and partitioning processes utilizing the temporal locality of the experts load. It can produce an optimal activation for low runtime overhead with high checkpoint partition accuracy. For mainstream MoE models, MoE-Rckpt achieves up to 1.56x and 5.98x end-to-end training speedup over Gemini and TorchSnapshot respectively under per-iteration checkpointing.
                                                         </p>
                                                     </blockquote>
@@ -2451,9 +2461,11 @@ In this paper, we propose MoE-Rckpt, a dynamicity-aware in-memory checkpointing 
                                                     <blockquote>
                                                         <p>
         Python has become increasingly significant in domains such as data science, machine learning, scientific computing, and parallel programming. The libraries CuPy and Numba enable the development of parallel GPU code, while mpi4py and CuPy’s NCCL backend enable distributed computing across multiple GPUs. Despite its versatility, Python is often criticized for itsperformance limitations. Although pre-compilation and just-in-time compilation can minimize interpreter overhead, multi-GPU applications in Python often encounter significant performance bottlenecks due to the synchronization requirements between GPU kernels and communication libraries.
-<br/>
+							</p>
+							<p>
 In this work, we present a detailed performance analysis of multi-GPU programming in Python using CuPy, Numba, NCCL and mpi4py. We identify excessive synchronization and costly array conversions as key sources of overhead and demonstrate that view-based data access can significantly improve performance. Furthermore, we show that using NCCL with asynchronous CUDA streams enables better overlap of computation and communication, mitigating interpreter-induced delays. Our evaluation includes both microbenchmarks and a multi-GPU implementation of the CloverLeaf mini-application. Results show that, with careful optimization, Python implementations can reach up to 90% of the performance of equivalent C-CUDA codes.
-<br/>
+							</p>
+							<p>
 These findings highlight practical strategies for minimizing Python-specific overheads in multi-GPU scenarios and provide guidance for building efficient Python applications on modern GPU clusters.
                                                         </p>
                                                     </blockquote>
