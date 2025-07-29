@@ -938,6 +938,9 @@ Modern large language models (LLMs) serving systems address distributed deployme
                             </div>
                         </div>
                     </div>
+		    <div class="hr">
+                      <hr/>
+                    </div>
                     <div class="slot-title">
                         <div class="slot-wrapper">
                           <span class="ttip_object_info_very_wide" rel="#s1ta3_info" title="#s1ta3_title">
@@ -1007,6 +1010,9 @@ With the rise of large-scale data centers and increasing demand for energy-effic
                             </div>
                         </div>
                     </div>
+		    <div class="hr">
+                      <hr/>
+                    </div>
                     <div class="slot-title">
                         <div class="slot-wrapper">
                           <span class="ttip_object_info_very_wide" rel="#s2ta2_info" title="#s2ta2_title">
@@ -1039,6 +1045,9 @@ To address these challenges, we propose DDRM, a two-stage predictor-decider coll
                                 </div>
                             </div>
                         </div>
+                    </div>
+		    <div class="hr">
+                      <hr/>
                     </div>
                     <div class="slot-title">
                         <div class="slot-wrapper">
@@ -1475,6 +1484,9 @@ Proactive SSD failure prediction can help maintenance personnel in addressing fa
                             </div>
                         </div>
                     </div>
+		    <div class="hr">
+                      <hr/>
+                    </div>
                     <div class="slot-title">
                         <div class="slot-wrapper">
                           <span class="ttip_object_info_very_wide" rel="#s3ta2_info" title="#s3ta2_title">
@@ -1505,6 +1517,9 @@ In high-performance computing systems, jobs typically have exclusive compute acc
                             </div>
                         </div>
                     </div>
+		    <div class="hr">
+                      <hr/>
+                    </div>				    
                     <div class="slot-title">
                         <div class="slot-wrapper">
                           <span class="ttip_object_info_very_wide" rel="#s3ta3_info" title="#s3ta3_title">
@@ -1576,6 +1591,9 @@ Halo-exchange communication patterns occur in many stencil-based HPC application
                             </div>
                         </div>
                     </div>
+                <div class="hr">
+                    <hr/>
+                </div>		    
                     <div class="slot-title">
                         <div class="slot-wrapper">
                             <span class="ttip_object_info_very_wide" rel="#s4ta2_info" title="#s4ta2_title">
@@ -1606,6 +1624,9 @@ For the next-generation exascale supercomputing communication systems, Dragonfly
                                 </div>
                             </div>
                         </div>
+                    </div>
+		    <div class="hr">
+                      <hr/>
                     </div>
                     <div class="slot-title">
                         <div class="slot-wrapper">
@@ -1657,17 +1678,17 @@ Neighborhood collectives are a critical feature of MPI, enabling efficient commu
                     <div class="session-chair">Chair: </div>
                     <div class="slot-title">
                         <div class="slot-wrapper">
-                          <span class="ttip_object_info_very_wide" rel="#s5ta1_info" title="#s5ta1_title">
-			    Efficient Multi-GPU Programming in Python: Reducing Synchronization and Access Overheads			    
+                            <span class="ttip_object_info_very_wide" rel="#s11ta3_info" title="#s11ta3_title">
+			      Uniconn: A Uniform High-Level Communication Library for Portable Multi-GPU Programming
                             </span>
                             <div class="info_link_object_info" style="display: none;">
                                 <div>
-                                    <b id="s5ta1_title">
-				      Efficient Multi-GPU Programming in Python: Reducing Synchronization and Access Overheads
+                                    <b id="s11ta3_title">
+				      Uniconn: A Uniform High-Level Communication Library for Portable Multi-GPU Programming
                                     </b>
                                     <hr/>
                                     <div>
-                                        <div id="s5ta1_info">
+                                        <div id="s11ta3_info">
                                             <div class="author-names">
 
                                             </div>
@@ -1675,11 +1696,7 @@ Neighborhood collectives are a critical feature of MPI, enabling efficient commu
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-        Python has become increasingly significant in domains such as data science, machine learning, scientific computing, and parallel programming. The libraries CuPy and Numba enable the development of parallel GPU code, while mpi4py and CuPy’s NCCL backend enable distributed computing across multiple GPUs. Despite its versatility, Python is often criticized for itsperformance limitations. Although pre-compilation and just-in-time compilation can minimize interpreter overhead, multi-GPU applications in Python often encounter significant performance bottlenecks due to the synchronization requirements between GPU kernels and communication libraries.
-<br>
-In this work, we present a detailed performance analysis of multi-GPU programming in Python using CuPy, Numba, NCCL and mpi4py. We identify excessive synchronization and costly array conversions as key sources of overhead and demonstrate that view-based data access can significantly improve performance. Furthermore, we show that using NCCL with asynchronous CUDA streams enables better overlap of computation and communication, mitigating interpreter-induced delays. Our evaluation includes both microbenchmarks and a multi-GPU implementation of the CloverLeaf mini-application. Results show that, with careful optimization, Python implementations can reach up to 90% of the performance of equivalent C-CUDA codes.
-<br>
-These findings highlight practical strategies for minimizing Python-specific overheads in multi-GPU scenarios and provide guidance for building efficient Python applications on modern GPU clusters.
+Modern HPC and AI systems increasingly rely on multi-GPU clusters, where communication libraries such as MPI, NCCL/RCCL, and NVSHMEM enable data movement across GPUs. While these libraries are widely used in frameworks and solver packages, their distinct APIs, synchronization models, and integration mechanisms introduce programming complexity and limit portability. Performance also varies across workloads and system architectures, making it difficult to achieve consistent efficiency. These issues present a significant obstacle to writing portable, high-performance code for large-scale GPU systems. We present UNICONN, a unified, portable high-level C++ communication library that supports both point-to-point and collective operations across GPU clusters. UNICONN enables seamless switching between backends and APIs (host or device) with minimal or no changes to application code. We describe its design and core constructs, and evaluate its performance using network benchmarks, a Jacobi solver, and a Conjugate Gradient solver. Across three supercomputers, we compare UNICONN’s overhead against CUDA/ROCm-aware MPI, NCCL/RCCL, and NVSHMEM on up to 64 GPUs. In most cases, UNICONN incurs negligible overhead, typically under 3% for the Jacobi solver and under 2% for the Conjugate Gradient solver.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -1690,6 +1707,10 @@ These findings highlight practical strategies for minimizing Python-specific ove
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="hr">
+                    <hr/>
+                </div>		    
                     <div class="slot-title">
                         <div class="slot-wrapper">
                             <span class="ttip_object_info_very_wide" rel="#s5ta2_info" title="#s5ta2_title">
@@ -1720,6 +1741,9 @@ The Finite Element Method (FEM) is a fundamental technique for solving large-sca
                                 </div>
                             </div>
                         </div>
+                    </div>
+		    <div class="hr">
+                    <hr/>
                     </div>
                     <div class="slot-title">
                         <div class="slot-wrapper">
@@ -1792,6 +1816,9 @@ The rapid growth of global data traffic has exposed limitations in traditional c
                             </div>
                         </div>
                     </div>
+		    <div class="hr">
+                      <hr/>
+                    </div>		    
                     <div class="slot-title">
                         <div class="slot-wrapper">
                             <span class="ttip_object_info_very_wide" rel="#s6ta2_info" title="#s6ta2_title">
@@ -1822,6 +1849,9 @@ The rapid growth of global data traffic has exposed limitations in traditional c
                                 </div>
                             </div>
                         </div>
+                    </div>
+		    <div class="hr">
+                      <hr/>
                     </div>
                     <div class="slot-title">
                         <div class="slot-wrapper">
@@ -1899,6 +1929,9 @@ Block-structured Adaptive Mesh Refinement (AMR), while essential for improving e
                             </div>
                         </div>
                     </div>
+		    <div class="hr">
+                    <hr/>
+                    </div>
                     <div class="slot-title">
                         <div class="slot-wrapper">
                             <span class="ttip_object_info_very_wide" rel="#s7ta2_info" title="#s7ta2_title">
@@ -1930,6 +1963,9 @@ Block-structured Adaptive Mesh Refinement (AMR), while essential for improving e
                             </div>
                         </div>
                     </div>
+		    <div class="hr">
+                      <hr/>
+                    </div>		    
                     <div class="slot-title">
                         <div class="slot-wrapper">
                           <span class="ttip_object_info_very_wide" rel="#s7ta3_info" title="#s7ta3_title">
@@ -2004,6 +2040,9 @@ In this paper, we revisit fragmentation-solving methods in memory management and
                             </div>
                         </div>
                     </div>
+		    <div class="hr">
+                      <hr/>
+                    </div>
                     <div class="slot-title">
                         <div class="slot-wrapper">
                             <span class="ttip_object_info_very_wide" rel="#s8ta2_info" title="#s8ta2_title">
@@ -2037,6 +2076,9 @@ In this paper, we revisit fragmentation-solving methods in memory management and
                             </div>
                         </div>
                     </div>
+		    <div class="hr">
+                      <hr/>
+                    </div>		    
                     <div class="slot-title">
                         <div class="slot-wrapper">
                             <span class="ttip_object_info_very_wide" rel="#s8ta3_info" title="#s8ta3_title">
@@ -2067,6 +2109,9 @@ Caching technology is widely used in multiple areas particularly in distributed 
                                 </div>
                             </div>
                         </div>
+                    </div>
+		    <div class="hr">
+                      <hr/>
                     </div>
                     <div class="slot-title">
                         <div class="slot-wrapper">
@@ -2188,6 +2233,9 @@ Multi-tenancy in modern cloud service co-locates multiple virtual machines (VMs)
                             </div>
                         </div>
                     </div>
+		    <div class="hr">
+                      <hr/>
+                    </div>		    
                     <div class="slot-title">
                         <div class="slot-wrapper">
                           <span class="ttip_object_info_very_wide" rel="#s9ta2_info" title="#s9ta2_title">
@@ -2221,6 +2269,9 @@ To address these challenges, we propose HeroServe, an innovative inference servi
                             </div>
                         </div>
                     </div>
+		    <div class="hr">
+                      <hr/>
+                    </div>		    
                     <div class="slot-title">
                         <div class="slot-wrapper">
                           <span class="ttip_object_info_very_wide" rel="#s9ta3_info" title="#s9ta3_title">
@@ -2295,6 +2346,9 @@ Molecular dynamics (MD) simulations are essential tools for investigating large-
                             </div>
                         </div>
                     </div>
+		    <div class="hr">
+                      <hr/>
+                    </div>		    
                     <div class="slot-title">
                         <div class="slot-wrapper">
                             <span class="ttip_object_info_very_wide" rel="#s10ta2_info" title="#s10ta2_title">
@@ -2326,6 +2380,9 @@ We present optimal parallel QR factorization algorithms with reduced communicati
                             </div>
                         </div>
                     </div>
+		    <div class="hr">
+                      <hr/>
+                    </div>		    
                     <div class="slot-title">
                         <div class="slot-wrapper">
                             <span class="ttip_object_info_very_wide" rel="#s10ta3_info" title="#s10ta3_title">
@@ -2404,6 +2461,9 @@ In this paper, we propose MoE-Rckpt, a dynamicity-aware in-memory checkpointing 
                             </div>
                         </div>
                     </div>
+		    <div class="hr">
+                      <hr/>
+                    </div>		    
                     <div class="slot-title">
                         <div class="slot-wrapper">
                           <span class="ttip_object_info_very_wide" rel="#s11ta2_info" title="#s11ta2_title">
@@ -2435,19 +2495,22 @@ In this paper, we propose MoE-Rckpt, a dynamicity-aware in-memory checkpointing 
                             </div>
                         </div>
                     </div>
-                    <div class="slot-title">
+		    <div class="hr">
+                      <hr/>
+                    </div>		    
+		    <div class="slot-title">
                         <div class="slot-wrapper">
-                            <span class="ttip_object_info_very_wide" rel="#s11ta3_info" title="#s11ta3_title">
-			      Uniconn: A Uniform High-Level Communication Library for Portable Multi-GPU Programming
+                          <span class="ttip_object_info_very_wide" rel="#s5ta1_info" title="#s5ta1_title">
+			    Efficient Multi-GPU Programming in Python: Reducing Synchronization and Access Overheads			    
                             </span>
                             <div class="info_link_object_info" style="display: none;">
                                 <div>
-                                    <b id="s11ta3_title">
-				      Uniconn: A Uniform High-Level Communication Library for Portable Multi-GPU Programming
+                                    <b id="s5ta1_title">
+				      Efficient Multi-GPU Programming in Python: Reducing Synchronization and Access Overheads
                                     </b>
                                     <hr/>
                                     <div>
-                                        <div id="s11ta3_info">
+                                        <div id="s5ta1_info">
                                             <div class="author-names">
 
                                             </div>
@@ -2455,7 +2518,11 @@ In this paper, we propose MoE-Rckpt, a dynamicity-aware in-memory checkpointing 
                                                 <div>Abstract
                                                     <blockquote>
                                                         <p>
-Modern HPC and AI systems increasingly rely on multi-GPU clusters, where communication libraries such as MPI, NCCL/RCCL, and NVSHMEM enable data movement across GPUs. While these libraries are widely used in frameworks and solver packages, their distinct APIs, synchronization models, and integration mechanisms introduce programming complexity and limit portability. Performance also varies across workloads and system architectures, making it difficult to achieve consistent efficiency. These issues present a significant obstacle to writing portable, high-performance code for large-scale GPU systems. We present UNICONN, a unified, portable high-level C++ communication library that supports both point-to-point and collective operations across GPU clusters. UNICONN enables seamless switching between backends and APIs (host or device) with minimal or no changes to application code. We describe its design and core constructs, and evaluate its performance using network benchmarks, a Jacobi solver, and a Conjugate Gradient solver. Across three supercomputers, we compare UNICONN’s overhead against CUDA/ROCm-aware MPI, NCCL/RCCL, and NVSHMEM on up to 64 GPUs. In most cases, UNICONN incurs negligible overhead, typically under 3% for the Jacobi solver and under 2% for the Conjugate Gradient solver.
+        Python has become increasingly significant in domains such as data science, machine learning, scientific computing, and parallel programming. The libraries CuPy and Numba enable the development of parallel GPU code, while mpi4py and CuPy’s NCCL backend enable distributed computing across multiple GPUs. Despite its versatility, Python is often criticized for itsperformance limitations. Although pre-compilation and just-in-time compilation can minimize interpreter overhead, multi-GPU applications in Python often encounter significant performance bottlenecks due to the synchronization requirements between GPU kernels and communication libraries.
+<br>
+In this work, we present a detailed performance analysis of multi-GPU programming in Python using CuPy, Numba, NCCL and mpi4py. We identify excessive synchronization and costly array conversions as key sources of overhead and demonstrate that view-based data access can significantly improve performance. Furthermore, we show that using NCCL with asynchronous CUDA streams enables better overlap of computation and communication, mitigating interpreter-induced delays. Our evaluation includes both microbenchmarks and a multi-GPU implementation of the CloverLeaf mini-application. Results show that, with careful optimization, Python implementations can reach up to 90% of the performance of equivalent C-CUDA codes.
+<br>
+These findings highlight practical strategies for minimizing Python-specific overheads in multi-GPU scenarios and provide guidance for building efficient Python applications on modern GPU clusters.
                                                         </p>
                                                     </blockquote>
                                                 </div>
@@ -2466,7 +2533,6 @@ Modern HPC and AI systems increasingly rely on multi-GPU clusters, where communi
                             </div>
                         </div>
                     </div>
-                </div>
                 <div class="hr">
                     <hr/>
                 </div>
@@ -2505,6 +2571,9 @@ Pipeline parallelism and activation recomputation are widely adopted optimizatio
                             </div>
                         </div>
                     </div>
+		    <div class="hr">
+                      <hr/>
+                    </div>		    
                     <div class="slot-title">
                         <div class="slot-wrapper">
                           <span class="ttip_object_info_very_wide" rel="#s12ta2_info" title="#s12ta2_title">
@@ -2535,6 +2604,9 @@ Serverless computing has become widely adopted as a cloud deployment model due t
                                 </div>
                             </div>
                         </div>
+                    </div>
+		    <div class="hr">
+                      <hr/>
                     </div>
                     <div class="slot-title">
                         <div class="slot-wrapper">
