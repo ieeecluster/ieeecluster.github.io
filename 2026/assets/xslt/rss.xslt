@@ -10,11 +10,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>RSS Feed (Styled)</title>
 
-    <link rel="stylesheet" type="text/css" href="https://clustercomp.org/2025/assets/css/styles_feeling_responsive.css">
+    <link rel="stylesheet" type="text/css" href="https://clustercomp.org/2026/assets/css/styles_feeling_responsive.css">
 
   
 
-	<script src="https://clustercomp.org/2025/assets/js/modernizr.min.js"></script>
+	<script src="https://clustercomp.org/2026/assets/js/modernizr.min.js"></script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 	<script>
@@ -31,23 +31,23 @@
 
 
 	<!-- Search Engine Optimization -->
-	<meta name="description" content="Website for IEEE Cluster 2025.The latest news is also shown in Twitter/ieeecluster">
+	<meta name="description" content="Website for IEEE Cluster 2026. The latest news is also shown in Twitter/ieeecluster">
 	<meta name="google-site-verification" content="">
 	<meta name="msvalidate.01" content="" >
 	
 	<link rel="author" href="">
 	
 	
-	<link rel="canonical" href="https://clustercomp.org/2025/assets/xslt/rss.xslt">
+	<link rel="canonical" href="https://clustercomp.org/2026/assets/xslt/rss.xslt">
 
 
 	<!-- Facebook Open Graph -->
 	<meta property="og:title" content="RSS Feed (Styled)">
-	<meta property="og:description" content="Website for IEEE Cluster 2025.The latest news is also shown in Twitter/ieeecluster">
-	<meta property="og:url" content="https://clustercomp.org/2025/assets/xslt/rss.xslt">
+	<meta property="og:description" content="Website for IEEE Cluster 2026. The latest news is also shown in Twitter/ieeecluster">
+	<meta property="og:url" content="https://clustercomp.org/2026/assets/xslt/rss.xslt">
 	<meta property="og:locale" content="">
 	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="IEEE Cluster 2025">
+	<meta property="og:site_name" content="IEEE Cluster 2026">
 	
 	
 
@@ -58,17 +58,17 @@
 	<meta name="twitter:site" content="ieeecluster">
 	<meta name="twitter:creator" content="ieeecluster">
 	<meta name="twitter:title" content="RSS Feed (Styled)">
-	<meta name="twitter:description" content="Website for IEEE Cluster 2025.The latest news is also shown in Twitter/ieeecluster">
+	<meta name="twitter:description" content="Website for IEEE Cluster 2026. The latest news is also shown in Twitter/ieeecluster">
 	
 	
 
-	<link type="text/plain" rel="author" href="https://clustercomp.org/2025/humans.txt">
+	<link type="text/plain" rel="author" href="https://clustercomp.org/2026/humans.txt">
 
 	
 
 	
 
-	<link rel="icon" sizes="32x32" href="https://clustercomp.org/2025/assets/img/favicon.ico">
+	<link rel="icon" sizes="32x32" href="https://clustercomp.org/2026/assets/img/favicon.ico">
 
 	
 
@@ -104,7 +104,7 @@
   <nav class="top-bar" role="navigation" data-topbar>
     <ul class="title-area">
       <li class="name">
-      <h1 class="show-for-small-only"><a href="https://clustercomp.org/2025" class="icon-tree"> IEEE Cluster 2025</a></h1>
+      <h1 class="show-for-small-only"><a href="https://clustercomp.org/2026" class="icon-tree"> IEEE Cluster 2026</a></h1>
     </li>
        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
       <li class="toggle-topbar menu-icon"><a href="#"><span>Nav</span></a></li>
@@ -186,7 +186,7 @@
 
             
             
-              <li><a  href="https://clustercomp.org/2025/">Home</a></li>
+              <li><a  href="https://clustercomp.org/2026/">Home</a></li>
               <li class="divider"></li>
 
             
@@ -201,7 +201,7 @@
 
             
             
-              <li><a  href="https://clustercomp.org/2025/papers/">PAPERS</a></li>
+              <li><a  href="https://clustercomp.org/2026/papers/">PAPERS</a></li>
               <li class="divider"></li>
 
             
@@ -216,7 +216,7 @@
 
             
             
-              <li><a  href="https://clustercomp.org/2025/authors/">AUTHORS</a></li>
+              <li><a  href="https://clustercomp.org/2026/authors/">AUTHORS</a></li>
               <li class="divider"></li>
 
             
@@ -231,7 +231,7 @@
 
             
             
-              <li><a  href="https://clustercomp.org/2025/sponsors/">Sponsors & Support</a></li>
+              <li><a  href="https://clustercomp.org/2026/sponsors/">Sponsors & Support</a></li>
               <li class="divider"></li>
 
             
@@ -246,7 +246,7 @@
 
             
             
-              <li><a  href="https://clustercomp.org/2025/workshops/">WORKSHOPS</a></li>
+              <li><a  href="https://clustercomp.org/2026/workshops/">WORKSHOPS</a></li>
               <li class="divider"></li>
 
             
@@ -261,7 +261,7 @@
 
             
             
-              <li><a  href="https://clustercomp.org/2025/posters/">POSTERS</a></li>
+              <li><a  href="https://clustercomp.org/2026/posters/">POSTERS</a></li>
               <li class="divider"></li>
 
             
@@ -279,8 +279,8 @@
               <li class="has-dropdown inactive">
                 <a>PROGRAM</a>
                   <ul class="dropdown">
-                      <li><a  href="https://clustercomp.org/2025/keynote/">KEYNOTE</a></li>
-                      <li><a  href="https://clustercomp.org/2025/program/">TIMETABLE</a></li>
+                      <li><a  href="https://clustercomp.org/2026/keynote/">KEYNOTE</a></li>
+                      <li><a  href="https://clustercomp.org/2026/program/">TIMETABLE</a></li>
                   </ul>
               </li>
               <li class="divider"></li>
@@ -297,7 +297,7 @@
 
             
             
-              <li><a  href="https://clustercomp.org/2025/mentoring/">MENTORING</a></li>
+              <li><a  href="https://clustercomp.org/2026/mentoring/">MENTORING</a></li>
               <li class="divider"></li>
 
             
@@ -312,7 +312,7 @@
 
             
             
-              <li><a  href="https://clustercomp.org/2025/registration/">REGISTRATION</a></li>
+              <li><a  href="https://clustercomp.org/2026/registration/">REGISTRATION</a></li>
               <li class="divider"></li>
 
             
@@ -327,7 +327,7 @@
 
             
             
-              <li><a  href="https://clustercomp.org/2025/committees/">COMMITTEES</a></li>
+              <li><a  href="https://clustercomp.org/2026/committees/">COMMITTEES</a></li>
               <li class="divider"></li>
 
             
@@ -345,8 +345,8 @@
 <div id="masthead-no-image-header">
 	<div class="row">
 		<div class="small-12 columns">
-			<a id="logo" href="https://clustercomp.org/2025/" title="IEEE Cluster 2025">
-				<img src="https://clustercomp.org/2025/assets/img/logo3.png" alt="IEEE Cluster 2025">
+			<a id="logo" href="https://clustercomp.org/2026/" title="IEEE Cluster 2026">
+				<img src="https://clustercomp.org/2026/assets/img/logo3.png" alt="IEEE Cluster 2026">
 			</a>
 		</div><!-- /.small-12.columns -->
 	</div><!-- /.row -->
@@ -423,8 +423,8 @@
             <h5 class="shadow-black">About This Site</h5>
 
             <p class="shadow-black">
-              Website for IEEE Cluster 2025.<br />The latest news is also shown in <a href="http://twitter.com/ieeecluster">Twitter/ieeecluster</a><br />
-              <a href="https://clustercomp.org/2025/info/">More ›</a>
+              Website for IEEE Cluster 2026.<br />The latest news is also shown in <a href="http://twitter.com/ieeecluster">Twitter/ieeecluster</a><br />
+              <a href="https://clustercomp.org/2026/info/">More ›</a>
             </p>
           </div><!-- /.large-6.columns -->
 
@@ -448,27 +448,27 @@
               
                 
                   <li >
-                    <a href="https://clustercomp.org/2025"  title=""></a>
+                    <a href="https://clustercomp.org/2026"  title=""></a>
                   </li>
               
                 
                   <li >
-                    <a href="https://clustercomp.org/2025/contact/"  title="Contact">Contact</a>
+                    <a href="https://clustercomp.org/2026/contact/"  title="Contact">Contact</a>
                   </li>
               
                 
                   <li >
-                    <a href="https://clustercomp.org/2025/feed.xml"  title="Subscribe to RSS Feed">RSS</a>
+                    <a href="https://clustercomp.org/2026/feed.xml"  title="Subscribe to RSS Feed">RSS</a>
                   </li>
               
                 
                   <li >
-                    <a href="https://clustercomp.org/2025/atom.xml"  title="Subscribe to Atom Feed">Atom</a>
+                    <a href="https://clustercomp.org/2026/atom.xml"  title="Subscribe to Atom Feed">Atom</a>
                   </li>
               
                 
                   <li >
-                    <a href="https://clustercomp.org/2025/sitemap.xml"  title="Sitemap for Google Webmaster Tools">sitemap.xml</a>
+                    <a href="https://clustercomp.org/2026/sitemap.xml"  title="Sitemap for Google Webmaster Tools">sitemap.xml</a>
                   </li>
               
               </ul>
@@ -498,7 +498,7 @@
             
               
                 <li >
-                  <a href="https://clustercomp.org/2025"  title=""></a>
+                  <a href="https://clustercomp.org/2026"  title=""></a>
                 </li>
             
               
@@ -507,7 +507,7 @@
                 </li>
             
               
-                <li class="ieee-2025" >
+                <li class="ieee-2026" >
                   <a href="https://clustercomp.org/2022/" target="_blank"  title="IEEE Cluster 2022">IEEE Cluster 2022</a>
                 </li>
             
@@ -528,7 +528,7 @@
             
               
                 <li class="ieee-policy" >
-                  <a href="https://clustercomp.org/2025/policy.html" target="_blank"  title="IEEE Policy Statements">IEEE Policy Statements</a>
+                  <a href="https://clustercomp.org/2026/policy.html" target="_blank"  title="IEEE Policy Statements">IEEE Policy Statements</a>
                 </li>
             
             </ul>
@@ -567,7 +567,7 @@
 		
 
 
-<script src="https://clustercomp.org/2025/assets/js/javascript.min.js"></script>
+<script src="https://clustercomp.org/2026/assets/js/javascript.min.js"></script>
 
 
 
