@@ -1,8 +1,8 @@
 /* TEAM */
 
 Name: IEEE Cluster 2026
-Site: https://twitter.com/ieeecluster
-Twitter: @ieeecluster
+Site: https://x.com/ieeecluster
+X: @ieeecluster
 
 
 /* THANKS */
@@ -10,7 +10,7 @@ Twitter: @ieeecluster
 Name: Moritz »mo.« Sauer
 Role: Creator of the Theme
 Site: http://mo.phlow.de/
-Twitter: @phlow
+X: @phlow
 Theme: http://phlow.github.io/feeling-responsive/
 
 

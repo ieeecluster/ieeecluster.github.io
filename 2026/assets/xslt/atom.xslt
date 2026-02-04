@@ -423,7 +423,7 @@
             <h5 class="shadow-black">About This Site</h5>
 
             <p class="shadow-black">
-              Website for IEEE Cluster 2026.<br />The latest news is also shown in <a href="http://twitter.com/ieeecluster">Twitter/ieeecluster</a><br />
+              Website for IEEE Cluster 2026.<br />The latest news is also shown in <a href="http://x.com/ieeecluster">X/ieeecluster</a><br />
               <a href="https://clustercomp.org/2026/info/">More ›</a>
             </p>
           </div><!-- /.large-6.columns -->
@@ -548,7 +548,7 @@
             <ul class="inline-list social-icons">
             
               <li>
-                <a href="http://twitter.com/ieeecluster" target="_blank" class="icon-twitter" title="twitter.com/ieeecluster"></a>                
+                <a href="http://x.com/ieeecluster" target="_blank" class="icon-twitter" title="x.com/ieeecluster"></a>                
               </li>
               <li>
                 <a href="https://www.facebook.com/ieeeclusterconference" target="_blank" class="icon-facebook" title="facebook.com/ieeeclusterconference"></a>
