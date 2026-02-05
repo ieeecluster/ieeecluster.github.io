@@ -116,7 +116,7 @@
       </div>
     </div>
     <div style="height:100%; overflow: hidden;"><img src="assets/img/VT_Banner.jpg" alt="IEEE Cluster 2026"
-        style="object-position:center botom; height: 100%; min-width:100%; object-fit: cover"></div>
+        style="object-position:center bottom; height: 100%; min-width:100%; object-fit: cover"></div>
     <p style="font-size:small;"> Photo © Virginia Tech</p>
   </div><!-- /#masthead -->
   <div class="row t30">
@@ -139,76 +139,145 @@
 
           <h2 id="contact-directory"><strong>Contact Directory</strong></h2>
 
-          <div class="row">
-            <div class="small-12 medium-6 columns">
-              <div class="panel">
-                <h4 style="margin-top:0;">General Questions</h4>
-                <p style="margin-bottom:0;">
-                  <strong>Ali R. Butt</strong><br />
-                  General Chair, Virginia Tech, United States of America
-                </p>
-              </div>
-            </div>
+          <style>
+            table.contact-table {
+              width: 100%;
+              border-collapse: collapse;
+              margin-top: 10px;
+              margin-bottom: 18px;
+              font-size: 0.98em;
+            }
 
-            <div class="small-12 medium-6 columns">
-              <div class="panel">
-                <h4 style="margin-top:0;">Sponsors</h4>
-                <p style="margin-bottom:0;">
-                  <strong>Melissa</strong><br />
-                  Sponsorship Contact<br />
-                  <span style="font-size:0.95em;">Email: To be announced</span>
-                </p>
-              </div>
-            </div>
-          </div>
+            table.contact-table th,
+            table.contact-table td {
+              border: 1px solid #e2e2e2;
+              padding: 12px 14px;
+              vertical-align: top;
+            }
 
-          <div class="row">
-            <div class="small-12 medium-6 columns">
-              <div class="panel">
-                <h4 style="margin-top:0;">Technical Program</h4>
-                <ul style="margin-bottom:0;">
-                  <li><strong>Michela Becchi</strong>, North Carolina State University, United States of America
-                    (mbecchi AT ncsu.edu)</li>
-                  <li><strong>Shadi Ibrahim</strong>, Inria, France (shadi.ibrahim AT inria.fr)</li>
-                </ul>
-              </div>
-            </div>
+            table.contact-table thead th {
+              background: #f7f7f7;
+              font-weight: 700;
+            }
 
-            <div class="small-12 medium-6 columns">
-              <div class="panel">
-                <h4 style="margin-top:0;">Workshops</h4>
-                <ul style="margin-bottom:0;">
-                  <li><strong>Feiyi</strong> (Email: To be announced)</li>
-                  <li><strong>Jay</strong> (Email: To be announced)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+            table.contact-table tbody tr:nth-child(even) td {
+              background: #fcfcfc;
+            }
 
-          <div class="row">
-            <div class="small-12 medium-6 columns">
-              <div class="panel">
-                <h4 style="margin-top:0;">Posters</h4>
-                <ul style="margin-bottom:0;">
-                  <li><strong>Arnab</strong> (Email: To be announced)</li>
-                  <li><strong>Hari</strong> (Email: To be announced)</li>
-                </ul>
-              </div>
-            </div>
+            .contact-area {
+              font-weight: 700;
+              white-space: nowrap;
+            }
 
-            <div class="small-12 medium-6 columns">
-              <div class="panel">
-                <h4 style="margin-top:0;">Registration and Student Program</h4>
-                <p style="margin-bottom:0;">
-                  Contacts will be posted soon.<br />
-                  For now, please use <strong>General Questions</strong>.
-                </p>
-              </div>
-            </div>
-          </div>
+            .contact-people {
+              margin: 0;
+            }
+
+            .contact-people li {
+              margin: 0 0 6px 0;
+            }
+
+            .contact-email {
+              font-size: 0.95em;
+              color: #333;
+            }
+
+            .contact-note {
+              font-size: 0.95em;
+              color: #555;
+              margin-top: 8px;
+              margin-bottom: 0;
+            }
+          </style>
+
+          <table class="contact-table">
+            <thead>
+              <tr>
+                <th style="width: 28%;">Area</th>
+                <th style="width: 44%;">Contact</th>
+                <th style="width: 28%;">Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="contact-area">General Questions</td>
+                <td><strong>Ali R. Butt</strong></td>
+                <td><span class="contact-email">ALI_BUTT_EMAIL_HERE</span></td>
+              </tr>
+
+              <tr>
+                <td class="contact-area">Sponsors</td>
+                <td><strong>Melissa</strong></td>
+                <td><span class="contact-email">MELISSA_EMAIL_HERE</span></td>
+              </tr>
+
+              <tr>
+                <td class="contact-area">Technical Program</td>
+                <td>
+                  <ul class="contact-people">
+                    <li><strong>Michela Becchi</strong>, North Carolina State University, United States of America</li>
+                    <li><strong>Shadi Ibrahim</strong>, Inria, France</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="contact-people">
+                    <li><span class="contact-email">mbecchi AT ncsu.edu</span></li>
+                    <li><span class="contact-email">shadi.ibrahim AT inria.fr</span></li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="contact-area">Workshops</td>
+                <td>
+                  <ul class="contact-people">
+                    <li><strong>Feiyi</strong></li>
+                    <li><strong>Jay</strong></li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="contact-people">
+                    <li><span class="contact-email">FEIYI_EMAIL_HERE</span></li>
+                    <li><span class="contact-email">JAY_EMAIL_HERE</span></li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="contact-area">Posters</td>
+                <td>
+                  <ul class="contact-people">
+                    <li><strong>Arnab</strong></li>
+                    <li><strong>Hari</strong></li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="contact-people">
+                    <li><span class="contact-email">ARNAB_EMAIL_HERE</span></li>
+                    <li><span class="contact-email">HARI_EMAIL_HERE</span></li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="contact-area">Registration</td>
+                <td><strong>REGISTRATION_CONTACT_NAME_HERE</strong></td>
+                <td><span class="contact-email">REGISTRATION_EMAIL_HERE</span></td>
+              </tr>
+
+              <tr>
+                <td class="contact-area">Student Program</td>
+                <td><strong>STUDENT_PROGRAM_CONTACT_NAME_HERE</strong></td>
+                <td><span class="contact-email">STUDENT_PROGRAM_EMAIL_HERE</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="contact-note">Emails are written using “AT” to reduce spam.</p>
 
           <hr />
 
+          <!--
           <h2 id="conference-leadership"><strong>Conference Leadership</strong></h2>
 
           <h3 id="general-chair"><strong>General Chair</strong></h3>
@@ -227,6 +296,7 @@
               ncsu.edu)</li>
             <li><strong>Shadi Ibrahim</strong>, Inria, France (shadi.ibrahim AT inria.fr)</li>
           </ul>
+          -->
 
         </div>
       </article>
