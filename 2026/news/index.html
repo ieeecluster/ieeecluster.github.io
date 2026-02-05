@@ -31,7 +31,6 @@
       />
     </noscript>
 
-    <!-- Search Engine Optimization -->
     <meta
       name="description"
       content="Website for IEEE Cluster 2026. The latest news is also shown in X/ieeecluster"
@@ -43,7 +42,6 @@
 
     <link rel="canonical" href="https://clustercomp.org/2026/" />
 
-    <!-- Facebook Open Graph -->
     <meta property="og:title" content="Welcome!" />
     <meta
       property="og:description"
@@ -54,7 +52,6 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="IEEE Cluster 2026" />
 
-    <!-- Twitter/X -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="ieeecluster" />
     <meta name="twitter:creator" content="ieeecluster" />
@@ -119,11 +116,9 @@
         overflow: hidden;
         border: 1px solid rgba(0, 0, 0, 0.08);
         background: #fff;
-        /* Key: reserve space so a 0-height iframe doesn’t look “missing” */
         min-height: 640px;
       }
 
-      /* Key: force visibility + height even if widgets.js leaves it at 0 */
       .news-embed iframe {
         width: 100% !important;
         min-width: 100% !important;
@@ -266,7 +261,6 @@
                     announcements.
                   </p>
 
-                  <!-- The widget will inject an iframe into this div -->
                   <div class="news-embed" id="x-timeline-mount">
                     <div class="news-embed-loading">Loading updates…</div>
                   </div>
@@ -458,11 +452,9 @@
       </div>
     </footer>
 
-    <!-- widgets.js + programmatic timeline creation -->
     <script>
       (function () {
-        // CHANGE THIS to change which profile is embedded (no @)
-        var X_HANDLE = "elonmusk"; // later: "ieeecluster"
+        var X_HANDLE = "ieeeclustere";
 
         var mount = document.getElementById("x-timeline-mount");
         if (!mount) return;
@@ -480,11 +472,9 @@
         }
 
         function forceIframeVisible() {
-          // Twitter uses ids like twitter-widget-0 (not always consistent). Grab any iframe inside mount.
           var ifr = mount.querySelector("iframe");
           if (!ifr) return false;
 
-          // Force size/visibility regardless of what widgets.js sets inline.
           ifr.style.width = "100%";
           ifr.style.minWidth = "100%";
           ifr.style.height = "640px";
@@ -502,7 +492,6 @@
             return false;
           }
 
-          // Clear placeholder
           mount.innerHTML = "";
 
           twttr.widgets
@@ -512,11 +501,10 @@
               {
                 height: 640,
                 dnt: true,
-                chrome: "nofooter", // optional; remove if you want footer
+                chrome: "nofooter",
               },
             )
             .then(function () {
-              // Some loads need a couple of ticks before sizing settles.
               var tries = 0;
               var timer = setInterval(function () {
                 tries += 1;
@@ -542,10 +530,8 @@
           document.body.appendChild(s);
         }
 
-        // Ensure widgets.js is loaded before we create the timeline
         if (!createTimeline()) {
           loadWidgetsJs(function () {
-            // give twttr a beat to initialize
             setTimeout(function () {
               if (!createTimeline())
                 showFallback(
