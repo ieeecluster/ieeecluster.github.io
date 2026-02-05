@@ -118,17 +118,23 @@
         border-radius: 10px;
         overflow: hidden;
         border: 1px solid rgba(0, 0, 0, 0.08);
+        background: #fff;
+        /* Key: reserve space so a 0-height iframe doesn’t look “missing” */
+        min-height: 640px;
       }
 
-      /* Force the twitter widget iframe to actually be visible */
-      .news-embed iframe[id^="twitter-widget"],
-      .news-embed iframe[src*="platform.twitter.com"],
-      .news-embed iframe[src*="syndication.twitter.com"] {
+      /* Key: force visibility + height even if widgets.js leaves it at 0 */
+      .news-embed iframe {
         width: 100% !important;
         min-width: 100% !important;
         height: 640px !important;
         display: block !important;
         border: 0 !important;
+      }
+
+      .news-embed-loading {
+        padding: 0.9rem 1rem;
+        opacity: 0.85;
       }
     </style>
   </head>
@@ -193,9 +199,7 @@
             <li><a href="photos/">Photos</a></li>
             <li class="divider"></li>
             <li>
-              <a>
-                <p style="width: 900px"></p>
-              </a>
+              <a><p style="width: 900px"></p></a>
             </li>
           </ul>
         </section>
@@ -262,15 +266,9 @@
                     announcements.
                   </p>
 
-                  <div class="news-embed" id="news-embed">
-                    <a
-                      class="twitter-timeline"
-                      data-height="640"
-                      data-dnt="true"
-                      href="https://twitter.com/elonmusk"
-                    >
-                      Posts by @ieeecluster
-                    </a>
+                  <!-- The widget will inject an iframe into this div -->
+                  <div class="news-embed" id="x-timeline-mount">
+                    <div class="news-embed-loading">Loading updates…</div>
                   </div>
 
                   <p style="opacity: 0.75; margin-top: 0.75rem">
@@ -338,12 +336,8 @@
           <div class="small-6 medium-3 large-3 large-offset-1 columns">
             <h5 class="shadow-black">Services</h5>
             <ul class="no-bullet shadow-black">
-              <li>
-                <a href="https://clustercomp.org/2025" title=""></a>
-              </li>
-              <li>
-                <a href="contact/" title="Contact">Contact</a>
-              </li>
+              <li><a href="https://clustercomp.org/2025" title=""></a></li>
+              <li><a href="contact/" title="Contact">Contact</a></li>
               <li>
                 <a href="feed.xml" title="Subscribe to Atom Feed">Atom</a>
               </li>
@@ -464,42 +458,100 @@
       </div>
     </footer>
 
-    <script
-      async
-      src="https://platform.twitter.com/widgets.js"
-      charset="utf-8"
-    ></script>
-
+    <!-- widgets.js + programmatic timeline creation -->
     <script>
       (function () {
-        function ensureTimeline() {
-          try {
-            if (!window.twttr || !twttr.widgets) return;
+        // CHANGE THIS to change which profile is embedded (no @)
+        var X_HANDLE = "elonmusk"; // later: "ieeecluster"
 
-            var hasIframe =
-              document.querySelector(
-                '.news-embed iframe[id^="twitter-widget"], .news-embed iframe[src*="platform.twitter.com"], .news-embed iframe[src*="syndication.twitter.com"]',
-              ) !== null;
+        var mount = document.getElementById("x-timeline-mount");
+        if (!mount) return;
 
-            if (hasIframe) return;
-
-            var container = document.getElementById("news-embed");
-            if (!container) return;
-
-            container.innerHTML =
-              '<a class="twitter-timeline" data-height="640" data-dnt="true" href="https://twitter.com/elonmusk">Posts by @ieeecluster</a>';
-
-            twttr.widgets.load(container);
-          } catch (e) {
-            // no-op
-          }
+        function showFallback(msg) {
+          mount.innerHTML =
+            '<div class="news-embed-loading">' +
+            (msg ||
+              "Unable to load the embedded feed (often blocked by tracking protection). ") +
+            'Open: <a href="https://x.com/' +
+            X_HANDLE +
+            '" target="_blank" rel="noopener">x.com/' +
+            X_HANDLE +
+            "</a></div>";
         }
 
-        if (document.readyState === "complete") {
-          ensureTimeline();
-        } else {
-          window.addEventListener("load", function () {
-            setTimeout(ensureTimeline, 300);
+        function forceIframeVisible() {
+          // Twitter uses ids like twitter-widget-0 (not always consistent). Grab any iframe inside mount.
+          var ifr = mount.querySelector("iframe");
+          if (!ifr) return false;
+
+          // Force size/visibility regardless of what widgets.js sets inline.
+          ifr.style.width = "100%";
+          ifr.style.minWidth = "100%";
+          ifr.style.height = "640px";
+          ifr.style.display = "block";
+          ifr.style.border = "0";
+          return true;
+        }
+
+        function createTimeline() {
+          if (
+            !window.twttr ||
+            !twttr.widgets ||
+            !twttr.widgets.createTimeline
+          ) {
+            return false;
+          }
+
+          // Clear placeholder
+          mount.innerHTML = "";
+
+          twttr.widgets
+            .createTimeline(
+              { sourceType: "profile", screenName: X_HANDLE },
+              mount,
+              {
+                height: 640,
+                dnt: true,
+                chrome: "nofooter", // optional; remove if you want footer
+              },
+            )
+            .then(function () {
+              // Some loads need a couple of ticks before sizing settles.
+              var tries = 0;
+              var timer = setInterval(function () {
+                tries += 1;
+                if (forceIframeVisible() || tries >= 10) clearInterval(timer);
+              }, 200);
+            })
+            .catch(function () {
+              showFallback();
+            });
+
+          return true;
+        }
+
+        function loadWidgetsJs(cb) {
+          var s = document.createElement("script");
+          s.async = true;
+          s.charset = "utf-8";
+          s.src = "https://platform.twitter.com/widgets.js";
+          s.onload = cb;
+          s.onerror = function () {
+            showFallback();
+          };
+          document.body.appendChild(s);
+        }
+
+        // Ensure widgets.js is loaded before we create the timeline
+        if (!createTimeline()) {
+          loadWidgetsJs(function () {
+            // give twttr a beat to initialize
+            setTimeout(function () {
+              if (!createTimeline())
+                showFallback(
+                  "widgets.js loaded, but twttr did not initialize. ",
+                );
+            }, 50);
           });
         }
       })();
