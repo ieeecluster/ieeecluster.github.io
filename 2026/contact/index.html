@@ -86,8 +86,22 @@
               <!-- <li><a href="authors/">Camera Ready</a></li> -->
             </ul>
           </li>
+          <!-- <li class="divider"></li> -->
+          <!-- <li class="has-dropdown  active"> -->
+          <!-- <a>Program</a> -->
+          <!-- <ul class="dropdown"> -->
+          <!-- <li><a href="keynotes/">Keynotes</a></li> -->
+          <!-- <li><a href="program/">Schedule</a></li> -->
+          <!-- </ul> -->
+          <!-- </li> -->
           <li class="divider"></li>
           <li><a href="sponsors/">Sponsors & Support</a></li>
+          <!-- <li class="divider"></li> -->
+          <!-- <li><a href="workshops/">Workshops</a></li> -->
+          <!-- <li class="divider"></li> -->
+          <!-- <li><a href="tutorials/">Tutorials</a></li> -->
+          <!-- <li class="divider"></li> -->
+          <!-- <li><a href="mentoring/">Students</a></li> -->
           <li class="divider"></li>
           <li><a href="registration/">Registration</a></li>
           <li class="divider"></li>
@@ -97,7 +111,9 @@
           <li class="divider"></li>
           <li><a href="news/">News</a></li>
           <li class="divider"></li>
-          <li class="active"><a href="contact/">Contact</a></li>
+          <li><a href="contact/">Contact</a></li>
+          <!-- <li class="divider"></li> -->
+          <!-- <li><a href="photos/">Photos</a></li> -->
           <li class="divider"></li>
           <li><a>
               <p style="width:900px"></p>
@@ -134,146 +150,153 @@
         </header>
         <div itemprop="articleSection" markdown="1">
 
-          <p class="lead">Don’t hesitate to contact us if you have any issues or questions. If you are unsure who to
-            contact, start with General Questions.</p>
+          <p class="lead">Don’t hesitate to contact us if you have any issues or questions.</p>
 
           <h2 id="contact-directory"><strong>Contact Directory</strong></h2>
 
           <style>
-            table.contact-table {
-              width: 100%;
-              border-collapse: collapse;
+            .contact-directory {
               margin-top: 10px;
-              margin-bottom: 18px;
-              font-size: 0.98em;
+              border-top: 1px solid #e6e6e6;
             }
 
-            table.contact-table th,
-            table.contact-table td {
-              border: 1px solid #e2e2e2;
-              padding: 12px 14px;
-              vertical-align: top;
-            }
-
-            table.contact-table thead th {
-              background: #f7f7f7;
-              font-weight: 700;
-            }
-
-            table.contact-table tbody tr:nth-child(even) td {
-              background: #fcfcfc;
+            .contact-row {
+              display: flex;
+              gap: 18px;
+              padding: 14px 0;
+              border-bottom: 1px solid #e6e6e6;
             }
 
             .contact-area {
+              flex: 0 0 210px;
               font-weight: 700;
-              white-space: nowrap;
             }
 
-            .contact-people {
-              margin: 0;
+            .contact-details {
+              flex: 1 1 auto;
             }
 
-            .contact-people li {
-              margin: 0 0 6px 0;
+            .contact-person {
+              margin-bottom: 10px;
+            }
+
+            .contact-person:last-child {
+              margin-bottom: 0;
             }
 
             .contact-email {
               font-size: 0.95em;
-              color: #333;
+              color: #444;
             }
 
             .contact-note {
+              margin-top: 10px;
               font-size: 0.95em;
-              color: #555;
-              margin-top: 8px;
-              margin-bottom: 0;
+              color: #666;
+            }
+
+            @media (max-width: 640px) {
+              .contact-row {
+                display: block;
+              }
+
+              .contact-area {
+                margin-bottom: 8px;
+              }
             }
           </style>
 
-          <table class="contact-table">
-            <thead>
-              <tr>
-                <th style="width: 28%;">Area</th>
-                <th style="width: 44%;">Contact</th>
-                <th style="width: 28%;">Email</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="contact-area">General Questions</td>
-                <td><strong>Ali R. Butt</strong></td>
-                <td><span class="contact-email">ALI_BUTT_EMAIL_HERE</span></td>
-              </tr>
+          <div class="contact-directory">
 
-              <tr>
-                <td class="contact-area">Sponsors</td>
-                <td><strong>Melissa</strong></td>
-                <td><span class="contact-email">MELISSA_EMAIL_HERE</span></td>
-              </tr>
+            <div class="contact-row">
+              <div class="contact-area">General Questions</div>
+              <div class="contact-details">
+                <div class="contact-person">
+                  <strong>Ali R. Butt</strong><br />
+                  <span class="contact-email">Email: To be announced</span>
+                </div>
+              </div>
+            </div>
 
-              <tr>
-                <td class="contact-area">Technical Program</td>
-                <td>
-                  <ul class="contact-people">
-                    <li><strong>Michela Becchi</strong>, North Carolina State University, United States of America</li>
-                    <li><strong>Shadi Ibrahim</strong>, Inria, France</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul class="contact-people">
-                    <li><span class="contact-email">mbecchi AT ncsu.edu</span></li>
-                    <li><span class="contact-email">shadi.ibrahim AT inria.fr</span></li>
-                  </ul>
-                </td>
-              </tr>
+            <div class="contact-row">
+              <div class="contact-area">Sponsors</div>
+              <div class="contact-details">
+                <div class="contact-person">
+                  <strong>Melissa</strong><br />
+                  <span class="contact-email">Email: To be announced</span>
+                </div>
+              </div>
+            </div>
 
-              <tr>
-                <td class="contact-area">Workshops</td>
-                <td>
-                  <ul class="contact-people">
-                    <li><strong>Feiyi</strong></li>
-                    <li><strong>Jay</strong></li>
-                  </ul>
-                </td>
-                <td>
-                  <ul class="contact-people">
-                    <li><span class="contact-email">FEIYI_EMAIL_HERE</span></li>
-                    <li><span class="contact-email">JAY_EMAIL_HERE</span></li>
-                  </ul>
-                </td>
-              </tr>
+            <div class="contact-row">
+              <div class="contact-area">Technical Program</div>
+              <div class="contact-details">
+                <div class="contact-person">
+                  <strong>Michela Becchi</strong><br />
+                  <span class="contact-email">
+                    <a href="mailto:mbecchi@ncsu.edu">mbecchi AT ncsu.edu</a>
+                  </span>
+                </div>
+                <div class="contact-person">
+                  <strong>Shadi Ibrahim</strong><br />
+                  <span class="contact-email">
+                    <a href="mailto:shadi.ibrahim@inria.fr">shadi.ibrahim AT inria.fr</a>
+                  </span>
+                </div>
+              </div>
+            </div>
 
-              <tr>
-                <td class="contact-area">Posters</td>
-                <td>
-                  <ul class="contact-people">
-                    <li><strong>Arnab</strong></li>
-                    <li><strong>Hari</strong></li>
-                  </ul>
-                </td>
-                <td>
-                  <ul class="contact-people">
-                    <li><span class="contact-email">ARNAB_EMAIL_HERE</span></li>
-                    <li><span class="contact-email">HARI_EMAIL_HERE</span></li>
-                  </ul>
-                </td>
-              </tr>
+            <div class="contact-row">
+              <div class="contact-area">Workshops</div>
+              <div class="contact-details">
+                <div class="contact-person">
+                  <strong>Feiyi</strong><br />
+                  <span class="contact-email">Email: To be announced</span>
+                </div>
+                <div class="contact-person">
+                  <strong>Jay</strong><br />
+                  <span class="contact-email">Email: To be announced</span>
+                </div>
+              </div>
+            </div>
 
-              <tr>
-                <td class="contact-area">Registration</td>
-                <td><strong>REGISTRATION_CONTACT_NAME_HERE</strong></td>
-                <td><span class="contact-email">REGISTRATION_EMAIL_HERE</span></td>
-              </tr>
+            <div class="contact-row">
+              <div class="contact-area">Posters</div>
+              <div class="contact-details">
+                <div class="contact-person">
+                  <strong>Arnab</strong><br />
+                  <span class="contact-email">Email: To be announced</span>
+                </div>
+                <div class="contact-person">
+                  <strong>Hari</strong><br />
+                  <span class="contact-email">Email: To be announced</span>
+                </div>
+              </div>
+            </div>
 
-              <tr>
-                <td class="contact-area">Student Program</td>
-                <td><strong>STUDENT_PROGRAM_CONTACT_NAME_HERE</strong></td>
-                <td><span class="contact-email">STUDENT_PROGRAM_EMAIL_HERE</span></td>
-              </tr>
-            </tbody>
-          </table>
+            <div class="contact-row">
+              <div class="contact-area">Registration</div>
+              <div class="contact-details">
+                <div class="contact-person">
+                  <strong>Contact to be announced</strong><br />
+                  <span class="contact-email">Email: To be announced</span>
+                </div>
+              </div>
+            </div>
 
-          <p class="contact-note">Emails are written using “AT” to reduce spam.</p>
+            <div class="contact-row">
+              <div class="contact-area">Student Program</div>
+              <div class="contact-details">
+                <div class="contact-person">
+                  <strong>Contact to be announced</strong><br />
+                  <span class="contact-email">Email: To be announced</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="contact-note">Emails may be written using “AT” to reduce spam.</p>
 
           <hr />
 
