@@ -119,6 +119,17 @@
         overflow: hidden;
         border: 1px solid rgba(0, 0, 0, 0.08);
       }
+
+      /* Force the twitter widget iframe to actually be visible */
+      .news-embed iframe[id^="twitter-widget"],
+      .news-embed iframe[src*="platform.twitter.com"],
+      .news-embed iframe[src*="syndication.twitter.com"] {
+        width: 100% !important;
+        min-width: 100% !important;
+        height: 640px !important;
+        display: block !important;
+        border: 0 !important;
+      }
     </style>
   </head>
 
@@ -251,12 +262,12 @@
                     announcements.
                   </p>
 
-                  <div class="news-embed">
+                  <div class="news-embed" id="news-embed">
                     <a
                       class="twitter-timeline"
                       data-height="640"
                       data-dnt="true"
-                      href="https://x.com/elonmusk"
+                      href="https://twitter.com/elonmusk"
                     >
                       Posts by @ieeecluster
                     </a>
@@ -458,5 +469,40 @@
       src="https://platform.twitter.com/widgets.js"
       charset="utf-8"
     ></script>
+
+    <script>
+      (function () {
+        function ensureTimeline() {
+          try {
+            if (!window.twttr || !twttr.widgets) return;
+
+            var hasIframe =
+              document.querySelector(
+                '.news-embed iframe[id^="twitter-widget"], .news-embed iframe[src*="platform.twitter.com"], .news-embed iframe[src*="syndication.twitter.com"]',
+              ) !== null;
+
+            if (hasIframe) return;
+
+            var container = document.getElementById("news-embed");
+            if (!container) return;
+
+            container.innerHTML =
+              '<a class="twitter-timeline" data-height="640" data-dnt="true" href="https://twitter.com/elonmusk">Posts by @ieeecluster</a>';
+
+            twttr.widgets.load(container);
+          } catch (e) {
+            // no-op
+          }
+        }
+
+        if (document.readyState === "complete") {
+          ensureTimeline();
+        } else {
+          window.addEventListener("load", function () {
+            setTimeout(ensureTimeline, 300);
+          });
+        }
+      })();
+    </script>
   </body>
 </html>
