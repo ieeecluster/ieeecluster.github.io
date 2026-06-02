@@ -1,0 +1,373 @@
+html {
+	padding: 0px;
+	margin: 0px;
+	background-color: white;
+}
+
+
+* html form { /* IE only */
+    margin: 0px;
+}
+
+/* my committee links */
+
+.my_comm_link A { color: black; }
+.my_comm_link A:link { color: black; }
+.my_comm_link A:active { color: black; }
+.my_comm_link A:visited { color: black; }
+
+/*
+A { color: #003366; }
+A:link { color: #003366; }
+A:active { color: #cc3366; }
+A:visited { color: #cc3366; }
+*/
+
+
+body { 
+    /* additionaly style for non-iframe cs pages */
+	/*min-height: 400px; */
+	min-width: 750px;
+	height: 1%;
+	margin-right: 10px; 
+	margin-left: 10px; 
+	margin-top: 0px; 
+	padding: 0px; 
+	border-color: #244a84; 
+	border-width: 0px; 
+	border-style: solid; 
+	background: white;
+	color: black;
+/*  line-height: 1.25;*/
+}
+
+.iframe_body { 
+	min-width: 0;
+	height: 1%;
+	margin: 0px; 
+	padding: 0px; 
+	border-width: 0px; 
+	border-style: none; 
+	background: none;
+	color: black;
+/*  line-height: 1.25;*/
+}
+
+/* IE Only */
+/* 
+* html body { 
+    min-height: ;
+}
+*/
+
+table {
+/*    font-size: 14px;*/
+}
+
+#header {
+    height: 40px; /* required for display in IE */
+	position: relative;
+	clear: both;
+/*  color: white;*/
+	padding: 5px;
+	margin: 0px;
+/*  background-color: #244a84;*/
+}
+
+
+#header h1 {
+	float: left;
+	width: 30%;
+	padding: 0px;
+	margin: 0px;
+	/*height: 1%;*/
+	
+	/*z-index: 5;*/
+	
+/*  text-shadow: 2px 2px black;*/
+	line-height: 1em;
+	font-size: 40px;
+	font-weight: bold;
+}
+#header h2 {
+    float: left;
+    width: 40%;
+    padding: 0px;
+    margin: 0px;
+	margin-top: 10px;
+	/*z-index: 0;*/
+	
+	/*
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	
+	width: 100%;
+	*/
+	/* position: absolute; */
+	
+	/* text-shadow: 1px 2px; This isn't working on firefox. -mm */
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	/*padding: 0px;*/
+	font-size: 18px;
+	line-height: 1em;
+
+}
+
+
+#header #user-data {
+	float: right;
+	width: 30%;
+	/*height: 1%;*/
+
+	/*z-index: 5;*/
+	text-align: right;
+}
+#header #user-links {
+	font-size: 12px;
+	color: #fefe00;
+}
+#header #user-links a {
+	color: #fffe16;
+	text-decoration: none;
+}
+#header #user-links a:hover {
+	text-decoration: underline;
+}
+
+
+#page-links {
+	text-align: center;
+	padding: 2px;
+	background-color: #ffc59c;
+	width: 100%; 
+}
+#top-links {
+	z-index: 5;
+    padding: 5px;
+	text-align: right;
+	height: 1%;
+}
+
+#breadcrumbs {
+	color: gray;
+	margin-left: 2px;
+	padding-right: 10px;
+	float: left;
+	height: 1%;
+	vertical-align: top;
+}
+#breadcrumbs a {
+	color: gray;
+	vertical-align: top;
+}
+/*
+#content {
+	padding-left: 2px;
+	padding-bottom: 20px;
+	padding-right: 2px;
+	padding-top: 20px;
+	position: relative;
+	margin-top: 0px;
+}
+*/
+/*
+.contents {
+	padding-left: 2px;
+	padding-bottom: 20px;
+	padding-right: 2px;
+	padding-top: 20px;
+	width: 100%;    For IE
+	min-height: 300px;
+	position: relative;
+	margin-top: 0px;
+	text-align: left;
+}
+*/
+
+.contents {
+	min-height: 300px;
+}
+
+.contents h1, .contents h2, .contents h3, .contents h4, .contents h5, .contents h6 { 
+    margin: 5px 0px 5px 0px; 
+}
+.contents h1, .contents h2 { 
+    font-size: 18px;
+    float: none;
+    width: 100%;
+    padding: none;
+    margin: none;
+	text-shadow: none;
+	font-style: none;
+	font-weight: none;
+	text-align: left;
+	line-height: none;
+}
+.contents h3, .contents h4 { font-size: 16px }
+.contents h5, .contents h6 {
+/*    font-size: 14px*/
+}
+
+
+.clear {
+	clear: both;
+}
+
+.column {
+	text-align: center;
+	position: relative;
+    height: 1%; /* IE hack */
+    padding-bottom: 10px;
+	float: left;
+}
+
+/*#ui-dialog-container {}*/
+.ui-dialog-titlebar {
+    background-color: #BBBBBB;
+    color: #204a85;
+    padding: 3px 5px 0px 10px;
+    border: none;
+    text-align: left;
+}
+.ui-dialog-title {
+    float: left;
+}
+.ui-dialog-titlebar-close, ui-dialog-titlebar-close-hover {
+    float: right;
+}
+.ui-dialog-content {
+    background-color: #E5E5E5;
+}
+/*.ui-dialog-buttonpane*/
+
+
+/* surround tables in a no_padding div to get rid of auto (from above) padding */
+.no_padding tr td, .no_padding table tr td  { 
+	 padding: 0px;
+	 margin: 0px;
+}
+.no_padding table tr.even td, .no_padding table tr.odd td {
+	padding: 0px 0px;
+}
+.role-name {
+	/*font-weight: bold;*/
+	color: #204a85;
+	float: left;
+	min-width: 60%;
+	/*border-bottom: 1px #204a85 dotted;*/
+	height: 1%;
+}
+.role-members {
+	float: right;
+	width: 55%;
+	height: 1%;
+}
+.tasks-nav {
+	padding: 2px;
+}
+
+.eo_box {
+    border-spacing:0;
+    border-collapse:collapse;
+}
+
+.row {
+	padding-left: 4px;
+	padding-bottom: 2px;
+	/* padding-right: 0px; Hack for IE */
+	padding-right: 4px;
+	padding-top: 2px;
+	margin: 0px;
+    height: 1%;
+}
+.subcommittee-name {
+	margin-top: 5px;
+	margin-left: 8px;
+}
+
+
+/* drop downs */
+
+/*** ESSENTIAL STYLES ***/
+.nav, .nav * {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.nav {
+	line-height:1.0;
+}
+.nav ul {
+	position:absolute;
+	top:-999em;
+	width:9.45em;
+}
+.nav ul li,
+.nav a {
+	width: 100%;
+}
+.nav li {
+	float:left;
+	position:relative;
+	z-index:99;
+}
+.nav a {
+	display:block;
+}
+.nav li:hover ul,
+ul.nav li.sfHover ul {
+	left:-1px;
+	top:2.5em;
+}
+.nav li:hover li ul,
+.nav li.sfHover li ul {
+	top:-999em;
+}
+.nav li li:hover ul,
+ul.nav li li.sfHover ul {
+	left:9.45em;
+	top:-1px;
+}
+
+/*** ORIGINAL SKIN ***/
+.nav {
+	/*float:left;*/
+	/*margin-bottom:1.5em;*/
+}
+.nav li {
+	background:#BDD2FF;
+	border-left:1px solid #fff;
+	border-top:1px solid #CFDEFF;
+	/*width:9.45em;*/
+}
+.nav a {
+	color: #13a;
+	/*padding: .75em 0;*/
+	text-decoration:none;
+	text-indent: 2em;
+}
+.nav li:hover, .nav li.sfHover,
+.nav a:focus, .nav a:hover, .nav a:active {
+	background:#CFDEFF;
+}
+.nav li li {
+	background:#AABDE6;
+}
+.nav li li li {
+	background:#9AAEDB;
+}
+
+
+/* For dhtmlx grid */
+/* header menu. */
+.dhx_header_cmenu {
+    background-color:#ffffff;
+    border:2px outset silver;
+    z-index:2;
+}
+.dhx_header_cmenu_item {
+    white-space:nowrap;
+}

@@ -1,0 +1,179 @@
+
+
+@media (max-width: 400px) {
+    #main-content-box {
+        margin: 5px;
+    }
+}
+
+@media (min-width: 400px) {
+    #main-content-box {
+        margin: 5px 30px 15px 30px;
+    }
+}
+
+body {
+    background: white;
+    font-size: 14px;
+    font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+}
+blockquote {
+    margin: 5px 20px 5px 20px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.centered {
+    text-align: center;
+}
+.centered table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;   /* For within the table. */
+}
+.page-title {
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.created-date {
+    color: gray;
+    font-style: italic;
+}
+.anchor-link {
+}
+.top-link {
+    margin-top: 20px;
+}
+.room-name {
+    font-weight: bold;
+}
+.page-links {
+    font-weight: bold;
+}
+.section-title {
+    font-size: 1.5em;
+    color: gray;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.section-entry {
+}
+.session-entry {
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.session-date {
+    font-weight: bold;
+}
+.session-time {
+    font-weight: bold;
+}
+.session-event-type {
+}
+.type-track-spacer {
+}
+.program-track {
+}
+.session-title {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.session-chair {
+    font-size: 1.1em;
+}
+.slot-entry {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.slot-title {
+    /* font-style: italic; */
+}
+.slot-authors {}
+.slot-abstract {}
+.hover_link:hover {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* author pics and bios */
+.auth-pics-section {}
+.author-pic-thumb {
+    max-width: 150px;
+    max-height: 75px;
+    margin-right: 6px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+.author-pic {
+    max-width: 200px;
+    max-height: 400px;
+    float: left;
+    margin: 5px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.biography {
+    padding: 5px;
+}
+.biography-sect {
+    padding-bottom: 8px;
+}
+
+.clear-div {
+    clear: both;
+}
+
+
+/* classes for the author index */
+
+.index-slot-authors {}
+.index-author-table:hover {
+    background-color: rgb(90%, 90%, 90%);
+    // width: 100%;
+}
+.index-author-pic-thumb {
+    max-width: 40px;
+    max-height: 150px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+.index-author-pic {
+    max-width: 200px;
+    max-height: 400px;
+    float: left;
+    margin: 5px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.index-biography {
+    padding: 5px;
+}
+.index-biography-sect {
+    padding-bottom: 8px;
+}
+.index-slot-authors-td {
+    min-width: 225px;
+    max-width: 225px;
+    vertical-align: top;
+}
+.index-auth-subs {
+    vertical-align: top;
+    min-width: 300px;
+}
+.index-auth-pic-td {
+    vertical-align: top;
+    min-width: 42px;
+    max-width: 42px;
+}
+
+
