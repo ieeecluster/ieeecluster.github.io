@@ -60,7 +60,7 @@ blockquote {
     font-weight: bold;
 }
 .session-chair {
-    font-size: 1.1em;
+    font-size: 15.8px;
     margin-bottom: 7px;
     float: left;
 }
@@ -73,6 +73,9 @@ blockquote {
 }
 .slot-wrapper {
     margin-bottom: 6px;
+}
+.slot-wrapper > strong {
+    font-size: 15px;
 }
 .slot-title > span:hover {
     color: blue;
@@ -122,4 +125,3 @@ blockquote {
 .qtip-content {
     padding: 15px 20px 15px 20px;
 }
-
