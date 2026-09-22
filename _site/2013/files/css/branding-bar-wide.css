@@ -1,0 +1,240 @@
+/*************************************************
+ * IU Branding Bar & Footer
+ *
+ * Version: 1.01
+ * Author: IU Communications 
+ * Author URI: http://communications.iu.edu
+ ************************************************/
+
+/****************************************
+ * General Formatting
+ ****************************************/
+
+/*** Reusable Classes ***/
+
+/* Wrapper */
+.wrapper {
+    padding: 0 10px;
+}
+
+/* Line Break */
+.line-break {
+    display: inline;    
+}
+
+
+/****************************************
+ * Branding Bar
+ ****************************************/
+
+#branding-bar {
+    min-height: 52px;
+}
+
+/*** Trident Tab & Campus Name ***/
+
+#branding-bar .campus {
+    font-size: 1.125em; /* 18px (18/16) */
+    line-height: 1em; /* 18px (18/18) */
+}
+#branding-bar .campus a {
+    height: 46px;
+    padding: 0 0 0 75px;
+}
+#branding-bar .campus img {
+    left: 0;
+    width: 64px;
+}
+
+/*** Search ***/
+
+#branding-bar #cse-search {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    float: none;
+    height: 0;
+    margin: 0;
+    opacity: 1;
+    padding: 0;
+    text-align: right;
+    transition: none;
+    width: auto;
+    z-index: 300;
+}
+#branding-bar.gateway #cse-search {
+    padding-right: 50px;
+}
+#branding-bar #cse-search * {
+    opacity: 1; 
+}
+#branding-bar #cse-search form {
+    margin: 0;
+    width: auto;
+}
+#branding-bar #cse-search fieldset {
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+/* Fieldset 1 */
+#branding-bar #cse-search-fieldset1 {
+    margin: 0;
+    position: static;   
+}
+
+/* Keywords */
+#branding-bar #cse-search-keywords {
+    background: #601411;
+    color: #fff;
+    padding: 0 12px;
+    width: 144px;   
+}
+#branding-bar #cse-search-keywords::-webkit-input-placeholder {
+   color: #fff;
+}
+#branding-bar #cse-search-keywords:-moz-placeholder {
+   color: #fff; 
+}
+#branding-bar #cse-search-keywords::-moz-placeholder {
+   color: #fff;  
+}
+#branding-bar #cse-search-keywords:-ms-input-placeholder {  
+   color: #fff; 
+}
+
+/* Submit */
+#branding-bar #cse-search-submit {
+    background-image: url(http://racinfo.indiana.edu/files/img/search-submit.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin: 0;
+    text-indent: -9999px;
+    width: 45px;    
+}
+
+/*** Tools ***/
+
+#branding-bar #campus-tools {
+    -webkit-transition: margin 0.5s ease-in-out, opacity 0s ease-in-out 0.5s;
+    -moz-transition: margin 0.5s ease-in-out, opacity 0s ease-in-out 0.5s;
+    -ms-transition: margin 0.5s ease-in-out, opacity 0s ease-in-out 0.5s;
+    -o-transition: margin 0.5s ease-in-out, opacity 0s ease-in-out 0.5s;
+    margin-top: -50%;
+    transition: margin 0.5s ease-in-out, opacity 0s ease-in-out 0.5s;
+}
+#branding-bar #campus-tools:target {
+    padding: 78px 0 20px 0;
+    z-index: 200;
+}
+#branding-bar #campus-tools .groups {
+    display: table;
+    margin: 0;
+    width: 100%;
+}
+#branding-bar #campus-tools .group {
+    border-bottom: none;
+    display: table-cell;
+    float: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    width: auto;    
+}
+#branding-bar #campus-tools li {
+    float: none;
+    width: auto;
+}
+#branding-bar #campus-tools li a {
+    padding: 0; 
+}
+
+/*** Toggles ***/
+
+#branding-bar .toggle {
+    margin: 0 0 20px 0;
+}
+#branding-bar .toggle a {
+    height: 26px;
+}
+#branding-bar #cse-search:target .toggle.search.close, 
+#branding-bar .toggle.search {
+    display: none;
+}
+#branding-bar .toggle.tools.close {
+    bottom: -46px;
+}
+#branding-bar.gateway .toggle.tools.close {
+    right: 0;
+}
+
+
+/****************************************
+ * Footer
+ ****************************************/
+
+#footer {
+    border-top: 6px solid #7d110c;
+    margin-top: 40px;
+    padding: 40px 0 30px 0;
+    position: relative;
+    text-align: left;
+    z-index: 1;
+    margin-top: -19px;
+}
+#footer .wrapper {
+    position: relative;
+}
+#footer .tagline {
+    font-size: 2.545em !important; /* 28px (28/11) */
+    left: 29%;
+    line-height: 1em; /* 28px (28/28) */
+    margin: 0 0 0 -20px !important;
+    max-width: 444px;
+    padding: 8px !important;
+    position: absolute;
+    text-align: center;
+    top: -66px;
+    width: 44%;
+    color: #fff;
+    background: #7d110c;
+}
+#footer .copyright {
+    overflow: hidden;
+    padding: 7px 0 0 0;
+    position: relative; 
+}   
+#footer .internal {
+    position: absolute;
+    right: 40px;
+    top: 7px;
+    z-index: 1; 
+}   
+#footer .block-iu { 
+    float: left;
+    margin: -7px 9px 0 0;
+}
+
+
+/****************************************
+ * Media Queries
+ ****************************************/
+
+/* 960px */
+@media only screen and (min-width: 60.000em) {
+    
+    /****************************************
+     * Branding Bar
+     ****************************************/
+ 
+    /*** Trident Tab & Campus Name ***/
+
+    #branding-bar .campus abbr {
+        display: none;  
+    }
+    #branding-bar .campus .expanded {
+        display: block;
+    }
+    
+}

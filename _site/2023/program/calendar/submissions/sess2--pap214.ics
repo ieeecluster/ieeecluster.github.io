@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:Matching-based Scheduling of Asynchronous Data Processing Workflow
+ s on the Computing Continuum
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20220907T113000
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20220907T120000
+DESCRIPTION:Today’s distributed computing infrastructures encompass comp
+ lex workflows for real-time data gathering\, transferring\, storage\, and 
+ processing\, quickly overwhelming centralized cloud centers. Recently\, th
+ e computing continuum that federates the Cloud services with emerging Fog 
+ and Edge devices represents a relevant alternative for supporting the next
+ -generation data processing workflows. However\, eminent challenges in aut
+ omating data processing across the computing continuum still exist\, such 
+ as scheduling heterogeneous devices across the Cloud\, Fog\, and Edge laye
+ rs. We propose a new scheduling algorithm called C3-MATCH\, based on match
+ ing theory principles and involving two sets of players negotiating differ
+ ent utility functions: 1) workflow microservices that prefer computing dev
+ ices with lower data processing and queuing times\; 2) computing continuum
+  devices that prefer microservices with corresponding resource requirement
+ s and less data transmission time. We evaluate C3-MATCH using real-world r
+ oad sign inspection and sentiment analysis workflows on a federated comput
+ ing continuum across four Cloud\, Fog\, and Edge providers. Our combined s
+ imulation and real execution results reveal that C3-MATCH achieves up to 6
+ 7% lower completion time compared to three state-of-the-art methods.
+END:VEVENT
+END:VCALENDAR

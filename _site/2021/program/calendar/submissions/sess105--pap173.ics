@@ -1,0 +1,57 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180911T140000
+DTEND;TZID=Europe/London:20180911T143000
+UID:ieeecluster_IEEE Cluster 2018_sess105_pap173@linklings.com
+SUMMARY:Load-balancing-aware Parallel Algorithms of H-matrices with Adapti
+ ve Cross Approximation for GPUs
+DESCRIPTION:Load-balancing-aware Parallel Algorithms of H-matrices with Ad
+ aptive Cross Approximation for GPUs\n\nHOSHINO, IDA, HANAWA...\n\n\nHierar
+ chical matrices (H-matrices) are an approximation technique for dense matr
+ ices, such as the coefficient matrix of the Boundary Element Method (BEM).
+  An H-matrix is expressed by a set of low-rank approximated and small dens
+ e sub-matrices, each of which has various rank, of the dense matrix. The u
+ se of H-matrices reduces the required memory footprint of the dense matric
+ es from O(N^2) to O(NlogN) and is suitable for many-core processors that h
+ ave relatively small memory capacity compared to traditional CPUs. However
+ , the existing parallel Adaptive Cross Approximation (ACA) algorithms, whi
+ ch are low- rank approximation algorithms used to construct H-matrices, ar
+ e not designed to exploit many-core processors in terms of load balancing.
+  In the existing parallel algorithm, the ACA process is independently appl
+ ied to each sub-matrix. The computational load of ACA process for each sub
+ -matrix depends on the sub- matrix’s rank but the rank is defined after AC
+ A applied. It makes difficult to balance the load. We propose a load-balan
+ cing aware parallel ACA algorithm for H-matrices that focus on many-core p
+ rocessors. We implemented the proposed algorithm into HACApK, which is an 
+ open-source H-matrices library originally developed for CPU-based clusters
+ . The proposed algorithm was evaluated using BEM problems on an NVIDIA Tes
+ la P100 GPU (P100) and an Intel Xeon Broadwell processor (BDW). The evalua
+ tion results demonstrate the improved performance of the proposed algorith
+ m in all GPU cases. For example, in a case wherein it is difficult for exi
+ sting parallel algorithms to balance load, the proposed algorithm achieved
+  12.9 times performance improvement for P100.
+END:VEVENT
+END:VCALENDAR
+

@@ -1,0 +1,56 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180912T133000
+DTEND;TZID=Europe/London:20180912T140000
+UID:ieeecluster_IEEE Cluster 2018_sess114_pap243@linklings.com
+SUMMARY:Cutting the Tail: Designing High Performance Message Brokers to Re
+ duce Tail Latencies in Stream Processing
+DESCRIPTION:Cutting the Tail: Designing High Performance Message Brokers t
+ o Reduce Tail Latencies in Stream Processing\n\nJaved, Lu, Panda\n\n\nOver
+  the last decade, organizations have become heavily reliant on providing n
+ ear-instantaneous insights to the end user based on vast amounts of data c
+ ollected from various sources in real-time. To accomplish this task, a str
+ eam processing pipeline is constructed which consists of a Stream Processi
+ ng Engine (SPE) and a Message Broker (MB). The SPE is responsible for perf
+ orming computations on the data and providing insights from it. MB acts as
+  an intermediate queue to which data is written by ephemeral sources and t
+ hen fetched by the SPE to perform computations on. Due to the inherent rea
+ l-time nature of such a pipeline, low latency is a highly desirable featur
+ e for them. Thus, many existing research works have focused on improving l
+ atency and throughput for the streaming pipeline. However, there is a dear
+ th of studies optimizing the tail latencies of such pipelines. Moreover, t
+ he root cause of this high tail latency is still vague. In this paper, we 
+ propose a model-based approach to analyze in-depth the reasons behind high
+  tail latency in streaming systems such as Apache Kafka. Having found the 
+ MB to be a major contributor of messages with high tail latencies in a str
+ eaming pipeline, we design and implement a high-performance MB, called Fri
+ eda, with the higher goal of accelerating any arbitrary stream processing 
+ pipeline regardless of the SPE used. Our experiments show a reduction of u
+ p to 89%x in 99.9th percentile latency for microbenchmarks and up to 31% f
+ or full-fledged stream processing pipeline constructed using Yahoo! Stream
+ ing Benchmark.
+END:VEVENT
+END:VCALENDAR
+

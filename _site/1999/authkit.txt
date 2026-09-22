@@ -1,0 +1,296 @@
+AUTHOR GUIDELINES FOR 8.5 x 11-INCH PROCEEDINGS MANUSCRIPTS - IWCC'99
+
+Congratulations on the acceptance of your paper for publication. Please follow the steps outlined below when submitting your final paper to the IEEE Computer Society Press:
+
+(1) ALL MANUSCRIPTS MUST BE IN ENGLISH.
+
+(2) PRINTING YOUR PAPER. (For hard-copy.) Print your properly formatted text on high-quality, 8.5 x 11-inch white printer paper (A4 size is also acceptable).
+
+All printed material, including text, illustrations, and charts, must be kept within a print area 6-7/8 inches (approx. 17.5 cm) wide by 8-7/8 inches (approx. 22.5 cm) high. Number your pages lightly in pencil on the back of each page. 
+
+(3) PAGE AND COLUMN LAYOUT. Start the first page in a one-column format. Center your title about 3 lines down from the normal top of the print area. Follow the title with two blank lines. The author name(s) and affiliation(s) are next, centered beneath the title and followed by two blank lines.
+
+Your Abstract and the remainder of the paper are to be in a two-column format (except for figures or tables that may span both columns if necessary). If the last page is not filled, please divide the data into two equal columns.
+
+Columns in the two-column format are to be 3-1/4 inches wide (approx. 8.5 cm), with a 3/8-inch (approx. 1.0 cm) space between columns, for a total print area width of 6-7/8 inches (approx. 17.5 cm). The length of the print area of any page must not exceed 8-7/8 inches (approx. 22.5 cm).
+
+(4) TYPE STYLE AND SIZE OF TEXT. Normal text is to be single spaced in 10-point Times or Times Roman(or similar font), with 12-point interline spacing, in the two-column format. The first line of each paragraph is to be indented approximately 1/4 inch (approx. 0.7 cm), and the entire text is to be justified -- that is, flush left and flush right. Please do not place additional line spacing between paragraphs. Figure and table captions should be Helvetica 10-point boldface; callouts should be Helvetica 9-point nonboldface.
+
+(5) ABSTRACTS. The Abstract should be approximately 150 words or fewer, italicized, in 10-point Times (or Times Roman.) Please leave two spaces between the Abstract and the heading of your first section.
+
+AN ELECTRONIC COPY OF YOUR ABSTRACT -- INCLUDING THE CONFERENCE NAME, PAPER TITLE, KEYWORDS, AUTHOR NAMES, ADDRESSES, AND AFFILIATIONS -- MUST BE SENT TO THE IEEE COMPUTER SOCIETY PRESS. THE ELECTRONIC COPY IS TO BE AN ASCII TEXT FILE SUBMITTED VIA EMAIL TO THE INTERNET ADDRESS INDICATED IN THE COVER LETTER.
+
+(6) TITLE AND HEADINGS. The main title should be in Times (or Times Roman) 14-point boldface centered over both columns. In the main title, please initially capitalize nouns, pronouns, verbs, adjectives, and adverbs; do not capitalize articles, coordinate conjunctions, and prepositions (unless the title begins with such a word). Initially capitalize only the first word in first-, second-, and third-order headings. Leave two blank lines before author names(s)/affiliation(s).
+
+AUTHOR NAME(S)/AFFILIATION(S) are to be centered in Times (or Times Roman) 12-point nonboldface. Leave two blank lines before your Abstract.
+
+ABSTRACT HEADING. The abstract heading is to be 11-point boldface, initially capitalized and centered within the column.
+
+FIRST-ORDER HEADINGS. First-order headings (for example, 1: Introduction) are to be Times 12-point boldface, flush left, with one blank line before, and one blank line after.
+
+SECOND-ORDER HEADINGS. Second-order headings (for example, 1.1: Database elements) are to be Times 11-point boldface, flush left, with one blank line before, and one after. If you require a third-order heading (we discourage it), then it is to be in Times 10-point boldface, preceded by one blank line, and followed by a period and text on same line.
+
+(7) ILLUSTRATIONS, GRAPHS, AND PHOTOGRAPHS. Illustrations, graphs, and photographs may fit across both columns, if necessary. Your artwork must be in place in the article.  If you are printing a hard copy, use rubber cement to affix the artwork in place.
+
+Although halftones can be shot from color prints, black and white photos are preferable. Please supply the best quality photographs and illustrations possible. The quality of the book cannot be better than the originals provided.
+
+(8) USE OF TAPE. (For hard copy.) Do not place cellophane tape over any part of your text or graphics. (Cellophane tape may distort or obliterate what it covers, and it retains fingerprints and dirt smudges.)
+
+(9) COLOR. The use of color on interior pages (that is, pages other than the cover) is prohibitively expensive. Consequently, we publish interior pages in color only when it is specifically requested and budgeted for by the conference organizers. If these proceedings are going to have color photos, you must provide a clearly marked slide with its corresponding plate number, your name, and the position of the slide (if there is more than one). You also need to identify the right side and the top of the slide. Please make a Xerox copy (or photocopy) of each photo (or a small, rough sketch) and attach it with rubber cement to show the intended size and location. Color photos are sent to a color separator before going to the printer, so it is essential that we have this information to ensure the correct display of your color graphics.
+
+(10) FOOTNOTES. Use footnotes sparingly and place them at the bottom of the column in which they are referenced (not full width across two columns). Use Times 8-point type with 10-point interline spacing for footnotes. To help readers, avoid footnotes altogether and include necessary peripheral observations in your text (within parentheses, if you prefer, as in this sentence).
+
+(11) REFERENCES. List and number all bibliographical references at the end of your paper in 9-point Times, with 10-point interline spacing. When referenced within the text, enclose the citation number in square brackets, for example [1].
+
+(12) COPYRIGHT FORMS. You must include your signed IEEE copyright release form when you submit your finished paper. We must have this form before your paper can be published in the proceedings.
+
+Questions not answered in these guidelines may be directed to an IEEE Computer Society Press production editor at: Phone (714) 821-8380, or Fax (714) 761-1784.
+
+
+
+
+THE COPYRIGHT RELEASE FORM FOLLOWS. PLEASE PRINT IT OUT, SIGN IT, AND RETURN IT WITH YOUR PAPER. 
+
+========================CUT HERE========================
+
+IEEE COPYRIGHT FORM - IWCC'99 (ATTN: DANIELLE MARTIN)
+
+The IEEE has developed this form with great care and with the best interests of its members and contributing authors in mind. Therefore, in order to maintain uniform treatment among all contributors, Company or other forms may not be substituted for this form, nor may any wording of this form be changed. This form is intended for original, previously unpublished material submitted to IEEE periodicals and conference publications. This form, when completed, must accompany any such material in order to be published by the IEEE. Please read it carefully and keep a copy of it for your files.
+
+TITLE OF WORK (hereinafter, "the work"):
+
+AUTHOR(S):
+
+PUBLICATION TITLE/DATE: IWCC'99
+============================================================ 
+PART A - COPYRIGHT TRANSFER FORM
+(U.S. Government employees whose work is not subject to U.S. copyright should so certify by signing Part B overleaf. Authors of works subject to Crown Copyright should sign Part C overleaf.)
+
+The undersigned hereby assigns all copyright rights in and to the above work to The Institute of Electrical and Electronics Engineers, Inc. (the "IEEE"). The undersigned hereby represents and warrants that the work is original and that he/she is the author of the work, except possibly for material such as text passages, figures, and data that clearly identify the original source, with permission notices from the copyright owners where required.  The undersigned represents that he/she has the power and authority to make and execute this assignment.
+
+In return for these rights, the IEEE recognizes the retained rights noted in items 1 and 4 below, and grants to the above authors and employers for whom the work may have been performed a royalty-free license to use the material as noted in items 2 and 3. Item 5 stipulates that authors and employers must seek permission to republish in cases not covered by Items 2, 3, and 4.
+
+1. Employers (or authors) retain all proprietary rights in any process, procedure, or article of manufacture described in the work.
+
+2. Authors/employers may reproduce or authorize others to reproduce the above work, material extracted verbatim from the above work, or derivative works for the author's personal use or for company use provided that the source and the IEEE copyright notice are indicated, that the copies are not used in any way that implies IEEE endorsement of a product or service of an employer, and that the copies themselves are not offered for sale. (See "Author/Employer Rights" overleaf.)
+
+3. Authors/employers may make limited distribution of all or portions of the above work prior to publication if they inform the IEEE of the nature and extent of such limited distribution prior thereto.
+
+4. In the case of work performed under a U.S. Government contract or grant, IEEE recognizes that the U.S. Government has royalty-free permission to reproduce all or portions of the above work, and to authorize others to do so, for official U.S. Government purposes only, if the contract/grant so requires. (Appropriate documentation may be attached, but IEEE's Copyright Form MUST BE SIGNED. See "U.S. Government Employees/U.S. Government Contract Work" overleaf.)
+
+5. For all circumstances not covered by Items 2, 3, and 4, authors/employers must request permission from the IEEE Copyrights Office to reproduce or authorize the reproduction of the work or material extracted verbatim from the work, including figures and tables. Please see notes on "IEEE Obligations" as copyright holder.
+
+In the event the above work is not accepted and published by the IEEE or is withdrawn by the author(s) before acceptance by the IEEE, this agreement becomes null and void.
+
+_________________________________________________________ 
+AUTHORIZED SIGNATURE                        TITLE
+
+_________________________________________________________ 
+EMPLOYER FOR WHOM WORK WAS PERFORMED (if applicable) DATE
+
+_________________________________________________________ 
+AUTHOR'S DAYTIME PHONE                 FAX          EMAIL
+
+JOINT AUTHORSHIP:
+For jointly authored works, all the joint authors should sign, or one of the authors should sign as an authorized agent for the others. In the case of multiple authorship where one or more authors are Government employees but at least one author is not, that non-Government author should sign Part A of this Form.
+
+PART B -- U.S. GOVERNMENT EMPLOYEE CERTIFICATION
+
+Authors who are U.S. Government employees are not required to sign Part A of the IEEE Copyright Form, but any coauthors outside the U.S. Government are required to sign Part A (see JOINT AUTHORSHIP overleaf). Authors whose work was performed under a U.S. Government contract or grant, but who are not Government employees, are required to sign Part A of this form (see item 4 under Part A). Signing Part B will certify that ALL authors of the above work are employees of the U.S. Government and performed this work as part of their official duties and that the work is therefore not subject to U.S. copyright protection.
+
+_________________________________________________________ 
+AUTHORIZED SIGNATURE                             TITLE
+
+_________________________________________________________ 
+NAME OF GOVERNMENT ORGANIZATION                  DATE
+
+========================================================= 
+PART C - CROWN COPYRIGHT
+
+Authors who are employees of the British Government (or a British Commonwealth Government) and whose works are subject to Crown Copyright, may sign Part C below. IEEE recognizes and will honor Crown Copyright as it does U.S. Copyright. It is understood that, in asserting Crown Copyright, IEEE in no way diminishes its rights as publisher. Signing Part C will certify that ALL authors of the above work are subject to Crown Copyright. (Appropriate documentation and instructions regarding wording of Crown Copyright notice may be attached.)
+
+_________________________________________________________ 
+AUTHORIZED SIGNATURE                          TITLE
+
+_________________________________________________________ 
+NAME OF GOVERNMENT ORGANIZATION               DATE 
+
+========================================================= 
+Notes and Information for Authors and Their Employers
+
+IEEE POLICY:
+In connection with its publishing activities, it is the formal policy of the IEEE to own the copyrights to all copyrightable material in its technical publications, and to the individual contributions contained therein, in order to protect the interests of the IEEE, its authors and their employers, and, at the same time, to facilitate the appropriate re-use of this material by others. The IEEE distributes its technical publications throughout the world and does so by various means such as hard copy, microfiche, microfilm, and electronic media. It also abstracts and may translate its publications, and articles contained therein, for inclusion in various compendiums and similar publications, etc. When an article is submitted for publication to the IEEE, the IEEE understands that its acceptance of the article implies that IEEE has the rights to do all of the things it normally does with such an article.
+
+IEEE Policy 6.17 - Clearance of Papers - applies to all material submitted to IEEE:  "The IEEE must of necessity assume that material presented at its meetings or submitted to its publications is properly available for general dissemination to the audiences these activities are organized to serve. It is the responsibility of the authors, not the IEEE, to determine whether disclosure of their material requires the prior consent of other parties and, if so, to obtain it."
+
+Furthermore, the IEEE must assume that, if an author uses within his/her article previously published and/or copyrighted material that permission has been obtained for such use and that any required credit lines, copyright notices, etc. are duly noted.
+
+IEEE OBLIGATIONS:
+In exercising its rights under copyright, the IEEE will make all reasonable efforts to act in the interests of the authors and employers as well as in its own interest. In handling third party reprint/republication requests for an IEEE work, IEEE requires that: 1) the consent of the first-named author be sought as a condition in granting republication (of a full paper) to others; and 2) the consent of the employer be obtained as a condition in granting permission to others to re-use all or portions of a paper for promotion or marketing purposes.
+
+AUTHOR/COMPANY RIGHTS:
+If you are employed and you prepared your paper as part of your job, the rights to your work rest initially with your employer. In that case, when you sign the copyright transfer form, we assume you are authorized to do so by your employer and that your employer has consented to all the terms and conditions of this form. If not, it should be signed by someone so authorized. (See also Policy 6.17 above.)
+
+SPECIAL NOTE TO EMPLOYERS: Just as the IEEE requires a signed copyright transfer form (for copyrightable material) in order to do "business as usual," it is the intent of the transfer portion of the form to return rights to the author and employer so that they, too, may do "business as usual."
+
+Please note that, although authors are permitted to reuse all or portions of their IEEE-copyrighted material in other works, this does not include granting third party requests for reprinting, republishing or other types of re-use. ALL THIRD-PARTY REQUESTS MUST BE HANDLED BY THE IEEE COPYRIGHTS & PERMISSION OFFICE. PLEASE DIRECT ALL QUESTIONS ABOUT IEEE COPYRIGHT POLICY OR THIS FORM TO:  
+
+	Manager, Copyrights and Permissions, 
+	IEEE Service Center, 445 Hoes Lane, 
+	P.O. Box 1331, Piscataway, NJ 08855-1331.
+	Telephone: (732) 562-3966.
+
+=======================  file:  REPRINTS.TXT  =======================
+
+        REPRINT ORDER FORM -- IEEE COMPUTER SOCIETY 
+
+     Order Date:____________________
+
+     NOTE: THE FOLLOWING FORM MAY BE SENT VIA MAIL, FAX, OR EMAIL.
+
+     Remit to:  Attn:  Sandra Stevenson
+                IEEE Computer Society Press 
+                10662 Los Vaqueros Circle, P.O. Box 3014 
+                Los Alamitos, CA 90720-1264
+                Phone: (714) 821-8380, FAX: (714) 761-1784, 
+                Email: S.Stevenson@computer.org
+
+Conference name:_________________________________________ 
+Conference date:_________________________________________ 
+Author name:_____________________________________________ 
+Article title:___________________________________________
+
+
+REQUESTER'S BILLING ADDRESS & SHIPPING ADDRESS
+
+Name:_________________________________________________ 
+Address:______________________________________________ 
+City:_________________________________________________ 
+State:_____________________________ZIP:_______________ 
+Country:______________________________________________ 
+Phone:________________________________________________ 
+Fax:__________________________________________________
+
+     SHIPPING ADDRESS (If different)
+     Name:_________________________________________________ 
+     Address:______________________________________________ 
+     City:_________________________________________________ 
+     State:_____________________________ZIP:_______________ 
+     Country:______________________________________________
+
+
+
+     ORDERING INFORMATION -- Pricing and shipping information are at the 
+     end of this form. Published prices do not include foreign import 
+     duties,or taxes. 
+
+     Reprints ordered (multiples of 100): __________ 
+     Black & white: ______   Color: ______
+     Number of pages: __________
+
+     Amount due:                          __________ 
+     Taxes (if applicable)
+     State/Local:                         __________
+
+     Total due:                           __________
+
+     PAYMENT METHOD (All orders must be prepaid.)(If necessary, government 
+     purchase orders are acceptable.) Purchase 
+     Order:_______________________
+
+     CREDIT CARD: 
+     MasterCard _______   Visa _______   American Express _______
+
+     Card number:___________________________ Expiration date:________
+
+     Cardholder's name:______________________________________________
+
+     Signature:______________________________________________________
+
+     Check enclosed:_______ (Checks must be drawn in US dollars on a US 
+     bank,payable to the IEEE Computer Society.)
+
+     Bank Transfer Information:  Please note that when sending a bank 
+     transfer, you will need to ask your bank if there are any charges for 
+     the transaction and include these charges with the bank transfer drawn 
+     up for the cost of your reprints. Our bank information is as follows:
+                        Union Bank
+                        4125 Ball Road, Cypress, CA 90630
+                        Bank #: 122-000-496
+                        Account #: 0491155982
+                        Bank Phone #: (714) 826-0011
+
+
+     Orders will be shipped via United Parcel Service (UPS) in the US, or 
+     via FedEx overseas, approximately 4-6 weeks after publication. Please 
+     call for prices on rush order shipping.
+
+     ======================== ReprintPricing ==========================
+
+     IEEE COMPUTER SOCIETY REPRINT PRICE SCHEDULE
+     All reprints are printed on 60# coated stock, saddle stitched. Prices 
+     include separate covers and all shipping costs, except duties and 
+     taxes. 
+     All orders must be prepaid by check or credit card
+     US Government orders must be accompanied by a signed purchase order.
+
+     BLACK & WHITE:
+     Pages:  1-4 |    5-8  |   9-12 |  13-16 | 17-20 |  21-24 |  25-28 | 29-32 
+     Qty:
+        50   $180 |   $302 |   $426 |   $529 |   $615 |   $680 |   $728 |  $756 
+      100   $210 |   $336 |   $473 |   $588 |   $683 |   $756 |   $809 |  $840 
+      200   $252 |   $404 |   $568 |   $706 |   $820 |   $908 |   $970 | $1008 
+      300   $294 |   $471 |   $663 |   $825 |   $957 | $1059 | $1131 | $1176 
+      400   $336 |   $540 |   $756 |   $940 | $1092 | $1208 | $1292 | $1344 
+      500   $380 |   $605 |   $850 | $1060 | $1230 | $1360 | $1455 | $1515
+    1000   $630 | $1010 | $1420 | $1760 | $2050 | $2270 | $2430 | $2520 
+     Add'l 
+    1000s  $500 |  $810 |  $1130 | $1410 | $1640 | $1810 |  $1940 | $2020
+
+     COLOR:
+     Pages:   1-4 |   5-8   |    9-12 |  13-16 |  17-20 |  21-24 |  25-28 | 29-32 
+     Qty:
+        50     $639 |  $915 |  $1213 | $1465 | $1672 | $1901 | $2108 | $2291
+      100     $710 | $1016 | $1348 | $1628 | $1858 | $2113 | $2342 | $2546
+      200     $812 | $1180 | $1578 | $1914 | $2190 | $2496 | $2770 | $3016 
+      300     $914 | $1343 | $1808 | $2198 | $2522 | $2879 | $3200 | $3485 
+      400   $1016 | $1508 | $2036 | $2484 | $2852 | $3260 | $3628 | $3956 
+      500   $1120 | $1670 | $2265 | $2770 | $3185 | $3645 | $4055 | $4425
+    1000   $1350 | $2040 | $2780 | $3410 | $3930 | $4500 | $5020 | $5280 
+     Add'l 
+    1000s   $770 | $1220 | $1720 | $2140 | $2490 | $2870 | $3210 | $3520
+
+     The above prices are for reprints of material in the exact format as was 
+     produced in the original publication. For reprints in other formats, or 
+     for reprints which include the cover of the periodical, special prices 
+     must be quoted.
+
+     REPRINT POLICY
+          The IEEE Computer Society provides, at varying 
+          prices, a reprinting service for all of its 
+          published material. In addition, the IEEE may 
+          also allow third parties to produce their own 
+          reprints of IEEE-copyrighted material. 
+          Permission to reprint must be obtained in 
+          writing from: Bill Hagen, Manager, IEEE 
+          Copyrights/Permissions IEEE Operations Center, 
+          445 Hoes Lane Piscataway, NJ 08855-1331
+          Tel: (732) 562-3966; Fax: (732) 981-8062; 
+          E-mail: w.hagen@ieee.org
+
+     In general, permission to reprint will require 1) author's 
+     approval, 2) agreement not to add a company logo or other company 
+     information to the IEEE material, 3) agreement to display the 
+     source of the reprinted material prominently on the first page of 
+     the reprint, along with a statement of the IEEE's copyright 
+     ownership, 4) agreement not to sell the reprints.
+
+     For further information on this policy, or to order Society-produced 
+     reprints, contact Sandra Stevenson, Proceedings Reprints Department
+        IEEE Computer Society Publications Office
+        10662 Los Vaqueros Circle, Los Alamitos, CA  90720-1264 
+        Tel: (714) 821-8380, Fax:  (714) 761-1784, Email: 
+        s.stevenson@computer.org
+
+====================  END OF DOCUMENT  ====================
+

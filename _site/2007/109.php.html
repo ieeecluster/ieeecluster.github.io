@@ -1,0 +1,38 @@
+<i><p>
+PCI Express (PCIe), the I/O interconnect of choice in
+today's single host computing platform, is being
+enhanced to support features that include I/O
+virtualization and processor-coprocessor
+interconnect. Host-to-host communication, however,
+is regarded as beyond the scope of PCIe. As such, the
+model in today's multi-compute platforms is to utilize
+PCIe for communication between the host(s) and the
+I/O subsystem while a dedicated clustering
+interconnect such as Infiniband or Ethernet is used
+for host-to-host communication.
+<p>The Dolphin Express solution (i.e. Dolphin's
+enhanced PCIe hardware and accompanying
+software) addresses the shortcoming of host-to-host
+communication in PCIe in a cost-effective manner.
+To the best of our knowledge, these products provide
+an industry first solution of using a PCIe-based
+switch fabric to seamlessly integrate both IO and
+clustering capabilities-- thereby obviating the need
+for an additional clustering interconnect.
+<p>As a first step towards providing a full-fledged
+clustering solution, we have provided support for
+TCP/IP protocol over PCIe (IPoPCIe). Based on
+benchmarking results, IPoPCIe was able to achieve
+performance that was on par or better than that of a
+10GigE NICfs. On a 2-node system connected using
+a switch, IPoPCIe shows an end-to-end application
+latency of ~14us and bandwidth of up to 1270MB/s.
+<p>Though the results are promising, the performance of
+IPoPCIe is greatly influenced by overheads
+associated with TCP/IP stack processing. Hence,
+work is ongoing on supporting the TCP/IP sockets
+interface but without incurring the traditional
+TCP/IP stack overheads. This would utilize the full
+potential of the underlying Dolphin Express
+hardware and lead to further reduction in latency,
+lower CPU utilization and increased bandwidth.

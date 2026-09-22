@@ -1,0 +1,53 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180913T140000
+DTEND;TZID=Europe/London:20180913T143000
+UID:ieeecluster_IEEE Cluster 2018_sess126_pap125@linklings.com
+SUMMARY:And Now for Something Completely Different: Running Lisp on GPUs
+DESCRIPTION:And Now for Something Completely Different: Running Lisp on GP
+ Us\n\nSuess, Doering, Brinkmann...\n\n\nThe internal parallelism of comput
+ e resources increases permanently, and graphics processing units (GPUs) an
+ d other accelerators have been gaining importance in many domains. Researc
+ hers from life science, bioinformatics or artificial intelligence, for exa
+ mple, use GPUs to accelerate their computations. However, languages typica
+ lly used in some of these disciplines often do not benefit from the techni
+ cal developments because they cannot be executed natively on GPUs. Instead
+  existing programs must be rewritten in other, less dynamic programming la
+ nguages. On the other hand, the gap in programming features between accele
+ rators and common CPUs shrinks permanently. Since accelerators are becomin
+ g more competitive with regard to general computations, they will not be m
+ ere special-purpose processors in the future. It is a valid assumption tha
+ t future GPU generations can be used in a similar or even the same way as 
+ CPUs and that compilers or interpreters will be needed for a wider range o
+ f computer languages.\nWe present CuLi, an interactive Lisp interpreter, t
+ hat performs all computations on a CUDA-capable GPU. The host system is ne
+ eded only for the input and the output. At the moment, Lisp programs runni
+ ng on CPUs outperform Lisp programs on GPUs, but we present trends indicat
+ ing that this might change in the future. Our study gives an outlook on th
+ e possibility of running Lisp programs or other dynamic programming langua
+ ges on next-generation accelerators.
+END:VEVENT
+END:VCALENDAR
+

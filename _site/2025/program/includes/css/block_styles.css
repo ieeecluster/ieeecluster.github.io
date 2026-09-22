@@ -1,0 +1,232 @@
+.clear {
+	clear: both;
+}
+
+.block {
+	margin-bottom: 20px;
+/*    margin-top: 10px;*/
+    text-align: left;
+}
+
+.block-title {
+    color: #204a85;
+	line-height: 1.1em;
+	padding-left: 10px;
+	padding-right: 5px;
+	padding-top: 0px;
+	padding-bottom: 3px;
+	border-bottom-color: #204a85;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+.block-title-text {
+    font-size: 18px;
+    float: left;
+}
+
+.block-edit-link {
+	text-decoration: none;
+	float: right;
+	padding-left: 10px;
+}
+.block-edit-link a,
+.block-edit-link a:link,
+.block-edit-link a:active,
+.block-edit-link a:visited,
+.block-edit-link a:hover {
+	text-decoration: none;
+}
+
+.block-content {
+    color: black;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: lightgray;
+	padding: 7px;
+}
+
+.block-content.no-title {
+    border-width: 1px 1px 1px 1px;
+}
+
+.block-content .instr {
+    border: 0px;
+    padding: 5px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.block-below {
+    /*float: right;*/
+    padding-right: 0px;
+}
+
+.block-content .meeting-info {
+    border: 1px #204a85 solid;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    /* background-color: rgb(100%,86%,75%); */
+    margin: 5px 0px 5px 0px;
+    padding: 0px 10px 0px 10px;
+}
+
+.block ul {
+	margin-bottom: 5px;
+	padding-left: 30px;
+	margin-top: 5px;
+}
+
+.block ul li {
+	padding: 0px;
+	margin: 0px;
+}
+
+.block p {
+	margin-bottom: 2px;
+	margin-top: 2px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.block-content .eo_box {
+    border: 1px solid lightgray;
+}
+.block-content .odd {
+    padding: 3px;
+}
+.block-content .even {
+    padding: 3px;
+}
+
+/* See http://haslayout.net/css-tuts/CSS-Shrink-Wrap and http://www.brunildo.org/test/shrink-to-fit.html */
+.shrink-to-fit {
+	display: inline-block;
+}
+
+/*--------------- BLOCK2 STYLES ----------------------*/
+.block2 {
+	margin-bottom: 20px;
+	margin-top: 10px;
+    text-align: left;
+}
+
+.block2-title {
+    color: #204a85;
+	line-height: 1em;
+	padding-left: 10px;
+	padding-right: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-bottom: #204a85 1px solid;
+}
+
+.block2-title-text {
+    font-size: 18px;
+    float: left;
+}
+
+.block2-edit-link {
+	text-decoration: none;
+	float: right;
+}
+.block2-edit-link a {
+	text-decoration: none;
+}
+
+.block2-content {
+    color: black;
+	padding: 7px;
+	border-top: lightgray 0px solid;
+	border-left: lightgray 1px solid;
+	border-right: lightgray 1px solid;
+	border-bottom: lightgray 1px solid;
+}
+.block2-below {
+    /*float: right;*/
+    padding-right: 0px;
+}
+
+/* actions blocks (left sidebar) */
+#actions_col .block-title {
+/*    color: white;*/
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    border: none;
+}
+#actions_col .block-title-text {
+}
+
+#actions_col .block-content {
+}
+
+#actions_col .block-edit-link a,
+#actions_col .block-edit-link a:link,
+#actions_col .block-edit-link a:active,
+#actions_col .block-edit-link a:visited {
+	text-decoration: underline;
+	/*color: white;*/
+}
+#actions_col .block-content .eo_box {
+/*    border: 1px solid #8DB4FC;*/
+    border: 1px solid lightgray;
+}
+#actions_col .block-content .odd {
+}
+#actions_col .block-content .even {
+}
+
+
+/* related blocks (right sidebar) */
+#related_col .block-title {
+/*    color: black;*/
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    border: none;
+}
+#related_col .block-title-text {
+}
+#related_col .block-content {
+}
+#related_col .block-edit-link a,
+#related_col .block-edit-link a:link,
+#related_col .block-edit-link a:active,
+#related_col .block-edit-link a:visited {
+    text-decoration: underline;
+}
+#related_col .block-content .eo_box {
+/*    border: 1px solid #BBBBBB;*/
+    border: 1px solid lightgray;
+}
+#related_col .block-content .odd {
+}
+#related_col .block-content .even {
+}
+
+/* input blocks */
+
+.form .block-content {
+}
+.form .block-content .eo_box {
+    border: 1px solid lightgray;
+}
+.form .block-content .odd {
+}
+.form .block-content .even {
+}
+
+/* and info blocks display blue */
+
+.ttip_object_info .eo_box {
+    border: 1px solid #8DB4FC;
+}
+.ttip_object_info .odd {
+    background-color: #A2C2FC;
+}
+.ttip_object_info .even {
+    background: #B0CBFC;
+}

@@ -1,0 +1,21 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en>"
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title> Cluster 2004 Abstract: Cluster Computing Environment supporting Single System Image </title>
+</head>
+<center>
+<h2>Cluster Computing Environment supporting Single System Image</h2>
+</center>
+<p> 
+<center>
+<h3>Min Choi, et. al</h3>
+</center>
+<hr>
+<blockquote>
+Single system image(SSI) systems have been the mainstay of high-performance computing for many years. SSI requires the integration and aggregation of all types of resources in a cluster to present a single interface to users. In this paper, we describe a cluster computing environment supporting SSI, constructed through three components: single process space(SPS), process migration, and dynamic load balancing.   These components attempt to share all available resources in the cluster among all executing processes, so that the cluster operates like a single node with much more computing power. The most important goal is to combine these constructs in innovative ways for building cluster computing environment for SSI, as well as individually take a novel approache to improve performance or functionality.   We realize SPS based on block PID allocation, in which the entire PID space is broken up into blocks. When a client requests more PIDs, a PID block is assigned to client nodes instead of individual PIDs. Our implementation of process migration has the capability of resolving broken pipe problems on socket migration and bind errors on server socket reconstruction. We also designed and implemented a dynamic load balancing scheme which resolves the limitations of our previous work by continuously tracing the job resource usage at runtime.   The experimental results show that these three constructs for SSI clusters realized scalability, new functionality and performance improvement. The cluster computing environment allows these constructs to cooperate implicitly so that they create a synergy effect at the SSI cluster system level and successfully provide a single system image to users and administrators 
+</blockquote>
+<hr>
+<font size=-1><a href="../program.html">Back to Program</a></font>
+</body>
+</<html>

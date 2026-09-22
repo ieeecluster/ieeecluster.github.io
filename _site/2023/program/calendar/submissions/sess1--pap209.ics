@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:SKV: A SmartNIC-Offloaded Distributed Key-value Store
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20220907T120000
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20220907T123000
+DESCRIPTION:In data center networks\, applications such as distributed key
+ -value stores consume a lot of CPU resources. The performance of the entir
+ e system drops significantly under heavy load conditions. In order to impr
+ ove the performance of key-value stores\, many existing studies use RDMA (
+ Remote Direct Memory Access) to reduce the communication overhead. However
+ \, RDMA primitives can only offload simple operations to the NIC\, such as
+  reading and writing remote memory. With the emergence of new hardware lik
+ e SmartNICs\, we consider whether we can offload more complex operations i
+ n distributed key-value store to SmartNICs to reduce the load on CPU.In th
+ is paper we present SKV\, a SmartNIC-offloaded distributed key-value store
+ . In order to make full use of the offload ability of the SmartNIC\, We ma
+ ke a detailed analysis on the characteristic and architecture of SmartNIC 
+ and distributed key-value store. SKV offloads operations such as data repl
+ ication to the SmartNIC. We design a new replication mechanism\, which ena
+ bles the server to separate background processing from the interaction wit
+ h clients in the front. We implement SKV with Mellanox BlueField SmartNIC.
+  Our evaluations show that SKV improves the overall throughput by 14% and 
+ reduces latency by 21% compared with baseline.
+END:VEVENT
+END:VCALENDAR

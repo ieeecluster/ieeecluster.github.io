@@ -1,0 +1,55 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180912T153000
+DTEND;TZID=Europe/London:20180912T170000
+UID:ieeecluster_IEEE Cluster 2018_sess118@linklings.com
+SUMMARY:Paper session X: Performance Engineering in Filesystems
+DESCRIPTION:CRUM: Checkpoint-Restart Support for CUDA's Unified Memory\n\n
+ Garg, Mohan, Sullivan, Cooperman\n\nUnified Virtual Memory (UVM) was recen
+ tly introduced with CUDA version 8 and the Pascal GPU. The older CUDA prog
+ ramming style is akin to older large-memory UNIX applications which used t
+ o directly load and unload memory segments. Newer CUDA programs have start
+ ed taking advantage of UVM for the same ...\n\n---------------------\nGekk
+ oFS - A temporary distributed file system for HPC applications\n\nVef, Mot
+ i, Süß, Tocci, Nou...\n\nWe present GekkoFS, a temporary, highly-scalable 
+ burst buffer file system which has been specifically optimized for new acc
+ ess patterns of data-intensive High-Performance Computing (HPC) applicatio
+ ns. The file system provides relaxed POSIX semantics, only offering featur
+ es which are actually require...\n\n---------------------\nFixed-PSNR Loss
+ y Compression for Scientific Data\n\nTao, Di, Liang, Chen, Cappello\n\nErr
+ or-controlled lossy compression has been studied for years because of extr
+ emely large volumes of data being produced by today’s scientific simulatio
+ ns. None of existing lossy compressors, however, allow users to fix the pe
+ ak signal-to-noise ratio (PSNR) during compression, although PSNR has been
+  ...\n\n---------------------\nHarmonia: An Interference-Aware Dynamic I/O
+  Scheduler for Shared Non-Volatile Burst Buffers\n\nKougkas, Devarajan, Su
+ n, Lofstead\n\nModern HPC systems employ burst buffer installations to red
+ uce the peak I/O requirements for external storage and deal with the burst
+ iness of I/O in modern scientific applications.  These I/O buffering resou
+ rces are shared between multiple applications that run concurrently. This 
+ leads to severe per...\n
+END:VEVENT
+END:VCALENDAR
+

@@ -1,0 +1,52 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180912T143000
+DTEND;TZID=Europe/London:20180912T150000
+UID:ieeecluster_IEEE Cluster 2018_sess115_pap204@linklings.com
+SUMMARY:Next Stop “NoOps": Enabling Cross-System Diagnostics Through Graph
+ -based Composition of Logs and Metrics
+DESCRIPTION:Next Stop “NoOps": Enabling Cross-System Diagnostics Through G
+ raph-based Composition of Logs and Metrics\n\nZasadziński, Solé, Bran
+ don...\n\n\nPerforming diagnostics in IT systems is an increasingly compli
+ cated task, and it is not doable in satisfactory time by even most skillfu
+ l operators. Systems and their architecture change very rapidly in respons
+ e to business and user demand. Many organizations see value in the mainten
+ ance and management model of NoOps that stands for No Operations. One of t
+ he implementations of this model is a system that is maintained automatica
+ lly without any human intervention. The path to NoOps involves not only pr
+ ecise and fast diagnostics but also reusing as much knowledge as possible 
+ after the system is reconfigured or changed. The biggest challenge is to l
+ everage knowledge on one IT system and reuse this knowledge for diagnostic
+ s of another, different system. We propose a framework of weighted graphs 
+ which can transfer knowledge, and perform high-quality diagnostics of IT s
+ ystems. We encode all possible data in a graph representation of a system 
+ state and automatically calculate weights of these graphs. Then, thanks to
+  the evaluation of similarity between graphs, we transfer knowledge about 
+ failures from one system to another and use it for diagnostics. We success
+ fully evaluate the proposed approach on Spark, Hadoop, Kafka and Cassandra
+  systems.
+END:VEVENT
+END:VCALENDAR
+

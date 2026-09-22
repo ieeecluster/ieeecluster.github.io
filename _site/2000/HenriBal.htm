@@ -1,0 +1,155 @@
+<html>
+<head>
+    <title>Cluster2000 - Keynote Speaker: Henri E. Bal</title>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#FF0000" alink="#000088">
+
+<table width="100%" height="100%"><tr><td align=center valign=top>
+<table>
+    <tr>
+	<th ALIGN=CENTER>
+	    <a href="index.htm"><img SRC="images/clustermix.jpg" ALT="International Conference on Cluster Computing" BORDER=0></a>
+	</th>
+    </tr>
+</table>
+
+<br>
+<hr>
+<br>
+
+<table>
+    <tr>
+	<th ALIGN=CENTER COLSPAN="2">
+	    <h1>Keynote Speaker: <i>Henri E. Bal</i></h1>
+    	    <h2>"Programming Support for Distributed Clustercomputing"</h2>
+	</th>
+    </tr>
+    <tr>
+	<td><a href="http://www.cs.vu.nl/~bal/"><img SRC="images/Bal.jpg" ALT="Henri E. Bal" border=0></a></td>
+	<td><b>Biography</b>
+	    <p>
+	    <a href="mailto:bal@cs.vu.nl">HENRI E. BAL</a> 
+	    received a M.Sc. in mathematics from the Delft University
+	    of Technology in 1982 and a Ph.D. in Computer Science from the Vrije Universiteit
+	    in Amsterdam in 1989. His research interests include parallel and distributed
+	    programming, cluster computing, metacomputing, interactive applications,
+	    and programming languages. He supervised several projects in these areas,
+	    including the Orca parallel language, the Panda/LFC communication substrate,
+	    the Manta high-performance Java system, and the Albatross distributed supercomputing
+	    project. He also is one of the key researchers in the Distributed ASCI
+	    Supercomputer (DAS) project of the ASCI research school.
+	    <p>
+	    At present, dr. Bal is a full professor at the Faculty of Sciences of
+	    the Vrije Universiteit, where he heads researchs groups on parallel programming
+	    and Physics-applied computer science. He is author of "Programming Distributed
+	    Systems" (Prentice Hall, 1991) and coauthor of "Programming Language Essentials"
+	    (Addison-Wesley, 1994) and "Modern Compiler Design" (Wiley, 2000). He is
+	    a member of the IEEE CS European Distinguished Visitor's Programme.
+        </td>
+    </tr>
+    <tr>
+	<td colspan=2 align=center>
+	    <br>
+	    <br>
+	    <br>
+	    <font size="+2"><b>Abstract</b></font>
+	    <p>
+	    <b>Programming Support for Distributed Clustercomputing</b><br>
+	    Henri E. Bal<br>
+	    Department of Mathematics and Computer Science<br>
+            Department of Physics and Astronomy<br>
+            Faculty of Sciences, Vrije Universiteit, Amsterdam, The Netherlands<br>
+	    <br>
+	    <br>
+	</td>
+    </tr>
+    <tr>
+	<td colspan=2>
+	    <p>
+            There is a resemblance between the evolution of sequential machines
+            from mainframes to minicomputers to PCs and the more
+            recent evolution of parallel machines from supercomputers to clustercomputers.
+            Mainframes and supercomputers typically have many users and therefore
+            are ill-suited for interactive applications. 
+            Minicomputers and clusters are cheaper and have far fewer users, allowing more
+            interactive use. Personal Computers are used primarily for interactive tasks,
+            but idle PCs can be combined to run computation-intensive parallel programs.
+            The parallel equivalent of a PC, a Personal Clustercomputer, may become a
+            reality with further progress in system integration.
+	    <p>
+            As clusters become more widespread and more dedicated to small groups of users,
+            two new types of applications can be foreseen.
+            First, a single (local) cluster can be used to run interactive applications,
+            which typically need a substantial amount of dedicated compute power
+            to obtain real-time responses.
+            Clusters used in this way, however, will also be idle a large fraction
+            of the time (just as PCs are), so
+            a huge amount of unused computing capacity will exist worldwide.
+            Another way of using clusters therefore is to run grand-challenge applications
+            on multiple idle clusters at different geographic locations.
+            This idea is similar to distributed supercomputing,
+            except that the distributed computing platform is hierarchical:
+            it contains fast intra-cluster networks and slow inter-cluster networks.
+	    <p>
+            The Advanced School for Computing and Imaging (ASCI, The ASCI
+            research school is unrelated to, and came into existence before,
+            the Accelerated Strategic Computing Initiative) has built a
+            prototype of such a hierarchical distributed supercomputer,
+            called DAS (Distributed ASCI Supercomputer, Papers about DAS,
+            CAVEstudy, Albatross, and MagPIe
+            are available from <a href="http://www.cs.vu.nl/~bal/">http://www.cs.vu.nl/~bal/</a>)
+            and is in the process of building
+            a successor, DAS-2. DAS-2 will consist of five SMP-based clusters
+            located at five Dutch universities and will have about 300 processors.
+            Each university can use its own cluster for interactive applications;
+            the entire distributed system can be used for very demanding computations.
+	    <p>
+            Interactive applications allow the user control over an ongoing
+            computation (usually a parallel simulation running on a cluster).
+            By using virtual reality
+            environments (such as a CAVE or a tiled video wall) to visualize
+            the output of the simulation, this interaction can be done at a high level
+            of abstraction.
+            We have built a toolkit called CAVEstudy with which
+            such applications can be built. CAVEstudy has been used to steer
+            the simulation of molecules, chaotic systems, and robot-soccer.
+            A user in a CAVE can trigger parallel computations by manipulating
+            virtual objects in the natural domain of the application
+            (e.g., moving an atom, kicking a ball).
+	    <p>
+            Distributed supercomputing applications can be run on multiple
+            clusters connected by a wide-area network (WAN). One would expect
+            that the relatively high latency and low bandwidth of WANs severely
+            limits the type of applications that can be run efficiently in this way
+            (SETI@home for example uses independent tasks that each take one day).
+            In the Albatross project, we study how applications can
+            be optimized for multiple clusters, by taking the
+            hierarchical structure of the system into account.
+            By reducing or hiding the wide-area communication overhead, several
+            more medium-grained applications can run efficiently on wide-area clusters.
+            In our current research, we are developing programming environments that
+            do some of these optimizations automatically.
+            MagPIe, for example, is
+            an MPI library that optimizes collective operations for hierarchical
+            wide-area systems.
+	    <p>
+	    <br>
+	</td>
+    </tr>
+</table>
+</td></tr></table>
+<hr>
+<table width="100%" align=center>
+    <tr>
+	<td align=left>
+	    <font size="-1"><i>content and photograph were provided by Henri E. Bal</i></font>
+	</td>
+	<td align=right>
+	    <font size="-1"><i>last modification: 09-25-00</i></font>
+	</td>
+    </tr>
+</table>
+    	
+</body>
+</html>

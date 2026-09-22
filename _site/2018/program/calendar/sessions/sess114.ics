@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180912T133000
+DTEND;TZID=Europe/London:20180912T150000
+UID:ieeecluster_IEEE Cluster 2018_sess114@linklings.com
+SUMMARY:Paper session VIII: Managing Heterogeneity and Imbalance
+DESCRIPTION:Cutting the Tail: Designing High Performance Message Brokers t
+ o Reduce Tail Latencies in Stream Processing\n\nJaved, Lu, Panda\n\nOver t
+ he last decade, organizations have become heavily reliant on providing nea
+ r-instantaneous insights to the end user based on vast amounts of data col
+ lected from various sources in real-time. To accomplish this task, a strea
+ m processing pipeline is constructed which consists of a Stream Processi..
+ .\n\n---------------------\nA Heterogeneity-Aware Task Scheduler for Spark
+ \n\nXu, Butt, Lim, Kannan\n\nBig data processing systems such as Spark are
+  employed in an increasing number of diverse applications such as machine 
+ learning, graph computation, and scientific computing, each with dynamic a
+ nd different resource needs. These applications increasingly run on hetero
+ geneous hardware, e.g., with out-...\n\n---------------------\nDynamic Con
+ trol of CPU Usage in a Lambda Platform\n\nKim, HoseinyFarahabady, Lee, Zom
+ aya, Jurdak\n\nLambda platform is a new concept based on an event-driven s
+ erver-less computation that empowers application developers to build scala
+ ble enterprise software in a virtualized environment without provisioning 
+ or managing any physical servers (a server-less solution).\nIn reality, ho
+ wever, devising an e...\n
+END:VEVENT
+END:VCALENDAR
+

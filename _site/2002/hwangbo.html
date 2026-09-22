@@ -1,0 +1,23 @@
+Adaptive Message Management Using a Hybrid Channel Model in a Parallel File System
+<br>
+Joon-Hyung  Hwangbo,
+Sang-Ki Lee, Yoon-Young Lee, Dae-Wha Seo
+<P>
+A parallel file system is utilized  for supporting an
+excessive file request resulted from a parallel application
+in a cluster system. It uses traditional communication
+protocols like TCP/IP or UDP/IP that were designed for Wide
+Area Networks(WANs). For a cluster system, however, these
+protocols are inappropriate for its large scale of network
+overhead.
+<P>
+In accordance with this problem, we propose a Hybrid Channel
+Model(HCM) for inter-cluster communication protocol. In a
+parallel file system, messages can be classified as control
+messages and file data block. Therefore, we divided a
+message channel into two parts, a control message channel
+and data channel. The first is used for transferring the
+control messages, while the last is used for transferring
+the file data blocks. For the message channel, TCP/IP is
+used as a communication protocol, and Virtual Interface
+Architecture(VIA) is used for data blocks.

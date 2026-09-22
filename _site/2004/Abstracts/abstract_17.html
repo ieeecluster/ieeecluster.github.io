@@ -1,0 +1,21 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en>"
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title> Cluster 2004 Abstract: Management of Grid Jobs and Data within SAMGrid </title>
+</head>
+<center>
+<h2>Management of Grid Jobs and Data within SAMGrid</h2>
+</center>
+<p> 
+<center>
+<h3>Todd Tannenbaum, et. al</h3>
+</center>
+<hr>
+<blockquote>
+When designing SAMGrid, a project for distributing high-energy physics computations on a grid, we discovered that it was challenging to decide where to place user's jobs. Jobs typically need to access hundreds of files, and each site has a different subset of the files. Our data system SAM knows what portion of a user's data may be at each site, but does not know how to submit grid jobs.  Our job submission system \CondorG knows how to submit grid jobs, but originally it required users to choose grid sites and gave them no assistance in choosing. This paper describes how we enhanced Condor-G to interact with SAM to make good decisions about where jobs should be executed, and  thereby improve the performance of grid jobs that access large amounts of data. All these enhancements are general enough to be applicable to grid computing beyond the data-intensive computing with SAMGrid. 
+</blockquote>
+<hr>
+<font size=-1><a href="../program.html">Back to Program</a></font>
+</body>
+</<html>

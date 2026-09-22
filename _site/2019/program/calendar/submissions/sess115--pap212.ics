@@ -1,0 +1,51 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180912T133000
+DTEND;TZID=Europe/London:20180912T140000
+UID:ieeecluster_IEEE Cluster 2018_sess115_pap212@linklings.com
+SUMMARY:A Methodology for Characterizing the Correspondence Between Real a
+ nd Proxy Applications
+DESCRIPTION:A Methodology for Characterizing the Correspondence Between Re
+ al and Proxy Applications\n\nAaziz, Cook, Cook...\n\n\nProxy applications 
+ are a simplified means for stakeholders to evaluate how both hardware and 
+ software stacks might perform on the class of real applications that they 
+ are meant to model. However, characterizing the re- lationship between the
+ m and their behavior is not an easy task. We present a data-driven methodo
+ logy for characterizing the relationship between real and proxy applicatio
+ ns based on collecting runtime data from both and then using data analytic
+ s to find their correspondence and divergence. We use new capabilities for
+  application-level monitoring within LDMS (Lightweight Distributed Monitor
+ ing System) to cap- ture hardware performance counter and MPI-related data
+ . To demonstrate the utility of this methodology, we present experimental 
+ evidence from two system platforms, using four proxy applications from the
+  current ECP Proxy Application Suite and their corresponding parent applic
+ ations (in the ECP application portfolio). Results show that each proxy an
+ alyzed is representative of its parent with respect to computation and mem
+ ory behavior. We also analyze communication patterns separately using mpiP
+  data and show that communication for these four proxy/parent pairs is als
+ o similar.
+END:VEVENT
+END:VCALENDAR
+

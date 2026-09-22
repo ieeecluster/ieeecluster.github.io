@@ -1,0 +1,36 @@
+.pop {
+  position: absolute;
+  display: inline; }
+  .pop .pop_menu {
+    display: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px; }
+  .pop .pop_toggle {
+    background-image: url(../images/arrow-down.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    cursor: pointer; }
+
+.active .pop_menu {
+	background:none repeat scroll 0 0 #FFFFFF;
+	border:1px solid #CCCCCC;
+	left:-3px;
+	padding:5px 8px;
+	position:relative;
+	top:-3px;
+	width:248px;
+	display: block;
+
+ }
+ 
+  .active .pop_menu a {
+    color: #fff; }
+.active .pop_toggle {
+  z-index: 2000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../images/arrow-up.gif); }

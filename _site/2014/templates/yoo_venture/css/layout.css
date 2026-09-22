@@ -1,0 +1,89 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/layout.css);
+
+
+/* Spacing
+----------------------------------------------------------------------------------------------------*/
+
+.module,
+#breadcrumbs,
+#content { margin: 10px; }
+
+#toolbar,
+#footer { margin: 0 10px; }
+
+#header { margin: 10px 10px; }
+
+#menu .module { margin: 10px 5px; }
+
+#footer .module { margin: 0; }
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+/* Layout Widescreen Elements */
+body#page { background: #222; }
+
+#block-toolbar {
+	background: rgba(255,255,255,0.4);
+	background-clip: padding-box;
+	box-shadow: 0 -1px 0 rgba(255,255,255,1) inset,
+				0 1px 3px rgba(0,0,0,0.06),
+				0 3px 8px rgba(0,0,0,0.05);
+}
+#block-main { padding-bottom: 15px; }
+#block-bottom { padding: 20px 0; }
+#block-footer { box-shadow: 0 1px 8px -8px rgba(0,0,0,0.8) inset; }
+
+/* Layout Content Elements */
+#toolbar {
+	line-height: 40px;
+	color: #888;
+	font-size: 13px;
+}
+
+#menu {
+	position: relative;
+	margin-top: 15px;
+	/*float: right; */
+}
+
+.menu-responsive { margin-top: 15px; }
+
+#footer {
+	padding: 20px 0;
+	color: #555;
+	font-size: 13px;
+	text-align: left;
+}
+
+#footer a { color: #888; }
+
+#totop-scroller {
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 0;
+	z-index: 1;
+	width: 25px;
+	height: 25px;
+	background: url(../images/totop_scroller.png) 0 0 no-repeat;
+	text-decoration: none;
+	opacity: 0.6;
+}
+#totop-scroller:hover { opacity: 1; }
+
+/* Section Line Style */
+.top-a-sep #top-a,
+.top-b-sep #top-b,
+.main-sep #main,
+.bottom-a-sep #bottom-a {
+	min-height: 150px;
+	margin-top: 20px;
+	padding-top: 20px;
+	background: url(../images/section.png) 50% 0 no-repeat;
+	background-size: contain;
+}
+

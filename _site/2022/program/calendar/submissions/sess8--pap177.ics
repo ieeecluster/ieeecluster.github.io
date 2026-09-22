@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:fairDMS: Rapid Model Training by Data and Model Reuse
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20220909T110000
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20220909T113000
+DESCRIPTION:Extracting actionable information from data produced by instru
+ ments such as the Linac Coherent Light Source (LCLS-II) and Advanced Photo
+ n Source Upgrade (APS-U) is becoming more challenging due to the fast-grow
+ ing data generation rate. The rapid analysis possible with ML methods can 
+ enable fast feedback loops that can be used to adjust experimental setups 
+ in real time\, for example when errors occur or interesting events are det
+ ected. However\, to avoid degradation in ML performance over time due to c
+ hanges in an instrument or sample\, we need a way to update ML models rapi
+ dly while an experiment is running. We present here a data service and mod
+ el service to accelerate deep neural network training with a focus on ML-b
+ ased scientific applications. Our proposed data service achieves 100x spee
+ dup in terms of data labelling compare to the current state-of-the-art. Fu
+ rther\, our model service achieve up to 200x improvement in training speed
+ . Overall\, fairDMS achieves up to 92x speedup in-terms of end-to-end mode
+ l updating time.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://clustercomp.org/2021/assets/xslt/rss.xslt" ?>
+<?xml-stylesheet type="text/css" href="https://clustercomp.org/2021/assets/css/rss.css" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>IEEE Cluster 2021</title>
+		<description>Website for IEEE Cluster 2021.&lt;br /&gt;The latest news is also shown in &lt;a href=&quot;http://twitter.com/ieeecluster&quot;&gt;Twitter/ieeecluster&lt;/a&gt;&lt;br /&gt;</description>
+		<link>https://clustercomp.org/2021/</link>
+		<atom:link href="https://clustercomp.org/2021/feed.xml" rel="self" type="application/rss+xml" />
+		
+	</channel>
+</rss>

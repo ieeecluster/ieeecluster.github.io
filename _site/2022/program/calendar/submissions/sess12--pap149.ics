@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:HVAC: Removing I/O Bottleneck for Large-Scale Deep Learning Applic
+ ations
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20220909T160000
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20220909T163000
+DESCRIPTION:Scientific communities are increasingly adopting deep learning
+  (DL) models in their applications to accelerate scientific discovery proc
+ esses. However\, with rapid growth in the computing capabilities of HPC su
+ percomputers\, large-scale DL applications have to spend a significant por
+ tion of training time performing I/O to a parallel storage system. Previou
+ s research works have investigated optimization techniques such as prefetc
+ hing and caching. Unfortunately\, there exist non- trivial challenges to a
+ dopting the existing solutions on HPC supercomputers for large-scale DL tr
+ aining applications\, which include nonperformance and/or failures at extr
+ eme scale\, lack of portability and generality in design\, complex deploym
+ ent methodology\, and being limited to a specific application or dataset. 
+ To address these challenges\, we propose High-Velocity AI Cache (HVAC)\, a
+  distributed read-cache layer that targets and fully exploits the node-loc
+ al storage or near node-local storage technology. HVAC seamlessly accelera
+ tes read I/O by aggregating node-local or near node-local storage\, avoidi
+ ng metadata lookups and file locking while preserving portability in the a
+ pplication code. We deploy and evaluate HVAC on 1024 nodes (with over 6000
+  NVIDIA V100 GPUS) of the Summit supercomputer. In particular\, we evaluat
+ e the scalability\, efficiency\, accuracy\, and load distribution of HVAC 
+ compared to GPFS and XFS- on-NVMe. With four different DL applications\, w
+ e observe an average 25% performance improvement atop GPFS and 9% drop aga
+ inst XFS-on-NVMe\, which scale linearly and are considered the performance
+  upper bound. We envision HVAC as an important caching library for upcomin
+ g HPC supercomputers such as Frontier.
+END:VEVENT
+END:VCALENDAR

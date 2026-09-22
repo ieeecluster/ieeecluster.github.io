@@ -1,0 +1,54 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180913T114500
+DTEND;TZID=Europe/London:20180913T121500
+UID:ieeecluster_IEEE Cluster 2018_sess123_pap149@linklings.com
+SUMMARY:Elasticity in Graph Analytics? A Benchmarking Framework for Elasti
+ c Graph Processing
+DESCRIPTION:Elasticity in Graph Analytics? A Benchmarking Framework for El
+ astic Graph Processing\n\nUta, Au, Ilyushkin...\n\n\nGraphs are a natural 
+ fit for modeling concepts used in solving diverse problems in science, com
+ merce, engineering, and governance. Responding to the diversity of graph d
+ ata and algorithms, many parallel and distributed graph-processing systems
+  exist. However, until now these platforms use a static model of deploymen
+ t: they only run on a pre-defined set of machines. This raises many concep
+ tual and pragmatic issues, including misfit with the highly dynamic nature
+  of graph processing, and could lead to resource waste and high operationa
+ l costs. In contrast, in this work we explore the benefits and drawbacks o
+ f the dynamic model of deployment. Building a three-layer benchmarking fra
+ mework for assessing elasticity in graph analytics, we conduct an in-depth
+  elasticity study of distributed graph processing. Our framework is compos
+ ed of state-of-the-art workloads, autoscalers, and metrics, derived from t
+ he LDBC Graphalytics benchmark and SPEC RG Cloud Group’s elasticity metric
+ s. We uncover the benefits and cost of elasticity in graph processing: whi
+ le elasticity allows for fine-grained resource management, and does not de
+ grade application performance, we find that graph workloads are sensitive 
+ to data migration while leasing or releasing resources. Moreover, we ident
+ ify non-trivial interactions between scaling policies and graph workloads,
+  which add an extra level of complexity to resource management and schedul
+ ing for graph processing.
+END:VEVENT
+END:VCALENDAR
+

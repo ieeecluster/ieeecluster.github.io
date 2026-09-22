@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:HPC Storage Service Autotuning Using Variational-Autoencoder-Guide
+ d Asynchronous Bayesian Optimization
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20220909T120000
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20220909T123000
+DESCRIPTION:Distributed data storage services tailored to specific applica
+ tions have grown popular in the high-performance computing (HPC) community
+  as a way to address I/O and storage challenges. These services offer a va
+ riety of specific interfaces\, semantics\, and data representations. They 
+ also expose many tuning parameters\, making it difficult for their users t
+ o find the best configuration for a given workload and platform. To addres
+ s this issue\, we develop a novel variational-autoencoder-guided asynchron
+ ous Bayesian optimization method to tune HPC storage service parameters. O
+ ur approach uses transfer learning to leverage prior tuning results and us
+ e a dynamically updated surrogate model to explore the large parameter sea
+ rch space in a systematic way. We implement our approach within the DeepHy
+ per open-source framework\, and apply it to the autotuning of a high-energ
+ y physics workflow on Argonne's Theta supercomputer. We show that our tran
+ sfer-learning approach enables a more than 40x search speedup over random 
+ search\, compared with a 2.5x to 10x speedup when not using transfer learn
+ ing. Additionally\, we show that our approach is on par with state-of-the-
+ art autotuning frameworks in speed and outperforms them in resource utiliz
+ ation and parallelization capabilities.
+END:VEVENT
+END:VCALENDAR

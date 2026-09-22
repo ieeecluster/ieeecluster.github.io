@@ -1,0 +1,608 @@
+/*************************************************
+ * IU Branding Bar & Footer
+ *
+ * Version: 1.01
+ * Author: IU Communications 
+ * Author URI: http://communications.iu.edu
+ ************************************************/
+
+/****************************************
+ * Fonts
+ ****************************************/
+
+/*** Benton Sans Cond ***/
+
+@font-face {
+    font-family: 'BentonSansCondensedRegular';
+    src: url('../fonts/benton-sans-condensed/regular.eot');
+    src: url('../fonts/benton-sans-condensed/regular.eot@') format('embedded-opentype'),
+         url('../fonts/benton-sans-condensed/regular.woff') format('woff'),
+         url('../fonts/benton-sans-condensed/regular.ttf') format('truetype'),
+         url('../fonts/benton-sans-condensed/regular.svg') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/****************************************
+ * General Formatting
+ ****************************************/
+
+body {
+    margin: 0; 
+    padding: 0; 
+}
+
+/*** Reusable Classes ***/
+
+/* Wrapper */
+.wrapper {
+    margin: 0 auto;
+    max-width: 992px; /* ADJUST THIS TO FIT YOUR SITE */
+}
+
+/* Line Break */
+.line-break {
+    display: block; 
+}
+
+/* Accessible Hiding */
+
+/* Hide for both screenreaders and browsers: 
+css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden { 
+    display: none; 
+    visibility: hidden; 
+}
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal. 
+www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+.visuallyhidden { 
+    border: 0; 
+    clip: rect(0 0 0 0); 
+    height: 1px; 
+    margin: -1px; 
+    overflow: hidden; 
+    padding: 0; 
+    position: absolute; 
+    width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: 
+drupal.org/node/897638 */
+.visuallyhidden:active, .visuallyhidden:focus { 
+    clip: auto; 
+    height: auto; 
+    margin: 0; 
+    overflow: visible; 
+    position: static; 
+    width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { 
+    visibility: hidden; 
+}
+
+
+/****************************************
+ * Branding Bar
+ ****************************************/
+
+#branding-bar {
+    background: #212121 url(../images/bg-bar.gif) repeat-x 0 100%;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; /* Normalize font size */
+    line-height: 18px; /* Normalize line height */
+    min-height: 46px;
+    overflow: hidden;
+    text-align: right;
+}
+#branding-bar h1,
+#branding-bar p,
+#branding-bar ul,
+#branding-bar form,
+#branding-bar fieldset,
+#branding-bar input,
+#branding-bar dl,
+#branding-bar dt,
+#branding-bar dd,
+#branding-bar img,
+#branding-bar abbr {
+    border: none;
+    display: block;
+    font-weight: normal;
+    margin: 0;
+    padding: 0; 
+    margin-right: 15px;
+}
+#branding-bar a {
+    color: #fff;    
+}
+#branding-bar ul {
+    list-style: none;
+}
+
+/*** Bar ***/
+
+#branding-bar .bar {
+    border-top: 6px solid #990000;
+}
+
+/*** Trident Tab & Campus Name ***/
+
+#branding-bar .campus {
+    font-family: "BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif;
+    font-size: 1em; /* 16px (16/16) */
+    left: auto;
+    letter-spacing: 0.025em;
+    line-height: 1em; /* 16px (16/16) */
+    position: absolute;
+    text-align: left;
+    text-transform: uppercase;
+    top: 6px;
+    z-index: 400;
+}
+#branding-bar .campus a {
+    display: table-cell;
+    height: 40px;
+    padding: 0 0 0 45px;
+    text-decoration: none;
+    vertical-align: middle; 
+}
+#branding-bar .campus a:hover {
+    text-decoration: none;  
+}
+#branding-bar .campus img {
+    height: auto;
+    left: 5px;
+    position: absolute;
+    top: -6px;
+    width: 34px;
+}
+#branding-bar .campus .expanded {
+    display: none;
+}
+
+/*** Search ***/
+
+#branding-bar #cse-search {
+    -webkit-transition: margin 0.8s ease-in-out, opacity 0s ease-in-out 0.8s;
+    -moz-transition: margin 0.8s ease-in-out, opacity 0s ease-in-out 0.8s;
+    -ms-transition: margin 0.8s ease-in-out, opacity 0s ease-in-out 0.8s;
+    -o-transition: margin 0.8s ease-in-out, opacity 0s ease-in-out 0.8s;
+    float: left;
+    margin: -300% 0 0 0;
+    opacity: 0;
+    padding: 53px 0 36px 0;
+    position: relative;
+    transition: margin 0.8s ease-in-out, opacity 0s ease-in-out 0.8s;
+    text-align: left;
+    width: 100%;
+    z-index: 200;
+}
+#branding-bar #cse-search:target {
+    margin: 0;  
+    opacity: 1;
+    z-index: 300;
+}
+#branding-bar #cse-search * {
+    opacity: 0; 
+}
+#branding-bar #cse-search:target * {
+    opacity: 1; 
+}
+#branding-bar #cse-search form {
+    font-size: 0.625em; /* 10px (10/16) */
+    line-height: 1.200em; /* 12px (12/10) */
+    margin: 0 auto;
+    width: 95%; 
+}
+#branding-bar #cse-search fieldset {
+    border: none;
+}
+
+/* Google Custom Search */
+.cse .gsc-search-button input.gsc-search-button-v2,
+input.gsc-search-button-v2 {
+    height: 15px !important;
+    margin-top: 8px !important;
+    min-width: 13px !important;
+    padding: 5px 14px !important;
+    width: 9px !important;
+    margin-right: 235px !important;
+}
+
+/* Fieldset 1 */
+#branding-bar #cse-search-fieldset1 {
+    bottom: 16px;
+    margin: 0 2.5%;
+    position: absolute;
+    right: 36px;    
+}
+#branding-bar #cse-search-fieldset1 li {
+    float: left;
+    margin: 0 5px 0 0;  
+}
+#branding-bar #cse-search-fieldset1 input,
+#branding-bar #cse-search-fieldset1 label {
+    display: inline-block;
+    vertical-align: bottom; 
+}
+
+/* Fieldset 2 */
+#branding-bar #cse-search-fieldset2 {
+    position: relative; 
+}
+#branding-bar #cse-search-fieldset2 label.visuallyhidden {
+    left: -9999px;
+    position: absolute;
+    top: -9999px;   
+}
+#branding-bar #cse-search-fieldset2 input {
+    float: left;    
+}
+
+/* Keywords */
+#branding-bar #cse-search-keywords {
+    background: #d3d3d3;
+    border: none;
+    border-radius: 0;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em; /* 10px (10/16) */
+    line-height: 2.600em; /* 26px (26/10) */
+    min-height: 26px;
+    padding: 0 5% 0 2%;
+    vertical-align: middle;
+    width: 93%;
+}
+#branding-bar #cse-search-keywords::-webkit-input-placeholder {
+   color: #000;
+   opacity: 1;
+}
+#branding-bar #cse-search-keywords:-moz-placeholder {
+   color: #000; 
+   opacity: 1; 
+}
+#branding-bar #cse-search-keywords::-moz-placeholder {
+   color: #000;
+   opacity: 1;  
+}
+#branding-bar #cse-search-keywords:-ms-input-placeholder {  
+   color: #000;
+   opacity: 1;  
+}
+
+/* Submit */
+#branding-bar #cse-search-submit {
+    -webkit-appearance: none;
+    background-color: #990000;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    height: 26px;
+    margin: 0 0 0 -36px;
+    text-transform: uppercase;
+    width: 36px;    
+}
+
+/*** Tools ***/
+
+#branding-bar #campus-tools {
+    -webkit-transition: margin 0.8s ease-in-out, opacity 0s ease-in-out 0.8s;
+    -moz-transition: margin 0.8s ease-in-out, opacity 0s ease-in-out 0.8s;
+    -ms-transition: margin 0.8s ease-in-out, opacity 0s ease-in-out 0.8s;
+    -o-transition: margin 0.8s ease-in-out, opacity 0s ease-in-out 0.8s;
+    float: left;
+    margin: -300% 0 0 0;
+    opacity: 0;
+    padding: 53px 0 10px 0;
+    position: relative;
+    text-align: left;
+    transition: margin 0.8s ease-in-out, opacity 0s ease-in-out 0.8s;
+    width: 100%;
+    z-index: 200;
+}
+#branding-bar #campus-tools:target {
+    left: 0;
+    margin: 0;  
+    opacity: 1;
+    z-index: 300;
+}
+#branding-bar #campus-tools * {
+    opacity: 0; 
+}
+#branding-bar #campus-tools:target * {
+    opacity: 1; 
+}
+#branding-bar #campus-tools .groups {
+    font-size: 0.750em; /* 12px (12/16) */
+    line-height: 1.500em; /* 18px (18/12) */
+    margin: 0 auto;
+    width: 95%;
+}
+#branding-bar #campus-tools .group {
+    border-bottom: 1px solid #585858;
+    margin: 0 0 15px 0;
+    padding: 0 0 10px 0;    
+}
+#branding-bar #campus-tools .group:last-child {
+    border-bottom: none;
+    padding-bottom: 0;  
+}
+#branding-bar #campus-tools .heading {
+    font-size: 1.083em; /* 13px (13/12) */
+    font-weight: bold;
+    line-height: 1.385em; /* 18px (18/13) */
+    text-transform: uppercase;  
+}
+#branding-bar #campus-tools li a {
+    display: block;
+    padding: 3px 0;
+    text-decoration: underline; 
+}
+
+/*** Toggles ***/
+
+#branding-bar .toggles {
+    float: right;
+}
+#branding-bar .toggle {
+    display: inline-block;
+    margin: -6px 5px 14px -4px;
+    position: relative;
+    vertical-align: top;
+    z-index: 100;   
+}
+#branding-bar .toggle a {
+    background-color: #212121;
+    color: #fff;
+    display: table-cell;
+    font-size: 0.625em; /* 10px (10/16) */
+    height: 32px;
+    line-height: 1.200em; /* 12px (12/10) */
+    padding: 0 3px 0 0; 
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 42px;
+}
+#branding-bar .toggle a span {
+    display: inline-block;
+    text-indent: -9999px;   
+}
+#branding-bar .toggle.search a {
+    background-image: url(../images/search-submit.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+#branding-bar .toggle.tools a:after {
+    display: inline-block;
+    font-size: 0.600em; /* 6px (6/10) */
+    line-height: 1em; /* 6px (6/6) */
+    margin: 0 0 0 2px;
+    vertical-align: middle; 
+}
+#branding-bar #campus-tools .toggle.tools a:after {
+    content: "▲";
+}
+#branding-bar .toggle.tools a:after {
+    content: "▼";
+}
+#branding-bar .toggle.search.close,
+#branding-bar .toggle.tools.close {
+    display: none;
+    bottom: -40px;
+    position: absolute;
+}
+#branding-bar .toggle.search.close {
+    right: 0;   
+}
+#branding-bar.gateway .toggle.search.close {
+    right: 50px;    
+}
+#branding-bar.gateway .toggle.tools.close {
+    right: 0;
+}
+#branding-bar #cse-search:target .toggle.search.close,
+#branding-bar #campus-tools:target .toggle.tools.close {
+    display: block; 
+}
+
+
+/****************************************
+ * Footer
+ ****************************************/
+
+#footer {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; /* Normalize font size */
+    line-height: 18px; /* Normalize line height */
+    margin: 20px 0 0 0;
+    padding: 0 0 20px 0;
+    text-align: center;
+    vertical-align: bottom;
+}
+#footer p {
+    margin: 0;
+    padding: 0; 
+}
+#footer img {
+    border: none;   
+}
+#footer a {
+    color: #990000;
+    text-decoration: none;  
+}
+#footer a:hover {
+    text-decoration: underline; 
+}
+#footer .wrapper {
+    font-size: 0.688em; /* 11px (11/16) */
+    line-height: 1.273em; /* 14px (14/11) */
+}
+#footer .tagline {
+    background: #7d110c !important;
+    color: #fff !important;
+    font-family: "BentonSansCondensedRegular", "Arial Narrow", Arial, Helvetica, sans-serif !important;
+    font-size: 1.636em !important; /* 18px (18/11) */
+    /* letter-spacing: -0.02em !important; */
+    line-height !important: 1em; /* 18px (18/18) */
+    margin: 0 0 10px 0 !important;
+    padding: 5px !important;   
+}
+#footer .internal {
+    margin: 0 20px 15px 0; 
+}
+#footer .block-iu { 
+    display: block;
+    margin: 0 auto 5px auto;
+}
+
+
+/****************************************
+ * Search Results Form
+ ****************************************/
+
+#cse-search-results-form {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; /* Normalize font size */
+    line-height: 18px; /* Normalize line height */
+    margin: 0 0 20px 0; 
+    padding: 40px 10px 0 10px;
+}
+#cse-search-results-form fieldset {
+    border: none;
+    font-size: 0.750em; /* 12px (12/16) */
+    line-height: 1.334em; /* 16px (16/12) */
+    margin: 0;
+    padding: 0;
+    position: relative; 
+}
+#cse-search-results-form legend {
+    padding: 0 0 10px 0;    
+}
+#cse-search-results-form ul {
+    list-style: none;
+    margin: 0 0 5px 0;
+    overflow: hidden;
+    padding: 0; 
+}
+#cse-search-results-form ul li {
+    float: left;
+    margin: 0 15px 0 0; 
+}
+#cse-search-results-fieldset1 input, 
+#cse-search-results-fieldset1 label {
+    display: inline-block;
+    vertical-align: bottom;
+}
+#cse-search-results-fieldset2 label.visuallyhidden {
+    left: -9999px;
+    position: absolute;
+    top: -9999px;   
+}
+#cse-search-results-fieldset2 input {
+    float: left;    
+}
+#cse-search-results-keywords {
+    background: #601411;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8333em; /* 10px (10/12) */
+    line-height: 2.600em; /* 26px (26/10) */
+    margin: 0 0 10px 0;
+    min-height: 26px;
+    min-width: 144px;
+    padding: 0 5% 0 2%;
+    vertical-align: middle;
+    width: 93%;
+}
+#cse-search-results-keywords::-webkit-input-placeholder {
+   color: #fff;
+   opacity: 1;
+}
+#cse-search-results-keywords:-moz-placeholder {
+   color: #fff; 
+   opacity: 1; 
+}
+#cse-search-results-keywords::-moz-placeholder {
+   color: #fff;
+   opacity: 1;  
+}
+#cse-search-results-keywords:-ms-input-placeholder {  
+   color: #fff;
+   opacity: 1;  
+}
+#cse-search-results-submit {
+    -webkit-appearance: none;
+    background: #990000 url(../images/search-submit.png) no-repeat 50% 50%;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    height: 26px;
+    margin: 0 0 10px -45px;
+    padding: 0;
+    text-indent: -9999px;
+    text-transform: uppercase;
+    width: 45px;        
+}
+#cse-search-results-noscript {
+    border: none;
+    height: 400px;
+    width: 100%;    
+}
+
+
+/****************************************
+ * iOS Adjustments
+ ****************************************/
+
+@media screen and (max-device-width: 480px) {
+    
+    html {
+        -webkit-text-size-adjust: none; 
+    }
+    input, select, textarea {
+        font-size: 16px !important; /* Disable input zoom */
+        line-height: 16px !important; /* Disable input zoom */
+    }
+    
+}
+
+
+/****************************************
+ * Media Queries
+ ****************************************/
+
+/* 320px */
+@media only screen and (min-width: 20.000em) {
+    
+    /****************************************
+     * Branding Bar
+     ****************************************/
+    
+    /*** Tools ***/
+    
+    #branding-bar #campus-tools .groups {
+        overflow: hidden;   
+    }
+    #branding-bar #campus-tools ul {
+        overflow: hidden;   
+    }
+    #branding-bar #campus-tools li {
+        float: left;
+        width: 50%; 
+    }
+    
+}

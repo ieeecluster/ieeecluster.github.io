@@ -1,0 +1,38 @@
+Processor Allocation on Cplant: Achieving General Processor Locality Using One-Dimensional Allocation
+<br>
+Vitus  Leung
+<P>
+The Computational Plant or Cplant
+is a
+commodity-based supercomputer under development
+at Sandia National Laboratories.
+This paper describes resource-allocation strategies
+to achieve processor locality in Cplant and other
+supercomputers.
+Users of Cplant and other Sandia
+supercomputers submit parallel jobs to a job queue.
+When a job is scheduled to run, it is assigned to a set of
+processors.
+To obtain maximum throughput, jobs should be allocated to
+localized
+clusters of processors to minimize communication
+costs and avoid bandwidth contention caused by overlappingjobs.
+<P>
+This paper introduces new allocation strategies and
+performance
+metrics based on space-filling curves and one dimensional
+allocation
+strategies.  These algorithms are general and simple.  Our
+preliminary
+results based on simulations and a Cplant implementation
+indicate that
+both space-filling curves and one-dimensional packing can
+improve
+processor locality.  These new allocation strategies are
+implemented
+in the new release of the Cplant System Software, Version
+2.0.  This
+version is being phased into the Cplant systems at Sandia in
+April
+2002.
+

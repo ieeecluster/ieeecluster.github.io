@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:The role of storage target allocation in applications' I/O perform
+ ance with BeeGFS
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20220908T113000
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20220908T120000
+DESCRIPTION:Parallel file systems are at the core of HPC I/O infrastructur
+ es. Those systems minimize the I/O time of applications by separating file
+ s into fixed-size chunks and distributing them across multiple storage tar
+ gets. Therefore\, the I/O performance experienced with a PFS is directly l
+ inked to the capacity of retrieving these chunks in parallel. In this work
+ \, we conduct an in-depth evaluation of the impact of the stripe count (th
+ e number of targets used for striping) on the write performance of BeeGFS\
+ , one of the most popular parallel file systems today. We consider differe
+ nt network configurations and show the fundamental role played by this par
+ ameter\, in addition to the number of compute nodes\, processes and storag
+ e targets. Through a rigorous experimental evaluation\, we directly contra
+ dict conclusions from related work. Notably\, we show that sharing I/O tar
+ gets does not lead to performance degradation and that applications should
+  use as many storage targets as possible. Our recommendations have the pot
+ ential to significantly improve the overall write performance of BeeGFS de
+ ployments\, and also provide valuable information for future work on stora
+ ge target allocation and stripe count tuning.
+END:VEVENT
+END:VCALENDAR

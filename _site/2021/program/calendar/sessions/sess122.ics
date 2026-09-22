@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180913T104500
+DTEND;TZID=Europe/London:20180913T121500
+UID:ieeecluster_IEEE Cluster 2018_sess122@linklings.com
+SUMMARY:Paper session XI: Hierarchy and Sharing in System Architecture
+DESCRIPTION:Hierarchical Clock Synchronization in MPI\n\nHunold, Carpen-Am
+ arie\n\nMPI benchmarks are used for analyzing or tuning the performance of
+  MPI libraries. Generally, every MPI library should be adjusted to the giv
+ en parallel machine, especially on supercomputers. System operators can de
+ fine which algorithm should be selected for a specific MPI operation, and 
+ this decisio...\n\n---------------------\nHybrid MPI+OpenMP Reactive Work 
+ Stealing in Distributed Memory in the PDE Framework sam(oa)^2\n\nSamfass, 
+ Klinkenberg, Bader\n\n“Equal work results in equal execution time” is an\n
+ assumption that has fundamentally driven design and implemen-\ntation of p
+ arallel applications for decades. However, increasing\nhardware variabilit
+ y on current architectures (e.g., through\nTurbo Boost, dynamic voltage an
+ d frequency scaling or thermal...\n\n---------------------\nCo-scheduling 
+ HPC workloads on cache-partitioned CMP platforms\n\nAupy, Benoit, Goglin, 
+ Pottier, Robert\n\nCo-scheduling techniques are used to improve the throug
+ hput of applications on chip multiprocessors (CMP), but sharing resources 
+ often generates critical interferences. We focus on the interferences in t
+ he last level of cache (LLC) and use the Cache Allocation Technology (CAT)
+  recently provided by I...\n
+END:VEVENT
+END:VCALENDAR
+

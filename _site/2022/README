@@ -1,0 +1,11 @@
+cluster2021 is a source directory of gekyll.
+$ bundle exec jekyll b
+generates html files in _site directory.
+pages/*.md files are source files of each html files.
+
+Links to the photos:
+https://unsplash.com/photos/yki-YCigBv0
+https://unsplash.com/photos/r1XQYh9YA5s
+https://unsplash.com/photos/9Q0yXI8LP-4
+https://unsplash.com/photos/fOXm-9bWwOk
+https://unsplash.com/photos/G-mpxGU0K9M

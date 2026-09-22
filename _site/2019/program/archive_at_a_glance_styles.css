@@ -1,0 +1,125 @@
+
+
+@media (max-width: 600px) {
+    #main-content-box {
+        margin: 5px;
+    }
+}
+
+@media (min-width: 600px) {
+    #main-content-box {
+        margin: 5px 15px 15px 15px;
+    }
+}
+
+body {
+    background: white;
+    font-size: 14px;
+    font-family: Optima, Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;
+}
+blockquote {
+    margin: 5px 20px 5px 20px;
+}
+.centered {
+    text-align: center;
+}
+.page-title {
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.created-date {
+    color: gray;
+    font-style: italic;
+}
+.room-name {
+    font-weight: bold;
+    float: right;
+}
+.page-links {
+    font-weight: bold;
+}
+.section-title {
+    font-size: 125%;
+    color: gray;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.session-time {
+    background-color: lightgray;
+    font-weight: bold;
+    width: 100%;
+    float: clear;
+    padding: 1px;
+}
+.session-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.session-chair {
+    font-size: 1.1em;
+    margin-bottom: 7px;
+    float: left;
+}
+.slot-title {
+    /* font-style: italic; */
+    width: 100%;
+    clear: both;
+    float: left;
+    margin-top: 7px;
+}
+.slot-wrapper {
+    margin-bottom: 6px;
+}
+.slot-title > span:hover {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.session-type {
+    float: right;
+    halign: right;
+}
+.hr {
+    clear: both;
+    width: 100%;
+}
+
+.vertical-auth-pics-section {
+    float: left;
+    padding: 0px 5px 5px 0px;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.author-pic-thumb {
+    max-width: 100px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.file-link-div {
+    padding: 20px 10px 10px 10px;
+    font-size: 150%;
+    float: right;
+}
+
+.author-names {
+    padding: 0px 0px 15px 0px;
+}
+
+.calendar-links {
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+.qtip-titlebar {
+    padding: 8px 35px 5px 10px;
+}
+.qtip-content {
+    padding: 15px 20px 15px 20px;
+}
+

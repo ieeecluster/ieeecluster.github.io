@@ -1,0 +1,42 @@
+ZENTURIO: An Experiment Management System for Cluster and Grid Computing
+<br>
+Thomas  Fahringer, Radu Prodan
+<P>
+Over the last decade, a dramatic increase has been observed in the ability to generate and store data in the course of parameter studies, performance analysis, and software testing. In this paper, we introduce ZENTURIO, a sophisticated experiment management environment
+that greatly alleviates parameter studies, performance
+analysis, and software testing for a wide variety of
+target architectures, including cluster and Grid
+architectures.
+
+ZENTURIO uses a novel directive-based language named ZEN in
+combination with a user portal
+to specify arbitrary complex program executions. Among
+others, ZEN enables to substitute strings,
+to request for performance information, and to control the
+number of experiments.
+<P>
+ZENTURIO has been designed as a collection of Grid services,
+which comprise the following:
+<P>
+(1) a registry service which supports registering and
+locating Grid services;
+<P>
+(2) an experiment generator that parses files with ZEN
+directives and instruments applications
+for performance analysis and parameter studies;
+<P>
+(3) an experiment manager that compiles and controls the
+execution of experiments on the
+target machine.
+A graphical user portal allows the user to control and
+monitor the experiments and to
+automatically visualize performance and output data across
+multiple experiments.
+<P>
+ZENTURIO has been implemented by employing Java/Jini
+technologies and supports experiments on cluster
+architectures via PBS and on Grid infrastructures
+through Globus schedulers.
+We report results of using ZENTURIO with an actual
+performance analysis and parameter study
+for a Globus site and a cluster architecture, respectively.

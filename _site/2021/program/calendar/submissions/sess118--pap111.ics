@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180912T163000
+DTEND;TZID=Europe/London:20180912T164500
+UID:ieeecluster_IEEE Cluster 2018_sess118_pap111@linklings.com
+SUMMARY:Fixed-PSNR Lossy Compression for Scientific Data
+DESCRIPTION:Fixed-PSNR Lossy Compression for Scientific Data\n\nTao, Di, L
+ iang...\n\n\nError-controlled lossy compression has been studied for years
+  because of extremely large volumes of data being produced by today’s scie
+ ntific simulations. None of existing lossy compressors, however, allow use
+ rs to fix the peak signal-to-noise ratio (PSNR) during compression, althou
+ gh PSNR has been considered as one of the most significant indicators to a
+ ssess compression quality. In this paper, we propose a novel technique pro
+ viding a fixed-PSNR lossy compression for scientific data sets. We impleme
+ nt our proposed method based on the SZ lossy compression framework and rel
+ ease the code as an open-source toolkit. We evaluate our fixed-PSNR compre
+ ssor on three real world high-performance computing data sets. Experiments
+  show that our solution has a high accuracy in controlling PSNR, with an a
+ verage deviation of 0.1 ∼ 5.0 dB on the tested data sets.
+END:VEVENT
+END:VCALENDAR
+

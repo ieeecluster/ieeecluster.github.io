@@ -1,0 +1,223 @@
+********************************************************************************
+**                               CALL FOR PAPERS                              **
+********************************************************************************
+
+                                  Cluster 2004
+              The 2004 IEEE International Conference on Cluster Computing
+                              September 20-23, 2004
+                   Town and Country Hotel, San Diego, California, USA
+
+                           http://grail.sdsc.edu/cluster2004/
+
+--------------------------------------------------------------------------------
+
+In less than a decade, commodity clusters have become mainstream
+and cost-effective computing platforms for executing a wide range of
+computation-, data-, and transaction-oriented parallel applications. In
+spite of countless deployed platforms and resounding application
+successes, many research and development challenges remain for achieving
+higher performance, scalability, and usability. The IEEE TFCC Cluster
+2004 conference, to be held in beautiful San Diego, provides an open forum
+for researchers, practitioners, and users to present and discuss issues,
+directions, and results that will shape the future of cluster computing.
+
+SCOPE
+-----
+
+   Cluster 2004 welcomes paper and poster submissions from engineers and
+   scientists in academia and industry describing original research work in
+   all areas of cluster computing. In addition, Cluster 2004 will welcome
+   proposals for tutorials and workshops to be held concurrently with the
+   conference. Topics of interest include, but are not limited to:
+
+   Cluster Middleware:
+    - Single-System Image Services         - Software Environments and Tools
+    - Standard Software for Clusters       - I/O Libraries, File Systems,
+                                             and Distributed RAID
+
+   Cluster Networking:
+    - High-Speed System Interconnects      - Lightweight Communication Protocols
+    - Fast Message Passing Libraries
+
+   Cluster Management and Maintenance:
+    - Cluster Security and Reliability     - Tools for Managing Clusters
+    - Cluster Job and Resource Management  - High-Availability Cluster Solutions
+
+   Applications:
+    - Scientific and E-Commerce Apps       - Data 
+Distribution and Load Balancing
+    - Scheduling and Parallel Algorithms   - Innovative Cluster Applications
+    - Tools and Environments
+
+   Performance Analysis and Evaluation:
+    - Benchmarking and Profiling Tools     - Performance Prediction and Modeling
+    - Analysis and Visualization
+
+   Grid Computing and Clusters:
+    - Grid / Clusters Integration          - Network-Based Distributed Computing
+    - Mobile Agents and Java for
+      Clusters/Grids
+
+TECHNICAL PAPERS
+----------------
+
+   Paper Format: Not to exceed 25 double-spaced, numbered pages (including
+         title, author affiliations, abstract, keywords, figures, tables and
+         bibliographical references) using 12 point font on 8.5x11-inch pages
+         with 1-inch margins all around.
+
+   Submission: An on-line submission page will be activated on the
+         conference web site two weeks before the submission
+         deadline. Authors should submit a PostScript (level 2) or PDF
+         file. Hard copy submissions will not be accepted.
+
+POSTERS
+-------
+
+    Augmenting direct submissions will be technical paper submissions that were
+    not accepted but are recommended by the committee for poster presentation.
+    (The latter of course requires authorization by the author(s).)
+
+    Abstract Format: 1 page PDF including Title, Authors with their
+         affiliations, and a 200 word, single-spaced abstract.
+
+   Submission: via email to Richard Barrett (rbarrett@lanl.gov)
+
+JOURNAL SPECIAL ISSUE
+---------------------
+
+   Authors of the best papers from the conference will be invited to submit an
+   expanded version of their papers for possible publication in a special issue
+   of the International Journal of High Performance Computing and Networking
+   (IJHPCN), which will appear in 2005.
+
+IMPORTANT DATES
+---------------
+
+     - Workshop Proposals Due                March 6, 2004
+     - Paper Submissions Due                 April 16, 2004
+     - Tutorial Proposals Due                May 14, 2004
+     - Paper Acceptance Notification         June 8, 2004
+     - Poster Submissions Due                June 8, 2004
+     - Exhibition Proposal Due               June 18, 2004
+     - Poster Acceptance Notification        June 22, 2004
+     - Camera-Ready Paper Manuscripts Due    July 2, 2004
+     - Camera-Ready Poster Abstracts Due     July 2, 2004
+
+     - Cut-off for group hotel rates         August 30, 2004
+     - Pre-Conference Tutorials              September 20, 2004
+     - Conference                            September 21-22-23, 2004
+
+ORGANIZING COMMITTEE
+--------------------
+
+    * General Co-Chairs:
+      - Henri Casanova, University of California, San Diego, USA
+      - Daniel S. Katz, Jet Propulsion Laboratory, Caltech, USA
+
+    * General Vice Chair:
+      - Bernard Tourancheau, Sun Microsystems, France
+
+    * Program Chair:
+      - Philip Papadopoulos, San Diego Supercomputer Center, USA
+      
+    * Deputy Program Chair:
+      - RŽmy Evard, Argonne National Laboratory, USA
+      
+    * Program Vice Chairs
+      - Middleware: Carl Kesselman, Information Sciences Institute &
+                                    University of Southern California, USA
+      - Hardware: Satoshi Matsuoka, Tokyo Institute of Technology, Japan
+      - Applications: David Walker, Cardiff University, UK
+
+    * Tutorials Chair:
+      - Jennifer M. Schopf, Argonne National Laboratory, USA
+      
+    * Workshops Chair:
+      - Rajkumar Buyya, University of Melbourne, Australia
+      
+    * Exhibits/Sponsors Co-Chairs:
+       - Jim Ang Sandia National Laboratories, USA
+       - Kurt Keville, Massachusetts Institute of Technology, USA
+       
+    * Posters Chair:
+       - Richard Barrett, Los Alamos National Laboratory, USA
+
+    * Publications Chair:
+       - Joseph C. Jacob, Jet Propulsion Laboratory, Caltech, USA
+       
+    * Publicity Chair:
+       - Bertil Schmidt, Nanyang Technological University, Singapore
+       
+    * Finance/Registration Chair:
+       - Vana Kalogeraki, University of California, Riverside, USA
+       
+    * Local Arrangements:
+       - Chair Greg Bruno, San Diego Supercomputer Center, USA
+       
+PROGRAM COMMITTEE
+-----------------
+
+David Abramson, Monash University, Australia
+Gustavo Alonso, ETH, Zurich, Switzerland
+Artur Andrzejak, Zuse Institut Berlin, Germany
+Gabriel Antoniu, IRISA/ENS Cachan, Rennes, France
+Amy Apon, University of Arkansas, USA
+David Bader, University of New Mexico, USA
+Mark Baker, Univ. of Portsmouth, United Kingdom
+Kim Baldridge, University of Zurich, Switzerland
+Taisuke-Arai Boku, University of Tskuba, Japan
+Ron Brightwell, Sandia National Laboratories, USA
+Randy Butler, National Center For Supercomputing Applications, USA
+Giovanni Chiola, Universita' di Genova, Italy
+Toni Cortes, Universitat Politecnica de Catalunya, Spain
+Narayan Desai, Argonne National Laboratory, USA
+Peter Dinda, Northwestern University, USA
+Markus Fischer, Myricom, Inc., Germany
+Al Geist, Oak Ridge National Laboratory, USA
+Patrick Geoffray, Myricom, Inc., USA
+Bill Gropp, Argonne National Laboratory, USA
+Johannes Gutleber, CERN, Switzerland
+James Heath, Massey University, New Zealand
+Yutaka Ishikawa, University of Tokyo, Japan
+Dave Jackson, University of Utah, USA
+Carl Kesselman, Information Sciences Institute - USC, USA
+Mason Katz, San Diego Supercomputer Center, USA
+Chung-Ta King, National Tsing Hua University, Taiwan
+Mario Lauria, The Ohio State University, USA
+David Lifka, Cornell Theory Center, USA
+Jason Leigh, University of Illinois, Chicago, USA
+Chokchai (Box) Leangsuksun, Louisiana Technical University, USA
+Walt Ligon, Clemson University, USA
+Fang-Pang Lin, National Center for High Performance Computing, Taiwan
+Ewing Lusk, Argonne National Laboratory, USA
+Satoshi Matsuoka, Tokyo Institute of Technology, Japan
+Barney McCabe, University of New Mexico, USA
+Phillip Merkey, Michigan Tech. University, USA
+Ron Minnich, Los Alamos National Lab, USA
+Luc Moreau, Southampton University, UK
+Matt Mutka, Michigan State University, USA
+Kai Nan, Chinese Academy of Sciences, China
+Charles Norton, Caltech and NASA JPL, USA
+D.K. Panda, The Ohio State University, USA
+Elizabeth Post, Lincoln University, New Zealand
+Ira Pramanick, Sun Microsystems, USA
+Neil Pundit, Sandia National Laboratories, USA
+Omer Rana, Cardiff University, UK
+Thomas Rauber, Universitaet Bayreuth, Germany
+Wolfgang Rehm, Technische Universitaet Chemnitz, Germany
+Paul Roe, Queensland University of Technology, Brisbane, Australia	Australia
+Gudula Ruenger, Technische Universitaet Chemnitz, Germany
+Fengen Rungsawang, Kasetsart University, Thailand
+Mitsuhisa Sato, University of Tskuba, Japan
+Dave Semeraro, National Center For Supercomputing Applications, USA
+Shinji Sumimoto, Fujitsu Laboratories, Japan
+Xian-He Sun, Illinois Insitute of Technology, USA
+Ian Taylor, Cardiff University, UK
+Rajeev Thakur, Argonne National Laboratory, USA
+Putchong Uthayopas, Kasetsart University, Thailand
+David Walker, Uni. Wales, Cardiff, United Kingdom
+Cho-Li Wang, Hong Kong University, Hong Kong, Hong Kong SAR
+Xiaodong Zhang, National Science Foundation and College of William and Mary, USA
+
+*********************************************************************************

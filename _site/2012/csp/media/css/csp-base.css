@@ -1,0 +1,1128 @@
+@CHARSET "UTF-8";
+
+.csp_wrap {
+	font-size:10pt;
+	font-family:Helvetica, Calibri, Arial, sans-serif;
+}
+.csp_text-std {
+	font-size:10pt;
+	font-weight:normal;
+	font-style:normal;
+	font-family:Helvetica, Calibri, Arial, sans-serif;
+	text-decoration:none;
+}
+
+.csp_wrap-narrow {
+	width:96%;
+	margin:5px auto;
+}
+	.csp_wrap p {
+		line-height:1.3em;
+		margin:0.5em;
+	}
+	.csp_wrap p.root {
+		margin:0.5em 2em;
+		text-indent:2em;
+	}
+	.csp_wrap p.bottom {
+		margin-bottom:1em;
+		padding-bottom:1em;
+		border-bottom:1px solid #ccc;
+	}
+	.csp_wrap span {}
+
+	.csp_wrap h1, .csp_wrap h2 {
+		font-family: Helvetica, Calibri, Arial, '微软雅黑', '黑体', sans-serif;
+	}		
+	.csp_wrap h3, .csp_wrap h4 {
+		font-family: Cambria, Times New Roman, serif;
+		padding:3px 0.5em;
+	}
+	.csp_wrap h3 { font-size:1.2em; }
+	.csp_wrap h4 { font-size:1.1em; }
+	.csp_wrap h5, .csp_wrap h6 {
+		font-family:;
+		margin-left:20px;
+	}
+	
+.csp_text-note {
+	color:#666;
+	font-size:0.9em;
+}
+.csp_text-alert {
+	color:#b00;
+	font-weight:bold;
+}
+.csp_text-strong, strong {
+	font-weight:bold;
+}
+.csp_text-emphasize, em {
+	font-family: Cambria, '华文楷体', '楷体_GB2312', Times New Roman, serif;
+	font-style:italic;
+}
+.csp_text-indent {
+	text-indent:2em;
+}
+.csp_text-small {
+	font-size:0.9em;
+}
+.csp_text-large {
+	font-size:1.2em;
+}
+.csp_text-light {
+	font-weight:normal;
+}
+
+span.csp_text-note, span.csp_text-small, span.csp_text-large
+span.csp_text-alert, span.csp_text-strong, span.csp_text-emphasize {
+	margin-left:3px;
+	margin-right:3px;
+}
+
+/* 可展开折叠内容的标题 */
+.csp_title-fold, .csp_title-expand {
+	cursor:pointer;
+}
+.csp_title-fold span, .csp_title-expand span {
+	display:inline-block;
+	width:13px;
+	height:13px;
+	margin-right:0.5em;
+}
+.csp_title-fold span {
+	background:url(../images/csp-base/arrow-right.gif) no-repeat;
+}
+.csp_title-expand span {
+	background:url(../images/csp-base/arrow-down.gif) no-repeat;
+}
+div.csp_title-child {
+	margin-left:2em;
+}
+/* END */
+
+
+table.csp_table, table.csp_table-3lines, table.csp_table-horizon {
+	margin:5px auto;
+	border-collapse:collapse;
+}
+
+table.csp_table {
+	border-collapse:collapse;
+	border:1px solid #333;
+}
+table.csp_table th, table.csp_table td {
+	border:1px solid #333;
+	padding:2px 5px;
+}
+table.csp_table th {
+	background-color:#eef;
+}
+
+table.csp_table-3lines {
+	border-top:1px solid #333;
+	border-bottom:1px solid #333;
+}
+table.csp_table-3lines th, tr.csp_table-3lines th {
+	border-top:1px solid #333;
+	border-bottom:1px solid #333;
+}
+table.csp_table-3lines td, tr.csp_table-3lines td {
+	text-align:center;
+}
+
+table.csp_table-horizon {
+	border-top:1px solid #999;
+	border-bottom:1px solid #999;
+}
+table.csp_table-horizon td {
+	text-align:left;
+	padding:2px 0.5em;
+	border-bottom:1px solid #ccc;
+}
+table.csp_table-horizon th {
+	text-align:left;
+	padding:2px 0.5em;
+	background-color:#eef;
+	border-bottom:1px solid #999;
+}
+
+table.csp_table-hoverThrough tr:hover td, table.csp_table-hoverThrough tr:hover th,
+	tr.csp_table-hoverThrough:hover td, tr.csp_table-hoverThrough:hover th,
+table.csp_table-hoverIsolate td:hover, 
+	tr.csp_table-hoverIsolate td:hover, 
+	td.csp_table-hoverIsolate:hover
+{
+	background-color:#f3f3ff;
+}
+
+table.csp_table-layout, table.csp_table-form, table.csp_table-form-2col {
+	margin:5px auto;
+	border-collapse:collapse;
+	vertical-align:top;
+}
+table.csp_table-layout, table.csp_table-layout td, table.csp_table-layout th,
+table.csp_table-form, table.csp_table-form td, table.csp_table-form th,
+table.csp_table-form-2col, table.csp_table-form-2col td, table.csp_table-form-2col th {
+	border:0px;
+	vertical-align:top;
+}
+
+table.csp_table-form th {
+	padding-top:3px;
+	text-align:left;
+	vertical-align:top;
+	background-color:transparent;
+}
+table.csp_table-form.space th {
+	padding-right:2em;
+}
+table.csp_table-form td {
+	text-align:left;
+	vertical-align:top;
+}
+table.csp_table-form td.submit, table.csp_table-form-2col td.submit {
+	text-align:right;
+	padding:10px;
+	vertical-align:top;
+}
+
+table.csp_table-form-2col th {
+	width:30%;
+	text-align:right;
+	padding-top:3px;
+	padding-right:2em;
+	vertical-align:top;
+}
+table.csp_table-form-2col td {
+	text-align:left;
+	vertical-align:right;
+}
+
+tr.csp_table-highlight th, tr.csp_table-highlight td {
+	background-color:#efe;
+	border-bottom:2px solid #396;
+	font-weight:bold;
+}
+
+tr.csp_tableSpacer-bottom td, tr.csp_tableSpacer-bottom th {
+	padding-bottom:1em;
+	border-bottom:1px solid #ccc;
+}
+
+
+/* 信息面板 */
+div.csp_panel, div.csp_panel-sub {
+	width:98%;
+	padding:0px;
+}
+div.csp_panel {
+	border:1px solid #ccc;
+	margin:0px auto;
+	overflow:auto;
+}
+div.csp_panel-sub {
+	border:1px solid #ddd;
+	margin:5px auto;
+}
+
+div.csp_panel p.csp_panel-title,
+	div.csp_panel p.csp_panel-fold, div.csp_panel p.csp_panel-expand {
+	font-size:11pt;
+	font-weight:bold;
+	background-color:#eee;
+	padding:3px 0.5em;
+	margin:0px;
+	border-bottom:1px solid #ccc;
+}
+/* 可展开折叠的信息面板 */
+p.csp_panel-fold, p.csp_panel-expand {
+	cursor:pointer;
+}
+p.csp_panel-fold span, p.csp_panel-expand span {
+	display:inline-block;
+	width:13px;
+	height:13px;
+	margin-right:0.5em;
+}
+p.csp_panel-fold span {
+	background:url(../images/csp-base/arrow-right.gif) no-repeat;
+}
+p.csp_panel-expand span {
+	background:url(../images/csp-base/arrow-down.gif) no-repeat;
+}
+div.csp_panel-child {
+	margin:0px;
+}
+
+
+div.csp_panel-sub p.csp_panel-title {
+	font-weight:bold;
+	background-color:#f2f2f2;
+	padding:3px 0.5em;
+	margin:0px;
+	border-bottom:1px solid #ddd;
+}
+
+
+/* UL, OL 列表 */
+ul.csp_horizon {}
+ul.csp_horizon li {
+	display:inline-block;
+	#display:inline;
+	_display:inline;
+	margin:0px;
+	padding:3px 0.5em;
+}
+
+p.csp_navList-title {
+	margin-left:5px;
+	margin-bottom:0px;
+	font-weight:bold;
+	font-size:1.1em;
+}
+ul.csp_navList, ol.csp_navList {
+	margin:0px 5px 20px 5px;
+	border-top:1px solid #999;
+}
+ul.csp_navList {
+	list-style:none;
+	padding-left:1.5em;
+}
+ul.csp_navList li, ol.csp_navList li {
+	margin:0px;
+	padding:5px 0px 5px 5px;
+	border-bottom:1px dotted #ccc;
+}
+ul.csp_navList li:hover, ol.csp_navList li:hover {
+	background-color:#eef;
+}
+ul.csp_navList li a, ol.csp_navList li a {
+	width:100%;
+}
+ul.csp_navList li a:hover, ol.csp_navList li a:hover {
+	text-decoration:none;
+	_background-color:#eef;
+}
+
+ul.csp_choiceList {
+	list-style:none;
+	padding-left:1.5em;
+}
+
+
+ul.csp_horizon a,
+	ul.csp_navList a, ol.csp_navList a {
+	color:#369;
+	text-decoration:none;
+}
+ul.csp_horizon a:hover,
+	ul.csp_navList a:hover, ol.csp_navList a:hover {
+	color:#00f;
+	text-decoration:underline;
+}
+
+
+/* 标签组 */
+div.csp_tab, div.csp_tab-ver {
+	width:90%;
+	margin:auto;
+	background-color:#369;
+	border:1px solid #ccc;
+}
+	div.csp_tab-ver {}
+div.csp_tab ul.csp_tab-list, div.csp_tab-ver ul.csp_tab-list {
+	margin:3px 0px 0px 0px;
+	#margin:3px 0px 3px 0px;
+	_margin:3px 0px 3px 0px;
+	padding:0px;
+}
+	div.csp_tab-ver ul.csp_tab-list {
+		display:block;
+		float:left;
+		list-style:none;
+		margin-right:-1px;
+		_margin-right:-5px;
+	}
+ul.csp_tab-list li {
+	background-color:#ccf;
+	padding:3px 0.5em;
+	margin:0px;
+	cursor:pointer;
+}
+	div.csp_tab ul.csp_tab-list li {
+		display:inline-block;
+		#display:inline;
+		_display:inline;
+		_margin-right:3px;
+	}
+	div.csp_tab ul.csp_tab-list li:first-child { margin-left:3px; }
+	div.csp_tab-ver ul.csp_tab-list li {
+		margin-bottom:3px;
+		margin-right:-5px;
+	}
+ul.csp_tab-list li.csp_tab-current {
+	background-color:#fff;
+}
+div.csp_tab-content {
+	margin:0px;
+	padding:0.5em;
+	background-color:#fff;
+}
+
+
+/* 对话框 */
+div.csp_dialog-cover {
+	width:100%;
+	height:1000px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-color:#000;
+	filter: Alpha(opacity=50);
+	-moz-opacity:0.5;
+	opacity:0.5;
+	display:none;
+}
+div.csp_dialog {
+	width:30em;
+	height:auto;
+	position:absolute;
+	background-color:#fff;
+	border:1px solid #ccc;
+	border-radius:3px;
+	display:none;
+}
+
+.csp_dialog p {
+	margin-left:10px;
+	margin-right:10px;
+}
+.csp_wrap p.csp_dialog-title, p.csp_dialog-title {
+/* 写完整选择名称以覆盖对p的一般定义 */
+	font-weight:bold;
+	color:#000;
+	background-color:#ccc;
+	margin:0px;
+	padding:5px 0.5em;
+}
+div.csp_dialog-control {
+	text-align:right;
+	margin:10px;
+}
+div.csp_dialog-control input[type="button"],
+	div.csp_dialog-control input[type="submit"] {
+	cursor:pointer;
+}
+span.csp_dialog-x {
+	float:right;
+	display:block;
+	width:15px;
+	height:15px;
+	margin:3px;
+	background:url(../images/csp-base/dialog-x.gif) no-repeat left bottom;
+	cursor:pointer;
+}
+div.csp_dialog_ht {
+	width:30em;
+	height:auto;
+	position:absolute;
+	background-color:#fff;
+	border:3px solid #369;
+	border-radius:3px;
+	display:none;
+	z-index:1;
+}
+
+span.csp_dialog-y {
+	float:right;
+	display:block;
+	width:15px;
+	height:15px;
+	margin:3px;
+	background:url(../images/csp-base/dialog-x.gif) no-repeat left top;
+	cursor:pointer;
+}
+span.csp_dialog-x:hover {
+	background:url(../images/csp-base/dialog-x.gif) no-repeat left -15px;
+}
+
+/* 半透明区域 */
+.csp_transparency.trans {
+/*	filter: Alpha(opacity=90);
+	-moz-opacity:0.9;
+	opacity:0.9;
+*/
+	color:#999 !important;
+}
+.csp_transparency.solid {
+/*	filter: Alpha(opacity=100);
+	-moz-opacity:1;
+	opacity:1;*/
+}
+
+
+
+/* 表单控件组 */
+.csp_wrap input, .csp_wrap textarea {
+	font-family: Times New Roman, '宋体', sans-serif;
+	font-size:11pt;
+}
+
+.csp_wrap select {
+	padding:2px 3px;
+	height:23px;
+	margin:3px; 
+}
+
+.csp_wrap input[type=text], 
+.csp_wrap input[type=password] {
+	width:12em;
+	padding:2px 3px;
+	height:18px;
+}
+input[type=text].csp_textInput-long {
+	width:20em !important;
+}
+input[type=text].csp_textInput-xLong {
+	width:25em !important;
+}
+input[type=text].csp_textInput-short {
+	width:5em !important;
+}
+input[type=text].csp_textInput-xshort {
+	width:2em !important;
+}
+input[type=text].csp_textInput {
+	width:12em !important;
+}
+input[type=text].csp_textInput-web {
+	font-family:Lucida Console, Courier New, Courier;
+}
+
+.csp_wrap textarea, textarea.csp_textarea {
+	line-height:1.2em;
+	width:25em;
+	height:6em;
+}
+textarea.csp_textarea-small {
+	width:25em;
+	height:2.5em;
+}
+textarea.csp_textarea-large {
+	width:32em;
+	height:15em;
+}
+
+.csp_wrap label {
+	cursor:pointer;
+}
+
+.csp_wrap input[type=button], .csp_wrap input[type=submit],
+	input[type=button].csp_button, input[type=submit].csp_button {
+	font-size:1em;
+	cursor:pointer;
+}
+input[type=button].csp_button-small, input[type=submit].csp_button-small {
+	font-size:9pt;
+}
+input[type=button].csp_button-large, input[type=submit].csp_button-large {
+	font-size:11pt;
+}
+
+/* 超链接按钮 */
+a.csp_linkButton, a.csp_linkButton-alert, a.csp_linkButton-del {
+	display:inline-block;
+	font-size:1em;
+	font-weight:normal !important;
+	height:19px;
+	line-height:15px;
+	text-decoration:none;
+	margin:2px 5px;
+	cursor:pointer;
+}
+a.csp_linkButton span, a.csp_linkButton-alert span {
+	display:inline-block;
+	height:18px;
+	#height:16px;
+	_height:16px;
+	color:#333;
+	margin-left:10px;
+	padding:1px 15px 0px 0px;
+	#padding:3px 15px 0px 0px;
+	_padding:3px 15px 0px 0px;
+	#cursor:pointer;
+	_cursor:pointer;
+}
+a.csp_linkButton {
+	background:url(../images/csp-base/linkButton.png) left -19px no-repeat;
+	_background:url(../images/csp-base/linkButton.gif) left -19px no-repeat;
+}
+a.csp_linkButton span {
+	background:url(../images/csp-base/linkButton.png) right top no-repeat;
+	_background:url(../images/csp-base/linkButton.gif) right top no-repeat;
+}
+
+a.csp_linkButton:hover {
+	background:url(../images/csp-base/linkButton.png) left -57px no-repeat;
+	_background:url(../images/csp-base/linkButton.gif) left -57px no-repeat;
+}
+a.csp_linkButton:hover span {
+	color:#fff;
+	background:url(../images/csp-base/linkButton.png) right -38px no-repeat;
+	_bakcground:url(../images/csp-base/linkButton.gif) right -38px no-repeat;
+}
+
+a.csp_linkButton-alert {
+	background:url(../images/csp-base/linkButton-alert.png) left -19px no-repeat;
+	_background:url(../images/csp-base/linkButton-alert.gif) left -19px no-repeat;
+}
+a.csp_linkButton-alert span {
+	background:url(../images/csp-base/linkButton-alert.png) right top no-repeat;
+	_background:url(../images/csp-base/linkButton-alert.gif) right top no-repeat;
+}
+
+a.csp_linkButton-alert:hover {
+	background:url(../images/csp-base/linkButton-alert.png) left -57px no-repeat;
+	_background:url(../images/csp-base/linkButton-alert.gif) left -57px no-repeat;
+}
+a.csp_linkButton-alert:hover span {
+	color:#fff;
+	background:url(../images/csp-base/linkButton-alert.png) right -38px no-repeat;
+	_bakcground:url(../images/csp-base/linkButton-alert.gif) right -38px no-repeat;
+}
+a.csp_linkButton-del {
+	width:19px; height:16px;
+	margin:0px 5px;
+	color:transparent;
+	background:url(../images/csp-base/linkButton-del.gif) left top no-repeat;
+}
+a.csp_linkButton-del:hover {
+	color:transparent;
+	background:url(../images/csp-base/linkButton-del.gif) left -16px no-repeat;
+}
+
+
+/* 大型超链接按钮 */
+a.csp_linkButton-large {
+	display:inline-block;
+	font-size:1em;
+	height:23px;
+	line-height:19px;
+	text-decoration:none;
+	margin:2px 5px;
+	cursor:pointer;
+}
+a.csp_linkButton-large span {
+	display:inline-block;
+	height:23px;
+	#height:20px;
+	_height:20px;
+	color:#333;
+	margin-left:17px;
+	padding:0px 17px 0px 0px;
+	#padding:3px 17px 0px 0px;
+	_padding:3px 17px 0px 0px;
+	#cursor:pointer;
+	_cursor:pointer;
+}
+a.csp_linkButton-large {
+	background:url(../images/csp-base/linkButton-large.png) left -23px no-repeat;
+	_background:url(../images/csp-base/linkButton-large.gif) left -23px no-repeat;
+}
+a.csp_linkButton-large span {
+	background:url(../images/csp-base/linkButton-large.png) right top no-repeat;
+	_background:url(../images/csp-base/linkButton-large.gif) right top no-repeat;
+	vertical-align:middle;
+	padding-top:3px;
+}
+
+a.csp_linkButton-large:hover {
+	background:url(../images/csp-base/linkButton-large.png) left -69px no-repeat;
+	_background:url(../images/csp-base/linkButton-large.gif) left -69px no-repeat;
+}
+a.csp_linkButton-large:hover span {
+	color:#fff;
+	background:url(../images/csp-base/linkButton-large.png) right -46px no-repeat;
+	_bakcground:url(../images/csp-base/linkButton-large.gif) right -46px no-repeat;
+}
+a.csp_linkButton-large img {
+	float:left;
+	margin-right:5px;
+	max-height:16px;
+	border:0px;
+	vertical-align:middle;
+}
+a.csp_linkButton-large span span {
+	width:13px;
+	height:18px;
+	margin-left:5px;
+	margin-right:-7px;
+	padding:0px;
+	background:url(../images/csp-base/arrow-down.gif) no-repeat;
+}
+a.csp_linkButton-large:hover span span {
+	background:url(../images/csp-base/arrow-down-white.gif) no-repeat;
+}
+
+/* 组合按钮
+ *	按钮构成按钮组，相互间无空隙 */
+ul.csp_groupButton {
+	display:inline;
+	margin:2px 5px;
+	padding:0px;
+	height:19px;
+}
+ul.csp_groupButton li {
+	display:block;
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+ul.csp_groupButton li a {
+	display:inline-block;
+	font-size:1em;
+	font-weight:normal !important;
+	height:19px;
+	line-height:15px;
+	text-decoration:none;
+	margin:0px;
+	padding:0px;
+	cursor:pointer;
+	
+	border-right:1px solid #999;
+	background:url(../images/csp-base/linkButton.gif) no-repeat -10px top;
+}
+ul.csp_groupButton li a span {
+	display:inline-block;
+	height:18px;
+	#height:16px;
+	_height:16px;
+	color:#333;
+	margin-left:7px;
+	padding:1px 7px 0px 0px;
+	#padding:3px 7px 0px 0px;
+	_padding:3px 7px 0px 0px;
+	#cursor:pointer;
+	_cursor:pointer;
+}
+ul.csp_groupButton li a:hover {
+	background:url(../images/csp-base/linkButton.gif) no-repeat -10px -38px;
+}
+ul.csp_groupButton li a:hover span {
+	color:#fff;
+}
+
+ul.csp_groupButton li.leftSide a {
+	background:url(../images/csp-base/linkButton.gif) no-repeat left -19px;
+}
+ul.csp_groupButton li.leftSide a span {
+	margin-left:12px;
+	background:url(../images/csp-base/linkButton.gif) no-repeat -10px top;
+}
+ul.csp_groupButton li.leftSide a:hover {
+	background:url(../images/csp-base/linkButton.gif) no-repeat left -57px;
+}
+ul.csp_groupButton li.leftSide a:hover span {
+	background:url(../images/csp-base/linkButton.gif) no-repeat -10px -38px;
+}
+ul.csp_groupButton li.rightSide a {
+	border-right:none;
+	background:url(../images/csp-base/linkButton.gif) no-repeat right top;
+}
+ul.csp_groupButton li.rightSide a span {
+	padding-right:12px;
+}
+ul.csp_groupButton li.rightSide a:hover {
+	background:url(../images/csp-base/linkButton.gif) no-repeat right -38px;
+}
+
+ul.csp_groupButton li a.alert {
+	background:url(../images/csp-base/linkButton-alert.gif) no-repeat -10px top;
+}
+ul.csp_groupButton li a.alert:hover {
+	background:url(../images/csp-base/linkButton-alert.gif) no-repeat -10px -38px;
+}
+ul.csp_groupButton li.leftSide a.alert {
+	background:url(../images/csp-base/linkButton-alert.gif) no-repeat left -19px;
+}
+ul.csp_groupButton li.leftSide a.alert span {
+	margin-left:12px;
+	background:url(../images/csp-base/linkButton-alert.gif) no-repeat -10px top;
+}
+ul.csp_groupButton li.leftSide a.alert:hover {
+	background:url(../images/csp-base/linkButton-alert.gif) no-repeat left -57px;
+}
+ul.csp_groupButton li.leftSide a.alert:hover span {
+	background:url(../images/csp-base/linkButton-alert.gif) no-repeat -10px -38px;
+}
+ul.csp_groupButton li.rightSide a.alert {
+	border-right:none;
+	background:url(../images/csp-base/linkButton-alert.gif) no-repeat right top;
+}
+ul.csp_groupButton li.rightSide a.alert span {
+	padding-right:12px;
+}
+ul.csp_groupButton li.rightSide a.alert:hover {
+	background:url(../images/csp-base/linkButton-alert.gif) no-repeat right -38px;
+}
+
+/* 图标按钮 */
+a.csp_iconButton {
+	display:inline-block;
+	margin:2px 5px;
+	padding-left:18px;
+	cursor:pointer;
+	text-decoration:none;
+}
+a.csp_iconButton:hover { text-decoration:underline; }
+a.csp_iconButton.info {
+	background:url(../images/csp-base/icon_info.gif) no-repeat;
+}
+	
+a.csp_iconButton.help {
+	background:url(../images/csp-base/icon_help.gif) no-repeat;
+}
+	
+a.csp_iconButton.download {
+		background:url(../images/csp-base/icon_download.gif) no-repeat;
+}
+
+
+
+
+/* 聚光灯 */
+.csp_spotLight {
+	font-size:0.9em;
+	padding:2px 5em;
+	margin:3px;
+	border-radius:3px;
+	display:none;
+}
+	.csp_spotLight.narrow {
+		padding:2px 1em;
+	}
+.csp_spotLight-processing {
+	color:#000;
+	background-color:#fc9;
+}
+.csp_spotLight-success {
+	color:#050;
+	background-color:#cfc;
+}
+.csp_spotLight-fail {
+	color:#900;
+	font-weight:bold;
+	background-color:#fcc;
+}
+
+
+/* 虚拟页面 */
+.csp_forgePage, csp_forgePage-direct {
+	position:relative;
+	overflow:hidden;
+	width:90%;
+	height:500px;
+}
+
+.csp_forgePage-content {
+	position:absolute;
+	width:100%;
+	top:0px;
+	left:0px;
+}
+
+.csp_forgePage-control {
+	position:relative;
+	bottom:0px;
+}
+
+/* 通用属性 */
+.csp_RTCorner {
+	/* 标题栏右上角附属信息框 */
+	float:right;
+	margin:3px;
+}
+.csp_clear {
+	clear:both;
+}
+.csp_container-submit,
+.csp_layout-innerCenter {
+	text-align:center !important;
+}
+.csp_layout-innerRight {
+	text-align:right !important;
+}
+.csp_layout-innerTop {
+	vertical-align:top !important;
+}
+
+.csp_layout-center {
+	clear:both;
+	margin:0px auto !important;
+	overflow:auto;
+}
+
+.csp_layout-floatCol {
+	float:left;
+	margin:1em;
+}
+.csp_layout-floatCol.half {
+	width:45%;
+}
+.csp_layout-floatCol.trip {
+	width:30%;
+}
+
+/* validator */
+input[type=text].error, input[type=password].error, select.error, textarea.error {
+	border:1px solid #c66;
+	border-bottom:3px solid #e00;
+	padding:3px 4px 1px 4px;
+	background-color:#ffe;
+}
+
+label.checking, label.check_success, label.check_fail, label.error, #valUserCnt label {
+	display:block;
+	margin-left:5px;
+	margin-top:3px;
+	cursor:default;
+}
+
+label.checking {
+	width:15px;
+	height:15px;
+	background:url(../images/loading.gif) no-repeat;
+}
+label.check_success {
+	width:15px;
+	height:15px;
+	background:url(../images/icon_success.gif) no-repeat;
+}
+label.check_fail, label.error {
+	padding-left:18px;
+	font-size:0.9em;
+	color:#c00;
+	font-weight:bold;
+	background:url(../images/icon_fail.gif) no-repeat;
+}
+label.check_fail:hover, label.error:hover {
+	color:#c00;
+}
+
+
+/* page frame */
+div.csp_leftmenu {
+	width:20%;
+	float:left;
+	margin-left:15px;
+}
+div.csp_content {
+	width:75%;
+	float:right;
+	margin-right:15px;
+}
+
+
+/* leftmenu */
+div.csp_leftmenu-body, div.csp_confAdmin-body {
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	background-color:#fff;
+	padding:5px 0px;
+	overflow:auto;
+}
+
+div.csp_confAdmin-top, div.csp_confAdmin-bottom, div.csp_confAdmin-body {
+	width:80%;
+	margin:auto;
+}
+
+div.csp_leftmenu-top, div.csp_confAdmin-top {
+	clear:both;
+	height:5px;
+	margin-top:15px;
+	margin-bottom:0px;
+	background:url(../images/csp-base/leftmenu-top.gif) left top no-repeat;
+}
+div.csp_leftmenu-top span, div.csp_confAdmin-top span.confAdmin-right {
+	width:40%;
+	max-width:150px;
+	height:5px;
+	float:right;
+	background:url(../images/csp-base/leftmenu-top.gif) right -5px no-repeat;
+}
+div.csp_confAdmin-top span.confAdmin-right { width:150px;}
+div.csp_confAdmin-top span.confAdmin-center {
+	width:70%;
+	height:5px;
+	float:right;
+	background:url(../images/csp-base/leftmenu-top-rx.gif) repeat-x;
+}
+
+div.csp_leftmenu-bottom, div.csp_confAdmin-bottom {
+	height:10px;
+	margin-bottom:15px;
+	background:url(../images/csp-base/leftmenu-bottom.gif) left top no-repeat;
+}
+div.csp_leftmenu-bottom span, div.csp_confAdmin-bottom span.confAdmin-right {
+	width:40%;
+	max-width:150px;
+	height:10px;
+	float:right;
+	background:url(../images/csp-base/leftmenu-bottom.gif) right -10px no-repeat;
+}
+div.csp_confAdmin-bottom span.confAdmin-right { width:150px; }
+div.csp_confAdmin-bottom span.confAdmin-center {
+	width:70%;
+	height:10px;
+	float:right;
+	background:url(../images/csp-base/leftmenu-bottom-rx.gif) repeat-x;
+}
+
+
+/* progressBar */
+ul.csp_progress {
+	list-style:none;
+	padding:0px;
+}
+ul.csp_progress li {
+	display:inline-block;
+	#display:block;
+	_display:block;
+	#float:left;
+	_float:left;
+	height:24px;
+	margin-right:-17px;
+	background:url(../images/csp-base/progress.gif) left -24px no-repeat;
+	cursor:pointer;
+}
+ul.csp_progress li.csp_progress-start {
+	background:url(../images/csp-base/progress-normal.gif) repeat-x;
+	border-left:1px solid #ccc;
+	#width:30px;
+	_width:30px;
+}
+ul.csp_progress li span, ul.csp_progress li a {
+	display:block;
+	_float:left;
+	height:24px;
+	line-height:24px;
+	margin-left:20px;
+	_margin-left:10px;
+	padding-right:20px;
+	background:url(../images/csp-base/progress.gif) right top no-repeat;
+}
+ul.csp_progress li.csp_progress-start span,
+ul.csp_progress li.csp_progress-start a {
+	margin-left:10px;
+}
+ul.csp_progress li.csp_progress-end span,
+ul.csp_progress li.csp_progress-end a {
+	padding-right:10px;
+	background:url(../images/csp-base/progress-normal.gif) repeat-x;
+	border-right:1px solid #999;
+}
+ul.csp_progress li:hover {
+	background:url(../images/csp-base/progress.gif) left -72px no-repeat;
+}
+
+ul.csp_progress li.csp_progress-start:hover,
+ul.csp_progress li.csp_progress-start.locked,
+ul.csp_progress li.csp_progress-start.completed {
+	background:url(../images/csp-base/progress-hover.gif) repeat-x;
+}
+ul.csp_progress li:hover span,
+	ul.csp_progress li:hover a {
+	background:url(../images/csp-base/progress.gif) right -48px no-repeat; 
+}
+ul.csp_progress li.csp_progress-end:hover span,
+	ul.csp_progress li.csp_progress-end:hover a {
+	background:url(../images/csp-base/progress-hover.gif) repeat-x;
+}
+
+
+ul.csp_progress li.current {
+	background:url(../images/csp-base/progress.gif) left -120px no-repeat;
+}
+ul.csp_progress li.current span, ul.csp_progress li.current a {
+	color:#fff;
+	font-weight:bold;
+	background:url(../images/csp-base/progress.gif) right -96px no-repeat;
+}
+
+ul.csp_progress li.locked, ul.csp_progress li.completed {
+	cursor:default;
+	background:url(../images/csp-base/progress.gif) left -72px no-repeat;
+}
+ul.csp_progress li.locked span, ul.csp_progress li.locked a, 
+ul.csp_progress li.completed span, ul.csp_progress li.completed a {
+	color:#999;
+	font-weight:normal;
+	background:url(../images/csp-base/progress.gif) right -48px no-repeat;
+}
+
+ul.csp_todoList {
+	list-style:url(../images/icon_goto.gif);
+}
+ul.csp_todoList li.completed {
+	color:#ccc;
+	display:none;
+}
+
+div.csp_inPlaceEdit,
+div.editGrpName,div.editGrpEnName, div.editGrpDesc,div.editStringEnTitle,div.editStringTitle,div.editStringDescFld,div.editStringDefText {
+	width:100%;
+	min-height:1.5em;
+	cursor:pointer;
+}
+div.csp_inPlaceEdit:hover,
+div.editGrpName:hover,div.editGrpEnName:hover, div.editGrpDesc:hover,div.editStringEnTitle:hover,div.editStringTitle:hover,div.editStringDescFld:hover,div.editStringDefText:hover {
+	background:#ffc url(../images/edit.png) no-repeat right top;
+	border-bottom:1px solid #dd9;
+}
+#backToTop { position:fixed; width:100px; height:30px; left:825px; bottom:0;
+	cursor:pointer; display:none;
+	background:#fff url(../images/icon-13.png) no-repeat center -70px;
+	border:1px solid #ccc; border-bottom:none;
+	border-top-left-radius:5px; border-top-right-radius:5px;
+	-moz-border-radius-topleft:5px; -moz-border-radius-topright:5px;
+	-webkit-border-top-left-radius:5px; -webkit-border-top-right-radius:5px;
+	box-shadow:0 0 3px #999; -moz-box-shadow:0 0 3px #999; -webkit-box-shadow:0 0 3px #999;
+z-index:20;
+}
+
+/*2011.12.22 Vera add begin*/
+.csp_wrap .csp_panel{margin-top:20px;}
+.csp_wrap .csp_panel h3{margin-top:-1px;}
+.dataTables_wrapper .top .dataTables_info{width:45%; border-bottom:1px dashed #ccc; float:left;}
+.dataTables_wrapper .top .dataTables_filter{width:53%; border-bottom:1px dashed #ccc; float:left; padding-bottom:7px;}
+.dataTables_wrapper .top .dataTables_length{width:45%; float:left; padding-top:5px;}
+.dataTables_wrapper .top .dataTables_paginate{width:7%; float:right; padding-top:5px;}
+.dataTables_wrapper .top{border:none; border-bottom:1px solid #000;; background-color:#fff;}
+.csp_panel a.csp_linkButton{font-size:12px;}
+/*2011.12.22 Vera add end*/
+
+/*2012.7.17 vera add begin*/
+.csp_content.csp_config div.csp_panel #creditcardTable input{ font-size:12px;}
+.csp_content.csp_config div.csp_panel p.csp_panel-title {font-size:12px; background:#eef; border:none; padding:0.5em 2em;}
+.csp_content.csp_config .csp_panel table.csp_table-form-2col {margin:5px;}
+.csp_content.csp_config .csp_panel table.csp_table-form-2col th {color:#777;}
+.csp_content.csp_config .csp_switch {display:inline-block; width:30px; float:right; height:20px; background:url(../images/csp_switch.png) 0 -37px no-repeat;}
+.csp_content.csp_config #payModeConfig {float:none;}
+.csp_content.csp_config #payModeConfig table{width:98%; margin:1em auto; padding:0;}
+.csp_content.csp_config #payModeConfig table tr th{padding:0.2em 0 0.2em 2em; text-align:left; background:#eef;}
+.csp_content.csp_config #payModeConfig tr.cap_config_top th {border:1px solid #ccc; border-bottom:none;}
+.csp_content.csp_config #payModeConfig tr.cap_config_bottom td {border:1px solid #ccc; border-top:none;}
+.csp_content.csp_config #payModeConfig table tr td ul{list-style:none; }
+.csp_content.csp_config #payModeConfig table tr td ul li {margin:0.5em; width:40%; float:left;}
+.csp_content.csp_config  input.csp_addPayType[type="button"] {font-size:12px; float:right; margin:8px 10px 0 0; *margin-top:-35px; padding:0.3em 0.5em 0.3em 1.5em;  *padding:0.3em; background:url(../images/csp_switch.png) -5px -2px #999 no-repeat; border-radius:5px; border:1px solid #999; color:#fff; font-weight:bold;}
+#addPayTypeDialog {width:500px;}
+#addPayTypeDialog .csp_dialog-p {padding:0.5em;}
+#addPayTypeDialog #controllerBar {padding:0.5em 1em 0.5em 2em;}
+#addPayTypeDialog table.csp_table-form-2col th {width:auto;}
+/*end*/
+
+
+/*2012-07-19 xiejj add begin*/
+.upItem, .downItem{cursor:pointer};
+/*end*/

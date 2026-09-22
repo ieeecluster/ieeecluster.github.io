@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180913T153000
+DTEND;TZID=Europe/London:20180913T170000
+UID:ieeecluster_IEEE Cluster 2018_sess128@linklings.com
+SUMMARY:Paper session XVI: Algorithms, Applications and Performance
+DESCRIPTION:Relaxing Scalability Limits with Speculative Parallelism in Se
+ quential Monte Carlo\n\nNemeth, Haber, Liesenborgs, Lamotte\n\nSequential 
+ Monte Carlo methods are a useful tool to tackle non-linear problems in a B
+ ayesian setting. A target posterior distribution is approximated by moving
+  a set of weighted particles through a sequence of distributions. To count
+ eract degeneracy caused by sequentially changing the underlying dis...\n\n
+ ---------------------\nPredicting Performance Using Collaborative Filterin
+ g\n\nSalaria, Drozd, Podobas, Matsuoka\n\nPerformance prediction of parall
+ el applications across systems becomes increasingly important in today's d
+ iverse computing environments. A wide range of choices in execution platfo
+ rms pose new challenges to researchers in choosing a system which best fit
+ s their workloads and administrators in schedu...\n\n---------------------
+ \nEfficient Algorithms for the Summed Area Tables Primitive on GPUs\n\nche
+ n, Wahib, Takizawa, Takano, Matsuoka\n\nTwo-dimensional Summed Area Tables
+  (SAT) is a fundamental primitive used in image processing and machine lea
+ rning applications. We present a collection of optimization methods for co
+ mputing SAT on CUDA-enabled GPUs. Conventional approaches rely on computin
+ g the prefix sum in one dimension in paralle...\n
+END:VEVENT
+END:VCALENDAR
+

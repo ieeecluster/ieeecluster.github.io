@@ -1,0 +1,21 @@
+<i>
+Improving the performance of TCP communication
+is the key to the successful deployment of MPI programs in a Grid
+environment in which multiple clusters are connected through
+high performance dedicated networks. To efficiently utilize the
+inter-cluster bandwidth, a traffic control mechanism is required
+so as not to allow the aggregate transmission bandwidth to exceed
+the inter-cluster bandwidth when multiple nodes communicate at
+one time. In this paper, we propose a traffic control method for
+MPI programs, in which an application or the MPI runtime controls
+the transmission rate based on the communication pattern
+by using certain MPI attributes. Packet pacing is used at each
+node preventing microscopic burst transmission to thus avoid
+congestion. We confirm the effectiveness of the proposed method
+by experiments using a 10 Gbps emulated WAN environment.
+We show most of the NAS Parallel benchmarks improve the
+performance, since the proposed method reduces packet losses
+due to traffic congestion on the inter-cluster network. The results
+have indicated that it is feasible to connect multiple clusters
+and run large-scale scientific applications over distances up to
+1000 kilometers, if an appropriate network is available.</i>

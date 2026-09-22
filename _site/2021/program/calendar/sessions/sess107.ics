@@ -1,0 +1,56 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180911T153000
+DTEND;TZID=Europe/London:20180911T171500
+UID:ieeecluster_IEEE Cluster 2018_sess107@linklings.com
+SUMMARY:Paper session IV: Generating and Optimizing Applications
+DESCRIPTION:Whole Program Generation of Massively Parallel Shallow Water E
+ quation Solvers\n\nKuckuk, Köstler\n\nThe study of ocean currents has been
+  an active area of research for decades.\nAs a model close to the water su
+ rface, the shallow water equations (SWE) can be used.\nFor realistic simul
+ ations, efficient numerical solvers are necessary that exhibit a good node
+ -level performance while still maintaining s...\n\n---------------------\n
+ Modeling I/O performance variability using conditional variational auto en
+ coders\n\nMadireddy, Balaprakash, Carns, Latham, Ross...\n\nStorage system
+  performance modeling is crucial for \nefficient use of heterogeneous shar
+ ed resources on leadership-class\ncomputers. \nVariability in application 
+ performance, particularly variability arising\nfrom concurrent application
+ s sharing I/O resources, \nis a major hurdle in the development of ac...\n
+ \n---------------------\nOpenACC vs the Native Programming on Sunway Taihu
+ Light: A Case Study with GTC-P\n\nCai, Wang, Lin\n\nSunway TaihuLight is C
+ hina's recent top-ranked supercomputer worldwide that was the first to be 
+ built entirely with home-grown processors. This supercomputer can be progr
+ ammed with two approaches: directive-based OpenACC and native programming.
+  These approaches are studied here using GTC-P, a partic...\n\n-----------
+ ----------\nParallel Approximation of the Maximum Likelihood Estimation fo
+ r the Prediction of Large-Scale Geostatistics Simulations\n\nAbdulah, Ltai
+ ef, Sun, Genton, Keyes\n\nMaximum likelihood estimation is an important st
+ atistical technique for estimating missing data,  for example in climate a
+ nd environmental applications, which are usually large and feature data po
+ ints that are irregularly spaced. In particular, the Gaussian log-likeliho
+ od function is the de facto mo...\n
+END:VEVENT
+END:VCALENDAR
+

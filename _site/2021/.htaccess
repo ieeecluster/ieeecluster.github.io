@@ -1,0 +1,4 @@
+AuthUserFile https://clustercomp.org/2021/.htpasswd
+AuthName "Home Page"
+AuthType Basic
+require valid-user

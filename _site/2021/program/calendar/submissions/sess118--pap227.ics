@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180912T164500
+DTEND;TZID=Europe/London:20180912T170000
+UID:ieeecluster_IEEE Cluster 2018_sess118_pap227@linklings.com
+SUMMARY:GekkoFS - A temporary distributed file system for HPC applications
+DESCRIPTION:GekkoFS - A temporary distributed file system for HPC applicat
+ ions\n\nVef, Moti, Süß...\n\n\nWe present GekkoFS, a temporary, highly-sca
+ lable burst buffer file system which has been specifically optimized for n
+ ew access patterns of data-intensive High-Performance Computing (HPC) appl
+ ications. The file system provides relaxed POSIX semantics, only offering 
+ features which are actually required by most (not all) applications. It is
+  able to provide scalable I/O performance and reaches millions of metadata
+  operations already for a small number of nodes, significantly outperformi
+ ng the capabilities of general-purpose parallel file systems.
+END:VEVENT
+END:VCALENDAR
+

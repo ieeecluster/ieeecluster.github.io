@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180912T140000
+DTEND;TZID=Europe/London:20180912T143000
+UID:ieeecluster_IEEE Cluster 2018_sess115_pap174@linklings.com
+SUMMARY:Lightweight Requirements Engineering for Exascale Co-design
+DESCRIPTION:Lightweight Requirements Engineering for Exascale Co-design\n\
+ nCalotoiu, Graf, Hoefler...\n\n\nGiven the tremendous cost of an exascale 
+ system, its architecture\n  must match the requirements of the application
+ s it is supposed to\n  run as precisely as possible. Conversely, applicati
+ ons must be\n  designed such that building an appropriate system becomes f
+ easible,\n  motivating the idea of co-design. In this process, a fundament
+ al\n  aspect of the application requirements are the rates at which the\n 
+  demand for different resources grows as a code is scaled to a larger\n  m
+ achine. However, if the anticipated scale exceeds the size of\n  available
+  platforms this demand can no longer be measured. This is\n  clearly the c
+ ase when designing an exascale system. Moreover,\n  creating analytical mo
+ dels to predict these requirements is often\n  too laborious - especially 
+ when the number and complexity of target\n  applications is high. In this 
+ paper, we show how automated\n  performance modeling can be used to quickl
+ y predict application\n  requirements for varying scales and problem sizes
+ . Following this\n  approach, we determine the exascale requirements of fi
+ ve scientific codes\n  and use them to illustrate system design tradeoffs.
+END:VEVENT
+END:VCALENDAR
+

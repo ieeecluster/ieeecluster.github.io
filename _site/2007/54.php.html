@@ -1,0 +1,25 @@
+<i><p>
+One of the most useful features provided by virtualmachine
+(VM) technologies is the ability to migrate running
+OS instances across distinct physical nodes. As a basis
+for many administration tools in modern clusters and
+data-centers, VM migration is desired to be extremely efficient
+to reduce both migration time and performance
+impact on hosted applications.
+<p>Currently, most VM environments use the Socket interface
+and the TCP/IP protocol to transfer VM migration
+traffic. In this paper, we propose a high performance
+VM migration design by using RDMA (Remote Direct
+Memory Access). RDMA is a feature provided by many
+modern high speed interconnects that are currently being
+widely deployed in data-centers and clusters. By taking
+advantage of the low software overhead and the onesided
+nature of RDMA, our design significantly improves
+the efficiency of VM migration. We also contribute a set
+of micro-benchmarks and application-level benchmark
+evaluations aimed at evaluating important metrics of VM
+migration. The evaluations using our prototype implementation
+over Xen and InfiniBand show that RDMA can
+drastically reduce the migration overhead: up to 80% on
+total migration time and up to 77% on application observed
+downtime.</i>

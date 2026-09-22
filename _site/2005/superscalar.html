@@ -1,0 +1,817 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List
+href="RosaCluster_2005_tutorial_template_GRID_superscalar_files/filelist.xml">
+<title>The 6th International Conference on Linux Clusters</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="country-region" downloadurl="http://www.5iantlavalamp.com/"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PlaceName"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PlaceType"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="time"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="City" downloadurl="http://www.5iamas-microsoft-com:office:smarttags"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place" downloadurl="http://www.5iantlavalamp.com/"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Ibrahim Haddad</o:Author>
+  <o:LastAuthor>Kurt</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>190</o:TotalTime>
+  <o:Created>2005-07-21T15:37:00Z</o:Created>
+  <o:LastSaved>2005-07-21T15:38:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>779</o:Words>
+  <o:Characters>4441</o:Characters>
+  <o:Company>Ericsson</o:Company>
+  <o:Lines>37</o:Lines>
+  <o:Paragraphs>10</o:Paragraphs>
+  <o:CharactersWithSpaces>5210</o:CharactersWithSpaces>
+  <o:Version>10.6626</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Arial\,Bold";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-format:other;
+	mso-font-pitch:auto;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-CA;}
+h1
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:18.0pt;
+	font-family:"Arial\,Bold";
+	mso-font-kerning:0pt;}
+h2
+	{mso-style-parent:Default;
+	mso-style-next:Default;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Arial\,Bold";
+	font-weight:normal;}
+h3
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:EN-CA;
+	font-weight:normal;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-CA;}
+p.MsoListContinue4, li.MsoListContinue4, div.MsoListContinue4
+	{mso-style-parent:Default;
+	mso-style-next:Default;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Arial\,Bold";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoMessageHeader, li.MsoMessageHeader, div.MsoMessageHeader
+	{mso-style-parent:Default;
+	mso-style-next:Default;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Arial\,Bold";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Arial\,Bold";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+@page Section2
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section2
+	{page:Section2;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:35744635;
+	mso-list-type:hybrid;
+	mso-list-template-ids:158750060 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:97725896;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1371283220 201981973 201981977 201981979 201981967 201981977 201981979 201981967 201981977 201981979;}
+@list l1:level1
+	{mso-level-number-format:alpha-upper;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:154880956;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1507260504 1427942948 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l3
+	{mso-list-id:1141656654;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1147950928 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:1195849425;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1987452340 1427942948 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:145.6pt;
+	mso-level-number-position:left;
+	margin-left:145.6pt;
+	text-indent:-.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l4:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l5
+	{mso-list-id:1269971191;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1148815560 201981953 201981955 201981957 201981953 201981955 201981957 201981953 201981955 201981957;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:1402868740;
+	mso-list-type:hybrid;
+	mso-list-template-ids:556841428 1427942948 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l6:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:-55.6pt;
+	mso-level-number-position:left;
+	margin-left:-55.6pt;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l6:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:-19.6pt;
+	mso-level-number-position:left;
+	margin-left:-19.6pt;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l6:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:16.4pt;
+	mso-level-number-position:left;
+	margin-left:16.4pt;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l6:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:52.4pt;
+	mso-level-number-position:left;
+	margin-left:52.4pt;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l7
+	{mso-list-id:1486584973;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-425553804 1427942948 735757842 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l7:level2
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:-55.6pt;
+	mso-level-number-position:left;
+	margin-left:-55.6pt;
+	text-indent:-.25in;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@list l8
+	{mso-list-id:1693921653;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-875768924 -3743712 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l8:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@list l9
+	{mso-list-id:2046171107;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1055681222 1427942948 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l9:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:-55.6pt;
+	mso-level-number-position:left;
+	margin-left:-55.6pt;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l9:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:-19.6pt;
+	mso-level-number-position:left;
+	margin-left:-19.6pt;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l9:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:16.4pt;
+	mso-level-number-position:left;
+	margin-left:16.4pt;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l9:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:52.4pt;
+	mso-level-number-position:left;
+	margin-left:52.4pt;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=Default align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt'>The 2005 IEEE International Conference
+on Cluster Computing <br>
+<span style='mso-spacerun:yes'> </span><br>
+Burlington Marriott, Burlington, MA, USA<o:p></o:p></span></b></p>
+
+<p class=Default><o:p>&nbsp;</o:p></p>
+
+<p class=Default align=center style='text-align:center'><b><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt'>Tutorial Title:<o:p></o:p></span></b></p>
+
+<h2><b><span style='color:blue'><span style='mso-tab-count:4'>                                                </span>Programming
+with GRID superscalar<o:p></o:p></span></b></h2>
+
+<h2><b><span style='color:blue'>Level <o:p></o:p></span></b></h2>
+
+<p class=Default><o:p>&nbsp;</o:p></p>
+
+<p class=MsoBodyText><span lang=EN-CA>The tutorial is intended for PhD students
+and young researchers in Grid computing or related fields. The attendees are
+expected to have some background in Grid computing and programming abilities. </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoMessageHeader style='margin-left:.75in;text-align:justify;
+text-indent:-53.95pt'><b><span style='color:blue'>Duration <o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>A half-day <o:p></o:p></span></p>
+
+<p class=MsoMessageHeader style='margin-left:.75in;text-align:justify;
+text-indent:-53.95pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoMessageHeader style='margin-left:.75in;text-align:justify;
+text-indent:-53.95pt'><b><span style='color:blue'>Presenters <o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span lang=EN-CA
+style='font-size:11.0pt'>Dr. Rosa M. Badia<o:p></o:p></span></b></p>
+Email: <span style='mso-tab-count:1'>   </span><a
+href="mailto:rosa.m.badia@bsc.es">rosa.m.badia@bsc.es</a><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=FR style='font-size:10.5pt;mso-ansi-language:
+FR'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span lang=IT
+style='font-size:11.0pt;mso-ansi-language:IT'>Dr. Toni Cortes<o:p></o:p></span></b></p>
+
+Email: <span style='mso-tab-count:1'>   </span></span><span lang=IT
+style='font-size:10.5pt;mso-ansi-language:IT'><a
+href="mailto:toni.cortes@bsc.es"><span lang=EN-US style='mso-ansi-language:
+EN-US'>toni.cortes@bsc.es</span></a></span><span style='font-size:10.5pt;
+mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span lang=EN-CA
+style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoMessageHeader style='margin-left:.75in;text-align:justify;
+text-indent:-53.95pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoMessageHeader style='text-align:justify'><b><span style='color:
+blue'>Abstract <o:p></o:p></span></b></p>
+
+<p class=MsoBodyText><span lang=EN-CA><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span lang=EN-CA>GRID superscalar is a programming
+framework that enables to automatically exploit inherent concurrency of
+sequential applications and to run them in computational Grids. The concurrent
+execution is performed at task level, where tasks are subroutines or functions
+that form part of the sequential application that have a certain level of CPU
+consumption. This is achieved with minimum modifications to the code and the
+Grid is almost transparent to the programmer. </span></p>
+
+<p class=MsoBodyText><span lang=EN-CA><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span lang=EN-CA>The framework is composed of three main
+elements: a code generation tool, a graphical interface (the </span><st1:place><st1:PlaceName><span
+  lang=EN-CA>Deployment</span></st1:PlaceName><span lang=EN-CA> </span><st1:PlaceType><span
+  lang=EN-CA>Center</span></st1:PlaceType></st1:place><span lang=EN-CA>) and a
+runtime library. The code generation tool automatically generates a set of
+files. With this set of files and the original files provided by the
+programmer, two different binaries are built: the main program (master) and the
+workers. The </span><st1:place><st1:PlaceName><span lang=EN-CA>Deployment</span></st1:PlaceName><span
+ lang=EN-CA> </span><st1:PlaceType><span lang=EN-CA>Center</span></st1:PlaceType></st1:place><span
+lang=EN-CA> is a graphical interface with two main features: Grid configuration
+setting and checking and automatic deployment of the binaries in the
+computational Grid. The runtime is called by the binaries on execution time and
+handles all the automatic parallelization features and automatic submission of
+tasks in the Grid. The main program is run locally and the workers are run in
+remote servers in the computational Grid. </span></p>
+
+<p class=MsoBodyText><span lang=EN-CA><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span lang=EN-CA>GRID superscalar has been developed for
+three years and currently has stable versions. Different underlying basic
+middleware can be used: <span class=SpellE>Globus</span> Toolkit 2.4, <span
+class=SpellE>Globus</span> Toolkit 4.0, Ninf-G2 or directly on top of SSH/SCP. </span></p>
+
+<p class=MsoBodyText><span lang=EN-CA><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span lang=EN-CA>The tutorial goal is to give and general
+overview about GRID superscalar, about its internals and about the programming
+with GRID superscalar. After the tutorial, attendees should be able to develop
+simple applications with GRID superscalar. </span></p>
+
+<p class=MsoBodyText><span lang=EN-CA><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span lang=EN-CA>The tutorial will be illustrated with real
+example. </span></p>
+
+<p class=MsoBodyText><span lang=EN-CA><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span lang=EN-CA>The background of the tutorial is on Grid
+programming and automatic parallelization.</span></p>
+
+<p class=MsoBodyText><span lang=EN-CA><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span lang=EN-CA>Information about GRID superscalar can be
+found in its website: www.cepba.upc.edu/grid<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoMessageHeader style='margin-left:.75in;text-align:justify;
+text-indent:-53.95pt'><b><span style='color:blue'>Tutorial Detailed Description
+<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+<u><span lang=EN-CA style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-CA;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:auto;
+mso-break-type:section-break'>
+</span></u>
+
+<div class=Section2>
+
+<p class=MsoNormal style='text-align:justify'><u><span lang=EN-CA
+style='font-size:11.0pt'>Introduction to GRID superscalar (55%<span
+class=GramE>) <span style='mso-spacerun:yes'> </span>9:00AM</span>-10:30AM<o:p></o:p></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span lang=EN-CA
+style='font-size:11.0pt'><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></span></u></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l9 level1 lfo1;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-CA style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-CA style='font-size:11.0pt'>GRID
+superscalar objective<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l9 level1 lfo1;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-CA style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-CA style='font-size:11.0pt'>Framework
+overview<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l9 level4 lfo1;tab-stops:list 16.4pt'><![if !supportLists]><span
+lang=EN-CA style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-CA style='font-size:11.0pt'>Code
+generation: <span class=SpellE>gsstubgen</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l9 level4 lfo1;tab-stops:list 16.4pt'><![if !supportLists]><span
+lang=EN-CA style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-CA style='font-size:11.0pt'>Automatic
+configuration and compilation: Deployment center<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l9 level4 lfo1;tab-stops:list 16.4pt'><![if !supportLists]><span
+lang=EN-CA style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-CA style='font-size:11.0pt'>Runtime
+library features<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA
+style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA
+style='font-size:11.0pt'>Break </span><st1:time Minute="30" Hour="10"><span
+ lang=EN-CA style='font-size:11.0pt'>10:30-10:45am</span></st1:time><span
+lang=EN-CA style='font-size:11.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA
+style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span lang=EN-CA
+style='font-size:11.0pt'>Programming with GRID superscalar (45%<span
+class=GramE>) <span style='mso-spacerun:yes'> </span>10:45AM</span>-Noon<o:p></o:p></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><u><span lang=EN-CA
+style='font-size:11.0pt'><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></span></u></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l9 level1 lfo1;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-CA style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-CA style='font-size:11.0pt'>Users
+interface:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:52.4pt;text-align:justify;text-indent:
+-.25in;mso-list:l9 level5 lfo1;tab-stops:list 52.4pt'><![if !supportLists]><span
+lang=EN-CA style='font-size:11.0pt;font-family:"Courier New";mso-fareast-font-family:
+"Courier New"'><span style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-CA style='font-size:11.0pt'>The
+IDL file<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:52.4pt;text-align:justify;text-indent:
+-.25in;mso-list:l9 level5 lfo1;tab-stops:list 52.4pt'><![if !supportLists]><span
+lang=EN-CA style='font-size:11.0pt;font-family:"Courier New";mso-fareast-font-family:
+"Courier New"'><span style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-CA style='font-size:11.0pt'>GRID
+superscalar API<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:52.4pt;text-align:justify;text-indent:
+-.25in;mso-list:l9 level5 lfo1;tab-stops:list 52.4pt'><![if !supportLists]><span
+lang=EN-CA style='font-size:11.0pt;font-family:"Courier New";mso-fareast-font-family:
+"Courier New"'><span style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-CA style='font-size:11.0pt'>Configuration
+files<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:52.4pt;text-align:justify;text-indent:
+-.25in;mso-list:l9 level5 lfo1;tab-stops:list 52.4pt'><![if !supportLists]><span
+lang=EN-CA style='font-size:11.0pt;font-family:"Courier New";mso-fareast-font-family:
+"Courier New"'><span style='mso-list:Ignore'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-CA style='font-size:11.0pt'>Use of
+<span class=SpellE>checkpointing</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l9 level1 lfo1;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-CA style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-CA style='font-size:11.0pt'>Use of
+the Deployment center<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l9 level1 lfo1;tab-stops:list .25in'><![if !supportLists]><span
+lang=EN-CA style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-CA style='font-size:11.0pt'>Programming
+Examples<o:p></o:p></span></p>
+
+<p class=Default style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoMessageHeader style='margin-left:.75in;text-align:justify;
+text-indent:-53.95pt'><b><span style='color:blue'>Presenters Bio <o:p></o:p></span></b></p>
+
+<p class=Default><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span lang=EN-CA
+style='font-size:11.0pt'>Rosa M. Badia</span></b><span lang=EN-CA
+style='font-size:11.0pt;mso-bidi-font-weight:bold'> holds a PhD from the Universitat
+Politècnica de Catalunya (UPC, Spain, 1994). Before, she graduated on Computer
+Science at the <span class=SpellE>Facultat</span> d' <span class=SpellE>Informàtica</span>
+de </span><st1:City><st1:place><span lang=EN-CA style='font-size:11.0pt;
+  mso-bidi-font-weight:bold'>Barcelona</span></st1:place></st1:City><span
+lang=EN-CA style='font-size:11.0pt;mso-bidi-font-weight:bold'> (UPC, 1989).
+Currently she is Associated Professor at the Computer Architecture Department
+of the UPC. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA
+style='font-size:11.0pt;mso-bidi-font-weight:bold'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA
+style='font-size:11.0pt;mso-bidi-font-weight:bold'>Since year 1999 she has been
+involved in research and development at the </span><st1:place><st1:PlaceName><span
+  lang=EN-CA style='font-size:11.0pt;mso-bidi-font-weight:bold'>European</span></st1:PlaceName><span
+ lang=EN-CA style='font-size:11.0pt;mso-bidi-font-weight:bold'> </span><st1:PlaceType><span
+  lang=EN-CA style='font-size:11.0pt;mso-bidi-font-weight:bold'>Center</span></st1:PlaceType></st1:place><span
+lang=EN-CA style='font-size:11.0pt;mso-bidi-font-weight:bold'> of Parallelism
+of Barcelona (CEPBA) in performance prediction and modeling of MPI programs,
+programming models for the Grid and resource management in the Grid. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA
+style='font-size:11.0pt;mso-bidi-font-weight:bold'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA
+style='font-size:11.0pt;mso-bidi-font-weight:bold'>She has participated in
+European projects <span class=SpellE>SepTools</span> and Damien, and currently
+is one of the researchers of the Network of Excellence in Grid computing <span
+class=SpellE>CoreGrid</span>. Professor Badia has more than 30 international
+publications in journals and conferences. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA
+style='font-size:11.0pt;mso-bidi-font-weight:bold'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA
+style='font-size:11.0pt;mso-bidi-font-weight:bold'>In year 2005 the Barcelona
+Supercomputing Center (BSC) has been funded and the CEPBA research and
+development activities have been moved to this center. Dr. Badia has been
+nominated Manager for Grid computing and clusters activities in BSC. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA
+style='font-size:11.0pt;mso-bidi-font-weight:bold'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-CA>Toni Cortes</span></b><span lang=EN-CA> holds a </span><span
+class=SpellE><span lang=EN-CA style='font-size:11.0pt;mso-bidi-font-weight:
+bold'>Ms.C</span></span><span lang=EN-CA style='font-size:11.0pt;mso-bidi-font-weight:
+bold'>. Degree in Informatics (1992) and a Ph.D. degree in Computer Science
+(1997) from the Universitat Politècnica de <span class=GramE>Catalunya .</span>
+From 1992 to 1998 he was teaching assistant at the Computer Architecture
+department (Universitat Politècnica de Catalunya), and he is associate
+professor at the same department and university since 1998.</span><span
+lang=EN-CA style='font-size:10.0pt;font-family:Arial'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA
+style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA
+style='font-size:11.0pt;mso-bidi-font-weight:bold'>Since year 2000 he is
+Coordinator of the Single-System Image area in the IEEE Cluster Computing Task
+Force. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA
+style='font-size:11.0pt;mso-bidi-font-weight:bold'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA
+style='font-size:11.0pt;mso-bidi-font-weight:bold'>He was Vice-dean for
+International Affairs at the Barcelona School of Informatics (Universitat
+Politècnica de Catalunya, 2000-2004). <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA
+style='font-size:11.0pt;mso-bidi-font-weight:bold'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA
+style='font-size:11.0pt;mso-bidi-font-weight:bold'>From year 2000 he is Manager
+of the CIRI (CEPBA – IBM Research Institute). In year 2005 the Barcelona
+Supercomputing Center (BSC) has been funded and the CEPBA research and
+development activities have been moved to this center. Dr. Cortes has been
+nominated Manager for Parallel Input/Output activities in BSC.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-indent:-63.0pt;tab-stops:
+276.65pt'><span lang=EN-CA style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA
+style='font-size:10.0pt;font-family:Arial'><span
+style='mso-spacerun:yes'> </span></span><span lang=EN-CA style='font-size:11.0pt;
+mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA
+style='font-size:11.0pt;mso-bidi-font-weight:bold'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-CA
+style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

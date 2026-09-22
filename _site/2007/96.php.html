@@ -1,0 +1,30 @@
+<i>
+The data needs of current and future PetaScale
+applications have increased over the last half decade to the
+extent that appropriate data management has become a crucial
+requirement. This concerns not only the storage of data produced
+by the new class of PetaScale applications, but also the data
+exchanges needed for coupling applications with concurrent
+analysis, online data visualization for validation, and others.
+To address such dynamic code coupling, we introduce the
+concept of an extensible, dynamic, and flexible data workspace,
+termed LIVE. In contrast to the data exchanges programmed
+with MPI, MPI-IO, or grid software, LIVE focuses on data
+exchanges carried out without a priori knowledge of potential
+data requirements. Examples include exchanges required by adhoc
+or dynamically determined methods for data validation,
+for general data analysis tasks, or for data visualization. Run
+on an execution environment comprised of integrated dynamic
+discovery and on-line management services, LIVE is used to
+create a 'data workspace' for a working molecular dynamics code
+base utilized by mechanical and materials engineers at Georgia
+Tech, for multi-scale materials modeling. Measurements of both
+this application's data workspace and of the basic primitives
+in the LIVE framework demonstrate that the environment's
+substantial flexibility has minimal impact on overall performance,
+and in fact, that it improves performance in a number of usage
+scenarios. In particular, for a visualization pipeline example
+derived from our collaborators, we see a slight improvement
+over a solution based on MPI-IO, and a further improvement of
+up to 5% by utilizing LIVE's ability to overlap communication
+with user-specified computation.</i>

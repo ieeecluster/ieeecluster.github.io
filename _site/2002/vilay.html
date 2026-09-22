@@ -1,0 +1,31 @@
+Kernel-Level Caching for Optimizing I/O
+ by Exploiting Inter-Application Data Sharing
+<br>
+Murali  Vilayannur, Mahmut Kandemir, Anand Sivasubramaniam
+<P>With
+applications becoming larger and the increasing load on
+high-performance systems, it is important to tackle the I/O
+bottleneck
+problem from several angles. It is not only essential to
+optimize
+the I/O accesses of any one application, but also to be able
+to
+identify and exploit opportunities resulting from the
+sharing of
+datasets across applications.
+Clusters are rapidly becoming the
+platform of choice for demanding applications due to their
+cost-effectiveness
+and widespread deployment.
+Consequently, this paper attempts to optimize data sharing
+across
+applications concurrently executing on the cluster.
+Specifically, we propose and implement a kernel-level
+caching module
+at each node of a Linux cluster that can be used to service
+several
+processes of different applications. Using detailed
+evaluations on an
+actual Linux cluster, this paper demonstrates the benefitsof this
+module in optimizing intra and inter-application I/O
+requests.

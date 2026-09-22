@@ -1,0 +1,124 @@
+/* left side nav CSS */
+
+#navigation {
+   font-size: 12px;
+   //width:150px;
+}
+
+#listhead {
+   font-size: 12px;
+}
+
+/* ID for menu items to make bg darker grey */
+#homenav {
+  background-color: #ABA7A7 !important;
+} 
+
+/* Basic sidebar menu setup */
+
+#sidebar {
+  width: 100%;
+    /* Adds shadow to the bottom of the bar */
+  -webkit-box-shadow: 0px 0px 8px 0px #000000;
+  -moz-box-shadow: 0px 0px 8px 0px #000000;
+  box-shadow: 0px 0px 8px 0px #000000;
+  /* Adds the transparent background */
+}
+
+#sidebar ul li {
+  position: relative;
+}
+
+#sidebar ul li ul {
+  position: relative;
+}
+
+#sidebar ul li ul {
+  position: absolute;
+  float: right;
+  margin-left: 170px;
+  width: 150%;
+  z-index:9999;
+  -webkit-box-shadow: 0px 0px 8px 0px #000000;
+  -moz-box-shadow: 0px 0px 8px 0px #000000;
+  box-shadow: 0px 0px 8px 0px #000000;
+}
+
+
+#sidebar a {
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+#sidebar a:hover {
+    color: white !important;
+    background-color: #990000 !important;
+    text-decoration: none !important;
+}
+
+
+ul.sub-level {
+    display: none;
+}
+
+ul.sub-level2 {
+    display: none;
+}
+
+li:hover .sub-level {
+    background: #999;
+    border: #fff solid;
+    border-width: 1px;
+    display: block;
+    position: absolute;
+    left: 75px;
+    top: 5px;
+}
+
+li:hover .sub-level2 {
+    background: #999;
+    border: #fff solid;
+    border-width: 1px;
+    display: block;
+    position: absolute;
+    left: 75px;
+    top: 5px;
+}
+
+ul.sub-level-series2 {
+    visibility: hidden;
+}
+
+.sub-level-series2 ul li:hover > ul {
+  visibility: visible; 
+}
+
+li:hover > ul .sub-level-series2 {
+    background: #999;
+    border: #fff solid;
+    border-width: 1px;
+    display: block;
+    position: absolute;
+    left: 194px;
+    top: 1px;
+}
+
+#submenu {
+   font-size: 12px;
+   color: black !important;
+   padding-left: 20px !important;
+   padding-top: 5px !important;
+   padding-bottom: 5px !important;
+}
+#submenu:hover {
+    color: white !important;
+    background-color: #990000 !important;
+    text-decoration: none !important;
+}
+
+#fb-menu {
+  vertical-align: middle;
+}

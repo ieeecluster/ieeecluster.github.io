@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180911T133000
+DTEND;TZID=Europe/London:20180911T150000
+UID:ieeecluster_IEEE Cluster 2018_sess106@linklings.com
+SUMMARY:Paper session III: Architecture and Interconnect
+DESCRIPTION:The Tofu Interconnect D\n\nAjima, Kawashima, Okamoto, Shida, H
+ irai...\n\nIn this paper, we introduce a new and highly scalable interconn
+ ect called Tofu interconnect D that will be used in the post-K machine. Th
+ is machine will officially be operational around 2021. The letter D repres
+ ents high “density” node and “dynamic” packet slicing for “dual-rail” tran
+ sfer. Herein we...\n\n---------------------\nExploring HPC and Big Data Co
+ nvergence: A Graph Processing Study on Intel Knights Landing\n\nUta, Varba
+ nescu, Musaafir, Lemaire, Iosup\n\nThe question “Can big data and HPC infr
+ astructure converge?” has important implications for many operators and cl
+ ients of modern computing. However, answering it is challenging. The hardw
+ are is currently different, and fast evolving: big data uses machines with
+  modest numbers of fat cores per socket...\n\n---------------------\nJanus
+ : A Generic QoS Framework for Software-as-a-Service Applications\n\nJiang,
+  Lee, Zomaya\n\nThe move from the traditional Software-as-a-Product (SaaP)
+  model to the Software-as-a-Service (SaaS) model is apparent with the adop
+ tion of cloud computing. Unlike the SaaP model, the SaaS model delivers a 
+ diverse set of software features directly from public clouds to a large nu
+ mber of users with v...\n
+END:VEVENT
+END:VCALENDAR
+

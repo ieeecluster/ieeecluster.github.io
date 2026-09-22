@@ -1,0 +1,33 @@
+<i>
+Bulk memory copies incur large overheads such as CPU stalling
+(i.e., no overlap of computation with memory copy operation), small
+register-size data movement, cache pollution, etc. Asynchronous copy
+engines introduced by Intel's I/O Acceleration Technology help in alleviating
+these overheads by of_oading the memory copy operations
+using several DMA channels. However, the startup overheads associated
+with these copy engines such as pinning the application buffers,
+posting the descriptors and checking for completion noti_cations, limit
+their overlap capability. In this paper, we propose two schemes to provide
+complete overlap of memory copy operation with computation by
+dedicating the critical tasks to a single core in a multi-core system. In
+the _rst scheme, MCI (Multi-Core with I/OAT), we of_oad the memory
+copy operation to the copy engine and onload the startup overheads
+to the dedicated core. For systems without any hardware copy engine
+support, we propose a second scheme, MCNI (Multi-Core with
+No I/OAT) that onloads the memory copy operation to the dedicated
+core. We further propose a mechanism for an application-transparent
+asynchronous memory copy operation using memory protection. We
+analyze our schemes based on overlap ef_ciency, performance and associated
+overheads using several micro-benchmarks and applications.
+Our microbenchmark results show that memory copy operations can
+be signi_cantly overlapped (up to 100%) with computation using the
+MCI and MCNI schemes. Evaluation with MPI-based applications
+such as IS-B and PSTSWM-small using the MCNI scheme show up to
+4% and 5% improvement, respectively, as compared to traditional implementations.
+Evaluations with data-centers using the MCI scheme
+show up to 37% improvement compared to the traditional implementation.
+Our evaluations with gzip SPEC benchmark using applicationtransparent
+asynchronous memory copy show a lot of potential to use
+such mechanisms in several application domains.
+</i>
+

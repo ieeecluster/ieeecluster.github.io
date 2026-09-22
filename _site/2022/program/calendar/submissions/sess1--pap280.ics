@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:Bring the BitCODE - Moving Compute and Data in Distributed Heterog
+ eneous Systems
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20220907T110000
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20220907T113000
+DESCRIPTION:In this paper\, we present a framework for moving compute and 
+ data between processing elements in a distributed heterogeneous system. Th
+ e implementation of the framework is based on the LLVM compiler toolchain 
+ combined with the UCX communication framework. The framework can generate 
+ binary machine code or LLVM bitcode for multiple CPU architectures and mov
+ e the code to remote machines while dynamically optimizing and linking the
+  code on the target platform. The remotely injected code can recursively p
+ ropagate itself to other remote machines or generate new code. The goal of
+  this paper is threefold: (a) to present an architecture and implementatio
+ n of the framework that provides essential infrastructure to program a new
+  class of disaggregated systems wherein heterogeneous programming elements
+  such as compute nodes and data processing units (DPUs) are distributed ac
+ ross the system\, (b) to demonstrate how the framework can be integrated w
+ ith modern\, high-level programming languages such as Julia\, and (c) to d
+ emonstrate and evaluate a new class of eXtended Remote Direct Memory Acces
+ s (X-RDMA) communication operations that are enabled by this framework. To
+  evaluate the capabilities of the framework\, we used a cluster with Fujit
+ su CPUs and as well as heterogeneous cluster with Intel CPUs and BlueField
+ -2 DPUs interconnected using high-performance RDMA fabric. We demonstrated
+  an X-RDMA pointer chase application that outperforms an RDMA GET-based im
+ plementation by 70% and is as fast as Active Messages\, but does not requi
+ re function predeployment on remote platforms.
+END:VEVENT
+END:VCALENDAR

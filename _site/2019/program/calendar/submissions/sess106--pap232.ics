@@ -1,0 +1,57 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180911T140000
+DTEND;TZID=Europe/London:20180911T143000
+UID:ieeecluster_IEEE Cluster 2018_sess106_pap232@linklings.com
+SUMMARY:Janus: A Generic QoS Framework for Software-as-a-Service Applicati
+ ons
+DESCRIPTION:Janus: A Generic QoS Framework for Software-as-a-Service Appli
+ cations\n\nJiang, Lee, Zomaya\n\n\nThe move from the traditional Software-
+ as-a-Product (SaaP) model to the Software-as-a-Service (SaaS) model is app
+ arent with the adoption of cloud computing. Unlike the SaaP model, the Saa
+ S model delivers a diverse set of software features directly from public c
+ louds to a large number of users with varying quality of service (QoS) req
+ uirements. There are two outstanding issues with traditional QoS systems: 
+ (1) they are usually designed and developed with a special purpose, making
+  them difficult to be reused for other use cases; and (2) they have limite
+ d scalability due to the write-intensive nature of admission control workl
+ oad. In this paper, we present Janus - a generic and scalable QoS framewor
+ k for SaaS applications, taking full advantage of cloud's inherent horizon
+ tal scalability. Janus uses a multi-layer architecture to eliminate the co
+ mmunication between nodes in the same layer achieving horizontal scalabili
+ ty without sacrificing vertical scalability. Janus ensures accurate admiss
+ ion control using a distributed set of leaky buckets with a refill mechani
+ sm. Janus adopts a key-value request-response mechanism for easy integrati
+ on with the actual application. We extensively evaluate Janus on AWS with 
+ both Apache HTTP server benchmarking tool and a photo sharing web applicat
+ ion. Our experimental results demonstrate that (a) Janus achieves linear s
+ calability both vertically and horizontally, and (b) Janus can be integrat
+ ed with existing applications with a minimum amount of code change. Janus 
+ achieves more than 100,000 requests per second with only 10 nodes in the Q
+ oS server layer and 90% of the admission control decision were made in 3 m
+ illiseconds.
+END:VEVENT
+END:VCALENDAR
+

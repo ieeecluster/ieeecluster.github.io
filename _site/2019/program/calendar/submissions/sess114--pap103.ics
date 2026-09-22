@@ -1,0 +1,55 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180912T140000
+DTEND;TZID=Europe/London:20180912T143000
+UID:ieeecluster_IEEE Cluster 2018_sess114_pap103@linklings.com
+SUMMARY:Dynamic Control of CPU Usage in a Lambda Platform
+DESCRIPTION:Dynamic Control of CPU Usage in a Lambda Platform\n\nKim, Hose
+ inyFarahabady, Lee...\n\n\nLambda platform is a new concept based on an ev
+ ent-driven server-less computation that empowers application developers to
+  build scalable enterprise software in a virtualized environment without p
+ rovisioning or managing any physical servers (a server-less solution).\nIn
+  reality, however, devising an effective consolidation method to host mult
+ iple Lambda functions into a single machine is challenging.\nThe existing 
+ simple resource allocation algorithms, such as the round-robin policy used
+  in many commercial server-less systems, suffer from lack of responsivenes
+ s to a sudden surge in the incoming workload.\nThis will result in an unsa
+ tisfactory performance degradation that is directly experienced by the end
+ -user of a Lambda application.\nIn this paper, we address the problem of C
+ PU cap management in a Lambda platform for ensuring different QoS enforcem
+ ent levels in a platform with shared resources, in case of fluctuations an
+ d sudden surges in the incoming workload requests.\nTo this end, we presen
+ t a closed-loop (feedback-based) CPU cap controller, which fulfills the Qo
+ S levels enforced by the application owners.\nThe controller adjusts the n
+ umber of working threads per QoS class and dispatches the outstanding Lamb
+ da functions along with the associated events to the most appropriate work
+ ing thread.\nThe proposed solution reduces the QoS violations by an averag
+ e of 6.36 times compared to the round-robin policy.\nIt can also maintain 
+ the end-to-end response time of applications belonging to the highest prio
+ rity QoS class close to the target set-point while decreasing the overall 
+ response time by up to 52%.
+END:VEVENT
+END:VCALENDAR
+

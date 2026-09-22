@@ -1,0 +1,29 @@
+Design and Implementation of CC-NUMA Card II for SCI-based PC Clustering
+<br>
+Soo-Cheol  Oh, Sang-Hwa Chung, Hankook Jang
+<P>
+It is extremely important to minimize network access time
+in constructing a high-performance PC cluster system.  For
+an SCI-based PC cluster, it is possible to reduce the
+network access time by maintaining network cache in each
+cluster node.  This paper presents the second version CC-
+NUMA card (CC-NUMA card II) that utilizes network cache for
+SCI-based PC clustering.  The CC-NUMA card II is directly
+plugged into the PCI slot of each node, and contains shared
+memory, network cache, shared memory control module and
+network control module.  The network cache is maintained
+for the shared memory on the PCI bus of cluster nodes.  The
+coherency mechanism between the network cache and the
+shared memory is based on the IEEE SCI standard.  As a
+former research, the first version CC-NUMA card (CC-NUMA
+card I) was developed.  The CC-NUMA card I adopting a
+Dolphin\241\257s PCI-SCI card as the network control module
+caused overhead in exchanging data between the remote
+nodes.  In this paper, the overhead is removed by
+developing the CC-NUMA card II that combines the shared
+memory control module and the network control module in a
+single card.  Throughout the experiment with the SPLASH-2
+benchmark suite, the CC-NUMA card II based PC cluster shows
+better performance than a NUMA system based on Dolphin\241\257s
+PCI-SCI card.
+

@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:The Cost of Flexibility: Embedded versus Discrete Routers in CGRAs
+  for HPC
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20220909T120000
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20220909T123000
+DESCRIPTION:Coarse-Grained Reconfigurable Arrays (CGRAs) are a class of re
+ configurable architectures that inherit the performance and usability of C
+ entral Processing Units (CPUs) and the reconfigurability of Field-Programm
+ able Gate Arrays (FPGAs). Historically\, CGRAs have been used successfully
+  to accelerate embedded applications and are today also being considered t
+ o accelerate High-Performance Computing (HPC) applications in future super
+ computers. However\, embedded-systems and supercomputers are two different
+  domains with different applications and constraints\, and it is today not
+  fully understood what CGRA design decisions adequately cater to the HPC m
+ arket. One such unknown parameters is regarding the interconnect that faci
+ litates intra-CGRA communication. Today\, intra-CGRA communication comes i
+ n two flavors: using routers closely embedded into the compute units or us
+ ing discrete routers outside the compute units. The former trades flexibil
+ ity to reduce hardware cost\, while the latter has greater flexibility wit
+ h more resource usage. In this paper\, we investigate which of both design
+ s suits the CGRA HPC segment. We extend our previous methodology\, which c
+ onsists of both a parameterized CGRA design and an OpenMP-capable compiler
+ \, to accommodate both types of routing designs\, including verification t
+ ests using RTL simulation. Our results show that the discrete router desig
+ n can facilitate better use of processing elements (PEs) compared to embed
+ ded routers and achieve between 81.25% to 26.39% reduction in unnecessary 
+ PE occupancy for a aggressively unrolled stencil kernel on a 18 x 16 CGRA 
+ at a (estimated) interconnect resource overhead by 6.3x. This reduction in
+  PE occupancy can be used to exploit instruction-level parallelism (ILP) t
+ hrough even more aggressive unrolling.
+END:VEVENT
+END:VCALENDAR

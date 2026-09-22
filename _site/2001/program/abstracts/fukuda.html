@@ -1,0 +1,49 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Cluster2001: Abstracts</title>
+<link rel="stylesheet" type="text/css" href="../../cluster2001.css">
+</head>
+
+<body>
+
+<h1>Programmability and Performance of M++ Self-Migrating Threads &nbsp;</h1>
+<p>
+<b>Munehiro Fukuda<br>
+</b><a href="mailto:fukuda@is.tsukuba.ac.jp">fukuda@is.tsukuba.ac.jp</a>
+<b><br>
+</b>
+      Naoya Suzuki&nbsp;
+<b><br>
+University of Tsukuba</b><br>
+Luis Miguel Campos<b><br>
+University of California Irvine
+</b><br>
+<br>
+M++ self-migrating threads are C++ compiled objects, capable of<br>
+constructing computational network and autonomously migrating<br>
+themselves over a cluster system. The main goal of M++ is to provide a<br>
+cluster computing paradigm for multi-agent simulation that has gained<br>
+popularity in artificial life and ecological simulations, and<br>
+biological modeling. This type of simulation usually requires<br>
+autonomous objects, each having its own goals and behaviors, to<br>
+interact with each other in a synthetic world. The M++ self-migrating<br>
+threads match the characteristics of such objects in multi-agent<br>
+simulation, and can thus describe them with narrower semantics gap.<br>
+Fine granularity and large scalability are two fundamental<br>
+characteristics of this type of simulations that require fast thread<br>
+context switch and migration. With the scheduling policy we have<br>
+designed, M++ manages its threads in pin-downed pages, so that<br>
+Myrinet's network interface card can directly access and transfer those<br>
+threads without unnecessary copying operations. In this paper, we<br>
+present the M++ threads' programmability and study their performance<br>
+using two multi-agent simulation programs: ant farm simulation and<br>
+growing neural network.</p>
+<p><a href="../index.html">Back to Program</a></p>
+
+</body>
+
+</html>

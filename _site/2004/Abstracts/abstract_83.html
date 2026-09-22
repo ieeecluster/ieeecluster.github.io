@@ -1,0 +1,21 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en>"
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title> Cluster 2004 Abstract: The Design and Implementation of an Asynchronous Communication Mechanism for the MPI Communication M </title>
+</head>
+<center>
+<h2>The Design and Implementation of an Asynchronous Communication Mechanism for the MPI Communication M</h2>
+</center>
+<p> 
+<center>
+<h3>Motohiko Matsuda, et. al</h3>
+</center>
+<hr>
+<blockquote>
+This paper addresses a mismatch between the MPI communication model and the socket interface.  In order to overcome a mismatch and implement an efficient MPI library for large-scale commodity-based clusters, a new communication mechanism, called O2G, is designed and implemented.  O2G integrates receive queue management of MPI into a TCP/IP protocol handler, without modifying the protocol stacks.  Received data is extracted from the TCP receive buffer and copied into the user space within the TCP/IP protocol handler invoked by interrupts.  It totally avoids polling of sockets and reduces system call overhead, which becomes dominant in large-scale clusters. In addition, its immediate and asynchronous receive operation avoids message flow disruption due to a shortage of capacity in the receive buffer, and keeps the bandwidth high.  An evaluation using the NAS Parallel Benchmarks shows that O2G made an MPI implementation up to 30 percent faster than the original one.  An evaluation on bandwidth also shows that O2G made an MPI implementation independent of the number of connections, while an implementation with sockets was greatly affected by the number of connections. 
+</blockquote>
+<hr>
+<font size=-1><a href="../program.html">Back to Program</a></font>
+</body>
+</<html>

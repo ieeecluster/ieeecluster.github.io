@@ -1,0 +1,31 @@
+<i>
+tasets used in scientific and engineering applications
+are often modeled as dense multi-dimensional arrays. For
+very large datasets, the corresponding array models are typically
+stored out-of-core as array files. The array elements are mapped
+onto linear consecutive locations that correspond to the linear
+ordering of the multi-dimensional indices. Two conventional
+mappings used are the row-major order and the column-major
+order of multi-dimensional arrays. Such conventional mappings
+of dense array files highly limit the performance of applications
+and the extendibility of the dataset. Firstly, an array file that
+is organized in say row-major order causes applications that
+subsequently access the data in column-major order, to have
+abysmal performance. Secondly, any subsequent expansion of
+the array file is limited to only one dimension. Expansions of
+such out-of-core conventional arrays along arbitrary dimensions,
+require storage reorganization that can be very expensive. We
+present a solution for storing out-of-core dense extendible arrays
+that resolve the two limitations. The method uses a mapping
+function F_(), together with information maintained in axial
+vectors, to compute the linear address of an extendible array
+element when passed its k-dimensional index. We show how the
+mapping function, in combination with MPI-IO and a parallel
+file system, allows for the growth of the extendible array without
+reorganization and no significant performance degradation of
+applications accessing elements in any desired order. We give
+methods for reading and writing sub-arrays into and out of
+parallel applications that run on a cluster of workstations, The
+axial-vectors are replicated and maintained in each node that
+accesses sub-array elements.
+</i>

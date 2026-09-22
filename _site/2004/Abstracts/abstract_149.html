@@ -1,0 +1,21 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en>"
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title> Cluster 2004 Abstract: Efficient Barrier and Allreduce on IBA clusters using hardware multicast and adaptive algorithms </title>
+</head>
+<center>
+<h2>Efficient Barrier and Allreduce on IBA clusters using hardware multicast and adaptive algorithms</h2>
+</center>
+<p> 
+<center>
+<h3>Amith Mamidala, et. al</h3>
+</center>
+<hr>
+<blockquote>
+Current algorithms for doing Barrier and Allreduce like pair-wise exchange,  dissemination and gather-broadcast do not give an optimal performance when  there is skew in the system. In pair-wise exchange and dissemination, all  the nodes must arrive for completion of each step. The gather-broadcast  algorithm assumes a fixed tree topology. In this paper, we propose to  use hardware multicast of InfiniBand in the design of an adaptive algorithm  in presence of skew. In this approach, the topology of the tree is not fixed  but adapts depending on the skew. The last arriving node becomes the root of the tree if the skew is sufficiently large.   We carried out in-depth evaluation of our scheme and use synchronization  delay as the performance metric for barrier and allreduce in the presence  of skew. Our performance evaluation shows that our design scales very well with system  size. Our designs can reduce the synchronization delay by a factor of 2.28 for Barrier and by a factor  of 2.18 in the case of Allreduce. We have examine different skew scenarios and show that the adaptive design performs  either better or comparably to the existing schemes. 
+</blockquote>
+<hr>
+<font size=-1><a href="../program.html">Back to Program</a></font>
+</body>
+</<html>

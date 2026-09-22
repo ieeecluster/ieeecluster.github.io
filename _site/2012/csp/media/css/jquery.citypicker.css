@@ -1,0 +1,73 @@
+
+#citypicker_container {
+    font-size: 14px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #DDD;
+    background: #ffffff;
+    display: none;
+    z-index: 9999;
+    position: absolute;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+#citypicker_container #citypicker_caption {
+    color: #FFF;
+    float: left;
+    width: 100%;
+    line-height: 25px;
+    background: url(../images/title.gif) repeat-x;
+}
+
+#citypicker_container #citypicker_caption h1 {
+    font-size: 14px;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    text-indent: 15px;
+    margin: 0px;
+}
+
+#citypicker_container #citypicker_caption span {
+    float: right;
+    width: 26px;
+    height: 25px;
+    text-indent: -9999px;
+    background: url(../images/close.png) no-repeat right center;
+}
+
+#citypicker_container #citypicker_caption span:hover {
+    background: url(../images/close_hover.png) no-repeat right center;
+    cursor: pointer;
+}
+
+#citypicker_container #citypicker_pro {
+    clear: both;
+    padding: 10px;
+    background: url(../images/citypick_bg1.gif) no-repeat center center;
+}
+
+#citypicker_container label:hover {
+    font-weight: bold;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#citypicker_container #citypicker_city {
+    height: 85px;
+    padding: 10px;
+    background: url(../images/citypick_bg2.gif) no-repeat center top;
+}
+
+#citypicker_container label {
+    color: green;
+    display: inline-block;
+    text-align: center;
+    width: 70px;
+    height: 22px;
+    line-height: 22px;
+}

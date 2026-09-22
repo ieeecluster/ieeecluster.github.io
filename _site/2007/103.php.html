@@ -1,0 +1,21 @@
+<i><p>
+Checkpoint-restart is considered one of the most
+natural approaches to achieving fault-tolerance in a highperformance
+cluster. While experiences has focused attention on
+user-level solutions, the advent of efficient system-level virtualization
+software, such as Xen and VMWare, has opened the door to
+the possibility of efficient and scalable cluster-level virtualization.
+<p>In this paper we present an innovative approach to cluster fault
+tolerance by integrating the Xen virtualization with the latest generation
+of the InfiniBand network. A major contribution of this
+approach is the automatic identification of global recovery lines
+to freeze the status of the machine. Our focus is on the partitioned
+global address space (PGAS) programming models. PGAS models
+has been receiving an increasing amount of attention in the recent
+years. We have developed a global coordination mechanism and
+deployed it in the Aggregate Remote Memory Copy Interface
+(ARMCI) one-sided communication library that has been used
+as a run-time system for several PGAS languages and libraries.
+The experimental results show that it is possible to virtualize
+communication and computation with minimal overhead and to
+provide seamless migration capabilities.</i>

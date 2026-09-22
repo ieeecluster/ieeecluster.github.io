@@ -1,0 +1,17 @@
+<i>
+SuperMatrix out-of-order scheduling leverages
+high-level abstractions and straightforward data dependency
+analysis to provide a general-purpose mechanism for obtaining
+parallelism from a wide range of linear algebra operations.
+Viewing submatrices as the fundamental unit of data allows
+us to decompose operations into component tasks that operate
+upon these submatrices. Data dependencies between tasks are
+determined by observing the submatrix blocks read from and
+written to by each task. We employ the same dynamic outof-
+order execution techniques traditionally exploited by modern
+superscalar micro-architectures to execute tasks in parallel according
+to data dependencies within linear algebra operations.
+This paper provides a general explanation of the SuperMatrix
+implementation followed by empirical evidence of its broad applicability
+through performance results of several standard linear
+algebra operations on a wide range of computer architectures.</i>

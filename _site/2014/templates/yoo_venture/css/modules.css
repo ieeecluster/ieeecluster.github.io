@@ -1,0 +1,205 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/modules.css);
+
+
+/* Module Badges
+----------------------------------------------------------------------------------------------------*/
+
+.module .badge {
+	top: 15px;
+	right: 15px;
+	width: 40px;
+	height: 19px;
+	background: url(../images/module_badges.png) 0 0 no-repeat;
+}
+ 
+.module .badge-hot { background-position: 0 0; }
+.module .badge-new { background-position: 0 -30px; }
+.module .badge-free { background-position: 0 -60px; }
+.module .badge-top { background-position: 0 -90px; }
+
+
+.module .badge + .module-title { padding-right: 50px; }
+
+
+/* Module Icons
+----------------------------------------------------------------------------------------------------*/
+
+.module .module-title .icon { background: url(../images/module_icons.png) 0 0 no-repeat; }
+
+.mod-black .module-title .icon,
+.mod-header-color .module-title .icon { background-image: url(../images/module_icons_black.png); }
+
+.module .module-title .icon-download { background-position: 0 0; }
+.module .module-title .icon-twitter { background-position: 0 -30px; }
+.module .module-title .icon-mail { background-position: 0 -60px; }
+.module .module-title .icon-bubble { background-position: 0 -90px; }
+.module .module-title .icon-login { background-position: 0 -120px; }
+.module .module-title .icon-cart { background-position: 0 -150px; }
+
+
+/* Module Type: Box
+----------------------------------------------------------------------------------------------------*/
+
+.mod-box,
+.system-1 #content {
+	padding: 15px;
+	border: 1px solid #ddd;
+	border-bottom-color: #ccc;
+	border: 1px solid rgba(0,0,0,0.05);
+	border-bottom-color: rgba(0,0,0,0.13);
+	border-radius: 6px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.07);
+}
+
+#logo {
+	padding: 15px;
+	border: 1px solid #ddd;
+	border-bottom-color: #ccc;
+	border: 1px solid rgba(0,0,0,0.05);
+	border-bottom-color: rgba(0,0,0,0.13);
+	border-radius: 6px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.07);
+	background:#FFF;
+	}
+
+/* Module Text-Shadow */
+.mod-box,
+.mod-header,
+.mod-line,
+.mod-frame,
+.mod-inset,
+.mod-dotted { text-shadow: 0 1px 0 rgba(255,255,255,1); }
+
+
+/* Module Type: Black
+----------------------------------------------------------------------------------------------------*/
+
+.mod-black {
+	padding: 15px;
+	border: 1px solid #fafafa;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 6px;
+	background: #333;
+	background: -moz-linear-gradient(top, #333 0%, #444 100%);
+	background: -webkit-linear-gradient(top, #333 0%, #444 100%);
+	background: -o-linear-gradient(top, #333 0%, #444 100%);
+	background: linear-gradient(to bottom, #333 0%, #444 100%);
+	background-clip: padding-box;
+	box-shadow: 0 1px 3px rgba(0,0,0,1) inset,
+				0 0 20px rgba(0,0,0,0.3) inset;
+	color: #ccc;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+}
+
+.mod-black .module-title { color: #fff; }
+.mod-black strong { color: #eee; }
+
+
+/* Module Type: Inset
+----------------------------------------------------------------------------------------------------*/
+
+.mod-inset {
+	padding: 15px;
+	border: 1px solid #e4e4e4;
+	border-top-color: #dfdfdf;
+	border: 1px solid rgba(0,0,0,0.06);
+	border-top-color: rgba(0,0,0,0.13);
+	border-radius: 6px;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.08) inset,
+				0 0 30px rgba(0,0,0,0.1) inset,
+				0 1px 0 rgba(255,255,255,0.4);
+}
+
+
+/* Module Type: Frame
+----------------------------------------------------------------------------------------------------*/
+
+.mod-frame {
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-bottom-color: #d1d1d1;
+	border: 1px solid rgba(0,0,0,0.05);
+	border-bottom-color: rgba(0,0,0,0.1);
+	border-radius: 6px;
+	background: #fff;
+	background-clip: padding-box;
+	box-shadow: 0 0 10px rgba(0,0,0,0.03),
+				0 1px 2px rgba(0,0,0,0.06);
+}
+
+.mod-frame > div {
+	padding: 15px;
+	border-radius: 3px;
+}
+
+/* Module Type:  Dotted
+----------------------------------------------------------------------------------------------------*/
+
+.mod-dotted {
+	padding: 15px;
+	border: 2px dashed #ddd;
+	border: 2px dashed rgba(0,0,0,0.1);
+	border-radius: 6px;
+}
+
+.mod-dotted .module-title { color: #666; }
+
+
+/* Module Type: Header
+----------------------------------------------------------------------------------------------------*/
+
+.mod-header .module-title {
+	padding: 8px;
+	border-radius: 5px;
+}
+
+.module.mod-header-color .module-title:before {
+	top: 1px;
+	bottom: auto;
+}
+
+.mod-header .badge {
+	top: 9px;
+	right: 9px;
+}
+
+
+/* Module Type: Line
+----------------------------------------------------------------------------------------------------*/
+
+.mod-line:before {
+	content: "";
+	display: block;
+	position: absolute;
+}
+
+.grid-h .mod-line { padding-right: 20px; }
+
+.grid-h .mod-line:before {
+	top: 0;
+	bottom: 0;
+	left: -20px;
+	border-left: 1px solid #d4d4d4;
+	border-left: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 1px 0 0 rgba(255,255,255,0.4);
+}
+
+.grid-v .mod-line:before {
+	top: -12px;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #d4d4d4;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.4);
+}
+
+.grid-h:first-child .mod-line:before,
+.grid-v:first-child .mod-line:before { border-width: 0; }
+
+.grid-h .mod-line .badge { top: 0; }
+.grid-v .mod-line .badge {
+	top: 0;
+	right: 0;
+}

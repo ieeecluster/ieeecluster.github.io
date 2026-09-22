@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Cluster2001 Abstracts</title>
+<link rel="stylesheet" type="text/css" href="cluster2001.css">
+</head>
+
+<body>
+
+<h1>The Design and Implementation of a Fault-Tolerant Cluster Manager&nbsp;</h1>
+<p><b>Yuval Tamir<br>
+</b><a href="mailto:tamir@cs.ucla.edu">tamir@cs.ucla.edu<br>
+</a>Daniel Goldberg<br>
+Ming Li<br>
+Wenchao Tao<br>
+<b>Concurrent Systems Laboratory, UCLA</b><br>
+<br>
+Cluster management middleware schedules tasks, controls<br>
+access to shared resources, provides for task submission and<br>
+monitoring, and coordinates the  cluster's  fault  tolerance<br>
+mechanisms.   Thus,  reliable  continuous  operation  of the<br>
+management  middleware  in  the  presence  of  faults  is  a<br>
+prerequisite  to  the reliable operation of the cluster.  We<br>
+present design considerations and implementation details  of<br>
+cluster  mangement middleware for high performance computing<br>
+in space, where fault rates are  significantly  higher  than<br>
+for  earth-bound  systems.  We describe detection, recovery,<br>
+and reconfiguration mechanisms for  key  system  components.<br>
+The  system is based on centralized decision making.  Unlike<br>
+most  other  systems,  the  decision  making  capability  is<br>
+protected    by    active   replication   that   facilitates<br>
+uninterrupted operation  and  the  ability  to  restore  the<br>
+decision  maker  to  full  operational  and  fault tolerance<br>
+capabilities  following  node   failure.    The   management<br>
+middleware  is used to provide the application tasks with an<br>
+out-of-band signaling capability that can be a key  building<br>
+block for application-level fault tolerance mechanisms.  The<br>
+middleware described has been implemented  as  part  of  the<br>
+UCLA  Fault-Tolerant  Cluster Testbed (FTCT) project.  Based<br>
+on  measurements  of   this   implementation,   we   present<br>
+preliminary  evaluation  of  the  overheads  incurred by the<br>
+management middleware.</p>
+<p><a href="../index.html">Back to Program</a></p>
+
+</body>
+
+</html>

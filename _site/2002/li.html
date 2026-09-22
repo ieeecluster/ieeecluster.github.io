@@ -1,0 +1,26 @@
+I/O Analysis and Optimization for an AMR Cosmology Application
+<br>
+Jianwei  Li, Wei-keng Liao, Alok Choudhary, Valerie Taylor
+<P>
+In this paper, we investigate the data access patterns
+and file I/O behaviors of a production cosmology
+appli-cation that uses the adaptive mesh refinement (AMR)
+technique for its domain decomposition. This application
+was originally developed using Hierarchical Data
+Format (HDF version 4) I/O library and since HDF4
+does not provide parallel I/O facilities, the global file
+I/O operations were carried out by one of the allocated
+processors. When the number of processors becomes
+large, the I/O performance of this design degrades
+significantly due to the high communication costs and
+sequential file access. In this work, we present two
+additional I/O implementations, using MPI-IO and
+parallel HDF version 5, and analyze their impacts to
+the I/O performance for this typical AMR application.
+Based on the I/O patterns discovered in this application,
+we also discuss the interaction between user level
+parallel I/O operations and different parallel file systems
+and point out the advantages and disadvantages.
+The performance results presented in this work are obtained
+from an SGI Origin2000 using XFS, an IBM
+SP-2 using GPFS, and a Linux cluster using PVFS.

@@ -1,0 +1,50 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180913T104500
+DTEND;TZID=Europe/London:20180913T121500
+UID:ieeecluster_IEEE Cluster 2018_sess123@linklings.com
+SUMMARY:Paper session XII: Scheduling, Elasticity and Energy
+DESCRIPTION:Elasticity in Graph Analytics? A Benchmarking Framework for El
+ astic Graph Processing\n\nUta, Au, Ilyushkin, Iosup\n\nGraphs are a natura
+ l fit for modeling concepts used in solving diverse problems in science, c
+ ommerce, engineering, and governance. Responding to the diversity of graph
+  data and algorithms, many parallel and distributed graph-processing syste
+ ms exist. However, until now these platforms use a static m...\n\n--------
+ -------------\nLeveraging Dependency in Scheduling and Preemption for High
+  Throughput in Data-Parallel Clusters\n\nLiu, Shen, Sarker\n\nTask schedul
+ ing and preemption are two important functions in data-parallel clusters. 
+ Though directed acyclic graph task dependencies are common in data-paralle
+ l clusters, previous task scheduling and preemption methods do not fully u
+ tilize such task dependency to increase throughput since they simp...\n\n-
+ --------------------\nSelf-Consumption Optimization of Renewable Energy Pr
+ oduction in Distributed Clouds\n\nCamus, Blavette, Dufossé, Orgerie\n\nThe
+  growing appetite of new technologies, such as Internet-of-Things, for Clo
+ ud resources leads to an unprecedented energy consumption for these infras
+ tructures. In order to make these energy-hungry distributed systems more s
+ ustainable, Cloud providers resort more and more to on-site renewable ener
+ g...\n
+END:VEVENT
+END:VCALENDAR
+

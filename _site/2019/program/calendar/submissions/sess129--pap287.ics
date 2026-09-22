@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180913T153000
+DTEND;TZID=Europe/London:20180913T160000
+UID:ieeecluster_IEEE Cluster 2018_sess129_pap287@linklings.com
+SUMMARY:PDFE: Flexible Parallel State Machine Replication for Cloud Comput
+ ing
+DESCRIPTION:PDFE: Flexible Parallel State Machine Replication for Cloud Co
+ mputing\n\nWu, Wu, Huang...\n\n\nState machine replication (SMR) is a fund
+ amental fault tolerant technique for distributed systems to guarantee cons
+ istency among replicas via sequential execution of commands. With the deve
+ lopment of cloud computing, parallel SMR has been recently proposed for la
+ rge scale cloud datacenters. In this paper, we propose PDFE, a novel paral
+ lel SMR scheme, which realizes flexible dispatch of parallel ordered comma
+ nds for parallel executing. In PDFE, the mapping/binding between ordering 
+ threads and work threads becomes dynamic, and commands can be dis-patched 
+ according to the work load level of different threads. Such flexibility ca
+ n help achieve two levels of load balancing: load balancing between orderi
+ ng threads and work threads, and load balancing among work threads. The ma
+ jor challenge in our work lies in the inconsistency problem caused by dyna
+ mic changes in command dispatch, and it is addressed by a specially design
+ ed mechanism. Compared with existing parallel SMR schemes, PDFE can achiev
+ e better load balancing and higher system efficiency. Such advantages are 
+ validated by experimental perfor-mance evaluation.
+END:VEVENT
+END:VCALENDAR
+

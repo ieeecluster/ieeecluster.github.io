@@ -1,0 +1,38 @@
+JESSICA2: A Distributed Java Virtual Ma
+chine with Transparent Thread Migration Support
+<br>
+Wenzhang Zhu, Cho-Li Wang, Francis C. M. Lau
+<P>
+A distributed Java
+ Virtual Machine (DJVM) running across
+multiple cluster nodes provides a true parallel execution
+environment for performing multi-threaded Java applications
+in a distributed environment. While there are several
+prototypes of DJVMs ever implemented, the approach of using
+Just-in-Time compiler (JIT) in a DJVM was little explored in
+the literature. Most existing DJVMs, while supporting some
+forms of migratability, usually suffer from the slow Java
+interpreter execution and may not be efficient enough for
+solving computation-intensive problems. In this paper we
+present JESSICA2, new DJVM running in JIT mode that can run
+multi-threaded Java applications transparently on clusters
+with an single system image (SSI) illusion. JESSICA2
+implemented a cluster-aware Java execution engine, which
+allows Java threads to be migrated in JIT mode for purpose
+of dynamic load balancing. In this paper, we explain the
+issues surrounding thread migration in a JIT compilation
+environment and show that it can greatly help DJVM for
+achieving high performance. In addition, JESSICA2 achieves
+SSI by hiding all the distributed object accesses with a
+global object space (GOS), which frees the user from caring
+about the physical location on which a Java thread is
+running. The object-oriented implementation of GOS satisfies
+the memory constrains in current Java Memory Model and
+effectively exploits the Java semantics to reduce the object
+access overheads in the distributed environments. An
+adaptive migrating-home protocol used in GOS is introduced.
+JESSICA2 has been implemented on an 8-node x86-based Linux
+clusters. Significant performance improvement over JESSICA
+was
+observed.
+

@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180911T133000
+DTEND;TZID=Europe/London:20180911T150000
+UID:ieeecluster_IEEE Cluster 2018_sess105@linklings.com
+SUMMARY:Paper session II: Matrix algorithms
+DESCRIPTION:Load-balancing-aware Parallel Algorithms of H-matrices with Ad
+ aptive Cross Approximation for GPUs\n\nHOSHINO, IDA, HANAWA, NAKAJIMA\n\nH
+ ierarchical matrices (H-matrices) are an approximation technique for dense
+  matrices, such as the coefficient matrix of the Boundary Element Method (
+ BEM). An H-matrix is expressed by a set of low-rank approximated and small
+  dense sub-matrices, each of which has various rank, of the dense matrix. 
+ The...\n\n---------------------\nEnergy Analysis and Optimization for Resi
+ lient Linear Systems\n\nMiao, Calhoun, Ge\n\nExascale computing must simul
+ taneously address both energy efficiency and\nresilience as power limits i
+ mpact scalability and faults are more common.\nUnfortunately, energy effic
+ iency and resilience have been traditionally studied\nin isolation and opt
+ imizing one typically detrimentally impacts the othe...\n\n---------------
+ ------\nA New Approach for Sparse Matrix Classification Based on Deep Lear
+ ning Techniques\n\nPichel, Pateiro-López\n\nIn this paper, a new methodolo
+ gy to select the best storage format for sparse matrices based on deep lea
+ rning techniques is introduced. We focus on the selection of the proper fo
+ rmat for the sparse matrix-vector multiplication (SpMV), which is one of t
+ he most important computational kernels in many ...\n
+END:VEVENT
+END:VCALENDAR
+

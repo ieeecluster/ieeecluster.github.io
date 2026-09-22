@@ -1,0 +1,21 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en>"
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title> Cluster 2004 Abstract: Speeding Up CG on Cluster with Two-dimnsional Blocking Method and EARTH Runtime Support  </title>
+</head>
+<center>
+<h2>Speeding Up CG on Cluster with Two-dimnsional Blocking Method and EARTH Runtime Support </h2>
+</center>
+<p> 
+<center>
+<h3>Fei Chen, et. al</h3>
+</center>
+<hr>
+<blockquote>
+Conjugate Gradient (CG) is one of the most popular  iterative approaches in solving large sparse linear  system of equations. This paper reports a parallel  implementation of the Conjugate Gradient (CG) algorithm  on clusters with EARTH multithreaded runtime support.  In our implementation, the inter-phase and intra-phase communication costs are well balanced with a  two-dimensional blocking method, minimizing the overall communication cost. EARTH architecture, with its adaptive,  event-driven multithreaded execution model, gives  additional opportunities to overlap communication and computation to achieve even better scalability.  Experiments have been done on Chiba City, a 256 dual CPU  cluster in Argonne National Laboratory (ANL). Notable improvements over other CG parallel implementations have been observed. For example, with the NAS CG benchmark problem size Class C, our implementation achieved  relative speedup of 41 on a 64-node Chiba City cluster (with Ethernet connection), while the original NAS  parallel CG implemented with MPI achieved only 13. Even though most clusters have relatively slow inter-node  connection compared with the computing capability of  their processors, the results demonstrate that the  combination of the two-dimensional blocking method  and the EARTH architectural runtime support helps to speed  up the CG algorithm significantly on clusters by reducing  and hiding the communication latency, making the clusters  an even better platform for large scale parallel scientific   computations. 
+</blockquote>
+<hr>
+<font size=-1><a href="../program.html">Back to Program</a></font>
+</body>
+</<html>

@@ -1,0 +1,39 @@
+/*************************************************
+ * IU Branding Bar & Footer
+ *
+ * Version: 1.01
+ * Author: IU Communications 
+ * Author URI: http://communications.iu.edu
+ ************************************************/
+
+/****************************************
+ * Import Media Queries
+ ****************************************/
+
+@import url("branding-bar-wide.css");
+  
+  
+/****************************************
+ * General Formatting
+ ****************************************/
+
+/*** Reusable Classes ***/
+
+/* Wrapper */
+.wrapper {
+    width: 992px; /* ADJUST THIS TO FIT YOUR SITE */    
+}
+
+
+/****************************************
+ * Branding Bar
+ ****************************************/
+
+/*** Trident Tab & Campus Name ***/
+
+#branding-bar .campus abbr {
+    display: none;  
+}
+#branding-bar .campus .expanded {
+    display: block;
+}

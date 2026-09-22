@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://clustercomp.org/2021/sitemap.xml

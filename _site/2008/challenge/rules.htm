@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<script type="text/javascript" src="http://www.cluster2008.org/static/js/analytics.js"></script><link type="text/css" rel="stylesheet" href="http://www.cluster2008.org/static/css/banner_styles.css">
+<title>
+How the contest goes?
+</title>
+<style>
+<!--
+h2 {
+  background-color:#ccc;
+}
+-->
+<!--
+dh {
+  font-weight:bold;
+}
+-->
+</style>
+</head>
+<body bgcolor="#EEEEEE">
+
+
+
+<h1>How the Data Analysis Challenge Basically Goes</h1> 
+
+This page explains how this contest basically goes.  There are some
+details we are still working on. If you register to the contest, you
+will get an access to these details as they are determined.
+
+<h2>Basic Flow</h2>
+
+<dl>
+<dh>Account</dh><dd>You will get an account soon after your registration.</dd>
+
+<dh>Problem Specification</dh><dd>The problem specification will be described in this page once we
+determine the details.
+</dd>
+
+<dh>Toolkit</dh><dd>The committee provides a toolkit to do basic image analysis and
+check your answers.</dd>
+
+</dl>
+<p>
+We are trying to make all the above steps happen by mid June so
+participants start working around that time.
+</p>
+
+<dl>
+<dh>Qualification period</dh><dd>Your qualification period begins immediately as soon as you
+get your account, and lasts until the final round begins. You can work
+at any time during the qualification.
+</dd>
+
+<dh>Final round</dh><dd>There will be a final round around the end of July to early
+August. Exact dates will be determined by the number of participating
+groups. Each team is assigned a dedicated time slot in which the team
+should solve all final problems. The team should send their results,
+programs, and a short report to the committee.
+</dd>
+
+<dh>Winner</dh><dd>The winner is determined by the sent results and programs. The
+committee may look at the program and ask to run their programs again
+when an issue arises.
+</dd>
+</dl>
+<p>
+Each step is described in somewhat more detail below. 
+</p>
+
+<h2>Account</h2>
+
+<p>
+For registrations we received by the end of May, we will make their
+accounts ready on May 31th. For those received after that day, we will
+make accounts in about a week from the registration.
+</p>
+
+<h2>Problem Specification</h2>
+
+<p>
+The problem specification will be described in this page once we
+determine the full details. Here is a brief overview.
+</p>
+
+<ul>
+<li>You are given lots of image files. Files are distributed across
+many sites.
+</li>
+
+<li>Each image is a shot of a small region of the sky taken by the
+Subaru Telescope and formatted as a FITS (Flexible Image Transport
+System) file (with '.fits' extension). You do not have to know the
+details of the file format unless you like to, as the committee gives
+you a basic analysis toolkit 'superfind' that hides low level details.
+</li>
+
+<li>Each image is paired with another image that takes a shot of the
+same region of the sky at a different point in time (e.g., one is
+taken one month after the other). By comparing the difference of such
+a pair of images, you can get region(s) whose brightnesses slightly
+differ. Such regions are candidates where a supernova may have been
+captured. The image analysis toolkit superfind takes two image file
+names, compares them, and outputs such regions to the standard output.
+</li>
+
+<li>Your job is to apply the image comparison by superfind to all
+given pairs. Your program obtains the location of data by invoking
+another program provided by the committee (dach_api). After the job is
+done, your program should invoke dach_api again with the answer. It
+checks if the answer is correct and measures the elapsed (wallclock)
+time.
+</li>
+
+<li>You may freely modify superfind for the purpose of the contest
+(e.g., performance optimization), or even write a similar tool from
+scratch, as long as the output is identical to the original. Bear in
+mind, however, that superfind applies a series of transformations to
+cope with noisy data, and such transformations are highly heuristic in
+nature, so you may find it difficult to write such a program from
+scratch.</li>
+</ul>
+<h2>Toolkit</h2>
+
+<p>As indicated above, the committee provides two programs.</p>
+
+<dl>
+<dh>dach_api</dh><dd>A command to give you the data repository and check answers. It
+also measures the time the program took to solve the problem.
+</dd>
+
+<dh>superfind</dh><dd>The basic image analysis tool.</dd>
+</dl>
+<p>They are shell scripts that will be invoked by your program as
+separate processes. dach_api, when invoked to obtain the data
+repository (with --get_problem option), gives you a directory in which
+your program will find file pairs it should work on. It also starts
+time measurement. When invoked to check answers (with --check_ans
+option), it reads its stdin and checks if its content is a correct
+answer or not. It also outputs and records the elapsed time.
+</p>
+
+<p>Your program thus must be able to run a subprocess, get its
+stdout/stderr, and feed its stdin. Most programming languages have
+popen-like interfaces to make them fairly straightforward, but in case
+the programming language or problem solving tool you use find it very
+tricky, please consult the committee.</p>
+
+<p>In summary, your program should do something like this, if written
+in a pseudo code.</p>
+
+<pre>
+ obtain the data repository by calling 'dach_api --get_problem';
+ all workers cooperate and compare image files in the data repository, 
+   presumably using superfind;
+ check your answer by calling 'dach_api --check_ans';
+</pre>
+
+<p>
+Details as to how "workers" are instantiated, how workers communicate,
+how many workers are run, who calls dach_api, etc., are all up to you.
+</p>
+
+<h3>How to access the files? </h3>
+
+<p>Image files are distributed over multiple sites. They can be
+accessed via regular file system APIs of whatever programming
+languages or tools of your choice (as a matter of fact, programs that
+directly read these image files are likely to be superfind, not your
+program, so you may not care which APIs to use). For the underlying
+file systems, we provide two file systems in the environment and load
+them with the same data. Your program can choose whichever file system
+you like.</p>
+
+<dl>
+<dh>Site-wise NFS</dh><dd>Each site has an NFS server and all compute nodes of a site can
+access the NFS server of the same site, but not of other sites. As a
+result, each compute node will see only a subset of all the file pairs
+to compare under the designated data repository. If two compute nodes
+A and B belong to different sites, the files they observe may be
+different.</dd>
+
+<dh>Gfarm</dh><dd>The other is a gfarm distributed file system. Using gfarm, your
+program will see a single shared directory. That is, all compute nodes
+will see all and thus exactly the same set of file pairs under the
+designated repository. The committee maintains the health of Gfarm and
+you just need to run a single mount command (gfarm2fs) to access the
+file system.</dd>
+</dl>
+<p>You may choose either of them. If you like to use both, you should
+send two separate reports, one entirely with NFS and the other
+entirely with gfarm. You cannot change file systems from a data set to
+another, or from a run to another.</p>
+
+<h2>Qualification period</h2>
+
+<p>Your qualification period begins right after you get your account
+and lasts until right before the final period (with a margin of a
+couple of days). In this period, you can use resources according to
+the resource usage rule, sharing them with other participants and with
+regular users.</p>
+
+<p><i>Resource usage rule is not yet fully described. For now, just
+avoid occupying many CPUs for a long time.</i></p>
+
+<h2>Final round</h2>
+
+<p>After the qualification period, there will be a final round around
+the end of July to early August. Exact dates will be determined by the
+number of participating groups.</p>
+
+<p>In the final period, each team is assigned a scheduled time slot
+(about 90 min.), in which all the resources are dedicated for you. In
+the time slot, you will run your programs on all data sets and send
+your results, programs, and a short report to the committee. The short
+report will describe such basic info as which programming languages or
+problem solving tools you have used, how to compile and run your
+programs, etc.</p>
+
+<h3>How the winner is determined </h3>
+
+<p>Programs are formally judged by the time they took to solve the
+problem. Exact details on how to average records of all the data sets
+will be determined and announced soon. We are not going to use any
+subjective criteria/method to determine winners (e.g., clarity of the
+code, etc.).</p>
+
+<p>For the FT category, a number of processes are killed by a
+predetermined scenario. You may assume they are process deaths, not
+hardware faults or OS hangs, to simplify fault injections. Exact
+details on how much information will be exposed beforehands are to be
+determined and announced shortly. Then the winner will be determined
+by the elapsed time.</p>
+
+<p>The committee then decides speakers in the conference among the
+participants. The winner will definitely be chosen, but other teams
+will be selected too based on multiple criterion reflecting likely
+interests of the audiences. They include (1) speed, (2) application
+code clarity, thereby demonstrating the power of the underlying
+programming languages, middlewares, or problem-solving tools, (3)
+speedup in large number of processors, thereby demonstrating the
+scalability. There will be a room in our schedule for three or four
+speakers.</p>
+
+</body>
+</html>

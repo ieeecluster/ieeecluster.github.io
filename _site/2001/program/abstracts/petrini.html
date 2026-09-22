@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Cluster2001: Abstracts</title>
+<link rel="stylesheet" type="text/css" href="../../cluster2001.css">
+</head>
+
+<body>
+
+<h1>Using Multirail Networks in High Performance Clusters &nbsp;</h1>
+<p><b>      Fabrizio Petrini&nbsp;<br>
+</b>&nbsp;<a href="mailto:fabrizio@lanl.gov">fabrizio@lanl.gov<br>
+</a><b>Salvador Coll&nbsp;<br>
+      Eitan Frachtenberg&nbsp;<br>
+Los Alamos National Laboratory&nbsp;<br>
+</b><br>
+Using multiple independent networks (also known as rails) is an<br>
+emerging technique to overcome bandwidth limitations and enhance<br>
+fault-tolerance of current high-performance clusters. We present and<br>
+analyze various venues for exploiting multiple rails. Different rail<br>
+access policies are presented and compared, including static and<br>
+dynamic allocation schemes.  An analytical lower bound on the number of<br>
+networks required for static rail allocation is shown. We also present<br>
+an extensive experimental comparison of the behavior of various<br>
+allocation schemes in terms of bandwidth and latency.  Striping<br>
+messages over multiple rails can substantially reduce network latency,<br>
+depending on average message size, network load and allocation scheme.<br>
+The methods compared include a static rail allocation, a round-robin<br>
+rail allocation, a dynamic allocation based on local knowledge, and a<br>
+rail allocation that reserves both end-points of a message before<br>
+sending it. The latter is shown to perform better than other methods at<br>
+higher loads: up to 49% better than local-knowledge allocation and 37%<br>
+better than the round-robin allocation. This allocation scheme also<br>
+shows lower latency and it saturates on higher loads (for messages<br>
+large enough). Most importantly, this proposed allocation scheme scales<br>
+well with the number of rails and message sizes.</p>
+<p><a href="../index.html">Back to Program</a></p>
+
+</body>
+
+</html>

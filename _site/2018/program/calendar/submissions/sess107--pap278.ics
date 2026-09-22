@@ -1,0 +1,59 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134850Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180911T163000
+DTEND;TZID=Europe/London:20180911T170000
+UID:ieeecluster_IEEE Cluster 2018_sess107_pap278@linklings.com
+SUMMARY:Parallel Approximation of the Maximum Likelihood Estimation for th
+ e Prediction of Large-Scale Geostatistics Simulations
+DESCRIPTION:Parallel Approximation of the Maximum Likelihood Estimation fo
+ r the Prediction of Large-Scale Geostatistics Simulations\n\nAbdulah, Ltai
+ ef, Sun...\n\n\nMaximum likelihood estimation is an important statistical 
+ technique for estimating missing data,  for example in climate and environ
+ mental applications, which are usually large and feature data points that 
+ are irregularly spaced. In particular, the Gaussian log-likelihood functio
+ n is the de facto model, which operates on the resulting sizable dense cov
+ ariance matrix. The advent of high-performance systems with advanced compu
+ ting power and memory capacity have enabled full simulations only for rath
+ er small dimensional climate problems, solved at the machine precision acc
+ uracy. The challenge for high dimensional problems lies in the computation
+  requirements of the log-likelihood function, which necessitates O(n^2) st
+ orage and  O(n^3) operations, where n represents the number of given spati
+ al locations. This prohibitive computational cost may be reduced by using 
+ approximation techniques that not only enable large-scale simulations othe
+ rwise intractable but also maintain the accuracy and the fidelity of the s
+ patial statistics model. In this paper, we extend the Exascale GeoStatisti
+ cs software (i.e., ExaGeoStat) to support the Tile Low-Rank (TLR) approxim
+ ation, which exploits the data sparsity of the dense covariance matrix by 
+ compressing the off-diagonal tiles up to a user-defined accuracy threshold
+ . The underlying linear algebra operations may then be carried out on this
+  data compression format, which may ultimately reduce the arithmetic compl
+ exity of the maximum likelihood estimation and the corresponding memory fo
+ otprint. Performance results of TLR-based computations on shared and distr
+ ibuted-memory systems attain up to 13X and 5X speedups,  respectively, com
+ pared to full accuracy simulations using synthetic and real datasets (up t
+ o 2M), while ensuring adequate prediction accuracy.
+END:VEVENT
+END:VCALENDAR
+

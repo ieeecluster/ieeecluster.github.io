@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180913T114500
+DTEND;TZID=Europe/London:20180913T121500
+UID:ieeecluster_IEEE Cluster 2018_sess122_pap175@linklings.com
+SUMMARY:Co-scheduling HPC workloads on cache-partitioned CMP platforms
+DESCRIPTION:Co-scheduling HPC workloads on cache-partitioned CMP platforms
+ \n\nAupy, Benoit, Goglin...\n\n\nCo-scheduling techniques are used to impr
+ ove the throughput of applications on chip multiprocessors (CMP), but shar
+ ing resources often generates critical interferences. We focus on the inte
+ rferences in the last level of cache (LLC) and use the Cache Allocation Te
+ chnology (CAT) recently provided by Intel to partition the LLC and give ea
+ ch co-scheduled application their own cache area. We consider m iterative 
+ HPC applications running concurrently and answer to the following question
+ s: (i) how to precisely model the behavior of these applications on the ca
+ che partitioned platform? and (ii) how many cores and cache fractions shou
+ ld be assigned to each application to maximize the platform efficiency? He
+ re, platform efficiency is defined as maximizing the performance either gl
+ obally, or as guaranteeing a fixed ratio of iterations per second for each
+  application. Through extensive experiments using CAT, we demonstrate the 
+ impact of cache partitioning when multiple HPC application are co-schedule
+ d onto CMP platforms.
+END:VEVENT
+END:VCALENDAR
+

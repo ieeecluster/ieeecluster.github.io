@@ -1,0 +1,2127 @@
+/*
+I've done some work merging sr_styles and cs_styles here; do more as we go.
+
+I've started moving all .page_box_print stuff to print_styles_1.css - test more
+contexts and then delete them from here.
+
+*/
+
+/** ***** PRINT ****** */
+@media print
+{
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
+
+/** ***** BASIC ELEMENTS ***** */
+blockquote {
+    margin: 0.5ex 3ex 0.5ex 3ex;
+}
+hr {
+    background-color: lightgray;
+    height: 1px;
+    border-width: 0px;
+}
+
+.page_title { margin: 0px }
+
+.in_page_title {
+    font-size: 150%;
+    margin-top: 1em;
+    font-weight: bold;
+    color: rgb(70%, 15%, 15%);
+}
+
+/** ****** To box in the overall (outer) content of our pages. ***** */
+.page_box {
+    /*margin: 0px 0px 20px 0px; removing the bottom margin to make more room for grids*/
+    margin: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 15px gray;
+}
+.page_box_table {
+/*    margin-bottom: 10px;*/
+}
+.page_box_in_iframe {
+    border: 0px;
+    margin: 0px;
+}
+.page_box_print {
+    background: white;
+    margin: 0px;
+}
+
+/* Stuff in the banner. Needs to be more unified across nav modes. */
+#user-data {
+	font-size: 90%;
+}
+
+/* Between the banner and the contents we sometimes have a line of options like "hide roadmap". */
+.contents_options {
+/*    background: #fffff2; */
+/*    padding: 5px;*/
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 0.9em
+}
+
+.help_box {
+    background-color: #EEEEEE;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/** ***** The main page contents ***** */
+.contents {
+/*    padding: 5px 10px 15px 10px;*/
+/*    line-height: 1.25; */
+}
+
+.page_box_print .contents {
+     background: white;
+     padding: 15px 15px 15px 15px;
+/*     line-height: 1.25; */
+}
+
+#top_contents {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+#cs-columns-div {
+    padding: 15px;
+}
+#cs-columns-table {
+    width: 100%;
+}
+#cs-columns-table > tr > td,
+#cs-columns-table > tbody > tr > td {
+    vertical-align: top;
+}
+#actions_col,
+#content_col,
+#related_col {
+    vertical-align: top;
+}
+
+#actions_col {
+    padding-right: 15px;
+    min-width: 225px;
+    max-width: 300px;
+}
+
+#related_col {
+	padding-left: 15px;
+    min-width: 225px;
+    max-width: 300px;
+}
+
+/** ***** TO-DO LIST ***** */
+#to_do_table, #finished_table {
+    border-collapse: separate;
+    border-spacing: 0px 2px;
+}
+#to_do_table .to_do_item td {
+    padding: 5px 10px;
+}
+#finished_table .to_do_item td {
+    padding: 5px 10px;
+}
+#to_do_table.sr_mode_to_do_table .to_do_item.even {
+    background-color: #ffebcc;
+}
+#to_do_table.sr_mode_to_do_table .to_do_item.odd {
+    background-color: #FEDBA3;
+}
+
+/** ***** For filter bars (use filter_bar() function) ***** */
+.filter_bar {
+    color: black;
+/*    margin: 10px 0px 20px 0px; */
+    margin: 0px 0px 20px 0px;
+    padding: 4px 10px;
+    width: auto;
+    height: auto;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+/*    box-shadow: 0px 0px 5px 1px #cccccc;*/
+}
+.filter_bar_w_legend {
+    color: black;
+/*    margin: 10px 0px 20px 0px; */
+    margin: 0px 0px 20px 0px;
+    padding: 4px 10px 12px 10px;
+    width: auto;
+    height: auto;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+/*    box-shadow: 0px 0px 5px 1px #cccccc;*/
+}
+.filter_bar_w_legend legend {
+    background: #ffffff;
+    font-size: 90%;
+    color: gray;
+    padding: 1px 5px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    text-align: left;
+}
+.filter_bar_w_legend .instr,
+.filter_bar .instr {
+    margin: 2px 0px;
+    border: 0px;
+    padding: 4px;
+    text-align: left;
+}
+
+.documentation_box {
+    margin: 0px 0px 20px 0px;
+    padding: 4px 10px 12px 10px;
+    width: auto;
+    height: auto;
+    border-width: 1px;
+    border-color: lightgray;
+    border-style: solid;
+    border-radius: 4px;
+/*    box-shadow:0 0 5px rgba(0, 0, 0, 0.25);*/
+}
+.documentation_box legend {
+    background: #ffffff;
+    font-size: 90%;
+    color: gray;
+    padding: 1px 5px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+/*    margin-left: 10px;*/
+    text-align: left;
+}
+
+/* The footer. */
+#footer {
+    /* background: #fffff2; */
+    font-size: 12px;
+    border-top: 1px solid #A6A6A6;
+    padding: 5px;
+}
+#footer a {
+    text-decoration: none;
+}
+#footer a:hover {
+    text-decoration: underline;
+}
+
+.page_box_print #footer {
+    background: white;
+    color: black;
+    font-size: 12px;
+    font-style: italic;
+}
+.page_box_print #footer a {
+    text-decoration: none;
+}
+.page_box_print #footer a:hover {
+    text-decoration: underline;
+}
+
+
+/** ****** LINKS ****** */
+
+a, a:link, a:active, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.light_link a, .light_link a:link, .light_link a:active, .light_link a:visited {
+    text-decoration: none;
+}
+.light_link a:hover {
+    text-decoration: underline;
+}
+
+.light_arrow {
+    text-decoration: none;
+}
+
+.light_arrow:hover {
+    text-decoration: underline;
+}
+
+/* Hover links: make them look like links when you hover. */
+
+/* Bad name, use clickable */
+/*.blue {
+    color: blue;
+}*/
+
+.hover_link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Javascript links. */
+.clickable,
+a.clickable,
+a.clickable:link,
+a.clickable:visited,
+a.clickable:active {
+    cursor: pointer;
+    text-decoration: none;
+}
+.clickable:hover,
+a.clickable:hover {
+    text-decoration: underline;
+}
+.light_clickable,
+a.light_clickable,
+a.light_clickable:link,
+a.light_clickable:active,
+a.light_clickable:visited {
+    text-decoration: none;
+    cursor: pointer;
+}
+.light_clickable:hover,
+a.light_clickable:hover {
+    text-decoration: underline;
+}
+
+/* Black links. Should we make these underlined when hover? Where is :active? */
+.no-decoration,
+a.no-decoration,
+a.no-decoration:link,
+a.no-decoration:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/** ***** DHTMLX GRIDS V4 ***** */
+/* Uppercase looks cool, but is less readable and takes more horizontal space. I can't decide... */
+div.gridbox_dhx_terrace.gridbox.isModern table.hdr td div.hdrcell {
+/*    text-transform: none;*/
+}
+/* Make it clearer that the headers are clipped on the right, and can be resized. */
+/* Very strange that this needs to be on the left in order to align with right border of cells (in Chrome, Safari, and Opera, but not Firefox). */
+.xhdr .hdrcell {
+    border-left: 1px solid #EAEAEA;
+}
+div.gridbox_dhx_terrace.gridbox.isModern .objbox table.obj tr.odd_dhx_terrace td {
+    border-right: 1px solid #EAEAEA;
+}
+div.gridbox_dhx_terrace.gridbox.isModern .objbox table.obj tr.ev_dhx_terrace td {
+    border-right: 1px solid #F2F2F2;
+}
+/* Stranger yet is how the footer boundaries don't align at all. */
+/*.ftr .hdrcell {}*/
+/*
+tr.ev_dhx_terrace td {}
+tr.odd_dhx_terrace td {}
+tr.ev_dhx_terrace td.grid-edit-cell {}
+tr.odd_dhx_terrace td.grid-edit-cell {}
+*/
+
+/* Footers wrap and are too chubby. */
+div.gridbox_dhx_terrace.gridbox .ftr table tr td {
+    line-height: 1.75;
+}
+
+/* The sort direction images are somehow getting z-indexed incorrectly */
+.dhxgrid_sort_asc, .dhxgrid_sort_desc {
+  z-index: 1;
+}
+
+/* overriding the footer line height with padding to account for line-break
+situations */
+.gridbox_dhx_terrace .ftr table td {
+  line-height: 1em !important; /* dhtmlx css is loaded after we are, so we need important to overrule it */
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+/** ***** DHTMLX GRIDS ***** */
+.grid_instructions {
+    background-color: #ffff55;
+    padding: 2px;
+    margin: 2px;
+}
+
+.dhx_header_cmenu {
+    border-size: 1px;
+    padding: 5px;
+    font-size: 13px;
+    background-color:#ffffff;
+    z-index:2;
+}
+.dhx_header_cmenu_item {
+    white-space:nowrap;
+}
+.hdrcell > input[type='checkbox'] {
+    margin: 7px;
+}
+
+/* custom css for grid with skin dhx_skyblue */
+
+/* non editable rows */
+.odd_dhx_skyblue td {
+    /*background-color: #ffdabd;;*/
+}
+.ev_dhx_skyblue td {
+    /*background: #FFE2CA;*/
+}
+
+/* editable rows */
+.odd_dhx_skyblue td.grid-edit-cell {
+/*  background-color: #E8EBA0;*/
+	background-color: #feeab9;
+    padding: 1px; /* This padding is unfortunately trumped by dhtmlxgrid_dhx_skyblue.css line 57 - I commented that line out. */
+}
+.ev_dhx_skyblue td.grid-edit-cell {
+/*  background-color: #FEFFDB;*/
+    background-color: #fff8e5;
+    padding: 1px; /* This padding is unfortunately trumped by dhtmlxgrid_dhx_skyblue.css line 57 - I commented that line out. */
+}
+
+body div.gridbox_dhx_skyblue table.obj.row20px tr td.grid-edit-cell {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+body div.gridbox_dhx_skyblue table.obj tr.rowselected td {
+    /* Make the background image for a selected row 100% height for tall rows. */
+    background-size: auto 100%;
+}
+
+/* This is a hack to get action column checkboxes away from the left edge. */
+.odd_dhx_skyblue td.grid-edit-cell img {
+    margin-left: 15px;
+}
+.ev_dhx_skyblue td.grid-edit-cell img {
+    margin-left: 15px;
+}
+
+/*
+#grid_controls {
+  border: 1px solid lightgray;
+  padding: 5px;
+  margin-top: 20px;
+}
+*/
+
+/*.modernizr-touch #grid_controls {
+  font-size: 150%;
+}
+
+.modernizr-touch #grid_controls img {
+  -ms-transform: scale(1.5, 1.5); /* IE 9 */
+  -webkit-transform: scale(1.5, 1.5); /* Chrome, Safari, Opera */
+  transform: scale(1.5, 1.5);
+  -ms-transform-origin: right center; /* IE 9 */
+  -webkit-transform-origin: right center; /* Chrome, Safari, Opera */
+  transform-origin: right center;
+}
+*/
+
+/* custom css for grid with skin dhx_terrace */
+
+/* editable rows */
+.odd_dhx_terrace td.grid-edit-cell {
+/*  background-color: #E8EBA0;*/
+	background-color: #feeab9;
+    padding: 1px; /* This padding is unfortunately trumped by dhtmlxgrid_dhx_skyblue.css line 57 - I commented that line out. */
+}
+.ev_dhx_terrace td.grid-edit-cell {
+/*  background-color: #FEFFDB;*/
+    background-color: #fff8e5;
+    padding: 1px; /* This padding is unfortunately trumped by dhtmlxgrid_dhx_skyblue.css line 57 - I commented that line out. */
+}
+
+
+/* for instructions text */
+.grid_editable_odd {
+/*  background-color: #E8EBA0;*/
+	background-color: #feeab9;
+    border: 1px solid lightgray;
+}
+.grid_editable_even {
+/*  background-color: #FEFFDB;*/
+    background-color: #fff8e5;
+    border: 1px solid lightgray;
+}
+
+/* I'm making this a stronger style so that it doesn't get cascaded over. */
+body div.gridbox#gridbox tr.gray_row {
+	color: gray;
+}
+body div.gridbox#gridbox tr.odd_dhx_skyblue.highlight_row,
+body div.gridbox#gridbox tr.odd_dhx_terrace.highlight_row {
+	background-color: #FFFF66;
+}
+body div.gridbox#gridbox tr.ev_dhx_skyblue.highlight_row,
+body div.gridbox#gridbox tr.ev_dhx_terrace.highlight_row {
+	background-color: #FFFF99;
+}
+
+
+/** ***** FULL WINDOW GRIDS ***** */
+.fullscreen {
+    position: fixed;
+/*    background: #fffff2;*/
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 990; /* jquery dialogues display at 1000, so keeping this just below that. */
+}
+
+.fullscreenCenterer {
+    margin: auto;
+}
+
+/** ***** LEFT RIGHT and CENTER ***** */
+/* Tables don't naturally follow <text-align>, so we have to set their margins
+properly to do the right thing. */
+
+.centered,
+.contents .centered {
+    text-align: center;
+}
+
+/* The problem with CSS "specificity" is that it has no notion of closest or
+furthest ancestor or sibling. Even combinators don't make a difference in
+specificity; E F is equally specific to E > F. */
+.centered table,
+
+.lefted .centered table,
+.centered .centered table,
+
+.centered .lefted .centered table,
+.centered .centered .centered table,
+.lefted .lefted .centered table,
+.lefted .centered .centered table,
+
+.lefted .centered .lefted .centered table,
+.lefted .centered .centered .centered table,
+.lefted .lefted .lefted .centered table,
+.lefted .lefted .centered .centered table,
+.centered .centered .lefted .centered table,
+.centered .centered .centered .centered table,
+.centered .lefted .lefted .centered table,
+.centered .lefted .centered .centered table
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;   /* For within the table. */
+}
+
+.lefted,
+.contents .lefted {
+    text-align: left;
+}
+
+.lefted table,
+
+.lefted .lefted table,
+.centered .lefted table,
+
+.centered .lefted .lefted table,
+.centered .centered .lefted table,
+.lefted .lefted .lefted table,
+.lefted .centered .lefted table,
+
+.lefted .centered .lefted .lefted table,
+.lefted .centered .centered .lefted table,
+.lefted .lefted .lefted .lefted table,
+.lefted .lefted .centered .lefted table,
+.centered .centered .lefted .lefted table,
+.centered .centered .centered .lefted table,
+.centered .lefted .lefted .lefted table,
+.centered .lefted .centered .lefted table
+{
+    margin-left: 0px;
+    margin-right: auto;
+    text-align: left;   /* For within the table. */
+}
+
+.righted,
+.contents .righted {
+    text-align: right;
+}
+
+.righted table,
+
+.lefted .righted table,
+.centered .righted table,
+
+.lefted .lefted .righted table,
+.lefted .centered .righted table,
+.centered .lefted .righted table,
+.centered .centered .righted table,
+.righted .lefted .righted table,
+.righted .centered .righted table
+{
+    margin-left: auto;
+    margin-right: 0px;
+    text-align: left;   /* For within the table. */
+}
+
+
+.justified {
+    text-align: justify;
+}
+.justified table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;   /* For within the table. */
+}
+
+/** ***** TIMING INFO ***** */
+.timing_info {
+	font-size: 90%;
+}
+
+.timing_info:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/** ***** TABLES ***** */
+
+/* Set up cellspacing options. */
+table.cellspacing1px {
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+table.cellspacing1px0px {
+    border-collapse: separate;
+    border-spacing: 1px 0px;  /* horiz & vert */
+}
+table.cellspacing3px {
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+table.cellspacing5px {
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+table.cellspacing10px {
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+/* Set up table cellpadding options. This is complex because we are trying to
+simulate cellpadding behavior which only affects the table it is in, not
+nested tables. I'm now leaning toward always using powers of 2, to increase consistency. */
+table.cellpadding1px > tr > td,
+table.cellpadding1px > tbody > tr > td,
+table.cellpadding1px > tr > th,
+table.cellpadding1px > tbody > tr > th,
+table.cellpadding1px > thead > tr > th {
+    padding: 1px;
+}
+table.cellpadding2px > tr > td,
+table.cellpadding2px > tbody > tr > td,
+table.cellpadding2px > tr > th,
+table.cellpadding2px > tbody > tr > th,
+table.cellpadding2px > thead > tr > th {
+    padding: 2px;
+}
+table.cellpadding2px4px > tr > td,
+table.cellpadding2px4px > tbody > tr > td,
+table.cellpadding2px4px > tr > th,
+table.cellpadding2px4px > tbody > tr > th,
+table.cellpadding2px4px > thead > tr > th {
+    padding: 2px 4px;     /* vert & horiz */
+}
+table.cellpadding3px > tr > td,
+table.cellpadding3px > tbody > tr > td,
+table.cellpadding3px > tr > th,
+table.cellpadding3px > tbody > tr > th,
+table.cellpadding3px > thead > tr > th {
+    padding: 3px;
+}
+table.cellpadding4px > tr > td,
+table.cellpadding4px > tbody > tr > td,
+table.cellpadding4px > tr > th,
+table.cellpadding4px > tbody > tr > th,
+table.cellpadding4px > thead > tr > th {
+    padding: 4px;
+}
+/* This one is often a good choice. */
+table.cellpadding4px8px > tr > td,
+table.cellpadding4px8px > tbody > tr > td,
+table.cellpadding4px8px > tr > th,
+table.cellpadding4px8px > tbody > tr > th,
+table.cellpadding4px8px > thead > tr > th {
+    padding: 4px 8px;     /* vert & horiz */
+}
+table.cellpadding5px > tr > td,
+table.cellpadding5px > tbody > tr > td,
+table.cellpadding5px > tr > th,
+table.cellpadding5px > tbody > tr > th,
+table.cellpadding5px > thead > tr > th {
+    padding: 5px;
+}
+table.cellpadding7px > tr > td,
+table.cellpadding7px > tbody > tr > td,
+table.cellpadding7px > tr > th,
+table.cellpadding7px > tbody > tr > th,
+table.cellpadding7px > thead > tr > th {
+    padding: 7px;
+}
+table.cellpadding8px > tr > td,
+table.cellpadding8px > tbody > tr > td,
+table.cellpadding8px > tr > th,
+table.cellpadding8px > tbody > tr > th,
+table.cellpadding8px > thead > tr > th {
+    padding: 8px;
+}
+table.cellpadding8px16px > tr > td,
+table.cellpadding8px16px > tbody > tr > td,
+table.cellpadding8px16px > tr > th,
+table.cellpadding8px16px > tbody > tr > th,
+table.cellpadding8px16px > thead > tr > th {
+    padding: 8px 16px;     /* vert & horiz */
+}
+table.cellpadding10px > tr > td,
+table.cellpadding10px > tbody > tr > td,
+table.cellpadding10px > tr > th,
+table.cellpadding10px > tbody > tr > th,
+table.cellpadding10px > thead > tr > th {
+    padding: 10px;
+}
+table.cellpadding15px > tr > td,
+table.cellpadding15px > tbody > tr > td,
+table.cellpadding15px > tr > th,
+table.cellpadding15px > tbody > tr > th,
+table.cellpadding15px > thead > tr > th {
+    padding: 15px;
+}
+table.cellpadding20px > tr > td,
+table.cellpadding20px > tbody > tr > td,
+table.cellpadding20px > tr > th,
+table.cellpadding20px > tbody > tr > th,
+table.cellpadding20px > thead > tr > th {
+    padding: 20px;
+}
+
+/*.contents table {
+    text-align: left;
+}
+*/
+.contents table tr th {
+    font-weight: bold;
+    text-align: left;
+}
+.contents table tr td {
+/*    line-height: 1.25; */
+}
+
+
+/** ***** BASIC_INPUT_ELEMENTS ***** */
+/* Clean up the look of input stuff, after normalize.css does some strange things. */
+input {
+    margin: 0px;
+    border-width: 1px;
+    padding: 2px;
+}
+
+input[type=text],
+input[type=password] {
+    border-style: solid;
+    border-color: #AAAAAA #DDDDDD #DDDDDD #AAAAAA;
+    border-radius: 3px;
+    height: 21px;   /* This seems crazy, but it's the only way I know to get consistency across browsers and IE. */
+    line-height: 21px;
+}
+input[type=text][disabled],
+input[type=password][disabled] {
+    border-color: #CCCCCC #EEEEEE #EEEEEE #CCCCCC;
+    background-color: #F8F8F8;
+}
+
+textarea {
+    margin: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #AAAAAA #DDDDDD #DDDDDD #AAAAAA;
+    border-radius: 3px;
+    padding: 2px;
+}
+textarea[disabled] {
+    border-color: #CCCCCC #EEEEEE #EEEEEE #CCCCCC;
+    background-color: #F8F8F8;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 0px 3px 0px 0px;    /* Like a space between the element and following text. */
+}
+
+/* The "not" is to avoid changing styles on tinymce and date-time picker buttons. */
+:not(.mce-btn):not(.mce-window-head):not(.ui-datepicker-buttonpane) > button[type=button],
+button[type=reset],
+button[type=submit],
+input[type=button],
+input[type=reset],
+input[type=submit] {
+   border-top: 1px solid #b8b8b8;
+   border-left: 1px solid #b8b8b8;
+   border-right: 1px solid #838383;
+   border-bottom: 1px solid #838383;
+   background: #CFCFCF;
+   background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#CFCFCF));
+   background: -webkit-linear-gradient(top, #FFFFFF, #CFCFCF);
+   background: -moz-linear-gradient(top, #FFFFFF, #CFCFCF);
+   background: -ms-linear-gradient(top, #FFFFFF, #CFCFCF);
+   background: -o-linear-gradient(top, #FFFFFF, #CFCFCF);
+   padding: 2px 7px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   color: #383838;
+   text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+   text-decoration: none;
+   vertical-align: middle;
+/*    Not sure why we need to shift this up, but this keeps it in line with text inputs. */
+   position: relative;
+   top: -5px;
+   margin-top: 5px;
+}
+:not(.mce-btn):not(.mce-window-head):not(.ui-datepicker-buttonpane) > button[type=button][disabled],
+:not(.mce-btn):not(.mce-window-head):not(.ui-datepicker-buttonpane) > button[type=button][disabled]:hover,
+button[type=reset][disabled],
+button[type=reset][disabled]:hover,
+button[type=submit][disabled],
+button[type=submit][disabled]:hover,
+input[type=button][disabled],
+input[type=button][disabled]:hover,
+input[type=reset][disabled],
+input[type=reset][disabled]:hover,
+input[type=submit][disabled],
+input[type=submit][disabled]:hover {
+   border-top: 1px solid #D5D5D5;
+   background: #E7E7E7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E7E7E7));
+   background: -webkit-linear-gradient(top, #FFFFFF, #E7E7E7);
+   background: -moz-linear-gradient(top, #FFFFFF, #E7E7E7);
+   background: -ms-linear-gradient(top, #FFFFFF, #E7E7E7);
+   background: -o-linear-gradient(top, #FFFFFF, #E7E7E7);
+   color: #AEAEAE;
+   text-shadow: none;
+}
+:not(.mce-btn):not(.mce-window-head):not(.ui-datepicker-buttonpane) > button[type=button]:hover,
+button[type=reset]:hover,
+button[type=submit]:hover,
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover {
+   border-top-color: #b8b8b8;
+   background: #e0e0e0;
+   color: #333333;
+   text-shadow: none;
+}
+:not(.mce-btn):not(.mce-window-head):not(.ui-datepicker-buttonpane) > button[type=button]:active,
+button[type=reset]:active,
+button[type=submit]:active,
+input[type=button]:active,
+input[type=reset]:active,
+input[type=submit]:active {
+   border-top-color: #b8b8b8;
+   background: #eeeeee;
+   text-shadow: none;
+}
+
+/** ***** OTHER INPUT WIDGETS ***** */
+/* A scrollable checkbox div. */
+.cb_widget {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #AAAAAA #DDDDDD #DDDDDD #AAAAAA;
+    border-radius: 3px;
+    background: white;
+    overflow-y: auto;
+    padding: 0px 10px 4px 3px;  /* A bit of space on right for seeing that the text is done, and for scrollbar. */
+    width: auto;
+    height: 200px;
+    cursor: default;
+}
+/* One that's always the right height. */
+.auto_height_cb_widget {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #AAAAAA #DDDDDD #DDDDDD #AAAAAA;
+    border-radius: 3px;
+    background: white;
+    overflow-y: auto;
+    padding: 0px 10px 4px 3px;
+    width: auto;
+    cursor: default;
+}
+
+
+/** ***** INPUT.PY ***** */
+/* Left-right format. */
+table.input_format_left_right tr.input_format_tr td.lr_label_td {
+    vertical-align: top;
+/*    background-color: lightblue;*/
+}
+/* :nth-child() doesn't work for IE8 */
+/*table.input_format_left_right tr.input_format_tr td.lr_label_td > :nth-child(1) {*/
+table.input_format_left_right tr.input_format_tr td.lr_label_td > div {
+    margin: 5px 2px;
+/*    background-color: pink;*/
+}
+table.input_format_left_right tr.input_format_tr td.lr_element_td {
+    vertical-align: text-bottom;    /* Bottom of the first line of text, not the last. (This is near the top when the left is tall.) */
+/*    background-color: orange;*/
+}
+/* :nth-child() doesn't work for IE8 */
+/*table.input_format_left_right tr.input_format_tr td.lr_element_td > :nth-child(1) {*/
+table.input_format_left_right tr.input_format_tr td.lr_element_td > div {
+    margin: 5px 2px;
+/*    background-color: yellow;*/
+}
+/* The questions/labels often need a bit of shifting to line up well. */
+table.input_format_left_right tr td div.textarea_wc_input_label_div {
+    padding-top: 24px;
+}
+table.input_format_left_right tr td div.text_input_label_div,
+table.input_format_left_right tr td div.date_input_label_div,
+table.input_format_left_right tr td div.time_input_label_div,
+table.input_format_left_right tr td div.date_time_input_label_div,
+table.input_format_left_right tr td div.file_upload_input_label_div,
+table.input_format_left_right tr td div.combo_box_input_label_div {
+    padding-top: 3px;
+}
+table.input_format_left_right tr td div.textarea_input_label_div {
+    padding-top: 3px;
+}
+table.input_format_left_right tr td div.select_input_label_div {
+}
+table.input_format_left_right tr td div.checkboxes_input_label_div {
+    padding-top: 2px;
+}
+
+/* One, two, three, etc cols format. */
+table tr.input_format_tr td.tb_td {
+    padding: 2px 1px 8px 1px;
+/*    background-color: lightblue;*/
+}
+/* :nth-child() doesn't work for IE8 */
+/*table tr.input_format_tr td.tb_td > :nth-child(1) {*/
+table tr.input_format_tr td.tb_td > div {
+/*    background-color: pink;*/
+}
+/*table.input_format_top_bottom_one_col tr.input_format_tr td.tb_element_td {
+    vertical-align: text-bottom;
+    background-color: orange;
+}
+table.input_format_top_bottom_one_col tr.input_format_tr td.tb_element_td > :nth-child(1) {
+    margin: 5px 2px;
+    background-color: yellow;
+}
+*/
+
+/* Input slider styles */
+div.input_slider {
+    display: inline-block;
+}
+div.input_slider.slider {
+    padding-right: 12px;
+    padding-left: 8px;
+    vertical-align: middle;
+}
+
+/** ***** QTIP_TOOL_TIPS ***** */
+/* The label. */
+.ttip_object_info_blue,
+.ttip_object_info_blue_no_clone,
+.ttip_object_info_blue_wide,
+.ttip_object_info_blue_wide_no_clone,
+.ttip_object_info_blue_very_wide,
+.ttip_object_info_blue_very_wide_no_clone,
+.ttip_object_info_blue_extra_wide,
+.ttip_object_info_blue_extra_wide_no_clone,
+.ttip_object_info_blue_modal,
+.ttip_object_info_blue_modal_no_clone,
+.colorbox_object_info {
+    text-decoration: none;
+    cursor: pointer;
+}
+.ttip_object_info_blue:hover,
+.ttip_object_info_blue_no_clone:hover,
+.ttip_object_info_blue_wide:hover,
+.ttip_object_info_blue_wide_no_clone:hover,
+.ttip_object_info_blue_very_wide:hover,
+.ttip_object_info_blue_very_wide_no_clone:hover,
+.ttip_object_info_blue_extra_wide:hover,
+.ttip_object_info_blue_extra_wide_no_clone:hover,
+.ttip_object_info_blue_modal:hover,
+.ttip_object_info_blue_modal_no_clone:hover,
+.ttip_object_info:hover,
+.ttip_object_info_no_clone:hover,
+.ttip_object_info_wide:hover,
+.ttip_object_info_wide_no_clone:hover,
+.ttip_object_info_very_wide:hover,
+.ttip_object_info_very_wide_no_clone:hover,
+.ttip_object_info_extra_wide:hover,
+.ttip_object_info_extra_wide_no_clone:hover,
+.ttip_object_info_modal:hover,
+.ttip_object_info_modal_no_clone:hover,
+.colorbox_object_info:hover
+ {
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* The popup. */
+.qtip.rm-qtip {
+    font-size: 14px;
+    line-height: 17px;
+/*  -webkit-box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.27);*/
+/*  -moz-box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.27);*/
+	box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.27);
+}
+.qtip.rm-qtip-narrow {
+    max-width: 400px;
+}
+.qtip.rm-qtip-wide {
+    max-width: 600px;
+}
+.qtip.rm-qtip-very-wide {
+    max-width: 900px;
+}
+.qtip.rm-qtip-extra-wide {
+    max-width: 1100px;
+}
+.qtip.rm-qtip-modal {
+	max-width: 80%;
+    max-height: 80%;
+	overflow-y: auto;
+}
+.qtip.rm-qtip-modal .qtip-content {
+	overflow-x: auto;
+}
+/* the background color for qtip modal */
+#qtip-overlay div{
+    background-color: transparent;
+}
+
+/* The "qtip-rm" style (paraleling qtip-dark, etc.) */
+.qtip.qtip-rm{
+/*  background-color: #fdefce;*/
+	border-color: #837d6d;
+	color: black;
+}
+.qtip.qtip-rm .qtip-titlebar{
+/*  background-color: #fdefce;*/
+/*    border-bottom: 1px solid #837d6d;*/
+    border-bottom: 1px solid lightgray;
+}
+.qtip.qtip-rm .qtip-icon{
+	border-color: #444;
+}
+.qtip.qtip-rm .qtip-titlebar .ui-state-hover{
+	border-color: #837d6d;
+    text-decoration: none;
+}
+
+
+/** ***** Tab Bar Menus - qTip ***** */
+.tab_subtab_menus {
+    margin-bottom: 5px;
+}
+/** ****** Tabs ***** */
+.tabs {
+    text-decoration: none;
+}
+
+.tabs .fg_tab  {
+    border-bottom: 1px solid lightgray;
+}
+
+.tabs .fg_tab div {
+    /*border: 1px solid lightgray;*/
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    /*border-bottom: 1px solid lightgray;*/
+    border-radius: 7px 7px 0px 0px;
+}
+.tabs .fg_tab a,
+.tabs .fg_tab.tab_menu_label_td {
+    /*color: rgb(80%,10%,10%); */
+}
+.tabs .fg_tab:hover a {
+    /*color: rgb(80%,10%,10%); */
+    text-decoration: none;
+}
+.tabs .fg_tab.active { border-bottom-color: white; }
+
+.tabs .bg_tab {
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+    border-bottom-color: lightgray;
+}
+.tabs .bg_tab a { color: #333333; }
+.tabs .bg_tab.active { border-bottom-color: white; }
+
+.tabs .divider {
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+    border-bottom-color: lightgray;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: default;
+}
+
+/** ***** Subtabs ***** */
+.subtabs {
+    text-decoration: none;
+}
+
+.subtabs .fg_tab {
+    border-bottom: 1px solid lightgray;
+}
+.subtabs .fg_tab div {
+    border: 1px solid lightgray;
+    border-radius: 7px 7px 0px 0px;
+    padding: 2px 6px 3px 6px;
+}
+.subtabs .fg_tab A {
+    /*color: rgb(80%,10%,10%); */
+    text-decoration: none;
+}
+.subtabs .fg_tab:hover div,
+.subtabs .fg_tab:hover A {
+    background-color: white;
+}
+
+.subtabs .bg_tab {
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+    border-radius: 7px 7px 0px 0px;
+    border-bottom-color: lightgray;
+    padding: 2px 6px 3px 6px;
+}
+.subtabs .bg_tab A { color: #333333; text-decoration: none; }
+.subtabs .bg_tab:hover,
+.subtabs .bg_tab:hover A {
+    background-color: white;
+}
+
+.subtabs .divider {
+    color: rgb(65%,65%,65%);
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+    border-bottom-color: lightgray;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: default;
+}
+
+/** ****** Tab menu labels (the thing you click on to show the dropdown) ****** */
+.tab_menu_label_td {
+    padding: 0px;
+    border-radius: 7px 7px 0px 0px;
+}
+.tab_menu_label, .tab_no_menu_label {
+    text-decoration: none;
+    cursor: default;
+    padding: 2px 6px 3px 6px;
+}
+.tab_menu_label:hover, .active .tab_menu_label,
+.tab_no_menu_label:hover {
+    border-radius: 7px 7px 0px 0px;
+}
+.tab_menu_label:hover, .active .tab_menu_label,
+.tab_no_menu_label:hover,
+.tab_no_menu_label:hover a {
+    background-color: white;
+    /*color: rgb(80%,10%,10%);*/
+    text-decoration: none;
+    cursor: default;
+}
+.tab_no_menu_label:hover a {
+    cursor: pointer;
+}
+
+/** ****** The tab menu dropdown (full of "items"). ******* */
+/* The "qtip-rm-tab-menu" style (paraleling qtip-dark, etc.) */
+.qtip.qtip-rm-tab-menu {
+    min-width: 280px;
+    font-size: 14px;
+    line-height: 17px;
+	background-color: white;
+	border-width: 0px;
+	border-color: #837d6d;
+	color: black;
+	box-shadow: 0px 6px 4px 2px rgba(0, 0, 0, 0.27);
+    border-radius: 0px 5px 5px 5px;
+}
+.qtip.qtip-rm-tab-menu .qtip-titlebar{
+	background-color: #fdefce;
+    border-bottom: 1px solid #837d6d;
+}
+.qtip.qtip-rm-tab-menu .qtip-icon{
+	border-color: #444;
+}
+.qtip.qtip-rm-tab-menu .qtip-titlebar .ui-state-hover{
+	border-color: #837d6d;
+    text-decoration: none;
+}
+.qtip.qtip-rm-tab-menu .qtip-content {
+    padding: 5px 0px 5px 0px;
+}
+
+div.tab_menu_dropdrown a {
+    text-decoration: none;
+}
+
+span.menu_item_label {
+    font-size: 110%;
+}
+.menu_item_note {
+    color: #999999;
+}
+
+div.subtab_menu_header {
+    color: #999999;
+    padding: 3px 5px;
+}
+div.subtab_menu_header hr {
+    background-color: #999999;
+    border: 0px;
+    height: 1px;
+}
+div.subtab_menu_header span.menu_item_label {
+    color: black;
+}
+
+div.subtab_menu_item {
+    padding: 3px 5px;
+}
+div.subtab_menu_item,
+div.subtab_menu_item a {
+    color: black;
+}
+div.subtab_menu_item:hover,
+a div.subtab_menu_item:hover {
+    background-color: #247bf4;
+    color: white;
+}
+a div.subtab_menu_item:hover span.menu_item_label {
+    color: white;
+}
+div.subtab_menu_item:hover span.menu_item_note {
+    color: #cccccc;
+}
+
+/*div.subtab_menu_item.selected,
+a div.subtab_menu_item.selected {
+    color: rgb(80%,10%,10%);
+}*/
+
+/** ****** Page results display ***** */
+.success_msg_box {
+    background: #22a800;
+    padding: 10px;
+    color: white;
+    text-align: left;
+	border-radius: 3px;
+}
+.success_msg_box a {
+    color: lightgray;
+}
+
+.warning_msg_box {
+    color: white;
+    padding: 10px;
+    background-color: #f09400;
+    text-align: left;
+	border-radius: 3px;
+}
+.warning_msg_box a {
+    color: darkblue;
+}
+
+.required {
+    border: thin solid rgb(90%,10%,10%);
+}
+.error_msg_box {
+    color: white;
+    padding: 10px;
+    background-color: #c22000;
+    text-align: left;
+	border-radius: 3px;
+}
+
+.error_msg_box a:link,
+.error_msg_box a:active,
+.error_msg_box a:visited,
+.error_msg_box a {
+    color: yellow;
+}
+.error_msg_box input {
+    color: black;
+}
+
+.error_font,
+.error_link_font,
+.error_link_font a,
+.required_if_font { color: rgb(75%,0%,0%); } /* Darker and more legible. */
+/* .required_if_font { color: rgb(90%,10%,10%); } */ /* Lighter and less legible. */
+
+
+/** ***** BOXES ***** */
+
+/* Input boxes. (use input_box() function)
+See also block_styles.css ".form .block-content" stuff.
+*/
+.contents .input_box {
+    color: black;
+    padding: 0px;
+    border: 1px solid lightgray;
+/*    line-height: 1.25; */
+}
+.contents .input_box .title {
+    color: white;
+    margin: 0px; padding: 5px;
+    border-width: 0px;
+    text-align: left;
+}
+.contents .input_box .title a {
+    color: white;
+}
+.contents .input_box .instr {
+    padding: 5px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* OLD use of Class = "input" - we might want to switch these to input_box(). */
+.contents .input {
+    color: black;
+    margin: 0px;    /* This makes it hard to center if the element is a table; the reason were switching to input_box above. */
+    padding: 0px;
+    border: 1px solid lightgray;
+/*    line-height: 1.25; */
+}
+.contents .input .title {
+    color: white;
+    margin: 0px; padding: 5px;
+    border-width: 0px;
+    text-align: left;
+}
+.contents .input .title a {
+    color: white;
+}
+.contents .input .instr {
+    padding: 5px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.contents .multi_block_button {
+    padding: 5px 5px 1px 5px;
+/*    text-align: left; */
+}
+
+/* Tables (often with even/odd rows). */
+.contents .input table tr th {
+    border: 0px;
+    padding: 4px;
+    vertical-align: bottom;
+    font-size: 14px;
+    font-weight: bold;
+}
+.contents .input table tr td {
+    border: 0px;
+    padding: 3px;
+}
+
+
+/* Output boxes. (use output_box() function) */
+.contents .output_box {
+    color: black;
+    margin: 0px; padding: 0px;
+/*    border-width: 0px;*/
+    border: 1px solid lightgray;
+/*    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.5);*/
+/*    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.25);*/
+    line-height: 1.25;
+}
+/* Title of the box. */
+.contents .output_box .title {
+    color: white;
+    margin: 0px; padding: 5px;
+    border-width: 0px;
+    text-align: left;
+}
+.contents .input .title a {
+    color: white;
+}
+/* Instructions. */
+.output_box_instr,
+.contents .output_box .instr {
+    padding: 5px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+/* Tables (often with even/odd rows). */
+.contents .output_box table tr th {
+    border: 0px;
+    padding: 4px;
+    vertical-align: bottom;
+    font-size: 14px;
+    font-weight: bold;
+}
+.contents .output_box table tr td {
+    border: 0px;
+    padding: 3px;
+}
+
+/* Default behavior for eo_box */
+.eo_box .odd {
+    padding: 3px;
+}
+.eo_box .even {
+    padding: 3px;
+}
+
+
+/* Simple boxes (use simple_box() function) */
+.contents .simple_box {
+    background: transparent; color: black;
+    margin: 0px; padding: 0px;
+    border-width: 0px;
+    line-height: 1.25;
+}
+/* Titles. */
+.contents .simple_box .title {
+    background: transparent;
+    color: black;
+    margin: 0px; padding: 5px;
+    border-width: 0px;
+    text-align: left;
+}
+/* Instructions. */
+.contents .simple_box .instr {
+    border: 0px;
+    padding: 10px;
+    background: transparent;
+    text-align: left;
+}
+/* Tables. */
+.contents .simple_box table tr th {
+    border: 0px;
+    padding: 4px;
+    background: transparent;
+    vertical-align: bottom;
+    font-size: 14px;
+    font-weight: bold;
+}
+.contents .simple_box table tr td {
+    border: 0px;
+    padding: 3px;
+}
+
+
+/** ***** Ajax "loading..." and "saving..." messages ***** */
+.loading {
+    background: #fff499;
+    font-style: italic;
+    padding: 3px;
+}
+
+/** ***** For jquery.overlabel2.js ***** */
+.overlabel-apply {
+    color: #999;
+    cursor: text;
+    left: 5px;
+    position: absolute;
+    top: 1px; /* I use bold labels hence only 1px, normal weight labels would use 3px */
+    z-index: 1;
+}
+.overlabel-wrapper {
+    position: relative;
+}
+
+/** ***** auto suggest dropdown ***** */
+.auto_suggest {
+    position: absolute; z-index: 3001; background: white;
+    border: solid #336699 1px;
+    cursor: default;
+    /*border-top: none;*/
+}
+.auto_suggest div {
+    border-bottom: solid lightgray 1px;
+    padding: 3px;
+}
+.auto_suggest .option.selected {
+    background: lightgray;
+}
+
+.auto_suggest .option.unapproved {
+    color: gray;
+}
+
+.auto_suggest .option .unapproved-text {
+    color: red;
+    font-size: small;
+    margin-left: 10px;
+}
+
+
+/** ****** Email Preview Display ****** */
+.email-disp {
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+/** ****** Arrow slide-downs ****** */
+.arrow-slidedown {
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/** ***** Color picking ***** */
+a.color-clicker {text-decoration: none; border: 1px solid white;}
+a.color-clicker:hover {border: 1px solid blue;}
+
+/** ***** SPECIFIC PAGES ***** */
+
+/* My Account page. */
+.account_info { margin: 1ex 3ex 1ex 3ex; }
+.account_info I { color: rgb(70%, 15%, 15%); }
+
+/* For displaying details about an object. */
+.disp_details_header {
+    font-size: 1.1em;
+    font-weight: bold;
+    /*color: rgb(70%, 15%, 15%);*/
+}
+.disp_details_sub_header {
+    font-weight: bold;
+    /*color: rgb(70%, 15%, 15%);*/
+}
+.disp_details I,    /* This is deprecated, since it clashes with font awesome using I tags. */
+.disp_red {
+    /*color: rgb(70%, 15%, 15%);*/
+}
+.disp_label {
+    /*color: rgb(70%, 15%, 15%);*/
+    font-style: italic;
+}
+
+.user_pic {
+    max-width: 75px;
+    max-height: 50px;
+/*    width: expression(this.width > 75 ? "75px" : true);
+    height: expression(this.height > 50 ? "50px" : true);
+*/}
+
+.wiki_page {
+    background-color: white;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+}
+
+.contents .wiki_contents h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+.contents .wiki_contents h2{
+    font-size: 22px;
+    font-weight: bold;
+}
+.contents .wiki_contents h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.contents .wiki_contents h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+.contents .wiki_contents h5{
+    font-size: 16px;
+    font-weight: bold;
+}
+.contents .wiki_contents h6{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.wiki_sidebar {
+    background: #f5e2d0;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px lightgray solid;
+    min-width: 130px;
+}
+
+.wiki_sidebar p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* .wiki_sidebar p {
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+} */
+
+.wiki_sidebar ul {
+    list-style-type: none;
+    margin: 0px;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+.wiki_sidebar ul li:before {
+    content: "\00BB \0020";
+}
+
+.sample_watermark {
+    background-image: url(../images/sample_watermark.png);
+    background-repeat: repeat;
+    /*background-size: auto 100%;*/
+    /* background-position: center center; */
+    /* background-position: left top; */
+    /*background-attachment: fixed;*/
+    /*background-attachment: scroll;*/
+    /* background-clip: content-box; */
+    pointer-events: none;
+	/*position: absolute;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height: 5000px;*/
+    height: 100%;
+    /* margin: 0; */
+    z-index: 10;
+    /* -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; */
+}
+
+.highlight { background: yellow; }
+
+.button-wrapper {
+	background-color: #BDD2F8;
+	border: 1px solid #204a85;
+	height: 2.3em;
+	line-height: 2.3em;
+	padding: 0 .3em;
+	margin: 5px;
+	display: inline-block;
+}
+
+/** ***** Stuff for prog_pour page ***** */
+
+.highlight_sess_top {
+    background-color: lightyellow;
+}
+
+/* Transparent border to keep stuff from shifting when the border appears. */
+
+.contents table tr.border_placeholder_top>td {
+    border-top: 1px solid transparent;
+}
+.contents table tr.border_placeholder_top>td:first-of-type {
+    border-left: 1px solid transparent;
+}
+.contents table tr.border_placeholder_top>td:last-of-type {
+    border-right: 1px solid transparent;
+}
+
+.contents table tr.border_placeholder_bottom td {
+    border-bottom: 1px solid transparent;
+}
+.contents table tr.border_placeholder_bottom>td:first-of-type {
+    border-left: 1px solid transparent;
+}
+.contents table tr.border_placeholder_bottom>td:last-of-type {
+    border-right: 1px solid transparent;
+}
+
+.contents table tr.border_placeholder_bottom td tr.psess_slot td {
+    border: none;
+}
+
+table#sessions_table {
+	border-collapse: separate;
+}
+
+.contents table tr.outline_sess_top>td {
+    border-top: 1px solid SaddleBrown;
+}
+.contents table tr.outline_sess_top>td:first-of-type {
+    border-left: 1px solid SaddleBrown;
+}
+.contents table tr.outline_sess_top>td:last-of-type {
+    border-right: 1px solid SaddleBrown;
+}
+
+.contents table tr.outline_sess_bottom td {
+    border-bottom: 1px solid SaddleBrown;
+}
+.contents table tr.outline_sess_bottom td:first-of-type {
+    border-left: 1px solid SaddleBrown;
+}
+.contents table tr.outline_sess_bottom td:last-of-type {
+    border-right: 1px solid SaddleBrown;
+}
+
+.contents table tr.outline_sess_bottom td tr.psess_slot td {
+    border: none;
+}
+
+.graylink .clickable,
+.graylink a,
+.graylink a:link,
+.graylink a:active,
+.graylink a:visited {
+    color: lightgray;
+    /* color: #0174DF; Very nice, if anything, too prominent. Grayish. */
+    /* color: #0080FF; Nice shade, slightly too prominent */
+    text-decoration: none;
+}
+
+.graylink .fa{
+    color: lightgray;
+    /* color: #0174DF; Very nice, if anything, too prominent. Grayish. */
+    /* color: #0080FF; Nice shade, slightly too prominent */
+    text-decoration: none;
+}
+
+.blacklink .clickable,
+.blacklink a,
+.blacklink a:link,
+.blacklink a:active,
+.blacklink a:visited {
+    color: black;
+    /* color: #0174DF; Very nice, if anything, too prominent. Grayish. */
+    /* color: #0080FF; Nice shade, slightly too prominent */
+    text-decoration: none;
+}
+
+.blacklink .fa{
+    color: black;
+    /* color: #0174DF; Very nice, if anything, too prominent. Grayish. */
+    /* color: #0080FF; Nice shade, slightly too prominent */
+    text-decoration: none;
+}
+
+/* stuff for schedule_program_page */
+
+.use_pointer {
+    cursor: pointer;
+}
+
+.draggable_session {
+/*    width: 150px;*/
+    width: 180px;
+
+/*    height: 50px;*/
+    background: rgba(0,0,0,0);
+    font-size: 10px;
+    position: absolute;
+    z-index: 5;
+    overflow: hidden;
+/*    cursor: "move";*/
+}
+
+.fixed_session {
+/*    width: 150px;*/
+    width: 180px;
+/*    height: 50px;*/
+/*    background: black; */
+    background: rgba(0,0,0,0);
+/*    border: 1px solid blue;*/
+    font-size: 10px;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.inner_session {
+/*    width: 148px;*/
+    width: 178px;
+/*    background: yellow;*/
+    background: #ecea51;
+    font-size: 10px;
+    position: relative;
+    top: 1px;
+    left: 1px;
+    overflow: hidden;
+}
+
+.session_workspace {
+/*    width: 150px;*/
+    width: 180px;
+/*    height: 500px;*/
+    min-height: 50px;
+    background: white;
+    overflow-y: auto;
+/*    overflow-x: hidden;*/
+    border: 1px solid black;
+    position: relative;
+/*    float: left;*/
+}
+
+.workspace_container {
+    height: 500px;
+}
+
+.schedule_window {
+    background: white;
+    overflow: auto;
+    border: 1px solid black;
+/*    float: right;*/
+}
+
+.schedule_day {
+/*    width: 100%;*/
+/*    border: 1px solid black;*/
+}
+
+.schedule_room_name {
+    width: 150px;
+}
+
+.schedule_room {
+/*    width: 150px;*/
+    width: 180px;
+    margin: auto;
+    border: 1px solid darkgray;
+    position: relative;
+/*    background-color: lightgray;*/
+    background-color: rgb(240, 240, 240);
+	margin-right: 10px;
+}
+
+.schedule_reservation {
+/*    width: 150px;*/
+    width: 180px;
+/*    margin: auto;*/
+/*    border: 1px solid red;*/
+    position: absolute;
+    font-size: 10px;
+/*    background-color: white;*/
+    z-index: 1;
+    overflow: hidden;
+}
+
+.undroppable_res {
+/*    width: 150px;*/
+    width: 180px;
+/*    margin: auto;*/
+/*    border: 1px solid red;*/
+    position: absolute;
+    font-size: 10px;
+/*    background-color: white;*/
+    z-index: 1;
+    overflow: hidden;
+}
+
+.gray_session {
+/*    background-color: gray; */
+    background-color: rgb(185,185,185);
+}
+
+.non_prog_event {
+/*    background-color: orange; */
+/*  Make these gray, they are not moveable.*/
+    background-color: rgb(185,185,185);
+}
+/*.unselected_res {
+    background-color: gray;
+}
+*/
+.schedule_overlapping_session {
+    background-color: #d0434e;
+}
+
+.overlapping_outer {
+    background-color: darkgray;
+}
+
+.droppable_room {
+/*    background-color: white;*/
+}
+
+.date-disp {
+    width: 200px;
+}
+
+#time_disp_div {
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 400%;
+    color: rgba(0, 0, 0, .50);
+    position: absolute;
+    z-index: 1000;
+    display: none;
+}
+
+#fullscreen_control {
+    position: absolute;
+    z-index: 1000;
+    height: 12px;
+    width: 12px;
+}
+
+.acceptable_droppable {
+    background-color: orange;
+}
+
+.fullscreen_schedule {
+    position: fixed;
+/*    background: #fffff2;*/
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+    z-index: 990;
+}
+
+/** ***** More/Less slide-downs ****** */
+/* Gradient for the bottom of html_util.more_less_html() */
+.less_more_gradient_box {
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    /* IE 10+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+
+    position: absolute;
+    bottom: 0px;
+    z-index: 5;
+    width: 100%;
+    height: 40px;
+}
+
+.less_more_underline_box {
+    border-bottom: solid lightgray 1px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 5;
+    width: 100%;
+    height: 0px;
+}
+
+.less_more_more_div {
+    position: absolute;
+    left: 38%;
+    height: 18px;
+    bottom: -20px;
+}
+
+.less_more_less_div {
+    position: absolute;
+    left: 38%;
+    height: 18px;
+    bottom: -20px;
+}
+
+.less_more_toggle_divs {
+    z-index: 10;
+    margin: 1px 3px;
+    background-color: white;
+    border: solid lightgray 1px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 0px 3px;
+}
+
+/* here's another option for doing a div that fades out to transparent which
+allows for dynamic background color fades. not supported in IE currently
+so not using it. */
+.fade_out {
+    -webkit-mask-image: -webkit-gradient(linear, 0 75%,
+    0 100%, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+
+
+/** ***** Search pages ***** */
+input#search_focus {
+    color: black;
+}
+.search_user_listing td, .search_user_listing th {
+    padding: 2px 7px 0px 7px;
+}
+.search_doc_listing td, .search_doc_listing th {
+    padding: 3px 5px 3px 5px;
+}
+
+/** ****** Submission and Sample Form Menu Pages ***** */
+.sub_form_menu_item {
+    margin-bottom: 7px;
+}
+
+/** ****** Infrastructure manifest page ***** */
+#manifest_room_index {
+    overflow-y: auto;
+    min-height: 200px;
+    text-decoration: none;
+}
+#manifest_room_index a {
+    text-decoration: none;
+}
+#manifest_room_index .room_manifest_link.even {
+    background-color: white;
+    color: black;
+}
+#manifest_room_index .room_manifest_link.odd {
+    background-color: #edf3fc;
+    color: black;
+}
+#manifest_room_index .room_manifest_link {
+    padding: 2px 3px;
+}
+#manifest_room_index .room_manifest_link:hover,
+#manifest_room_index .room_manifest_link.active {
+    background-color: #6da6f6;
+    color: white;
+}
+
+/** ******* Search-and-confirm pages ****** */
+.refine-query-box {
+    padding: 10px;
+    border: 1px lightgray solid;
+    background-color: #FBFBFB;
+}
+.refine-query-box legend {
+    padding: 2px 6px;
+    border: 1px lightgray solid;
+    color: gray;
+    background-color: white;
+    font-size: 80%;
+}
+
+/** ***** STAR RATINGS ****** */
+.rm_star {
+    /* Don't include color here, it is an argument to the widget. */
+    /* color: #FFD700; gold */
+/*    color: #0065f3;*/ /* blue */
+  padding: 1px;
+  font-size: larger;
+}
+
+/** ******* jqx combobox ****** */
+.jqx-combobox {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+/** ****** Colorbox ******* */
+.no_close_colorbox #cboxLoadedContent{
+    margin-bottom: 0px;
+}
+
+.modal_form_colorbox#cboxOverlay{
+    z-index: 20;
+}
+.modal_form_colorbox#colorbox{
+    z-index: 30;
+}
+
+/* move the close x to the upper right. */
+#colorbox #cboxClose {
+    top: -1px;
+    right: -1px;
+}
+#cboxLoadedContent {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#cboxOverlay {
+    /* This doesn't actually work; you have to change this in the .js file. */
+    opacity: 0.5;
+}
+
+/* ghost ghost-class */
+.ghost {
+    opacity: 0.4;
+}
+
+.to_do_num {
+    display: inline-block;
+    min-width: 7px;
+    text-shadow: 0px 0px 3px #222222;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    line-height: 80%;
+    font-size: 12px;
+    padding: 3px;
+    position: relative;
+    top: -5px;
+    left: -2px;
+    font-family: Verdana, Century Gothic, Tahoma, sans-serif;
+}
+
+.debug-indicator {
+    height: 1.1 em;
+    position: fixed;
+    bottom:0%;
+    left: 0;
+    width:100%;
+    opacity: 1;
+    padding-left: 20px;
+    z-index: 10;
+}
+.debug-indicator-placeholder {
+    height: 1.1 em;
+    width:100%;
+}
+
+.modernizr-no-touch .for-touch-only {
+  display: none;
+}
+
+/* Program track displaying */
+
+div.ptrack_plain {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+div.ptrack_pillbox {
+    background-color: white;
+    text-align: center;
+    border-radius: 1em;
+    display: inline-block;
+    padding-right: .5em;
+    padding-left: .5em;
+    margin-right: 4px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    line-height: 1.25em;
+}
+
+div.ptrack_snippet {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: .5em;
+    padding-left: .5em;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    line-height: 1.25em;
+}

@@ -1,0 +1,24 @@
+Experience in Offloading Protocol Processing to a Programmable NIC
+<br>
+Arthur  Maccabe, Wenbin Zhu, Jim Otto, Rolf Riesen
+<P>
+Offloading protocol processing
+will become an important tool
+in supporting our efforts to deliver increasing bandwidth to
+applications.  In this paper we describe our experience in
+offloading protocol processing to a programmable gigabit
+Ethernet network interface card.  For our experiments, we
+selected a simple RTS/CTS (request to send/clear to send)
+protocol called RMPP (Reliable Message Passing Protocol).
+This protocol provides end-to-end flow control and full
+message retransmit in the case of a lost or corrupt packet.
+By carefully selecting parts of the protocol for offloading,we were able to improve the bandwidth delivered to MPI
+applications from approximately 280 Mb/s to approximately
+700
+Mb/s using standard, 1500 byte, Ethernet frames.  Using
+``jumbo'', 9000 byte, frames the bandwidth improves from
+approximately 425 Mb/s to 840 Mb/s.  Moreover, we were able
+to
+show a significant increase in the availability of the host
+processor.
+

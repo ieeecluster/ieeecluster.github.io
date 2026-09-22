@@ -1,0 +1,53 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180913T140000
+DTEND;TZID=Europe/London:20180913T143000
+UID:ieeecluster_IEEE Cluster 2018_sess125_pap206@linklings.com
+SUMMARY:Accelerating Deep Learning Frameworks with Micro-batches
+DESCRIPTION:Accelerating Deep Learning Frameworks with Micro-batches\n\nOy
+ ama, Ben-Nun, Hoefler...\n\n\ncuDNN is a low-level library that provides G
+ PU kernels frequently used in deep learning. Specifically, cuDNN implement
+ s several equivalent convolution algorithms, whose performance and memory 
+ footprint may vary considerably, depending on the layer dimensions. When a
+ n algorithm is automatically selected by cuDNN, the decision is performed 
+ on a per-layer basis, and thus it often resorts to slower algorithms that 
+ fit the workspace size constraints. We present u-cuDNN, a thin wrapper lib
+ rary for cuDNN that transparently divides layers’ mini-batch computation i
+ nto multiple micro-batches, both on a single GPU and a heterogeneous set o
+ f GPUs. Based on Dynamic Programming and Integer Linear Programming (ILP),
+  u-cuDNN enables faster algorithms by decreasing the workspace requirement
+ s. At the same time, u-cuDNN does not decrease the accuracy of the results
+ , effectively decoupling statistical efficiency from the hardware efficien
+ cy. We demonstrate the effectiveness of u-cuDNN for the Caffe and TensorFl
+ ow frameworks, achieving speedups of 1.63x for AlexNet and 1.30x for ResNe
+ t-18 on V100-SXM2 GPU. We also show that u-cuDNN achieves speedups of up t
+ o 4.54x, and 1.60x on average for DeepBench's convolutional layers. In a d
+ istributed setting, u-cuDNN attains a speedup of 2.20x when training ResNe
+ t-18 on a heterogeneous GPU cluster over a single GPU. These results indic
+ ate that using micro-batches can seamlessly increase the performance of de
+ ep learning, while maintaining the same overall memory footprint.
+END:VEVENT
+END:VCALENDAR
+

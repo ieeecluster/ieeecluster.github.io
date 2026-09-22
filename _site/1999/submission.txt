@@ -1,0 +1,222 @@
+Dear Author:
+
+Congratulations!
+We have been notified that your paper has been accepted for
+publication in the proceedings of the 1st IEEE Computer Society
+International Workshop on Cluster Computing (IWCC'99) to be
+held 2-3 December 1999 in Melbourne, Australia.
+
+The following is an author kit to help you in the preparation of your paper.
+
+No hard-copy author kit will be sent.
+
+PLEASE NOTE: Your paper is due by 22 September 1999.
+
+PLEASE NOTE: A signed copyright release form is due by 22 September 1999.
+
+Please put the conference name - IWCC'99 - on all
+correspondence, on the copyright form, and on any mailing
+envelope. This will assure that your correspondence is directed
+immediately to my desk.
+
+You are allowed a total of eight (10) pages for regular papers.
+This includes all figures, tables, and references.
+
+*Please specifically reference in the letter that accompanies any checks
+for extra charges the name of the registered presenting author for your paper.
+This is to insure the proper account is credited.
+
+Please make checks out to IWCC'99 and identify the
+conference and paper/author for each check.  Please send
+extra pages charges to:
+
+ATTN: Rajkumar Buyya - IWCC'99
+School of Computer Science and Software Engineering
+Monash University
+Room No. 130, Blvd. No. 63, Clayton Campus
+Melbourne, Vic. 3168, Australia
+Tel: +61.3.9905.1502
+Fax: +61.3.9905.3574
+E-mail: rajkumar@dgs.monash.edu.au
+
+ELECTRONIC SUBMISSION:
+Please submit your paper electronically to our FTP site.
+ The paper should be uploaded at:
+ ftp://ftp.computer.org/pub/incoming/proceedings/iwcc99/
+ Please prepare your paper as plain ASCII PostScript only,
+ with NO encoding, condensing, or encapsulation.
+ Please use TrueType 1 fonts wherever possible.
+ Do not use bitmapped fonts such as Computer Modern
+ if you can avoid it.
+ Guidelines for generating and submitting PostScript files
+ are available on our Internet site at:
+ http://computer.org/author/psguide.htm
+
+FILE NAME:
+ Please save your file using your last name and first initial.
+ Example - John Smith's file would be smithj.ps.
+ If you are submitting two or more files, please
+   number them: smithj1.ps, smithj2.ps, etc.
+ If you are submitting a revised version of your paper,
+   save it as: smithjrevised.ps.
+ If there is a file with the same name already in the directory,
+ please use a variation.
+ Files are regularly moved off the FTP site. Please do not
+ re-post your paper if you do not see it on the site.
+
+TRANSFERRING TO FTP SITE:
+ When transferring files to the FTP site, if you have a choice
+ between ASCII and binary modes, use binary.  Although
+ ASCII mode works well most of the time, binary mode incurs
+ fewer problems.
+
+ Our FTP site:  ftp.computer.org
+ Log on as:  anonymous
+ Place files in subdirectory:  pub/incoming/proceedings/iwcc99
+
+
+COPYRIGHT FORM:
+ Please FAX your signed copyright release form to
+ Danielle C. Martin at (714) 761-1784.
+ We cannot publish your paper without this permission.
+ PLEASE NOTE: The copyright form is an attachment to this e-mail.
+ If you prefer, you may mail your copyright form to the following address:
+
+ATTN: Danielle C. Martin - IWCC'99
+IEEE Computer Society Press
+10662 Los Vaqueros Circle
+Los Alamitos, California 90720-1314 USA
+
+
+HARD-COPY PAPER:
+If, for some reason, you cannot send an electronic copy of
+your paper you may submit it as camera-ready hard copy
+after receiving permission from editor.
+
+Please print your camera-ready manuscript on plain white
+paper (A4 is acceptable).  Your manuscript must be
+camera-ready. If the print is gray or broken, it will appear
+that way in the completed book. Manuscripts will be
+photographed and printed just as they are.
+
+PLEASE NOTE: There is a $10.00 per page charge which
+will be collected by the conference for hard copies. Please
+make checks out to IWCC'99 and identify the conference
+and paper/author for each check.
+
+Please send hard-copy charges to:
+
+ATTN: Rajkumar Buyya - IWCC'99
+School of Computer Science and Software Engineering
+Monash University
+Room No. 130, Blvd. No. 63, Clayton Campus
+Melbourne, Vic. 3168, Australia
+Tel: +61.3.9905.1502
+Fax: +61.3.9905.3574
+E-mail: rajkumar@dgs.monash.edu.au
+
+Mail your paper with your copyright form, and enclose a note
+explaining that you could not submit it to our FTP site (so I
+won't be searching for it).  We recommend using a courier
+service to insure your paper arrives here on time.
+
+Please send the hard copy to Danielle C. Martin at the following address:
+
+ATTN: Danielle C. Martin - IWCC'99
+IEEE Computer Society Press
+10662 Los Vaqueros Circle
+Los Alamitos, California 90720-1314 USA
+
+
+Your hard-copy paper must be received by 22 September 1999.
+
+
+ABSTRACT:
+All proceedings published by the IEEE Computer Society are
+now being included in the IEEE Computer Society Digital Library,
+and are available on-line through our Web site.
+
+An E-mailed abstract of your paper is necessary for putting your
+paper into the on-line version of the IWCC'99 Proceedings.
+
+Please send an electronic copy of your abstract, as an e-mail in
+ASCII format and including the paper title, keywords, author
+names, addresses, and affiliations, to <iwcc99-abs@computer.org>.
+If you do not have e-mail, please save your abstract in ASCII
+format on a disk and send the disk with your copyright release form.
+
+ATTACHMENTS:
+There are several customized attachments to this author kit.
+They contain:
+
+ AUTHOR GUIDELINES
+ Instructions on formatting your paper for the proceedings.
+
+ COPYRIGHT RELEASE FORM
+ A copyright release form that MUST BE SIGNED AND
+ RETURNED WITH YOUR PAPER. Note that you are stating
+ that the material in your paper is original and you have not
+ previously released copyright to it. We cannot publish your
+ paper without this properly filled-out and signed form.
+
+ REPRINT ORDER FORM
+ To use if you wish reprints of your paper. Please make checks
+ for reprints out to the IEEE Computer Society.
+ (The reprints.pdf attachment below will allow you to type your
+ information directly into the form before you print it out.)
+
+The authkit.txt attachment is a plain ASCII text file that is an overall
+guide with instructions for formatting, a copy of the copyright form
+and a copy of the reprint form.  There are three additional
+attachments in PDF file format for Adobe Acrobat. They are
+instruct.pdf, copyright.pdf, and reprints.pdf. These files,
+while containing the same information as authkit.txt, are formatted
+to be easier to read and fill out.
+
+If attached files become unusable during transmission for any
+reason, you may also access uncustomized copies of them at
+our FTP site. Available at:
+ftp://ftp.computer.org/pub/outgoing/cspress/proceedings/
+
+LATEX MACROS:
+LaTeX formatting macros are also available on our FTP site.
+
+ Proceedings 8
+
+
+
+
+
+½ x 11 format - Filename: LATEX8.txt
+
+Available at:
+ftp://ftp.computer.org/pub/outgoing/cspress/proceedings/
+
+If you have any questions, please feel free to contact me.
+
+Sincerely,
+Danielle C. Martin
+Production Editor
+IEEE Computer Society Press
+10662 Los Vaqueros Circle
+Los Alamitos, CA 90720-1314
+Fax: (714) 761-1784
+E-mail: dmartin@computer.org
+
+Are you a member of the IEEE Computer Society?
+For membership information, visit  http://computer.org/member/mmbrshp.htm
+
+ATTACHMENTS:
+(See attached file: authkit.txt)
+
+(See attached file: instruct.pdf)
+
+(See attached file: copyright.pdf)
+
+(See attached file: reprints.pdf)
+
+
+
+
+
+

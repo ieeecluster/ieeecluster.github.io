@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180913T153000
+DTEND;TZID=Europe/London:20180913T160000
+UID:ieeecluster_IEEE Cluster 2018_sess128_pap272@linklings.com
+SUMMARY:Efficient Algorithms for the Summed Area Tables Primitive on GPUs
+DESCRIPTION:Efficient Algorithms for the Summed Area Tables Primitive on G
+ PUs\n\nchen, Wahib, Takizawa...\n\n\nTwo-dimensional Summed Area Tables (S
+ AT) is a fundamental primitive used in image processing and machine learni
+ ng applications. We present a collection of optimization methods for compu
+ ting SAT on CUDA-enabled GPUs. Conventional approaches rely on computing t
+ he prefix sum in one dimension in parallel, transposing the matrix, then c
+ omputing the prefix sum for the other dimension in parallel. Additionally,
+  conventional methods use the scratchpad memory as cache. We propose a col
+ lection of algorithms that are scalable with respect to problem size. We u
+ se the register cache technique instead of the scratchpad memory and also 
+ employ a naive serial scan on the thread level for computing the prefix su
+ m for one of the dimensions. Using a novel transpose-in-registers method w
+ e increase the inter-thread parallelism and outperform conventional SAT im
+ plementations. In addition, we significantly reduce both the communication
+  between threads and the number of arithmetic instructions. On an Nvidia P
+ ascal P100 GPU and Volta V100, our evaluations demonstrate that our implem
+ entations outperform state of the art libraries and yield up to 2.3x and 3
+ .2x speedup over OpenCV and Nvidia NPP libraries, respectively.
+END:VEVENT
+END:VCALENDAR
+

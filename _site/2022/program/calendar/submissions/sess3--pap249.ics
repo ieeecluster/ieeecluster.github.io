@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:A framework for hierarchical single-copy MPI collectives on multic
+ ore nodes
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20220907T140000
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20220907T143000
+DESCRIPTION:Collective operations are widely used by MPI applications to r
+ ealize their communication patterns. Their efficiency is crucial for both 
+ performance and scalability of parallel applications. For deriving efficie
+ nt MPI implementations\, significant effort is put to keep pace with advan
+ ces and capabilities of the underlying hardware and interconnect. Recent p
+ rocessor advances have led to nodes with higher core counts and complex in
+ ternal structures and memory hierarchies. Such nodes are able to host tens
+  to hundreds of processes and thus\, performance of MPI collectives at the
+  intra-node level becomes critical. In this work\, we propose a framework 
+ for collective operations at the intra-node level\, that aims to lower lat
+ ency and increased bandwidth. Our approach utilizes knowledge of internal 
+ node structure to construct hierarchical algorithms\, and XPMEM to achieve
+  single-copy transfers. Pipelining is used to overlap communication at dif
+ ferent levels of the hierarchy. We evaluate the proposed approach through 
+ several microbenchmarks and real-world MPI applications. For evaluation pu
+ rposes\, we compare the proposed approach with implementations of similar 
+ schemes from two recent studies. Our evaluation with microbenchmarks for B
+ roadcast and Allreduce shows speedup up to 2.5x and 3x\, respectively\, ov
+ er UCC and OpenMPI's default collectives implementation. Compared to recen
+ t research studies\, we improve Broadcast by up to 5x\, and Allreduce by u
+ p to 7x. We reduce the time of three applications -- PiSvM\, miniAMR and C
+ NTK\, by up to 12%\, 52% and 12%\, respectively\, over the next best-perfo
+ rming alternative.
+END:VEVENT
+END:VCALENDAR

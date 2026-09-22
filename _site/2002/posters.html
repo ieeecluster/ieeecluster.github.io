@@ -1,0 +1,425 @@
+<HTML>
+<HEAD>
+<TITLE>Cluster 2002 Posters</TITLE>
+</HEAD>
+<BODY>
+<center>
+<FONT FACE="Verdana,Helvetica,Arial" size=+2"
+color="#CC6600">
+<h2>Cluster2002 Posters</h2>
+</center>
+</strong>
+</font>
+<P>
+<font color="0000FF">
+Low-Cost Non-intrusive Debugging Strategies for Distributed Parallel Programs
+</font>
+<br>
+<em>M. Beynon, H. Andrade, and J. Saltz</em>
+<P>
+We propose and discuss debugging strategies
+for multithreaded/parallel
+distributed applications. These are low-overhead strategies
+since they
+only require linking the functions we have implemented to
+the
+application, and use commodity installed software such as
+GDB and Perl
+thereafter. These strategies target five main aspects of
+cluster
+debugging: 1) remote output viewing, where the output of
+multiple
+processes is collected to a single console, 2) just-in-time
+debugging,
+in which a bug in the application triggers the automatic
+launching of
+the debugger, 3) collective debugging, which allows one, for
+example,
+to collectively set breakpoints and watchpoints across many
+processes
+that are part of a parallel application, 4) dynamic state
+inspection,
+which permits the collection of the global state for the
+application
+in scenarios in which the application writer wants to answer
+the
+question "Where did the application hang?", and 5) message
+passing debugging, which enables the transparent collection
+of all messages exchanged in the context of an application. These
+strategies
+were and still are being used in the implementation of two
+large
+parallel, multithreaded, and distributed middlewares with a
+high
+degree of success, and a significant increase in the ease of
+development and debugging in a cluster environment.
+<P>
+<font color="0000FF">
+Silkroad II: A Multi-paradigm Runtime System for Cluster Computing
+</font>
+<br>
+<em>L. Peng, W. Wong, and C. Yeun</em>
+<P>
+A parallel programming paradigm dictates the way an
+application is to be expressed. It also restricts the
+algorithms that may be used in the application.
+Unfortunately, runtime systems for parallel computing
+often impose a particular programming paradigm. For a
+wider choice of algorithms, it is therefore desirable to
+support more than one paradigm. In this paper we propose
+our work in SilkRoad II, a variant of the Cilk runtime
+system for cluster computing. What is unique about
+SilkRoad II is its memory model which supports multiple
+paradigms with the underlying software distributed shared
+memory. The RC_dag memory consistency model of SilkRoad II
+is introduced. Our experimental results show that the
+stronger RC_dag can achieve performance comparable to
+LC of Cilk while supporting a bigger set of paradigms with
+rather good performance.
+<P>
+<font color="0000FF">
+Algorithmic Mechanism Design for Load Balancing in Distributed Systems
+</font>
+<br>
+<em>D. Grosu and A. Choronopoulos</em>
+<P>
+Computational Grids are promising next generation computing
+platforms for large scale problems in science and
+engineering. Grids are  large scale computing system
+composed of geographically distributed resources (computers,
+storage etc.) owned by self interested agents or
+organizations. These agents may manipulate the resource
+allocation algorithm in their own benefit and their selfish
+behavior may lead to severe performance degradation and
+poor efficiency.
+In this paper we investigate the problem of designing
+protocols for resource allocation involving selfish agents.
+Solving this kind of problems is the object of mechanism
+design theory. Using this theory we design a truthful
+mechanism for solving the static load balancing problem
+in heterogeneous distributed systems. We prove that
+using the optimal allocation algorithm the output function
+admits a truthful payment scheme satisfying voluntary
+participation. We derive a protocol that implements our
+mechanism and present experiments to show its effectiveness.
+<P>
+<font color="0000FF">
+Community Services: A Toolkit for Rapid Deployment of Network Services
+</font>
+<br>
+<em>B.-D. Lee and J. Weissman</em>
+<P>
+Advances in packaging and interface technologies have made
+it possible for software components to be shared across the
+network through encapsulation and offered as network
+services. They allow the end-users to focus on their
+applications and obtain remote services when needed simply
+by invoking the services across the network. Many groups
+have built significant infrastructure for providing 
+domain-specific high performance services. However, transforming
+high performance applications into network services is
+labor-intensive and time consuming because there is little
+existing infrastructure to utilize. We propose a software
+toolkit and run-time infrastructure for rapid deployment of
+network services. In this paper, among the many issues to
+consider when building such infrastructures,
+we shall focus
+on resource management because efficient resource
+management is indispensable to providing acceptable
+performance for a wide spectrum of users. We have
+implemented a prototype network service for N-body
+simulation using the infrastructure. The preliminary
+results show that the proposed run-time infrastructure can
+deliver significantly improved performance for concurrent
+<P>
+<font color="0000FF">
+A Data Parallel Programming Model Based on Distributed Objects<br>
+</font>
+<em>R. Diaconescu and R. Conradi</em>
+<P>
+This paper proposes a distributed object model that supports
+data parallelism for irregular, data parallel applications
+in an efficient and easy to program manner. We use the
+distributed memory model to achieve massive parallelism and
+the message passing communication style to exchange data
+between the distributed processing nodes.
+The independent data parallel computations (trivially data
+parallel) are described as "passive data objects" in our
+object model, and are accessible in a location-independent
+way using standard access functions. However, data between
+processing nodes must regularly be synchronized during the
+computation. This is taken care of by the "active objects",
+residing in each node. The computation is expressed as a
+shared class definition that contains a user-defined solver
+expressed in a "sequential way".
+With our model, the scientific programmer is freed from
+most details around data partitioning, access and
+synchronization for data parallel computations. The
+implementation of the distributed object model is done in
+C++ using a conventional, object-oriented framework. We
+present an example to validate our model and its
+implementation. Preliminary results indicate that our
+approach is efficient and scalable on the one hand, and
+simple-to-use and highly reusable on the other hand.
+<P>
+<font color="0000FF">
+A Cluster-based Hybrid Join Algorithm: Analysis and Evaluation<br>
+</font>
+<em>Erich Schikuta and Peter Kirkovits </em>
+<P>
+The join is the most important, but also the most time
+consuming operation in relational database systems. We
+implemented the parallel Hybrid Hash Join algorithm on a
+PC-cluster architecture and analyzed its performance
+behavior. We show that off-the-shelf, cost saving, cluster
+systems can build a viable platform for parallel database
+systems.
+
+<P>
+<font color="0000FF">
+MAGE -- A Metacomputing Environment for Parallel Program Development on
+Cluster Computers<br>
+</font>
+<em>M. McMahon, B. DeLong, M. Fotta, G. Weinstock, and A. Williams</em>
+<P>
+This paper describes the design of MAGE--Metacomputing and
+Grid Environment--an environment for developing and
+executing parallel programs on COTS cluster computers and
+grids.  The intent of MAGE is to provide a layer of
+abstraction at the level of parallel program compilation,
+execution, and monitoring.  The user is isolated from the
+details of these operations, while preserving a robust,
+flexible set of capabilities for advanced parallel program
+development.
+While most metacomputing abstractions focus on access to
+extant parallel resources, or on integrating dispersed
+resources into a grid, MAGE integrates cluster middleware
+with workstation applications, and  extends this paradigm
+by focusing on providing a development environment for the
+creation of new parallel programs.  The flexible, modular
+design of the MAGE components ensures portability to
+different clustering platforms and promotes eventual
+integration of a MAGE-based system with a grid
+system.
+<P>
+<font color="0000FF">
+COMB: A Portable Benchmark Suite for Assessing MPI Overlap
+<br>
+</font>
+<em>W. Lawry, C. Wilson, A. Maccabe, and R. Brightwell</em>
+<P>
+This paper describes a portable 
+benchmark suite that
+assesses
+the ability of cluster networking hardware and software to
+overlap MPI communication and computation.  The
+Communication
+Offload MPI-based Benchmark, or COMB, uses two different
+methods to characterize the ability of messages to make
+progress concurrently with computational processing on the
+host processor(s).  COMB measures the relationship between
+overall MPI communication bandwidth and host CPU
+availability.
+In this paper, we describe the two different approaches used
+by the benchmark suite, and we present results from several
+systems.  We demonstrate the utility of the suite by
+examining
+the results and comparing and contrasting different systems.
+<P>
+
+<font color="0000FF">
+A Distributed Data Implementation of Parallel FCI Program<br>
+</font>
+<em>Z. Gan, Y. Alexeev, R. Kendall, and M. Gordon</em>
+<P>
+A distributed data parallel 
+full CI program is described.
+The implementation of the FCI algorithm is organized in a
+mixed driven approach. Redundant communication is avoided,
+and the network performance is further optimized by improved
+DDI communication library. Examples show very good speedup
+performance on 16 node PC clusters. The application of the
+code is also
+demonstrated.
+<P>
+<font color="0000FF">
+User-Level Remote Data Access in Overlay Metacomputers<br>
+</font>
+<em>J. Siegel and P. Lu</em>
+<P>
+A practical problem faced by users of metacomputers and
+computational
+grids is: If my computation can move from one system to
+another, how
+can I ensure that my data will still be available to my
+computation?
+Depending on the level of software, technical, and
+administrative
+support available, a data grid or a distributed file system
+would be
+reasonable solutions.  However, it is not always possible
+(or practical)
+to have a diverse group of systems administrators agree to
+adopt a common
+infrastructure to support remote data access.  Yet, having
+transparent
+access to any remote data is an important, practical
+capability.
+We have developed the Trellis File System (Trellis FS) to
+allow programs
+to access data files on any file system and on any host on a
+network that
+can be named by a Secure Copy Locator (SCL) or a Uniform
+Resource Locator
+(URL).  Without requiring any new protocols or
+infrastructure, Trellis
+can be used on practically any POSIX-based system on the
+Internet.
+Read access, write access, sparse access, local caching of
+data,
+prefetching, and authentication are supported.  Trellis is
+implemented as
+a user-level C library, which mimics the standard stream I/O
+functions,
+and is highly portable.  Trellis is not a replacement for
+traditional
+file systems or data grids; it provides new capabilities by
+overlaying
+on top of other file systems, including grid-based file
+systems.  And,
+by building upon an already-existing infrastructure (i.e.,
+Secure Shell
+and Secure Copy), Trellis can be used in situations where a
+suitable
+data grid or distributed file system does not yet exist.
+<P>
+<font color="0000FF">
+Design of a Middleware-Based Cluster Management Platform with Tool
+Management and Migration<br>
+</font>
+<em>F. De Turck, S. Vanhastel, P. Thysebaert, B. Volckaert, P. Demeester, and B.
+Dhoedt</em>
+<P>
+In this paper, we address the design and implementation
+of a generic and scalable platform for efficient management
+of computational resources. The developed platform
+is called the Intelligent Agent Platform. Its architecture
+is based on middleware technology in order to ensure easy
+distribution of the software components between the
+participating workstations and to exploit advanced software
+techniques.
+The computational tasks are referred to as agents,
+defined as software components that are capable of executing
+particular algorithms on input data. The platform offers
+advanced features such as transparent task management,
+load balancing, run time compilation of agent code and task
+migration and is therefore denoted by the adjective
+``Intelligent''.
+The architecture of the platform will be outlined from
+a computational point of view and each component will be
+described in detail. Furthermore, some important design
+issues of the platform will be covered and a performance
+evaluation will be presented.
+<P>
+<font color="0000FF">
+Job Scheduling for Prime Time vs. Non-prime Time<br>
+</font>
+<em>V. Lo and J. Mache</em>
+<P>
+Job scheduling is an important issue in the effective
+management of high-performance clusters. Current job
+scheduling systems support batch scheduling with several
+distinct scheduling queues. A common arrangement involves
+two classes of queues: prime time vs. non-prime time.
+Jobs running in these two queues must satisfy different
+criteria with respect to jobsize, runtime, or other
+resource needs. These constraints are designed to delay
+big jobs to non-prime time in order to provide better
+quality service during the prime time workday hours.
+This paper surveys existing prime time scheduling policies
+and investigates the sensitivity of scheduling performance
+to the choice of parameters for prime time versus non-prime
+time queues. We study how changes in the prime time jobsize
+and runtime limits impact various performance metrics. Our
+simulation study uses workload traces from an IBM SP/2 at
+NASA NAS. Our results give strong evidence for the use of
+specific prime time limits and sheds light on the
+performance trade-offs for (small) prime time jobs vs.
+(large) non-prime time jobs.
+<P>
+<font color="0000FF">
+Portals and Networking for the Lustre File System
+</font>
+<br>
+<em>Peter Braam, <b>Ron Brightwell</b> <a href="mailto:bright@cs.sandia.gov">bright@cs.sandia.gov</a>,
+and Phil Schwan</em>
+<P>
+Lustre is a scalable parallel file system for use on
+large-scale
+compute clusters. Lustre needs to run over many different
+networks,
+including Ethernet, InfiniBand, Myrinet and Quadrics. In
+this paper,
+we discuss how the Portals message passing API provided an
+almost
+optimal foundation for networking the Lustre file system. Of
+particular interest are the concurrent presence of storage
+networking
+features, such as remote DMA and request processing features
+that
+Portals allows.
+<P>
+<font color="0000FF">
+A New Architecture for Secure Carrier-Class Clusters
+</font>
+<br>
+<em>M. Pourzandi</em>
+<P>
+Traditionally, the telecom industry
+has used clusters to
+meet its carrier-class
+requirements of high availability, reliability, and
+scalability,
+while relying on cost-effective hardware and software.
+Efficient cluster security is now an essential requirement
+and has not yet been
+addressed in a coherent fashion on clustered systems.
+This paper presents an approach for distributed security
+architecture that
+supports advanced security mechanisms for current and future
+security needs,
+targeted for carrier-class application servers running on
+clustered
+systems.
+<P>
+<font color="0000FF">
+BJS: A Scalable, Fault-Tolerant Job Scheduler for Cluster Systems<br>
+</font>
+<em>Paul Ruth, Sung-Eun Choi, and Erik A. Hendriks
+</em>
+<P>
+In this paper, we describe the BProc Job Scheduler (BJS),
+a scalable
+cluster job scheduler that can cleanly survive cluster
+failures and
+schedule jobs around them.  Unlike existing systems, BJS
+does not
+communicate directly with individual cluster nodes, which
+could soon
+number in the thousands.  Rather it leverages the facilities
+provided
+by the operating system (BProc Linux) such as system state
+and the
+ability to change a node's owner.  BJS can schedule 200 jobs
+per
+second in the presence of one or more failures and the same
+without
+failures.  Furthermore, the job pools (node partitions) can
+be quickly
+and transparently changed underneath running jobs without
+stopping the
+scheduler or emptying the job pools.  This is only possible
+because
+the logical node partitioning is only known by the BJS
+server, not
+each individual node.

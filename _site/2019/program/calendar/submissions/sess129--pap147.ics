@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Assembly Hall
+DTSTART;TZID=Europe/London:20180913T160000
+DTEND;TZID=Europe/London:20180913T163000
+UID:ieeecluster_IEEE Cluster 2018_sess129_pap147@linklings.com
+SUMMARY:IOMiner: Large-scale Analytics Framework for Gaining Knowledge fro
+ m I/O Logs
+DESCRIPTION:IOMiner: Large-scale Analytics Framework for Gaining Knowledge
+  from I/O Logs\n\nWang, Byna, Lockwood...\n\n\nModern HPC systems are coll
+ ecting abundant I/O performance\ninstrumentation. The massive volume and h
+ eterogeneity\nof this instrumentation has made it difficult to\nperform in
+ -depth integrated analysis in a timely manner,\nhowever. To overcome this 
+ gap and to allow users to identify\nthe root causes of poor application I/
+ O performance, we\npresent IOMiner, an I/O log analytics framework. IOMine
+ r\nprovides easy to use interfaces for analyzing instrumentation\ndata, a 
+ unified storage schema that hides the heterogeneity\nof the raw instrument
+ ation data, and a sweep-line based\nalgorithm for root cause analysis of p
+ oor application I/O\nperformance. IOMiner is implemented atop Spark to fac
+ ilitate\nefficient, interactive, parallel analytics. We demonstrate\nthe c
+ apabilities of IOMiner by using it to analyze logs\ncollected on a large-s
+ cale production HPC system. Our\nanalysis techniques not only uncover the 
+ root cause of poor\nI/O performance in key application case studies but al
+ so\nprovide new insight into HPC I/O workload characterization.
+END:VEVENT
+END:VCALENDAR
+

@@ -1,0 +1,142 @@
+/* I've turned off all of the text-shadow options below to make the banner work
+better with more color options. */
+
+/* The menubar. */
+/* div.rm_mega_menus_container {background-color: #777; color: #FFF; margin: 0px; padding: 0px;} */
+div.rm_mega_menus_container {margin: 0px; padding: 0px;}
+ul.rm_mega_menu {margin: 0px; padding: 0px; list-style-type: none;}
+/* ul.rm_mega_menu.darker {background-color: #777;} */
+
+/* Menu headers in the menubar. */
+ul.rm_mega_menu > li {
+    display: inline;
+    position: relative; /* 'relative' so that absolute positions below can be calculated based on this. */
+    height: 1%;     /* This is supposed to fix an IE8 bug... */
+    margin: 0px; padding: 0px;
+    /* z-index: 15;  To workaround IE8 z-index bug. */
+}
+ul.rm_mega_menu > li.mega > a {
+    display: inline-block;
+    /* color: #FFF; */
+    text-decoration: none;
+    font-family: Arial; font-size: 14px; font-weight: normal;
+    /* text-shadow: 1px 1px 2px black; */
+    background: transparent url(../images/menu_down_arrow.png) center right no-repeat;
+    padding: 5px 12px 4px 8px;  /* Room for arrow and underline. */
+    border-width: 0px 0px 1px 0px; border-style: solid;
+    /* border-color: #777; */
+}
+/* ul.rm_mega_menu.darker > li.mega > a {border-color: #666;} */
+/* For the selected (not hovered) item. */
+ul.rm_mega_menu > li.mega.selected > a {border-color: red;}
+/*ul.rm_mega_menu > li.mega.selected > a {font-weight: bold;}*/
+/*ul.rm_mega_menu.darker > li.mega.selected > a {border-color: red;}*/
+/* When hover... */
+ul.rm_mega_menu > li.mega > a:hover,
+ul.rm_mega_menu > li.mega-hover > a,
+ul.rm_mega_menu > li.mega.mega-hover > a,
+ul.rm_mega_menu.darker > li.mega > a:hover,
+ul.rm_mega_menu.darker > li.mega-hover > a,
+ul.rm_mega_menu.darker > li.mega.mega-hover > a,
+ul.rm_mega_menu.darker > li.mega.selected > a:hover,
+ul.rm_mega_menu.darker > li.mega-hover.selected > a {
+    text-decoration: none;
+    /* color: #930; */
+    /* text-shadow: 2px 2px 2px #FFDCC0; */
+    background: #FFF url(../images/menu_down_arrow.png) center right no-repeat;
+    /* box-shadow: 4px 4px 6px #888; */
+    border-color: #FFF;
+}
+
+/* Simple links (no menu div) in the menubar. */
+ul.rm_mega_menu > li.mega-link > a {
+    display: inline-block;
+    /* color: #FFF; */
+    text-decoration: none;
+    /* text-shadow: 1px 1px 2px black; */
+    font-family: Arial; font-size: 14px; font-weight: normal;
+    padding: 5px 5px 4px 5px;
+    border-width: 0px 0px 1px 0px; border-style: solid;
+    /* border-color: #777; */
+}
+/* ul.rm_mega_menu.darker > li.mega-link > a {border-color: #666;} */
+ul.rm_mega_menu > li.mega-link.selected > a {
+    border-color: red;
+}
+
+ul.rm_mega_menu > li.mega-link > a:hover {
+    background-color: #FFF;
+    text-decoration: none;
+    /*color: #930;*/
+    /* text-shadow: 2px 2px 2px #FFDCC0; */
+    /* box-shadow: 4px 4px 6px #888; */
+    border-color: #FFF;
+}
+
+/* Simple labels. */
+ul.rm_mega_menu > li.mega-label > span {
+    display: inline-block;
+    /* color: #FFF; */
+    text-decoration: none;
+    /* text-shadow: 1px 1px 2px black; */
+    font-family: Arial; font-size: 14px; font-weight: normal;
+    padding: 5px 5px 4px 5px;
+}
+
+/* The menu div. */
+ul.rm_mega_menu li.mega > div {
+    display: none;
+}
+
+ul.rm_mega_menu li.mega-hover > div {
+    display: block;
+    z-index: 10;
+}
+
+ul.rm_mega_menu li.mega > div {
+    position: absolute;
+    top: auto;
+    left: 0px; right: auto; /* Overridden below for .right. */
+    width: 18em;    /* Override width on the div, as needed. */
+    /* border-width: 0px 1px 1px 1px; border-style: solid; border-color: #777; */
+    border-width: 0px;
+    padding: 7px;
+    text-align: left;
+    /*color: #930;*/
+
+    border-top-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    /* box-shadow: 4px 4px 6px #888; */
+    box-shadow: 0px 12px 15px #666;
+
+    /* Background color and gradients - I'm turning off the gradient for simplicity and readability. */
+    background-color: #FFF;
+    /* Safari 4-5, Chrome 1-9 */
+/*    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#CCC));*/
+    /* Safari 5.1, Chrome 10+ */
+/*    background: -webkit-linear-gradient(top, #FFF, #CCC);*/
+    /* Firefox 3.6+ */
+    /*background: -moz-linear-gradient(top, #FFF, #CCC);
+    /* IE 10 */
+/*    background: -ms-linear-gradient(top, #FFF, #CCC);*/
+    /* IE 5.5 – 7 */
+/*    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#F0F0F0, endColorstr=#C0C0C0);*/
+    /* IE 8 */
+/*    ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#F0F0F0, endColorstr=#C0C0C0);*/
+    /* Opera 11.10+ */
+/*    background: -o-linear-gradient(top, #FFF, #CCC);*/
+}
+ul.rm_mega_menu li.mega.right > div {   /* For menus on the right side (so menu will hang toward left). */
+    right: 0px; left: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 0px;
+}
+
+div.rm_mega_menus_container ul.rm_mega_menu > li.mega > div.menu_dropdown {
+    text-transform: none;
+	position: absolute;
+	z-index: 25;
+}

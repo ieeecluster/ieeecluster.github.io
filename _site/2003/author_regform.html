@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="big5"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=big5" />
+<style type="text/css">
+<!--
+body,p,td,table,input {
+	font-family: "Times New Roman", "Helvetica", "sans-serif";
+	font-size: 14px;
+}
+-->
+</style>
+<script type="text/javascript" language="JavaScript">
+<!-- Copyright 2003 Bontrager Connection, LLC
+// Code obtained from http://WillMaster.com/
+//
+// Each required form field can be checked with JavaScript. Here are 
+//    the function names for the different kinds of checks:
+//
+//       1. WithoutContent() -- check if the text, textarea, password, 
+//              or file fields has no content.
+//       2. NoneWithContent() -- check if none of the set of text, 
+//              textarea, password, or file fields have content. 
+//              (Set: More than one with the same field name.)
+//
+//       3. NoneWithCheck() -- check if none of the set of radio buttons 
+//              or checkboxes are checked. (Set: More than one with the 
+//              same field name.)
+//       4. WithoutCheck() -- check if the single radio button or checkbox 
+//              is unchecked.
+//
+//       5. WithoutSelectionValue() -- check if selected drop-down list or 
+//              select box entries have no value.
+//
+//
+// The format for using the above functions is
+//             if(       WithoutContent([FORMFIELDVALUE])) [ERRORMESSAGE]
+//             if(      NoneWithContent([FORMFIELD])     ) [ERRORMESSAGE]
+//             if(        NoneWithCheck([FORMFIELD])     ) [ERRORMESSAGE]
+//             if(         WithoutCheck([FORMFIELD])     ) [ERRORMESSAGE]
+//             if(WithoutSelectionValue([FORMFIELD])     ) [ERRORMESSAGE]
+//
+// The if(...) part and the error message part may be on separate lines, like
+//             if(WithoutContent([FORMFIELDVALUE]))
+//                [ERRORMESSAGE]
+//             if(NoneWithContent([FORMFIELD]))
+//                [ERRORMESSAGE]
+//             if(NoneWithCheck([FORMFIELD]))
+//                [ERRORMESSAGE]
+//             if(WithoutCheck([FORMFIELD]))
+//                [ERRORMESSAGE]
+//             if(WithoutSelectionValue([FORMFIELD]))
+//                [ERRORMESSAGE]
+//
+//
+//      FORMFIELD -- The format for specifying a "form field" is 
+//                         document.[FORMNAME].[FIELDNAME]
+// FORMFIELDVALUE -- The format for specifying a "form field value" is 
+//                         document.[FORMNAME].[FIELDNAME].value
+//   ERRORMESSAGE -- The format for specifying an "error message" is
+//                         { errormessage += "\n\n[MESSAGE]"; }
+//                   If the message itself contains quotation marks, 
+//                      they must be preceded with a back slash. 
+//                      Example: \"
+//
+//
+//      FORMNAME -- The name assigned to the form in the <FORM... tag. 
+//     FIELDNAME -- The field name being checked.
+// 
+//
+// For use with this JavaScript, the only non-alphanumeric character a 
+//    fieldname may have is the underscore. Replace any hyphens, colons, 
+//    spaces, or other non-alphanumeric characters in your field names 
+//    with an underscore character.
+//
+//
+// Put field checks into the function CheckRequiredFields(), in the order 
+//    you want the fields checked.
+//
+
+
+function CheckRequiredFields() {
+var errormessage = new String();
+// Put field checks below this point.
+
+
+if(WithoutContent(document.cluster_registration.surname.value))
+	{ errormessage += "\n\nSurname is required."; }
+if(WithoutContent(document.cluster_registration.othername.value))
+	{ errormessage += "\n\nOther name is required."; }
+if(WithoutContent(document.cluster_registration.address1.value))
+	{ errormessage += "\n\nAddress is required."; }
+if(checkemail())
+	{ errormessage += "\n\nEmail is required/invaild."; }
+		
+// Put field checks above this point.
+
+if(errormessage.length > 2) {
+	alert('NOTE:' + errormessage);
+	return false;
+	}
+
+window.print()
+return true;
+
+} // end of function CheckRequiredFields()
+
+var testresults
+function checkemail(){
+var str=document.cluster_registration.emailcheck.value
+var filter=/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i
+if (filter.test(str))
+testresults=false
+else{
+
+testresults=true
+}
+return (testresults)
+}
+
+function WithoutContent(ss) {
+if(ss.length > 0) { return false; }
+return true;
+}
+
+function NoneWithContent(ss) {
+for(var i = 0; i < ss.length; i++) {
+	if(ss[i].value.length > 0) { return false; }
+	}
+return true;
+}
+
+function NoneWithCheck(ss) {
+for(var i = 0; i < ss.length; i++) {
+	if(ss[i].checked) { return false; }
+	}
+return true;
+}
+
+function WithoutCheck(ss) {
+if(ss.checked) { return false; }
+return true;
+}
+
+function WithoutSelectionValue(ss) {
+for(var i = 0; i < ss.length; i++) {
+	if(ss[i].selected) {
+		if(ss[i].value.length) { return false; }
+		}
+	}
+return true;
+}
+
+//-->
+</script>
+<script language="javascript">
+function IsPrice(sText)
+{
+  var ValidChars = "0123456789.";
+  var Char;
+  var Count_dot = 0;
+
+  for (i = 0; i < sText.length; i++) 
+  { 
+    Char = sText.charAt(i); 
+    if (ValidChars.indexOf(Char) == -1) 
+    {
+      alert(sText + " is not a valid price!");
+      return false;
+    }
+    else if (Char == '.')
+      Count_dot++;
+  }
+  return true;
+}
+
+function cal_total()
+{
+  document.cluster_registration.Total_price.value = Number(document.cluster_registration.Item1_price.value) +
+                                          Number(document.cluster_registration.Item2_price.value) +
+                                          Number(document.cluster_registration.Item3_price.value) +
+                                          Number(document.cluster_registration.Item4_price.value);
+}
+</script>
+</head>
+<body>
+<form name="cluster_registration" >
+  <table width="760" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td colspan="2"><img src="banner.gif" width="760" height="194" /></td>
+    </tr>
+    <tr valign="top">
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr valign="top">
+      <td width="58%"><strong>Complete Form and Mail to:<br />
+        </strong>Cluster 2003 Conference<br />
+        c/o Dr. Alvin Chan<br />
+        Department of Computing<br />
+        The Hong Kong Polytechnic University<br />
+        Hung Hom, Hong Kong<br />
+        <strong> </strong></td>
+      <td width="42%"><strong>Or fax the completed form to:</strong><br />
+        Fax: (852) 2170 0103</td>
+    </tr>
+    <tr valign="top">
+      <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="16">
+          <tr>
+            <td><div align="center"><strong>For author registration, payment
+                  must be received before 21 September 2003. <br />
+                </strong></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr valign="top">
+      <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="3">
+          <tr bgcolor="#000000">
+            <td colspan="5" valign="middle" bgcolor="#CCCCCC"><font color="#000000"><strong>SECTION
+                  A: Attendee Information</strong></font></td>
+          </tr>
+          <tr>
+            <td colspan="5" valign="middle">(Please print in Capital Letters)</td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="3">
+          <tr>
+            <td valign="middle">Title:<font color="#FF0000">&nbsp;</font></td>
+            <td valign="middle"><select name="title" id="select3">
+                <option selected="selected">Prof.</option>
+                <option>Dr.</option>
+                <option>Mr.</option>
+                <option>Ms.</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td valign="middle">Surname:<font color="#FF0000"><strong>*</strong></font></td>
+            <td valign="middle"><input name="surname" type="text" id="surname" value="" size="30" />
+            </td>
+          </tr>
+          <tr>
+            <td valign="middle">Other Name:<font color="#FF0000"><strong>*</strong></font></td>
+            <td valign="middle"><input name="othername" type="text" id="othername" value="" size="40" />
+            </td>
+          </tr>
+          <tr>
+            <td width="114" valign="middle">Department:</td>
+            <td width="634" valign="middle"><input name="department" type="text" id="department" value="" size="90" />
+            </td>
+          </tr>
+          <tr>
+            <td valign="middle">Organizations: </td>
+            <td valign="middle"><input name="organizations" type="text" value="" size="90" />
+            </td>
+          </tr>
+          <tr>
+            <td valign="middle">Address:<font color="#FF0000"><strong>*</strong></font></td>
+            <td valign="middle"><input name="address1" type="text" size="90" value="" />
+            </td>
+          </tr>
+          <tr>
+            <td valign="middle">&nbsp;</td>
+            <td valign="middle"><input name="address2" type="text" size="90" value="" />
+            </td>
+          </tr>
+          <tr>
+            <td valign="middle">City:</td>
+            <td valign="middle"><input name="city" type="text" size="40" value="" />
+            </td>
+          </tr>
+          <tr>
+            <td valign="middle">State/Province:</td>
+            <td valign="middle"><font face="Arial, Helvetica, Verdana, sans-serif" size="2">
+              <input name="state" type="text" size="40" value="" />
+              </font></td>
+          </tr>
+          <tr>
+            <td valign="middle">Post/ZIP Code:</td>
+            <td valign="middle"><font face="Arial, Helvetica, Verdana, sans-serif" size="2">
+              <input name="zip" type="text" size="12" maxlength="12" value="" />
+              </font></td>
+          </tr>
+          <tr>
+            <td valign="middle">Country:</td>
+            <td valign="middle"><select name="country">
+                <option value="default" selected="selected">Choose Your Country</option>
+                <option value="AF" id="AF">Afghanistan</option>
+                <option value="AL" id="AL">Albania</option>
+                <option value="DZ" id="DZ">Algeria</option>
+                <option value="AS" id="AS">American Samoa</option>
+                <option value="AD" id="AD">Andorra</option>
+                <option value="AO" id="AO">Angola</option>
+                <option value="AI" id="AI">Anguilla</option>
+                <option value="AQ" id="AQ">Antarctica</option>
+                <option value="AG" id="AG">Antigua and Barbuda</option>
+                <option value="AR" id="AR">Argentina</option>
+                <option value="AM" id="AM">Armenia</option>
+                <option value="AW" id="AW">Aruba</option>
+                <option value="AU" id="AU">Australia</option>
+                <option value="AT" id="AT">Austria</option>
+                <option value="AZ" id="AZ">Azerbaijan</option>
+                <option value="BS" id="BS">Bahamas</option>
+                <option value="BH" id="BH">Bahrain</option>
+                <option value="BD" id="BD">Bangladesh</option>
+                <option value="BB" id="BB">Barbados</option>
+                <option value="BY" id="BY">Belarus</option>
+                <option value="BE" id="BE">Belgium</option>
+                <option value="BZ" id="BZ">Belize</option>
+                <option value="BJ" id="BJ">Benin</option>
+                <option value="BM" id="BM">Bermuda</option>
+                <option value="BT" id="BT">Bhutan</option>
+                <option value="BO" id="BO">Bolivia</option>
+                <option value="BA" id="BA">Bosnia and Herzegovina</option>
+                <option value="BW" id="BW">Botswana</option>
+                <option value="BV" id="BV">Bouvet Island</option>
+                <option value="BR" id="BR">Brazil</option>
+                <option value="IO" id="IO">British Indian Ocean Territory</option>
+                <option value="BN" id="BN">Brunei</option>
+                <option value="BG" id="BG">Bulgaria</option>
+                <option value="BF" id="BF">Burkina Faso</option>
+                <option value="BI" id="BI">Burundi</option>
+                <option value="KH" id="KH">Cambodia</option>
+                <option value="CM" id="CM">Cameroon</option>
+                <option value="CA" id="CA">Canada</option>
+                <option value="CV" id="CV">Cape Verde</option>
+                <option value="KY" id="KY">Cayman Islands</option>
+                <option value="CF" id="CF">Central African Republic</option>
+                <option value="TD" id="TD">Chad</option>
+                <option value="CL" id="CL">Chile</option>
+                <option value="CN" id="CN">China</option>
+                <option value="CX" id="CX">Christmas Island</option>
+                <option value="CC" id="CC">Cocos (Keeling) Islands</option>
+                <option value="CO" id="CO">Colombia</option>
+                <option value="KM" id="KM">Comoros</option>
+                <option value="CG" id="CG">Congo</option>
+                <option value="CK" id="CK">Cook Islands</option>
+                <option value="CR" id="CR">Costa Rica</option>
+                <option value="CI" id="CI">Cote d'Ivoire</option>
+                <option value="HR" id="HR">Croatia (Hrvatska)</option>
+                <option value="CU" id="CU">Cuba</option>
+                <option value="CY" id="CY">Cyprus</option>
+                <option value="CZ" id="CZ">Czech Republic</option>
+                <option value="CD" id="CD">Congo (DRC)</option>
+                <option value="DK" id="DK">Denmark</option>
+                <option value="DJ" id="DJ">Djibouti</option>
+                <option value="DM" id="DM">Dominica</option>
+                <option value="DO" id="DO">Dominican Republic</option>
+                <option value="TP" id="TP">East Timor</option>
+                <option value="EC" id="EC">Ecuador</option>
+                <option value="EG" id="EG">Egypt</option>
+                <option value="SV" id="SV">El Salvador</option>
+                <option value="GQ" id="GQ">Equatorial Guinea</option>
+                <option value="ER" id="ER">Eritrea</option>
+                <option value="EE" id="EE">Estonia</option>
+                <option value="ET" id="ET">Ethiopia</option>
+                <option value="FK" id="FK">Falkland Islands (Islas Malvinas)</option>
+                <option value="FO" id="FO">Faroe Islands</option>
+                <option value="FJ" id="FJ">Fiji Islands</option>
+                <option value="FI" id="FI">Finland</option>
+                <option value="FR" id="FR">France</option>
+                <option value="GF" id="GF">French Guiana</option>
+                <option value="PF" id="PF">French Polynesia</option>
+                <option value="TF" id="TF">French Southern and Antarctic Lands</option>
+                <option value="GA" id="GA">Gabon</option>
+                <option value="GM" id="GM">Gambia</option>
+                <option value="GE" id="GE">Georgia</option>
+                <option value="DE" id="DE">Germany</option>
+                <option value="GH" id="GH">Ghana</option>
+                <option value="GI" id="GI">Gibraltar</option>
+                <option value="GR" id="GR">Greece</option>
+                <option value="GL" id="GL">Greenland</option>
+                <option value="GD" id="GD">Grenada</option>
+                <option value="GP" id="GP">Guadeloupe</option>
+                <option value="GU" id="GU">Guam</option>
+                <option value="GT" id="GT">Guatemala</option>
+                <option value="GN" id="GN">Guinea</option>
+                <option value="GW" id="GW">Guinea-Bissau</option>
+                <option value="GY" id="GY">Guyana</option>
+                <option value="HT" id="HT">Haiti</option>
+                <option value="HM" id="HM">Heard Island and McDonald Islands</option>
+                <option value="HN" id="HN">Honduras</option>
+                <option value="HK" id="HK">Hong Kong SAR</option>
+                <option value="HU" id="HU">Hungary</option>
+                <option value="IS" id="IS">Iceland</option>
+                <option value="IN" id="IN">India</option>
+                <option value="ID" id="ID">Indonesia</option>
+                <option value="IR" id="IR">Iran</option>
+                <option value="IQ" id="IQ">Iraq</option>
+                <option value="IE" id="IE">Ireland</option>
+                <option value="IL" id="IL">Israel</option>
+                <option value="IT" id="IT">Italy</option>
+                <option value="JM" id="JM">Jamaica</option>
+                <option value="JP" id="JP">Japan</option>
+                <option value="JO" id="JO">Jordan</option>
+                <option value="KZ" id="KZ">Kazakhstan</option>
+                <option value="KE" id="KE">Kenya</option>
+                <option value="KI" id="KI">Kiribati</option>
+                <option value="KR" id="KR">Korea</option>
+                <option value="KW" id="KW">Kuwait</option>
+                <option value="KG" id="KG">Kyrgyzstan</option>
+                <option value="LA" id="LA">Laos</option>
+                <option value="LV" id="LV">Latvia</option>
+                <option value="LB" id="LB">Lebanon</option>
+                <option value="LS" id="LS">Lesotho</option>
+                <option value="LR" id="LR">Liberia</option>
+                <option value="LY" id="LY">Libya</option>
+                <option value="LI" id="LI">Liechtenstein</option>
+                <option value="LT" id="LT">Lithuania</option>
+                <option value="LU" id="LU">Luxembourg</option>
+                <option value="MO" id="MO">Macao SAR</option>
+                <option value="MK" id="MK">Macedonia, Former Yugoslav Republic
+                of</option>
+                <option value="MG" id="MG">Madagascar</option>
+                <option value="MW" id="MW">Malawi</option>
+                <option value="MY" id="MY">Malaysia</option>
+                <option value="MV" id="MV">Maldives</option>
+                <option value="ML" id="ML">Mali</option>
+                <option value="MT" id="MT">Malta</option>
+                <option value="MH" id="MH">Marshall Islands</option>
+                <option value="MQ" id="MQ">Martinique</option>
+                <option value="MR" id="MR">Mauritania</option>
+                <option value="MU" id="MU">Mauritius</option>
+                <option value="YT" id="YT">Mayotte</option>
+                <option value="MX" id="MX">Mexico</option>
+                <option value="FM" id="FM">Micronesia</option>
+                <option value="MD" id="MD">Moldova</option>
+                <option value="MC" id="MC">Monaco</option>
+                <option value="MN" id="MN">Mongolia</option>
+                <option value="MS" id="MS">Montserrat</option>
+                <option value="MA" id="MA">Morocco</option>
+                <option value="MZ" id="MZ">Mozambique</option>
+                <option value="MM" id="MM">Myanmar</option>
+                <option value="NA" id="NA">Namibia</option>
+                <option value="NR" id="NR">Nauru</option>
+                <option value="NP" id="NP">Nepal</option>
+                <option value="NL" id="NL">Netherlands</option>
+                <option value="AN" id="AN">Netherlands Antilles</option>
+                <option value="NC" id="NC">New Caledonia</option>
+                <option value="NZ" id="NZ">New Zealand</option>
+                <option value="NI" id="NI">Nicaragua</option>
+                <option value="NE" id="NE">Niger</option>
+                <option value="NG" id="NG">Nigeria</option>
+                <option value="NU" id="NU">Niue</option>
+                <option value="NF" id="NF">Norfolk Island</option>
+                <option value="KP" id="KP">North Korea</option>
+                <option value="MP" id="MP">Northern Mariana Islands</option>
+                <option value="NO" id="NO">Norway</option>
+                <option value="OM" id="OM">Oman</option>
+                <option value="PK" id="PK">Pakistan</option>
+                <option value="PW" id="PW">Palau</option>
+                <option value="PA" id="PA">Panama</option>
+                <option value="PG" id="PG">Papua New Guinea</option>
+                <option value="PY" id="PY">Paraguay</option>
+                <option value="PE" id="PE">Peru</option>
+                <option value="PH" id="PH">Philippines</option>
+                <option value="PN" id="PN">Pitcairn Islands</option>
+                <option value="PL" id="PL">Poland</option>
+                <option value="PT" id="PT">Portugal</option>
+                <option value="PR" id="PR">Puerto Rico</option>
+                <option value="QA" id="QA">Qatar</option>
+                <option value="RE" id="RE">Reunion</option>
+                <option value="RO" id="RO">Romania</option>
+                <option value="RU" id="RU">Russia</option>
+                <option value="RW" id="RW">Rwanda</option>
+                <option value="WS" id="WS">Samoa</option>
+                <option value="SM" id="SM">San Marino</option>
+                <option value="ST" id="ST">Sao Tome and Principe</option>
+                <option value="SA" id="SA">Saudi Arabia</option>
+                <option value="SN" id="SN">Senegal</option>
+                <option value="YU" id="YU">Serbia and Montenegro</option>
+                <option value="SC" id="SC">Seychelles</option>
+                <option value="SL" id="SL">Sierra Leone</option>
+                <option value="SG" id="SG">Singapore</option>
+                <option value="SK" id="SK">Slovakia</option>
+                <option value="SI" id="SI">Slovenia</option>
+                <option value="SB" id="SB">Solomon Islands</option>
+                <option value="SO" id="SO">Somalia</option>
+                <option value="ZA" id="ZA">South Africa</option>
+                <option value="GS" id="GS">South Georgia and the South Sandwich
+                Islands</option>
+                <option value="ES" id="ES">Spain</option>
+                <option value="LK" id="LK">Sri Lanka</option>
+                <option value="SH" id="SH">St. Helena</option>
+                <option value="KN" id="KN">St. Kitts and Nevis</option>
+                <option value="LC" id="LC">St. Lucia</option>
+                <option value="PM" id="PM">St. Pierre and Miquelon</option>
+                <option value="VC" id="VC">St. Vincent and the Grenadines</option>
+                <option value="SD" id="SD">Sudan</option>
+                <option value="SR" id="SR">Suriname</option>
+                <option value="SJ" id="SJ">Svalbard and Jan Mayen</option>
+                <option value="SZ" id="SZ">Swaziland</option>
+                <option value="SE" id="SE">Sweden</option>
+                <option value="CH" id="CH">Switzerland</option>
+                <option value="SY" id="SY">Syria</option>
+                <option value="TW" id="TW">Taiwan</option>
+                <option value="TJ" id="TJ">Tajikistan</option>
+                <option value="TZ" id="TZ">Tanzania</option>
+                <option value="TH" id="TH">Thailand</option>
+                <option value="TG" id="TG">Togo</option>
+                <option value="TK" id="TK">Tokelau</option>
+                <option value="TO" id="TO">Tonga</option>
+                <option value="TT" id="TT">Trinidad and Tobago</option>
+                <option value="TN" id="TN">Tunisia</option>
+                <option value="TR" id="TR">Turkey</option>
+                <option value="TM" id="TM">Turkmenistan</option>
+                <option value="TC" id="TC">Turks and Caicos Islands</option>
+                <option value="TV" id="TV">Tuvalu</option>
+                <option value="UG" id="UG">Uganda</option>
+                <option value="UA" id="UA">Ukraine</option>
+                <option value="AE" id="AE">United Arab Emirates</option>
+                <option value="UK" id="UK">United Kingdom</option>
+                <option value="US" id="US">United States</option>
+                <option value="UM" id="UM">United States Minor Outlying Islands</option>
+                <option value="UY" id="UY">Uruguay</option>
+                <option value="UZ" id="UZ">Uzbekistan</option>
+                <option value="VU" id="VU">Vanuatu</option>
+                <option value="VA" id="VA">Vatican City</option>
+                <option value="VE" id="VE">Venezuela</option>
+                <option value="VN" id="VN">Viet Nam</option>
+                <option value="VG" id="VG">Virgin Islands (British)</option>
+                <option value="VI" id="VI">Virgin Islands</option>
+                <option value="WF" id="WF">Wallis and Futuna</option>
+                <option value="YE" id="YE">Yemen</option>
+                <option value="ZM" id="ZM">Zambia</option>
+                <option value="ZW" id="ZW">Zimbabwe</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td valign="middle">Telephone:</td>
+            <td valign="middle"><input name="telephone" type="text" value="" size="17" maxlength="64" />
+            </td>
+          </tr>
+          <tr>
+            <td valign="middle">Fax:</td>
+            <td valign="middle"><input name="fax" type="text" value="" size="17" maxlength="64" />
+            </td>
+          </tr>
+          <tr>
+            <td valign="middle">Email:<font color="#FF0000"><strong>*</strong></font></td>
+            <td valign="middle"><input name="emailcheck" type="text" size="40" value=""/>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="3">
+          <tr>
+            <td colspan="2" valign="middle">Paper No(s). (to be presented by
+              the same registrant):</td>
+            <td colspan="4" valign="middle"><input name="pager_no" type="text" value="" size="17" maxlength="64" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" valign="middle">Please advise us if you have any
+              special needs:</td>
+            <td colspan="4" valign="middle">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="6" valign="middle"><textarea name="advice" cols="75" rows="3" id="advice"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td width="255" valign="middle">Do not include my name and information
+              on:</td>
+            <td width="48" valign="middle">&nbsp;</td>
+            <td width="20" valign="middle"><input name="attendee_list" type="checkbox" id="attendee_list" value="" />
+            </td>
+            <td width="110" valign="middle">the attendee list</td>
+            <td width="20" valign="middle"><input name="mailing_list" type="checkbox" id="mailing_list" value="" />
+            </td>
+            <td width="271" valign="middle">a mailing list</td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="3">
+          <tr>
+            <td colspan="5" valign="middle">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#000000">
+            <td colspan="5" valign="middle" bgcolor="#CCCCCC"><font color="#000000"><strong>SECTION
+                  B: Conference Registration (2-4 December 2003)</strong></font></td>
+          </tr>
+          <tr>
+            <td colspan="5" valign="middle"><p align="justify">For
+                author registration, at least one author of an accepted paper
+                must register at the full rate before <strong>21 September 2003</strong>.
+                Each registrant will receive 1 hard-copy of the proceedings,
+                be admitted
+                to the technical
+                sessions, poster sessions, daily refreshment breaks, and reception.
+                Banquet is not included with student registration. Admission
+                to the tutorials is not included and requires an additional fee
+                (see Section D).</p>
+              <strong>Registration Fees:</strong>
+              <table width="100%" border="1" bordercolor="#000000" cellpadding="7" cellspacing="0" frame="void" rules="groups">
+                <colgroup>
+                <col width="65" />
+                <col width="100" />
+                <col width="124" />
+                </colgroup>
+                <colgroup>
+                <col width="92" />
+                <col width="97" />
+                <col width="124" />
+                </colgroup>
+                <tr valign="top">
+                  <td width="80">
+                    <p style="font-weight: medium"><font size="2" style="font-size: 9pt">IEEE
+                        member<br />
+                      </font><font size="2" style="font-size: 9pt">Non-IEEE member</font> </p>
+                  </td>
+                  <td width="124">
+                    <p style="font-weight: medium"><font size="2" style="font-size: 9pt">HK
+                        $3,500 (~USD 450)<br />
+                      </font><font size="2" style="font-size: 9pt">HK $4,500
+                      (~USD 580)</font></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="3">
+          <tr>
+            <td valign="middle">&nbsp;</td>
+            <td colspan="2" valign="middle">&nbsp;</td>
+          </tr>
+          <tr>
+            <td valign="middle"><strong>For IEEE member:</strong></td>
+            <td colspan="2" valign="middle">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="167" valign="middle">IEEE Membership No.:</td>
+            <td colspan="2" valign="middle"><input name="ieee_no" type="text" id="ieee_no" value="" size="40" />
+            </td>
+          </tr>
+          <tr>
+            <td valign="middle">&nbsp;</td>
+            <td width="360" valign="middle"><div align="right"><strong>Payment
+                  for Section B: </strong></div>
+            </td>
+            <td width="215" valign="middle"><table width="100%" border="0" cellpadding="2" cellspacing="0" bgcolor="#000000">
+                <tr>
+                  <td><table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="#FFFFFF">
+                      <tr>
+                        <td><strong>HK$
+                          <input name="Item1_price" type="text" size="17" maxlength="17"
+                                onblur="javascript:if(!IsPrice(this.value)) this.value=''; cal_total();" />
+                          </strong></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="3">
+          <tr>
+            <td colspan="4" valign="middle">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#CCCCCC">
+            <td colspan="4" valign="middle"><font color="#000000"><strong>SECTION
+                  C: Conference Proceedings</strong></font></td>
+          </tr>
+          <tr>
+            <td colspan="4" valign="middle"><p align="justify">Conference registration
+                includes 1-set of conference proceedings. Additional copies of
+                proceedings can be purchased by completing this section. Copies
+                can also be purchased on-site, while supplies last. Please indicate
+                the desired number of copies below and include your payment for
+                any additional set of proceedings.</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="37%" valign="middle" nowrap="NOWRAP">Additional conference
+              proceedings: </td>
+            <td width="13%" valign="middle" nowrap="nowrap"><input name="copies" type="text" id="copies" value="" size="17" maxlength="64" />
+            </td>
+            <td width="49%" valign="middle" nowrap="nowrap">copies @ HK$235 (~USD
+              30) per copy</td>
+            <td width="1%" valign="middle" nowrap="nowrap">&nbsp;</td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="3">
+          <tr>
+            <td width="167" valign="middle">&nbsp;</td>
+            <td width="360" valign="middle"><div align="right"><strong>Payment
+                  for Section C: </strong></div>
+            </td>
+            <td width="215" valign="middle"><table width="100%" border="0" cellpadding="2" cellspacing="0" bgcolor="#000000">
+                <tr>
+                  <td><table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="#FFFFFF">
+                      <tr>
+                        <td><strong>HK$
+                          <input name="Item2_price" type="text" size="17" maxlength="17"
+                                onblur="javascript:if(!IsPrice(this.value)) this.value=''; cal_total();" />
+                          </strong></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="3">
+          <tr>
+            <td colspan="4" valign="middle">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#CCCCCC">
+            <td colspan="4" valign="middle"><font color="#000000"><strong>SECTION
+                  D: Tutorial Registration (1 December 2003)</strong></font></td>
+          </tr>
+          <tr>
+            <td colspan="4" valign="middle"><p align="justify">Four half-day
+                short courses will be held on 1 December 2003. Registration is
+                per tutorial and includes admission to the selected tutorial,
+                and one copy of the tutorial notes.</p>
+              <table width="100%" border="1" bordercolor="#000000" cellpadding="7" cellspacing="0" frame="void" rules="groups">
+                <colgroup>
+                <col width="65" />
+                <col width="100" />
+                <col width="124" />
+                </colgroup>
+                <colgroup>
+                <col width="92" />
+                <col width="97" />
+                <col width="124" />
+                </colgroup>
+                <tr valign="top">
+                  <td width="75">                    <p align="center"><font size="2" style="font-size: 9pt"><U><b>ADVANCE</b></U></font><br />
+                      <font size="2" style="font-size: 9pt">on or before 22 October </font> </p>
+                  </td>
+                  <td width="80">
+                    <p style="font-weight: medium"><font size="2" style="font-size: 9pt">IEEE
+                        member<br />
+                      </font><font size="2" style="font-size: 9pt">Non-IEEE member<br />
+                      </font><font size="2" style="font-size: 9pt">Full-time
+                    student </font> </p>
+                  </td>
+                  <td width="124">
+                    <p style="font-weight: medium"><font size="2" style="font-size: 9pt">HK
+                        $1,000 (~USD 128)<br />
+                      HK $1,200 (~USD 154)<br />
+                      HK $1,000 (~USD 128) </font> </p>
+                  </td>
+                  <td width="75">
+                    <p align="center"><font size="2" style="font-size: 9pt"><U><b>LATE/ON-SITE</b></U></font><br />
+                    <font size="2" style="font-size: 9pt">after 22 October</font></p>
+                  </td>
+                  <td width="80">
+                    <p style="font-weight: medium"><font size="2" style="font-size: 9pt">IEEE
+                        member<br />
+                      </font><font size="2" style="font-size: 9pt">Non-IEEE member<br />
+                      </font><font size="2" style="font-size: 9pt">Full-time
+                      student </font></p>
+                  </td>
+                  <td width="124">
+                    <p style="font-weight: medium"><font size="2" style="font-size: 9pt">HK
+                        $1,200 (~USD 154)<br />
+                      HK $1,400 (~USD 180)<br />
+                      HK $1,000 (~USD 128)</font></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" valign="middle">&nbsp;</td>
+            <td colspan="2" valign="middle">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2" valign="middle">I will attend</td>
+            <td colspan="2" valign="middle">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2" valign="middle"><b>Morning Session</b> </td>
+            <td colspan="2" valign="middle"><b>Afternoon Session</b> </td>
+          </tr>
+          <tr>
+            <td width="8%" valign="top"><input type="checkbox" name="Check1" value="" />
+              <b>T1 -</b></td>
+            <td  valign="top"><em>Designing Next Generation Clusters with Infiniband:
+                Opportunities and Challenges</em></td>
+            <td width="8%" valign="top"><input name="Check3" type="checkbox" id="Check3" value="" />
+              <b>T3 -</b></td>
+            <td  valign="middle"><em>The GridBus Toolkit for Service Oriented
+                Grid Computing</em> </td>
+          </tr>
+          <tr>
+            <td valign="top"><input type="checkbox" name="Check2" value="" />
+              <b>T2 -</b></td>
+            <td width="42%"  valign="top"><em>Using MPI-2: Advanced Features
+                of the Message Passing Interface</em></td>
+            <td valign="top"><input name="Check4" type="checkbox" id="Check4" value="" />
+              <b>T4 -</b></td>
+            <td width="42%"  valign="top"><i>Building and Managing Clusters with
+                NPACI Rocks </i></td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="3">
+          <tr>
+            <td width="167" valign="middle">&nbsp;</td>
+            <td width="360" valign="middle"><div align="right"><strong>Payment
+                  for Section D: </strong></div>
+            </td>
+            <td width="215" valign="middle"><table width="100%" border="0" cellpadding="2" cellspacing="0" bgcolor="#000000">
+                <tr>
+                  <td><table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="#FFFFFF">
+                      <tr>
+                        <td><strong>HK$
+                          <input name="Item3_price" type="text" size="17" maxlength="17"
+                                onblur="javascript:if(!IsPrice(this.value)) this.value=''; cal_total();" />
+                          </strong></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="3">
+          <tr>
+            <td colspan="5" valign="middle">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#CCCCCC">
+            <td colspan="5" valign="middle"><font color="#000000"><strong>SECTION
+                  E: Other</strong></font></td>
+          </tr>
+          <tr valign="top">
+            <td width="22%" rowspan="2">Excess page charge:<br />
+              (For authors only)</td>
+            <td width="48%" rowspan="2"><div align="justify">Authors are allowed
+                up to eight pages (for a full paper) or 4 pages (for poster paper)
+                in the proceedings for each paper. You may buy up to two additional
+                pages at a cost of HK $780 (~USD 100) per page.<br />
+              </div>
+            </td>
+            <td width="3%" rowspan="2">&nbsp;</td>
+            <td colspan="2">Number of excess pages</td>
+          </tr>
+          <tr valign="top">
+            <td width="13%"><input name="excess_pages" type="radio" id="excess" value="" />
+              1</td>
+            <td width="14%"><input name="excess_pages" type="radio" id="excess" value="" />
+              2</td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="3">
+          <tr>
+            <td width="167" valign="middle">&nbsp;</td>
+            <td width="360" valign="middle"><div align="right"><strong>Payment
+                  for Section E: </strong></div>
+            </td>
+            <td width="215" valign="middle"><table width="100%" border="0" cellpadding="2" cellspacing="0" bgcolor="#000000">
+                <tr>
+                  <td><table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="#FFFFFF">
+                      <tr>
+                        <td><strong>HK$
+                          <input name="Item4_price" type="text" size="17" maxlength="17" class="field"
+                                onblur="javascript:if(!IsPrice(this.value)) this.value=''; cal_total();" />
+                          </strong></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="3">
+          <tr>
+            <td width="100%" colspan="4" valign="middle">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#CCCCCC">
+            <td colspan="4" valign="middle"><font color="#000000"><strong>SECTION
+                  F: Payment of Fees</strong></font></td>
+          </tr>
+          <tr>
+            <td colspan="4" valign="middle"><p align="justify">We only accept
+                payment in HK dollar. Only Bank Draft, local personal check (for
+                Hong Kong registrants only) or credit card payment will be accepted.
+                Registration without proper payment authorization will be denied
+                without notification. All Bank Drafts or local personal checks
+                should be made payable to <strong>HK SECT OF IEEE (COMPUTER CHAPTER)</strong>.</p>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="3">
+          <tr>
+            <td width="167" valign="middle">&nbsp;</td>
+            <td width="360" valign="middle"><div align="right"><strong>Total
+                  Payment for Section B+C+D+E: </strong></div>
+            </td>
+            <td width="215" valign="middle"><table width="100%" border="0" cellpadding="2" cellspacing="0" bgcolor="#000000">
+                <tr>
+                  <td><table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="#FFFFFF">
+                      <tr>
+                        <td><strong>HK$
+                          <input name="Total_price" type="text" readonly="READONLY" size="17" maxlength="17" value="0" onblur="javascript: cal_total();" />
+                          </strong></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="3">
+          <tr>
+            <td colspan="6" valign="middle">&nbsp;</td>
+          </tr>
+          <tr valign="top">
+            <td width="23"><input name="check" type="checkbox" id="check" value="" />
+            </td>
+            <td colspan="5"><div align="justify">My bank draft/personal check
+                (HK registrants only is enclosed and made payable to <strong>HK
+                SECT OF IEEE (COMPUTER CHAPTER)</strong></div>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td><input name="credit_card" type="checkbox" id="credit_card" value="" />
+            </td>
+            <td colspan="5">Please charge the following credit card</td>
+          </tr>
+          <tr valign="middle">
+            <td>&nbsp;</td>
+            <td width="26">&nbsp;</td>
+            <td width="104">
+              <input name="card" type="radio" id="radio" value="" />
+              Visa card</td>
+            <td width="182"><input name="card" type="radio" id="radio2" value="" />
+              Master card</td>
+            <td width="65">Card No.: <strong> </strong><strong> </strong></td>
+            <td width="324"><strong>
+              <input name="card_no" type="text" class="field" id="card_no"
+                                onblur="javascript:if(!IsPrice(this.value)) this.value=''; cal_total();" size="6" maxlength="4" />
+              <input name="card_no2" type="text" class="field" id="card_no2"
+                                onblur="javascript:if(!IsPrice(this.value)) this.value=''; cal_total();" size="6" maxlength="4" />
+              <input name="card_no3" type="text" class="field" id="card_no3"
+                                onblur="javascript:if(!IsPrice(this.value)) this.value=''; cal_total();" size="6" maxlength="4" />
+              <input name="card_no4" type="text" class="field" id="card_no4"
+                                onblur="javascript:if(!IsPrice(this.value)) this.value=''; cal_total();" size="6" maxlength="4" />
+              </strong></td>
+          </tr>
+          <tr valign="middle">
+            <td>&nbsp;</td>
+            <td colspan="5">Total payment in HK$ <strong>
+              <input name="cardpayment" type="text" size="17" maxlength="17" />
+              </strong>(for credit card payment only)</td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="3">
+          <tr>
+            <td colspan="4" valign="middle">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="16%" valign="middle">Cardholder Name:</td>
+            <td width="47%" valign="middle"><input name="cardholder" type="text" id="cardholder" value="" size="50" />
+            </td>
+            <td width="11%" valign="middle">Expiry Date:</td>
+            <td width="26%" valign="middle"><strong>
+              <input name="Item4_price22" type="text" size="4" maxlength="2" class="field"
+                                onblur="javascript:if(!IsPrice(this.value)) this.value=''; cal_total();" />
+              </strong>/<strong>
+              <input name="Item4_price23" type="text" size="4" maxlength="2" class="field"
+                                onblur="javascript:if(!IsPrice(this.value)) this.value=''; cal_total();" />
+              </strong>(mm/yy)<strong> </strong></td>
+          </tr>
+          <tr>
+            <td valign="middle">&nbsp;</td>
+            <td valign="middle">&nbsp;</td>
+            <td valign="middle">&nbsp;</td>
+            <td valign="middle">&nbsp;</td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="3">
+          <tr>
+            <td width="9%" valign="middle">Signature:</td>
+            <td width="54%" valign="middle"><p class="western" style="width: 200; margin-top: 0.08in; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding: 0in; font-weight: medium">&nbsp;</p>
+            </td>
+            <td width="11%" valign="middle">&nbsp;</td>
+            <td width="26%" valign="middle">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <p align="center">
+    <INPUT type="button"
+       VALUE="Press the button to print the form."
+	   ONCLICK="CheckRequiredFields()"
+    >
+  </p>
+</form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+DTSTART:19710101T010000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+DTSTART:19710101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180913T134851Z
+LOCATION:Minor Hall
+DTSTART;TZID=Europe/London:20180913T163000
+DTEND;TZID=Europe/London:20180913T170000
+UID:ieeecluster_IEEE Cluster 2018_sess128_pap252@linklings.com
+SUMMARY:Predicting Performance Using Collaborative Filtering
+DESCRIPTION:Predicting Performance Using Collaborative Filtering\n\nSalari
+ a, Drozd, Podobas...\n\n\nPerformance prediction of parallel applications 
+ across systems becomes increasingly important in today's diverse computing
+  environments. A wide range of choices in execution platforms pose new cha
+ llenges to researchers in choosing a system which best fits their workload
+ s and administrators in scheduling applications to the best performing sys
+ tems. While previous studies have employed simulation- or profile-based pr
+ ediction approaches, such solutions are time-consuming to be deployed on m
+ ultiple platforms. To address this problem, we use two collaborative filte
+ ring techniques to build analytical models which can quickly and accuratel
+ y predict the performance of workloads across different multicore systems.
+  The first technique leverages information gained from performance observe
+ d for certain applications on a subset of systems and use it to discover s
+ imilarities among applications as well as systems. The second collaborativ
+ e filtering based model learns latent features of systems and workloads au
+ tomatically and use these features to characterize the performance of appl
+ ications on different platforms. We evaluated both the methods using 30 wo
+ rkloads chosen from NAS Parallel Benchmarks, BOTS and Rodinia benchmarking
+  suites on ten different systems. Our results show that such collaborative
+  filtering methods can make predictions with RMSE as low as 0.6 and with a
+ n average RMSE of 1.6.
+END:VEVENT
+END:VCALENDAR
+

@@ -1,0 +1,39 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Cluster2001: Abstracts</title>
+<link rel="stylesheet" type="text/css" href="../../cluster2001.css">
+</head>
+
+<body>
+
+<h1>GMSOCKS - A Direct Socket Implementation for Myrinet&nbsp;</h1>
+<p><b>      Markus Fischer&nbsp;<br>
+</b><a href="mailto:fischer@ti.uni-mannheim.de">fischer@ti.uni-mannheim.de<br>
+</a>
+<b>
+University of Mannheim</b></p>
+<p>
+This paper describes GMSOCKS, a thin software layer that maps standard<br>
+Windows socket calls onto Myrinet.  GMSOCKS enables existing<br>
+distributed applications, such as distributed databases, client server<br>
+applications, which are based on TCP/IP, to transparently benefit from<br>
+the performance of a System Area Network like Myrinet.  No modification<br>
+of the source code has to be made, nor is it required to relink or<br>
+recompile the application.  As our results show, the performance<br>
+improvement compared to Fast Ethernet are in the order of a magnitude.<br>
+The roundtrip latency for a given application decreases from 620 usec<br>
+to 50 usec, while the bandwidth can be boosted from 7 MB/s to 101<br>
+MB/s.  As a key improvement to existing TCP/IP drivers over SANs, the<br>
+new technique cuts down the overburdened TCP/IP protocol to a small<br>
+buffer management implementation, a reliable low level API assumed.<br>
+Roughly, the GMSOCKS implementation achieves 74 per cent of the raw<br>
+performance of the low level SAN API.</p>
+<p><a href="../index.html">Back to Program</a></p>
+
+</body>
+
+</html>

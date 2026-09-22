@@ -1,0 +1,30 @@
+<i>
+Failures and downtimes have severe impact on the
+performance of parallel programs in a large scale High
+Performance Computing (HPC) environment. There were
+several research efforts to understand the failure behavior of
+computing systems. However, the presence of multitude of
+hardware and software components required for
+uninterrupted operation of parallel programs make failure
+and reliability prediction a challenging problem. HPC runtime
+systems like checkpoint frameworks and resource
+managers rely on the reliability knowledge of resources to
+minimize the performance loss due to unexpected failures. In
+this paper, we first analyze the Time Between Failure (TBF)
+distribution of individual nodes from a 512-node HPC system.
+Time varying distributions like Weibull, lognormal and
+gamma are observed to have better goodness-of-fit as
+compared to exponential distribution. We then present a
+reliability-aware resource allocation model for parallel
+programs based on one of the time varying distributions and
+present reliability-aware resource allocation algorithms to
+minimize the performance loss due to failures. We show the
+effectiveness of reliability-aware resource allocation
+algorithms based on the actual failure logs of the 512 node
+system and parallel workloads obtained from LANL and
+SDSC. The simulation results indicate that applying
+reliability-aware resource allocation techniques reduce the
+overall waste time of parallel jobs by as much as 30%. A
+further improvement by 15% in waste time is possible by
+considering the job run lengths in reliability-aware
+scheduling.</i>
