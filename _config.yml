@@ -2,3 +2,4 @@ exclude:
   - 2026/tutorials/
   - 2026/photos/
   - 2026/authors/
+  - 2015/wp-json
